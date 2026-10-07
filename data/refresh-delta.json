@@ -5,25 +5,25 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-07T12:28:43.682Z",
-  "mode": "quick",
-  "runId": "37621247478",
-  "candidates": 36,
+  "refreshedAt": "2026-10-07T12:30:47.773Z",
+  "mode": "full",
+  "runId": "37621498202",
+  "candidates": 18,
   "verifiedAdditions": 0,
   "observationChanges": 0,
   "receipt": {
     "directUrlsAttempted": 20,
     "directVerified": 2,
-    "accessRestricted": 11,
+    "accessRestricted": 10,
     "ambiguous": 5,
     "dead": 0,
     "soldOrOut": 1,
     "notDirect": 4,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 3,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     }
   }
