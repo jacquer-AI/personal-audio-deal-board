@@ -2,10 +2,27 @@ name: Refresh personal audio market
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "11 */6 * * *"
+    - cron: "37 2 * * *"
+    - cron: "53 3 * * 0"
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
-      - run: echo refresh
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run sync
+      - run: npm run refresh-market -- --mode quick --categories all
+      - run: npm run merge-market
+      - run: npm run validate-data
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
