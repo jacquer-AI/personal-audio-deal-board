@@ -1,8 +1,8 @@
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import deltaSnapshot from '../data/refresh-delta.json';
 
-const WORKFLOW_URL='https://github.com/jacquer-AI/personal-audio-deal-board/actions/workflows/refresh-market.yml';
-const RUNS_API='https://api.github.com/repos/jacquer-AI/personal-audio-deal-board/actions/workflows/refresh-market.yml/runs?per_page=1';
+const WORKFLOW_URL='https://github.com/jacquer-AI/personal-audio-deal-board/actions/workflows/pages.yml';
+const RUNS_API='https://api.github.com/repos/jacquer-AI/personal-audio-deal-board/actions/workflows/pages.yml/runs?per_page=1';
 
 type Mode='quick'|'full'|'deep';
 type Run={status:string;conclusion:string|null;updated_at:string;html_url:string};
