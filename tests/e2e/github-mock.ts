@@ -1,6 +1,6 @@
 import type {Page} from '@playwright/test';
 
-type Options={noop?:boolean;dispatcherOffline?:boolean;dispatchStatus?:number};
+type Options={noop?:boolean;dispatcherOffline?:boolean;dispatcherWrongService?:boolean;dispatchStatus?:number};
 
 const CORS={'access-control-allow-origin':'*','access-control-allow-headers':'*','access-control-allow-methods':'*'};
 const DISPATCHER='https://desktop-t47p2au.tail84c6f0.ts.net:8444/audio-refresh';
@@ -27,7 +27,7 @@ export async function mockGitHub(page:Page,opts:Options={}){
     const json=(body:unknown,status=200)=>route.fulfill({status,contentType:'application/json',headers:CORS,body:JSON.stringify(body)});
     if(req.method()==='OPTIONS')return route.fulfill({status:204,headers:CORS});
     if(opts.dispatcherOffline)return route.abort('failed');
-    if(url.pathname.endsWith('/health'))return json({ok:true,service:'test-dispatcher',tailnetOnly:true});
+    if(url.pathname.endsWith('/health'))return json({ok:true,service:opts.dispatcherWrongService?'foreign-service':'personal-audio-refresh-dispatcher',tailnetOnly:true});
     if(url.pathname.endsWith('/refresh')&&req.method()==='POST'){
       dispatcherRequests.push({body:JSON.parse(req.postData()||'{}')});
       if(opts.dispatchStatus)return json({ok:false,error:'rejected'},opts.dispatchStatus);
