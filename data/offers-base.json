@@ -512,11 +512,5 @@
       "role": "OFFER",
       "checked": "2026-10-07"
     }
-  ],
-  "refresh": {
-    "refreshedAt": null,
-    "mode": null,
-    "runId": null,
-    "status": "NEVER"
-  }
+  ]
 }

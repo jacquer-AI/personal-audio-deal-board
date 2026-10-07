@@ -1,0 +1,84 @@
+name: Refresh market data
+run-name: Refresh ${{ inputs.mode || 'scheduled' }} · ${{ inputs.categories || 'all' }}
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Refresh depth
+        required: true
+        default: quick
+        type: choice
+        options: [quick, full, deep]
+      categories:
+        description: Category scope
+        required: true
+        default: all
+        type: choice
+        options: [all, IEM, TWS, Closed, "Głośniki BT"]
+  schedule:
+    - cron: "11 */6 * * *"
+    - cron: "37 2 * * *"
+    - cron: "53 3 * * 0"
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: audio-market-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      REQUESTED_MODE: ${{ inputs.mode || 'quick' }}
+      REQUESTED_CATEGORIES: ${{ inputs.categories || 'all' }}
+      SCHEDULE_EXPR: ${{ github.event.schedule }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: "Phase: PLAN (validate mode and scope)"
+        run: |
+          mode="$REQUESTED_MODE"
+          if [ "$SCHEDULE_EXPR" = "37 2 * * *" ]; then mode="full"; fi
+          if [ "$SCHEDULE_EXPR" = "53 3 * * 0" ]; then mode="deep"; fi
+          case "$mode" in quick|full|deep) ;; *) echo "invalid mode"; exit 2 ;; esac
+          case "$REQUESTED_CATEGORIES" in all|IEM|TWS|Closed|"Głośniki BT") ;; *) echo "invalid categories"; exit 2 ;; esac
+          echo "REFRESH_MODE=$mode" >> "$GITHUB_ENV"
+          echo "REFRESH_CATEGORIES=$REQUESTED_CATEGORIES" >> "$GITHUB_ENV"
+      - name: "Phase: REFRESH (discovery and direct-page verification)"
+        id: refresh
+        run: |
+          npm run sync
+          npm run refresh-market -- --mode "$REFRESH_MODE" --categories "$REFRESH_CATEGORIES"
+          npm run merge-market
+      - name: "Phase: VALIDATE (corrupt data never publishes)"
+        run: |
+          npm run validate-data
+          npm test
+      - name: "Phase: PERSIST (commit only material changes)"
+        id: persist
+        if: steps.refresh.outputs.changed == 'true'
+        run: |
+          git config user.name "audio-market-refresh[bot]"
+          git config user.email "audio-market-refresh@users.noreply.github.com"
+          git add data/market-current.json data/market-observations.jsonl data/refresh-delta.json data/market-candidates.json data/market-stats.json data/offers.json
+          git commit -m "data: market refresh $REFRESH_MODE ($GITHUB_RUN_ID)"
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main
+          done
+          exit 1
+      # Pushes made with GITHUB_TOKEN do not trigger other workflows, so deploy is dispatched explicitly.
+      - name: "Phase: DEPLOY (dispatch Pages build)"
+        if: steps.refresh.outputs.changed == 'true'
+        run: gh workflow run pages.yml --ref main
+      - name: No material change
+        if: steps.refresh.outputs.changed != 'true'
+        run: echo "DELTA=NONE - no commit, no deploy"

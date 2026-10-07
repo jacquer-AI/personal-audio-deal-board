@@ -38,7 +38,9 @@
         "powystawowe",
         "po zwrocie"
       ],
-      "searchUrlTemplate": "https://allegro.pl/listing?string={q}"
+      "searchUrlTemplate": "https://allegro.pl/listing?string={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "olx-pl",
@@ -63,7 +65,9 @@
         "jak nowy",
         "nowe"
       ],
-      "searchUrlTemplate": "https://www.olx.pl/oferty/q-{q}/"
+      "searchUrlTemplate": "https://www.olx.pl/oferty/q-{q}/",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "mediaexpert-outlet",
@@ -88,7 +92,9 @@
         "powystawowe",
         "po zwrocie"
       ],
-      "searchUrlTemplate": "https://www.mediaexpert.pl/search?query[{q}]"
+      "searchUrlTemplate": "https://www.mediaexpert.pl/search?query[{q}]",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "kleinanzeigen-de",
@@ -115,7 +121,9 @@
         "offene Verpackung",
         "Ausstellungsstück"
       ],
-      "searchUrlTemplate": "https://www.kleinanzeigen.de/s-suchanfrage.html?keywords={q}"
+      "searchUrlTemplate": "https://www.kleinanzeigen.de/s-suchanfrage.html?keywords={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "marktplaats-nl",
@@ -142,7 +150,9 @@
         "demo model",
         "gebruikt"
       ],
-      "searchUrlTemplate": "https://www.marktplaats.nl/q/{q}/"
+      "searchUrlTemplate": "https://www.marktplaats.nl/q/{q}/",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "subito-it",
@@ -167,7 +177,9 @@
         "scatola aperta",
         "da esposizione"
       ],
-      "searchUrlTemplate": "https://www.subito.it/annunci-italia/vendita/usato/?q={q}"
+      "searchUrlTemplate": "https://www.subito.it/annunci-italia/vendita/usato/?q={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "wallapop-es",
@@ -193,7 +205,9 @@
         "caja abierta",
         "ex-demo"
       ],
-      "searchUrlTemplate": "https://es.wallapop.com/app/search?keywords={q}"
+      "searchUrlTemplate": "https://es.wallapop.com/app/search?keywords={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "amazon-de-resale",
@@ -219,7 +233,9 @@
         "gebraucht",
         "wie neu"
       ],
-      "searchUrlTemplate": "https://www.amazon.de/s?k={q}"
+      "searchUrlTemplate": "https://www.amazon.de/s?k={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "ebay-de",
@@ -246,7 +262,9 @@
         "refurbished",
         "B-Ware"
       ],
-      "searchUrlTemplate": "https://www.ebay.de/sch/i.html?_nkw={q}"
+      "searchUrlTemplate": "https://www.ebay.de/sch/i.html?_nkw={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "hifishark",
@@ -270,7 +288,8 @@
         "used",
         "new"
       ],
-      "searchUrlTemplate": "https://www.hifishark.com/search?q={q}"
+      "searchUrlTemplate": "https://www.hifishark.com/search?q={q}",
+      "canDiscover": true
     },
     {
       "id": "geizhals",
@@ -293,7 +312,8 @@
       "queryTerms": [
         "neu"
       ],
-      "searchUrlTemplate": "https://geizhals.eu/?fs={q}"
+      "searchUrlTemplate": "https://geizhals.eu/?fs={q}",
+      "canDiscover": true
     },
     {
       "id": "tweakers",
@@ -315,7 +335,8 @@
       "queryTerms": [
         "nieuw"
       ],
-      "searchUrlTemplate": "https://tweakers.net/pricewatch/zoeken/?keyword={q}"
+      "searchUrlTemplate": "https://tweakers.net/pricewatch/zoeken/?keyword={q}",
+      "canDiscover": true
     },
     {
       "id": "audio-markt",
@@ -338,7 +359,9 @@
       "queryTerms": [
         "gebraucht",
         "neu"
-      ]
+      ],
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "beyerdynamic-outlet",
@@ -361,7 +384,9 @@
       "queryTerms": [
         "B-Stock",
         "refurbished"
-      ]
+      ],
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "tophifi-outlet",
@@ -385,7 +410,9 @@
         "outlet",
         "powystawowe"
       ],
-      "searchUrlTemplate": "https://www.tophifi.pl/catalogsearch/result/?q={q}"
+      "searchUrlTemplate": "https://www.tophifi.pl/catalogsearch/result/?q={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "rtveuroagd-outlet",
@@ -408,7 +435,9 @@
       "queryTerms": [
         "outlet",
         "powystawowe"
-      ]
+      ],
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "ebay-uk",
@@ -436,7 +465,9 @@
         "ex-demo",
         "refurbished"
       ],
-      "searchUrlTemplate": "https://www.ebay.co.uk/sch/i.html?_nkw={q}"
+      "searchUrlTemplate": "https://www.ebay.co.uk/sch/i.html?_nkw={q}",
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "gumtree-uk",
@@ -458,7 +489,9 @@
       "queryTerms": [
         "used",
         "boxed"
-      ]
+      ],
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "richersounds-clearance",
@@ -482,7 +515,9 @@
         "clearance",
         "ex-demo",
         "refurbished"
-      ]
+      ],
+      "aggregator": false,
+      "canDiscover": true
     },
     {
       "id": "muzix-eu",
@@ -500,7 +535,9 @@
       "conditions": [
         "NEW"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
     },
     {
       "id": "thomann-pl",
@@ -519,7 +556,9 @@
         "NEW",
         "B-STOCK"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
     },
     {
       "id": "jbl-pl",
@@ -537,7 +576,9 @@
       "conditions": [
         "NEW"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
     },
     {
       "id": "marshall-pl",
@@ -555,7 +596,9 @@
       "conditions": [
         "NEW"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
     },
     {
       "id": "technics-pl",
@@ -573,7 +616,9 @@
       "conditions": [
         "NEW"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
     },
     {
       "id": "nt-global-de",
@@ -591,7 +636,9 @@
       "conditions": [
         "NEW"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
     },
     {
       "id": "mp3store-pl",
@@ -609,7 +656,9 @@
       "conditions": [
         "NEW"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
     },
     {
       "id": "ebay-pl",
@@ -630,7 +679,103 @@
         "B-STOCK",
         "OPEN-BOX"
       ],
-      "queryTerms": []
+      "queryTerms": [],
+      "aggregator": false,
+      "canDiscover": false
+    },
+    {
+      "id": "ceneo-pl",
+      "name": "Ceneo",
+      "region": "Polska",
+      "sweep": "weekly",
+      "priority": 2,
+      "role": [
+        "discovery"
+      ],
+      "canVerifyOffer": false,
+      "domains": [
+        "ceneo.pl"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": [
+        ""
+      ],
+      "searchUrlTemplate": "https://www.ceneo.pl/;szukaj-{q}",
+      "aggregator": true,
+      "canDiscover": true
+    },
+    {
+      "id": "allegro-lokalnie",
+      "name": "Allegro Lokalnie",
+      "region": "Polska",
+      "sweep": "weekly",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "allegrolokalnie.pl"
+      ],
+      "conditions": [
+        "USED",
+        "NEW"
+      ],
+      "queryTerms": [
+        "używane"
+      ],
+      "searchUrlTemplate": "https://allegrolokalnie.pl/oferty/q/{q}",
+      "aggregator": false,
+      "canDiscover": true
+    },
+    {
+      "id": "headfi-classifieds",
+      "name": "Head-Fi Classifieds",
+      "region": "UE",
+      "sweep": "weekly",
+      "priority": 3,
+      "role": [
+        "discovery"
+      ],
+      "canVerifyOffer": false,
+      "domains": [
+        "head-fi.org"
+      ],
+      "conditions": [
+        "USED"
+      ],
+      "queryTerms": [
+        "for sale"
+      ],
+      "searchUrlTemplate": "https://www.head-fi.org/search/?q={q}&c[nodes][0]=0",
+      "aggregator": true,
+      "canDiscover": true
+    },
+    {
+      "id": "idealo-de",
+      "name": "Idealo",
+      "region": "UE",
+      "sweep": "weekly",
+      "priority": 3,
+      "role": [
+        "discovery"
+      ],
+      "canVerifyOffer": false,
+      "domains": [
+        "idealo.de"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": [
+        ""
+      ],
+      "searchUrlTemplate": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q={q}",
+      "aggregator": true,
+      "canDiscover": true
     }
   ]
 }
