@@ -19,6 +19,7 @@ const COOLDOWN_MS = 30000;
 
 let busy = false;
 let lastDispatch = 0;
+let pendingDispatch = null;
 
 function gh(args, timeout = 25000) {
   return new Promise((resolve, reject) => {
@@ -40,6 +41,36 @@ async function latestRun() {
     html_url:r.url, created_at:r.createdAt, updated_at:r.updatedAt,
     event:r.event, display_title:r.displayTitle
   };
+}
+
+function pendingRun() {
+  if (!pendingDispatch) return null;
+  const iso = new Date(pendingDispatch.at).toISOString();
+  return {
+    id:0,
+    status:'queued',
+    conclusion:null,
+    html_url:'https://github.com/'+REPO+'/actions/workflows/'+WORKFLOW,
+    created_at:iso,
+    updated_at:iso,
+    event:'workflow_dispatch',
+    display_title:'Refresh '+pendingDispatch.mode+' · '+pendingDispatch.categories
+  };
+}
+
+async function statusRun() {
+  const latest = await latestRun();
+  if (!pendingDispatch) return latest;
+  const created = latest ? Date.parse(latest.created_at || '') : NaN;
+  const title = latest ? String(latest.display_title || '') : '';
+  const expected = 'Refresh '+pendingDispatch.mode+' · '+pendingDispatch.categories;
+  if (latest && latest.event === 'workflow_dispatch' &&
+      Number.isFinite(created) && created >= pendingDispatch.at - 10000 &&
+      title === expected) {
+    pendingDispatch = null;
+    return latest;
+  }
+  return pendingRun();
 }
 
 function cors(req, res) {
@@ -97,7 +128,7 @@ const server = http.createServer(async (req,res) => {
   if (req.method === 'GET' && p === '/status') {
     if (!originOk(req)) return json(req,res,403,{ok:false,error:'origin_not_allowed'});
     if (!identityOk(req)) return json(req,res,401,{ok:false,error:'tailscale_identity_required',received:String(req.headers['tailscale-user-login']||'')});
-    try { return json(req,res,200,{ok:true,run:await latestRun()}); }
+    try { return json(req,res,200,{ok:true,run:await statusRun()}); }
     catch(e) { return json(req,res,502,{ok:false,error:String(e.message||e).slice(0,300)}); }
   }
 
@@ -118,14 +149,10 @@ const server = http.createServer(async (req,res) => {
       if(!VALID_MODES.has(mode)||!VALID_CATEGORIES.has(categories)) return json(req,res,400,{ok:false,error:'invalid_request'});
       busy=true;
       try {
-        let cur=null; try{cur=await latestRun();}catch{}
-        if(cur && ['queued','in_progress','waiting','pending','requested'].includes(cur.status))
-          return json(req,res,409,{ok:false,error:'refresh_already_running',run:cur});
         await gh(['workflow','run',WORKFLOW,'--repo',REPO,'--ref','main','-f','mode='+mode,'-f','categories='+categories]);
         lastDispatch=Date.now();
-        let run=null;
-        for(let i=0;i<8;i++){ await new Promise(r=>setTimeout(r,1000)); try{const x=await latestRun(); if(x&&x.event==='workflow_dispatch'){run=x;break;}}catch{} }
-        return json(req,res,202,{ok:true,queued:true,mode,categories,run});
+        pendingDispatch={at:lastDispatch,mode,categories};
+        return json(req,res,202,{ok:true,queued:true,mode,categories,run:pendingRun()});
       } catch(e) { return json(req,res,502,{ok:false,error:'github_dispatch_failed',detail:String(e.message||e).slice(0,300)}); }
       finally { busy=false; }
     });
