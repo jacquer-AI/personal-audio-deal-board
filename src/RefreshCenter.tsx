@@ -30,6 +30,7 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
   useEffect(()=>{if(open)dialog.current?.showModal();else dialog.current?.close()},[open]);
 
   const readLatest=useCallback(async()=>{
+    if(location.hostname==='127.0.0.1'||location.hostname==='localhost')return;
     try{
       const res=await fetch(RUNS_API,{headers:{Accept:'application/vnd.github+json'}});
       if(!res.ok)throw new Error('GitHub API '+res.status);
