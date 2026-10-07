@@ -7,12 +7,12 @@ import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlencode, urlparse
 
 HOST = "127.0.0.1"
 PORT = int(os.environ.get("AUDIO_REFRESH_PORT", "8787"))
 REPO = "jacquer-AI/personal-audio-deal-board"
-WORKFLOW = "refresh-market.yml"
+WORKFLOW = "refresh-market.yml"\nBOARD_URL = "https://jacquer-ai.github.io/personal-audio-deal-board/"
 ALLOWED_ORIGIN = "https://jacquer-ai.github.io"
 ALLOWED_LOGIN = os.environ.get("AUDIO_REFRESH_TAILSCALE_LOGIN", "jacquer-AI@github")
 GH = os.environ.get("AUDIO_REFRESH_GH", r"C:\Program Files\GitHub CLI\gh.exe")
@@ -102,6 +102,16 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _redirect_board(self, **params):
+        location = BOARD_URL
+        clean = {k: str(v) for k, v in params.items() if v is not None and str(v) != ""}
+        if clean:
+            location += "?" + urlencode(clean)
+        self.send_response(303)
+        self.send_header("Location", location)
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+
     def _origin_ok(self):
         origin = self._origin()
         return origin in ("", ALLOWED_ORIGIN)
@@ -156,11 +166,21 @@ class Handler(BaseHTTPRequestHandler):
         if path != "/refresh":
             self._json(404, {"ok": False, "error": "not_found"})
             return
+
+        content_type = self.headers.get("Content-Type", "").split(";", 1)[0].strip().lower()
+        form_navigation = content_type == "application/x-www-form-urlencoded"
+
         if self._origin() != ALLOWED_ORIGIN:
-            self._json(403, {"ok": False, "error": "origin_not_allowed"})
+            if form_navigation:
+                self._redirect_board(refreshError="origin_not_allowed")
+            else:
+                self._json(403, {"ok": False, "error": "origin_not_allowed"})
             return
         if not self._identity_ok():
-            self._json(401, {"ok": False, "error": "tailscale_identity_required"})
+            if form_navigation:
+                self._redirect_board(refreshError="tailscale_identity_required")
+            else:
+                self._json(401, {"ok": False, "error": "tailscale_identity_required"})
             return
 
         try:
@@ -168,27 +188,48 @@ class Handler(BaseHTTPRequestHandler):
         except ValueError:
             length = 0
         if length <= 0 or length > MAX_BODY:
-            self._json(413, {"ok": False, "error": "invalid_body_size"})
+            if form_navigation:
+                self._redirect_board(refreshError="invalid_body_size")
+            else:
+                self._json(413, {"ok": False, "error": "invalid_body_size"})
             return
+
+        raw = self.rfile.read(length).decode("utf-8", errors="replace")
         try:
-            payload = json.loads(self.rfile.read(length).decode("utf-8"))
+            if form_navigation:
+                parsed = parse_qs(raw, keep_blank_values=False, strict_parsing=True)
+                payload = {k: v[-1] for k, v in parsed.items() if v}
+            else:
+                payload = json.loads(raw)
         except Exception:
-            self._json(400, {"ok": False, "error": "invalid_json"})
+            if form_navigation:
+                self._redirect_board(refreshError="invalid_request")
+            else:
+                self._json(400, {"ok": False, "error": "invalid_json"})
             return
 
         mode = str(payload.get("mode", "")).strip()
         categories = str(payload.get("categories", "")).strip()
         if mode not in VALID_MODES or categories not in VALID_CATEGORIES:
-            self._json(400, {"ok": False, "error": "invalid_request"})
+            if form_navigation:
+                self._redirect_board(refreshError="invalid_request")
+            else:
+                self._json(400, {"ok": False, "error": "invalid_request"})
             return
 
         if not dispatch_lock.acquire(blocking=False):
-            self._json(409, {"ok": False, "error": "dispatch_busy"})
+            if form_navigation:
+                self._redirect_board(refreshError="dispatch_busy")
+            else:
+                self._json(409, {"ok": False, "error": "dispatch_busy"})
             return
         try:
             now = time.monotonic()
             if now - last_dispatch_at < COOLDOWN_SECONDS:
-                self._json(429, {"ok": False, "error": "cooldown"})
+                if form_navigation:
+                    self._redirect_board(refreshError="cooldown")
+                else:
+                    self._json(429, {"ok": False, "error": "cooldown"})
                 return
 
             try:
@@ -196,7 +237,14 @@ class Handler(BaseHTTPRequestHandler):
             except Exception:
                 current = None
             if current and current.get("status") in {"queued", "in_progress", "waiting", "pending", "requested"}:
-                self._json(409, {"ok": False, "error": "refresh_already_running", "run": current})
+                if form_navigation:
+                    self._redirect_board(
+                        refreshRun=current.get("id"),
+                        refreshQueued="1",
+                        refreshStartedAt=int(time.time() * 1000),
+                    )
+                else:
+                    self._json(409, {"ok": False, "error": "refresh_already_running", "run": current})
                 return
 
             code, out, err = run_gh(
@@ -216,9 +264,14 @@ class Handler(BaseHTTPRequestHandler):
             )
             if code != 0:
                 log.error("dispatch failed code=%s stderr=%s", code, err[:300])
-                self._json(502, {"ok": False, "error": "github_dispatch_failed"})
+                if form_navigation:
+                    self._redirect_board(refreshError="github_dispatch_failed")
+                else:
+                    self._json(502, {"ok": False, "error": "github_dispatch_failed"})
                 return
+
             last_dispatch_at = time.monotonic()
+            started_at = int(time.time() * 1000)
             log.info("dispatch queued mode=%s categories=%s", mode, categories)
 
             run = None
@@ -233,7 +286,14 @@ class Handler(BaseHTTPRequestHandler):
                     run = candidate
                     break
 
-            self._json(202, {"ok": True, "queued": True, "mode": mode, "categories": categories, "run": run})
+            if form_navigation:
+                self._redirect_board(
+                    refreshRun=(run or {}).get("id"),
+                    refreshQueued="1",
+                    refreshStartedAt=started_at,
+                )
+            else:
+                self._json(202, {"ok": True, "queued": True, "mode": mode, "categories": categories, "run": run})
         finally:
             dispatch_lock.release()
 
