@@ -175,7 +175,7 @@ if(mode!=='quick'){
       jobs.push({m,s,query,url});
     }
   }
-  const discovered=await pool(jobs,async j=>{
+  const discovered=await pool(jobs.slice(0,MAX_DISCOVERY_JOBS),async j=>{
     const p=await fetchPage(j.url);
     if(p.http<200||p.http>=400)return [];
     const links=[];const re=/href=["']([^"'#]+)["']/gi;let x;
