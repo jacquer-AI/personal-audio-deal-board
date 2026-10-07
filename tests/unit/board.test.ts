@@ -1,4 +1,4 @@
-import {describe,it,expect}from'vitest';import{b4b,discount,savings,results,group,selectCompare,buyable}from'../../src/lib/board';import type{Offer,Filters}from'../../src/types';import snapshot from '../../data/offers.json';
+import {describe,it,expect}from'vitest';import{b4b,discount,savings,results,group,selectCompare,buyable}from'../../src/lib/board';import type{Offer,Filters}from'../../src/types';import snapshot from '../fixtures/offers-baseline.json';
 const offers=snapshot.offers as Offer[];const f:Filters={search:'',category:'Wszystkie',conditions:[],region:'Wszystkie',status:'Wszystkie',liveOnly:true,history:false,sort:'b4b'};
 const az=offers.find(o=>o.model.includes('AZ100')&&o.condition==='NEW')!;
 describe('price semantics',()=>{
