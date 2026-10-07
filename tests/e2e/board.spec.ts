@@ -26,7 +26,7 @@ test('refresh center modes and safe workflow fallback',async({page})=>{
   await dialog.getByRole('button',{name:'FULL'}).click();
   await expect(dialog.getByRole('button',{name:'FULL'})).toHaveAttribute('aria-pressed','true');
   await dialog.getByLabel('Kategoria refreshu').selectOption('TWS');
-  await expect(dialog.getByText(/FULL \+ nowe oferty/)).toBeVisible();
+  await expect(dialog.getByText(/nowe oferty znanych modeli/)).toBeVisible();
   await expect(dialog.getByRole('link',{name:/Run workflow/})).toHaveAttribute('href',/actions\/workflows\/pages\.yml/);
 });
 test('refresh center reflows on narrow mobile',async({page})=>{
