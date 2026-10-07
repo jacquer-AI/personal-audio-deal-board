@@ -31,18 +31,15 @@ test('refresh center reflows on narrow mobile',async({page})=>{
 async function advanceUntil(page:import('@playwright/test').Page,state:import('@playwright/test').Locator,text:string){
   await expect.poll(async()=>{await page.clock.runFor(4100);return (await state.textContent())||''},{timeout:20000,intervals:[150]}).toContain(text);
 }
-const TOKEN='github_pat_TESTTOKEN_not_real_0123456789';
-async function connect(page:import('@playwright/test').Page){
-  await page.getByRole('button',{name:'↻ Odśwież'}).click();
-  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
-  await dialog.getByLabel('Token GitHub').fill(TOKEN);
-  await dialog.getByRole('button',{name:'Zapisz'}).click();
-  return dialog;
-}
-test('refresh center modes, scope and manual fallback',async({page})=>{
+async function openRefresh(page:import('@playwright/test').Page){
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
   const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
   await expect(dialog).toBeVisible();
+  await expect(dialog.getByTestId('dispatcher-status')).toContainText('ZEN połączony');
+  return dialog;
+}
+test('refresh center modes scope and one-click readiness',async({page})=>{
+  const dialog=await openRefresh(page);
   for(const m of ['QUICK','FULL','DEEP']){
     await dialog.getByRole('button',{name:m,exact:true}).click();
     await expect(dialog.getByRole('button',{name:m,exact:true})).toHaveAttribute('aria-pressed','true');
@@ -50,8 +47,8 @@ test('refresh center modes, scope and manual fallback',async({page})=>{
   await expect(dialog.getByText(/nieadjudykowane challengery/)).toBeVisible();
   await dialog.getByLabel('Kategoria refreshu').selectOption('Głośniki BT');
   await expect(dialog.getByLabel('Kategoria refreshu')).toHaveValue('Głośniki BT');
-  await expect(dialog.getByRole('button',{name:/URUCHOM/})).toBeDisabled();
-  await expect(dialog.getByRole('link',{name:/uruchom ręcznie/})).toHaveAttribute('href',/actions\/workflows\/refresh-market\.yml/);
+  await expect(dialog.getByRole('button',{name:/URUCHOM DEEP/})).toBeEnabled();
+  await expect(dialog.getByText(/bez tokena w przeglądarce/)).toBeVisible();
 });
 test('refresh center is keyboard usable',async({page})=>{
   await page.getByRole('button',{name:'↻ Odśwież'}).focus();
@@ -63,32 +60,26 @@ test('refresh center is keyboard usable',async({page})=>{
   await page.keyboard.press('Escape');
   await expect(dialog).toBeHidden();
 });
-test('token stays in sessionStorage only and is never rendered',async({page})=>{
-  const dialog=await connect(page);
-  await expect(dialog.getByLabel('Token GitHub')).toHaveCount(0);
+test('refresh uses no browser credential input',async({page})=>{
+  const dialog=await openRefresh(page);
   await expect(dialog.getByRole('button',{name:/URUCHOM QUICK/})).toBeEnabled();
-  expect(await page.content()).not.toContain(TOKEN);
-  expect(await page.evaluate(()=>Object.values(sessionStorage).length)).toBe(1);
-  expect(await page.evaluate(()=>JSON.stringify(localStorage)+document.cookie+location.href)).not.toContain(TOKEN);
-  await dialog.getByRole('button',{name:'Rozłącz'}).click();
   expect(await page.evaluate(()=>sessionStorage.length)).toBe(0);
-  await expect(dialog.getByLabel('Token GitHub')).toBeVisible();
 });
-test('one-click dispatch shows queued, running, deploying, delta and reloads data',async({page})=>{
+test('one-click private dispatcher shows queued running deploying delta and reloads data',async({page})=>{
   const errors:string[]=[];page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});page.on('pageerror',e=>errors.push(e.message));
   const gh=await mockGitHub(page);
   await page.reload();
   await page.clock.install();
-  const dialog=await connect(page);
+  const dialog=await openRefresh(page);
   await dialog.getByRole('button',{name:'FULL',exact:true}).click();
   await dialog.getByLabel('Kategoria refreshu').selectOption('TWS');
   await dialog.getByRole('button',{name:'URUCHOM FULL'}).click();
-  await expect.poll(()=>gh.dispatches.length).toBe(1);
-  expect(gh.dispatches[0]).toMatchObject({body:{ref:'main',inputs:{mode:'full',categories:'TWS'}},authorization:'Bearer '+TOKEN});
+  await expect.poll(()=>gh.dispatcherRequests.length).toBe(1);
+  expect(gh.dispatcherRequests[0]).toMatchObject({body:{mode:'full',categories:'TWS'}});
   expect(gh.nonGithubAuthRequests).toEqual([]);
   const state=dialog.getByTestId('refresh-state');
   await expect(state).toContainText('QUEUED');
-  await advanceUntil(page,state,'RUNNING · REFRESH');
+  await advanceUntil(page,state,'RUNNING');
   await advanceUntil(page,state,'DEPLOYING');
   await advanceUntil(page,state,'OK');
   const list=dialog.getByTestId('delta-list');
@@ -97,7 +88,6 @@ test('one-click dispatch shows queued, running, deploying, delta and reloads dat
   await expect(list).toContainText('Bose SoundLink Max NEW OFFER · 750 zł');
   await expect(dialog.getByTestId('delta')).toContainText('nowe 1');
   await expect(page.getByTestId('freshness')).toContainText('· OK');
-  expect(await page.content()).not.toContain(TOKEN);
   const nav=page.waitForEvent('load');
   await dialog.getByRole('button',{name:'Wczytaj najnowsze dane'}).click();
   await nav;
@@ -107,31 +97,33 @@ test('no-op refresh reports DELTA=NONE without waiting for a deploy',async({page
   const gh=await mockGitHub(page,{noop:true});
   await page.reload();
   await page.clock.install();
-  const dialog=await connect(page);
+  const dialog=await openRefresh(page);
   await dialog.getByRole('button',{name:'URUCHOM QUICK'}).click();
-  await expect.poll(()=>gh.dispatches.length).toBe(1);
+  await expect.poll(()=>gh.dispatcherRequests.length).toBe(1);
   await advanceUntil(page,dialog.getByTestId('refresh-state'),'OK');
   await expect(dialog.getByTestId('delta-none')).toContainText('DELTA=NONE');
   expect(gh.pagesPolls()).toBe(0);
 });
-test('rejected token is forgotten and the error is shown',async({page})=>{
-  await mockGitHub(page,{dispatchStatus:401});
+test('dispatcher offline gives concise Tailscale fallback',async({page})=>{
+  await mockGitHub(page,{dispatcherOffline:true});
   await page.reload();
-  const dialog=await connect(page);
-  await dialog.getByRole('button',{name:'URUCHOM QUICK'}).click();
-  await expect(dialog.getByRole('alert')).toContainText('Token odrzucony');
-  await expect(dialog.getByLabel('Token GitHub')).toBeVisible();
-  expect(await page.evaluate(()=>sessionStorage.length)).toBe(0);
+  await page.getByRole('button',{name:'↻ Odśwież'}).click();
+  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
+  await expect(dialog.getByTestId('dispatcher-status')).toContainText('ZEN niedostępny');
+  await expect(dialog.getByRole('button',{name:/URUCHOM QUICK/})).toBeDisabled();
+  await expect(dialog.getByText(/połącz Tailscale/i)).toBeVisible();
+  await expect(dialog.getByRole('link',{name:/Awaryjnie: GitHub/})).toHaveAttribute('href',/actions\/workflows\/refresh-market\.yml/);
 });
 for(const width of [390,320]){
   test('refresh center has no horizontal overflow at '+width+' while running',async({page})=>{
-    await mockGitHub(page);
+    const gh=await mockGitHub(page);
     await page.reload();
     await page.setViewportSize({width,height:720});
-    const dialog=await connect(page);
+    const dialog=await openRefresh(page);
     const fits=()=>page.evaluate(()=>document.documentElement.scrollWidth===document.documentElement.clientWidth&&document.querySelector('dialog')!.scrollWidth<=document.querySelector('dialog')!.clientWidth);
     expect(await fits()).toBe(true);
     await dialog.getByRole('button',{name:'URUCHOM QUICK'}).click();
+    await expect.poll(()=>gh.dispatcherRequests.length).toBe(1);
     await expect(dialog.getByTestId('refresh-state')).toContainText(/QUEUED|RUNNING/);
     expect(await fits()).toBe(true);
   });
