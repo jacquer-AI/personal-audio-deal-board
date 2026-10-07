@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 #!/usr/bin/env node
+/* eslint-disable @typescript-eslint/no-require-imports */
 'use strict';
 
 const http = require('http');
