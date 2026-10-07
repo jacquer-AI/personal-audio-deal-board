@@ -1,32 +1,164 @@
-import {useState,useEffect,useRef} from 'react';
+import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
-import type {Offer,Filters,Product} from './types';
-import {results,group,b4b,discount,savings,decision,selectCompare,buyable} from './lib/board';
-const offers=snapshot.offers as Offer[];
-const categories=['Wszystkie','IEM','TWS','Closed','Głośniki BT'];
-const defaults:Filters={search:'',category:'Wszystkie',conditions:[],region:'Wszystkie',status:'Wszystkie',liveOnly:true,history:false,sort:'b4b'};
-function read(){try{return {...defaults,...JSON.parse(localStorage.getItem('audio-board')||'{}')}}catch{return defaults}}
-const money=(n:number|null)=>n===null?'Brak danych':new Intl.NumberFormat('pl-PL',{style:'currency',currency:'PLN',maximumFractionDigits:2}).format(n);
-const pct=(n:number|null)=>n===null?'Brak benchmarku':(n>0?'+':'')+(n*100).toFixed(1)+'%';
-function Source({offer,primary=false}:{offer:Offer;primary?:boolean}){return <div className={'source '+(offer.status==='HISTORICAL'?'historical':'')} data-testid="source-row"><b>{offer.status==='HISTORICAL'?'HISTORICAL':primary?'PRIMARY':offer.role==='OFFER'?offer.condition==='NEW'?'NEW COMP':'USED COMP':offer.role}</b><strong>{money(offer.price)}</strong><span>{offer.seller}<small>{offer.country} / {offer.condition}</small></span><span className="status">{offer.status}</span><a href={offer.url} target="_blank" rel="noopener noreferrer" aria-label={'Otwórz źródło: '+offer.model+' · '+offer.seller+' · '+offer.condition}>Otwórz ↗</a><small className="source-note">{offer.note}<span> · Zapis SSOT: {offer.checked} · Cena oryginalna: {offer.original}</span></small></div>}
-function Prices({o}:{o:Offer}){return <><div className="prices"><div><span>RYNEK NOWE</span><strong>{money(o.newMarket)}</strong></div><div><span>RYNEK TEGO SAMEGO STANU · {o.condition}</span><strong>{money(o.sameMarket)}</strong></div><div className="offer-price"><span>{buyable(o)?'NAJLEPSZA KONKRETNA OFERTA':'ŹRÓDŁO WARUNKOWE / BENCHMARK'}</span><strong>{money(o.price)}</strong><small>{o.seller} · {o.country} · {o.condition}</small></div></div><div className="metrics"><span>Taniej vs ten sam stan <b>{pct(discount(o))}</b></span><span>Taniej vs nowe <b>{pct(savings(o))}</b></span><span>MSRP / RRP <b>{money(o.rrp)}</b></span></div></>}
-export default function App(){
-const [f,setF]=useState<Filters>(read);const [density,setDensity]=useState(()=>{try{return localStorage.getItem('audio-density')||'Comfortable'}catch{return 'Comfortable'}});
-const [selected,setSelected]=useState<string[]>([]);const [message,setMessage]=useState('');const [comparison,setComparison]=useState(false);const dialog=useRef<HTMLDialogElement>(null);const compareButton=useRef<HTMLButtonElement>(null);
-useEffect(()=>{try{localStorage.setItem('audio-board',JSON.stringify({category:f.category,sort:f.sort,liveOnly:f.liveOnly}));localStorage.setItem('audio-density',density)}catch{/* Storage can be unavailable in private browsing. */}},[f,density]);
-useEffect(()=>{if(comparison)dialog.current?.showModal();else dialog.current?.close()},[comparison]);
-const change=<K extends keyof Filters>(key:K,value:Filters[K])=>setF(x=>({...x,[key]:value}));
-const products=results(offers,f); const all=group(offers);const compare=all.filter(p=>selected.includes(p.model));
-function toggle(model:string){const result=selectCompare(selected,model);setSelected(result.ids);setMessage(result.error)}
-function product(p:Product,i:number){return <article key={p.model} className="product" data-testid="product"><header className="product-header"><span className="rank">#{String(i+1).padStart(2,'0')}</span><div className="identity"><small>{p.best.category} · Jakość <b>{p.best.quality.replace('-','−')}</b> · Fit {p.best.fit??'—'}/5</small><h2>{p.model}</h2><span className="decision">{decision(p.best)}</span></div><div className="score"><small>QUALITY-ADJUSTED B4B</small><strong>{b4b(p.best)?.toFixed(1)??'—'}</strong><span>{p.best.status}</span></div><label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={()=>toggle(p.model)}/> Porównaj <span className="sr-only">{p.model}</span></label></header><Prices o={p.best}/><h3>OFERTY I ŹRÓDŁA RYNKU ({p.offers.length})</h3>{p.offers.map(o=><Source key={o.id} offer={o} primary={o.id===p.best.id}/>)}</article>}
-return <div className={'app '+density.toLowerCase()}><a className="skip" href="#results">Przejdź do wyników</a><header className="masthead"><div><p className="eyebrow">OSOBISTY WARSZTAT DECYZYJNY / 01</p><h1>PERSONAL AUDIO <span>— Deal Board</span></h1><p>Rynek w PLN · jakość oddzielona od ceny · NEW / USED / B-stock porównywane uczciwie</p></div><div className="snapshot"><b>SNAPSHOT / {snapshot.snapshot}</b><a href={snapshot.source} target="_blank" rel="noopener noreferrer" aria-label="Otwórz Google Sheets — źródło danych">Google Sheets SSOT ↗</a><small>Stan według arkusza, nie monitoring na żywo</small></div></header>
-<section className="decision-strip" aria-label="Szybkie decyzje">{['Technics EAH-AZ100','Dan Clark Audio Noire X','Bose SoundLink Max'].map(model=>{const p=all.find(x=>x.model===model)!;return <button key={model} onClick={()=>{change('search',model);change('category','Wszystkie')}}><small>{decision(p.best)}</small><b>{model}</b><span>{money(p.best.price)} · {p.best.condition}</span></button>})}<div><small>PUŁAPKA CENOWA</small><b>AZ100 USED · 610 zł</b><span>13% powyżej rynku USED (540 zł)</span></div></section>
-<section className="toolbar" aria-label="Filtry i sortowanie"><div className="toolbar-top"><label className="search">Szukaj modelu, sprzedawcy, kraju lub źródła<input type="search" value={f.search} onChange={e=>change('search',e.target.value)} placeholder="np. Technics, OLX, Niemcy…"/></label><label>Sortuj<select aria-label="Sortuj" value={f.sort} onChange={e=>change('sort',e.target.value)}><option value="b4b">Quality-adjusted B4B ↓</option><option value="discount">Taniej vs ten sam stan ↓</option><option value="savings">Oszczędność vs NEW ↓</option><option value="price">Cena oferty ↑</option><option value="quality">Jakość ↓</option><option value="fit">Fit ↓</option></select></label><label>Gęstość<select aria-label="Gęstość" value={density} onChange={e=>setDensity(e.target.value)}><option>Comfortable</option><option>Compact</option></select></label></div>
-<div className="tabs" aria-label="Kategoria">{categories.map(c=><button key={c} aria-pressed={f.category===c} onClick={()=>change('category',c)}>{c}</button>)}</div>
-<details className="filter-details" open><summary>Stan, region i dostępność</summary><div className="filter-grid"><fieldset><legend>Stan (wielokrotny wybór)</legend>{['NEW','USED','B-STOCK','OPEN-BOX','HISTORICAL'].map(c=><label key={c}><input type="checkbox" checked={f.conditions.includes(c)} onChange={()=>{change('conditions',f.conditions.includes(c)?f.conditions.filter(x=>x!==c):[...f.conditions,c]);if(c==='HISTORICAL'){change('history',true);change('liveOnly',false)}}}/>{c}</label>)}</fieldset><label>Region<select aria-label="Region" value={f.region} onChange={e=>change('region',e.target.value)}>{['Wszystkie','Polska','UE','non-EU / TLC'].map(r=><option key={r}>{r}</option>)}</select></label><label>Status<select aria-label="Status" value={f.status} onChange={e=>{change('status',e.target.value);if(e.target.value==='HISTORICAL'){change('history',true);change('liveOnly',false)}}}>{['Wszystkie','LIVE VERIFIED','LIVE USED','LEAD ONLY','HISTORICAL','NON-EU / TLC','STALE / REVERIFY'].map(s=><option key={s}>{s}</option>)}</select></label></div></details>
-<div className="toggle-line"><label><input type="checkbox" checked={f.liveOnly} onChange={e=>{change('liveOnly',e.target.checked);if(e.target.checked)change('history',false)}}/>Tylko kupowalne teraz</label><label><input type="checkbox" checked={f.history} onChange={e=>{change('history',e.target.checked);if(e.target.checked)change('liveOnly',false)}}/>Pokaż historyczne benchmarki</label><button className="reset" onClick={()=>setF(defaults)}>Wyczyść filtry</button></div></section>
-<main id="results" tabIndex={-1}><div className="results-heading"><p><b>{products.length}</b> modeli <span> / {products.reduce((n,p)=>n+p.offers.length,0)} źródeł</span></p><small>Jakość × rynek tego samego stanu / oferta</small></div><p role="status" className="message">{message}</p>{products.length?products.map(product):<div className="empty"><h2>Brak wyników</h2><p>Zmień filtry lub wyczyść wyszukiwanie.</p><button onClick={()=>setF(defaults)}>Pokaż wszystkie</button></div>}</main>
-<footer><details><summary>Metoda i integralność danych</summary><p>B4B = QualityWeight × (rynek tego samego stanu / oferta). S 120 · S− 115 · A+ 110 · A 100 · A− 90 · B+ 80 · B 70 · B− 60 · C 50 · D 35 · E 20. Brak benchmarku oznacza brak wyniku B4B. MSRP jest wyłącznie odniesieniem.</p><p>NEW porównujemy z NEW, USED z USED, B-stock z B-stock. Lead, import bez TLC i historia nie uczestniczą w rankingu kupowalnych ofert. Fit: skala 1–5 z SSOT. Rynek PLN ma pierwszeństwo przed starszymi zakładkami. DUNU LIVE/RECENT STORE pozostaje LEAD ONLY do ponownej weryfikacji.</p><p>FX snapshot: EUR/PLN 4.37111 · GBP/PLN 5.15290 · USD/PLN 3.88344 · {snapshot.fx.timestamp}. Nie pobieramy nowych kursów w przeglądarce.</p></details><span>PERSONAL AUDIO / Źródło → analiza → decyzja</span></footer>
-{selected.length>0&&<aside className="compare-dock" aria-label="Wybrane modele"><div><b>Porównanie {selected.length}/3</b><span>{selected.join(' · ')}</span></div><button ref={compareButton} onClick={()=>setComparison(true)}>Otwórz porównanie</button><button onClick={()=>{setSelected([]);setMessage('')}}>Wyczyść</button></aside>}
-<dialog ref={dialog} onCancel={()=>setComparison(false)} onClose={()=>{setComparison(false);compareButton.current?.focus()}} aria-labelledby="compare-title"><header className="dialog-header"><h2 id="compare-title">Porównanie modeli</h2><button onClick={()=>setComparison(false)} autoFocus>Zamknij</button></header><div className="comparison-grid">{compare.map(p=><section key={p.model}><h3>{p.model}</h3><p>{p.best.category} · Jakość {p.best.quality} · Fit {p.best.fit??'—'}/5</p><p><b>B4B {b4b(p.best)?.toFixed(1)??'—'}</b> · {decision(p.best)}</p><Prices o={p.best}/><p>Stan: {p.best.condition} · Region: {p.best.region}</p><h4>OFERTY I ŹRÓDŁA RYNKU</h4>{p.offers.filter(o=>o.status!=='HISTORICAL'||f.history).map(o=><Source key={o.id} offer={o}/>)}</section>)}</div></dialog></div>}
+import type {Offer, Filters, Product, Status} from './types';
+import {results, group, b4b, discount, savings, decision, selectCompare, buyable} from './lib/board';
+
+const offers = snapshot.offers as Offer[];
+const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Głośniki BT'];
+const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:true, history:false, sort:'b4b'};
+function read() {
+  try { return {...defaults, ...JSON.parse(localStorage.getItem('audio-board') || '{}')}; }
+  catch { return defaults; }
+}
+function readDensity() {
+  try { return localStorage.getItem('audio-density') === 'Comfortable' ? 'Comfortable' : 'Compact'; }
+  catch { return 'Compact'; }
+}
+const money = (n: number | null) => n === null ? '—' : new Intl.NumberFormat('pl-PL', {
+  style:'currency', currency:'PLN', minimumFractionDigits:0, maximumFractionDigits:2
+}).format(n);
+// Price position: cheaper offers use a minus sign.
+const pct = (n: number | null) => n === null ? '—' : (n === 0 ? '' : n > 0 ? '−' : '+') + Math.abs(n * 100).toFixed(1) + '%';
+const statusText: Record<Status, string> = {
+  'LIVE VERIFIED':'LIVE', 'LIVE USED':'LIVE USED', 'LEAD ONLY':'LEAD', 'HISTORICAL':'HISTORIA',
+  'NON-EU / TLC':'TLC', 'STALE / REVERIFY':'SPRAWDŹ', 'MARKET COMP':'COMP', 'OFFICIAL':'OFFICIAL'
+};
+function Source({offer, primary = false}: {offer: Offer; primary?: boolean}) {
+  const role = !buyable(offer) ? statusText[offer.status] : primary ? 'LIVE' : offer.condition === 'NEW' ? 'NEW COMP' : 'USED COMP';
+  return <div className={'source ' + (offer.status === 'HISTORICAL' ? 'historical' : '')} data-testid="source-row">
+    <span className="source-role" title={offer.status} aria-label={offer.status}>{role}</span><strong>{money(offer.price)}</strong>
+    <span className="source-seller">{offer.seller}<small>{offer.country}</small></span><span>{offer.condition}</span>
+    <a href={offer.url} target="_blank" rel="noopener noreferrer" aria-label={'Otwórz źródło: ' + offer.model + ' · ' + offer.seller + ' · ' + offer.condition}>↗</a>
+  </div>;
+}
+function Price({offer}: {offer: Offer}) {
+  return <div className="price-position">
+    <div className="offer-price"><span className="sr-only">Oferta</span><strong>{money(offer.price)}</strong></div>
+    <div className="market"><span>Rynek stanu <b>{money(offer.sameMarket)}</b></span><span>Nowe <b>{money(offer.newMarket)}</b></span></div>
+    <div className="metrics"><span><b>{pct(discount(offer))}</b> vs stan</span><span><b>{pct(savings(offer))}</b> vs nowe</span></div>
+  </div>;
+}
+function OfferDetails({product}: {product: Product}) {
+  return <details className="offer-details">
+    <summary>Więcej ofert ({product.offers.length})</summary>
+    <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
+    <details className="notes"><summary>Uwagi</summary>
+      {product.offers.map(o => <p key={o.id}><b>{o.seller} · {o.condition}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
+      <p>MSRP / RRP: {money(product.best.rrp)} · Fit: {product.best.fit ?? '—'}/5</p>
+    </details>
+  </details>;
+}
+export default function App() {
+  const [f, setF] = useState<Filters>(read);
+  const [density, setDensity] = useState(readDensity);
+  const [selected, setSelected] = useState<string[]>([]);
+  const [message, setMessage] = useState('');
+  const [comparison, setComparison] = useState(false);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const compareButton = useRef<HTMLButtonElement>(null);
+  const filters = useRef<HTMLDetailsElement>(null);
+  useEffect(() => {
+    try {
+      localStorage.setItem('audio-board', JSON.stringify({category:f.category, sort:f.sort, liveOnly:f.liveOnly}));
+      localStorage.setItem('audio-density', density);
+    } catch { /* Storage can be unavailable in private browsing. */ }
+  }, [f, density]);
+  useEffect(() => {
+    if (comparison) dialog.current?.showModal(); else dialog.current?.close();
+  }, [comparison]);
+  useEffect(() => {
+    const close = (e: PointerEvent) => {
+      if (filters.current?.open && !filters.current.contains(e.target as Node)) filters.current.open = false;
+    };
+    document.addEventListener('pointerdown', close);
+    return () => document.removeEventListener('pointerdown', close);
+  }, []);
+  const change = <K extends keyof Filters>(key: K, value: Filters[K]) => setF(x => ({...x, [key]:value}));
+  const products = results(offers, f);
+  const compare = group(offers).filter(p => selected.includes(p.model));
+  const filterCount = f.conditions.length + Number(f.status !== 'Wszystkie') + Number(f.history) + Number(!f.liveOnly);
+  function toggle(model: string) {
+    const next = selectCompare(selected, model); setSelected(next.ids); setMessage(next.error);
+  }
+  function product(p: Product, i: number) {
+    const o = p.best;
+    return <article key={p.model} className="product" data-testid="product">
+      <header className="product-header">
+        <span className="rank">#{i + 1}</span><h2>{p.model}</h2>
+        <span className="product-meta">{o.category} · <b aria-label={'Jakość ' + o.quality}>{o.quality.replace('-', '−')}</b></span>
+        <span className="score" title="QualityWeight × rynek stanu / oferta">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
+        <label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={() => toggle(p.model)}/>Porównaj<span className="sr-only"> {p.model}</span></label>
+      </header>
+      <p className="decision-line"><span>{o.condition}</span><span title={o.status} aria-label={o.status}>{statusText[o.status]}</span><strong>{decision(o)}</strong></p>
+      <div className="record-body"><Price offer={o}/><div className="seller-action">
+        <p>{o.seller}<span> · {o.country}</span></p>
+        <a className="primary-link" data-testid="primary-link" href={o.url} target="_blank" rel="noopener noreferrer"
+          aria-label={(buyable(o) ? 'Otwórz ofertę: ' : 'Otwórz źródło: ') + o.model + ' · ' + o.seller + ' · ' + o.condition}>
+          {buyable(o) ? 'Otwórz ofertę ↗' : 'Otwórz źródło ↗'}
+        </a>
+      </div></div><OfferDetails product={p}/>
+    </article>;
+  }
+  return <div className={'app ' + density.toLowerCase()}>
+    <a className="skip" href="#results">Przejdź do wyników</a>
+    <header className="masthead"><div><h1>PERSONAL AUDIO <span>— Deal Board</span></h1>
+      <p>PLN · Polska/UE-first · NEW/USED/B-stock porównywane do właściwego rynku</p></div>
+      <a className="ssot-link" href={snapshot.source} target="_blank" rel="noopener noreferrer" aria-label="Otwórz Google Sheets — źródło danych">Arkusz ↗</a>
+    </header>
+    <section className="toolbar" aria-label="Filtry i sortowanie">
+      <input className="search" aria-label="Szukaj modelu, sprzedawcy, kraju lub źródła" type="search" value={f.search} onChange={e => change('search', e.target.value)} placeholder="Szukaj modelu, sprzedawcy…"/>
+      <div className="tabs" role="group" aria-label="Kategoria">{categories.map(c =>
+        <button key={c} aria-pressed={f.category === c} onClick={() => change('category', c)}>{c}</button>)}</div>
+      <select className="region-control" aria-label="Region" value={f.region} onChange={e => change('region', e.target.value)}>
+        <option value="Wszystkie">Region: wszystkie</option><option>Polska</option><option>UE</option><option>non-EU / TLC</option>
+      </select>
+      <select className="sort-control" aria-label="Sortuj" value={f.sort} onChange={e => change('sort', e.target.value)}>
+        <option value="b4b">B4B ↓</option><option value="discount">vs stan ↓</option><option value="savings">vs nowe ↓</option><option value="price">Cena ↑</option><option value="quality">Jakość ↓</option><option value="fit">Fit ↓</option>
+      </select>
+      <details className="more-filters" ref={filters} onKeyDown={e => {
+        if (e.key === 'Escape') { e.currentTarget.open = false; e.currentTarget.querySelector('summary')?.focus(); }
+      }}>
+        <summary aria-label="Filtry">Filtry{filterCount > 0 && <span> · {filterCount}</span>}</summary>
+        <div className="filter-panel">
+          <fieldset><legend className="sr-only">Stan</legend>{['NEW', 'USED', 'B-STOCK', 'OPEN-BOX', 'HISTORICAL'].map(c => <label key={c}>
+            <input type="checkbox" checked={f.conditions.includes(c)} onChange={() => {
+              change('conditions', f.conditions.includes(c) ? f.conditions.filter(x => x !== c) : [...f.conditions, c]);
+              if (c === 'HISTORICAL') { change('history', true); change('liveOnly', false); }
+            }}/>{c === 'HISTORICAL' ? 'Historyczne' : c}</label>)}
+          </fieldset>
+          <label className="status-control">Status<select aria-label="Status" value={f.status} onChange={e => {
+            change('status', e.target.value); if (e.target.value === 'HISTORICAL') { change('history', true); change('liveOnly', false); }
+          }}>{['Wszystkie', 'LIVE VERIFIED', 'LIVE USED', 'LEAD ONLY', 'HISTORICAL', 'NON-EU / TLC', 'STALE / REVERIFY'].map(s => <option key={s}>{s}</option>)}</select></label>
+          <div className="filter-options">
+            <label><input type="checkbox" checked={f.liveOnly} onChange={e => {change('liveOnly', e.target.checked); if (e.target.checked) change('history', false);}}/>Live</label>
+            <label><input type="checkbox" checked={f.history} onChange={e => {change('history', e.target.checked); if (e.target.checked) change('liveOnly', false);}}/>Historia</label>
+            <label>Widok<select aria-label="Gęstość" value={density} onChange={e => setDensity(e.target.value)}><option>Compact</option><option>Comfortable</option></select></label>
+          </div><button className="reset" onClick={() => setF(defaults)}>Wyczyść filtry</button>
+        </div>
+      </details>
+    </section>
+    <main id="results" tabIndex={-1}>
+      <div className="results-heading"><span><b>{products.length}</b> modeli</span><small>Stan arkusza: {snapshot.snapshot}</small></div>
+      <p role="status" className="message">{message}</p>
+      {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników</h2><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
+    </main>
+    <footer><details className="methodology"><summary>Jak liczymy ceny i B4B?</summary>
+      <p>NEW porównujemy z NEW, USED z USED, B-STOCK z B-STOCK. Rynek stanu i oszczędność względem nowych to osobne punkty odniesienia. Minus oznacza ofertę tańszą od wskazanego rynku; plus — droższą.</p>
+      <p>B4B = QualityWeight × (rynek tego samego stanu / oferta). S 120 · S− 115 · A+ 110 · A 100 · A− 90 · B+ 80 · B 70 · B− 60 · C 50 · D 35 · E 20. Brak benchmarku oznacza brak B4B. MSRP jest wyłącznie odniesieniem.</p>
+      <p>Lead, import bez TLC i historia nie uczestniczą w rankingu Live. Fit: 1–5 z SSOT. Rynek PLN ma pierwszeństwo przed starszymi zakładkami. DUNU LIVE/RECENT STORE pozostaje LEAD ONLY do ponownej weryfikacji.</p>
+      <p>Ceny i dostępność według arkusza: {snapshot.snapshot}, bez monitoringu na żywo. FX: EUR/PLN 4.37111 · GBP/PLN 5.15290 · USD/PLN 3.88344 · {snapshot.fx.timestamp}.</p>
+    </details></footer>
+    {selected.length > 0 && <aside className="compare-dock" aria-label="Wybrane modele"><div><b>Porównanie {selected.length}/3</b><span>{selected.join(' · ')}</span></div>
+      <button ref={compareButton} onClick={() => setComparison(true)}>Otwórz porównanie</button><button onClick={() => {setSelected([]); setMessage('');}}>Wyczyść</button>
+    </aside>}
+    <dialog ref={dialog} onCancel={() => setComparison(false)} onClose={() => {setComparison(false); compareButton.current?.focus();}} aria-labelledby="compare-title">
+      <header className="dialog-header"><h2 id="compare-title">Porównanie modeli</h2><button onClick={() => setComparison(false)} autoFocus>Zamknij</button></header>
+      <div className="comparison-grid">{compare.map(p => <section key={p.model}>
+        <h3>{p.model}</h3><p>{p.best.category} · {p.best.quality} · Fit {p.best.fit ?? '—'}/5</p><p>B4B <b>{b4b(p.best)?.toFixed(1) ?? '—'}</b> · {decision(p.best)}</p>
+        <Price offer={p.best}/><p>{p.best.condition} · {p.best.region}</p>
+        {p.offers.filter(o => o.status !== 'HISTORICAL' || f.history).map(o => <Source key={o.id} offer={o} primary={o.id === p.best.id}/>)}
+      </section>)}</div>
+    </dialog>
+  </div>;
+}
 

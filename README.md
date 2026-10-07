@@ -50,8 +50,8 @@ Unknown import landed cost excludes current-buy ranking. Historical records have
 Additional Live Deals sources are included only when they do not override newer prices.
 New supplementary models without a valid current-market benchmark show no B4B.
 
-Live-only limits ranking eligibility. Source rows stay visible under matching models, including
-leads and imports with explicit status, so source evidence is not concealed. History is hidden
+Live-only limits ranking eligibility. Primary links stay visible in every record. Secondary sources,
+including leads and imports with explicit status, expand under Więcej ofert. History is hidden
 unless explicitly enabled. MSRP, new market, same-condition market and concrete price are separate.
 
 ## Source link checks
@@ -77,4 +77,9 @@ The automated 200%/400% reflow check uses equivalent CSS viewport widths.
 An additional Chromium CSS zoom check verifies 200% at 1440/1024/390/320; native browser chrome zoom is not available in the in-app browser.
 Automated axe is supplemented by keyboard focus/skip-link/dialog and visual inspection.
 No backend, auth, trackers, runtime FX service, analytics or commercial hosting dependency.
+
+Fresh sessions default to Compact; a saved Comfortable preference is preserved. Secondary
+filters, notes and methodology start closed. The desktop E2E budget checks at least 40% less
+space before the first result, a toolbar under 140 px, three complete records above the fold,
+and a visible primary action. scripts/capture-layout.mjs captures all four acceptance viewports.
 

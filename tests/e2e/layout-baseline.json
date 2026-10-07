@@ -1,0 +1,158 @@
+{
+  "url": "https://jacquer-ai.github.io/personal-audio-deal-board/",
+  "checked": "2026-10-07T10:09:31.635Z",
+  "metrics": [
+    {
+      "width": 1440,
+      "height": 900,
+      "toolbarHeight": 262.5,
+      "firstResultY": 553.296875,
+      "firstRecordHeight": 448.34375,
+      "fullRecords": 0,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "density": "app comfortable",
+      "records": [
+        {
+          "y": 553.296875,
+          "height": 448.34375,
+          "bottom": 1001.640625
+        },
+        {
+          "y": 1001.640625,
+          "height": 448.34375,
+          "bottom": 1449.984375
+        },
+        {
+          "y": 1449.984375,
+          "height": 521.84375,
+          "bottom": 1971.828125
+        },
+        {
+          "y": 1971.828125,
+          "height": 595.34375,
+          "bottom": 2567.171875
+        },
+        {
+          "y": 2567.171875,
+          "height": 448.34375,
+          "bottom": 3015.515625
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "toolbarHeight": 281.5,
+      "firstResultY": 566.296875,
+      "firstRecordHeight": 448.34375,
+      "fullRecords": 0,
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "density": "app comfortable",
+      "records": [
+        {
+          "y": 566.296875,
+          "height": 448.34375,
+          "bottom": 1014.640625
+        },
+        {
+          "y": 1014.640625,
+          "height": 448.34375,
+          "bottom": 1462.984375
+        },
+        {
+          "y": 1462.984375,
+          "height": 521.84375,
+          "bottom": 1984.828125
+        },
+        {
+          "y": 1984.828125,
+          "height": 595.34375,
+          "bottom": 2580.171875
+        },
+        {
+          "y": 2580.171875,
+          "height": 448.34375,
+          "bottom": 3028.515625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "toolbarHeight": 479,
+      "firstResultY": 953,
+      "firstRecordHeight": 783,
+      "fullRecords": 0,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "density": "app comfortable",
+      "records": [
+        {
+          "y": 953,
+          "height": 783,
+          "bottom": 1736
+        },
+        {
+          "y": 1736,
+          "height": 798,
+          "bottom": 2534
+        },
+        {
+          "y": 2534,
+          "height": 972,
+          "bottom": 3506
+        },
+        {
+          "y": 3506,
+          "height": 1152,
+          "bottom": 4658
+        },
+        {
+          "y": 4658,
+          "height": 798,
+          "bottom": 5456
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 720,
+      "toolbarHeight": 518,
+      "firstResultY": 1013,
+      "firstRecordHeight": 871.5,
+      "fullRecords": 0,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "density": "app comfortable",
+      "records": [
+        {
+          "y": 1013,
+          "height": 871.5,
+          "bottom": 1884.5
+        },
+        {
+          "y": 1884.5,
+          "height": 897.5,
+          "bottom": 2782
+        },
+        {
+          "y": 2782,
+          "height": 1059.5,
+          "bottom": 3841.5
+        },
+        {
+          "y": 3841.5,
+          "height": 1236.5,
+          "bottom": 5078
+        },
+        {
+          "y": 5078,
+          "height": 882.5,
+          "bottom": 5960.5
+        }
+      ]
+    }
+  ]
+}
