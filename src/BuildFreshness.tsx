@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 
-const CURRENT_BUILD = import.meta.env.VITE_BUILD_SHA || '';
+const CURRENT_BUILD = ((import.meta as unknown as {env?:{VITE_BUILD_SHA?:string}}).env?.VITE_BUILD_SHA) || '';
 
 export default function BuildFreshness(){
   useEffect(()=>{
