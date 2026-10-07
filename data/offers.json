@@ -18,20 +18,20 @@
       "rrp": 9612,
       "newMarket": 9612,
       "sameMarket": 9612,
-      "price": 9310.38,
+      "price": 9206,
       "country": "Węgry",
       "seller": "Muzix",
       "region": "UE",
       "status": "LIVE VERIFIED",
-      "original": "2129.98 EUR",
+      "original": "€2106.18",
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor",
-      "note": "NEW sample: €2106.18 Muzix HU; €2199 Project Akustik DE; €2199 Headphone.shop DE · Refresh: exact model + explicit price on direct offer page (JSON_LD).",
+      "note": "NEW sample: €2106.18 Muzix HU; €2199 Project Akustik DE; €2199 Headphone.shop DE · Refresh: direct page could not be verified automatically.",
       "role": "OFFER",
       "checked": "2026-10-07",
       "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "verificationState": "UNVERIFIED",
+        "http": 0,
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -363,13 +363,13 @@
       "status": "LIVE VERIFIED",
       "original": "1498 zł",
       "url": "https://allegro.pl/produkt/bose-soundlink-max-przenosny-glosnik-bluetooth-czarny-usb-c-aux-94cee3a2-8ade-4409-9ba7-5dae7154266c?fromInactiveOffer=archived",
-      "note": "NEW observations: 1498 direct; 1529.99 direct variant; current market around 1.5k PLN. · Refresh: source restricted automated access. Prior SSOT value retained.",
+      "note": "NEW observations: 1498 direct; 1529.99 direct variant; current market around 1.5k PLN. · Refresh: direct page could not be verified automatically.",
       "role": "OFFER",
       "checked": "2026-10-07",
       "refresh": {
-        "verificationState": "ACCESS_RESTRICTED_REVERIFY",
-        "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "verificationState": "UNVERIFIED",
+        "http": 0,
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -525,7 +525,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -551,7 +551,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     },
     {
@@ -629,14 +629,14 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:16:24.233Z"
+        "checkedAt": "2026-10-07T12:17:32.159Z"
       }
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-07T12:16:24.233Z",
-    "mode": "full",
-    "runId": "37619785481",
+    "refreshedAt": "2026-10-07T12:17:32.159Z",
+    "mode": "quick",
+    "runId": "37619922665",
     "status": "COMPLETED"
   }
 }
