@@ -483,6 +483,154 @@
         "ex-demo",
         "refurbished"
       ]
+    },
+    {
+      "id": "muzix-eu",
+      "name": "Muzix",
+      "region": "UE",
+      "sweep": "direct",
+      "priority": 1,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "muzix.eu"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": []
+    },
+    {
+      "id": "thomann-pl",
+      "name": "Thomann PL",
+      "region": "UE",
+      "sweep": "direct",
+      "priority": 1,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "thomann.pl"
+      ],
+      "conditions": [
+        "NEW",
+        "B-STOCK"
+      ],
+      "queryTerms": []
+    },
+    {
+      "id": "jbl-pl",
+      "name": "JBL Poland",
+      "region": "Polska",
+      "sweep": "direct",
+      "priority": 1,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "jbl.com"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": []
+    },
+    {
+      "id": "marshall-pl",
+      "name": "Marshall Poland",
+      "region": "Polska",
+      "sweep": "direct",
+      "priority": 1,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "marshall.com"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": []
+    },
+    {
+      "id": "technics-pl",
+      "name": "Technics Poland",
+      "region": "Polska",
+      "sweep": "direct",
+      "priority": 1,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "technics.com"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": []
+    },
+    {
+      "id": "nt-global-de",
+      "name": "NT Global",
+      "region": "UE",
+      "sweep": "direct",
+      "priority": 1,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "nt-global.de"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": []
+    },
+    {
+      "id": "mp3store-pl",
+      "name": "MP3store",
+      "region": "Polska",
+      "sweep": "direct",
+      "priority": 1,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "mp3store.pl"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": []
+    },
+    {
+      "id": "ebay-pl",
+      "name": "eBay PL",
+      "region": "UE",
+      "sweep": "direct",
+      "priority": 2,
+      "role": [
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "ebay.pl"
+      ],
+      "conditions": [
+        "NEW",
+        "USED",
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": []
     }
   ]
 }
