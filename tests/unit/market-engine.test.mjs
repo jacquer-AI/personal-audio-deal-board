@@ -129,3 +129,10 @@ describe('availability evidence',()=>{
     expect(available({availability:'https://schema.org/OutOfStock'},'')).toBe(false);
   });
 });
+
+describe('sold offers',()=>{
+  it('a sold direct page becomes HISTORICAL with the HISTORICAL role (passes data validation)',()=>{
+    const m=mergeOverlay({offers:[offer]},{updates:[{fingerprint:fingerprint(offer),status:'HISTORICAL',verificationState:'DIRECT_OFFER_VERIFIED'}]});
+    expect(m.offers[0]).toMatchObject({status:'HISTORICAL',role:'HISTORICAL'});
+  });
+});

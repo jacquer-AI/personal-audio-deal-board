@@ -61,6 +61,7 @@ export function mergeOffer(base, overlay) {
   if (verified && Number.isFinite(overlay.price) && overlay.price > 0) merged.price = overlay.price;
   if (verified && overlay.original) merged.original = overlay.original;
   merged.status = safeStatus(base, overlay);
+  if (merged.status === 'HISTORICAL') merged.role = 'HISTORICAL';
   merged.checked = overlay.checked || base.checked;
   merged.note = [base.note, overlay.note].filter(Boolean).join(' · ');
   merged.refresh = {verificationState:overlay.verificationState || 'UNVERIFIED',http:overlay.http ?? null,checkedAt:overlay.checkedAt || null};
