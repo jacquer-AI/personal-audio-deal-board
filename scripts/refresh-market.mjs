@@ -11,6 +11,7 @@ const runId=process.env.GITHUB_RUN_ID||('local-'+Date.now());
 const now=new Date().toISOString();
 const TIMEOUT=Number(process.env.REFRESH_TIMEOUT_MS||12000);
 const CONCURRENCY=Math.max(1,Math.min(6,Number(process.env.REFRESH_CONCURRENCY||4)));
+const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(240,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?140:60))));
 
 const sourceDoc=JSON.parse(fs.readFileSync('config/source-registry.json','utf8'));
 const modelDoc=JSON.parse(fs.readFileSync('config/model-registry.json','utf8'));
