@@ -40,6 +40,12 @@ async function dispatcher(path:string,init:RequestInit={}){
     headers:{...(init.body?{'Content-Type':'application/json'}:{}),...(init.headers as Record<string,string>|undefined)}
   });
 }
+async function dispatcherHealthy(){
+  const r=await dispatcher('/health',{cache:'no-store'});
+  if(!r.ok)return false;
+  const body=await r.json().catch(()=>null) as {ok?:boolean;service?:string}|null;
+  return body?.ok===true&&body.service==='personal-audio-refresh-dispatcher';
+}
 async function publicGh(path:string){
   return fetch(API+path,{headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}});
 }
@@ -75,8 +81,7 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
     let alive=true;
     (async()=>{
       try{
-        const h=await dispatcher('/health',{cache:'no-store'});
-        if(!h.ok)throw new Error('health '+h.status);
+        if(!await dispatcherHealthy())throw new Error('dispatcher health mismatch');
         if(!alive)return;
         setDispatcherOnline(true);
         const s=await dispatcher('/status',{cache:'no-store'});
@@ -99,9 +104,9 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
     let cancelled=false;
     (async()=>{
       try{
-        const h=await dispatcher('/health',{cache:'no-store'});
+        const healthy=await dispatcherHealthy();
         if(cancelled)return;
-        if(h.ok){
+        if(healthy){
           setDispatcherOnline(true);setError('');
           const s=await dispatcher('/status',{cache:'no-store'});
           if(s.ok){
