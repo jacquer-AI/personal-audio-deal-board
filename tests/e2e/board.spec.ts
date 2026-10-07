@@ -114,6 +114,14 @@ test('dispatcher offline gives concise Tailscale fallback',async({page})=>{
   await expect(dialog.getByText(/połącz Tailscale/i)).toBeVisible();
   await expect(dialog.getByRole('link',{name:/Awaryjnie: GitHub/})).toHaveAttribute('href',/actions\/workflows\/refresh-market\.yml/);
 });
+test('foreign 200 health is not accepted as the audio dispatcher',async({page})=>{
+  await mockGitHub(page,{dispatcherWrongService:true});
+  await page.reload();
+  await page.getByRole('button',{name:'↻ Odśwież'}).click();
+  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
+  await expect(dialog.getByTestId('dispatcher-status')).toContainText('ZEN niedostępny');
+  await expect(dialog.getByRole('button',{name:/URUCHOM QUICK/})).toBeDisabled();
+});
 for(const width of [390,320]){
   test('refresh center has no horizontal overflow at '+width+' while running',async({page})=>{
     const gh=await mockGitHub(page);
