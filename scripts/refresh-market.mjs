@@ -148,14 +148,14 @@ await pool(offers,async o=>{
   const parsed=parseOffer(page.html);const match=modelMatches(page.html,meta);
   const cond=conditionFrom(parsed,page.html);const stock=available(parsed,page.html);
   const pln=parsed?toPln(parsed.price,parsed.currency):null;
-  if(match&&parsed&&pln&&stock!==false&&(!cond||cond===o.condition)){
+  if(match&&parsed&&pln&&stock===true&&cond===o.condition){
     updates.push({fingerprint:fp,checkedAt:now,checked:now.slice(0,10),verificationState:'DIRECT_OFFER_VERIFIED',http:page.http,status:o.status,price:pln,original:parsed.price+' '+(parsed.currency||''),note:'Refresh: exact model + explicit price on direct offer page ('+parsed.via+').'});
     obs.push(observation({fingerprint:fp,model:o.model,condition:o.condition,sourceId:source.id,url:o.url,http:page.http,result:'DIRECT_OFFER_VERIFIED',pricePln:pln,currency:parsed.currency}));
   }else if(match&&stock===false){
     updates.push({fingerprint:fp,checkedAt:now,checked:now.slice(0,10),verificationState:'DIRECT_OFFER_VERIFIED',http:page.http,status:'HISTORICAL',note:'Refresh: exact model direct page is sold/out of stock.'});
     obs.push(observation({fingerprint:fp,model:o.model,condition:o.condition,sourceId:source.id,url:o.url,http:page.http,result:'SOLD_OR_OUT_OF_STOCK',pricePln:o.price}));
   }else{
-    const reason=!match?'MODEL_NOT_CONFIRMED':!parsed?'PAGE_REACHABLE_PRICE_UNPARSED':!pln?'CURRENCY_UNRESOLVED':'CONDITION_NOT_CONFIRMED';
+    const reason=!match?'MODEL_NOT_CONFIRMED':!parsed?'PAGE_REACHABLE_PRICE_UNPARSED':!pln?'CURRENCY_UNRESOLVED':stock!==true?'AVAILABILITY_NOT_CONFIRMED':cond!==o.condition?'CONDITION_NOT_CONFIRMED':'REVERIFY';
     updates.push({fingerprint:fp,checkedAt:now,checked:now.slice(0,10),verificationState:reason,http:page.http,note:'Refresh: '+reason+'. Prior SSOT value retained.'});
     obs.push(observation({fingerprint:fp,model:o.model,condition:o.condition,sourceId:source.id,url:o.url,http:page.http,result:reason,pricePln:o.price}));
   }
