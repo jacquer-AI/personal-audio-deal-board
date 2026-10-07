@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
 import type {Offer, Filters, Product, Status} from './types';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable} from './lib/board';
+import RefreshCenter from './RefreshCenter';
 
 const offers = snapshot.offers as Offer[];
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Głośniki BT'];
