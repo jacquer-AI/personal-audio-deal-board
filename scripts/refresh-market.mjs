@@ -69,7 +69,7 @@ function parseOffer(html){
     });
   }
   if(found)return found;
-  const meta=(name)=>{const re=new RegExp('<meta[^>]+(?:property|name|itemprop)=["\\']'+name+'["\\'][^>]+content=["\\']([^"\\']+)','i');return html.match(re)?.[1]||null};
+  const meta=(name)=>{const re=new RegExp("<meta[^>]+(?:property|name|itemprop)=[\\\"']"+name+"[\\\"'][^>]+content=[\\\"']([^\\\"']+)","i");return html.match(re)?.[1]||null};
   const amount=meta('product:price:amount')||meta('price')||meta('og:price:amount');
   const currency=meta('product:price:currency')||meta('priceCurrency')||meta('og:price:currency');
   const price=Number(String(amount||'').replace(/[^0-9.,]/g,'').replace(',','.'));
