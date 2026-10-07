@@ -70,6 +70,14 @@ export function mergeOffer(base, overlay) {
 export function mergeOverlay(baseDoc, currentDoc) {
   const updates = new Map((currentDoc?.updates || []).map(x=>[x.fingerprint,x]));
   const offers = (baseDoc.offers || []).map(o=>mergeOffer(o,updates.get(fingerprint(o))));
+  const seen = new Set(offers.map(fingerprint));
+  for (const add of (currentDoc?.additions || [])) {
+    const fp=fingerprint(add);
+    if (seen.has(fp)) continue;
+    if (!add.refresh || add.refresh.verificationState !== 'DIRECT_OFFER_VERIFIED') continue;
+    if (!LIVE_STATUSES.has(add.status)) continue;
+    offers.push(add); seen.add(fp);
+  }
   return {...baseDoc,refresh:{refreshedAt:currentDoc?.refreshedAt || null,mode:currentDoc?.mode || null,runId:currentDoc?.runId || null,status:currentDoc?.status || 'NEVER'},offers};
 }
 
