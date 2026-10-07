@@ -1,7 +1,9 @@
-import {describe,it,expect}from'vitest';import{b4b,discount,savings,results,group,selectCompare,buyable}from'../../src/lib/board';import type{Offer,Filters}from'../../src/types';import snapshot from '../fixtures/offers-baseline.json';
+import {describe,it,expect}from'vitest';import{b4b,discount,savings,results,group,selectCompare,buyable,percentLabel,modelCount}from'../../src/lib/board';import type{Offer,Filters}from'../../src/types';import snapshot from '../fixtures/offers-baseline.json';
 const offers=snapshot.offers as Offer[];const f:Filters={search:'',category:'Wszystkie',conditions:[],region:'Wszystkie',status:'Wszystkie',liveOnly:true,history:false,sort:'b4b'};
 const az=offers.find(o=>o.model.includes('AZ100')&&o.condition==='NEW')!;
 describe('price semantics',()=>{
+it('does not imply a discount for a rounded zero percentage',()=>{expect(percentLabel(1-2198.99/2199)).toBe('0.0%');expect(percentLabel(-.00001)).toBe('0.0%');expect(percentLabel(.1094)).toBe('−10.9%');expect(percentLabel(-.021)).toBe('+2.1%')});
+it('uses Polish model count forms',()=>{expect([0,1,2,4,5,12,22,24].map(modelCount)).toEqual(['modeli','model','modele','modele','modeli','modeli','modele','modele'])});
 it('A at 20% discount is 125, B is 87.5',()=>{expect(b4b({...az,price:80,sameMarket:100,quality:'A'})).toBe(125);expect(b4b({...az,price:80,sameMarket:100,quality:'B'})).toBe(87.5)});
 it('USED AZ100 is expensive vs USED despite savings vs NEW',()=>{const o=offers.find(o=>o.model.includes('AZ100')&&o.price===610)!;expect(discount(o)).toBeCloseTo(-.1296296);expect(savings(o)).toBeCloseTo(.274673);expect(b4b(o)).toBeCloseTo(88.52459)});
 it('B-stock uses B-stock benchmark 4799, not new 5222',()=>{const o=offers.find(o=>o.condition==='B-STOCK')!;expect(b4b(o)).toBeCloseTo(117.33274);expect(discount(o)).toBeCloseTo(300/4799)});

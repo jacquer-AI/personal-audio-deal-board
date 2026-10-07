@@ -1,7 +1,7 @@
 import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
 import type {Offer, Filters, Product, Status} from './types';
-import {results, group, b4b, discount, savings, decision, selectCompare, buyable} from './lib/board';
+import {results, group, b4b, discount, savings, decision, selectCompare, buyable, percentLabel, modelCount} from './lib/board';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
 
@@ -20,16 +20,17 @@ const money = (n: number | null) => n === null ? '—' : new Intl.NumberFormat('
   style:'currency', currency:'PLN', minimumFractionDigits:0, maximumFractionDigits:2
 }).format(n);
 // Price position: cheaper offers use a minus sign.
-const pct = (n: number | null) => n === null ? '—' : (n === 0 ? '' : n > 0 ? '−' : '+') + Math.abs(n * 100).toFixed(1) + '%';
+const pct = percentLabel;
+const countryLabel = (country:string) => country === 'Poland' ? 'Polska' : country;
 const statusText: Record<Status, string> = {
   'LIVE VERIFIED':'LIVE', 'LIVE USED':'LIVE USED', 'LEAD ONLY':'LEAD', 'HISTORICAL':'HISTORIA',
   'NON-EU / TLC':'TLC', 'STALE / REVERIFY':'SPRAWDŹ', 'MARKET COMP':'COMP', 'OFFICIAL':'OFFICIAL'
 };
 function Source({offer, primary = false}: {offer: Offer; primary?: boolean}) {
-  const role = !buyable(offer) ? statusText[offer.status] : primary ? 'LIVE' : offer.condition === 'NEW' ? 'NEW COMP' : 'USED COMP';
-  return <div className={'source ' + (offer.status === 'HISTORICAL' ? 'historical' : '')} data-testid="source-row">
+  const role = !buyable(offer) ? statusText[offer.status] : primary ? 'LIVE' : offer.condition+' COMP';
+  return <div className={'source ' + (offer.status === 'HISTORICAL' ? 'historical' : !buyable(offer) ? 'unverified' : '')} data-testid="source-row">
     <span className="source-role" title={offer.status} aria-label={offer.status}>{role}</span><strong>{money(offer.price)}</strong>
-    <span className="source-seller">{offer.seller}<small>{offer.country}</small></span><span>{offer.condition}</span>
+    <span className="source-seller">{offer.seller}<small>{countryLabel(offer.country)}</small></span><span>{offer.condition}</span>
     <a href={offer.url} target="_blank" rel="noopener noreferrer" aria-label={'Otwórz źródło: ' + offer.model + ' · ' + offer.seller + ' · ' + offer.condition}>↗</a>
   </div>;
 }
@@ -43,6 +44,7 @@ function Price({offer}: {offer: Offer}) {
 function OfferDetails({product}: {product: Product}) {
   return <details className="offer-details">
     <summary>Więcej ofert ({product.offers.length})</summary>
+    <p className="source-legend">LIVE — oferta zweryfikowana według zapisu. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
     <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
       {product.offers.map(o => <p key={o.id}><b>{o.seller} · {o.condition}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
@@ -88,12 +90,13 @@ export default function App() {
       <header className="product-header">
         <span className="rank">#{i + 1}</span><h2>{p.model}</h2>
         <span className="product-meta">{o.category} · <b aria-label={'Jakość ' + o.quality}>{o.quality.replace('-', '−')}</b></span>
-        <span className="score" title="QualityWeight × rynek stanu / oferta">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
+        <span className="score" title="B4B: jakość × rynek tego samego stanu / cena oferty. Wyżej = lepszy stosunek jakości do ceny.">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
         <label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={() => toggle(p.model)}/>Porównaj<span className="sr-only"> {p.model}</span></label>
       </header>
       <p className="decision-line"><span>{o.condition}</span><span title={o.status} aria-label={o.status}>{statusText[o.status]}</span><strong>{decision(o)}</strong></p>
+      <p className="offer-provenance">Weryfikacja według zapisu: {o.checked}. Potwierdź cenę i dostępność u sprzedawcy.</p>
       <div className="record-body"><Price offer={o}/><div className="seller-action">
-        <p>{o.seller}<span> · {o.country}</span></p>
+        <p>{o.seller}<span> · {countryLabel(o.country)}</span></p>
         <a className="primary-link" data-testid="primary-link" href={o.url} target="_blank" rel="noopener noreferrer"
           aria-label={(buyable(o) ? 'Otwórz ofertę: ' : 'Otwórz źródło: ') + o.model + ' · ' + o.seller + ' · ' + o.condition}>
           {buyable(o) ? 'Otwórz ofertę ↗' : 'Otwórz źródło ↗'}
@@ -144,13 +147,14 @@ export default function App() {
       </details>
     </section>
     <main id="results" tabIndex={-1}>
-      <div className="results-heading"><span><b>{products.length}</b> modeli</span><small>Stan arkusza: {snapshot.snapshot}</small></div>
+      <div className="results-heading"><span><b>{products.length}</b> {modelCount(products.length)}</span><small>Stan arkusza: {snapshot.snapshot}</small></div>
       <p role="status" className="message">{message}</p>
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników</h2><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
     </main>
     <footer><details className="methodology"><summary>Jak liczymy ceny i B4B?</summary>
       <p>NEW porównujemy z NEW, USED z USED, B-STOCK z B-STOCK. Rynek stanu i oszczędność względem nowych to osobne punkty odniesienia. Minus oznacza ofertę tańszą od wskazanego rynku; plus — droższą.</p>
       <p>B4B = QualityWeight × (rynek tego samego stanu / oferta). S 120 · S− 115 · A+ 110 · A 100 · A− 90 · B+ 80 · B 70 · B− 60 · C 50 · D 35 · E 20. Brak benchmarku oznacza brak B4B. MSRP jest wyłącznie odniesieniem.</p>
+      <p>B4B łączy jakość i cenę — pierwsze miejsce nie musi oznaczać najniższej ceny. FAIR PRICE: cena zbliżona do rynku. STRONG BUY: atrakcyjna cena względem rynku stanu. PSEUDO-DEAL: drożej niż rynek stanu. TLC oznacza pełny koszt importu, z dostawą i opłatami.</p>
       <p>Lead, import bez TLC i historia nie uczestniczą w rankingu Live. Fit: 1–5 z SSOT. Rynek PLN ma pierwszeństwo przed starszymi zakładkami. DUNU LIVE/RECENT STORE pozostaje LEAD ONLY do ponownej weryfikacji.</p>
       <p>Ceny i dostępność według arkusza: {snapshot.snapshot}, bez monitoringu na żywo. FX: EUR/PLN 4.37111 · GBP/PLN 5.15290 · USD/PLN 3.88344 · {snapshot.fx.timestamp}.</p>
     </details></footer>

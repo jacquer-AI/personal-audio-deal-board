@@ -101,8 +101,10 @@ DEEP challengers live only in `data/market-candidates.json` as UNADJUDICATED. Se
 Source adapters: `scripts/sources/`. Canonical research prompt: `prompts/audio-market-refresh.md`.
 
 ### One-click refresh from the dashboard
-`↻ Odśwież` → QUICK/FULL/DEEP + scope → URUCHOM dispatches `refresh-market.yml` straight from the browser.
-There is no server component, so GitHub auth is session-only: paste a fine-grained token once per tab
-(repo `personal-audio-deal-board`, permission *Actions: Read and write*, short expiry). It lives only in
-`sessionStorage`, is never rendered, and is sent only to `api.github.com`. Progress (QUEUED → RUNNING · phase → DEPLOYING → OK)
-is read from the Actions API; the manual "Run workflow" link is the last-resort fallback.
+`↻ Odśwież` → QUICK/FULL/DEEP + scope → URUCHOM calls the private ZEN dispatcher through Tailscale.
+The dispatcher authenticates the tailnet identity and dispatches `refresh-market.yml`. No GitHub token is entered,
+stored or sent by the browser. Session storage contains only the run ID and start time for recovery after reload.
+Progress is polled through the dispatcher, with the exact public Actions run as a read-only fallback.
+An older delta file never proves DELTA=NONE: the workflow's successful “No material change” step confirms that outcome.
+Changed runs wait for their own delta receipt and Pages deployment; an unconfirmed publication is not reported as OK.
+New builds offer an explicit reload so an active dialog or comparison is not lost. The manual GitHub link is a fallback.

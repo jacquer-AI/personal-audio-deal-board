@@ -44,11 +44,11 @@ test('refresh center modes scope and one-click readiness',async({page})=>{
     await dialog.getByRole('button',{name:m,exact:true}).click();
     await expect(dialog.getByRole('button',{name:m,exact:true})).toHaveAttribute('aria-pressed','true');
   }
-  await expect(dialog.getByText(/nieadjudykowane challengery/)).toBeVisible();
+  await expect(dialog.getByText(/nowych modeli do oceny/)).toBeVisible();
   await dialog.getByLabel('Kategoria refreshu').selectOption('Głośniki BT');
   await expect(dialog.getByLabel('Kategoria refreshu')).toHaveValue('Głośniki BT');
   await expect(dialog.getByRole('button',{name:/URUCHOM DEEP/})).toBeEnabled();
-  await expect(dialog.getByText(/bez tokena w przeglądarce/)).toBeVisible();
+  await expect(dialog.getByText(/Sprawdź ceny, dostępność i nowe oferty/)).toBeVisible();
 });
 test('refresh center is keyboard usable',async({page})=>{
   await page.getByRole('button',{name:'↻ Odśwież'}).focus();

@@ -8,6 +8,7 @@ const RAW_DELTA='https://raw.githubusercontent.com/jacquer-AI/personal-audio-dea
 
 /** In-test private dispatcher + public GitHub API. No real network writes. */
 export async function mockGitHub(page:Page,opts:Options={}){
+  await page.route('**/version.json*',route=>route.fulfill({json:{sha:process.env.GITHUB_SHA||process.env.VITE_BUILD_SHA||''}}));
   const dispatcherRequests:{body:unknown}[]=[];
   const nonGithubAuthRequests:string[]=[];
   let runPolls=0,pagesPolls=0,dispatched=false;
@@ -57,6 +58,7 @@ export async function mockGitHub(page:Page,opts:Options={}){
     const json=(body:unknown,status=200)=>route.fulfill({status,contentType:'application/json',headers:CORS,body:JSON.stringify(body)});
     if(req.method()==='OPTIONS')return route.fulfill({status:204,headers:CORS});
     const path=url.pathname.replace('/repos/jacquer-AI/personal-audio-deal-board','');
+    if(path==='/actions/runs/123/jobs')return json({jobs:[{steps:[{name:'No material change',conclusion:opts.noop?'success':'skipped'}]}]});
     if(path==='/actions/runs'){
       pagesPolls++;
       const pages=run(124,pagesPolls<2?'in_progress':'completed',pagesPolls<2?null:'success');

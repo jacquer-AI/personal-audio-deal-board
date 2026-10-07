@@ -1,4 +1,10 @@
 import type {Offer,Filters,Product} from '../types';
+export const modelCount=(n:number)=>n===1?'model':n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?'modele':'modeli';
+export function percentLabel(n:number|null){
+  if(n===null)return '—';
+  const magnitude=Math.abs(n*100).toFixed(1);
+  return (Number(magnitude)===0?'':n>0?'−':'+')+magnitude+'%';
+}
 export const weights:Record<string,number>={'S':120,'S-':115,'A+':110,'A':100,'A-':90,'B+':80,'B':70,'B-':60,'C':50,'D':35,'E':20};
 export const buyable=(o:Offer)=>['LIVE VERIFIED','LIVE USED'].includes(o.status)&&o.price!==null&&o.price>0;
 export const b4b=(o:Offer)=>buyable(o)&&o.sameMarket!==null&&o.sameMarket>0?weights[o.quality]*o.sameMarket/o.price!:null;
