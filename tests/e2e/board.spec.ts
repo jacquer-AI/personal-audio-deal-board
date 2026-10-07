@@ -18,3 +18,21 @@ test('keyboard skip and search',async({page})=>{await page.keyboard.press('Tab')
 test('WCAG axe default and filters',async({page})=>{for(let i=0;i<2;i++){if(i)await page.locator('.more-filters > summary').click();expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations).toEqual([])}});
 test('no console errors',async({page})=>{const errors:string[]=[];page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});page.on('pageerror',e=>errors.push(e.message));await page.reload();await page.getByRole('button',{name:'Głośniki BT',exact:true}).click();await page.getByRole('searchbox').fill('Bose');await expect(page.getByTestId('product')).toHaveCount(1);expect(errors).toEqual([])});
 test('preferences persist including comfortable and compact',async({page})=>{await page.getByRole('button',{name:'Głośniki BT',exact:true}).click();await page.locator('.more-filters > summary').click();await page.getByLabel('Gęstość').selectOption('Comfortable');await page.getByLabel('Sortuj',{exact:true}).selectOption('price');await page.reload();await expect(page.getByRole('button',{name:'Głośniki BT',exact:true})).toHaveAttribute('aria-pressed','true');await expect(page.locator('.app')).toHaveClass(/comfortable/);await expect(page.getByLabel('Sortuj',{exact:true})).toHaveValue('price');await page.locator('.more-filters > summary').click();await page.getByLabel('Gęstość').selectOption('Compact');await page.reload();await expect(page.locator('.app')).toHaveClass(/compact/)});
+
+test('refresh center modes and safe workflow fallback',async({page})=>{
+  await page.getByRole('button',{name:'↻ Odśwież'}).click();
+  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
+  await expect(dialog).toBeVisible();
+  await dialog.getByRole('button',{name:'FULL'}).click();
+  await expect(dialog.getByRole('button',{name:'FULL'})).toHaveAttribute('aria-pressed','true');
+  await dialog.getByLabel('Kategoria refreshu').selectOption('TWS');
+  await expect(dialog.getByText(/FULL \+ nowe oferty/)).toBeVisible();
+  await expect(dialog.getByRole('link',{name:/Run workflow/})).toHaveAttribute('href',/actions\/workflows\/pages\.yml/);
+});
+test('refresh center reflows on narrow mobile',async({page})=>{
+  await page.setViewportSize({width:320,height:720});
+  await page.getByRole('button',{name:'↻ Odśwież'}).click();
+  await expect(page.getByRole('dialog',{name:'Refresh rynku'})).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth===document.documentElement.clientWidth)).toBe(true);
+  expect(await page.getByRole('dialog',{name:'Refresh rynku'}).evaluate(e=>e.scrollWidth<=e.clientWidth)).toBe(true);
+});
