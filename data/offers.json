@@ -31,7 +31,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -129,13 +129,13 @@
       "status": "LIVE VERIFIED",
       "original": "749 zł",
       "url": "https://allegro.pl/produkt/technics-eah-az100e-s-sluchawki-bezprzewodowe-douszne-anc-srebrne-7c106113-254c-4f5d-8a5c-b97483d3ed15?offerId=17201751429",
-      "note": "Current NEW sample: 749 / 789 / 893.47 / 999 PLN; median ≈ 841 PLN · Refresh: direct page could not be verified automatically.",
+      "note": "Current NEW sample: 749 / 789 / 893.47 / 999 PLN; median ≈ 841 PLN · Refresh: source restricted automated access. Prior SSOT value retained.",
       "role": "OFFER",
       "checked": "2026-10-07",
       "refresh": {
-        "verificationState": "UNVERIFIED",
-        "http": 0,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "verificationState": "ACCESS_RESTRICTED_REVERIFY",
+        "http": 403,
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -525,7 +525,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     },
     {
@@ -629,14 +629,14 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:18:12.952Z"
+        "checkedAt": "2026-10-07T12:22:29.348Z"
       }
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-07T12:18:12.952Z",
-    "mode": "deep",
-    "runId": "37620002811",
+    "refreshedAt": "2026-10-07T12:22:29.348Z",
+    "mode": "quick",
+    "runId": "37620509651",
     "status": "COMPLETED"
   }
 }
