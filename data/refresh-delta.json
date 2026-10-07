@@ -5,10 +5,10 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-07T12:30:47.773Z",
-  "mode": "full",
-  "runId": "37621498202",
-  "candidates": 18,
+  "refreshedAt": "2026-10-07T12:31:49.552Z",
+  "mode": "deep",
+  "runId": "37621628157",
+  "candidates": 63,
   "verifiedAdditions": 0,
   "observationChanges": 0,
   "receipt": {
@@ -23,8 +23,8 @@
     "sourcesRestricted": {
       "ebay-de": 3,
       "olx-pl": 4,
-      "allegro-pl": 2,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     }
   }
 }
