@@ -165,7 +165,9 @@ export function mergeCurrent(prev, next) {
   const keptUpdates = (prev?.updates || []).filter(u => !nextFps.has(u.fingerprint));
   const additions = new Map((prev?.additions || []).map(a=>[fingerprint(a),a]));
   for (const a of next.additions) additions.set(fingerprint(a), a);
-  return { ...next, updates: [...keptUpdates, ...next.updates], additions: [...additions.values()] };
+  // Deterministic order, so a skipped (transient) check does not read as a material change.
+  const byFp = (a, b) => (a.fingerprint || fingerprint(a)).localeCompare(b.fingerprint || fingerprint(b));
+  return { ...next, updates: [...keptUpdates, ...next.updates].sort(byFp), additions: [...additions.values()].sort(byFp) };
 }
 
 export function noopDelta(delta, observationChanges) {

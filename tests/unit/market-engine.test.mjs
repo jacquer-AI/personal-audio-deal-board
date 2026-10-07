@@ -145,3 +145,12 @@ describe('discovery link hygiene',()=>{
     expect(isPlausibleOfferLink('https://www.olx.pl/d/oferta/sluchawki-pi8-CID99-ID1.html')).toBe(true);
   });
 });
+
+describe('overlay determinism',()=>{
+  it('order of re-checked offers does not change the overlay',()=>{
+    const prev={updates:[{fingerprint:'a',http:1},{fingerprint:'b',http:1}],additions:[]};
+    const one=mergeCurrent(prev,{updates:[{fingerprint:'a',http:1}],additions:[]});
+    const two=mergeCurrent(prev,{updates:[{fingerprint:'b',http:1},{fingerprint:'a',http:1}],additions:[]});
+    expect(materiallyEqual(one,two)).toBe(true);
+  });
+});
