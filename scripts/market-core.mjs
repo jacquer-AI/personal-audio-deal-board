@@ -74,8 +74,11 @@ export function mergeOverlay(baseDoc, currentDoc) {
   for (const add of (currentDoc?.additions || [])) {
     const fp=fingerprint(add);
     if (seen.has(fp)) continue;
-    if (!add.refresh || add.refresh.verificationState !== 'DIRECT_OFFER_VERIFIED') continue;
-    if (!LIVE_STATUSES.has(add.status)) continue;
+    if (!add.refresh) continue;
+    const verifiedNow = add.refresh.verificationState === 'DIRECT_OFFER_VERIFIED' && LIVE_STATUSES.has(add.status);
+    // A previously verified addition may later turn stale/sold; it is never admitted without a first verification.
+    const downgraded = Boolean(add.refresh.firstVerifiedAt) && ['STALE / REVERIFY','HISTORICAL'].includes(add.status);
+    if (!verifiedNow && !downgraded) continue;
     offers.push(add); seen.add(fp);
   }
   return {...baseDoc,refresh:{refreshedAt:currentDoc?.refreshedAt || null,mode:currentDoc?.mode || null,runId:currentDoc?.runId || null,status:currentDoc?.status || 'NEVER'},offers};
@@ -102,4 +105,84 @@ export function directOfferEligible(url, source) {
   } catch {
     return false;
   }
+}
+
+const VOLATILE_KEYS = new Set(['checkedAt','checked','refreshedAt','runId','observedAt','discoveredAt','generatedAt']);
+
+/** Deep copy without timestamps/run ids, so two runs can be compared for material change. */
+export function stripVolatile(x) {
+  if (Array.isArray(x)) return x.map(stripVolatile);
+  if (x && typeof x === 'object') return Object.fromEntries(Object.entries(x).filter(([k])=>!VOLATILE_KEYS.has(k)).map(([k,v])=>[k,stripVolatile(v)]));
+  return x;
+}
+
+export function materiallyEqual(a, b) {
+  return JSON.stringify(stripVolatile(a)) === JSON.stringify(stripVolatile(b));
+}
+
+/** Observation is appended only when its state differs from the last recorded state for that offer. */
+export function isMaterialObservation(prev, next) {
+  if (!prev) return true;
+  return prev.result !== next.result || prev.pricePln !== next.pricePln || prev.condition !== next.condition || prev.url !== next.url;
+}
+
+export function lastObservations(lines) {
+  const last = new Map();
+  for (const line of lines) {
+    if (!line) continue;
+    try { const o = JSON.parse(line); if (o.fingerprint) last.set(o.fingerprint, o); } catch { /* skip corrupt ledger line */ }
+  }
+  return last;
+}
+
+export function dedupeObservations(candidates, last) {
+  const state = new Map(last);
+  const out = [];
+  for (const o of candidates) {
+    if (!isMaterialObservation(state.get(o.fingerprint), o)) continue;
+    state.set(o.fingerprint, o); out.push(o);
+  }
+  return out;
+}
+
+const VERIFIED_RESULTS = new Set(['DIRECT_OFFER_VERIFIED','NEW_DIRECT_OFFER_VERIFIED']);
+/** Same-condition market sample = distinct directly-verified offers (latest observation each). */
+export function statsFromLedger(last) {
+  const groups = new Map();
+  for (const o of last.values()) {
+    if (!VERIFIED_RESULTS.has(o.result)) continue;
+    const k = [o.model, o.condition].join('|');
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(o);
+  }
+  return [...groups.entries()].map(([key, rows]) => ({ key, ...marketStats(rows) }));
+}
+
+/** Overlay of a partial (category-scoped) run over the previous overlay; offers not re-checked keep their state. */
+export function mergeCurrent(prev, next) {
+  const nextFps = new Set(next.updates.map(u=>u.fingerprint));
+  const keptUpdates = (prev?.updates || []).filter(u => !nextFps.has(u.fingerprint));
+  const additions = new Map((prev?.additions || []).map(a=>[fingerprint(a),a]));
+  for (const a of next.additions) additions.set(fingerprint(a), a);
+  return { ...next, updates: [...keptUpdates, ...next.updates], additions: [...additions.values()] };
+}
+
+export function noopDelta(delta, observationChanges) {
+  return delta.changes.length === 0 && observationChanges === 0;
+}
+
+/**
+ * Red-team gate before a newly discovered offer may be promoted to LIVE.
+ * block=true keeps it out of the dashboard (stays a lead in market-candidates.json).
+ */
+export function redTeam(addition, source, peer) {
+  const flags = [];
+  let block = false;
+  if (String(source?.region || '').startsWith('non-EU')) { flags.push('NON_EU_VAT_CUSTOMS_BROKERAGE'); block = true; }
+  const ref = peer?.sameMarket;
+  if (Number.isFinite(ref) && Number.isFinite(addition.price) && addition.price < ref * 0.4) { flags.push('PRICE_FAR_BELOW_MARKET_CHECK_VARIANT_OR_COUNTERFEIT'); block = true; }
+  if (['TWS','Głośniki BT'].includes(addition.category) && addition.condition !== 'NEW') flags.push('BATTERY_HEALTH_UNVERIFIED');
+  if (addition.condition !== 'NEW') flags.push('WARRANTY_AND_ACCESSORIES_UNVERIFIED');
+  flags.push('SHIPPING_NOT_INCLUDED');
+  return { block, flags };
 }

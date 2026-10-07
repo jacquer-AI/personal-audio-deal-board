@@ -83,3 +83,26 @@ filters, notes and methodology start closed. The desktop E2E budget checks at le
 space before the first result, a toolbar under 140 px, three complete records above the fold,
 and a visible primary action. scripts/capture-layout.mjs captures all four acceptance viewports.
 
+
+## Market refresh architecture
+One architecture, two workflows:
+
+- `.github/workflows/refresh-market.yml` operates market data (workflow_dispatch, QUICK every 6 h, FULL daily, DEEP weekly).
+  It verifies direct seller pages, merges, validates, and commits `data/market-*.json`, `data/refresh-delta.json`,
+  `data/offers.json` and the append-only `data/market-observations.jsonl` only when something materially changed
+  (`DELTA=NONE` otherwise: no commit, no deploy). Because GITHUB_TOKEN pushes do not trigger workflows, it dispatches `pages.yml` itself.
+- `.github/workflows/pages.yml` builds, tests and deploys the dashboard on every push to main, then reads production back.
+
+Rules: a lead (search result, snippet, aggregator, listing) is never LIVE; LIVE needs a final seller page with exact model,
+condition, price and availability. Blocked sites become `ACCESS_RESTRICTED_REVERIFY`. Observations are appended only when
+price/result/condition/URL changed. Same-condition market samples: n>=5 ROBUST, 3-4 PROVISIONAL, <=2 INSUFFICIENT.
+DEEP challengers live only in `data/market-candidates.json` as UNADJUDICATED. Semantic baseline = committed
+`data/sheet-snapshot.json` (SHEETS_SYNC=SNAPSHOT; no live Sheets credential is available to the workflow).
+Source adapters: `scripts/sources/`. Canonical research prompt: `prompts/audio-market-refresh.md`.
+
+### One-click refresh from the dashboard
+`↻ Odśwież` → QUICK/FULL/DEEP + scope → URUCHOM dispatches `refresh-market.yml` straight from the browser.
+There is no server component, so GitHub auth is session-only: paste a fine-grained token once per tab
+(repo `personal-audio-deal-board`, permission *Actions: Read and write*, short expiry). It lives only in
+`sessionStorage`, is never rendered, and is sent only to `api.github.com`. Progress (QUEUED → RUNNING · phase → DEPLOYING → OK)
+is read from the Actions API; the manual "Run workflow" link is the last-resort fallback.

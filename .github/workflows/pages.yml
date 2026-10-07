@@ -1,76 +1,31 @@
-name: Verify, refresh and deploy audio board
+name: Verify and deploy audio board
 on:
   push:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      mode:
-        description: Refresh depth
-        required: true
-        default: quick
-        type: choice
-        options: [quick, full, deep]
-      categories:
-        description: Category scope
-        required: true
-        default: all
-        type: choice
-        options: [all, IEM, TWS, Closed, "Głośniki BT"]
-  schedule:
-    - cron: "11 */6 * * *"
-    - cron: "37 2 * * *"
-    - cron: "53 3 * * 0"
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
   group: audio-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 25
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    env:
-      REQUESTED_MODE: ${{ inputs.mode || 'quick' }}
-      REQUESTED_CATEGORIES: ${{ inputs.categories || 'all' }}
-      SCHEDULE_EXPR: ${{ github.event.schedule }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Restore operational market history
-        uses: actions/cache/restore@v4
-        with:
-          path: |
-            data/market-current.json
-            data/market-observations.jsonl
-            data/refresh-delta.json
-            data/market-candidates.json
-            data/market-stats.json
-          key: audio-market-state-${{ github.run_id }}
-          restore-keys: |
-            audio-market-state-
-      - name: Resolve refresh depth
-        run: |
-          mode="$REQUESTED_MODE"
-          if [ "$SCHEDULE_EXPR" = "37 2 * * *" ]; then mode="full"; fi
-          if [ "$SCHEDULE_EXPR" = "53 3 * * 0" ]; then mode="deep"; fi
-          case "$mode" in quick|full|deep) ;; *) exit 2 ;; esac
-          case "$REQUESTED_CATEGORIES" in all|IEM|TWS|Closed|"Głośniki BT") ;; *) exit 2 ;; esac
-          echo "REFRESH_MODE=$mode" >> "$GITHUB_ENV"
-          echo "REFRESH_CATEGORIES=$REQUESTED_CATEGORIES" >> "$GITHUB_ENV"
-      - name: Refresh market snapshot
-        run: |
-          npm run sync
-          npm run refresh-market -- --mode "$REFRESH_MODE" --categories "$REFRESH_CATEGORIES"
-          npm run merge-market
       - run: npm run validate-data
       - run: npm run typecheck
       - run: npm run lint
@@ -79,16 +34,6 @@ jobs:
       - run: node scripts/export-market-state.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
-      - name: Save operational market history
-        uses: actions/cache/save@v4
-        with:
-          path: |
-            data/market-current.json
-            data/market-observations.jsonl
-            data/refresh-delta.json
-            data/market-candidates.json
-            data/market-stats.json
-          key: audio-market-state-${{ github.run_id }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -96,3 +41,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Public readback
+        run: node scripts/readback.mjs

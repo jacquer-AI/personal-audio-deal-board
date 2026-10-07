@@ -1,7 +1,8 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import snapshot from '../../data/offers.json' with {type:'json'};
-test.beforeEach(async({page})=>{await page.goto('./');await expect(page.getByRole('heading',{level:1})).toContainText('PERSONAL AUDIO')});
+import {mockGitHub} from './github-mock';
+test.beforeEach(async({page})=>{await mockGitHub(page);await page.goto('./');await expect(page.getByRole('heading',{level:1})).toContainText('PERSONAL AUDIO')});
 test('categories and speakers',async({page})=>{for(const c of ['IEM','TWS','Closed','Głośniki BT']){await page.getByRole('button',{name:c,exact:true}).click();await expect(page.getByTestId('product').first()).toBeVisible()}for(const model of ['Bose SoundLink Max','Marshall Middleton II','JBL Charge 6'])await expect(page.getByRole('heading',{name:model,exact:true})).toBeVisible();await expect(page.getByTestId('product')).toHaveCount(3)});
 test('search model seller country and empty',async({page})=>{const s=page.getByRole('searchbox');await s.fill('AZ100');await expect(page.getByTestId('product')).toHaveCount(1);await s.fill('Thomann');await expect(page.getByRole('heading',{name:'Dan Clark Audio Noire X',exact:true})).toBeVisible();await s.fill('Niemcy');await expect(page.getByTestId('product').first()).toBeVisible();await s.fill('does-not-exist');await expect(page.getByRole('heading',{name:'Brak wyników'})).toBeVisible()});
 test('sorting',async({page})=>{await page.getByLabel('Sortuj',{exact:true}).selectOption('price');await expect(page.getByTestId('product').first().getByRole('heading',{level:2})).toHaveText('JBL Charge 6')});
@@ -19,16 +20,6 @@ test('WCAG axe default and filters',async({page})=>{for(let i=0;i<2;i++){if(i)aw
 test('no console errors',async({page})=>{const errors:string[]=[];page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});page.on('pageerror',e=>errors.push(e.message));await page.reload();await page.getByRole('button',{name:'Głośniki BT',exact:true}).click();await page.getByRole('searchbox').fill('Bose');await expect(page.getByTestId('product')).toHaveCount(1);expect(errors).toEqual([])});
 test('preferences persist including comfortable and compact',async({page})=>{await page.getByRole('button',{name:'Głośniki BT',exact:true}).click();await page.locator('.more-filters > summary').click();await page.getByLabel('Gęstość').selectOption('Comfortable');await page.getByLabel('Sortuj',{exact:true}).selectOption('price');await page.reload();await expect(page.getByRole('button',{name:'Głośniki BT',exact:true})).toHaveAttribute('aria-pressed','true');await expect(page.locator('.app')).toHaveClass(/comfortable/);await expect(page.getByLabel('Sortuj',{exact:true})).toHaveValue('price');await page.locator('.more-filters > summary').click();await page.getByLabel('Gęstość').selectOption('Compact');await page.reload();await expect(page.locator('.app')).toHaveClass(/compact/)});
 
-test('refresh center modes and safe workflow fallback',async({page})=>{
-  await page.getByRole('button',{name:'↻ Odśwież'}).click();
-  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
-  await expect(dialog).toBeVisible();
-  await dialog.getByRole('button',{name:'FULL'}).click();
-  await expect(dialog.getByRole('button',{name:'FULL'})).toHaveAttribute('aria-pressed','true');
-  await dialog.getByLabel('Kategoria refreshu').selectOption('TWS');
-  await expect(dialog.getByText(/nowe oferty znanych modeli/)).toBeVisible();
-  await expect(dialog.getByRole('link',{name:/Run workflow/})).toHaveAttribute('href',/actions\/workflows\/pages\.yml/);
-});
 test('refresh center reflows on narrow mobile',async({page})=>{
   await page.setViewportSize({width:320,height:720});
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
@@ -36,3 +27,112 @@ test('refresh center reflows on narrow mobile',async({page})=>{
   expect(await page.evaluate(()=>document.documentElement.scrollWidth===document.documentElement.clientWidth)).toBe(true);
   expect(await page.getByRole('dialog',{name:'Refresh rynku'}).evaluate(e=>e.scrollWidth<=e.clientWidth)).toBe(true);
 });
+
+async function advanceUntil(page:import('@playwright/test').Page,state:import('@playwright/test').Locator,text:string){
+  await expect.poll(async()=>{await page.clock.runFor(4100);return (await state.textContent())||''},{timeout:20000,intervals:[150]}).toContain(text);
+}
+const TOKEN='github_pat_TESTTOKEN_not_real_0123456789';
+async function connect(page:import('@playwright/test').Page){
+  await page.getByRole('button',{name:'↻ Odśwież'}).click();
+  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
+  await dialog.getByLabel('Token GitHub').fill(TOKEN);
+  await dialog.getByRole('button',{name:'Zapisz'}).click();
+  return dialog;
+}
+test('refresh center modes, scope and manual fallback',async({page})=>{
+  await page.getByRole('button',{name:'↻ Odśwież'}).click();
+  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
+  await expect(dialog).toBeVisible();
+  for(const m of ['QUICK','FULL','DEEP']){
+    await dialog.getByRole('button',{name:m,exact:true}).click();
+    await expect(dialog.getByRole('button',{name:m,exact:true})).toHaveAttribute('aria-pressed','true');
+  }
+  await expect(dialog.getByText(/nieadjudykowane challengery/)).toBeVisible();
+  await dialog.getByLabel('Kategoria refreshu').selectOption('Głośniki BT');
+  await expect(dialog.getByLabel('Kategoria refreshu')).toHaveValue('Głośniki BT');
+  await expect(dialog.getByRole('button',{name:/URUCHOM/})).toBeDisabled();
+  await expect(dialog.getByRole('link',{name:/uruchom ręcznie/})).toHaveAttribute('href',/actions\/workflows\/refresh-market\.yml/);
+});
+test('refresh center is keyboard usable',async({page})=>{
+  await page.getByRole('button',{name:'↻ Odśwież'}).focus();
+  await page.keyboard.press('Enter');
+  const dialog=page.getByRole('dialog',{name:'Refresh rynku'});
+  await dialog.getByRole('button',{name:'FULL',exact:true}).focus();
+  await page.keyboard.press('Enter');
+  await expect(dialog.getByRole('button',{name:'FULL',exact:true})).toHaveAttribute('aria-pressed','true');
+  await page.keyboard.press('Escape');
+  await expect(dialog).toBeHidden();
+});
+test('token stays in sessionStorage only and is never rendered',async({page})=>{
+  const dialog=await connect(page);
+  await expect(dialog.getByLabel('Token GitHub')).toHaveCount(0);
+  await expect(dialog.getByRole('button',{name:/URUCHOM QUICK/})).toBeEnabled();
+  expect(await page.content()).not.toContain(TOKEN);
+  expect(await page.evaluate(()=>Object.values(sessionStorage).length)).toBe(1);
+  expect(await page.evaluate(()=>JSON.stringify(localStorage)+document.cookie+location.href)).not.toContain(TOKEN);
+  await dialog.getByRole('button',{name:'Rozłącz'}).click();
+  expect(await page.evaluate(()=>sessionStorage.length)).toBe(0);
+  await expect(dialog.getByLabel('Token GitHub')).toBeVisible();
+});
+test('one-click dispatch shows queued, running, deploying, delta and reloads data',async({page})=>{
+  const errors:string[]=[];page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});page.on('pageerror',e=>errors.push(e.message));
+  const gh=await mockGitHub(page);
+  await page.reload();
+  await page.clock.install();
+  const dialog=await connect(page);
+  await dialog.getByRole('button',{name:'FULL',exact:true}).click();
+  await dialog.getByLabel('Kategoria refreshu').selectOption('TWS');
+  await dialog.getByRole('button',{name:'URUCHOM FULL'}).click();
+  await expect.poll(()=>gh.dispatches.length).toBe(1);
+  expect(gh.dispatches[0]).toMatchObject({body:{ref:'main',inputs:{mode:'full',categories:'TWS'}},authorization:'Bearer '+TOKEN});
+  expect(gh.nonGithubAuthRequests).toEqual([]);
+  const state=dialog.getByTestId('refresh-state');
+  await expect(state).toContainText('QUEUED');
+  await advanceUntil(page,state,'RUNNING · REFRESH');
+  await advanceUntil(page,state,'DEPLOYING');
+  await advanceUntil(page,state,'OK');
+  const list=dialog.getByTestId('delta-list');
+  await expect(list).toContainText('Dan Clark Audio Noire X 4799 zł → 4499 zł');
+  await expect(list).toContainText('Technics EAH-AZ100 SOLD');
+  await expect(list).toContainText('Bose SoundLink Max NEW OFFER · 750 zł');
+  await expect(dialog.getByTestId('delta')).toContainText('nowe 1');
+  await expect(page.getByTestId('freshness')).toContainText('· OK');
+  expect(await page.content()).not.toContain(TOKEN);
+  const nav=page.waitForEvent('load');
+  await dialog.getByRole('button',{name:'Wczytaj najnowsze dane'}).click();
+  await nav;
+  expect(errors).toEqual([]);
+});
+test('no-op refresh reports DELTA=NONE without waiting for a deploy',async({page})=>{
+  const gh=await mockGitHub(page,{noop:true});
+  await page.reload();
+  await page.clock.install();
+  const dialog=await connect(page);
+  await dialog.getByRole('button',{name:'URUCHOM QUICK'}).click();
+  await expect.poll(()=>gh.dispatches.length).toBe(1);
+  await advanceUntil(page,dialog.getByTestId('refresh-state'),'OK');
+  await expect(dialog.getByTestId('delta-none')).toContainText('DELTA=NONE');
+  expect(gh.pagesPolls()).toBe(0);
+});
+test('rejected token is forgotten and the error is shown',async({page})=>{
+  await mockGitHub(page,{dispatchStatus:401});
+  await page.reload();
+  const dialog=await connect(page);
+  await dialog.getByRole('button',{name:'URUCHOM QUICK'}).click();
+  await expect(dialog.getByRole('alert')).toContainText('Token odrzucony');
+  await expect(dialog.getByLabel('Token GitHub')).toBeVisible();
+  expect(await page.evaluate(()=>sessionStorage.length)).toBe(0);
+});
+for(const width of [390,320]){
+  test('refresh center has no horizontal overflow at '+width+' while running',async({page})=>{
+    await mockGitHub(page);
+    await page.reload();
+    await page.setViewportSize({width,height:720});
+    const dialog=await connect(page);
+    const fits=()=>page.evaluate(()=>document.documentElement.scrollWidth===document.documentElement.clientWidth&&document.querySelector('dialog')!.scrollWidth<=document.querySelector('dialog')!.clientWidth);
+    expect(await fits()).toBe(true);
+    await dialog.getByRole('button',{name:'URUCHOM QUICK'}).click();
+    await expect(dialog.getByTestId('refresh-state')).toContainText(/QUEUED|RUNNING/);
+    expect(await fits()).toBe(true);
+  });
+}
