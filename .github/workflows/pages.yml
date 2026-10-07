@@ -45,6 +45,18 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Restore operational market history
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/market-current.json
+            data/market-observations.jsonl
+            data/refresh-delta.json
+            data/market-candidates.json
+            data/market-stats.json
+          key: audio-market-state-${{ github.run_id }}
+          restore-keys: |
+            audio-market-state-
       - name: Resolve refresh depth
         run: |
           mode="$REQUESTED_MODE"
@@ -67,6 +79,16 @@ jobs:
       - run: node scripts/export-market-state.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - name: Save operational market history
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/market-current.json
+            data/market-observations.jsonl
+            data/refresh-delta.json
+            data/market-candidates.json
+            data/market-stats.json
+          key: audio-market-state-${{ github.run_id }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
