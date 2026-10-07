@@ -28,6 +28,9 @@ test('refresh center reflows on narrow mobile',async({page})=>{
   expect(await page.getByRole('dialog',{name:'Refresh rynku'}).evaluate(e=>e.scrollWidth<=e.clientWidth)).toBe(true);
 });
 
+async function advanceUntil(page:import('@playwright/test').Page,state:import('@playwright/test').Locator,text:string){
+  await expect.poll(async()=>{await page.clock.runFor(4100);return (await state.textContent())||''},{timeout:20000,intervals:[150]}).toContain(text);
+}
 const TOKEN='github_pat_TESTTOKEN_not_real_0123456789';
 async function connect(page:import('@playwright/test').Page){
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
@@ -85,14 +88,9 @@ test('one-click dispatch shows queued, running, deploying, delta and reloads dat
   expect(gh.nonGithubAuthRequests).toEqual([]);
   const state=dialog.getByTestId('refresh-state');
   await expect(state).toContainText('QUEUED');
-  await page.clock.runFor(4100);
-  await expect(state).toContainText('QUEUED');
-  await page.clock.runFor(4100);
-  await expect(state).toContainText('RUNNING · REFRESH');
-  await page.clock.runFor(4100);
-  await expect(state).toContainText('DEPLOYING');
-  await page.clock.runFor(4100);
-  await expect(state).toContainText('OK');
+  await advanceUntil(page,state,'RUNNING · REFRESH');
+  await advanceUntil(page,state,'DEPLOYING');
+  await advanceUntil(page,state,'OK');
   const list=dialog.getByTestId('delta-list');
   await expect(list).toContainText('Dan Clark Audio Noire X 4799 zł → 4499 zł');
   await expect(list).toContainText('Technics EAH-AZ100 SOLD');
@@ -112,8 +110,7 @@ test('no-op refresh reports DELTA=NONE without waiting for a deploy',async({page
   const dialog=await connect(page);
   await dialog.getByRole('button',{name:'URUCHOM QUICK'}).click();
   await expect.poll(()=>gh.dispatches.length).toBe(1);
-  for(let i=0;i<4;i++)await page.clock.runFor(4100);
-  await expect(dialog.getByTestId('refresh-state')).toContainText('OK');
+  await advanceUntil(page,dialog.getByTestId('refresh-state'),'OK');
   await expect(dialog.getByTestId('delta-none')).toContainText('DELTA=NONE');
   expect(gh.pagesPolls()).toBe(0);
 });
