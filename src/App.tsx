@@ -3,6 +3,7 @@ import snapshot from '../data/offers.json';
 import type {Offer, Filters, Product, Status} from './types';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable} from './lib/board';
 import RefreshCenter from './RefreshCenter';
+import BuildFreshness from './BuildFreshness';
 
 const offers = snapshot.offers as Offer[];
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Głośniki BT'];
@@ -101,6 +102,7 @@ export default function App() {
     </article>;
   }
   return <div className={'app ' + density.toLowerCase()}>
+    <BuildFreshness/>
     <a className="skip" href="#results">Przejdź do wyników</a>
     <header className="masthead"><div><h1>PERSONAL AUDIO <span>— Deal Board</span></h1>
       <p>PLN · Polska/UE-first · NEW/USED/B-stock porównywane do właściwego rynku</p></div>
