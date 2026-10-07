@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-07T15:36:15.461Z",
-  "mode": "deep",
-  "runId": "37645219015",
+  "refreshedAt": "2026-10-07T16:02:51.793Z",
+  "mode": "full",
+  "runId": "37648906157",
   "status": "COMPLETED",
   "updates": [
     {
       "fingerprint": "64 audio u12t||NEW|muzix|https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor",
       "category": "IEM",
-      "checkedAt": "2026-10-07T15:36:15.461Z",
+      "checkedAt": "2026-10-07T16:02:51.793Z",
       "checked": "2026-10-07",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
@@ -20,7 +20,7 @@
     {
       "fingerprint": "64 audio u12t||USED|ebay|https://www.ebay.de/itm/227532985491",
       "category": "IEM",
-      "checkedAt": "2026-10-07T15:36:15.461Z",
+      "checkedAt": "2026-10-07T16:02:51.793Z",
       "checked": "2026-10-07",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
@@ -114,7 +114,7 @@
     {
       "fingerprint": "dunu sa6 mkii||NEW|nt-global / hifi-passion|https://nt-global.de/Marken/DUNU/DUNU-Studio-SA6-MK2",
       "category": "IEM",
-      "checkedAt": "2026-10-07T15:36:15.461Z",
+      "checkedAt": "2026-10-07T16:02:51.793Z",
       "checked": "2026-10-07",
       "verificationState": "CONDITION_NOT_CONFIRMED",
       "http": 200,
@@ -168,7 +168,7 @@
     {
       "fingerprint": "qdc anole vx||NEW|hifigo|https://hifigo.com/products/qdc-anole-vx-earplugs-custom-earphones-balanced-armature",
       "category": "IEM",
-      "checkedAt": "2026-10-07T15:36:15.461Z",
+      "checkedAt": "2026-10-07T16:02:51.793Z",
       "checked": "2026-10-07",
       "verificationState": "NOT_DIRECT_OFFER_PAGE",
       "http": null,
@@ -177,7 +177,7 @@
     {
       "fingerprint": "sony ier-m9||USED|japonia via ebay de|https://www.ebay.de/itm/297861115503",
       "category": "IEM",
-      "checkedAt": "2026-10-07T15:36:15.461Z",
+      "checkedAt": "2026-10-07T16:02:51.793Z",
       "checked": "2026-10-07",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
@@ -225,7 +225,7 @@
     {
       "fingerprint": "thieaudio v16 divinity||NEW|thieaudio|https://www.thieaudio.com/products/thieaudio-v16-divinity",
       "category": "IEM",
-      "checkedAt": "2026-10-07T15:36:15.461Z",
+      "checkedAt": "2026-10-07T16:02:51.793Z",
       "checked": "2026-10-07",
       "verificationState": "NOT_DIRECT_OFFER_PAGE",
       "http": null,
