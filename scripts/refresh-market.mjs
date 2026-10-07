@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
-import {htmlText,modelMatches,conditionFrom,available,toPln,toNumber,isListingUrl} from './sources/common.mjs';
+import {htmlText,modelMatches,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
 
 const argv=process.argv.slice(2);
@@ -87,8 +87,13 @@ async function checkOffer(o){
     observe({...row,http:page.http,result:'ACCESS_RESTRICTED_REVERIFY',pricePln:o.price});
     return {...stamp,verificationState:'ACCESS_RESTRICTED_REVERIFY',http:page.http,note:'Refresh: source restricted automated access. Prior SSOT value retained.'};
   }
+  if(page.http===0||page.http>=500){
+    // Transient network/server failure: keep the previous state and ledger untouched instead of flapping.
+    receipt.remoteErrors++;
+    return null;
+  }
   if(v!=='REACHABLE'){
-    if(page.http===0||page.http>=500)receipt.remoteErrors++;else receipt.ambiguous++;
+    receipt.ambiguous++;
     observe({...row,http:page.http,result:v,pricePln:o.price});
     return {...stamp,verificationState:v,http:page.http,note:'Refresh: direct page could not be verified automatically.'};
   }
@@ -125,7 +130,8 @@ const updates=(await pool((base.offers||[]).filter(inScope),checkOffer)).filter(
 const additions=[];
 const reAdds=await pool(priorAdditions.filter(inScope),async a=>({a,u:await checkOffer(a)}));
 for(const r of reAdds.filter(Boolean)){
-  const {a,u}=r;const first=a.refresh?.firstVerifiedAt||a.refresh?.checkedAt||now;
+  const {a,u}=r;if(!u){additions.push(a);continue}
+  const first=a.refresh?.firstVerifiedAt||a.refresh?.checkedAt||now;
   if(u.verificationState==='DEAD')additions.push({...a,status:'STALE / REVERIFY',role:'OFFER',checked:u.checked,refresh:{...a.refresh,verificationState:'DEAD',http:u.http,checkedAt:now,firstVerifiedAt:first}});
   else if(u.status==='HISTORICAL')additions.push({...a,status:'HISTORICAL',role:'HISTORICAL',checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
   else if(u.verificationState==='DIRECT_OFFER_VERIFIED')additions.push({...a,price:u.price,original:u.original,checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
@@ -152,7 +158,7 @@ if(mode!=='quick'){
       try{
         const u=new URL(x[1],p.url).toString();
         const src=sourceForUrl(u);
-        if(src?.id!==j.s.id||isListingUrl(u)||known.has(u))continue;
+        if(src?.id!==j.s.id||isListingUrl(u)||!isPlausibleOfferLink(u)||known.has(u))continue;
         if(!links.includes(u))links.push(u);
       }catch{/* unparsable href */}
     }

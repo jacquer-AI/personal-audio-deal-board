@@ -136,3 +136,12 @@ describe('sold offers',()=>{
     expect(m.offers[0]).toMatchObject({status:'HISTORICAL',role:'HISTORICAL'});
   });
 });
+
+describe('discovery link hygiene',()=>{
+  it('rejects assets and site stubs, keeps concrete item paths',async()=>{
+    const {isPlausibleOfferLink}=await import('../../scripts/sources/common.mjs');
+    expect(isPlausibleOfferLink('https://www.kleinanzeigen.de/favicon.svg')).toBe(false);
+    expect(isPlausibleOfferLink('https://www.olx.pl/')).toBe(false);
+    expect(isPlausibleOfferLink('https://www.olx.pl/d/oferta/sluchawki-pi8-CID99-ID1.html')).toBe(true);
+  });
+});

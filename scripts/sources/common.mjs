@@ -68,3 +68,12 @@ export function looksBlocked(html,http){
   if([401,403,429,451].includes(http))return true;
   return http===200&&html.length<60000&&BLOCK_MARKERS.test(html)&&!/application\/ld\+json/i.test(html);
 }
+
+/** Discovery hrefs that can plausibly be a concrete offer page: not an asset, not a site root/category stub. */
+export function isPlausibleOfferLink(url){
+  try{
+    const u=new URL(url);
+    if(/\.(svg|ico|png|jpe?g|gif|webp|css|js|json|xml|woff2?|pdf)$/i.test(u.pathname))return false;
+    return u.pathname.replace(/\/+$/,'').length>=12;
+  }catch{return false}
+}
