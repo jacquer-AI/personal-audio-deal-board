@@ -1,10 +1,50 @@
 {
-  "schema": 1,
-  "refreshedAt": null,
-  "mode": null,
   "new": 0,
-  "priceChanged": 0,
-  "sold": 0,
+  "priceChanged": 2,
+  "sold": 1,
   "stale": 0,
-  "changes": []
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9206,
+      "to": 9310.38,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "PRICE",
+      "model": "Dan Clark Audio Noire X",
+      "from": 4499,
+      "to": 4899,
+      "url": "https://www.thomann.pl/dan_clark_audio_noire_x_b_stock.htm"
+    },
+    {
+      "type": "SOLD",
+      "model": "Audeze LCD-S20",
+      "url": "https://www.thomann.pl/audeze_lcd_s20.htm"
+    }
+  ],
+  "schema": 1,
+  "refreshedAt": "2026-10-07T12:13:19.892Z",
+  "mode": "quick",
+  "runId": "37619436525",
+  "candidates": 0,
+  "verifiedAdditions": 0,
+  "observationChanges": 24,
+  "receipt": {
+    "directUrlsAttempted": 20,
+    "directVerified": 3,
+    "accessRestricted": 10,
+    "ambiguous": 5,
+    "dead": 0,
+    "soldOrOut": 1,
+    "notDirect": 4,
+    "remoteErrors": 1,
+    "sourcesRestricted": {
+      "ebay-de": 3,
+      "olx-pl": 4,
+      "ebay-pl": 1,
+      "allegro-pl": 2
+    }
+  }
 }
