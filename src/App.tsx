@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
 import type {Offer, Filters, Product, Status} from './types';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable} from './lib/board';
+import RefreshCenter from './RefreshCenter';
 
 const offers = snapshot.offers as Offer[];
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Głośniki BT'];
@@ -103,7 +104,10 @@ export default function App() {
     <a className="skip" href="#results">Przejdź do wyników</a>
     <header className="masthead"><div><h1>PERSONAL AUDIO <span>— Deal Board</span></h1>
       <p>PLN · Polska/UE-first · NEW/USED/B-stock porównywane do właściwego rynku</p></div>
-      <a className="ssot-link" href={snapshot.source} target="_blank" rel="noopener noreferrer" aria-label="Otwórz Google Sheets — źródło danych">Arkusz ↗</a>
+      <div className="masthead-actions">
+        <RefreshCenter refresh={(snapshot as {refresh?:{refreshedAt?:string|null;mode?:string|null;status?:string|null}}).refresh}/>
+        <a className="ssot-link" href={snapshot.source} target="_blank" rel="noopener noreferrer" aria-label="Otwórz Google Sheets — źródło danych">Arkusz ↗</a>
+      </div>
     </header>
     <section className="toolbar" aria-label="Filtry i sortowanie">
       <input className="search" aria-label="Szukaj modelu, sprzedawcy, kraju lub źródła" type="search" value={f.search} onChange={e => change('search', e.target.value)} placeholder="Szukaj modelu, sprzedawcy…"/>

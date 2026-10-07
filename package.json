@@ -7,12 +7,15 @@
     "sync": "node scripts/sync-sheet.mjs",
     "validate-data": "node scripts/validate-data.mjs",
     "dev": "vite --host 127.0.0.1",
-    "build": "npm run sync && npm run validate-data && tsc -b && vite build",
+    "build": "npm run prepare-data && tsc -b && vite build",
     "typecheck": "tsc -b",
     "lint": "eslint .",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "merge-market": "node scripts/merge-market.mjs",
+    "prepare-data": "npm run sync && npm run merge-market && npm run validate-data",
+    "refresh-market": "node scripts/refresh-market.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

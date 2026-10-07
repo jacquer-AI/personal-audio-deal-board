@@ -35,6 +35,6 @@ if(fs.existsSync('data/link-validation.json')){
 const links=JSON.parse(fs.readFileSync('data/link-validation.json','utf8')).results;
 for(const o of offers){const link=links.find(l=>l.url===o.url);if(link?.result==='STALE / REVERIFY'){o.status='STALE / REVERIFY';o.note+=' · Link check: HTTP '+link.http+' — STALE / REVERIFY';}}
 }
-fs.writeFileSync('data/offers.json',JSON.stringify({source:'https://docs.google.com/spreadsheets/d/1LhS3CPng5nrwFE2O-xG46TJJZbmfSs7wpW1xKkQPmTs/edit',snapshot:'2026-10-07',fx:{EUR:4.37111,GBP:5.15290,USD:3.88344,timestamp:'2026-10-07 ~01:23 CEST'},offers},null,2));
+fs.writeFileSync('data/offers-base.json',JSON.stringify({source:'https://docs.google.com/spreadsheets/d/1LhS3CPng5nrwFE2O-xG46TJJZbmfSs7wpW1xKkQPmTs/edit',snapshot:'2026-10-07',fx:{EUR:4.37111,GBP:5.15290,USD:3.88344,timestamp:'2026-10-07 ~01:23 CEST'},offers},null,2));
 console.log('Generated',offers.length,'sources; no live FX requests.');
 
