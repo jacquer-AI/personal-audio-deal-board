@@ -74,7 +74,7 @@ Public readback and deployed browser E2E are required before canonical-link cuto
 
 ## Verification limits
 The automated 200%/400% reflow check uses equivalent CSS viewport widths.
-A separate Chromium browser zoom check records actual browser zoom at 100% and 200%.
+An additional Chromium CSS zoom check verifies 200% at 1440/1024/390/320; native browser chrome zoom is not available in the in-app browser.
 Automated axe is supplemented by keyboard focus/skip-link/dialog and visual inspection.
 No backend, auth, trackers, runtime FX service, analytics or commercial hosting dependency.
 

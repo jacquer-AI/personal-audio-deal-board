@@ -23,6 +23,7 @@ offers.push({id:'supplement-'+offers.length,model:r[1],category:r[0]==='Speaker'
 }
 // Current-market references are allowed only when ranking explicitly labels them current, not MSRP.
 for(const o of offers){
+if(!o.id.startsWith('market-')){const rank=raw['B4B Ranking'].values.find(r=>r[1]===o.model&&r[6]==='PLN'); if(rank){o.country=rank[11];}else if(o.status!=='HISTORICAL'){o.country='Nie podano w SSOT';}}
 const peers=offers.find(p=>p.id.startsWith('market-')&&p.model===o.model&&p.condition===o.condition&&p.region===o.region);
 if(!o.id.startsWith('market-')&&peers){o.newMarket=peers.newMarket;o.sameMarket=peers.sameMarket;o.rrp=peers.rrp;}
 if(o.sameMarket===null&&o.status!=='HISTORICAL'&&o.region!=='non-EU / TLC'){

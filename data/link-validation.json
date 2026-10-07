@@ -1,15 +1,15 @@
 {
-  "checked": "2026-10-07T09:03:19.380Z",
+  "checked": "2026-10-07T09:06:25.907Z",
   "results": [
     {
-      "id": "market-1",
-      "url": "https://www.ebay.de/itm/227532985491",
+      "id": "market-2",
+      "url": "https://www.ebay.de/itm/297861115503",
       "http": 403,
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
     {
-      "id": "market-2",
-      "url": "https://www.ebay.de/itm/297861115503",
+      "id": "market-1",
+      "url": "https://www.ebay.de/itm/227532985491",
       "http": 403,
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
@@ -26,14 +26,14 @@
       "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
     },
     {
-      "id": "market-5",
-      "url": "https://www.olx.pl/d/oferta/flagowe-sluchawki-technics-eah-az100-anc-pudrowy-roz-rose-gold-CID99-ID1ccCBL.html",
+      "id": "market-6",
+      "url": "https://www.olx.pl/elektronika/sprzet-audio/sluchawki/sluchawki-bezprzewodowe/q-technics-uzywane/",
       "http": 403,
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
     {
-      "id": "market-7",
-      "url": "https://allegro.pl/kategoria/sluchawki-bezprzewodowe-85166?string=s%C5%82uchawki+pi8",
+      "id": "market-5",
+      "url": "https://www.olx.pl/d/oferta/flagowe-sluchawki-technics-eah-az100-anc-pudrowy-roz-rose-gold-CID99-ID1ccCBL.html",
       "http": 403,
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
@@ -44,8 +44,8 @@
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
     {
-      "id": "market-6",
-      "url": "https://www.olx.pl/elektronika/sprzet-audio/sluchawki/sluchawki-bezprzewodowe/q-technics-uzywane/",
+      "id": "market-7",
+      "url": "https://allegro.pl/kategoria/sluchawki-bezprzewodowe-85166?string=s%C5%82uchawki+pi8",
       "http": 403,
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
@@ -56,14 +56,14 @@
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
     {
-      "id": "market-10",
-      "url": "https://www.ebay.pl/itm/267779562566",
+      "id": "market-11",
+      "url": "https://www.ebay.de/itm/227285753129",
       "http": 403,
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
     {
-      "id": "market-11",
-      "url": "https://www.ebay.de/itm/227285753129",
+      "id": "market-10",
+      "url": "https://www.ebay.pl/itm/267779562566",
       "http": 403,
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
@@ -86,26 +86,14 @@
       "result": "ACCESS_RESTRICTED_REVERIFY"
     },
     {
-      "id": "market-15",
-      "url": "https://pl.jbl.com/CHARGE-6.html",
-      "http": 200,
-      "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
-    },
-    {
       "id": "market-14",
       "url": "https://www.marshall.com/pl/en/product/middleton-ii?pid=1007428",
       "http": 200,
       "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
     },
     {
-      "id": "supplement-19",
-      "url": "https://allegro.pl/produkt/sluchawki-bezprzewodowe-dokanalowe-noble-audio-fokus-rex5-green-f9ee1b1a-5e4c-42e4-bf49-617e58490682?offerId=17454902763",
-      "http": 403,
-      "result": "ACCESS_RESTRICTED_REVERIFY"
-    },
-    {
-      "id": "supplement-17",
-      "url": "https://hifigo.com/products/qdc-anole-vx-earplugs-custom-earphones-balanced-armature",
+      "id": "market-15",
+      "url": "https://pl.jbl.com/CHARGE-6.html",
       "http": 200,
       "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
     },
@@ -116,19 +104,43 @@
       "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
     },
     {
+      "id": "supplement-17",
+      "url": "https://hifigo.com/products/qdc-anole-vx-earplugs-custom-earphones-balanced-armature",
+      "http": 200,
+      "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
+    },
+    {
       "id": "svanar-history",
       "url": "https://eu.hifiman.com/products/svanar-wireless-open-box",
       "http": 200,
       "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
     },
     {
-      "id": "supplement-21",
-      "url": "https://www.thomann.pl/audeze_lcd_s20.htm",
+      "id": "supplement-19",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/",
       "http": 200,
       "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
     },
     {
       "id": "supplement-20",
+      "url": "https://allegro.pl/produkt/sluchawki-bezprzewodowe-dokanalowe-noble-audio-fokus-rex5-green-f9ee1b1a-5e4c-42e4-bf49-617e58490682?offerId=17454902763",
+      "http": 403,
+      "result": "ACCESS_RESTRICTED_REVERIFY"
+    },
+    {
+      "id": "supplement-23",
+      "url": "https://www.thomann.pl/audeze_lcd_s20.htm",
+      "http": 200,
+      "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
+    },
+    {
+      "id": "supplement-22",
+      "url": "https://www.thomann.pl/dan_clark_audio_noire_x.htm",
+      "http": 200,
+      "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
+    },
+    {
+      "id": "supplement-21",
       "url": "https://mp3store.pl/sluchawki/sluchawki-bluetooth/noble-audio/2025411263250151547/0699838541665/noble-audio-fokus-prestige-encore-sluchawki-tws",
       "http": 200,
       "result": "HTTP_REACHABLE_NOT_STOCK_VERIFICATION"
