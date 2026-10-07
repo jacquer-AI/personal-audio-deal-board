@@ -31,7 +31,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -369,7 +369,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -525,7 +525,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -551,7 +551,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     },
     {
@@ -629,14 +629,14 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-07T12:15:38.991Z"
+        "checkedAt": "2026-10-07T12:16:24.233Z"
       }
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-07T12:15:38.991Z",
-    "mode": "quick",
-    "runId": "37619705640",
+    "refreshedAt": "2026-10-07T12:16:24.233Z",
+    "mode": "full",
+    "runId": "37619785481",
     "status": "COMPLETED"
   }
 }
