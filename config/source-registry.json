@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "generatedFrom": "AGY partial source-map + canonical audio market methodology",
+  "rules": {
+    "finalOfferPageRequiredForLive": true,
+    "aggregatorsDiscoveryOnly": true,
+    "leadMayNotSelfPromote": true,
+    "regions": [
+      "Polska",
+      "UE",
+      "non-EU / TLC"
+    ]
+  },
+  "sources": [
+    {
+      "id": "allegro-pl",
+      "name": "Allegro",
+      "region": "Polska",
+      "sweep": "daily",
+      "priority": 1,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "allegro.pl"
+      ],
+      "conditions": [
+        "NEW",
+        "USED",
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "używane",
+        "outlet",
+        "powystawowe",
+        "po zwrocie"
+      ],
+      "searchUrlTemplate": "https://allegro.pl/listing?string={q}"
+    },
+    {
+      "id": "olx-pl",
+      "name": "OLX",
+      "region": "Polska",
+      "sweep": "daily",
+      "priority": 1,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "olx.pl"
+      ],
+      "conditions": [
+        "USED",
+        "NEW"
+      ],
+      "queryTerms": [
+        "używane",
+        "jak nowy",
+        "nowe"
+      ],
+      "searchUrlTemplate": "https://www.olx.pl/oferty/q-{q}/"
+    },
+    {
+      "id": "mediaexpert-outlet",
+      "name": "Media Expert Outlet",
+      "region": "Polska",
+      "sweep": "daily",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "mediaexpert.pl"
+      ],
+      "conditions": [
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "outlet",
+        "powystawowe",
+        "po zwrocie"
+      ],
+      "searchUrlTemplate": "https://www.mediaexpert.pl/search?query[{q}]"
+    },
+    {
+      "id": "kleinanzeigen-de",
+      "name": "Kleinanzeigen",
+      "region": "UE",
+      "sweep": "daily",
+      "priority": 1,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "kleinanzeigen.de"
+      ],
+      "conditions": [
+        "USED",
+        "NEW",
+        "B-STOCK"
+      ],
+      "queryTerms": [
+        "gebraucht",
+        "B-Ware",
+        "offene Verpackung",
+        "Ausstellungsstück"
+      ],
+      "searchUrlTemplate": "https://www.kleinanzeigen.de/s-suchanfrage.html?keywords={q}"
+    },
+    {
+      "id": "marktplaats-nl",
+      "name": "Marktplaats",
+      "region": "UE",
+      "sweep": "daily",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "marktplaats.nl"
+      ],
+      "conditions": [
+        "USED",
+        "OPEN-BOX",
+        "B-STOCK"
+      ],
+      "queryTerms": [
+        "tweedehands",
+        "open doos",
+        "demo model",
+        "gebruikt"
+      ],
+      "searchUrlTemplate": "https://www.marktplaats.nl/q/{q}/"
+    },
+    {
+      "id": "subito-it",
+      "name": "Subito",
+      "region": "UE",
+      "sweep": "daily",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "subito.it"
+      ],
+      "conditions": [
+        "USED"
+      ],
+      "queryTerms": [
+        "usato",
+        "ricondizionato",
+        "scatola aperta",
+        "da esposizione"
+      ],
+      "searchUrlTemplate": "https://www.subito.it/annunci-italia/vendita/usato/?q={q}"
+    },
+    {
+      "id": "wallapop-es",
+      "name": "Wallapop",
+      "region": "UE",
+      "sweep": "daily",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "wallapop.com"
+      ],
+      "conditions": [
+        "USED",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "segunda mano",
+        "reacondicionado",
+        "caja abierta",
+        "ex-demo"
+      ],
+      "searchUrlTemplate": "https://es.wallapop.com/app/search?keywords={q}"
+    },
+    {
+      "id": "amazon-de-resale",
+      "name": "Amazon Resale DE",
+      "region": "UE",
+      "sweep": "daily",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "amazon.de"
+      ],
+      "conditions": [
+        "USED",
+        "OPEN-BOX",
+        "B-STOCK"
+      ],
+      "queryTerms": [
+        "Amazon Resale",
+        "gebraucht",
+        "wie neu"
+      ],
+      "searchUrlTemplate": "https://www.amazon.de/s?k={q}"
+    },
+    {
+      "id": "ebay-de",
+      "name": "eBay DE",
+      "region": "UE",
+      "sweep": "daily",
+      "priority": 1,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "ebay.de"
+      ],
+      "conditions": [
+        "NEW",
+        "USED",
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "gebraucht",
+        "refurbished",
+        "B-Ware"
+      ],
+      "searchUrlTemplate": "https://www.ebay.de/sch/i.html?_nkw={q}"
+    },
+    {
+      "id": "hifishark",
+      "name": "HiFiShark",
+      "region": "UE",
+      "sweep": "weekly",
+      "priority": 1,
+      "role": [
+        "discovery"
+      ],
+      "canVerifyOffer": false,
+      "aggregator": true,
+      "domains": [
+        "hifishark.com"
+      ],
+      "conditions": [
+        "USED",
+        "NEW"
+      ],
+      "queryTerms": [
+        "used",
+        "new"
+      ],
+      "searchUrlTemplate": "https://www.hifishark.com/search?q={q}"
+    },
+    {
+      "id": "geizhals",
+      "name": "Geizhals",
+      "region": "UE",
+      "sweep": "weekly",
+      "priority": 1,
+      "role": [
+        "discovery"
+      ],
+      "canVerifyOffer": false,
+      "aggregator": true,
+      "domains": [
+        "geizhals.eu",
+        "geizhals.de"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": [
+        "neu"
+      ],
+      "searchUrlTemplate": "https://geizhals.eu/?fs={q}"
+    },
+    {
+      "id": "tweakers",
+      "name": "Tweakers Pricewatch",
+      "region": "UE",
+      "sweep": "weekly",
+      "priority": 2,
+      "role": [
+        "discovery"
+      ],
+      "canVerifyOffer": false,
+      "aggregator": true,
+      "domains": [
+        "tweakers.net"
+      ],
+      "conditions": [
+        "NEW"
+      ],
+      "queryTerms": [
+        "nieuw"
+      ],
+      "searchUrlTemplate": "https://tweakers.net/pricewatch/zoeken/?keyword={q}"
+    },
+    {
+      "id": "audio-markt",
+      "name": "audio-markt",
+      "region": "UE",
+      "sweep": "weekly",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "audio-markt.de"
+      ],
+      "conditions": [
+        "USED",
+        "NEW"
+      ],
+      "queryTerms": [
+        "gebraucht",
+        "neu"
+      ]
+    },
+    {
+      "id": "beyerdynamic-outlet",
+      "name": "beyerdynamic Outlet",
+      "region": "UE",
+      "sweep": "weekly",
+      "priority": 3,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "beyerdynamic.de"
+      ],
+      "conditions": [
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "B-Stock",
+        "refurbished"
+      ]
+    },
+    {
+      "id": "tophifi-outlet",
+      "name": "Top HiFi Outlet",
+      "region": "Polska",
+      "sweep": "weekly",
+      "priority": 2,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "tophifi.pl"
+      ],
+      "conditions": [
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "outlet",
+        "powystawowe"
+      ],
+      "searchUrlTemplate": "https://www.tophifi.pl/catalogsearch/result/?q={q}"
+    },
+    {
+      "id": "rtveuroagd-outlet",
+      "name": "RTV Euro AGD Outlet",
+      "region": "Polska",
+      "sweep": "weekly",
+      "priority": 3,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "euro.com.pl"
+      ],
+      "conditions": [
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "outlet",
+        "powystawowe"
+      ]
+    },
+    {
+      "id": "ebay-uk",
+      "name": "eBay UK",
+      "region": "non-EU / TLC",
+      "sweep": "weekly",
+      "priority": 3,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "ebay.co.uk"
+      ],
+      "conditions": [
+        "USED",
+        "OPEN-BOX",
+        "B-STOCK"
+      ],
+      "queryTerms": [
+        "used",
+        "pre-owned",
+        "open box",
+        "ex-demo",
+        "refurbished"
+      ],
+      "searchUrlTemplate": "https://www.ebay.co.uk/sch/i.html?_nkw={q}"
+    },
+    {
+      "id": "gumtree-uk",
+      "name": "Gumtree UK",
+      "region": "non-EU / TLC",
+      "sweep": "weekly",
+      "priority": 4,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "gumtree.com"
+      ],
+      "conditions": [
+        "USED"
+      ],
+      "queryTerms": [
+        "used",
+        "boxed"
+      ]
+    },
+    {
+      "id": "richersounds-clearance",
+      "name": "Richer Sounds Clearance",
+      "region": "non-EU / TLC",
+      "sweep": "weekly",
+      "priority": 4,
+      "role": [
+        "discovery",
+        "verification"
+      ],
+      "canVerifyOffer": true,
+      "domains": [
+        "richersounds.com"
+      ],
+      "conditions": [
+        "B-STOCK",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        "clearance",
+        "ex-demo",
+        "refurbished"
+      ]
+    }
+  ]
+}
