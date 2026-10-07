@@ -30,8 +30,13 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint
       - run: npm test
-      - run: npm run build
+      - name: Build
+        run: npm run build
+        env:
+          VITE_BUILD_SHA: ${{ github.sha }}
       - run: node scripts/export-market-state.mjs
+      - name: Write deployed build version
+        run: node -e "require('fs').writeFileSync('dist/version.json', JSON.stringify({sha:process.env.GITHUB_SHA})+'\\n')"
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/configure-pages@v5
