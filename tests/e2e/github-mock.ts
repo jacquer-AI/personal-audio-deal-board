@@ -32,7 +32,7 @@ export async function mockGitHub(page:Page,opts:Options={}){
       dispatcherRequests.push({body:JSON.parse(req.postData()||'{}')});
       if(opts.dispatchStatus)return json({ok:false,error:'rejected'},opts.dispatchStatus);
       dispatched=true;runPolls=0;
-      return json({ok:true,queued:true,run:run(123,'queued',null)},202);
+      return json({ok:true,queued:true,run:null},202);
     }
     if(url.pathname.endsWith('/status')){
       if(!dispatched)return json({ok:true,run:{...run(100,'completed','success'),updated_at:hoursAgo,created_at:hoursAgo,display_title:'Refresh quick · all'}});
