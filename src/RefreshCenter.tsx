@@ -116,7 +116,7 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
 
   useEffect(()=>{
     if(!track)return;
-    let stopped=false,busy=false,refreshRun:Run|null=null,doneAt=0;
+    let stopped=false,busy=false,doneAt=0;
     const finish=(p:Phase,msg='')=>{stopped=true;setTrack(false);setPhase(p);if(msg)setError(msg)};
     const tick=async()=>{
       if(stopped||busy)return;
@@ -127,7 +127,7 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
         const body=await s.json() as {run?:Run|null};
         const run=body.run||null;
         if(!run){setPhase('queued');return}
-        refreshRun=run;setLastRun(run);setRunUrl(run.html_url||'');
+        setLastRun(run);setRunUrl(run.html_url||'');
         if(['queued','waiting','pending','requested'].includes(run.status)){setPhase('queued');return}
         if(run.status!=='completed'){setPhase('running');return}
         if(run.conclusion!=='success'){finish('failed','Refresh zakończony: '+run.conclusion);return}
