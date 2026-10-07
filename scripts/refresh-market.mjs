@@ -17,7 +17,6 @@ const modelDoc=JSON.parse(fs.readFileSync('config/model-registry.json','utf8'));
 const basePath=fs.existsSync('data/offers-base.json')?'data/offers-base.json':'data/offers.json';
 const base=JSON.parse(fs.readFileSync(basePath,'utf8'));
 const previousRuntime=fs.existsSync('data/offers.json')?JSON.parse(fs.readFileSync('data/offers.json','utf8')):base;
-const previousCurrent=fs.existsSync('data/market-current.json')?JSON.parse(fs.readFileSync('data/market-current.json','utf8')):{updates:[],additions:[]};
 const fx=base.fx||{EUR:4.3,GBP:5.1,USD:3.9};
 const sources=sourceDoc.sources||[];
 const sourceById=new Map(sources.map(s=>[s.id,s]));
