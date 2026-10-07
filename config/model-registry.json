@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "model": "64 Audio U12t",
+      "category": "IEM",
+      "quality": "S-",
+      "fit": 4,
+      "aliases": [
+        "U12t",
+        "64Audio U12t"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sony IER-M9",
+      "category": "IEM",
+      "quality": "A",
+      "fit": 5,
+      "aliases": [
+        "IER-M9",
+        "Sony M9"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "DUNU SA6 MkII",
+      "category": "IEM",
+      "quality": "B+",
+      "fit": 4,
+      "aliases": [
+        "SA6 MkII",
+        "Studio SA6 MK2"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "qdc Anole VX",
+      "category": "IEM",
+      "quality": "A+",
+      "fit": 4,
+      "aliases": [
+        "Anole VX",
+        "qdc VX"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Thieaudio V16 Divinity",
+      "category": "IEM",
+      "quality": "A-",
+      "fit": 3,
+      "aliases": [
+        "V16 Divinity"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Technics EAH-AZ100",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 3,
+      "aliases": [
+        "AZ100",
+        "EAH-AZ100"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "aliases": [
+        "B&W Pi8",
+        "Pi8"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "HIFIMAN Svanar Wireless",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "aliases": [
+        "Svanar Wireless"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Noble FoKus REX5",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 4,
+      "aliases": [
+        "FoKus REX5",
+        "REX5"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Noble FoKus Prestige Encore",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 4,
+      "aliases": [
+        "Prestige Encore",
+        "FoKus Prestige Encore"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Dan Clark Audio Noire X",
+      "category": "Closed",
+      "quality": "A+",
+      "fit": 5,
+      "aliases": [
+        "Noire X",
+        "DCA Noire X"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Dan Clark Audio AEON 2 Noire",
+      "category": "Closed",
+      "quality": "A",
+      "fit": 5,
+      "aliases": [
+        "AEON 2 Noire",
+        "Aeon2 Noire"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Audeze LCD-S20",
+      "category": "Closed",
+      "quality": "B+",
+      "fit": 2,
+      "aliases": [
+        "LCD-S20"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "aliases": [
+        "SoundLink Max"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Marshall Middleton II",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 4,
+      "aliases": [
+        "Middleton II"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "aliases": [
+        "Charge 6"
+      ],
+      "enabled": true
+    }
+  ]
+}
