@@ -160,7 +160,7 @@ if(mode!=='quick'){
       try{
         const u=new URL(x[1],p.url).toString();
         const src=sourceForUrl(u);
-        if(src?.id!==j.s.id||isListingUrl(u)||!isPlausibleOfferLink(u)||known.has(u))continue;
+        if(src?.id!==j.s.id||isListingUrl(u)||!isPlausibleOfferLink(u,src)||known.has(u))continue;
         if(!links.includes(u))links.push(u);
       }catch{/* unparsable href */}
     }
