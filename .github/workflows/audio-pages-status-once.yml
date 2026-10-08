@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 7
     env:
       GH_TOKEN: ${{ github.token }}
-      EXPECTED_SHA: 73bb044007430c712968cc2ceb571aa06e836c0f
+      EXPECTED_SHA: 5ffdc208adad308cb32ea93be7c3f0dce9c19950
     steps:
       - name: Read workflow runs and public version
         run: |
