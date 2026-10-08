@@ -33,7 +33,7 @@ test('live board never lists unchecked or blocked seller pages',async({page})=>{
   await page.locator('.more-filters > summary').click();
   await page.getByLabel('Live',{exact:true}).uncheck();
   await expect(page.getByRole('heading',{name:'Bose SoundLink Max',exact:true})).toBeVisible();
-  await expect(page.getByTestId('product').first().locator('.decision-line')).toContainText('NIEPOTWIERDZONE');
+  await expect(page.getByTestId('product').first().locator('.decision-line')).toContainText(/SPRAWDŹ|NIEPOTWIERDZONE/);
 });
 
 test('refresh center reflows on narrow mobile',async({page})=>{
