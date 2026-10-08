@@ -74,3 +74,106 @@ dialog{border:1px solid #6f7c6c;background:#f3f2ed;color:#252a28;width:calc(100%
 button:disabled{cursor:not-allowed;opacity:.75}
 @media(max-width:700px){.offer-provenance{margin-left:30px}.compare-select,.offer-details>summary,.primary-link,.tabs button,button,select{min-height:44px}.compare-select{padding:6px 0}.source>a{min-width:28px;min-height:44px}}
 @media(max-width:700px){.region-control{grid-column:1/-1}.sort-control{grid-column:1/3}.refresh-button,.more-filters>summary{min-height:44px}.tabs{flex-wrap:wrap;overflow-x:visible}}
+
+/* VISUAL REFRESH 2026-10-08 — high contrast, dense desktop rows and clear interactive affordances */
+:root{color-scheme:light;color:#17253b;background:#e9eff7;line-height:1.35}
+body{background:#e9eff7;color:#17253b}
+small,.masthead p,.product-meta,.score,.decision-line,.market,.metrics,.offer-provenance,.freshness,.mode-help,.verification-note{color:#374a64}
+a{color:#094f9b;font-weight:600}
+button,select,input[type=search],.more-filters>summary{background:#fff;color:#17253b;border:1px solid #879ab1;border-radius:6px}
+button:hover,.more-filters>summary:hover,summary:hover{background:#dae8f8}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #eea92d;outline-offset:2px}
+.app{max-width:1600px;padding:14px 22px 90px}
+.masthead{background:#172d4d;color:#fff;border-radius:9px;padding:12px 17px;margin-bottom:10px;gap:10px}
+h1{font-size:21px;letter-spacing:-.55px}
+.masthead p,.masthead .freshness{color:#dce9f8}
+.masthead .ssot-link{color:#e1ecff}
+.masthead-actions{gap:10px}
+.refresh-button{background:#f9fbff;border-color:#d3deee;color:#142d54;font-weight:750;font-size:12px;padding:5px 11px}
+.toolbar{background:#f8fbff;border:1px solid #aabbd1;border-radius:8px;padding:7px 9px;gap:7px;top:3px;box-shadow:0 2px 8px #1c355018}
+.tabs{gap:4px}
+.tabs button{color:#203954;background:#eaf0f8;border:1px solid #ced9e8;border-radius:6px;padding:5px 8px;font-weight:600}
+.tabs button[aria-pressed=true],.mode-buttons button[aria-pressed=true]{background:#174e91;color:#fff;border-color:#174e91}
+.search{font-size:13px;min-height:34px}
+.results-heading{min-height:30px;color:#435671;padding:0 5px}
+.results-heading b{color:#152d4c}
+.product{background:#fff;border:1px solid #c4d0df;border-left:4px solid #4c739d;border-radius:8px;padding:9px 12px 8px;margin:0 0 7px;box-shadow:0 1px 2px #1e3b5d12}
+.product-header{gap:9px;align-items:center}
+.product h2{font-size:17px;line-height:1.2;color:#112d4f;letter-spacing:-.2px}
+.product-meta{font-size:11px}
+.rank{width:22px;color:#405777;font-weight:700}
+.score{color:#375270;background:#eaf1fa;border:1px solid #cfdef0;border-radius:4px;padding:2px 7px}
+.score b{color:#133f76;font-weight:800}
+.compare-select{font-weight:650}
+.decision-line{margin:4px 0 4px 31px;font-size:11px;gap:5px}
+.decision-line>span{border:1px solid #d0dbe8;background:#edf3f9;color:#24425e;border-radius:4px;padding:1px 6px;font-weight:650}
+.decision-line strong{color:#173c6b}
+.record-body{margin-left:31px;gap:12px;grid-template-columns:minmax(0,1fr) minmax(215px,.55fr)}
+.price-position{grid-template-columns:155px minmax(0,1fr);gap:0 12px}
+.offer-price strong{font-size:24px;line-height:1.1;color:#0c396c;font-weight:800}
+.market{gap:2px 13px;font-size:11px}
+.market b{font-weight:750;color:#21354c}
+.metrics{gap:12px;color:#455b74;font-size:11px}
+.metrics b{color:#123c70;font-weight:750}
+.seller-action{gap:10px}
+.seller-action p{font-weight:650;color:#1d3453}
+.seller-action p span{font-weight:400;color:#435671}
+.primary-link{background:#155294;color:#fff;text-decoration:none;border-radius:6px;border:1px solid #155294;padding:7px 11px;font-weight:700;text-align:center;box-shadow:0 1px 2px #0002}
+.primary-link:hover{background:#0c376e;color:#fff}
+.offer-provenance{color:#455b73;margin:3px 0 3px 31px;font-size:10px}
+.offer-details{margin:2px 0 0 31px}
+.offer-details>summary{color:#064c97;font-size:11px;font-weight:750;padding:4px 3px}
+.source{border-color:#d0dbea}
+.source.unverified{background:#fff2df;border-left-color:#ab6811}
+.source.unverified .source-role{color:#774507}
+.historical{background:#e8edf3}
+.filter-panel,.refresh-dialog,dialog{background:#fff;color:#17253b;border-color:#8fa3bd}
+.dialog-header{background:#fff}
+.verification-note{background:#eef5fc;border-left-color:#2360a0;color:#294461}
+.run-button{background:#16549b;border-color:#16549b;color:#fff}
+.run-button:hover{background:#0b3971;color:#fff}
+.run-button:disabled{background:#65758b;color:#fff}
+.compare-dock{background:#142f53}
+.compact .product{padding-top:8px;padding-bottom:7px}
+.compact .decision-line{margin-bottom:3px}
+.compact .offer-details{margin-top:1px}
+.comfortable .product{padding-top:16px;padding-bottom:14px}
+@media(min-width:1151px){
+  .compact .record-body{grid-template-columns:minmax(0,1fr) minmax(220px,.55fr)}
+  .compact .seller-action{justify-content:flex-end}
+  .compact .product-header{min-height:23px}
+}
+@media(max-width:1150px){
+  .app{padding:13px 16px 94px}
+  .record-body{grid-template-columns:minmax(0,1fr) minmax(160px,.43fr);gap:9px}
+  .price-position{grid-template-columns:148px minmax(0,1fr);gap:0 8px}
+  .market{flex-direction:column;gap:1px}
+  .toolbar{grid-template-columns:minmax(0,1fr) 144px 112px auto}
+}
+@media(max-width:700px){
+  .app{padding:9px 9px 115px}
+  .masthead{padding:11px;align-items:flex-start;gap:8px}
+  h1{font-size:18px}
+  .toolbar{position:relative;grid-template-columns:104px minmax(0,1fr) auto;gap:6px;padding:8px}
+  .tabs button{min-height:44px;padding:6px 8px}
+  .product{margin-bottom:7px;padding:9px}
+  .product h2{font-size:17px}
+  .product-header{align-items:baseline;gap:5px 7px}
+  .decision-line{margin:5px 0 5px 27px}
+  .decision-line strong{font-size:10px}
+  .record-body{grid-template-columns:1fr;margin-left:27px;gap:5px}
+  .price-position{grid-template-columns:1fr;gap:3px}
+  .offer-price strong{font-size:25px}
+  .market{flex-direction:row;gap:4px 10px}
+  .metrics{gap:9px}
+  .seller-action{align-items:stretch;flex-direction:row;flex-wrap:wrap;justify-content:space-between;gap:4px}
+  .primary-link{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+  .offer-provenance,.offer-details{margin-left:27px}
+  .refresh-entry{align-items:flex-end}
+  .refresh-dialog{max-height:95vh}
+}
+@media(max-width:360px){
+  .toolbar{grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto}
+  .seller-action{flex-direction:column;align-items:stretch}
+  .primary-link{width:fit-content}
+}
