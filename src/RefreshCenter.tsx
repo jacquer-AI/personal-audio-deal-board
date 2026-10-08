@@ -14,7 +14,9 @@ const EMPTY_DELTA:Delta={new:0,priceChanged:0,sold:0,stale:0,changes:[]};
 type Mode='quick'|'full'|'deep';
 type Run={id:number;status:string;conclusion:string|null;created_at:string;updated_at:string;html_url:string;event?:string;display_title?:string};
 type Change={type:string;model:string;from?:number;to?:number;price?:number};
-type Delta={refreshedAt?:string|null;mode?:string|null;runId?:string|null;new?:number;priceChanged?:number;sold?:number;stale?:number;changes?:Change[]};
+type SourceCoverage={plannedJobs?:number;plannedSources?:number;reachableSources?:number;sources?:Record<string,{requested:number;reachable:number;restricted:number;candidateUrls:number}>};
+type Receipt={directUrlsAttempted?:number;directVerified?:number;accessRestricted?:number;ambiguous?:number;notDirect?:number;discovery?:SourceCoverage};
+type Delta={refreshedAt?:string|null;mode?:string|null;runId?:string|null;new?:number;priceChanged?:number;sold?:number;stale?:number;changes?:Change[];receipt?:Receipt};
 type RefreshMeta={refreshedAt?:string|null;mode?:string|null;status?:string|null};
 type Phase='idle'|'dispatching'|'queued'|'running'|'deploying'|'done'|'failed';
 type Progress={id:number;at:number};
@@ -268,6 +270,8 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
   const state=busy?phase.toUpperCase():phase==='failed'?'FAILED':phase==='done'?'OK':lastRun?(lastRun.status==='completed'?(lastRun.conclusion==='success'?'OK':'FAILED'):lastRun.status.toUpperCase()):(refresh?.status==='COMPLETED'?'OK':refresh?.status||'NEVER');
   const freshness=useMemo(()=> 'Rynek: '+ageLabel(lastRun?.updated_at||refresh?.refreshedAt||null)+' · '+state,[lastRun,refresh,state]);
   const changes=(delta.changes||[]).slice(0,6);
+  const checks=delta.receipt;
+  const discovery=checks?.discovery;
 
   return <>
     <div className="refresh-entry">
@@ -305,7 +309,13 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
           {changes.length>0&&(!busy||outcome==='CHANGED')&&<ul className="delta-list" data-testid="delta-list">{changes.map((c,i)=><li key={i}>{describeChange(c)}</li>)}</ul>}
         </section>
       </div>
-      <p className="verification-note"><b>LIVE</b> tylko po weryfikacji finalnej strony konkretnej oferty. Listing/agregator pozostaje LEAD.</p>
+      {checks&&outcome!=='NONE'&&<section className="source-coverage" data-testid="source-coverage" aria-label="Weryfikacja źródeł z ostatniego zapisu">
+        <b>Ostatni zapis: rzeczywista kontrola źródeł</b>
+        <p>Oferty: <strong>{checks.directVerified??0}/{checks.directUrlsAttempted??0}</strong> potwierdzonych na stronie sprzedawcy · <strong>{checks.accessRestricted??0}</strong> blokad dostępu.</p>
+        {discovery&&<p>Wyszukiwanie: <strong>{discovery.plannedJobs??0}</strong> zapytań · <strong>{discovery.plannedSources??0}</strong> serwisów objętych planem · <strong>{discovery.reachableSources??0}</strong> z dostępną stroną wyszukiwania.</p>}
+        <p>Blokada, listing lub agregator nie oznacza znalezionej ani zweryfikowanej oferty. Wyniki dotyczą ostatniego zapisanego przebiegu, nie bieżącej sesji.</p>
+      </section>}
+      <p className="verification-note"><b>LIVE</b> to status zapisanej oferty, nie gwarancja aktualnej dostępności. Nowe oferty trafiają do rankingu dopiero po weryfikacji końcowej strony sprzedawcy; listing i agregator pozostają LEAD.</p>
       <section className="dispatch-box">
         <button className="run-button" onClick={()=>void start()} disabled={dispatcherOnline!==true||busy}>{busy?'W toku…':'URUCHOM '+mode.toUpperCase()}</button>
         {phase==='done'&&<button className="reload-button" onClick={()=>location.reload()}>Wczytaj najnowsze dane</button>}
