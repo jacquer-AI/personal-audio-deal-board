@@ -112,6 +112,7 @@ jobs:
           console.log(JSON.stringify({status:receipt.status,runId:receipt.runId,sourceCount:summary?.receipt?.discovery?.plannedSources,verified:summary?.receipt?.directVerified,blocked:summary?.receipt?.accessRestricted,delta:summary?.DELTA}));
           JS
           content="$(base64 -w0 /tmp/audio-e2e-receipt.json)"
+          existing_sha="$(gh api "repos/$E2E_REPO/contents/e2e-audio-full-receipt.json?ref=$E2E_BRANCH" --jq .sha)"
           gh api -X PUT "repos/$E2E_REPO/contents/e2e-audio-full-receipt.json" \
-            -f message="e2e: record live FULL refresh receipt $GITHUB_RUN_ID [skip ci]" \
-            -f branch="$E2E_BRANCH" -f content="$content"
+            -f message="e2e: record post-fix FULL receipt $GITHUB_RUN_ID [skip ci]" \
+            -f branch="$E2E_BRANCH" -f content="$content" -f sha="$existing_sha"
