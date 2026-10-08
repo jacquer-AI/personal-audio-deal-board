@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "runId": "37759062321",
-  "at": "2026-10-08T09:48:04.715Z",
+  "runId": "37759852889",
+  "at": "2026-10-08T09:54:59.524Z",
   "ref": "verify/audio-full-e2e-20261008",
   "mode": "full",
   "workflow": "refresh-market.yml",
@@ -13,29 +13,29 @@
     "receipt": {
       "directUrlsAttempted": 20,
       "directVerified": 2,
-      "accessRestricted": 9,
+      "accessRestricted": 10,
       "ambiguous": 5,
       "dead": 0,
       "soldOrOut": 1,
       "notDirect": 4,
-      "remoteErrors": 3,
+      "remoteErrors": 2,
       "sourcesRestricted": {
         "ebay-de": 3,
         "olx-pl": 4,
-        "ebay-pl": 1,
-        "allegro-pl": 1
+        "allegro-pl": 2,
+        "ebay-pl": 1
       },
       "discovery": {
         "plannedJobs": 60,
         "plannedSources": 9,
-        "reachableSources": 4,
+        "reachableSources": 3,
         "sources": {
           "allegro-pl": {
             "requested": 5,
             "reachable": 0,
             "candidateUrls": 0,
-            "restricted": 4,
-            "errors": 1
+            "restricted": 5,
+            "errors": 0
           },
           "olx-pl": {
             "requested": 6,
@@ -54,7 +54,7 @@
           "kleinanzeigen-de": {
             "requested": 8,
             "reachable": 8,
-            "candidateUrls": 16,
+            "candidateUrls": 0,
             "restricted": 0,
             "errors": 0
           },
@@ -81,10 +81,10 @@
           },
           "amazon-de-resale": {
             "requested": 6,
-            "reachable": 6,
+            "reachable": 0,
             "candidateUrls": 0,
             "restricted": 0,
-            "errors": 0
+            "errors": 6
           },
           "ebay-de": {
             "requested": 5,
@@ -96,14 +96,14 @@
         }
       }
     },
-    "newLeads": 20,
-    "newVerifiedOffers": 0,
+    "newLeads": 24,
+    "newVerifiedOffers": 9,
     "deepCandidates": 0,
     "priceChanged": 0,
     "sold": 0,
     "stale": 0,
-    "new": 0,
-    "observationChanges": 0
+    "new": 9,
+    "observationChanges": 9
   },
   "status": "RECEIPT_CAPTURED"
 }
