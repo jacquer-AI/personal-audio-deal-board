@@ -1,6 +1,34 @@
 import {describe,it,expect}from'vitest';import{b4b,discount,savings,results,group,selectCompare,buyable,percentLabel,modelCount}from'../../src/lib/board';import type{Offer,Filters}from'../../src/types';import snapshot from '../fixtures/offers-baseline.json';
-const offers=snapshot.offers as Offer[];const f:Filters={search:'',category:'Wszystkie',conditions:[],region:'Wszystkie',status:'Wszystkie',liveOnly:true,history:false,sort:'b4b'};
+// Baseline unit fixture represents offers during a successful direct seller check,
+// not the stale/unverified production snapshot.
+const offers=(snapshot.offers as Offer[]).map(o=>({
+  ...o,
+  refresh:['LIVE VERIFIED','LIVE USED'].includes(o.status)
+    ?{verificationState:'DIRECT_OFFER_VERIFIED',http:200,checkedAt:new Date().toISOString()}
+    :o.refresh
+}));const f:Filters={search:'',category:'Wszystkie',conditions:[],region:'Wszystkie',status:'Wszystkie',liveOnly:true,history:false,sort:'b4b'};
 const az=offers.find(o=>o.model.includes('AZ100')&&o.condition==='NEW')!;
+describe('verify before listing (fail closed)',()=>{
+  const current=()=>({...az,refresh:{verificationState:'DIRECT_OFFER_VERIFIED',http:200,checkedAt:new Date().toISOString()}});
+  it('refuses saved LIVE labels without a direct seller confirmation',()=>{
+    expect(buyable({...az,refresh:undefined})).toBe(false);
+    expect(buyable({...az,refresh:{verificationState:'ACCESS_RESTRICTED_REVERIFY',http:403,checkedAt:new Date().toISOString()}})).toBe(false);
+    expect(buyable({...az,refresh:{verificationState:'NOT_DIRECT_OFFER_PAGE',http:null,checkedAt:new Date().toISOString()}})).toBe(false);
+  });
+  it('rejects expired retail evidence and expires used classifieds in eight hours',()=>{
+    expect(buyable({...current(),refresh:{verificationState:'DIRECT_OFFER_VERIFIED',http:200,checkedAt:new Date(Date.now()-25*3600000).toISOString()}})).toBe(false);
+    expect(buyable({...current(),condition:'USED',status:'LIVE USED',refresh:{verificationState:'DIRECT_OFFER_VERIFIED',http:200,checkedAt:new Date(Date.now()-9*3600000).toISOString()}})).toBe(false);
+  });
+  it('keeps valid current checks while excluding unverified from best offer and B4B',()=>{
+    const fresh=current();
+    const stale={...fresh,id:'stale',price:1,refresh:{verificationState:'ACCESS_RESTRICTED_REVERIFY',http:403,checkedAt:new Date().toISOString()}};
+    expect(buyable(fresh)).toBe(true);
+    expect(b4b(stale)).toBeNull();
+    const rows=results([fresh,stale],f);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].offers.map(x=>x.id)).toEqual([fresh.id]);
+  });
+});
 describe('price semantics',()=>{
 it('does not imply a discount for a rounded zero percentage',()=>{expect(percentLabel(1-2198.99/2199)).toBe('0.0%');expect(percentLabel(-.00001)).toBe('0.0%');expect(percentLabel(.1094)).toBe('−10.9%');expect(percentLabel(-.021)).toBe('+2.1%')});
 it('uses Polish model count forms',()=>{expect([0,1,2,4,5,12,22,24].map(modelCount)).toEqual(['modeli','model','modele','modele','modeli','modeli','modele','modele'])});
