@@ -31,7 +31,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -48,7 +48,7 @@
       "country": "Niemcy",
       "seller": "eBay",
       "region": "UE",
-      "status": "LIVE USED",
+      "status": "STALE / REVERIFY",
       "original": "€1349",
       "url": "https://www.ebay.de/itm/227532985491",
       "note": "USED observed median ≈ €1290; comps €950/1190/1250/1330 sold + €1349 active + €1390 deleted · Refresh: source restricted automated access. Prior SSOT value retained.",
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -126,7 +126,7 @@
       "country": "Polska",
       "seller": "Allegro",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "749 zł",
       "url": "https://allegro.pl/produkt/technics-eah-az100e-s-sluchawki-bezprzewodowe-douszne-anc-srebrne-7c106113-254c-4f5d-8a5c-b97483d3ed15?offerId=17201751429",
       "note": "Current NEW sample: 749 / 789 / 893.47 / 999 PLN; median ≈ 841 PLN · Refresh: source restricted automated access. Prior SSOT value retained.",
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -152,7 +152,7 @@
       "country": "Polska",
       "seller": "OLX Wrocław",
       "region": "Polska",
-      "status": "LIVE USED",
+      "status": "STALE / REVERIFY",
       "original": "610 zł",
       "url": "https://www.olx.pl/d/oferta/flagowe-sluchawki-technics-eah-az100-anc-pudrowy-roz-rose-gold-CID99-ID1ccCBL.html",
       "note": "USED sample: 490 / 500 / 500 / 580 / 600 / 610 PLN; median ≈ 540. 490 PLN exists as lead but direct page not verified · Refresh: source restricted automated access. Prior SSOT value retained.",
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -204,7 +204,7 @@
       "country": "Polska",
       "seller": "MediaMarkt/Allegro",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "1329.05 zł",
       "url": "https://allegro.pl/kategoria/sluchawki-bezprzewodowe-85166?string=s%C5%82uchawki+pi8",
       "note": "NEW observed: 1329.05 / 1399 PLN · Refresh: source URL is discovery/listing or source cannot verify a concrete offer.",
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -230,7 +230,7 @@
       "country": "Polska",
       "seller": "OLX Wrocław",
       "region": "Polska",
-      "status": "LIVE USED",
+      "status": "STALE / REVERIFY",
       "original": "800 zł",
       "url": "https://www.olx.pl/d/oferta/sluchawki-bowers-wilkins-pi8-CID99-ID1cxGcP.html",
       "note": "USED observed: 750/800/880/900/900/949 PLN; median ≈ 890. Lower 590/700/750 leads exist but require direct recheck · Refresh: source restricted automated access. Prior SSOT value retained.",
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -334,7 +334,7 @@
       "country": "Polska",
       "seller": "OLX Suwałki",
       "region": "Polska",
-      "status": "LIVE USED",
+      "status": "STALE / REVERIFY",
       "original": "800 zł",
       "url": "https://www.olx.pl/d/oferta/bose-soundlink-max-czarny-jak-nowy-w-oryginalnym-opakowaniu-z-dodatkowa-ochronna-torba-CID99-ID1cA77n.html",
       "note": "USED sample: 800 direct / 1050 lead / 1150 direct; median 1050. New direct reference 1498 PLN Allegro. · Refresh: source restricted automated access. Prior SSOT value retained.",
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -360,7 +360,7 @@
       "country": "Polska",
       "seller": "Allegro",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "1498 zł",
       "url": "https://allegro.pl/produkt/bose-soundlink-max-przenosny-glosnik-bluetooth-czarny-usb-c-aux-94cee3a2-8ade-4409-9ba7-5dae7154266c?fromInactiveOffer=archived",
       "note": "NEW observations: 1498 direct; 1529.99 direct variant; current market around 1.5k PLN. · Refresh: source restricted automated access. Prior SSOT value retained.",
@@ -369,7 +369,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -386,7 +386,7 @@
       "country": "Polska",
       "seller": "Marshall official",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "1099 zł",
       "url": "https://www.marshall.com/pl/en/product/middleton-ii?pid=1007428",
       "note": "Official Marshall PL 1099 PLN; Allegro Marshall_Poland comparison 1349 PLN. · Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained.",
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -412,7 +412,7 @@
       "country": "Polska",
       "seller": "JBL official",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "599 zł",
       "url": "https://pl.jbl.com/CHARGE-6.html",
       "note": "Official RRP 799 PLN; current official price 599 PLN. OLX has much lower leads 250–480 PLN; authenticity/direct-page verification required. · Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained.",
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -516,16 +516,16 @@
       "country": "Poland",
       "seller": "Technics Poland",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "999 PLN",
       "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/",
-      "note": "Available; add to cart · Free delivery shown · Refresh: exact model + explicit price on direct offer page (JSON_LD).",
+      "note": "Available; add to cart · Free delivery shown · Refresh: MODEL_NOT_CONFIRMED. Prior SSOT value retained.",
       "role": "OFFER",
-      "checked": "2026-10-08",
+      "checked": "2026-10-07",
       "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "verificationState": "MODEL_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -542,7 +542,7 @@
       "country": "Poland",
       "seller": "Allegro / HiFiPRO-Poznan",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "2198,99 PLN",
       "url": "https://allegro.pl/produkt/sluchawki-bezprzewodowe-dokanalowe-noble-audio-fokus-rex5-green-f9ee1b1a-5e4c-42e4-bf49-617e58490682?offerId=17454902763",
       "note": "1 unit shown; add to cart · Domestic shipping · Refresh: source restricted automated access. Prior SSOT value retained.",
@@ -551,7 +551,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -594,7 +594,7 @@
       "country": "Germany / EU (Thomann PL storefront)",
       "seller": "Thomann PL",
       "region": "Polska",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "5222 PLN",
       "url": "https://www.thomann.pl/dan_clark_audio_noire_x.htm",
       "note": "In stock · Domestic/EU checkout · Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained.",
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     },
     {
@@ -629,14 +629,14 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T10:01:36.083Z"
+        "checkedAt": "2026-10-08T10:43:47.572Z"
       }
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-08T10:01:36.083Z",
+    "refreshedAt": "2026-10-08T10:43:47.572Z",
     "mode": "full",
-    "runId": "37760690640",
+    "runId": "37765363404",
     "status": "COMPLETED"
   }
 }
