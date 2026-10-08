@@ -11,11 +11,11 @@ jobs:
     timeout-minutes: 25
     env:
       GH_TOKEN: ${{ github.token }}
-      EXPECTED_SHA: e11bf5abe8cd010a392351ef499590b7df9ec181
+      EXPECTED_SHA: e3555495780e91ba0d4ac00e4118aec37b817d6e
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: e11bf5abe8cd010a392351ef499590b7df9ec181
+          ref: e3555495780e91ba0d4ac00e4118aec37b817d6e
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -25,7 +25,7 @@ jobs:
         id: readback
         continue-on-error: true
         env:
-          VITE_BUILD_SHA: e11bf5abe8cd010a392351ef499590b7df9ec181
+          VITE_BUILD_SHA: e3555495780e91ba0d4ac00e4118aec37b817d6e
         run: |
           npm run build
           node scripts/readback.mjs | tee /tmp/audio-pages-readback.log
@@ -57,9 +57,10 @@ jobs:
           console.log(JSON.stringify(rec));
           JS
           content="$(base64 -w0 /tmp/audio-public-e2e-receipt.json)"
+          existing_sha="$(gh api "repos/$GITHUB_REPOSITORY/contents/e2e-audio-public-receipt.json?ref=$E2E_BRANCH" --jq .sha)"
           gh api -X PUT "repos/$GITHUB_REPOSITORY/contents/e2e-audio-public-receipt.json" \
-            -f message="e2e: capture production readback and public browser test [skip ci]" \
-            -f branch="$E2E_BRANCH" -f content="$content"
+            -f message="e2e: capture final safe production readback [skip ci]" \
+            -f branch="$E2E_BRANCH" -f content="$content" -f sha="$existing_sha"
       - name: Enforce production gate
         if: ${{ always() }}
         env:
