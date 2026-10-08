@@ -95,8 +95,17 @@ describe('overlay, delta and no-op',()=>{
     const merged=mergeOverlay({offers:[offer]},{updates:[update],additions:[]}).offers[0];
     expect(merged.checked).toBe('2026-10-07');
     expect(merged.refresh.verificationState).toBe('ACCESS_RESTRICTED_REVERIFY');
+    expect(merged.status).toBe('STALE / REVERIFY');
     const confirmed=mergeOverlay({offers:[offer]},{updates:[{...update,verificationState:'DIRECT_OFFER_VERIFIED',http:200}],additions:[]}).offers[0];
     expect(confirmed.checked).toBe('2026-10-08');
+  });
+  it('sends saved LIVE to review before listing when seller cannot be checked',()=>{
+    const unchecked=mergeOverlay({offers:[offer]},{updates:[],additions:[]}).offers[0];
+    expect(unchecked.status).toBe('STALE / REVERIFY');
+    const parsed=mergeOverlay({offers:[offer]},{updates:[{fingerprint:fingerprint(offer),http:200,verificationState:'CONDITION_NOT_CONFIRMED'}]}).offers[0];
+    expect(parsed.status).toBe('STALE / REVERIFY');
+    const fresh=mergeOverlay({offers:[offer]},{updates:[{fingerprint:fingerprint(offer),http:200,verificationState:'DIRECT_OFFER_VERIFIED',status:'LIVE USED'}]}).offers[0];
+    expect(fresh.status).toBe('LIVE USED');
   });
   it('a discovered lead cannot promote an existing LEAD to live',()=>{
     const lead={...offer,status:'LEAD ONLY',url:'https://shop.example/item/2'};
