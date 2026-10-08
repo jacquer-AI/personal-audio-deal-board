@@ -43,10 +43,15 @@ export function verificationFromHttp(http) {
 }
 
 export function safeStatus(base, overlay) {
-  if (!overlay) return base.status;
+  if (base.status === 'HISTORICAL') return 'HISTORICAL';
+  if (!overlay) return LIVE_STATUSES.has(base.status) ? 'STALE / REVERIFY' : base.status;
   if (overlay.verificationState === 'DEAD') return 'STALE / REVERIFY';
   if (overlay.status === 'HISTORICAL') return 'HISTORICAL';
   if (overlay.status === 'NON-EU / TLC') return 'NON-EU / TLC';
+  // Seller could not establish availability, condition and price.
+  // A previous spreadsheet LIVE label must never survive an unverified search.
+  if (LIVE_STATUSES.has(base.status) && overlay.verificationState !== 'DIRECT_OFFER_VERIFIED')
+    return 'STALE / REVERIFY';
   if (LIVE_STATUSES.has(overlay.status)) {
     if (overlay.verificationState === 'DIRECT_OFFER_VERIFIED' && LIVE_STATUSES.has(base.status)) return overlay.status;
     return base.status;
@@ -55,7 +60,7 @@ export function safeStatus(base, overlay) {
 }
 
 export function mergeOffer(base, overlay) {
-  if (!overlay) return {...base};
+  if (!overlay) return {...base,status:safeStatus(base,null)};
   const verified = overlay.verificationState === 'DIRECT_OFFER_VERIFIED';
   const merged = {...base};
   if (verified && Number.isFinite(overlay.price) && overlay.price > 0) merged.price = overlay.price;

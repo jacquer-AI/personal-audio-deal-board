@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
-import {htmlText,modelMatches,urlMatchesModel,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
+import {modelMatches,urlMatchesModel,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs} from './discovery-scheduler.mjs';
 
@@ -169,52 +169,80 @@ if(mode!=='quick'){
     return found;
   });
   receipt.discovery={plannedJobs:jobs.length,plannedSources:Object.values(discoveryStats).filter(s=>s.requested>0).length,reachableSources:Object.values(discoveryStats).filter(s=>s.reachable>0).length,sources:discoveryStats};
+  // Discovery URLs are INTERNAL INPUT, never publishable offers or even user-facing leads.
+  const discoveredUrls=[];
   const seen=new Set();
-  for(const rows of discovered)for(const c of rows||[]){if(seen.has(c.url)||candidates.length>=120)continue;seen.add(c.url);candidates.push(c)}
+  for(const rows of discovered)for(const c of rows||[]){
+    if(seen.has(c.url)||discoveredUrls.length>=120)continue;
+    seen.add(c.url);discoveredUrls.push(c);
+  }
 
-  // A lead becomes an offer only after a concrete final seller page verifies model, condition, price and stock.
-  const verify=candidates.filter(c=>sourceById.get(c.sourceId)?.canVerifyOffer).slice(0,40);
-  await pool(verify,async c=>{
+  // Open every bounded candidate on the final seller page BEFORE allowing it into
+  // the candidate register or LIVE. 403, navigation, absent price/stock/condition
+  // and redirects to unrelated products are audit observations only.
+  const verify=discoveredUrls.slice(0,120);
+  const verified=await pool(verify,async c=>{
     const source=sourceById.get(c.sourceId);
-    const p=await fetchPage(c.url);if(p.http<200||p.http>=300)return;
-    if(!directOfferEligible(c.url,source))return;
-    const {blocked,parsed}=parsePage(source,p.html,p.http);if(blocked||!parsed)return;
-    const meta=modelMeta.get(c.model);if(!meta||!urlMatchesModel(c.url,meta)||!modelMatches(p.html,meta))return;
-    // Never infer listing condition/availability from generic page boilerplate.
-    const cond=conditionFrom(parsed,''),stock=available(parsed,''),pln=toPln(parsed.price,parsed.currency,fx);
-    if(!cond||!pln||stock!==true)return;
-    const peer=(base.offers||[]).find(o=>o.model===c.model&&o.condition===cond&&Number.isFinite(o.sameMarket));
+    const meta=modelMeta.get(c.model);
+    const stat=discoveryStats[c.sourceId];
+    stat.checkedUrls=(stat.checkedUrls||0)+1;
+    const observation={fingerprint:fingerprint({model:c.model,condition:'UNVERIFIED',seller:c.source,url:c.url}),model:c.model,condition:'UNVERIFIED',sourceId:c.sourceId,url:c.url};
+    const reject=(reason,http=null)=>{
+      stat.unverifiedUrls=(stat.unverifiedUrls||0)+1;
+      observe({...observation,http,result:'SEARCH_REJECT_'+reason});
+      return null;
+    };
+    if(!source?.canVerifyOffer||!meta||!directOfferEligible(c.url,source)||
+       isListingUrl(c.url)||!isPlausibleOfferLink(c.url,source)||!urlMatchesModel(c.url,meta))
+      return reject('NOT_DIRECT_OR_MODEL');
+    const p=await fetchPage(c.url);
+    if(p.http!==200)return reject('HTTP_'+p.http,p.http);
+    try{
+      const expected=new URL(c.url),actual=new URL(p.url);
+      if(expected.hostname!==actual.hostname||expected.pathname.replace(/[/]$/,'')!==actual.pathname.replace(/[/]$/,''))
+        return reject('REDIRECT',p.http);
+    }catch{return reject('REDIRECT',p.http)}
+    const {blocked,parsed}=parsePage(source,p.html,p.http);
+    if(blocked||!parsed)return reject(blocked?'ACCESS_BLOCKED':'NO_ITEM_PRICE',p.http);
+    if(!modelMatches(p.html,meta))return reject('MODEL_MISMATCH',p.http);
+    // No text scraped from generic page boilerplate may prove an individual item is in stock.
+    const condition=conditionFrom(parsed,''),stock=available(parsed,'');
+    const price=toPln(parsed.price,parsed.currency,fx);
+    if(stock!==true)return reject(stock===false?'SOLD':'STOCK_UNKNOWN',p.http);
+    if(!condition)return reject('CONDITION_UNKNOWN',p.http);
+    if(!price)return reject('PRICE_UNKNOWN',p.http);
+    const peer=(base.offers||[]).find(o=>o.model===c.model&&o.condition===condition&&Number.isFinite(o.sameMarket));
     const add={
-      id:'refresh-'+createHash('sha1').update(fingerprint({model:c.model,condition:cond,seller:c.source,url:c.url})).digest('hex').slice(0,16),
-      model:c.model,category:c.category,quality:c.quality,fit:c.fit,condition:cond,
+      id:'refresh-'+createHash('sha1').update(fingerprint({model:c.model,condition,seller:c.source,url:c.url})).digest('hex').slice(0,16),
+      model:c.model,category:c.category,quality:c.quality,fit:c.fit,condition,
       rrp:peer?.rrp??null,newMarket:peer?.newMarket??null,sameMarket:peer?.sameMarket??null,
-      price:pln,country:c.region,seller:c.source,region:c.region,status:cond==='USED'?'LIVE USED':'LIVE VERIFIED',
+      price,country:c.region,seller:c.source,region:c.region,status:condition==='USED'?'LIVE USED':'LIVE VERIFIED',
       original:parsed.price+' '+(parsed.currency||''),url:c.url,role:'OFFER',checked:now.slice(0,10),
       refresh:{verificationState:'DIRECT_OFFER_VERIFIED',checkedAt:now,firstVerifiedAt:now,http:p.http}
     };
     const rt=redTeam(add,source,peer);
-    add.note='Discovered and verified on direct offer page during '+mode.toUpperCase()+' refresh. Red-team flags: '+rt.flags.join(', ')+'.';
+    const candidate={...c,status:'VERIFIED LEAD',verifiedAt:now,verificationState:'DIRECT_OFFER_VERIFIED',
+      http:200,condition,price,currency:parsed.currency,availability:'InStock',redTeam:rt.flags};
+    stat.verifiedUrls=(stat.verifiedUrls||0)+1;
     const fp=fingerprint(add);
-    if(rt.block){c.redTeam=rt.flags;c.status='LEAD ONLY';observe({fingerprint:fp,model:c.model,condition:cond,sourceId:c.sourceId,url:c.url,http:p.http,result:'RED_TEAM_BLOCKED',pricePln:pln});return}
-    newAdditions.push(add);
-    observe({fingerprint:fp,model:c.model,condition:cond,sourceId:c.sourceId,url:c.url,http:p.http,result:'NEW_DIRECT_OFFER_VERIFIED',pricePln:pln,currency:parsed.currency});
+    if(rt.block){
+      observe({fingerprint:fp,model:c.model,condition,sourceId:c.sourceId,url:c.url,http:p.http,
+        result:'DIRECT_CURRENT_NOT_PURCHASABLE_'+rt.flags.join('_'),pricePln:price});
+      return {candidate,addition:null};
+    }
+    add.note='Seller item verified during '+mode.toUpperCase()+' search: model, condition, price, stock and full cost checked.';
+    observe({fingerprint:fp,model:c.model,condition,sourceId:c.sourceId,url:c.url,http:p.http,result:'NEW_DIRECT_OFFER_VERIFIED',pricePln:price,currency:parsed.currency});
+    return {candidate,addition:add};
   });
+  for(const v of verified.filter(Boolean)){
+    candidates.push(v.candidate);
+    if(v.addition)newAdditions.push(v.addition);
+  }
   for(const a of newAdditions)if(!additions.some(x=>fingerprint(x)===fingerprint(a)))additions.push(a);
 }
 
-if(mode==='deep'){
-  // Challenger discovery: isolated in market-candidates.json, never scored, never an offer.
-  const broad=['high end IEM used sale Europe','audiophile TWS open box Europe','closed audiophile headphones B-stock Europe','premium Bluetooth speaker outlet Europe'];
-  await pool(broad,async query=>{
-    const p=await fetchPage('https://html.duckduckgo.com/html/?q='+encodeURIComponent(query));
-    if(p.http<200||p.http>=400)return;
-    const re=/<a[^>]+class=["'][^"']*result__a[^"']*["'][^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let x,n=0;
-    while((x=re.exec(p.html))&&n<8){
-      let u=x[1];try{u=decodeURIComponent(new URL(u,'https://duckduckgo.com').searchParams.get('uddg')||u)}catch{/* keep raw */}
-      candidates.push({model:null,category:null,sourceId:'web-deep',source:'Web discovery',region:'UE/unknown',url:u,title:htmlText(x[2]).trim(),query,discoveredAt:now,status:'UNADJUDICATED',deep:true});n++;
-    }
-  });
-}
+// Deep discovery of new model families requires separate research; unverified
+// search-engine hits must never be serialized as customer-visible offers.
 
 const current=mergeCurrent(previousCurrent,{schema:1,refreshedAt:now,mode,runId,status:'COMPLETED',updates,additions});
 const merged=mergeOverlay(base,current);
@@ -228,10 +256,14 @@ const obsAppend=dedupeObservations(rawObs,last);
 const candidatesDoc=mode==='quick'?previousCandidates:{schema:1,refreshedAt:now,mode,candidates};
 const currentChanged=!materiallyEqual({...previousCurrent,status:undefined,mode:undefined},{...current,status:undefined,mode:undefined});
 const candidatesChanged=mode!=='quick'&&!materiallyEqual(previousCandidates.candidates||[],candidates);
-const material=currentChanged||candidatesChanged||obsAppend.length>0||delta.changes.length>0;
+// Fresh seller verification is perishable evidence. Persist a positive recheck at
+// least every four hours even if price is unchanged, so static Pages can prove recency.
+const persistedAt=Date.parse(previousRuntime?.refresh?.refreshedAt||'');
+const freshnessRenewal=receipt.directVerified>0&&(!Number.isFinite(persistedAt)||Date.now()-persistedAt>=4*60*60*1000);
+const material=currentChanged||candidatesChanged||obsAppend.length>0||delta.changes.length>0||freshnessRenewal;
 
-Object.assign(delta,{schema:1,refreshedAt:now,mode,runId,candidates:candidatesDoc.candidates?.length??0,verifiedAdditions:newAdditions.length,observationChanges:obsAppend.length,receipt});
-const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,newLeads:candidates.length,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length};
+Object.assign(delta,{schema:1,refreshedAt:now,mode,runId,candidates:candidatesDoc.candidates?.length??0,verifiedAdditions:newAdditions.length,observationChanges:obsAppend.length,freshnessRenewal,receipt});
+const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,newLeads:candidates.length,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length,freshnessRenewal,discoveredUrlsChecked:mode==='quick'?0:(receipt.discovery?.sources?Object.values(receipt.discovery.sources).reduce((n,x)=>n+(x.checkedUrls||0),0):0)};
 
 if(material&&!DRY){
   fs.writeFileSync('data/market-current.json',JSON.stringify(current,null,2)+'\n');
