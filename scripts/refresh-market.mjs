@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
-import {htmlText,modelMatches,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
+import {htmlText,modelMatches,urlMatchesModel,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs} from './discovery-scheduler.mjs';
 
@@ -160,7 +160,7 @@ if(mode!=='quick'){
       try{
         const u=new URL(x[1],p.url).toString();
         const src=sourceForUrl(u);
-        if(src?.id!==j.s.id||isListingUrl(u)||!isPlausibleOfferLink(u,src)||known.has(u))continue;
+        if(src?.id!==j.s.id||isListingUrl(u)||!isPlausibleOfferLink(u,src)||!urlMatchesModel(u,j.m)||known.has(u))continue;
         if(!links.includes(u))links.push(u);
       }catch{/* unparsable href */}
     }
@@ -179,8 +179,9 @@ if(mode!=='quick'){
     const p=await fetchPage(c.url);if(p.http<200||p.http>=300)return;
     if(!directOfferEligible(c.url,source))return;
     const {blocked,parsed}=parsePage(source,p.html,p.http);if(blocked||!parsed)return;
-    const meta=modelMeta.get(c.model);if(!meta||!modelMatches(p.html,meta))return;
-    const cond=conditionFrom(parsed,p.html),stock=available(parsed,p.html),pln=toPln(parsed.price,parsed.currency,fx);
+    const meta=modelMeta.get(c.model);if(!meta||!urlMatchesModel(c.url,meta)||!modelMatches(p.html,meta))return;
+    // Never infer listing condition/availability from generic page boilerplate.
+    const cond=conditionFrom(parsed,''),stock=available(parsed,''),pln=toPln(parsed.price,parsed.currency,fx);
     if(!cond||!pln||stock!==true)return;
     const peer=(base.offers||[]).find(o=>o.model===c.model&&o.condition===cond&&Number.isFinite(o.sameMarket));
     const add={
