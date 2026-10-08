@@ -69,11 +69,26 @@ export function looksBlocked(html,http){
   return http===200&&html.length<60000&&BLOCK_MARKERS.test(html)&&!/application\/ld\+json/i.test(html);
 }
 
-/** Discovery hrefs that can plausibly be a concrete offer page: not an asset, not a site root/category stub. */
-export function isPlausibleOfferLink(url){
+/** Conservative direct-offer discovery gate; search pages, help pages and site assets never become leads. */
+export function isPlausibleOfferLink(url,source=null){
   try{
     const u=new URL(url);
-    if(/\.(svg|ico|png|jpe?g|gif|webp|css|js|json|xml|woff2?|pdf)$/i.test(u.pathname))return false;
-    return u.pathname.replace(/\/+$/,'').length>=12;
+    if(!['https:','http:'].includes(u.protocol))return false;
+    const path=decodeURIComponent(u.pathname).toLowerCase();
+    if(/\.(svg|ico|png|jpe?g|gif|webp|css|js|json|xml|woff2?|webmanifest|pdf|txt|map)$/i.test(path))return false;
+    if(path.replace(/\/+$/,'').length<12)return false;
+    if(isListingUrl(url))return false;
+    if(/\/(?:help|hilfe|support|faq|terms|policy|privacy|datenschutz|legal|impressum|regulamin|kontakt|login|logout|account|transazioni|checkout|cart|basket|sitemap|security|veiligheidscentrum|bezpieczenstwo)(?:\/|$)/i.test(path))return false;
+    if(/^\/s-[^/]+\/k\d+\/?$/i.test(path) || /^\/annunci-[^/]+\/vendita\//i.test(path))return false;
+    const id=String(source?.id||'');
+    if(id==='kleinanzeigen-de')return /^\/s-anzeige\/[^/]+\/\d{6,}(?:-|\/|$)/i.test(path);
+    if(id==='marktplaats-nl')return /^\/v\/[^/]+\/[^/]+\/m\d{7,}/i.test(path);
+    if(id==='subito-it')return /^\/[^/]+\/[^/]+\.htm$/i.test(path);
+    if(id==='olx-pl')return /^\/d\/oferta\/[^/]+\.html$/i.test(path);
+    if(id==='allegro-pl')return /^\/oferta\/[^/]+-\d{7,}/i.test(path);
+    if(id==='ebay-de'||id==='ebay-pl'||id==='ebay-uk')return /^\/itm\/(?:[^/]+\/)?\d{8,}/i.test(path);
+    if(id==='amazon-de-resale')return /^\/(?:dp|gp\/product)\/[a-z0-9]{10}(?:\/|$)/i.test(path);
+    if(id==='wallapop-es')return /^\/item\/[^/]+-\d{6,}/i.test(path);
+    return true;
   }catch{return false}
 }
