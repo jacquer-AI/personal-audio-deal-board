@@ -93,7 +93,8 @@ export default function App() {
         <span className="score" title="B4B: jakość × rynek tego samego stanu / cena oferty. Wyżej = lepszy stosunek jakości do ceny.">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
         <label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={() => toggle(p.model)}/>Porównaj<span className="sr-only"> {p.model}</span></label>
       </header>
-      <p className="decision-line"><span>{o.condition}</span><span title={o.status} aria-label={o.status}>{statusText[o.status]}</span><strong>{decision(o)}</strong></p>
+      <p className="decision-line"><span>{o.condition}</span><span title={o.status} aria-label={o.status}>{statusText[o.status]}</span><strong>{decision(o)}</strong>
+        {o.refresh?.verificationState&&o.refresh.verificationState!=='DIRECT_OFFER_VERIFIED'&&<span className="recheck-badge" title={'Ostatnia próba: '+o.refresh.verificationState}>! Niepotwierdzona aktualność</span>}</p>
       <p className="offer-provenance">Weryfikacja według zapisu: {o.checked}. Potwierdź cenę i dostępność u sprzedawcy.</p>
       <div className="record-body"><Price offer={o}/><div className="seller-action">
         <p>{o.seller}<span> · {countryLabel(o.country)}</span></p>
