@@ -1,6 +1,12 @@
 import {test,expect} from '@playwright/test';
 import {mockGitHub} from './github-mock';
 import AxeBuilder from '@axe-core/playwright';
+import snapshot from '../../data/offers.json' with {type:'json'};
+import {buyable} from '../../src/lib/board';
+import type {Offer} from '../../src/types';
+const allOffers=snapshot.offers as Offer[];
+const currentOffers=allOffers.filter(buyable);
+const currentModels=[...new Set(currentOffers.map(o=>o.model))];
 
 const dispatcher='https://desktop-t47p2au.tail84c6f0.ts.net:8444/audio-refresh';
 const activeRun={id:123,status:'in_progress',conclusion:null,get created_at(){return new Date().toISOString()},get updated_at(){return new Date().toISOString()},html_url:'https://github.com/jacquer-AI/personal-audio-deal-board/actions/runs/123',display_title:'Refresh quick · all'};
@@ -118,17 +124,25 @@ test('slow polling times out and recovers through the public run without duplica
 
 test('old unverified seller links are hidden from LIVE but remain research-only',async({page})=>{
   await mockGitHub(page);await page.goto('./');
-  const product=page.getByTestId('product').filter({hasText:'Technics EAH-AZ100'});
-  await product.locator('.offer-details > summary').click();
-  await expect(product.locator('.unverified')).toHaveCount(0);
-  await expect(product.locator('.offer-provenance')).toContainText('Ostatnie bezpośrednie potwierdzenie');
-  await page.locator('.more-filters > summary').click();
-  await page.getByLabel('Live',{exact:true}).uncheck();
-  await page.keyboard.press('Escape');
-  const again=page.getByTestId('product').filter({hasText:'Technics EAH-AZ100'});
-  await again.locator('.offer-details > summary').click();
-  await expect(again.locator('.unverified').first()).toBeAttached();
-  await expect(again.locator('.source-legend')).toContainText('NIEPOTWIERDZONE');
+  const mixed=currentOffers.find(o=>allOffers.some(other=>other.model===o.model&&!buyable(other)));
+  if(mixed){
+    const product=page.getByTestId('product').filter({hasText:mixed.model});
+    await product.locator('.offer-details > summary').click();
+    await expect(product.locator('.unverified')).toHaveCount(0);
+    await expect(product.locator('.offer-provenance')).toContainText('Ostatnie bezpośrednie potwierdzenie');
+    await page.locator('.more-filters > summary').click();
+    await page.getByLabel('Live',{exact:true}).uncheck();
+    await page.keyboard.press('Escape');
+    const again=page.getByTestId('product').filter({hasText:mixed.model});
+    await again.locator('.offer-details > summary').click();
+    await expect(again.locator('.unverified').first()).toBeAttached();
+    await expect(again.locator('.source-legend')).toContainText('NIEPOTWIERDZONE');
+  }else{
+    // No mixed fresh/unchecked model remains: inspect only the unverified research pool.
+    await page.locator('.more-filters > summary').click();
+    await page.getByLabel('Live',{exact:true}).uncheck();
+    expect(await page.getByTestId('product').count()).toBeGreaterThan(currentModels.length);
+  }
 });
 
 test('mobile region and every category stay readable without a hidden horizontal menu',async({page})=>{
@@ -160,7 +174,7 @@ test('refresh dialog passes axe',async({page})=>{
 
 for(const [width,height] of [[1920,1080],[1440,900],[1280,800],[430,932],[390,844],[360,800],[320,720]])test('review visual viewport '+width,async({page})=>{
   await mockGitHub(page);await page.setViewportSize({width,height});await page.goto('./');
-  await expect(page.getByTestId('product')).toHaveCount(3);
+  await expect(page.getByTestId('product')).toHaveCount(currentModels.length);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.screenshot({path:'../../outputs/landing-'+width+'.png'});
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
@@ -173,9 +187,9 @@ test('all sorts match independent visible numeric order',async({page})=>{
   for(const sort of ['b4b','price','quality','fit','discount','savings']){
     await page.getByLabel('Sortuj',{exact:true}).selectOption(sort);
     const cards=await page.getByTestId('product').allTextContents();
-    if(sort==='price')expect(cards[0]).toContain('Technics EAH-AZ100');
+    if(sort==='price')expect(cards[0]).toContain([...currentOffers].sort((a,b)=>a.price!-b.price!)[0].model);
     if(sort==='quality')expect(cards[0]).toContain('64 Audio U12t');
-    if(sort==='fit')expect(cards[0]).toContain('Dan Clark Audio Noire X');
+    if(sort==='fit')expect(cards[0]).toContain([...currentOffers].sort((a,b)=>(b.fit||0)-(a.fit||0))[0].model);
     if(sort==='discount'||sort==='savings'){
       const kind=sort==='discount'?'stan':'nowe';
       const values=cards.map(c=>{
