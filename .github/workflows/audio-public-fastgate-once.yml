@@ -51,9 +51,10 @@ jobs:
           console.log(JSON.stringify(receipt));
           JS
           content="$(base64 -w0 /tmp/audio-fastgate.json)"
+          existing_sha="$(gh api "repos/$GITHUB_REPOSITORY/contents/e2e-audio-fastgate.json?ref=verify/audio-full-e2e-20261008" --jq .sha)"
           gh api -X PUT "repos/$GITHUB_REPOSITORY/contents/e2e-audio-fastgate.json" \
-            -f message="e2e: record independent public release gate [skip ci]" \
-            -f branch="verify/audio-full-e2e-20261008" -f content="$content"
+            -f message="e2e: record final Pages recheck [skip ci]" \
+            -f branch="verify/audio-full-e2e-20261008" -f content="$content" -f sha="$existing_sha"
       - name: Enforce
         if: ${{ always() }}
         env:
