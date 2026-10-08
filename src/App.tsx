@@ -27,7 +27,7 @@ const statusText: Record<Status, string> = {
   'NON-EU / TLC':'TLC', 'STALE / REVERIFY':'SPRAWDŹ', 'MARKET COMP':'COMP', 'OFFICIAL':'OFFICIAL'
 };
 function Source({offer, primary = false}: {offer: Offer; primary?: boolean}) {
-  const role = !buyable(offer) ? statusText[offer.status] : primary ? 'LIVE' : offer.condition+' COMP';
+  const role = !buyable(offer) ? (['LIVE VERIFIED','LIVE USED'].includes(offer.status)?'NIEPOTWIERDZONE':statusText[offer.status]) : primary ? 'LIVE' : offer.condition+' COMP';
   return <div className={'source ' + (offer.status === 'HISTORICAL' ? 'historical' : !buyable(offer) ? 'unverified' : '')} data-testid="source-row">
     <span className="source-role" title={offer.status} aria-label={offer.status}>{role}</span><strong>{money(offer.price)}</strong>
     <span className="source-seller">{offer.seller}<small>{countryLabel(offer.country)}</small></span><span>{offer.condition}</span>
@@ -44,7 +44,7 @@ function Price({offer}: {offer: Offer}) {
 function OfferDetails({product}: {product: Product}) {
   return <details className="offer-details">
     <summary>Więcej ofert ({product.offers.length})</summary>
-    <p className="source-legend">LIVE — oferta zweryfikowana według zapisu. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
+    <p className="source-legend">LIVE — aktualność potwierdzona bezpośrednio u sprzedawcy (maks. 24 h; używane 8 h). NIEPOTWIERDZONE — brak aktualnego dowodu, poza rankingiem. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
     <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
       {product.offers.map(o => <p key={o.id}><b>{o.seller} · {o.condition}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
@@ -79,7 +79,7 @@ export default function App() {
   }, []);
   const change = <K extends keyof Filters>(key: K, value: Filters[K]) => setF(x => ({...x, [key]:value}));
   const products = results(offers, f);
-  const compare = group(offers).filter(p => selected.includes(p.model));
+  const compare = group(f.liveOnly?offers.filter(buyable):offers).filter(p => selected.includes(p.model));
   const filterCount = f.conditions.length + Number(f.status !== 'Wszystkie') + Number(f.history) + Number(!f.liveOnly);
   function toggle(model: string) {
     const next = selectCompare(selected, model); setSelected(next.ids); setMessage(next.error);
@@ -93,9 +93,9 @@ export default function App() {
         <span className="score" title="B4B: jakość × rynek tego samego stanu / cena oferty. Wyżej = lepszy stosunek jakości do ceny.">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
         <label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={() => toggle(p.model)}/>Porównaj<span className="sr-only"> {p.model}</span></label>
       </header>
-      <p className="decision-line"><span>{o.condition}</span><span title={o.status} aria-label={o.status}>{statusText[o.status]}</span><strong>{decision(o)}</strong>
+      <p className="decision-line"><span>{o.condition}</span><span title={o.status} aria-label={o.status}>{!buyable(o)&&['LIVE VERIFIED','LIVE USED'].includes(o.status)?'NIEPOTWIERDZONE':statusText[o.status]}</span><strong>{decision(o)}</strong>
         {o.refresh?.verificationState&&o.refresh.verificationState!=='DIRECT_OFFER_VERIFIED'&&<span className="recheck-badge" title={'Ostatnia próba: '+o.refresh.verificationState}>! Niepotwierdzona aktualność</span>}</p>
-      <p className="offer-provenance">Weryfikacja według zapisu: {o.checked}. Potwierdź cenę i dostępność u sprzedawcy.</p>
+      <p className="offer-provenance">{buyable(o)?'Ostatnie bezpośrednie potwierdzenie: '+new Date(o.refresh!.checkedAt!).toLocaleString('pl-PL')+' · dokładne ceny i dostępność mogą ulec zmianie.':'Niezweryfikowana aktualność · ostatni zapis: '+o.checked+' · nie jest bieżącą okazją.'}</p>
       <div className="record-body"><Price offer={o}/><div className="seller-action">
         <p>{o.seller}<span> · {countryLabel(o.country)}</span></p>
         <a className="primary-link" data-testid="primary-link" href={o.url} target="_blank" rel="noopener noreferrer"
@@ -157,7 +157,7 @@ export default function App() {
       <p>B4B = QualityWeight × (rynek tego samego stanu / oferta). S 120 · S− 115 · A+ 110 · A 100 · A− 90 · B+ 80 · B 70 · B− 60 · C 50 · D 35 · E 20. Brak benchmarku oznacza brak B4B. MSRP jest wyłącznie odniesieniem.</p>
       <p>B4B łączy jakość i cenę — pierwsze miejsce nie musi oznaczać najniższej ceny. FAIR PRICE: cena zbliżona do rynku. STRONG BUY: atrakcyjna cena względem rynku stanu. PSEUDO-DEAL: drożej niż rynek stanu. TLC oznacza pełny koszt importu, z dostawą i opłatami.</p>
       <p>Lead, import bez TLC i historia nie uczestniczą w rankingu Live. Fit: 1–5 z SSOT. Rynek PLN ma pierwszeństwo przed starszymi zakładkami. DUNU LIVE/RECENT STORE pozostaje LEAD ONLY do ponownej weryfikacji.</p>
-      <p>Ceny i dostępność według arkusza: {snapshot.snapshot}, bez monitoringu na żywo. FX: EUR/PLN 4.37111 · GBP/PLN 5.15290 · USD/PLN 3.88344 · {snapshot.fx.timestamp}.</p>
+      <p>Arkusz to historyczna baza porównawcza; ranking LIVE wymaga odczytu bezpośredniej strony sprzedawcy w ostatnich 24 h (używane 8 h). Odświeżanie wykonuje ten odczyt przed dopuszczeniem znalezionych ofert. Brak potwierdzenia = brak rankingu. FX: EUR/PLN 4.37111 · GBP/PLN 5.15290 · USD/PLN 3.88344 · {snapshot.fx.timestamp}.</p>
     </details></footer>
     {selected.length > 0 && <aside className="compare-dock" aria-label="Wybrane modele"><div><b>Porównanie {selected.length}/3</b><span>{selected.join(' · ')}</span></div>
       <button ref={compareButton} onClick={() => setComparison(true)}>Otwórz porównanie</button><button onClick={() => {setSelected([]); setMessage('');}}>Wyczyść</button>
