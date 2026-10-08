@@ -1,34 +1,8 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-08T09:54:29.756Z",
+  "refreshedAt": "2026-10-08T10:01:36.083Z",
   "mode": "full",
   "candidates": [
-    {
-      "model": "Thieaudio V16 Divinity",
-      "category": "IEM",
-      "quality": "A-",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/boeken/fantasy/m2437022452-new-ed-greenwood-silverfall-stories-of-the-seven-sisters",
-      "query": "Thieaudio V16 Divinity tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Thieaudio V16 Divinity",
-      "category": "IEM",
-      "quality": "A-",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/boeken/taal-engels/m2418544431-jean-rhys-tigers-are-better-looking",
-      "query": "Thieaudio V16 Divinity tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
     {
       "model": "Technics EAH-AZ100",
       "category": "TWS",
@@ -39,21 +13,11 @@
       "region": "UE",
       "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm",
       "query": "Technics EAH-AZ100 usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Technics EAH-AZ100",
-      "category": "TWS",
-      "quality": "A",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://info.subito.it/policies/condizioni-generali.htm",
-      "query": "Technics EAH-AZ100 usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
+      "status": "LEAD ONLY",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ]
     },
     {
       "model": "Bose SoundLink Max",
@@ -65,8 +29,13 @@
       "region": "UE",
       "url": "https://www.marktplaats.nl/v/auto-diversen/autospeakers/m2440135631-bose-soundlink-max-zwart-compleet-in-zeer-nette-staat",
       "query": "Bose SoundLink Max tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
+      "status": "LEAD ONLY",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ]
     },
     {
       "model": "Bose SoundLink Max",
@@ -78,73 +47,13 @@
       "region": "UE",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444003842-bose-soundlink-max-draagbare-speaker",
       "query": "Bose SoundLink Max tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Marshall Middleton II",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://info.subito.it/policies/privacy.htm",
-      "query": "Marshall Middleton II usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "qdc Anole VX",
-      "category": "IEM",
-      "quality": "A+",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-cosmetica-en-make-up/m2449525607-nagelstylist-producten-10-biab-17-8-gels-tools-meer",
-      "query": "qdc Anole VX tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "qdc Anole VX",
-      "category": "IEM",
-      "quality": "A+",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-cosmetica-en-make-up/m2433410295-anole-uppervorms",
-      "query": "qdc Anole VX tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Audeze LCD-S20",
-      "category": "Closed",
-      "quality": "B+",
-      "fit": 2,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2451033547-audeze-lcd-2c-classic",
-      "query": "Audeze LCD-S20 tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Audeze LCD-S20",
-      "category": "Closed",
-      "quality": "B+",
-      "fit": 2,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2442424593-audeze-lcd-2c-hoofdtelefoon-nieuw",
-      "query": "Audeze LCD-S20 tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
+      "status": "LEAD ONLY",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ]
     },
     {
       "model": "Bose SoundLink Max",
@@ -156,8 +65,13 @@
       "region": "UE",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm",
       "query": "Bose SoundLink Max usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
+      "status": "LEAD ONLY",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ]
     },
     {
       "model": "Bose SoundLink Max",
@@ -169,8 +83,13 @@
       "region": "UE",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm",
       "query": "Bose SoundLink Max usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
+      "status": "LEAD ONLY",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ]
     },
     {
       "model": "DUNU SA6 MkII",
@@ -182,21 +101,11 @@
       "region": "UE",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2424416476-dunu-sa6-mkii-nieuw-in-doos",
       "query": "DUNU SA6 MkII tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2448926166-audeze-lcd-gx-hoofdtelefoon-audio-gx-lcd",
-      "query": "DUNU SA6 MkII tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
+      "status": "LEAD ONLY",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ]
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -208,8 +117,12 @@
       "region": "UE",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2418727527-dan-clark-audio-aeon-2-noire-hoofdtelefoon",
       "query": "Dan Clark Audio AEON 2 Noire tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
+      "status": "LEAD ONLY",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ]
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -221,98 +134,7 @@
       "region": "UE",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2437942148-dan-clark-audio-aeon-2-noire-hoofdtelefoon-topping-dx3-pro",
       "query": "Dan Clark Audio AEON 2 Noire tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Sony IER-M9",
-      "category": "IEM",
-      "quality": "A",
-      "fit": 5,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/tuners/m2451231408-sony-st-s101",
-      "query": "Sony IER-M9 tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Sony IER-M9",
-      "category": "IEM",
-      "quality": "A",
-      "fit": 5,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/professionele-audio-tv-en-video-apparatuur/m2447393464-sony-mdr-7509",
-      "query": "Sony IER-M9 tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/xenns-mangird-top-trento-663197273.htm",
-      "query": "DUNU SA6 MkII usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/xenns-mangird-top-trento-663195781.htm",
-      "query": "DUNU SA6 MkII usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Dan Clark Audio Noire X",
-      "category": "Closed",
-      "quality": "A+",
-      "fit": 5,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/cd-s-en-dvd-s/cd-s-rock/m2447601166-cd-gene-clark-no-other",
-      "query": "Dan Clark Audio Noire X tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Dan Clark Audio Noire X",
-      "category": "Closed",
-      "quality": "A+",
-      "fit": 5,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/cd-s-en-dvd-s/vinyl-country-en-western/m2433769737-lp-roy-clark-the-everlovin-soul-of-roy-clark-1969",
-      "query": "Dan Clark Audio Noire X tweedehands",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
-      "status": "LEAD ONLY"
-    },
-    {
-      "model": "Dan Clark Audio AEON 2 Noire",
-      "category": "Closed",
-      "quality": "A",
-      "fit": 5,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/cuffia-dan-clark-audio-aeon-2-noir-closed-milano-655062163.htm",
-      "query": "Dan Clark Audio AEON 2 Noire usato",
-      "discoveredAt": "2026-10-08T09:54:29.756Z",
+      "discoveredAt": "2026-10-08T10:01:36.083Z",
       "status": "LEAD ONLY"
     }
   ]
