@@ -3,7 +3,9 @@ import AxeBuilder from '@axe-core/playwright';
 import snapshot from '../../data/offers.json' with {type:'json'};
 import {mockGitHub} from './github-mock';
 import {buyable} from '../../src/lib/board';
-const currentOffers=snapshot.offers.filter(buyable);
+import type {Offer} from '../../src/types';
+const allOffers=snapshot.offers as Offer[];
+const currentOffers=allOffers.filter(buyable);
 const currentModels=[...new Set(currentOffers.map(o=>o.model))];
 test.beforeEach(async({page})=>{await mockGitHub(page);await page.goto('./');await expect(page.getByRole('heading',{level:1})).toContainText('PERSONAL AUDIO')});
 test('categories and speakers',async({page})=>{await page.locator('.more-filters > summary').click();await page.getByLabel('Live',{exact:true}).uncheck();await page.keyboard.press('Escape');for(const c of ['IEM','TWS','Closed']){await page.getByRole('button',{name:c,exact:true}).click();await expect(page.getByTestId('product').first()).toBeVisible()}await page.getByRole('button',{name:'Głośniki BT',exact:true}).click();for(const model of ['Bose SoundLink Max','Marshall Middleton II','JBL Charge 6'])await expect(page.getByRole('heading',{name:model,exact:true})).toBeVisible();await expect(page.getByTestId('product')).toHaveCount(3)});
@@ -31,7 +33,7 @@ test('live board never lists unchecked or blocked seller pages',async({page})=>{
     await expect(card.locator('.offer-provenance')).toContainText('Ostatnie bezpośrednie potwierdzenie');
     await expect(card.locator('.source-list .unverified')).toHaveCount(0);
   }
-  const unverified=snapshot.offers.find(o=>!buyable(o)&&!currentModels.includes(o.model)&&o.status!=='HISTORICAL');
+  const unverified=allOffers.find(o=>!buyable(o)&&!currentModels.includes(o.model)&&o.status!=='HISTORICAL');
   if(unverified){
     await page.getByRole('searchbox').fill(unverified.model);
     await expect(page.getByTestId('product')).toHaveCount(0);
