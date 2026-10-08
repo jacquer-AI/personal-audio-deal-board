@@ -3,7 +3,9 @@ import {mockGitHub} from './github-mock';
 import AxeBuilder from '@axe-core/playwright';
 import snapshot from '../../data/offers.json' with {type:'json'};
 import {buyable} from '../../src/lib/board';
-const currentOffers=snapshot.offers.filter(buyable);
+import type {Offer} from '../../src/types';
+const allOffers=snapshot.offers as Offer[];
+const currentOffers=allOffers.filter(buyable);
 const currentModels=[...new Set(currentOffers.map(o=>o.model))];
 
 const dispatcher='https://desktop-t47p2au.tail84c6f0.ts.net:8444/audio-refresh';
@@ -122,7 +124,7 @@ test('slow polling times out and recovers through the public run without duplica
 
 test('old unverified seller links are hidden from LIVE but remain research-only',async({page})=>{
   await mockGitHub(page);await page.goto('./');
-  const mixed=currentOffers.find(o=>snapshot.offers.some(other=>other.model===o.model&&!buyable(other)));
+  const mixed=currentOffers.find(o=>allOffers.some(other=>other.model===o.model&&!buyable(other)));
   if(mixed){
     const product=page.getByTestId('product').filter({hasText:mixed.model});
     await product.locator('.offer-details > summary').click();
