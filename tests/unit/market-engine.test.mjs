@@ -90,6 +90,14 @@ describe('overlay, delta and no-op',()=>{
     expect(m.offers).toHaveLength(1);
     expect(computeDelta([offer],m.offers).new).toBe(0);
   });
+  it('a blocked source never pretends it was freshly verified',()=>{
+    const update={fingerprint:fingerprint(offer),verificationState:'ACCESS_RESTRICTED_REVERIFY',http:403,checked:'2026-10-08',checkedAt:'2026-10-08T09:00:00Z'};
+    const merged=mergeOverlay({offers:[offer]},{updates:[update],additions:[]}).offers[0];
+    expect(merged.checked).toBe('2026-10-07');
+    expect(merged.refresh.verificationState).toBe('ACCESS_RESTRICTED_REVERIFY');
+    const confirmed=mergeOverlay({offers:[offer]},{updates:[{...update,verificationState:'DIRECT_OFFER_VERIFIED',http:200}],additions:[]}).offers[0];
+    expect(confirmed.checked).toBe('2026-10-08');
+  });
   it('a discovered lead cannot promote an existing LEAD to live',()=>{
     const lead={...offer,status:'LEAD ONLY',url:'https://shop.example/item/2'};
     const m=mergeOverlay({offers:[lead]},{updates:[{fingerprint:fingerprint(lead),status:'LIVE USED',verificationState:'REACHABLE'}]});
