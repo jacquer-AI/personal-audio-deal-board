@@ -69,6 +69,16 @@ export function looksBlocked(html,http){
   return http===200&&html.length<60000&&BLOCK_MARKERS.test(html)&&!/application\/ld\+json/i.test(html);
 }
 
+/** Canonical item-model evidence from a concrete seller URL, never from sidebars or suggestions. */
+export function urlMatchesModel(url,meta){
+  try{
+    const expected=norm(meta?.model);
+    if(expected.length<6)return false;
+    const slug=norm(decodeURIComponent(new URL(url).pathname));
+    return slug.includes(expected);
+  }catch{return false}
+}
+
 /** Conservative direct-offer discovery gate; search pages, help pages and site assets never become leads. */
 export function isPlausibleOfferLink(url,source=null){
   try{
@@ -81,6 +91,7 @@ export function isPlausibleOfferLink(url,source=null){
     if(/\/(?:help|hilfe|support|faq|terms|policy|privacy|datenschutz|legal|impressum|regulamin|kontakt|login|logout|account|transazioni|checkout|cart|basket|sitemap|security|veiligheidscentrum|bezpieczenstwo)(?:\/|$)/i.test(path))return false;
     if(/^\/s-[^/]+\/k\d+\/?$/i.test(path) || /^\/annunci-[^/]+\/vendita\//i.test(path))return false;
     const id=String(source?.id||'');
+    if(id==='subito-it'&&!['subito.it','www.subito.it'].includes(u.hostname.toLowerCase()))return false;
     if(id==='kleinanzeigen-de')return /^\/s-anzeige\/[^/]+\/\d{6,}(?:-|\/|$)/i.test(path);
     if(id==='marktplaats-nl')return /^\/v\/[^/]+\/[^/]+\/m\d{7,}/i.test(path);
     if(id==='subito-it')return /^\/[^/]+\/[^/]+\.htm$/i.test(path);

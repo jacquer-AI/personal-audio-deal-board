@@ -187,6 +187,8 @@ export function redTeam(addition, source, peer) {
   if (Number.isFinite(ref) && Number.isFinite(addition.price) && addition.price < ref * 0.4) { flags.push('PRICE_FAR_BELOW_MARKET_CHECK_VARIANT_OR_COUNTERFEIT'); block = true; }
   if (['TWS','Głośniki BT'].includes(addition.category) && addition.condition !== 'NEW') flags.push('BATTERY_HEALTH_UNVERIFIED');
   if (addition.condition !== 'NEW') flags.push('WARRANTY_AND_ACCESSORIES_UNVERIFIED');
+  // No promotion to a purchasable LIVE deal while the final landed cost is unknown.
   flags.push('SHIPPING_NOT_INCLUDED');
+  block = true;
   return { block, flags };
 }
