@@ -1,6 +1,9 @@
 name: Refresh market data
 run-name: Refresh ${{ inputs.mode || 'scheduled' }} · ${{ inputs.categories || 'all' }}
 on:
+  push:
+    branches: [verify/audio-full-e2e-20261008]
+    paths: [.github/workflows/refresh-market.yml]
   workflow_dispatch:
     inputs:
       mode:
@@ -30,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      REQUESTED_MODE: ${{ inputs.mode || 'quick' }}
+      REQUESTED_MODE: ${{ github.event_name == 'push' && 'full' || inputs.mode || 'quick' }}
       REQUESTED_CATEGORIES: ${{ inputs.categories || 'all' }}
       SCHEDULE_EXPR: ${{ github.event.schedule }}
       GH_TOKEN: ${{ github.token }}
@@ -56,7 +59,7 @@ jobs:
         id: refresh
         run: |
           npm run sync
-          npm run refresh-market -- --mode "$REFRESH_MODE" --categories "$REFRESH_CATEGORIES"
+          npm run refresh-market -- --mode "$REFRESH_MODE" --categories "$REFRESH_CATEGORIES" | tee /tmp/audio-refresh-e2e.log
           npm run merge-market
       - name: "Phase: VALIDATE (corrupt data never publishes)"
         run: |
@@ -82,3 +85,33 @@ jobs:
       - name: No material change
         if: steps.refresh.outputs.changed != 'true'
         run: echo "DELTA=NONE - no commit, no deploy"
+
+      - name: "E2E one-shot: write run receipt on isolated verification branch"
+        if: ${{ always() && github.event_name == 'push' }}
+        env:
+          E2E_BRANCH: verify/audio-full-e2e-20261008
+          E2E_REPO: ${{ github.repository }}
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const log=fs.existsSync('/tmp/audio-refresh-e2e.log')?fs.readFileSync('/tmp/audio-refresh-e2e.log','utf8'):'';
+          let summary=null;
+          const markers=[...log.matchAll(/^\{\s*$/gm)].map(m=>m.index);
+          for (const p of markers) {
+            const tail=log.slice(p);
+            let braces=0, inString=false, escape=false, end=-1;
+            for(let i=0;i<tail.length;i++){
+              const c=tail[i];
+              if(inString){if(escape)escape=false;else if(c==='\\')escape=true;else if(c==='"')inString=false;}
+              else if(c==='"')inString=true;else if(c==='{')braces++;else if(c==='}'&&!--braces){end=i+1;break;}
+            }
+            if(end>0)try{const j=JSON.parse(tail.slice(0,end));if(j.mode&&j.receipt&&j.DELTA)summary=j;}catch{}
+          }
+          const receipt={schema:1,runId:process.env.GITHUB_RUN_ID,at:new Date().toISOString(),ref:process.env.GITHUB_REF_NAME,mode:process.env.REFRESH_MODE||'full',workflow:'refresh-market.yml',summary,status:summary?'RECEIPT_CAPTURED':'RECEIPT_MISSING'};
+          fs.writeFileSync('/tmp/audio-e2e-receipt.json',JSON.stringify(receipt,null,2)+'\n');
+          console.log(JSON.stringify({status:receipt.status,runId:receipt.runId,sourceCount:summary?.receipt?.discovery?.plannedSources,verified:summary?.receipt?.directVerified,blocked:summary?.receipt?.accessRestricted,delta:summary?.DELTA}));
+          JS
+          content="$(base64 -w0 /tmp/audio-e2e-receipt.json)"
+          gh api -X PUT "repos/$E2E_REPO/contents/e2e-audio-full-receipt.json" \
+            -f message="e2e: record live FULL refresh receipt $GITHUB_RUN_ID [skip ci]" \
+            -f branch="$E2E_BRANCH" -f content="$content"
