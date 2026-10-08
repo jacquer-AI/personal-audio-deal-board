@@ -1,0 +1,33 @@
+name: Audio Pages deployment status read-only audit
+on:
+  push:
+    branches: [verify/audio-full-e2e-20261008]
+    paths: [.github/workflows/audio-pages-status-once.yml]
+permissions:
+  actions: read
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      GH_TOKEN: ${{ github.token }}
+      EXPECTED_SHA: e3555495780e91ba0d4ac00e4118aec37b817d6e
+    steps:
+      - name: Read workflow runs and public version
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/actions/workflows/pages.yml/runs?per_page=25" > /tmp/audio-pages-runs.json
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const runs=JSON.parse(fs.readFileSync('/tmp/audio-pages-runs.json','utf8')).workflow_runs||[];
+          const latest=runs.map(r=>({id:r.id,status:r.status,conclusion:r.conclusion,sha:r.head_sha,event:r.event,created:r.created_at,url:r.html_url})).slice(0,15);
+          let version=null,error=null;
+          try{const r=await fetch('https://jacquer-ai.github.io/personal-audio-deal-board/version.json?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)});version=r.ok?(await r.json()).sha:'HTTP_'+r.status;}catch(e){error=String(e);}
+          const out={at:new Date().toISOString(),expectedSha:process.env.EXPECTED_SHA,version,error,recentPagesRuns:latest,matchingRuns:latest.filter(x=>x.sha===process.env.EXPECTED_SHA)};
+          fs.writeFileSync('/tmp/audio-pages-status.json',JSON.stringify(out,null,2)+'\n');
+          console.log(JSON.stringify(out));
+          JS
+          content="$(base64 -w0 /tmp/audio-pages-status.json)"
+          gh api -X PUT "repos/$GITHUB_REPOSITORY/contents/e2e-audio-pages-status.json" \
+            -f message="e2e: capture Pages deployment status audit [skip ci]" \
+            -f branch="verify/audio-full-e2e-20261008" -f content="$content"
