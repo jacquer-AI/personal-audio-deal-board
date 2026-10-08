@@ -154,6 +154,32 @@ describe('discovery link hygiene',()=>{
   });
 });
 
+describe('discovery rejects navigation and search URLs',()=>{
+  it.each([
+    ['kleinanzeigen-de','https://www.kleinanzeigen.de/manifest.webmanifest'],
+    ['kleinanzeigen-de','https://www.kleinanzeigen.de/s-sony-ier-m9-gebraucht/k0'],
+    ['marktplaats-nl','https://www.marktplaats.nl/i/help/over-marktplaats/voorwaarden-en-privacybeleid/algemene-gebruiksvoorwaarden.dot.html'],
+    ['marktplaats-nl','https://www.marktplaats.nl/m/veiligheidscentrum/'],
+    ['subito-it','https://www.subito.it/annunci-italia/vendita/usato/?q=sony+ier-m9'],
+    ['subito-it','https://areariservata.subito.it/transazioni/lista'],
+    ['amazon-de-resale','https://www.amazon.de/gp/help/customer/display.html']
+  ])('%s rejects non-offer %s',async(id,url)=>{
+    const {isPlausibleOfferLink}=await import('../../scripts/sources/common.mjs');
+    expect(isPlausibleOfferLink(url,{id})).toBe(false);
+  });
+  it.each([
+    ['kleinanzeigen-de','https://www.kleinanzeigen.de/s-anzeige/sony-ier-m9-in-ovp/1234567890-172-1'],
+    ['marktplaats-nl','https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons-en-headsets/m2255512345-sony-ier-m9'],
+    ['subito-it','https://www.subito.it/audio-video/sony-ier-m9-milano-123456789.htm'],
+    ['olx-pl','https://www.olx.pl/d/oferta/sony-ier-m9-CID99-ID123.html'],
+    ['allegro-pl','https://allegro.pl/oferta/sony-ier-m9-1234567890'],
+    ['ebay-de','https://www.ebay.de/itm/227532985491'],
+    ['amazon-de-resale','https://www.amazon.de/dp/B0ABC12345']
+  ])('%s preserves concrete offer %s',async(id,url)=>{
+    const {isPlausibleOfferLink}=await import('../../scripts/sources/common.mjs');
+    expect(isPlausibleOfferLink(url,{id})).toBe(true);
+  });
+});
 describe('overlay determinism',()=>{
   it('order of re-checked offers does not change the overlay',()=>{
     const prev={updates:[{fingerprint:'a',http:1},{fingerprint:'b',http:1}],additions:[]};
