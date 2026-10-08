@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:23:16.498Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -525,7 +525,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -551,7 +551,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
     },
     {
@@ -629,257 +629,14 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T09:54:29.756Z"
+        "checkedAt": "2026-10-08T09:47:27.934Z"
       }
-    },
-    {
-      "id": "refresh-2ef510d2f9ad8d33",
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "condition": "B-STOCK",
-      "rrp": null,
-      "newMarket": null,
-      "sameMarket": null,
-      "price": 1180.16,
-      "country": "UE",
-      "seller": "Marktplaats",
-      "region": "UE",
-      "status": "LIVE VERIFIED",
-      "original": "269.99 EUR",
-      "url": "https://www.marktplaats.nl/v/auto-diversen/autospeakers/m2440135631-bose-soundlink-max-zwart-compleet-in-zeer-nette-staat",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: BATTERY_HEALTH_UNVERIFIED, WARRANTY_AND_ACCESSORIES_UNVERIFIED, SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-05b94fe05de28d58",
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "condition": "USED",
-      "rrp": null,
-      "newMarket": 1498,
-      "sameMarket": 1050,
-      "price": 1263.25,
-      "country": "UE",
-      "seller": "Marktplaats",
-      "region": "UE",
-      "status": "LIVE USED",
-      "original": "289 EUR",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444003842-bose-soundlink-max-draagbare-speaker",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: BATTERY_HEALTH_UNVERIFIED, WARRANTY_AND_ACCESSORIES_UNVERIFIED, SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-8c5afc9308fa5d80",
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "condition": "USED",
-      "rrp": null,
-      "newMarket": 1498,
-      "sameMarket": 1050,
-      "price": 874.22,
-      "country": "UE",
-      "seller": "Subito",
-      "region": "UE",
-      "status": "LIVE USED",
-      "original": "200 EUR",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: BATTERY_HEALTH_UNVERIFIED, WARRANTY_AND_ACCESSORIES_UNVERIFIED, SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-69310b67d25d663f",
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "condition": "USED",
-      "rrp": null,
-      "newMarket": 1498,
-      "sameMarket": 1050,
-      "price": 1088.41,
-      "country": "UE",
-      "seller": "Subito",
-      "region": "UE",
-      "status": "LIVE USED",
-      "original": "249 EUR",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: BATTERY_HEALTH_UNVERIFIED, WARRANTY_AND_ACCESSORIES_UNVERIFIED, SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-495247dd7eee83ea",
-      "model": "Dan Clark Audio AEON 2 Noire",
-      "category": "Closed",
-      "quality": "A",
-      "fit": 5,
-      "condition": "B-STOCK",
-      "rrp": null,
-      "newMarket": null,
-      "sameMarket": null,
-      "price": 3204.02,
-      "country": "UE",
-      "seller": "Marktplaats",
-      "region": "UE",
-      "status": "LIVE VERIFIED",
-      "original": "733 EUR",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2418727527-dan-clark-audio-aeon-2-noire-hoofdtelefoon",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: WARRANTY_AND_ACCESSORIES_UNVERIFIED, SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-2248041acdc80370",
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "condition": "NEW",
-      "rrp": 2531,
-      "newMarket": 2531,
-      "sameMarket": 2531,
-      "price": 2185.55,
-      "country": "UE",
-      "seller": "Marktplaats",
-      "region": "UE",
-      "status": "LIVE VERIFIED",
-      "original": "500 EUR",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2424416476-dunu-sa6-mkii-nieuw-in-doos",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-d431f4c5cc3a04f1",
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "condition": "USED",
-      "rrp": null,
-      "newMarket": null,
-      "sameMarket": null,
-      "price": 1311.33,
-      "country": "UE",
-      "seller": "Subito",
-      "region": "UE",
-      "status": "LIVE USED",
-      "original": "300 EUR",
-      "url": "https://www.subito.it/audio-video/xenns-mangird-top-trento-663195781.htm",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: WARRANTY_AND_ACCESSORIES_UNVERIFIED, SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-daa925c121d7bc92",
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "condition": "USED",
-      "rrp": null,
-      "newMarket": null,
-      "sameMarket": null,
-      "price": 1311.33,
-      "country": "UE",
-      "seller": "Subito",
-      "region": "UE",
-      "status": "LIVE USED",
-      "original": "300 EUR",
-      "url": "https://www.subito.it/audio-video/xenns-mangird-top-trento-663197273.htm",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: WARRANTY_AND_ACCESSORIES_UNVERIFIED, SHIPPING_NOT_INCLUDED."
-    },
-    {
-      "id": "refresh-7f99945107aa3c3d",
-      "model": "Technics EAH-AZ100",
-      "category": "TWS",
-      "quality": "A",
-      "fit": 3,
-      "condition": "NEW",
-      "rrp": 1300,
-      "newMarket": 841,
-      "sameMarket": 841,
-      "price": 2618.29,
-      "country": "UE",
-      "seller": "Subito",
-      "region": "UE",
-      "status": "LIVE VERIFIED",
-      "original": "599 EUR",
-      "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm",
-      "role": "OFFER",
-      "checked": "2026-10-08",
-      "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-08T09:54:29.756Z",
-        "firstVerifiedAt": "2026-10-08T09:54:29.756Z",
-        "http": 200
-      },
-      "note": "Discovered and verified on direct offer page during FULL refresh. Red-team flags: SHIPPING_NOT_INCLUDED."
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-08T09:54:29.756Z",
+    "refreshedAt": "2026-10-08T09:47:27.934Z",
     "mode": "full",
-    "runId": "37759852889",
+    "runId": "37759062321",
     "status": "COMPLETED"
   }
 }
