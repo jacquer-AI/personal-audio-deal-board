@@ -3,6 +3,7 @@ import {createHash} from 'node:crypto';
 import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
 import {htmlText,modelMatches,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
+import {planDiscoveryJobs} from './discovery-scheduler.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -144,14 +145,15 @@ const newAdditions=[];
 if(mode!=='quick'){
   const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(mode==='deep'||s.sweep==='daily'));
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
-  const jobs=[];
-  for(const m of models)for(const s of sweepSources){
-    const term=(s.queryTerms||[])[0]||'';
-    const query=[m.model,term].filter(Boolean).join(' ');
-    jobs.push({m,s,query,url:s.searchUrlTemplate.replace('{q}',encodeURIComponent(query))});
-  }
-  const discovered=await pool(jobs.slice(0,MAX_DISCOVERY_JOBS),async j=>{
+  const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS);
+  const discoveryStats=Object.fromEntries(sweepSources.map(s=>[s.id,{requested:0,reachable:0,candidateUrls:0,restricted:0,errors:0}]));
+  const discovered=await pool(jobs,async j=>{
+    const stat=discoveryStats[j.s.id];
+    stat.requested++;
     const p=await fetchPage(j.url);
+    if(p.http>=200&&p.http<400)stat.reachable++;
+    else if([401,403,429,451].includes(p.http))stat.restricted++;
+    else stat.errors++;
     if(p.http<200||p.http>=400)return [];
     const links=[];const re=/href=["']([^"'#]+)["']/gi;let x;
     while((x=re.exec(p.html))&&links.length<80){
@@ -162,8 +164,11 @@ if(mode!=='quick'){
         if(!links.includes(u))links.push(u);
       }catch{/* unparsable href */}
     }
-    return links.slice(0,2).map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,query:j.query,discoveredAt:now,status:'LEAD ONLY'}));
+    const found=links.slice(0,2).map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,query:j.query,discoveredAt:now,status:'LEAD ONLY'}));
+    stat.candidateUrls+=found.length;
+    return found;
   });
+  receipt.discovery={plannedJobs:jobs.length,plannedSources:Object.values(discoveryStats).filter(s=>s.requested>0).length,reachableSources:Object.values(discoveryStats).filter(s=>s.reachable>0).length,sources:discoveryStats};
   const seen=new Set();
   for(const rows of discovered)for(const c of rows||[]){if(seen.has(c.url)||candidates.length>=120)continue;seen.add(c.url);candidates.push(c)}
 
