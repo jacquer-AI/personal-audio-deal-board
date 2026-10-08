@@ -116,13 +116,19 @@ test('slow polling times out and recovers through the public run without duplica
   expect(gh.dispatcherRequests).toHaveLength(1);unblock();
 });
 
-test('expanded offer distinguishes unverified lead and explains snapshot verification',async({page})=>{
+test('old unverified seller links are hidden from LIVE but remain research-only',async({page})=>{
   await mockGitHub(page);await page.goto('./');
   const product=page.getByTestId('product').filter({hasText:'Technics EAH-AZ100'});
   await product.locator('.offer-details > summary').click();
-  await expect(product.locator('.unverified')).toContainText('LEAD');
-  await expect(product.locator('.source-legend')).toContainText('LEAD — trop do sprawdzenia');
-  await expect(product.locator('.offer-provenance')).toContainText('według zapisu');
+  await expect(product.locator('.unverified')).toHaveCount(0);
+  await expect(product.locator('.offer-provenance')).toContainText('Ostatnie bezpośrednie potwierdzenie');
+  await page.locator('.more-filters > summary').click();
+  await page.getByLabel('Live',{exact:true}).uncheck();
+  await page.keyboard.press('Escape');
+  const again=page.getByTestId('product').filter({hasText:'Technics EAH-AZ100'});
+  await again.locator('.offer-details > summary').click();
+  await expect(again.locator('.unverified').first()).toBeAttached();
+  await expect(again.locator('.source-legend')).toContainText('NIEPOTWIERDZONE');
 });
 
 test('mobile region and every category stay readable without a hidden horizontal menu',async({page})=>{
@@ -154,7 +160,7 @@ test('refresh dialog passes axe',async({page})=>{
 
 for(const [width,height] of [[1920,1080],[1440,900],[1280,800],[430,932],[390,844],[360,800],[320,720]])test('review visual viewport '+width,async({page})=>{
   await mockGitHub(page);await page.setViewportSize({width,height});await page.goto('./');
-  await expect(page.getByTestId('product')).toHaveCount(8);
+  await expect(page.getByTestId('product')).toHaveCount(3);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.screenshot({path:'../../outputs/landing-'+width+'.png'});
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
@@ -167,10 +173,18 @@ test('all sorts match independent visible numeric order',async({page})=>{
   for(const sort of ['b4b','price','quality','fit','discount','savings']){
     await page.getByLabel('Sortuj',{exact:true}).selectOption(sort);
     const cards=await page.getByTestId('product').allTextContents();
-    if(sort==='price')expect(cards[0]).toContain('JBL Charge 6');
+    if(sort==='price')expect(cards[0]).toContain('Technics EAH-AZ100');
     if(sort==='quality')expect(cards[0]).toContain('64 Audio U12t');
     if(sort==='fit')expect(cards[0]).toContain('Dan Clark Audio Noire X');
-    if(sort==='discount'||sort==='savings')expect(cards[0]).toContain('Bose SoundLink Max');
+    if(sort==='discount'||sort==='savings'){
+      const kind=sort==='discount'?'stan':'nowe';
+      const values=cards.map(c=>{
+        const m=c.match(new RegExp('([−+]?[0-9]+[.,][0-9]+)% vs '+kind));
+        expect(m,c).not.toBeNull();
+        return -Number(m![1].replace('−','-').replace(',','.'));
+      });
+      expect(values).toEqual([...values].sort((a,b)=>b-a));
+    }
     if(sort==='b4b'){
       const scores=cards.map(c=>Number(c.match(/B4B ([\d.]+)/)?.[1]));
       expect(scores).toEqual([...scores].sort((a,b)=>b-a));
