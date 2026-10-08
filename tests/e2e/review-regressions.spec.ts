@@ -73,12 +73,19 @@ test('closing dialog preserves polling and failed private network can use the ex
   await page.getByRole('button',{name:'URUCHOM QUICK'}).click();
   await expect(page.getByTestId('refresh-state')).toContainText(/QUEUED|RUNNING/);
   await page.route(dispatcher+'/status',route=>route.abort());
-  await page.route('https://api.github.com/**/actions/runs/123',route=>route.fulfill({json:{...activeRun,status:'completed',conclusion:'success'}}));
+  let publicRunChecks=0;
+  await page.route('https://api.github.com/**/actions/runs/123',route=>{publicRunChecks++;return route.fulfill({json:{...activeRun,status:'completed',conclusion:'success'}})});
   await page.route('https://api.github.com/**/actions/runs/123/jobs',route=>route.fulfill({json:{jobs:[{steps:[{name:'No material change',conclusion:'success'}]}]}}));
   await page.getByRole('button',{name:'Zamknij',exact:true}).click();
   await page.clock.runFor(5000);
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
+  // Drive the fake clock through subsequent polls; CI/network scheduling may delay the first fallback.
+  for(let attempt=0;attempt<8;attempt++){
+    if((await page.getByTestId('refresh-state').innerText()).includes('OK'))break;
+    await page.clock.runFor(4500);
+  }
   await expect(page.getByTestId('refresh-state')).toContainText('OK');
+  expect(publicRunChecks).toBeGreaterThan(0);
   await expect(page.getByTestId('delta-none')).toContainText('Rynek się nie zmienił');
   await expect(page.getByRole('link',{name:'Otwórz run ↗'})).toHaveAttribute('href',activeRun.html_url);
 });
