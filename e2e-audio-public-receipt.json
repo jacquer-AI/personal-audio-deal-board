@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "at": "2026-10-08T09:50:29.538Z",
-  "runId": "37759324441",
-  "expectedSha": "e11bf5abe8cd010a392351ef499590b7df9ec181",
-  "readback": "success",
+  "at": "2026-10-08T10:04:34.683Z",
+  "runId": "37760853295",
+  "expectedSha": "e3555495780e91ba0d4ac00e4118aec37b817d6e",
+  "readback": "failure",
   "browser": "failure",
   "url": "https://jacquer-ai.github.io/personal-audio-deal-board/",
-  "logExcerpt": "{\n  \"url\": \"https://jacquer-ai.github.io/personal-audio-deal-board/\",\n  \"http\": 200,\n  \"script\": \"https://jacquer-ai.github.io/personal-audio-deal-board/assets/index-ChPtvCTG.js\",\n  \"scriptHttp\": 200,\n  \"content\": [\n    \"PERSONAL AUDIO\",\n    \"Deal Board\",\n    \"Technics EAH-AZ100\",\n    \"Dan Clark Audio Noire X\",\n    \"Bose SoundLink Max\",\n    \"JBL Charge 6\"\n  ],\n  \"buildMatch\": true,\n  \"checked\": \"2026-10-08T09:49:48.857Z\"\n}\n"
+  "logExcerpt": ""
 }
