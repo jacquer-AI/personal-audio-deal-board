@@ -86,7 +86,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .app{max-width:1600px;padding:14px 22px 90px}
 .masthead{background:#172d4d;color:#fff;border-radius:9px;padding:12px 17px;margin-bottom:10px;gap:10px}
 h1{font-size:21px;letter-spacing:-.55px}
-.masthead p,.masthead .freshness{color:#dce9f8}
+.masthead > div:first-child > p,.masthead .freshness{color:#dce9f8}
 .masthead .ssot-link{color:#e1ecff}
 .masthead-actions{gap:10px}
 .refresh-button{background:#f9fbff;border-color:#d3deee;color:#142d54;font-weight:750;font-size:12px;padding:5px 11px}
@@ -189,3 +189,25 @@ h1{font-size:21px;letter-spacing:-.55px}
 /* Failed re-verification is displayed explicitly, without overwriting the saved baseline status. */
 .decision-line .recheck-badge{background:#fff1cf;border:1px solid #ba7b15;color:#764708;font-weight:800;padding:2px 7px;letter-spacing:0;white-space:normal}
 @media(max-width:700px){.decision-line .recheck-badge{font-size:10px}}
+
+/* Accessible dialog contrast: the refresh dialog sits inside masthead-actions in the DOM. */
+.masthead .refresh-dialog p{color:#233f5e}
+.masthead .refresh-dialog .refresh-error{color:#87301a}
+.masthead .refresh-dialog .source-coverage p:last-child{color:#3c536e}
+/* A flex-wrapping toolbar responds to CSS zoom as well as viewport breakpoints. */
+@media(min-width:701px){
+  .toolbar{display:flex;flex-wrap:wrap}
+  .toolbar .search{flex:1 1 230px;min-width:0;width:auto}
+  .toolbar .tabs{flex:1 1 370px;flex-wrap:wrap;min-width:0}
+  .toolbar .region-control{flex:0 1 136px;min-width:105px;width:auto}
+  .toolbar .sort-control{flex:0 1 115px;min-width:90px;width:auto}
+  .toolbar .more-filters{flex:0 0 auto}
+}
+@media(max-width:700px){
+  .toolbar{display:flex;flex-wrap:wrap}
+  .toolbar .search{flex:1 1 100%;min-width:0;width:100%}
+  .toolbar .tabs{flex:1 1 100%;flex-wrap:wrap;max-width:100%;min-width:0;grid-column:auto}
+  .toolbar .region-control{flex:1 1 100%;min-width:0;width:100%}
+  .toolbar .sort-control{flex:1 1 115px;min-width:0;width:auto}
+  .toolbar .more-filters{flex:0 0 auto}
+}
