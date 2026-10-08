@@ -110,8 +110,9 @@ describe('red team',()=>{
     expect(redTeam({...offer,condition:'NEW'},{region:'non-EU / TLC'},offer).block).toBe(true);
     expect(redTeam({...offer,price:100},{region:'UE'},offer).block).toBe(true);
     const r=redTeam({...offer,category:'TWS',price:500},{region:'UE'},offer);
-    expect(r.block).toBe(false);
+    expect(r.block).toBe(true);
     expect(r.flags).toContain('BATTERY_HEALTH_UNVERIFIED');
+    expect(r.flags).toContain('SHIPPING_NOT_INCLUDED');
   });
 });
 
@@ -154,6 +155,24 @@ describe('discovery link hygiene',()=>{
   });
 });
 
+describe('promotion evidence checks',()=>{
+  it('rejects XENNS Mangird as DUNU SA6 MkII',async()=>{
+    const {urlMatchesModel}=await import('../../scripts/sources/common.mjs');
+    expect(urlMatchesModel('https://www.subito.it/audio-video/xenns-mangird-top-trento-663195781.htm',{model:'DUNU SA6 MkII'})).toBe(false);
+  });
+  it('matches real model slugs but not unrelated listings',async()=>{
+    const {urlMatchesModel}=await import('../../scripts/sources/common.mjs');
+    expect(urlMatchesModel('https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm',{model:'Bose SoundLink Max'})).toBe(true);
+    expect(urlMatchesModel('https://www.marktplaats.nl/v/boeken/fantasy/m2437022452-new-ed-greenwood-silverfall',{model:'Thieaudio V16 Divinity'})).toBe(false);
+  });
+  it('requires explicit item-local condition and stock, not page boilerplate',async()=>{
+    const {conditionFrom,available}=await import('../../scripts/sources/common.mjs');
+    expect(conditionFrom({},'')).toBeNull();
+    expect(available({},'')).toBeNull();
+    expect(available({availability:'https://schema.org/InStock'},'')).toBe(true);
+  });
+});
+
 describe('discovery rejects navigation and search URLs',()=>{
   it.each([
     ['kleinanzeigen-de','https://www.kleinanzeigen.de/manifest.webmanifest'],
@@ -162,6 +181,7 @@ describe('discovery rejects navigation and search URLs',()=>{
     ['marktplaats-nl','https://www.marktplaats.nl/m/veiligheidscentrum/'],
     ['subito-it','https://www.subito.it/annunci-italia/vendita/usato/?q=sony+ier-m9'],
     ['subito-it','https://areariservata.subito.it/transazioni/lista'],
+    ['subito-it','https://info.subito.it/policies/privacy.htm'],
     ['amazon-de-resale','https://www.amazon.de/gp/help/customer/display.html']
   ])('%s rejects non-offer %s',async(id,url)=>{
     const {isPlausibleOfferLink}=await import('../../scripts/sources/common.mjs');
