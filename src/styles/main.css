@@ -177,3 +177,11 @@ h1{font-size:21px;letter-spacing:-.55px}
   .seller-action{flex-direction:column;align-items:stretch}
   .primary-link{width:fit-content}
 }
+
+/* Transparent, compact presentation of last persisted source verification evidence. */
+.source-coverage{display:grid;gap:4px;background:#edf4fc;border:1px solid #aabed8;border-radius:7px;padding:9px 11px;margin:10px 0;color:#183552;font-size:12px}
+.source-coverage>b{font-size:12px}
+.source-coverage strong{font-weight:800;color:#0a4483;font-variant-numeric:tabular-nums}
+.source-coverage p{margin:0;line-height:1.45}
+.source-coverage p:last-child{font-size:11px;color:#435b73}
+@media(max-width:700px){.source-coverage{padding:9px;font-size:11px}}
