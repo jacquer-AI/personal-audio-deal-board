@@ -211,3 +211,10 @@ h1{font-size:21px;letter-spacing:-.55px}
   .toolbar .sort-control{flex:1 1 115px;min-width:0;width:auto}
   .toolbar .more-filters{flex:0 0 auto}
 }
+
+/* 200% CSS zoom at a 320px viewport: never let an unbreakable buy link expand a card. */
+@media(max-width:700px){
+  .seller-action,.seller-action p,.seller-action .primary-link{min-width:0;max-width:100%}
+  .seller-action .primary-link{white-space:normal;overflow-wrap:anywhere}
+}
+@media(max-width:360px){.seller-action .primary-link{width:100%}}
