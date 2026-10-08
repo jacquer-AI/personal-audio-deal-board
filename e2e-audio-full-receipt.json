@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "runId": "37759852889",
-  "at": "2026-10-08T09:54:59.524Z",
+  "runId": "37760690640",
+  "at": "2026-10-08T10:02:12.399Z",
   "ref": "verify/audio-full-e2e-20261008",
   "mode": "full",
   "workflow": "refresh-market.yml",
@@ -12,17 +12,17 @@
     "DELTA": "CHANGED",
     "receipt": {
       "directUrlsAttempted": 20,
-      "directVerified": 2,
-      "accessRestricted": 10,
+      "directVerified": 3,
+      "accessRestricted": 11,
       "ambiguous": 5,
       "dead": 0,
       "soldOrOut": 1,
       "notDirect": 4,
-      "remoteErrors": 2,
+      "remoteErrors": 0,
       "sourcesRestricted": {
         "ebay-de": 3,
         "olx-pl": 4,
-        "allegro-pl": 2,
+        "allegro-pl": 3,
         "ebay-pl": 1
       },
       "discovery": {
@@ -34,8 +34,8 @@
             "requested": 5,
             "reachable": 0,
             "candidateUrls": 0,
-            "restricted": 5,
-            "errors": 0
+            "restricted": 4,
+            "errors": 1
           },
           "olx-pl": {
             "requested": 6,
@@ -61,14 +61,14 @@
           "marktplaats-nl": {
             "requested": 8,
             "reachable": 8,
-            "candidateUrls": 16,
+            "candidateUrls": 5,
             "restricted": 0,
             "errors": 0
           },
           "subito-it": {
             "requested": 8,
             "reachable": 8,
-            "candidateUrls": 16,
+            "candidateUrls": 3,
             "restricted": 0,
             "errors": 0
           },
@@ -96,14 +96,14 @@
         }
       }
     },
-    "newLeads": 24,
-    "newVerifiedOffers": 9,
+    "newLeads": 8,
+    "newVerifiedOffers": 0,
     "deepCandidates": 0,
     "priceChanged": 0,
     "sold": 0,
     "stale": 0,
-    "new": 9,
-    "observationChanges": 9
+    "new": 0,
+    "observationChanges": 7
   },
   "status": "RECEIPT_CAPTURED"
 }
