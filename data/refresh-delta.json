@@ -2,166 +2,36 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 12,
+  "stale": 1,
   "changes": [
     {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.ebay.de/itm/227532985491"
-    },
-    {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://allegro.pl/produkt/technics-eah-az100e-s-sluchawki-bezprzewodowe-douszne-anc-srebrne-7c106113-254c-4f5d-8a5c-b97483d3ed15?offerId=17201751429"
-    },
-    {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://www.olx.pl/d/oferta/flagowe-sluchawki-technics-eah-az100-anc-pudrowy-roz-rose-gold-CID99-ID1ccCBL.html"
-    },
-    {
-      "type": "STALE",
-      "model": "Bowers & Wilkins Pi8",
-      "url": "https://allegro.pl/kategoria/sluchawki-bezprzewodowe-85166?string=s%C5%82uchawki+pi8"
-    },
-    {
-      "type": "STALE",
-      "model": "Bowers & Wilkins Pi8",
-      "url": "https://www.olx.pl/d/oferta/sluchawki-bowers-wilkins-pi8-CID99-ID1cxGcP.html"
-    },
-    {
-      "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://www.olx.pl/d/oferta/bose-soundlink-max-czarny-jak-nowy-w-oryginalnym-opakowaniu-z-dodatkowa-ochronna-torba-CID99-ID1cA77n.html"
-    },
-    {
-      "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://allegro.pl/produkt/bose-soundlink-max-przenosny-glosnik-bluetooth-czarny-usb-c-aux-94cee3a2-8ade-4409-9ba7-5dae7154266c?fromInactiveOffer=archived"
-    },
-    {
-      "type": "STALE",
-      "model": "Marshall Middleton II",
-      "url": "https://www.marshall.com/pl/en/product/middleton-ii?pid=1007428"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://pl.jbl.com/CHARGE-6.html"
-    },
-    {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "STALE",
-      "model": "Noble FoKus REX5",
-      "url": "https://allegro.pl/produkt/sluchawki-bezprzewodowe-dokanalowe-noble-audio-fokus-rex5-green-f9ee1b1a-5e4c-42e4-bf49-617e58490682?offerId=17454902763"
-    },
-    {
-      "type": "STALE",
-      "model": "Dan Clark Audio Noire X",
-      "url": "https://www.thomann.pl/dan_clark_audio_noire_x.htm"
+      "model": "Audeze LCD-S20",
+      "url": "https://www.thomann.pl/audeze_lcd_s20.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-08T10:43:47.572Z",
-  "mode": "full",
-  "runId": "37765363404",
+  "refreshedAt": "2026-10-08T13:21:56.824Z",
+  "mode": "quick",
+  "runId": "37783739743",
   "candidates": 7,
   "verifiedAdditions": 0,
-  "observationChanges": 9,
+  "observationChanges": 2,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 20,
-    "directVerified": 2,
-    "accessRestricted": 11,
+    "directVerified": 3,
+    "accessRestricted": 10,
     "ambiguous": 6,
     "dead": 0,
-    "soldOrOut": 1,
+    "soldOrOut": 0,
     "notDirect": 4,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 3,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
-    },
-    "discovery": {
-      "plannedJobs": 60,
-      "plannedSources": 9,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 5,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 4,
-          "errors": 1
-        },
-        "olx-pl": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "mediaexpert-outlet": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 5,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 5,
-          "verifiedUrls": 4,
-          "unverifiedUrls": 1
-        },
-        "subito-it": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 3,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 3,
-          "verifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 5,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 5,
-          "errors": 0
-        }
-      }
     }
   }
 }
