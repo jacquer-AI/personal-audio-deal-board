@@ -116,3 +116,5 @@ jobs:
           gh api -X PUT "repos/$E2E_REPO/contents/e2e-audio-full-receipt.json" \
             -f message="e2e: record post-fix FULL receipt $GITHUB_RUN_ID [skip ci]" \
             -f branch="$E2E_BRANCH" -f content="$content" -f sha="$existing_sha"
+
+# Final safety-gate E2E: check no false LIVE additions after PR #7.
