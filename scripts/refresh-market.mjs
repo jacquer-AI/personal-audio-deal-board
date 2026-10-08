@@ -199,7 +199,7 @@ if(mode!=='quick'){
     if(p.http!==200)return reject('HTTP_'+p.http,p.http);
     try{
       const expected=new URL(c.url),actual=new URL(p.url);
-      if(expected.hostname!==actual.hostname||expected.pathname.replace(/\\/$/,'')!==actual.pathname.replace(/\\/$/,''))
+      if(expected.hostname!==actual.hostname||expected.pathname.replace(/[/]$/,'')!==actual.pathname.replace(/[/]$/,''))
         return reject('REDIRECT',p.http);
     }catch{return reject('REDIRECT',p.http)}
     const {blocked,parsed}=parsePage(source,p.html,p.http);
