@@ -28,11 +28,11 @@ export function results(offers:Offer[],f:Filters){const filtered=offers.filter(o
 (f.category==='Wszystkie'||o.category===f.category)&&
 (!f.conditions.length||f.conditions.includes(o.condition)||(f.conditions.includes('HISTORICAL')&&o.status==='HISTORICAL'))&&
 (f.region==='Wszystkie'||o.region===f.region)&&
-(f.status==='Wszystkie'||o.status===f.status)&&
+(f.status==='Wszystkie'||(o.status===f.status&&(!['LIVE VERIFIED','LIVE USED'].includes(f.status)||buyable(o))))&&
 (f.history||o.status!=='HISTORICAL')&&
 (!f.liveOnly||buyable(o))&&
 [o.model,o.seller,o.country,o.status,o.role].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase()));
 const val=(o:Offer)=>f.sort==='price'?-(o.price??Infinity):f.sort==='discount'?(buyable(o)?discount(o):null)??-Infinity:f.sort==='savings'?(buyable(o)?savings(o):null)??-Infinity:f.sort==='quality'?weights[o.quality]:f.sort==='fit'?o.fit??-Infinity:b4b(o)??-Infinity;
-return group(filtered).map(p=>({...p,offers:[p.best,...offers.filter(o=>o.model===p.model&&o.id!==p.best.id&&(f.history||o.status!=='HISTORICAL'))]})).sort((a,b)=>Number(buyable(b.best))-Number(buyable(a.best))||val(b.best)-val(a.best)||a.model.localeCompare(b.model));
+return group(filtered).map(p=>({...p,offers:[p.best,...filtered.filter(o=>o.model===p.model&&o.id!==p.best.id)]})).sort((a,b)=>Number(buyable(b.best))-Number(buyable(a.best))||val(b.best)-val(a.best)||a.model.localeCompare(b.model));
 }
 
