@@ -1,42 +1,97 @@
 {
-  "new": 0,
+  "new": 9,
   "priceChanged": 0,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 1180.16,
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autospeakers/m2440135631-bose-soundlink-max-zwart-compleet-in-zeer-nette-staat"
+    },
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 1263.25,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444003842-bose-soundlink-max-draagbare-speaker"
+    },
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 874.22,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 1088.41,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Dan Clark Audio AEON 2 Noire",
+      "price": 3204.02,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2418727527-dan-clark-audio-aeon-2-noire-hoofdtelefoon"
+    },
+    {
+      "type": "NEW",
+      "model": "DUNU SA6 MkII",
+      "price": 2185.55,
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2424416476-dunu-sa6-mkii-nieuw-in-doos"
+    },
+    {
+      "type": "NEW",
+      "model": "DUNU SA6 MkII",
+      "price": 1311.33,
+      "url": "https://www.subito.it/audio-video/xenns-mangird-top-trento-663195781.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "DUNU SA6 MkII",
+      "price": 1311.33,
+      "url": "https://www.subito.it/audio-video/xenns-mangird-top-trento-663197273.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Technics EAH-AZ100",
+      "price": 2618.29,
+      "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-08T09:47:27.934Z",
+  "refreshedAt": "2026-10-08T09:54:29.756Z",
   "mode": "full",
-  "runId": "37759062321",
-  "candidates": 20,
-  "verifiedAdditions": 0,
-  "observationChanges": 0,
+  "runId": "37759852889",
+  "candidates": 24,
+  "verifiedAdditions": 9,
+  "observationChanges": 9,
   "receipt": {
     "directUrlsAttempted": 20,
     "directVerified": 2,
-    "accessRestricted": 9,
+    "accessRestricted": 10,
     "ambiguous": 5,
     "dead": 0,
     "soldOrOut": 1,
     "notDirect": 4,
-    "remoteErrors": 3,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 3,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 1
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
     "discovery": {
       "plannedJobs": 60,
       "plannedSources": 9,
-      "reachableSources": 4,
+      "reachableSources": 3,
       "sources": {
         "allegro-pl": {
           "requested": 5,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 4,
-          "errors": 1
+          "restricted": 5,
+          "errors": 0
         },
         "olx-pl": {
           "requested": 6,
@@ -55,7 +110,7 @@
         "kleinanzeigen-de": {
           "requested": 8,
           "reachable": 8,
-          "candidateUrls": 16,
+          "candidateUrls": 0,
           "restricted": 0,
           "errors": 0
         },
@@ -82,10 +137,10 @@
         },
         "amazon-de-resale": {
           "requested": 6,
-          "reachable": 6,
+          "reachable": 0,
           "candidateUrls": 0,
           "restricted": 0,
-          "errors": 0
+          "errors": 6
         },
         "ebay-de": {
           "requested": 5,

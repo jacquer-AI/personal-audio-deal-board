@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-08T09:47:27.934Z",
+  "refreshedAt": "2026-10-08T09:54:29.756Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,11 +20,51 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 999,
-      "max": 999
+      "max": 2618.29
+    },
+    {
+      "key": "Bose SoundLink Max|USED",
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 1088.41,
+      "min": 874.22,
+      "max": 1263.25
+    },
+    {
+      "key": "Bose SoundLink Max|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1180.16,
+      "max": 1180.16
+    },
+    {
+      "key": "DUNU SA6 MkII|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 2185.55,
+      "max": 2185.55
+    },
+    {
+      "key": "Dan Clark Audio AEON 2 Noire|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 3204.02,
+      "max": 3204.02
+    },
+    {
+      "key": "DUNU SA6 MkII|USED",
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1311.33,
+      "max": 1311.33
     }
   ]
 }
