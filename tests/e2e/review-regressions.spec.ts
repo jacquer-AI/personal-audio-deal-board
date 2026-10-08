@@ -73,9 +73,17 @@ test('closing dialog preserves polling and failed private network can use the ex
   await page.getByRole('button',{name:'URUCHOM QUICK'}).click();
   await expect(page.getByTestId('refresh-state')).toContainText(/QUEUED|RUNNING/);
   await page.route(dispatcher+'/status',route=>route.abort());
+  const cors={'access-control-allow-origin':'*','access-control-allow-headers':'*','access-control-allow-methods':'*'};
   let publicRunChecks=0;
-  await page.route('https://api.github.com/**/actions/runs/123',route=>{publicRunChecks++;return route.fulfill({json:{...activeRun,status:'completed',conclusion:'success'}})});
-  await page.route('https://api.github.com/**/actions/runs/123/jobs',route=>route.fulfill({json:{jobs:[{steps:[{name:'No material change',conclusion:'success'}]}]}}));
+  await page.route('https://api.github.com/**/actions/runs/123',route=>{
+    if(route.request().method()==='OPTIONS')return route.fulfill({status:204,headers:cors});
+    publicRunChecks++;
+    return route.fulfill({status:200,contentType:'application/json',headers:cors,body:JSON.stringify({...activeRun,status:'completed',conclusion:'success'})});
+  });
+  await page.route('https://api.github.com/**/actions/runs/123/jobs',route=>{
+    if(route.request().method()==='OPTIONS')return route.fulfill({status:204,headers:cors});
+    return route.fulfill({status:200,contentType:'application/json',headers:cors,body:JSON.stringify({jobs:[{steps:[{name:'No material change',conclusion:'success'}]}]})});
+  });
   await page.getByRole('button',{name:'Zamknij',exact:true}).click();
   await page.clock.runFor(5000);
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
