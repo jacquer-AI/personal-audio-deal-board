@@ -139,7 +139,7 @@ test('old unverified seller links are hidden from LIVE but remain research-only'
     // No mixed fresh/unchecked model remains: inspect only the unverified research pool.
     await page.locator('.more-filters > summary').click();
     await page.getByLabel('Live',{exact:true}).uncheck();
-    await expect(page.getByTestId('product').count()).resolves.toBeGreaterThan(currentModels.length);
+    expect(await page.getByTestId('product').count()).toBeGreaterThan(currentModels.length);
   }
 });
 
