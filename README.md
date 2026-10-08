@@ -108,3 +108,19 @@ Progress is polled through the dispatcher, with the exact public Actions run as 
 An older delta file never proves DELTA=NONE: the workflow's successful “No material change” step confirms that outcome.
 Changed runs wait for their own delta receipt and Pages deployment; an unconfirmed publication is not reported as OK.
 New builds offer an explicit reload so an active dialog or comparison is not lost. The manual GitHub link is a fallback.
+
+
+## Verification of discovery breadth and UI status (2026-10-08)
+
+The high-contrast, compact layout preserves accessible mobile hit targets. A blocked or ambiguous
+HTTP request no longer advances the last confirmed offer check date. The refresh dialog exposes
+counts of verified final seller pages and blocked sources from the last persisted run.
+
+FULL/DEEP discovery plans distribute a bounded query budget over models **and** source adapters
+instead of truncating at the first models. `plannedSources` means a source was queried, while
+`reachableSources` means at least one discovery URL returned an accessible 2xx/3xx response.
+Neither implies a new verified offer. Promotion remains subject to direct-page verification.
+
+As of the last pre-change FULL on 2026-10-08, 2/20 direct URLs were verified and 11 blocked
+automated access. The registry lists 31 sources, of which 23 offer discovery URLs; this is
+configuration breadth, not 31 confirmed/live marketplace integrations.
