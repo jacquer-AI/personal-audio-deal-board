@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 7
     env:
       GH_TOKEN: ${{ github.token }}
-      EXPECTED_SHA: e3555495780e91ba0d4ac00e4118aec37b817d6e
+      EXPECTED_SHA: 73bb044007430c712968cc2ceb571aa06e836c0f
     steps:
       - name: Read workflow runs and public version
         run: |
@@ -28,6 +28,7 @@ jobs:
           console.log(JSON.stringify(out));
           JS
           content="$(base64 -w0 /tmp/audio-pages-status.json)"
+          existing_sha="$(gh api "repos/$GITHUB_REPOSITORY/contents/e2e-audio-pages-status.json?ref=verify/audio-full-e2e-20261008" --jq .sha)"
           gh api -X PUT "repos/$GITHUB_REPOSITORY/contents/e2e-audio-pages-status.json" \
-            -f message="e2e: capture Pages deployment status audit [skip ci]" \
-            -f branch="verify/audio-full-e2e-20261008" -f content="$content"
+            -f message="e2e: capture final Pages gate status [skip ci]" \
+            -f branch="verify/audio-full-e2e-20261008" -f content="$content" -f sha="$existing_sha"
