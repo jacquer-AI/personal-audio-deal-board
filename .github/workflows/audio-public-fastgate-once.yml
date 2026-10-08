@@ -1,0 +1,61 @@
+name: Audio public fast readback one-shot
+on:
+  push:
+    branches: [verify/audio-full-e2e-20261008]
+    paths: [.github/workflows/audio-public-fastgate-once.yml]
+permissions:
+  contents: write
+jobs:
+  public-readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      GH_TOKEN: ${{ github.token }}
+      EXPECTED_SHA: e3555495780e91ba0d4ac00e4118aec37b817d6e
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: e3555495780e91ba0d4ac00e4118aec37b817d6e
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build and public Pages readback
+        id: probe
+        continue-on-error: true
+        env:
+          VITE_BUILD_SHA: e3555495780e91ba0d4ac00e4118aec37b817d6e
+        run: |
+          npm run build
+          node scripts/readback.mjs | tee /tmp/readback-public.txt
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          const url='https://jacquer-ai.github.io/personal-audio-deal-board/version.json?fresh='+Date.now();
+          const response=await fetch(url,{cache:'no-store',signal:AbortSignal.timeout(30000)});
+          assert(response.ok,'Version endpoint HTTP '+response.status);
+          const body=await response.json();
+          assert.equal(body.sha,process.env.EXPECTED_SHA);
+          console.log('PUBLIC_SHA_MATCHED',body.sha);
+          JS
+      - name: Publish fastgate evidence
+        if: ${{ always() }}
+        env:
+          GATE_RESULT: ${{ steps.probe.outcome }}
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const output=fs.existsSync('/tmp/readback-public.txt')?fs.readFileSync('/tmp/readback-public.txt','utf8'):'';
+          const receipt={runId:process.env.GITHUB_RUN_ID,at:new Date().toISOString(),sha:process.env.EXPECTED_SHA,readback:process.env.GATE_RESULT,log:output.slice(-2800)};
+          fs.writeFileSync('/tmp/audio-fastgate.json',JSON.stringify(receipt,null,2)+'\n');
+          console.log(JSON.stringify(receipt));
+          JS
+          content="$(base64 -w0 /tmp/audio-fastgate.json)"
+          gh api -X PUT "repos/$GITHUB_REPOSITORY/contents/e2e-audio-fastgate.json" \
+            -f message="e2e: record independent public release gate [skip ci]" \
+            -f branch="verify/audio-full-e2e-20261008" -f content="$content"
+      - name: Enforce
+        if: ${{ always() }}
+        env:
+          GATE_RESULT: ${{ steps.probe.outcome }}
+        run: test "$GATE_RESULT" = success
