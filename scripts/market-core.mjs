@@ -60,7 +60,7 @@ export function safeStatus(base, overlay) {
 }
 
 export function mergeOffer(base, overlay) {
-  if (!overlay) return {...base};
+  if (!overlay) return {...base,status:safeStatus(base,null)};
   const verified = overlay.verificationState === 'DIRECT_OFFER_VERIFIED';
   const merged = {...base};
   if (verified && Number.isFinite(overlay.price) && overlay.price > 0) merged.price = overlay.price;
