@@ -62,7 +62,8 @@ export function mergeOffer(base, overlay) {
   if (verified && overlay.original) merged.original = overlay.original;
   merged.status = safeStatus(base, overlay);
   if (merged.status === 'HISTORICAL') merged.role = 'HISTORICAL';
-  merged.checked = overlay.checked || base.checked;
+  // A blocked/ambiguous HTTP check is not a fresh seller confirmation.
+  merged.checked = verified ? (overlay.checked || base.checked) : base.checked;
   merged.note = [base.note, overlay.note].filter(Boolean).join(' · ');
   merged.refresh = {verificationState:overlay.verificationState || 'UNVERIFIED',http:overlay.http ?? null,checkedAt:overlay.checkedAt || null};
   return merged;
