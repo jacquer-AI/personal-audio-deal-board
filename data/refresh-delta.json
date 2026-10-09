@@ -2,111 +2,30 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 1,
-  "changes": [
-    {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-09T09:30:52.143Z",
-  "mode": "full",
-  "runId": "37911732780",
+  "refreshedAt": "2026-10-09T22:34:57.348Z",
+  "mode": "quick",
+  "runId": "37999976072",
   "candidates": 7,
   "verifiedAdditions": 0,
-  "observationChanges": 2,
-  "freshnessRenewal": false,
+  "observationChanges": 1,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 20,
-    "directVerified": 2,
-    "accessRestricted": 11,
-    "ambiguous": 7,
+    "directVerified": 3,
+    "accessRestricted": 10,
+    "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 4,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 3,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "olx-pl": 4,
       "ebay-pl": 1
-    },
-    "discovery": {
-      "plannedJobs": 60,
-      "plannedSources": 9,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 5,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 5,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "mediaexpert-outlet": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 5,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 5,
-          "verifiedUrls": 4,
-          "unverifiedUrls": 1
-        },
-        "subito-it": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 3,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 3,
-          "verifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 6,
-          "reachable": 1,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 5
-        },
-        "ebay-de": {
-          "requested": 5,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 5,
-          "errors": 0
-        }
-      }
     }
   }
 }
