@@ -1,36 +1,38 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+      "type": "PRICE",
+      "model": "Dan Clark Audio Noire X",
+      "from": 4899,
+      "to": 4555,
+      "url": "https://www.thomann.pl/dan_clark_audio_noire_x_b_stock.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-08T23:18:11.343Z",
+  "refreshedAt": "2026-10-09T06:02:44.027Z",
   "mode": "quick",
-  "runId": "37858652523",
+  "runId": "37891483402",
   "candidates": 7,
   "verifiedAdditions": 0,
-  "observationChanges": 1,
+  "observationChanges": 2,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 20,
     "directVerified": 2,
     "accessRestricted": 11,
-    "ambiguous": 7,
+    "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 4,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 3,
-      "allegro-pl": 3,
       "olx-pl": 4,
+      "allegro-pl": 3,
       "ebay-pl": 1
     }
   }

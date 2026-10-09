@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -252,20 +252,20 @@
       "rrp": 5222,
       "newMarket": 5222,
       "sameMarket": 4799,
-      "price": 4899,
+      "price": 4555,
       "country": "Niemcy",
       "seller": "Thomann PL",
       "region": "UE",
       "status": "LIVE VERIFIED",
-      "original": "4899 PLN",
+      "original": "4555 PLN",
       "url": "https://www.thomann.pl/dan_clark_audio_noire_x_b_stock.htm",
       "note": "Thomann new 5222 PLN; B-stock prior 30-day best 4799; current B-stock 4499 · Refresh: exact model + explicit price on direct offer page (META).",
       "role": "OFFER",
-      "checked": "2026-10-08",
+      "checked": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -369,7 +369,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -516,16 +516,16 @@
       "country": "Poland",
       "seller": "Technics Poland",
       "region": "Polska",
-      "status": "STALE / REVERIFY",
+      "status": "LIVE VERIFIED",
       "original": "999 PLN",
       "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/",
-      "note": "Available; add to cart · Free delivery shown · Refresh: MODEL_NOT_CONFIRMED. Prior SSOT value retained.",
+      "note": "Available; add to cart · Free delivery shown · Refresh: exact model + explicit price on direct offer page (JSON_LD).",
       "role": "OFFER",
-      "checked": "2026-10-07",
+      "checked": "2026-10-09",
       "refresh": {
-        "verificationState": "MODEL_NOT_CONFIRMED",
+        "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -551,7 +551,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     },
     {
@@ -629,14 +629,14 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-08T23:18:11.343Z"
+        "checkedAt": "2026-10-09T06:02:44.027Z"
       }
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-08T23:18:11.343Z",
+    "refreshedAt": "2026-10-09T06:02:44.027Z",
     "mode": "quick",
-    "runId": "37858652523",
+    "runId": "37891483402",
     "status": "COMPLETED"
   }
 }
