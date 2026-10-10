@@ -27,11 +27,11 @@
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor",
       "note": "NEW sample: €2106.18 Muzix HU; €2199 Project Akustik DE; €2199 Headphone.shop DE · Refresh: exact model + explicit price on direct offer page (JSON_LD).",
       "role": "OFFER",
-      "checked": "2026-10-09",
+      "checked": "2026-10-10",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-09T22:34:57.348Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-09T22:34:57.348Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -369,7 +369,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-09T09:30:52.143Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -525,7 +525,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     },
     {
@@ -629,14 +629,14 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-10T05:45:18.927Z"
+        "checkedAt": "2026-10-10T08:52:45.329Z"
       }
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-10T05:45:18.927Z",
-    "mode": "quick",
-    "runId": "38028570072",
+    "refreshedAt": "2026-10-10T08:52:45.329Z",
+    "mode": "full",
+    "runId": "38039397814",
     "status": "COMPLETED"
   }
 }
