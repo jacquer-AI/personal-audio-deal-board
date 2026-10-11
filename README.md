@@ -189,3 +189,27 @@ configuration breadth, not 31 confirmed/live marketplace integrations.
 - Historical globally sourced candidates with no geographic evidence are
   removed from the visible Europe-only research list, not rewritten to
   imply they were European. The underlying research ledger remains auditable.
+
+## Canonical listening preference — DT 48 / speed and microdetail (2026-10-12)
+
+The listener **owned and liked Beyerdynamic DT 48 at 25 ohms**. The exact DT 48 suffix (E/S/etc.) was **not confirmed**; do not assume it. This is a **primary subjective sound reference**, not a measured preference curve.
+
+- **Primary priorities:** very fast, well-controlled transients/attack; fine microdetail; precise instrument separation; immediate, articulate, prominent midrange and realistic vocal articulation; low masking/overhang; taut rather than boosted bass.
+- **Secondary preferences:** clarity and treble openness, but **bright treble alone must not be treated as evidence of real resolution**. Analytical presentation can derive from midrange definition rather than elevated top octave. An intimate soundstage is acceptable.
+- **Generally avoid:** warm, soft, slow, dark, diffuse, overly bass-heavy sound when it sacrifices midrange articulation or attack.
+- **Existing reference points:** Etymotic ER4P/S, Sony MDR-SA5000 and Beyerdynamic DT 880; the listener has Thieaudio Monarch MkII and uses iBasso DX220. DT 880 is a **distinct** tonal/spatial presentation, not a replacement for DT 48.
+- **Shopping rule:** seek exceptional used value, with confirmed model/impedance/condition/price, explicit seller verification and transparent shipping/VAT/currency uncertainty. Do not equate an indexed asking price with an available offer.
+
+Eight new **discovery targets** added to the canonical `config/model-registry.json` (56 enabled families total):
+`Beyerdynamic DT 48 25 Ohm` (priority direct re-acquisition),
+`Sony MDR-CD900ST` (intimate, articulate studio midrange),
+`Sony MDR-M1` (modern closed monitor),
+`Austrian Audio Hi-X65` (open, fast and revealing),
+`Austrian Audio Hi-X60` (closed monitor alternative),
+`Neumann NDH 30` (neutral, high midrange detail but smoother/full-range),
+`Audio-Technica ATH-M70x` (critical closed monitoring),
+`Focal Clear OG` (fast dynamic alternative, fuller than DT 48).
+
+These are **candidate hypotheses, not claims of identical sound** and not current live listings. They retain `quality: UNRATED`, `fit: null`, no fictional prices or comparables. ER4SR, HD 800 S, ATH-ADX5000, DT 1990 Pro and other detail-oriented families are already on the list.
+
+To preserve daily source coverage with 56 models, FULL default discovery budget is **280** jobs (56 × HiFiShark, Allegro, OLX, Vinted and one rotating European source); DEEP is **360** jobs. The source-provider cap, page verification and Europe-only constraints remain unchanged.

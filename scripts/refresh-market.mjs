@@ -25,7 +25,7 @@ const TIMEOUT=Number(process.env.REFRESH_TIMEOUT_MS||12000);
 const CONCURRENCY=Math.max(1,Math.min(6,Number(process.env.REFRESH_CONCURRENCY||4)));
 // FULL needs enough budget to cover Polish marketplaces plus the two EU sources
 // which actually yield directly verifiable seller pages (Subito, Marktplaats).
-const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(500,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?320:240))));
+const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(500,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?360:280))));
 const DEADLINE=Date.now()+Number(process.env.REFRESH_DEADLINE_MS||20*60*1000);
 const DRY=process.env.REFRESH_DRY==='1';
 
