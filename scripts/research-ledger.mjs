@@ -1,4 +1,5 @@
 import {canonicalUrl} from './market-core.mjs';
+import {accessoryOnlyEvidence} from './sources/discovery-links.mjs';
 
 const key=c=>[String(c.model||'').toLowerCase(),canonicalUrl(c.url||'')].join('|');
 const dateOf=c=>Date.parse(c.lastSeenAt||c.verifiedAt||c.discoveredAt||'');
@@ -9,7 +10,7 @@ export function mergeResearchCandidates(prior=[],found=[],now=new Date().toISOSt
   const cutoff=Date.parse(now)-days*86400000;
   for(const p of prior){
     const at=dateOf(p);
-    if(!Number.isFinite(at)||at<cutoff||!p?.url||!p?.model)continue;
+    if(!Number.isFinite(at)||at<cutoff||!p?.url||!p?.model||accessoryOnlyEvidence(p.url,p.title))continue;
     const c={...p,firstSeenAt:p.firstSeenAt||p.discoveredAt,lastSeenAt:p.lastSeenAt||p.verifiedAt||p.discoveredAt,
       researchFreshness:'RECHECK_REQUIRED',retained:true};
     // Historical candidate prices are in PLN even if the raw source currency is EUR.
@@ -18,7 +19,7 @@ export function mergeResearchCandidates(prior=[],found=[],now=new Date().toISOSt
     byKey.set(key(c),c);
   }
   for(const n of found){
-    if(!n?.url||!n?.model)continue;
+    if(!n?.url||!n?.model||accessoryOnlyEvidence(n.url,n.title))continue;
     const before=byKey.get(key(n));
     const c={...n,firstSeenAt:before?.firstSeenAt||n.discoveredAt||now,lastSeenAt:now,
       researchFreshness:'SCAN_OBSERVED',retained:false};
