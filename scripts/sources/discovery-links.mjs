@@ -17,6 +17,18 @@ function nameEvidence(label,model){
     return n.length>=5 && ((' '+t+' ').includes(' '+n+' ') || (n.replace(/\s+/g,'').length>=6&&joined.includes(n.replace(/\s+/g,''))));
   });
 }
+/** Block obvious accessory-only advertisements that contain the model name.
+ * This is not an attempt to infer sale availability from a marketplace page. */
+export function accessoryOnlyEvidence(url,label=''){
+  let slug='';
+  try{slug=decodeURIComponent(new URL(url).pathname)}catch{/* no URL evidence */}
+  const title=norm(decodeEntities(htmlText(String(label).slice(0,350))));
+  const candidate=norm(slug+' '+title);
+  if(/\b(uchwyt scienny|metalowy uchwyt|wall mount|wall bracket|wandhalterung|soporte de pared|support mural|stojak na sluchawki|headphone stand)\b/.test(candidate))return true;
+  if(/\b(etui do|pokrowiec na|case for|cover for|replacement case|charging case only|futeral do|kabel do|cable for|nauszniki do|replacement ear pads|ear pads only)\b/.test(candidate))return true;
+  if(/\b(tylko prawa sluchawka|tylko lewa sluchawka|left earbud only|right earbud only|earbud replacement only|nur eine seite)\b/.test(candidate))return true;
+  return false;
+}
 function belongsToSource(url,source){
   try{
     const host=new URL(url).hostname.replace(/^www\./,'').toLowerCase();
@@ -41,6 +53,7 @@ export function discoverPageLinks(html,pageUrl,source,model,known=new Set(),limi
       const url=new URL(decodeEntities(raw[1]||raw[2]||raw[3]),pageUrl).toString();
       if(!belongsToSource(url,source)||isListingUrl(url)||!isPlausibleOfferLink(url,source)||known.has(url)||seen.has(url))continue;
       const label=[match[2],attrs.match(/\b(?:aria-label|title)\s*=\s*["']([^"']+)["']/i)?.[1]||''].join(' ');
+      if(accessoryOnlyEvidence(url,label))continue;
       if(!urlMatchesModel(url,model)&&!nameEvidence(label,model))continue;
       seen.add(url);candidates.push(url);
     }catch{/* reject malformed href */}
