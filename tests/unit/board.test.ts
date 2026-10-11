@@ -49,6 +49,30 @@ it('filters conditions',()=>expect(results(offers,{...f,conditions:['USED']}).ev
 it('filters region',()=>expect(results(offers,{...f,region:'Polska'}).every(p=>p.best.region==='Polska')).toBe(true));
 it('filters status',()=>expect(results(offers,{...f,status:'LIVE USED'}).every(p=>p.best.status==='LIVE USED')).toBe(true));
 it('sorts cheapest first',()=>expect(results(offers,{...f,sort:'price'})[0].model).toBe('JBL Charge 6'));
+it('sorting by price never overrides numeric order with LIVE status',()=>{
+ const live={...az,id:'sort-live',model:'Live model',price:1000};
+ const unverified={...az,id:'sort-unknown',model:'Unverified model',price:100,
+   refresh:{verificationState:'ACCESS_RESTRICTED_REVERIFY',http:403,checkedAt:new Date().toISOString()}};
+ const scope={...f,liveOnly:false};
+ expect(buyable(live)).toBe(true);
+ expect(buyable(unverified)).toBe(false);
+ expect(results([live,unverified],{...scope,sort:'price'}).map(p=>p.model))
+  .toEqual(['Unverified model','Live model']);
+ expect(results([live,unverified],{...scope,sort:'price_desc'}).map(p=>p.model))
+  .toEqual(['Live model','Unverified model']);
+ expect(results([live,unverified],{...scope,sort:'model'}).map(p=>p.model))
+  .toEqual(['Live model','Unverified model']);
+});
+it('changes primary representative to the cheapest/specified offer in the same model',()=>{
+ const live={...az,id:'same-live',price:800};
+ const cheaper={...az,id:'same-unverified',price:100,
+   refresh:{verificationState:'ACCESS_RESTRICTED_REVERIFY',http:403,checkedAt:new Date().toISOString()}};
+ const scope={...f,liveOnly:false};
+ expect(results([live,cheaper],{...scope,sort:'price'})[0].best.id).toBe('same-unverified');
+ expect(results([live,cheaper],{...scope,sort:'price_desc'})[0].best.id).toBe('same-live');
+ expect(results([live,cheaper],{...scope,sort:'b4b'})[0].best.id).toBe('same-live');
+});
+
 it('sorts B4B within eligible current sources',()=>{const scores=results(offers,f).map(p=>b4b(p.best)??-Infinity);expect(scores).toEqual([...scores].sort((a,b)=>b-a))});
 it('rejects fourth compare without mutating selection',()=>{const ids=['a','b','c'];const r=selectCompare(ids,'d');expect(r.ids).toEqual(ids);expect(r.error).toContain('3')});
 it('removes comparison and adds third',()=>{expect(selectCompare(['a','b'],'c').ids).toEqual(['a','b','c']);expect(selectCompare(['a','b','c'],'b').ids).toEqual(['a','c'])});
