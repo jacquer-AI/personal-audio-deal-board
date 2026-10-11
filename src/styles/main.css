@@ -218,3 +218,10 @@ h1{font-size:21px;letter-spacing:-.55px}
   .seller-action .primary-link{white-space:normal;overflow-wrap:anywhere}
 }
 @media(max-width:360px){.seller-action .primary-link{width:100%}}
+
+/* Vinted is external discovery, not a verified seller page. */
+.results-heading .vinted-shortcut{font-weight:750;color:#064c97;text-underline-offset:2px;white-space:nowrap}
+.vinted-discovery{font-size:11px;margin:7px 0;line-height:1.5;overflow-wrap:anywhere}
+.vinted-discovery a{color:#064c97;font-weight:750;text-underline-offset:2px}
+.vinted-discovery span{color:#435671}
+@media(max-width:700px){.results-heading{gap:8px;flex-wrap:wrap}.results-heading .vinted-shortcut{min-height:30px;display:inline-flex;align-items:center}}

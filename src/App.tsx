@@ -4,6 +4,7 @@ import type {Offer, Filters, Product, Status} from './types';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable, percentLabel, modelCount} from './lib/board';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
+import {vintedSearchUrl} from './lib/vinted';
 
 const offers = snapshot.offers as Offer[];
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Głośniki BT'];
@@ -44,6 +45,7 @@ function Price({offer}: {offer: Offer}) {
 function OfferDetails({product}: {product: Product}) {
   return <details className="offer-details">
     <summary>Więcej ofert ({product.offers.length})</summary>
+    <p className="vinted-discovery"><a href={vintedSearchUrl(product.model)} target="_blank" rel="noopener noreferrer" aria-label={"Szukaj modelu " + product.model + " na Vinted"}>Znajdź ten model na Vinted ↗</a> <span>Wyniki zewnętrzne — przed zakupem sprawdź cenę z opłatami, autentyczność i stan baterii.</span></p>
     <p className="source-legend">LIVE — aktualność potwierdzona bezpośrednio u sprzedawcy (maks. 24 h; używane 8 h). NIEPOTWIERDZONE — brak aktualnego dowodu, poza rankingiem. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
     <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
@@ -148,7 +150,7 @@ export default function App() {
       </details>
     </section>
     <main id="results" tabIndex={-1}>
-      <div className="results-heading"><span><b>{products.length}</b> {modelCount(products.length)}</span><small>Stan arkusza: {snapshot.snapshot}</small></div>
+      <div className="results-heading"><span><b>{products.length}</b> {modelCount(products.length)}</span><a className="vinted-shortcut" href={vintedSearchUrl(f.search)} target="_blank" rel="noopener noreferrer" aria-label={"Szukaj na Vinted: " + (f.search.trim() || "słuchawki")}>Vinted ↗</a><small>Stan arkusza: {snapshot.snapshot}</small></div>
       <p role="status" className="message">{message}</p>
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników</h2><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
     </main>
