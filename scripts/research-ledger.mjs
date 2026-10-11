@@ -8,6 +8,10 @@ export function mergeResearchCandidates(prior=[],found=[],now=new Date().toISOSt
   const byKey=new Map();
   const cutoff=Date.parse(now)-days*86400000;
   for(const p of prior){
+    // Drop pre-v2 aggregate prices: their numeric field could have been parsed
+    // from the wrong HTML fragment (e.g. a missing trailing EUR amount).
+    // Re-discover them from source under the corrected parser instead.
+    if(p.sourceId==='hifishark'&&p.verificationState==='AGGREGATOR_PRICE_ONLY'&&p.priceEvidenceVersion!=='HIFISHARK_CARD_PRICE_V2')continue;
     const at=dateOf(p);
     if(!Number.isFinite(at)||at<cutoff||!p?.url||!p?.model)continue;
     const c={...p,firstSeenAt:p.firstSeenAt||p.discoveredAt,lastSeenAt:p.lastSeenAt||p.verifiedAt||p.discoveredAt,
