@@ -170,6 +170,173 @@
         "Charge 6"
       ],
       "enabled": true
+    },
+    {
+      "model": "Etymotic ER4P",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ER-4P",
+        "ER4 P"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Etymotic ER4S",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ER-4S",
+        "ER4 S"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Etymotic ER4XR",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ER-4XR",
+        "ER4 XR"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "DT880",
+        "DT 880 Pro"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sony MDR-SA5000",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "SA5000",
+        "MDR SA5000"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Thieaudio Monarch MkII",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Monarch MK2",
+        "Monarch II"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Thieaudio Monarch MkIII",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Monarch MK3",
+        "Monarch III"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sennheiser IE 600",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "IE600"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sennheiser IE 900",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "IE900"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sony IER-Z1R",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "IER Z1R"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "64 Audio U4s",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "64Audio U4s"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Moondrop S8",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Moondrop S 8"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "DUNU SA6 Ultra",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "SA6 Ultra"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "HIFIMAN Arya Stealth",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Arya Stealth Magnet"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Dan Clark Audio E3",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "DCA E3"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Clear Mg"
+      ],
+      "enabled": true
     }
   ]
 }
