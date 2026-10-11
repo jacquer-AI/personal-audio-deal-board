@@ -1,42 +1,34 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
   "stale": 0,
-  "changes": [
-    {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 547.19,
-      "to": 569.08,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm"
-    }
-  ],
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-11T21:36:08.850Z",
+  "refreshedAt": "2026-10-11T21:44:24.167Z",
   "mode": "full",
-  "runId": "38177034986",
+  "runId": "38177595441",
   "candidates": 215,
   "verifiedAdditions": 0,
-  "observationChanges": 71,
+  "observationChanges": 1,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 30,
-    "directVerified": 14,
+    "directVerified": 15,
     "accessRestricted": 10,
     "ambiguous": 5,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "olx-pl": 4,
       "allegro-pl": 3,
+      "olx-pl": 4,
       "ebay-pl": 1
     },
-    "researchRechecked": 29,
-    "researchReverified": 29,
+    "researchRechecked": 36,
+    "researchReverified": 36,
     "discovery": {
       "plannedJobs": 240,
       "coreSources": [
@@ -53,8 +45,8 @@
           "requested": 48,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 39,
-          "errors": 9
+          "restricted": 41,
+          "errors": 7
         },
         "olx-pl": {
           "requested": 48,
@@ -66,11 +58,11 @@
         "vinted-pl": {
           "requested": 48,
           "reachable": 30,
-          "candidateUrls": 46,
+          "candidateUrls": 45,
           "restricted": 18,
           "errors": 0,
-          "checkedUrls": 46,
-          "unverifiedUrls": 46
+          "checkedUrls": 45,
+          "unverifiedUrls": 45
         },
         "mediaexpert-outlet": {
           "requested": 0,
