@@ -213,7 +213,11 @@
         "DT880",
         "DT 880 Pro"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Beyerdynamic DT 880",
+        "Beyerdynamic DT880"
+      ]
     },
     {
       "model": "Sony MDR-SA5000",
@@ -224,7 +228,11 @@
         "SA5000",
         "MDR SA5000"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Sony MDR-SA5000",
+        "Sony SA5000"
+      ]
     },
     {
       "model": "Thieaudio Monarch MkII",
@@ -515,9 +523,15 @@
         "DT48 25 Ohm",
         "DT 48 E 25",
         "DT48E 25",
-        "DT 48 25 ohm"
+        "DT 48 25 ohm",
+        "DT48 25ohm"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Beyerdynamic DT48 25 Ohm",
+        "Beyerdynamic DT 48 E 25",
+        "DT48 25 Ohm"
+      ]
     },
     {
       "model": "Sony MDR-CD900ST",
@@ -528,7 +542,11 @@
         "MDR CD900ST",
         "CD900ST"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Sony MDR-CD900ST",
+        "Sony CD900ST"
+      ]
     },
     {
       "model": "Sony MDR-M1",
