@@ -7,6 +7,8 @@ export const marketplaces = [
   {id:'vinted', label:'Vinted', url:(q:string)=>vintedSearchUrl(q)},
   {id:'olx', label:'OLX', url:(q:string)=>'https://www.olx.pl/oferty/q-'+encodeURIComponent(q.trim()||'słuchawki')+'/'},
   {id:'allegro', label:'Allegro', url:(q:string)=>'https://allegro.pl/listing?string='+encodeURIComponent(q.trim()||'słuchawki')},
+  {id:'subito', label:'Subito', url:(q:string)=>'https://www.subito.it/annunci-italia/vendita/usato/?q='+encodeURIComponent(q.trim()||'cuffie')},
+  {id:'marktplaats', label:'Marktplaats', url:(q:string)=>'https://www.marktplaats.nl/q/'+encodeURIComponent(q.trim()||'koptelefoon')+'/'},
   {id:'ebay', label:'eBay DE', url:(q:string)=>'https://www.ebay.de/sch/i.html?_nkw='+encodeURIComponent(q.trim()||'headphones')},
   {id:'kleinanzeigen', label:'Kleinanzeigen', url:(q:string)=>'https://www.kleinanzeigen.de/s-'+encodeURIComponent(q.trim()||'Kopfhörer')+'/k0'}
 ] as const;
