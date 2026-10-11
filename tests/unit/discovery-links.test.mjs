@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {discoverPageLinks} from '../../scripts/sources/discovery-links.mjs';
+import {discoverPageLinks,accessoryOnlyEvidence} from '../../scripts/sources/discovery-links.mjs';
 import {mergeResearchCandidates} from '../../scripts/research-ledger.mjs';
 
 const vinted={id:'vinted-pl',domains:['vinted.pl']};
@@ -47,5 +47,30 @@ describe('durable non-buyable research register',()=>{
     expect(rows).toHaveLength(1);
     expect(rows[0]).toMatchObject({lastSeenAt:now,researchFreshness:'SCAN_OBSERVED',retained:false});
     expect(mergeResearchCandidates([prev],[],'2026-11-11T16:00:00Z')).toHaveLength(0);
+  });
+});
+
+describe('do not confuse accessories with full model units',()=>{
+  const bose={model:'Bose SoundLink Max'};
+  const vinted={id:'vinted-pl',domains:['vinted.pl']};
+  it('excludes real accessory-only wall mount from Vinted results',()=>{
+    const raw='/items/9225180440-metalowy-uchwyt-scienny-dedykowany-do-glosnika-przenosnego-bose-soundlink-max';
+    const page='<a href="'+raw+'">Metalowy uchwyt ścienny dedykowany do głośnika Bose SoundLink Max</a>'+
+      '<a href="/items/10297193213-bose-soundlink-max">Głośnik Bose SoundLink Max</a>';
+    expect(discoverPageLinks(page,'https://www.vinted.pl/catalog?search_text=bose',vinted,bose))
+      .toEqual(['https://www.vinted.pl/items/10297193213-bose-soundlink-max']);
+  });
+  it('keeps real headphones sold with a case and excludes case-only ads',()=>{
+    expect(accessoryOnlyEvidence('https://www.vinted.pl/items/9687038424-hifiman-arya-stealth-and-case-fiio-k7-like-new')).toBe(false);
+    expect(accessoryOnlyEvidence('https://www.vinted.pl/items/15567890-case-for-hifiman-arya-stealth')).toBe(true);
+    expect(accessoryOnlyEvidence('https://www.vinted.pl/items/11112222-right-earbud-only-bowers-wilkins-pi8')).toBe(true);
+  });
+  it('prunes accessory ads from retained and newly discovered candidate records',()=>{
+    const today='2026-10-11T19:00:00Z';
+    const ad={model:'Bose SoundLink Max',url:'https://www.vinted.pl/items/9225180440-metalowy-uchwyt-scienny-dedykowany-do-glosnika-przenosnego-bose-soundlink-max',discoveredAt:today};
+    const good={model:'Bose SoundLink Max',url:'https://www.vinted.pl/items/10297193213-bose-soundlink-max',discoveredAt:today};
+    const rows=mergeResearchCandidates([ad,good],[ad,good],today);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].url).toBe(good.url);
   });
 });
