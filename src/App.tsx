@@ -7,7 +7,7 @@ import BuildFreshness from './BuildFreshness';
 import {marketplaces, uniqueWatchModels} from './lib/marketSearch';
 
 const offers = snapshot.offers as Offer[];
-const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Głośniki BT'];
+const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Open', 'Głośniki BT'];
 const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:false, history:false, sort:'b4b'};
 function read() {
   try { return {...defaults, ...JSON.parse(localStorage.getItem('audio-board-v2') || '{}')}; }
@@ -96,7 +96,7 @@ export default function App() {
     return <article key={p.model} className="product" data-testid="product">
       <header className="product-header">
         <span className="rank">#{i + 1}</span><h2>{p.model}</h2>
-        <span className="product-meta">{o.category} · <b aria-label={'Jakość ' + o.quality}>{o.quality.replace('-', '−')}</b></span>
+        <span className="product-meta">{o.category} · <b aria-label={'Jakość ' + o.quality}>{(o.quality==='UNRATED'?'—':o.quality.replace('-', '−'))}</b></span>
         <span className="score" title="B4B: jakość × rynek tego samego stanu / cena oferty. Wyżej = lepszy stosunek jakości do ceny.">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
         <label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={() => toggle(p.model)}/>Porównaj<span className="sr-only"> {p.model}</span></label>
       </header>
