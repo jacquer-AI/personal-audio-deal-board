@@ -27,8 +27,20 @@ export function walk(x,fn){
 }
 
 export function toNumber(v){
-  const n=Number(String(v??'').replace(/[^0-9.,]/g,'').replace(',','.'));
-  return Number.isFinite(n)&&n>0?n:null;
+  if(typeof v==='number')return Number.isFinite(v)&&v>0?v:null;
+  let raw=String(v??'').replace(/[^0-9.,]/g,'');
+  if(!/[0-9]/.test(raw))return null;
+  const lastDot=raw.lastIndexOf('.'),lastComma=raw.lastIndexOf(',');
+  const last=Math.max(lastDot,lastComma);
+  const separator=last<0?'':raw[last];
+  const after=last<0?'':raw.slice(last+1);
+  const separatorCount=(raw.match(/[.,]/g)||[]).length;
+  // A final one- or two-digit component is a decimal fraction, otherwise
+  // punctuation separates thousands (e.g. 1.999 or 1.234.567).
+  const decimal=separator&&after.length>=1&&after.length<=2;
+  raw=decimal?raw.slice(0,last).replace(/[.,]/g,'')+'.'+after:raw.replace(/[.,]/g,'');
+  const n=Number(raw);
+  return Number.isFinite(n)&&n>0&&separatorCount<10?n:null;
 }
 
 export function conditionFrom(parsed,html){

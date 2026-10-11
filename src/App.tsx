@@ -1,16 +1,17 @@
 import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
+import research from '../data/market-candidates.json';
 import type {Offer, Filters, Product, Status} from './types';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable, percentLabel, modelCount} from './lib/board';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
-import {vintedSearchUrl} from './lib/vinted';
+import {marketplaces, uniqueWatchModels} from './lib/marketSearch';
 
 const offers = snapshot.offers as Offer[];
-const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Głośniki BT'];
-const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:true, history:false, sort:'b4b'};
+const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Open', 'Głośniki BT'];
+const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:false, history:false, sort:'b4b'};
 function read() {
-  try { return {...defaults, ...JSON.parse(localStorage.getItem('audio-board') || '{}')}; }
+  try { return {...defaults, ...JSON.parse(localStorage.getItem('audio-board-v2') || '{}')}; }
   catch { return defaults; }
 }
 function readDensity() {
@@ -45,7 +46,7 @@ function Price({offer}: {offer: Offer}) {
 function OfferDetails({product}: {product: Product}) {
   return <details className="offer-details">
     <summary>Więcej ofert ({product.offers.length})</summary>
-    <p className="vinted-discovery"><a href={vintedSearchUrl(product.model)} target="_blank" rel="noopener noreferrer" aria-label={"Szukaj modelu " + product.model + " na Vinted"}>Znajdź ten model na Vinted ↗</a> <span>Wyniki zewnętrzne — przed zakupem sprawdź cenę z opłatami, autentyczność i stan baterii.</span></p>
+    <div className="market-discovery"><b>Szukaj innych ogłoszeń:</b> {marketplaces.map(m => <a key={m.id} href={m.url(product.model)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj modelu '+product.model+' na '+m.label}>{m.label} ↗</a>)} <span>Linki wyszukują w zewnętrznych serwisach; nie potwierdzają liczby, ceny ani dostępności ofert.</span></div>
     <p className="source-legend">LIVE — aktualność potwierdzona bezpośrednio u sprzedawcy (maks. 24 h; używane 8 h). NIEPOTWIERDZONE — brak aktualnego dowodu, poza rankingiem. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
     <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
@@ -60,12 +61,13 @@ export default function App() {
   const [selected, setSelected] = useState<string[]>([]);
   const [message, setMessage] = useState('');
   const [comparison, setComparison] = useState(false);
+  const [showWatchlist, setShowWatchlist] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const compareButton = useRef<HTMLButtonElement>(null);
   const filters = useRef<HTMLDetailsElement>(null);
   useEffect(() => {
     try {
-      localStorage.setItem('audio-board', JSON.stringify({category:f.category, sort:f.sort, liveOnly:f.liveOnly}));
+      localStorage.setItem('audio-board-v2', JSON.stringify({category:f.category, sort:f.sort, liveOnly:f.liveOnly}));
       localStorage.setItem('audio-density', density);
     } catch { /* Storage can be unavailable in private browsing. */ }
   }, [f, density]);
@@ -81,6 +83,11 @@ export default function App() {
   }, []);
   const change = <K extends keyof Filters>(key: K, value: Filters[K]) => setF(x => ({...x, [key]:value}));
   const products = results(offers, f);
+  const liveCount = offers.filter(buyable).length;
+  const shownOfferCount = products.reduce((n,p) => n + p.offers.length, 0);
+  const researchLeads = (research.candidates||[]).filter(c=>(f.category==='Wszystkie'||c.category===f.category)&&(!f.search.trim()||[c.model,c.source,c.region].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase())));
+  const otherWatchModels = uniqueWatchModels([...new Set(offers.map(o=>o.model))]);
+  const watchModels = otherWatchModels.filter(m=>!f.search.trim()||m.toLocaleLowerCase().includes(f.search.toLocaleLowerCase()));
   const compare = group(f.liveOnly?offers.filter(buyable):offers).filter(p => selected.includes(p.model));
   const filterCount = f.conditions.length + Number(f.status !== 'Wszystkie') + Number(f.history) + Number(!f.liveOnly);
   function toggle(model: string) {
@@ -91,7 +98,7 @@ export default function App() {
     return <article key={p.model} className="product" data-testid="product">
       <header className="product-header">
         <span className="rank">#{i + 1}</span><h2>{p.model}</h2>
-        <span className="product-meta">{o.category} · <b aria-label={'Jakość ' + o.quality}>{o.quality.replace('-', '−')}</b></span>
+        <span className="product-meta">{o.category} · <b aria-label={'Jakość ' + o.quality}>{(o.quality==='UNRATED'?'—':o.quality.replace('-', '−'))}</b></span>
         <span className="score" title="B4B: jakość × rynek tego samego stanu / cena oferty. Wyżej = lepszy stosunek jakości do ceny.">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
         <label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={() => toggle(p.model)}/>Porównaj<span className="sr-only"> {p.model}</span></label>
       </header>
@@ -150,9 +157,18 @@ export default function App() {
       </details>
     </section>
     <main id="results" tabIndex={-1}>
-      <div className="results-heading"><span><b>{products.length}</b> {modelCount(products.length)}</span><a className="vinted-shortcut" href={vintedSearchUrl(f.search)} target="_blank" rel="noopener noreferrer" aria-label={"Szukaj na Vinted: " + (f.search.trim() || "słuchawki")}>Vinted ↗</a><small>Stan arkusza: {snapshot.snapshot}</small></div>
+      <div className="results-heading"><span><b>{products.length}</b> {modelCount(products.length)} · <b>{shownOfferCount}</b> zapisanych ofert w widoku</span><small>{liveCount} LIVE / {offers.length} zapisanych · stan arkusza: {snapshot.snapshot}</small></div>
+      <div className="market-shortcuts" aria-label="Zewnętrzne wyszukiwarki słuchawek"><span>Przeszukaj rynki{f.search.trim()?' — '+f.search.trim():''}:</span>{marketplaces.map(m=><a key={m.id} href={m.url(f.search)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj na '+m.label+': '+(f.search.trim()||'słuchawki')}>{m.label} ↗</a>)}</div>
+      <p className="coverage-notice"><b>{liveCount} potwierdzone LIVE.</b> Pozostałe zapisane ogłoszenia i porównania mogą być nieaktualne — wymagają sprawdzenia u sprzedawcy. <button type="button" onClick={()=>change('liveOnly',!f.liveOnly)}>{f.liveOnly?'Pokaż wszystkie zapisane oferty':'Pokaż tylko LIVE'}</button></p>
       <p role="status" className="message">{message}</p>
-      {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników</h2><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
+      {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
+      {researchLeads.length>0 && <details className="research-leads"><summary>{researchLeads.length} znalezione ogłoszenia do ręcznej kontroli (poza rankingiem LIVE)</summary>
+        <p>Kandydaci z ostatniego skanowania ({research.refreshedAt?.slice(0,10)}). Linki mogą być nieaktualne. Koszt dostawy, kompletność i stan produktu nie zostały potwierdzone, dlatego nie pokazujemy ich jako gotowych okazji.</p>
+        <div className="research-grid">{researchLeads.map(c=><div key={c.url} className="research-item"><strong>{c.model}</strong><span>{c.source} · {c.region} · {c.verificationState==='DIRECT_OFFER_VERIFIED'?'strona produktu odczytana; pełny koszt niepotwierdzony':'bez bezpośredniego potwierdzenia'}</span><a href={c.url} target="_blank" rel="noopener noreferrer" aria-label={'Sprawdź kandydata '+c.model+' w '+c.source}>Sprawdź ogłoszenie ↗</a></div>)}</div>
+      </details>}
+      {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Lista obserwacyjna — bez potwierdzonych ogłoszeń w lokalnej bazie i bez fikcyjnych ocen lub cen.</span>
+        {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{marketplaces.slice(0,3).map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
+      </section>}
     </main>
     <footer><details className="methodology"><summary>Jak liczymy ceny i B4B?</summary>
       <p>NEW porównujemy z NEW, USED z USED, B-STOCK z B-STOCK. Rynek stanu i oszczędność względem nowych to osobne punkty odniesienia. Minus oznacza ofertę tańszą od wskazanego rynku; plus — droższą.</p>

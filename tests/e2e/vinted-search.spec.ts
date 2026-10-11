@@ -18,3 +18,23 @@ test('Vinted search uses typed model without changing existing verified offers',
     .toHaveAttribute('href','https://www.vinted.pl/catalog?search_text='+encodeURIComponent(model!));
   await expect(first.getByTestId('primary-link')).toBeVisible();
 });
+
+test('default view exposes recorded offers and clearly separates leads from LIVE',async({page})=>{
+  await page.goto('/');
+  const live=page.getByLabel('Live',{exact:true});
+  await page.locator('.more-filters > summary').click();
+  await expect(live).not.toBeChecked();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('.coverage-notice')).toContainText('potwierdzone LIVE');
+  await expect(page.getByRole('link',{name:'Szukaj na OLX: słuchawki'}))
+    .toHaveAttribute('href','https://www.olx.pl/oferty/q-s%C5%82uchawki/');
+  await page.locator('.research-leads > summary').click();
+  await expect(page.locator('.research-item').first()).toBeVisible();
+  await expect(page.locator('.research-leads')).toContainText('poza rankingiem LIVE');
+  await expect(page.locator('.research-leads')).toContainText('Koszt dostawy');
+  await page.getByRole('button',{name:/Pokaż \d+ dodatkowych modeli/}).click();
+  await expect(page.locator('.watchlist')).toContainText('Etymotic ER4P');
+  await expect(page.locator('.watchlist')).toContainText('Sony MDR-SA5000');
+  await page.getByRole('button',{name:'Pokaż tylko LIVE'}).click();
+  await expect(live).toBeChecked();
+});

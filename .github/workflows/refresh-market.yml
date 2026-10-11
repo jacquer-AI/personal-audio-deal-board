@@ -14,7 +14,7 @@ on:
         required: true
         default: all
         type: choice
-        options: [all, IEM, TWS, Closed, "Głośniki BT"]
+        options: [all, IEM, TWS, Closed, Open, "Głośniki BT"]
   schedule:
     - cron: "11 */6 * * *"
     - cron: "37 2 * * *"
@@ -49,7 +49,7 @@ jobs:
           if [ "$SCHEDULE_EXPR" = "37 2 * * *" ]; then mode="full"; fi
           if [ "$SCHEDULE_EXPR" = "53 3 * * 0" ]; then mode="deep"; fi
           case "$mode" in quick|full|deep) ;; *) echo "invalid mode"; exit 2 ;; esac
-          case "$REQUESTED_CATEGORIES" in all|IEM|TWS|Closed|"Głośniki BT") ;; *) echo "invalid categories"; exit 2 ;; esac
+          case "$REQUESTED_CATEGORIES" in all|IEM|TWS|Closed|Open|"Głośniki BT") ;; *) echo "invalid categories"; exit 2 ;; esac
           echo "REFRESH_MODE=$mode" >> "$GITHUB_ENV"
           echo "REFRESH_CATEGORIES=$REQUESTED_CATEGORIES" >> "$GITHUB_ENV"
       - name: "Phase: REFRESH (discovery and direct-page verification)"

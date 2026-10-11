@@ -177,6 +177,16 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
           if(trackedId.current>0){
             const publicStatus=await publicGh('/actions/runs/'+trackedId.current);
             if(publicStatus.ok)run=await publicStatus.json() as Run;
+          }else if(requestedAt.current>0){
+            // Recover a dispatcher-acknowledged refresh whose run ID was not yet available.
+            const latest=await publicLatest();
+            const expected='Refresh '+mode+' · '+category;
+            const created=Date.parse(latest?.created_at||'');
+            if(latest?.id&&latest.event==='workflow_dispatch'&&
+              latest.display_title?.startsWith(expected)&&
+              Number.isFinite(created)&&created>=requestedAt.current-10000){
+              run=latest;
+            }
           }
           if(!run)throw new Error('status unavailable');
         }
@@ -292,7 +302,7 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
           <p className="mode-help">{mode==='quick'?'QUICK — sprawdza ceny i dostępność zapisanych ofert.':mode==='full'?'FULL — dodatkowo szuka nowych ofert znanych modeli.':'DEEP — dodatkowo szuka nowych modeli do oceny; nie dodaje ich automatycznie do rankingu.'}</p>
           <label>Zakres
             <select aria-label="Kategoria refreshu" value={category} onChange={e=>setCategory(e.target.value)} disabled={busy}>
-              <option value="all">Wszystkie</option><option value="IEM">IEM</option><option value="TWS">TWS</option><option value="Closed">Closed</option><option value="Głośniki BT">Głośniki BT</option>
+              <option value="all">Wszystkie</option><option value="IEM">IEM</option><option value="TWS">TWS</option><option value="Closed">Closed</option><option value="Open">Open</option><option value="Głośniki BT">Głośniki BT</option>
             </select>
           </label>
         </section>

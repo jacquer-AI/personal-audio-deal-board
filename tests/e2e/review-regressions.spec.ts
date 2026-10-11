@@ -7,6 +7,7 @@ import type {Offer} from '../../src/types';
 const allOffers=snapshot.offers as Offer[];
 const currentOffers=allOffers.filter(buyable);
 const currentModels=[...new Set(currentOffers.map(o=>o.model))];
+const visibleModels=[...new Set(allOffers.filter(o=>o.status!=='HISTORICAL').map(o=>o.model))];
 
 const dispatcher='https://desktop-t47p2au.tail84c6f0.ts.net:8444/audio-refresh';
 const activeRun={id:123,status:'in_progress',conclusion:null,get created_at(){return new Date().toISOString()},get updated_at(){return new Date().toISOString()},html_url:'https://github.com/jacquer-AI/personal-audio-deal-board/actions/runs/123',display_title:'Refresh quick · all'};
@@ -81,6 +82,11 @@ test('closing dialog preserves polling and failed private network can use the ex
   await page.route(dispatcher+'/status',route=>route.abort());
   const cors={'access-control-allow-origin':'*','access-control-allow-headers':'*','access-control-allow-methods':'*'};
   let publicRunChecks=0;
+  await page.route('https://api.github.com/**/actions/runs?per_page=20',route=>{
+    if(route.request().method()==='OPTIONS')return route.fulfill({status:204,headers:cors});
+    return route.fulfill({status:200,contentType:'application/json',headers:cors,
+      body:JSON.stringify({workflow_runs:[{...activeRun,event:'workflow_dispatch',display_title:'Refresh quick · all',created_at:new Date().toISOString()}]})});
+  });
   await page.route('https://api.github.com/**/actions/runs/123',route=>{
     if(route.request().method()==='OPTIONS')return route.fulfill({status:204,headers:cors});
     publicRunChecks++;
@@ -124,6 +130,7 @@ test('slow polling times out and recovers through the public run without duplica
 
 test('old unverified seller links are hidden from LIVE but remain research-only',async({page})=>{
   await mockGitHub(page);await page.goto('./');
+  await page.locator('.more-filters > summary').click();await page.getByLabel('Live',{exact:true}).check();await page.keyboard.press('Escape');
   const mixed=currentOffers.find(o=>allOffers.some(other=>other.model===o.model&&!buyable(other)));
   if(mixed){
     const product=page.getByTestId('product').filter({hasText:mixed.model});
@@ -174,7 +181,7 @@ test('refresh dialog passes axe',async({page})=>{
 
 for(const [width,height] of [[1920,1080],[1440,900],[1280,800],[430,932],[390,844],[360,800],[320,720]])test('review visual viewport '+width,async({page})=>{
   await mockGitHub(page);await page.setViewportSize({width,height});await page.goto('./');
-  await expect(page.getByTestId('product')).toHaveCount(currentModels.length);
+  await expect(page.getByTestId('product')).toHaveCount(visibleModels.length);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.screenshot({path:'../../outputs/landing-'+width+'.png'});
   await page.getByRole('button',{name:'↻ Odśwież'}).click();
@@ -184,6 +191,7 @@ for(const [width,height] of [[1920,1080],[1440,900],[1280,800],[430,932],[390,84
 
 test('all sorts match independent visible numeric order',async({page})=>{
   await mockGitHub(page);await page.goto('./');
+  await page.locator('.more-filters > summary').click();await page.getByLabel('Live',{exact:true}).check();await page.keyboard.press('Escape');
   for(const sort of ['b4b','price','quality','fit','discount','savings']){
     await page.getByLabel('Sortuj',{exact:true}).selectOption(sort);
     const cards=await page.getByTestId('product').allTextContents();
