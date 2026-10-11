@@ -32,7 +32,9 @@ export function itemTitleMatchesModel(html,model){
     'hifiman svanar wireless':/\bsvanar wireless (?:jr|le)\b/,
     'focal clear mg':/\bclear mg (?:professional|pro)\b/,
     'thieaudio monarch mkii':/\bmonarch (?:mk ?iii|iii|3)\b/,
-    'thieaudio monarch mkiii':/\bmonarch (?:mk ?ii|ii|2)\b/
+    'thieaudio monarch mkiii':/\bmonarch (?:mk ?ii|ii|2)\b/,
+    'etymotic er4s':/\ber4sr\b/,
+    'beyerdynamic dt 1990 pro':/\bdt\s?1990\s?pro\s?(?:mk\s?ii|mkii|mk2|2nd|ii)\b/
   };
   const conflict=knownVariantConflicts[norm(model?.model)];
   return titles.some(t=>{

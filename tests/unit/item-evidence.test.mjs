@@ -30,6 +30,12 @@ describe('item-specific seller evidence',()=>{
     expect(itemTitleMatchesModel('<title>Focal Clear MG</title>',focal)).toBe(true);
     expect(itemTitleMatchesModel('<title>Thieaudio Monarch III</title>',monarch)).toBe(false);
     expect(itemTitleMatchesModel('<title>Thieaudio Monarch II</title>',monarch)).toBe(true);
+    const dt1990={model:'Beyerdynamic DT 1990 PRO',aliases:['DT1990 Pro','DT 1990']};
+    const er4s={model:'Etymotic ER4S',aliases:['ER-4S','ER4 S']};
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT 1990 PRO MKII</title>',dt1990)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT 1990 PRO</title>',dt1990)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Etymotic ER4SR</title>',er4s)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Etymotic ER4S</title>',er4s)).toBe(true);
   });
   it('does not mistake a Marktplaats bid/metadata value for a buy-now price',()=>{
     expect(priceBasis({id:'marktplaats-nl'})).toBe('METADATA_MAY_BE_BID');

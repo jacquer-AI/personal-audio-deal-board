@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto';
 import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
 import {conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
-import {planDiscoveryJobs} from './discovery-scheduler.mjs';
+import {planDiscoveryJobs,coreSourceIdsForDate} from './discovery-scheduler.mjs';
 import {discoverPageLinks} from './sources/discovery-links.mjs';
 import {mergeResearchCandidates} from './research-ledger.mjs';
 import {shippingEvidencePoland} from './shipping-evidence.mjs';
@@ -199,9 +199,10 @@ const newAdditions=[];
 if(mode!=='quick'){
   const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(mode==='deep'||s.sweep==='daily'));
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
-  // FULL has 160 jobs for 32 models: prioritize Polish direct sellers before foreign lead sources.
-  // DEEP's larger budget still covers German, Dutch, Italian and aggregator discovery.
-  const coreSourceIds=['allegro-pl','olx-pl','mediaexpert-outlet','vinted-pl','subito-it','marktplaats-nl','kleinanzeigen-de','hifishark'];
+  // With 48 models and 240 FULL jobs, 5 complete source passes fit per day.
+  // Three baseline sites stay fixed; two foreign/outlet sites rotate daily.
+  // DEEP adds 80+ bounded exploratory requests, with no implied verification.
+  const coreSourceIds=coreSourceIdsForDate(now);
   const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds);
   const discoveryStats=Object.fromEntries(sweepSources.map(s=>[s.id,{requested:0,reachable:0,candidateUrls:0,restricted:0,errors:0}]));
   const discovered=await pool(jobs,async j=>{

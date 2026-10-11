@@ -29,3 +29,14 @@ export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[]) {
   }
   return jobs;
 }
+
+/** Fixed daily Polish baseline, with a two-source rotating EU/outlet slot.
+ * Prevents a static budget (e.g. 240 jobs for 48 models) from permanently
+ * starving providers placed after the fifth source. Date is UTC and auditable. */
+export function coreSourceIdsForDate(isoDate) {
+  const baseline=['allegro-pl','olx-pl','vinted-pl'];
+  const rotation=['subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
+  const day=Math.floor(Date.parse(String(isoDate).slice(0,10)+'T00:00:00Z')/86400000);
+  const offset=Number.isFinite(day)?((day%rotation.length)+rotation.length)%rotation.length:0;
+  return [...baseline,rotation[offset],rotation[(offset+1)%rotation.length]];
+}

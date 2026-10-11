@@ -337,6 +337,174 @@
         "Clear Mg"
       ],
       "enabled": true
+    },
+    {
+      "model": "Etymotic ER4SR",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ER-4SR",
+        "ER4 SR"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Etymotic ER2SE",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ER-2SE",
+        "ER2 SE"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Softears Studio4",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Softears Studio 4"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Moondrop Blessing 3",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Blessing3",
+        "Blessing III"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "7Hz Timeless",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "7Hertz Timeless"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Unique Melody MEST MkII",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "UM MEST MK2",
+        "MEST II"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Elysian Annihilator 2023",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Annihilator 2023"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sony IER-M7",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "IER M7"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Beyerdynamic DT 1990 PRO",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "DT1990 Pro",
+        "DT 1990"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Beyerdynamic DT 900 PRO X",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "DT900 Pro X"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sennheiser HD 800 S",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "HD800S",
+        "HD 800S"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "HIFIMAN Ananda Nano",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Ananda Nano"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "HIFIMAN Edition XS",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Edition XS"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "AKG K702",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "K 702"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Audio-Technica ATH-ADX5000",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ADX5000",
+        "ATH ADX5000"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Beyerdynamic T1 2nd Gen",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Beyerdynamic T1 2nd Generation",
+        "Beyerdynamic T1 Gen 2"
+      ],
+      "enabled": true
     }
   ]
 }
