@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-hifishark-real-card-EU-pr19-20261011",
+  "requestId": "hifishark-diagnostic-open-raw-html-20261011",
   "mode": "full",
-  "categories": "all",
-  "purpose": "E2E production acceptance for real HiFiShark search-product-row parser, all 48 monitored models, Europe-only country flags, preserved indexed asking prices, no aggregator-to-LIVE promotion.",
+  "categories": "Open",
+  "purpose": "Bounded runner-side HiFiShark raw HTML diagnosis for Beyerdynamic DT 880: page structure counts and first goto anchor sample only; do not claim index price verified.",
   "requestedOn": "2026-10-11"
 }
