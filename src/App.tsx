@@ -28,10 +28,11 @@ function ResearchItem({c}: {c:ResearchLead}) {
   const isBid=c.priceBasis==='METADATA_MAY_BE_BID'||c.source==='Marktplaats';
   const rateKnown=verified&&c.shippingToPoland==='PL_RATE_ADVERTISED'&&c.shippingRate!=null;
   const excluded=verified&&c.shippingToPoland==='PL_EXPLICITLY_EXCLUDED';
+  const inLive=verified&&offers.some(o=>o.url===c.url&&buyable(o));
   return <div className={'research-item'+(verified?' seller-checked':' research-unverified')}>
     <strong>{c.model}</strong>
     <span>{c.source} · {c.region}{c.condition?' · '+c.condition:''}</span>
-    <span>{verified?'Produkt, cena w metadanych, stan i dostępność odczytane na stronie sprzedawcy':'Niepotwierdzone ogłoszenie lub agregator — wymaga kontroli'}</span>
+    <span>{inLive?'CENA PRODUKTU POTWIERDZONA · LIVE (bez kosztu wysyłki)':verified?'Cena produktu, stan i dostępność odczytane na stronie sprzedawcy; '+(isBid?'kwota może być licytacją':'cena bez kosztów dostawy'):'Niepotwierdzone ogłoszenie lub agregator — wymaga kontroli'}</span>
     {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> {isBid?'· sygnał ceny z metadanych, możliwa licytacja':'· cena produktu bez dostawy do Polski'}
       {c.originalPrice!=null&&c.currency&&' · '+c.originalPrice+' '+c.currency}
       {c.fxSource==='NBP_TABLE_A'&&c.fxEffectiveDate?' · kurs NBP '+c.fxEffectiveDate:' · kurs orientacyjny, nieaktualny dla płatności'}</span>}
@@ -44,7 +45,7 @@ function ResearchItem({c}: {c:ResearchLead}) {
     <span>Kontrola: {(c.verifiedAt||c.lastSeenAt||c.discoveredAt||'').slice(0,10)}
       {c.researchFreshness==='RECHECK_REQUIRED'?' · wymaga ponownego sprawdzenia':''}
     </span>
-    <a href={c.url} target="_blank" rel="noopener noreferrer">Otwórz ofertę i sprawdź wysyłkę do Polski ↗</a>
+    <a href={c.url} target="_blank" rel="noopener noreferrer">Sprawdź ofertę u sprzedawcy ↗</a>
   </div>;
 }
 // Price position: cheaper offers use a minus sign.
@@ -64,7 +65,7 @@ function Source({offer, primary = false}: {offer: Offer; primary?: boolean}) {
 }
 function Price({offer}: {offer: Offer}) {
   return <div className="price-position">
-    <div className="offer-price"><span className="sr-only">Oferta</span><strong>{money(offer.price)}</strong></div>
+    <div className="offer-price"><span className="sr-only">Cena produktu</span><strong>{money(offer.price)}</strong>{buyable(offer)&&<small className="item-price-note">Cena słuchawek · bez wysyłki i opłat</small>}</div>
     <div className="market"><span>Rynek stanu <b>{money(offer.sameMarket)}</b></span><span>Nowe <b>{money(offer.newMarket)}</b></span></div>
     <div className="metrics"><span><b>{pct(discount(offer))}</b> vs stan</span><span><b>{pct(savings(offer))}</b> vs nowe</span></div>
   </div>;
@@ -73,7 +74,7 @@ function OfferDetails({product}: {product: Product}) {
   return <details className="offer-details">
     <summary>Więcej ofert ({product.offers.length})</summary>
     <div className="market-discovery"><b>Szukaj innych ogłoszeń:</b> {marketplaces.map(m => <a key={m.id} href={m.url(product.model)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj modelu '+product.model+' na '+m.label}>{m.label} ↗</a>)} <span>Linki wyszukują w zewnętrznych serwisach; nie potwierdzają liczby, ceny ani dostępności ofert.</span></div>
-    <p className="source-legend">LIVE — aktualność potwierdzona bezpośrednio u sprzedawcy (maks. 24 h; używane 8 h). NIEPOTWIERDZONE — brak aktualnego dowodu, poza rankingiem. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
+    <p className="source-legend">LIVE — cena produktu, stan i dostępność potwierdzone bezpośrednio u sprzedawcy (maks. 24 h; używane 8 h); wysyłka i opłaty osobno. NIEPOTWIERDZONE — brak aktualnego dowodu, poza rankingiem. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
     <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
       {product.offers.map(o => <p key={o.id}><b>{o.seller} · {o.condition}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
@@ -195,7 +196,7 @@ export default function App() {
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
       {researchLeads.length>0 && <section id="research-leads" className="research-leads">
         <h2>Ogłoszenia znalezione na rynku: {researchLeads.length}</h2>
-        <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. Weryfikujemy także zapisane warunki przesyłki do Polski, ale dane sprzedawcy nie zastępują wyceny w kasie. Metadane Marktplaats mogą dotyczyć licytacji, a nie ceny „Kup teraz”. <b>To nie są zatwierdzone oferty LIVE.</b></p>
+        <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. <b>Priorytet: potwierdzona cena samych słuchawek.</b> Brak kwoty wysyłki nie dyskwalifikuje oferty; cena nie zawiera wysyłki, prowizji ani innych opłat. Metadane Marktplaats mogą być licytacją, więc nie oznaczają stałej ceny zakupu. <b>LIVE to tylko pozycje, które przeszły weryfikację konkretnej strony, modelu, ceny, stanu i dostępności.</b></p>
         {verifiedResearch.length>0&&<div className="research-grid">{verifiedResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div>}
         {verifiedResearch.length===0&&<p>Brak aktualnie potwierdzonych stron sprzedawców. Możesz sprawdzić poniższe ogłoszenia ręcznie.</p>}
         {unverifiedResearch.length>0&&<details className="research-more">
@@ -210,7 +211,7 @@ export default function App() {
     <footer><details className="methodology"><summary>Jak liczymy ceny i B4B?</summary>
       <p>NEW porównujemy z NEW, USED z USED, B-STOCK z B-STOCK. Rynek stanu i oszczędność względem nowych to osobne punkty odniesienia. Minus oznacza ofertę tańszą od wskazanego rynku; plus — droższą.</p>
       <p>B4B = QualityWeight × (rynek tego samego stanu / oferta). S 120 · S− 115 · A+ 110 · A 100 · A− 90 · B+ 80 · B 70 · B− 60 · C 50 · D 35 · E 20. Brak benchmarku oznacza brak B4B. MSRP jest wyłącznie odniesieniem.</p>
-      <p>B4B łączy jakość i cenę — pierwsze miejsce nie musi oznaczać najniższej ceny. FAIR PRICE: cena zbliżona do rynku. STRONG BUY: atrakcyjna cena względem rynku stanu. PSEUDO-DEAL: drożej niż rynek stanu. TLC oznacza pełny koszt importu, z dostawą i opłatami.</p>
+      <p>B4B opiera się na cenie samych słuchawek, bez wysyłki i opłat. B4B łączy jakość i cenę — pierwsze miejsce nie musi oznaczać najniższej ceny. FAIR PRICE: cena zbliżona do rynku. STRONG BUY: atrakcyjna cena względem rynku stanu. PSEUDO-DEAL: drożej niż rynek stanu. TLC oznacza pełny koszt importu, z dostawą i opłatami.</p>
       <p>Lead, import bez TLC i historia nie uczestniczą w rankingu Live. Fit: 1–5 z SSOT. Rynek PLN ma pierwszeństwo przed starszymi zakładkami. DUNU LIVE/RECENT STORE pozostaje LEAD ONLY do ponownej weryfikacji.</p>
       <p>Arkusz to historyczna baza porównawcza; ranking LIVE wymaga odczytu bezpośredniej strony sprzedawcy w ostatnich 24 h (używane 8 h). Odświeżanie wykonuje ten odczyt przed dopuszczeniem znalezionych ofert. Brak potwierdzenia = brak rankingu. FX: EUR/PLN 4.37111 · GBP/PLN 5.15290 · USD/PLN 3.88344 · {snapshot.fx.timestamp}.</p>
     </details></footer>
