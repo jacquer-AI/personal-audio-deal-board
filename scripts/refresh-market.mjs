@@ -8,7 +8,7 @@ import {discoverPageLinks} from './sources/discovery-links.mjs';
 import {mergeResearchCandidates} from './research-ledger.mjs';
 import {shippingEvidencePoland} from './shipping-evidence.mjs';
 import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
-import {geographicEvidence} from './sources/europe-scope.mjs';
+import {geographicEvidence,isEuropeRecordedOffer} from './sources/europe-scope.mjs';
 import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
 
 const argv=process.argv.slice(2);
@@ -149,11 +149,11 @@ const baseFps=new Set((base.offers||[]).map(fingerprint));
 const priorAdditions=(previousCurrent.additions||[]).filter(a=>!baseFps.has(fingerprint(a)));
 console.log('Refresh',mode,'base offers',(base.offers||[]).length,'prior additions',priorAdditions.length,'categories',categoryArg);
 
-const updates=(await pool((base.offers||[]).filter(inScope),checkOffer)).filter(Boolean);
+const updates=(await pool((base.offers||[]).filter(o=>inScope(o)&&isEuropeRecordedOffer(o)),checkOffer)).filter(Boolean);
 
 // Re-verify previously discovered offers so a discovered offer cannot silently go stale.
 const additions=[];
-const reAdds=await pool(priorAdditions.filter(inScope),async a=>({a,u:await checkOffer(a)}));
+const reAdds=await pool(priorAdditions.filter(o=>inScope(o)&&isEuropeRecordedOffer(o)),async a=>({a,u:await checkOffer(a)}));
 for(const r of reAdds.filter(Boolean)){
   const {a,u}=r;if(!u){additions.push(a);continue}
   const first=a.refresh?.firstVerifiedAt||a.refresh?.checkedAt||now;
@@ -162,10 +162,10 @@ for(const r of reAdds.filter(Boolean)){
   else if(u.verificationState==='DIRECT_OFFER_VERIFIED')additions.push({...a,price:u.price,original:u.original,checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
   else additions.push(a);
 }
-for(const a of priorAdditions.filter(a=>!inScope(a)))additions.push(a);
+for(const a of priorAdditions.filter(a=>!inScope(a)&&isEuropeRecordedOffer(a)))additions.push(a);
 
 const researchRechecks=await pool(
-  (previousCandidates.candidates||[]).filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&inScope(c)).slice(0,80),
+  (previousCandidates.candidates||[]).filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&inScope(c) && c.region!=='GLOBAL' && c.region!=='EUROPE_UNCONFIRMED').slice(0,80),
   async c=>{
     receipt.researchRechecked=(receipt.researchRechecked||0)+1;
     const source=sourceById.get(c.sourceId);
@@ -199,7 +199,7 @@ const researchRechecks=await pool(
 const candidates=[];
 const newAdditions=[];
 if(mode!=='quick'){
-  const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(mode==='deep'||s.sweep==='daily'||s.id==='hifishark'));
+  const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(s.id==='hifishark'||(s.region!=='GLOBAL'&&(mode==='deep'||s.sweep==='daily'))));
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
   // ALL models on HiFiShark, Allegro, OLX, Vinted in FULL and DEEP.
   // One European source rotates daily; additional DEEP slots explore more sources.
