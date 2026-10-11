@@ -1,5 +1,5 @@
 name: Refresh market data
-run-name: Refresh ${{ github.event_name == 'push' && 'deep' || inputs.mode || 'scheduled' }} · ${{ inputs.categories || 'all' }}
+run-name: Refresh ${{ github.event_name == 'push' && 'request-file' || inputs.mode || 'scheduled' }} · ${{ inputs.categories || 'all' }}
 on:
   # Explicit, audited manual scan request by a main-branch commit to this file.
   # Data commits never recursively trigger another refresh.
@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      REQUESTED_MODE: ${{ github.event_name == 'push' && 'deep' || inputs.mode || 'quick' }}
+      REQUESTED_MODE: ${{ inputs.mode || 'quick' }}
       REQUESTED_CATEGORIES: ${{ inputs.categories || 'all' }}
       SCHEDULE_EXPR: ${{ github.event.schedule }}
       GH_TOKEN: ${{ github.token }}
@@ -52,6 +52,9 @@ jobs:
       - name: "Phase: PLAN (validate mode and scope)"
         run: |
           mode="$REQUESTED_MODE"
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            mode="$(node -e "const fs=require('fs');const d=JSON.parse(fs.readFileSync('ops/audio-scan-now.json','utf8'));process.stdout.write(String(d.mode||''))")"
+          fi
           if [ "$SCHEDULE_EXPR" = "37 2 * * *" ]; then mode="full"; fi
           if [ "$SCHEDULE_EXPR" = "53 3 * * 0" ]; then mode="deep"; fi
           case "$mode" in quick|full|deep) ;; *) echo "invalid mode"; exit 2 ;; esac

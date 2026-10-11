@@ -6,6 +6,7 @@ import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs} from './discovery-scheduler.mjs';
 import {discoverPageLinks} from './sources/discovery-links.mjs';
 import {mergeResearchCandidates} from './research-ledger.mjs';
+import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -142,6 +143,35 @@ for(const r of reAdds.filter(Boolean)){
 }
 for(const a of priorAdditions.filter(a=>!inScope(a)))additions.push(a);
 
+const researchRechecks=await pool(
+  (previousCandidates.candidates||[]).filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&inScope(c)).slice(0,80),
+  async c=>{
+    receipt.researchRechecked=(receipt.researchRechecked||0)+1;
+    const source=sourceById.get(c.sourceId);
+    const meta=modelMeta.get(c.model);
+    const reject=(reason,http=null)=>{
+      receipt.researchDowngraded=(receipt.researchDowngraded||0)+1;
+      observe({fingerprint:fingerprint({model:c.model,condition:c.condition||'UNVERIFIED',seller:c.source,url:c.url}),
+        model:c.model,condition:c.condition||'UNVERIFIED',sourceId:c.sourceId,url:c.url,http,
+        result:'RESEARCH_RECHECK_'+reason});
+      return {...c,status:'UNVERIFIED LEAD',verificationState:'RECHECK_'+reason,verifiedAt:null,http,
+        pricePln:null,originalPrice:null,currency:null,availability:null,
+        priceBasis:null,redTeam:['REVERIFY_REQUIRED','NO_LANDED_COST']};
+    };
+    if(!source?.canVerifyOffer||!meta||!directOfferEligible(c.url,source))return reject('SOURCE_NOT_VERIFIABLE');
+    const p=await fetchPage(c.url);
+    if(p.http!==200)return reject('HTTP_'+p.http,p.http);
+    const {blocked,parsed}=parsePage(source,p.html,p.http);
+    if(blocked||!parsed)return reject(blocked?'BLOCKED':'PRICE_UNPARSED',p.http);
+    if(!itemTitleMatchesModel(p.html,meta))return reject('MODEL_TITLE_MISMATCH',p.http);
+    const cond=conditionFrom(parsed,''),stock=available(parsed,'');
+    const price=toPln(parsed.price,parsed.currency,fx);
+    if(cond!==c.condition||stock!==true||!price)return reject(stock===false?'SOLD':'PRICE_CONDITION_OR_STOCK_UNKNOWN',p.http);
+    receipt.researchReverified=(receipt.researchReverified||0)+1;
+    return {...c,status:'VERIFIED LEAD',verificationState:'DIRECT_OFFER_VERIFIED',
+      pricePln:price,originalPrice:parsed.price,currency:parsed.currency,
+      availability:'InStock',verifiedAt:now,priceBasis:priceBasis(source),http:200};
+  });
 const candidates=[];
 const newAdditions=[];
 if(mode!=='quick'){
@@ -216,7 +246,7 @@ if(mode!=='quick'){
     }catch{return reject('REDIRECT',p.http)}
     const {blocked,parsed}=parsePage(source,p.html,p.http);
     if(blocked||!parsed)return reject(blocked?'ACCESS_BLOCKED':'NO_ITEM_PRICE',p.http,true);
-    if(!modelMatches(p.html,meta))return reject('MODEL_MISMATCH',p.http);
+    if(!itemTitleMatchesModel(p.html,meta))return reject('MODEL_TITLE_MISMATCH',p.http);
     // No text scraped from generic page boilerplate may prove an individual item is in stock.
     const condition=conditionFrom(parsed,''),stock=available(parsed,'');
     const price=toPln(parsed.price,parsed.currency,fx);
@@ -234,7 +264,7 @@ if(mode!=='quick'){
     };
     const rt=redTeam(add,source,peer);
     const candidate={...c,status:'VERIFIED LEAD',verifiedAt:now,verificationState:'DIRECT_OFFER_VERIFIED',
-      http:200,condition,pricePln:price,originalPrice:parsed.price,currency:parsed.currency,availability:'InStock',redTeam:rt.flags};
+      http:200,condition,pricePln:price,originalPrice:parsed.price,currency:parsed.currency,availability:'InStock',priceBasis:priceBasis(source),redTeam:rt.flags};
     stat.verifiedUrls=(stat.verifiedUrls||0)+1;
     const fp=fingerprint(add);
     if(rt.block){
@@ -265,9 +295,9 @@ const ledgerLines=fs.existsSync(ledgerPath)?fs.readFileSync(ledgerPath,'utf8').s
 const last=lastObservations(ledgerLines);
 const obsAppend=dedupeObservations(rawObs,last);
 
-const candidatesDoc=mode==='quick'?previousCandidates:{schema:2,refreshedAt:now,mode,candidates:mergeResearchCandidates(previousCandidates.candidates||[],candidates,now)};
+const candidatesDoc={schema:2,refreshedAt:now,mode,candidates:mergeResearchCandidates(previousCandidates.candidates||[],[...researchRechecks.filter(Boolean),...candidates],now)};
 const currentChanged=!materiallyEqual({...previousCurrent,status:undefined,mode:undefined},{...current,status:undefined,mode:undefined});
-const candidatesChanged=mode!=='quick'&&!materiallyEqual(previousCandidates.candidates||[],candidatesDoc.candidates);
+const candidatesChanged=!materiallyEqual(previousCandidates.candidates||[],candidatesDoc.candidates);
 // Fresh seller verification is perishable evidence. Persist a positive recheck at
 // least every four hours even if price is unchanged, so static Pages can prove recency.
 const persistedAt=Date.parse(previousRuntime?.refresh?.refreshedAt||'');
@@ -275,11 +305,11 @@ const freshnessRenewal=receipt.directVerified>0&&(!Number.isFinite(persistedAt)|
 const material=currentChanged||candidatesChanged||obsAppend.length>0||delta.changes.length>0||freshnessRenewal;
 
 Object.assign(delta,{schema:1,refreshedAt:now,mode,runId,candidates:candidatesDoc.candidates?.length??0,verifiedAdditions:newAdditions.length,observationChanges:obsAppend.length,freshnessRenewal,receipt});
-const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,newLeads:candidates.length,retainedResearchLeads:candidatesDoc.candidates?.length??0,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length,freshnessRenewal,discoveredUrlsChecked:mode==='quick'?0:(receipt.discovery?.sources?Object.values(receipt.discovery.sources).reduce((n,x)=>n+(x.checkedUrls||0),0):0)};
+const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,newLeads:candidates.length,researchRechecked:receipt.researchRechecked||0,researchReverified:receipt.researchReverified||0,researchDowngraded:receipt.researchDowngraded||0,retainedResearchLeads:candidatesDoc.candidates?.length??0,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length,freshnessRenewal,discoveredUrlsChecked:mode==='quick'?0:(receipt.discovery?.sources?Object.values(receipt.discovery.sources).reduce((n,x)=>n+(x.checkedUrls||0),0):0)};
 
 if(material&&!DRY){
   fs.writeFileSync('data/market-current.json',JSON.stringify(current,null,2)+'\n');
-  if(mode!=='quick')fs.writeFileSync('data/market-candidates.json',JSON.stringify(candidatesDoc,null,2)+'\n');
+  if(candidatesChanged)fs.writeFileSync('data/market-candidates.json',JSON.stringify(candidatesDoc,null,2)+'\n');
   if(obsAppend.length)fs.appendFileSync(ledgerPath,obsAppend.map(o=>JSON.stringify(o)).join('\n')+'\n');
   fs.writeFileSync('data/refresh-delta.json',JSON.stringify(delta,null,2)+'\n');
   const all=lastObservations(fs.readFileSync(ledgerPath,'utf8').split(/\r?\n/).filter(Boolean));
