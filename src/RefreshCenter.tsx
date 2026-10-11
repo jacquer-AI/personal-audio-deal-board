@@ -292,7 +292,7 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
           <p className="mode-help">{mode==='quick'?'QUICK — sprawdza ceny i dostępność zapisanych ofert.':mode==='full'?'FULL — dodatkowo szuka nowych ofert znanych modeli.':'DEEP — dodatkowo szuka nowych modeli do oceny; nie dodaje ich automatycznie do rankingu.'}</p>
           <label>Zakres
             <select aria-label="Kategoria refreshu" value={category} onChange={e=>setCategory(e.target.value)} disabled={busy}>
-              <option value="all">Wszystkie</option><option value="IEM">IEM</option><option value="TWS">TWS</option><option value="Closed">Closed</option><option value="Głośniki BT">Głośniki BT</option>
+              <option value="all">Wszystkie</option><option value="IEM">IEM</option><option value="TWS">TWS</option><option value="Closed">Closed</option><option value="Open">Open</option><option value="Głośniki BT">Głośniki BT</option>
             </select>
           </label>
         </section>
