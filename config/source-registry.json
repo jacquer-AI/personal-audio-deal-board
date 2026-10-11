@@ -294,8 +294,8 @@
     {
       "id": "hifishark",
       "name": "HiFiShark",
-      "region": "UE",
-      "sweep": "weekly",
+      "region": "GLOBAL",
+      "sweep": "daily",
       "priority": 1,
       "role": [
         "discovery"
@@ -310,8 +310,7 @@
         "NEW"
       ],
       "queryTerms": [
-        "used",
-        "new"
+        ""
       ],
       "searchUrlTemplate": "https://www.hifishark.com/search?q={q}",
       "canDiscover": true
@@ -759,7 +758,7 @@
     {
       "id": "headfi-classifieds",
       "name": "Head-Fi Classifieds",
-      "region": "UE",
+      "region": "GLOBAL",
       "sweep": "weekly",
       "priority": 3,
       "role": [

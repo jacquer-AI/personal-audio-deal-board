@@ -3,13 +3,14 @@ import snapshot from '../data/offers.json';
 import research from '../data/market-candidates.json';
 import type {Offer, Filters, Product} from './types';
 import {conditionLabel, offerStatusLabel} from './lib/offerLabels';
+import {europeanOffer, europeanResearch} from './lib/europeScope';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable, percentLabel, modelCount} from './lib/board';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
 import {marketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
 
-const offers = snapshot.offers as Offer[];
-type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string;originalPrice?:number;currency?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
+const offers = (snapshot.offers as Offer[]).filter(europeanOffer);
+type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string|null;originalPrice?:number;currency?:string;sourceId?:string;country?:string;locationEvidence?:string;originSource?:string;originUrl?:string;aggregatorListedDate?:string|null;originalPriceText?:string;askingPriceText?:string;lastVerificationFailure?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Open', 'Głośniki BT'];
 const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:false, history:false, sort:'b4b'};
 function read() {
@@ -25,15 +26,18 @@ const money = (n: number | null) => n === null ? '—' : new Intl.NumberFormat('
 }).format(n);
 function ResearchItem({c}: {c:ResearchLead}) {
   const verified=c.verificationState==='DIRECT_OFFER_VERIFIED'&&Boolean(c.verifiedAt);
-  const pagePrice=verified&&Number.isFinite(c.pricePln??c.price);
+  const aggregatorPrice=c.verificationState==='AGGREGATOR_PRICE_ONLY'&&Boolean(c.askingPriceText);
+  const directPriceOnly=c.verificationState==='DIRECT_PAGE_PRICE_ONLY'&&Boolean(c.verifiedAt);
+  const pagePrice=(verified||directPriceOnly)&&Number.isFinite(c.pricePln??c.price);
   const isBid=c.priceBasis==='METADATA_MAY_BE_BID'||c.source==='Marktplaats';
   const rateKnown=verified&&c.shippingToPoland==='PL_RATE_ADVERTISED'&&c.shippingRate!=null;
   const excluded=verified&&c.shippingToPoland==='PL_EXPLICITLY_EXCLUDED';
   const inLive=verified&&offers.some(o=>o.url===c.url&&buyable(o));
-  return <div className={'research-item'+(verified?' seller-checked':' research-unverified')}>
+  return <div className={'research-item'+((verified||directPriceOnly||aggregatorPrice)?' seller-checked':' research-unverified')}>
     <strong>{c.model}</strong>
-    <span>{c.source} · {c.region} · <b>Stan: {conditionLabel(c.condition)}</b></span>
-    <span>{inLive?'CENA PRODUKTU POTWIERDZONA · LIVE (bez kosztu wysyłki)':verified?'Cena produktu, stan i dostępność odczytane na stronie sprzedawcy; '+(isBid?'kwota może być licytacją':'cena bez kosztów dostawy'):'Niepotwierdzone ogłoszenie lub agregator — wymaga kontroli'}</span>
+    <span>{c.originSource?c.originSource+' → ':''}{c.source} · {c.country||c.region} · <b>Stan: {conditionLabel(c.condition)}</b></span>
+    <span>{inLive?'CENA PRODUKTU POTWIERDZONA · LIVE (bez kosztu wysyłki)':verified?'Cena produktu, stan i dostępność odczytane na stronie sprzedawcy; '+(isBid?'kwota może być licytacją':'cena bez kosztów dostawy'):directPriceOnly?'CENA ODCZYTANA U SPRZEDAWCY · dostępność niepotwierdzona':aggregatorPrice?'CENA Z HIFISHARK · cena i dostępność u sprzedawcy niepotwierdzone':'Niepotwierdzone ogłoszenie — wymaga kontroli'}</span>
+    {aggregatorPrice&&<span><b>{c.askingPriceText}</b>{c.pricePln!=null&&' · około '+money(c.pricePln)} · indeks HiFiShark, bez potwierdzenia u sprzedawcy{c.aggregatorListedDate?' · data ogłoszenia według agregatora: '+c.aggregatorListedDate:''}</span>}
     {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> · <b>Stan: {conditionLabel(c.condition)}</b> · {isBid?'sygnał ceny z metadanych, możliwa licytacja':'cena produktu bez dostawy do Polski'}
       {c.originalPrice!=null&&c.currency&&' · '+c.originalPrice+' '+c.currency}
       {c.fxSource==='NBP_TABLE_A'&&c.fxEffectiveDate?' · kurs NBP '+c.fxEffectiveDate:' · kurs orientacyjny, nieaktualny dla płatności'}</span>}
@@ -43,10 +47,11 @@ function ResearchItem({c}: {c:ResearchLead}) {
       {' · bez prowizji, opłat transakcyjnych i potwierdzenia przy kasie'}</span>}
     {excluded&&<span>Sprzedawca wyklucza dostawę do Polski według danych oferty.</span>}
     {verified&&!rateKnown&&!excluded&&<span>Dostawa do Polski: brak potwierdzonej kwoty i możliwości wysyłki.</span>}
-    <span>Kontrola: {(c.verifiedAt||c.lastSeenAt||c.discoveredAt||'').slice(0,10)}
+    {aggregatorPrice&&<span>Źródło: europejski serwis ogłoszeniowy według HiFiShark; lokalizacja konkretnego sprzedawcy wymaga potwierdzenia. {c.lastVerificationFailure&&'Weryfikacja strony: '+c.lastVerificationFailure}</span>}
+    <span>Odczyt: {(c.verifiedAt||c.lastSeenAt||c.discoveredAt||'').slice(0,10)}
       {c.researchFreshness==='RECHECK_REQUIRED'?' · wymaga ponownego sprawdzenia':''}
     </span>
-    <a href={c.url} target="_blank" rel="noopener noreferrer">Sprawdź ofertę u sprzedawcy ↗</a>
+    <a href={c.url} target="_blank" rel="noopener noreferrer">{c.sourceId==='hifishark'?'Otwórz ogłoszenie przez HiFiShark ↗':'Sprawdź ofertę u sprzedawcy ↗'}</a>
   </div>;
 }
 // Price position: cheaper offers use a minus sign.
@@ -110,11 +115,14 @@ export default function App() {
   const liveCount = offers.filter(buyable).length;
   const shownOfferCount = products.reduce((n,p) => n + p.offers.length, 0);
   const researchLeads = ((research.candidates||[]) as ResearchLead[])
+    .filter(europeanResearch)
     .filter(c=>(f.category==='Wszystkie'||c.category===f.category)&&(!f.search.trim()||[c.model,c.source,c.region].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase())));
   const verifiedResearch = researchLeads.filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&c.verifiedAt
     &&Number.isFinite(Date.parse(c.verifiedAt))&&Date.now()-Date.parse(c.verifiedAt)>=0
     &&Date.now()-Date.parse(c.verifiedAt)<=8*60*60*1000).sort((a,b)=>(a.pricePln??Infinity)-(b.pricePln??Infinity));
-  const unverifiedResearch = researchLeads.filter(c=>!verifiedResearch.includes(c));
+  const aggregatorResearch = researchLeads.filter(c=>c.verificationState==='AGGREGATOR_PRICE_ONLY'&&Boolean(c.askingPriceText))
+    .sort((a,b)=>(a.pricePln??Infinity)-(b.pricePln??Infinity));
+  const unverifiedResearch = researchLeads.filter(c=>!verifiedResearch.includes(c)&&!aggregatorResearch.includes(c));
   const otherWatchModels = uniqueWatchModels([...new Set(offers.map(o=>o.model))]);
   const watchModels = otherWatchModels.filter(m=>!f.search.trim()||m.toLocaleLowerCase().includes(f.search.toLocaleLowerCase()));
   const compare = group(f.liveOnly?offers.filter(buyable):offers).filter(p => selected.includes(p.model));
@@ -193,9 +201,10 @@ export default function App() {
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
       {researchLeads.length>0 && <section id="research-leads" className="research-leads">
         <h2>Ogłoszenia znalezione na rynku: {researchLeads.length}</h2>
-        <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. <b>Priorytet: potwierdzona cena samych słuchawek.</b> Brak kwoty wysyłki nie dyskwalifikuje oferty; cena nie zawiera wysyłki, prowizji ani innych opłat. Metadane Marktplaats mogą być licytacją, więc nie oznaczają stałej ceny zakupu. <b>LIVE to tylko pozycje, które przeszły weryfikację konkretnej strony, modelu, ceny, stanu i dostępności.</b></p>
+        <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach oraz <b>{aggregatorResearch.length}</b> cen z HiFiShark (niepotwierdzonych u sprzedawcy). <b>Priorytet: potwierdzona cena samych słuchawek.</b> Brak kwoty wysyłki nie dyskwalifikuje oferty; cena nie zawiera wysyłki, prowizji ani innych opłat. Metadane Marktplaats mogą być licytacją, więc nie oznaczają stałej ceny zakupu. <b>LIVE to tylko pozycje, które przeszły weryfikację konkretnej strony, modelu, ceny, stanu i dostępności.</b></p>
         {verifiedResearch.length>0&&<div className="research-grid">{verifiedResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div>}
-        {verifiedResearch.length===0&&<p>Brak aktualnie potwierdzonych stron sprzedawców. Możesz sprawdzić poniższe ogłoszenia ręcznie.</p>}
+        {aggregatorResearch.length>0&&<><h2>Ceny z HiFiShark: {aggregatorResearch.length} — bez potwierdzenia u sprzedawcy</h2><div className="research-grid">{aggregatorResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div></>}
+        {verifiedResearch.length===0&&aggregatorResearch.length===0&&<p>Brak aktualnie potwierdzonych stron sprzedawców. Możesz sprawdzić poniższe ogłoszenia ręcznie.</p>}
         {unverifiedResearch.length>0&&<details className="research-more">
           <summary>Pokaż pozostałe ogłoszenia ({unverifiedResearch.length}) — nie są potwierdzonymi ofertami LIVE</summary>
           <div className="research-grid">{unverifiedResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div>

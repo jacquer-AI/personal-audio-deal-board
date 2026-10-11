@@ -8,6 +8,8 @@ import {discoverPageLinks} from './sources/discovery-links.mjs';
 import {mergeResearchCandidates} from './research-ledger.mjs';
 import {shippingEvidencePoland} from './shipping-evidence.mjs';
 import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
+import {geographicEvidence,isEuropeRecordedOffer} from './sources/europe-scope.mjs';
+import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -147,11 +149,11 @@ const baseFps=new Set((base.offers||[]).map(fingerprint));
 const priorAdditions=(previousCurrent.additions||[]).filter(a=>!baseFps.has(fingerprint(a)));
 console.log('Refresh',mode,'base offers',(base.offers||[]).length,'prior additions',priorAdditions.length,'categories',categoryArg);
 
-const updates=(await pool((base.offers||[]).filter(inScope),checkOffer)).filter(Boolean);
+const updates=(await pool((base.offers||[]).filter(o=>inScope(o)&&isEuropeRecordedOffer(o)),checkOffer)).filter(Boolean);
 
 // Re-verify previously discovered offers so a discovered offer cannot silently go stale.
 const additions=[];
-const reAdds=await pool(priorAdditions.filter(inScope),async a=>({a,u:await checkOffer(a)}));
+const reAdds=await pool(priorAdditions.filter(o=>inScope(o)&&isEuropeRecordedOffer(o)),async a=>({a,u:await checkOffer(a)}));
 for(const r of reAdds.filter(Boolean)){
   const {a,u}=r;if(!u){additions.push(a);continue}
   const first=a.refresh?.firstVerifiedAt||a.refresh?.checkedAt||now;
@@ -160,10 +162,10 @@ for(const r of reAdds.filter(Boolean)){
   else if(u.verificationState==='DIRECT_OFFER_VERIFIED')additions.push({...a,price:u.price,original:u.original,checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
   else additions.push(a);
 }
-for(const a of priorAdditions.filter(a=>!inScope(a)))additions.push(a);
+for(const a of priorAdditions.filter(a=>!inScope(a)&&isEuropeRecordedOffer(a)))additions.push(a);
 
 const researchRechecks=await pool(
-  (previousCandidates.candidates||[]).filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&inScope(c)).slice(0,80),
+  (previousCandidates.candidates||[]).filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&inScope(c) && c.region!=='GLOBAL' && c.region!=='EUROPE_UNCONFIRMED').slice(0,80),
   async c=>{
     receipt.researchRechecked=(receipt.researchRechecked||0)+1;
     const source=sourceById.get(c.sourceId);
@@ -197,11 +199,10 @@ const researchRechecks=await pool(
 const candidates=[];
 const newAdditions=[];
 if(mode!=='quick'){
-  const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(mode==='deep'||s.sweep==='daily'));
+  const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(s.id==='hifishark'||(s.region!=='GLOBAL'&&(mode==='deep'||s.sweep==='daily'))));
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
-  // With 48 models and 240 FULL jobs, 5 complete source passes fit per day.
-  // Three baseline sites stay fixed; two foreign/outlet sites rotate daily.
-  // DEEP adds 80+ bounded exploratory requests, with no implied verification.
+  // ALL models on HiFiShark, Allegro, OLX, Vinted in FULL and DEEP.
+  // One European source rotates daily; additional DEEP slots explore more sources.
   const coreSourceIds=coreSourceIdsForDate(now);
   const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds);
   const discoveryStats=Object.fromEntries(sweepSources.map(s=>[s.id,{requested:0,reachable:0,candidateUrls:0,restricted:0,errors:0}]));
@@ -213,8 +214,18 @@ if(mode!=='quick'){
     else if([401,403,429,451].includes(p.http))stat.restricted++;
     else stat.errors++;
     if(p.http<200||p.http>=400)return [];
-    const links=discoverPageLinks(p.html,p.url,j.s,j.m,known,8);
-    const found=links.map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,query:j.query,discoveredAt:now,status:'LEAD ONLY',evidence:'ITEM_URL_OR_ANCHOR'}));
+    // HiFiShark indexes asking prices and the origin marketplace; capture both
+    // at item-row level. These amounts are not a seller-price check or live stock.
+    const found=j.s.id==='hifishark'
+      ?discoverEuropeanHifisharkRows(p.html,j.m,8)
+        .filter(x=>!known.has(x.url))
+        .map(x=>({...x,category:j.m.category,quality:j.m.quality,fit:j.m.fit,
+          sourceId:j.s.id,source:j.s.name,query:j.query,discoveredAt:now,
+          status:'AGGREGATOR PRICE ONLY',evidence:'HIFISHARK_ITEM_ROW_PRICE'}))
+      :discoverPageLinks(p.html,p.url,j.s,j.m,known,8)
+        .map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,
+          fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,
+          query:j.query,discoveredAt:now,status:'LEAD ONLY',evidence:'ITEM_URL_OR_ANCHOR'}));
     stat.candidateUrls+=found.length;
     return found;
   });
@@ -241,8 +252,9 @@ if(mode!=='quick'){
   // Final seller verification remains mandatory for LIVE. A missing shipping
   // quote is disclosed, not a blocker; a bid/non-fixed price stays research-only.
   const verify=discoveredUrls;
-  const verified=await pool(verify,async c=>{
-    const source=sourceById.get(c.sourceId);
+  const verified=await pool(verify,async discovered=>{
+    let c=discovered;
+    let source=sourceById.get(c.sourceId);
     const meta=modelMeta.get(c.model);
     const stat=discoveryStats[c.sourceId];
     stat.checkedUrls=(stat.checkedUrls||0)+1;
@@ -250,40 +262,80 @@ if(mode!=='quick'){
     const reject=(reason,http=null,retain=false)=>{
       stat.unverifiedUrls=(stat.unverifiedUrls||0)+1;
       observe({...observation,http,result:'SEARCH_REJECT_'+reason});
-      // Discovery-only evidence is a clickable research lead, never LIVE, priced or ranked.
       if(!retain)return null;
-      return {candidate:{...c,status:'UNVERIFIED LEAD',verificationState:reason,
-        verifiedAt:null,http,price:null,currency:null,availability:null,
-        redTeam:['NOT_VERIFIED','NO_LANDED_COST']},addition:null};
+      // Preserve HiFiShark's publicly indexed asking price and EUR seller
+      // marketplace as research evidence, even if the redirect returns 403.
+      // Never convert it into a LIVE price or imply current availability.
+      const indexed=c.askingPrice>0&&c.currency;
+      const candidate={...c,status:indexed?'AGGREGATOR PRICE ONLY':'UNVERIFIED LEAD',
+        verificationState:indexed?'AGGREGATOR_PRICE_ONLY':reason,
+        lastVerificationFailure:reason,verifiedAt:null,http,availability:null,
+        redTeam:['SELLER_NOT_VERIFIED','AVAILABILITY_UNKNOWN','SHIPPING_UNKNOWN']};
+      if(indexed){
+        candidate.originalPrice=c.askingPrice;
+        candidate.pricePln=toPln(c.askingPrice,c.currency,fx);
+        candidate.priceBasis='AGGREGATOR_INDEXED_ASK';
+        candidate.fxSource=fxSource;
+        candidate.fxEffectiveDate=fxEffectiveDate;
+      }
+      return {candidate,addition:null};
     };
     if(!source||!meta||isListingUrl(c.url)||!isPlausibleOfferLink(c.url,source))
       return reject('NOT_DIRECT_OR_MODEL');
-    if(!source.canVerifyOffer)
-      return reject('SOURCE_DISCOVERY_ONLY',null,true);
-    if(!directOfferEligible(c.url,source))
-      return reject('NOT_DIRECT_OR_MODEL');
-    const p=await fetchPage(c.url);
+    // HiFiShark is a valuable global discovery engine, not the item seller.
+    // Follow its own /goto link ONCE to the merchant. A 403/blocked redirect
+    // is disclosed, never silently elevated to a verified price or EU listing.
+    let p=null;
+    if(source.id==='hifishark'){
+      p=await fetchPage(c.url);
+      if(p.http!==200)return reject('HIFISHARK_GOTO_HTTP_'+p.http,p.http,true);
+      const destination=sourceForUrl(p.url);
+      if(!destination||destination.id==='hifishark'||!destination.canVerifyOffer)
+        return reject('HIFISHARK_DESTINATION_NOT_VERIFIABLE',p.http,true);
+      const originalUrl=c.url;
+      source=destination;
+      c={...c,url:p.url,sourceId:source.id,source:source.name,
+        originSource:'HiFiShark',originUrl:originalUrl};
+    }
+    if(!source.canVerifyOffer||!directOfferEligible(c.url,source))
+      return reject('SELLER_PAGE_NOT_SUPPORTED',p?.http??null,true);
+    if(!p)p=await fetchPage(c.url);
     if(p.http!==200)return reject('HTTP_'+p.http,p.http,[401,403,429,451].includes(p.http));
     try{
       const expected=new URL(c.url),actual=new URL(p.url);
       if(expected.hostname!==actual.hostname||expected.pathname.replace(/[/]$/,'')!==actual.pathname.replace(/[/]$/,''))
-        return reject('REDIRECT',p.http);
-    }catch{return reject('REDIRECT',p.http)}
+        return reject('SELLER_REDIRECT_CHANGED_ITEM',p.http);
+    }catch{return reject('SELLER_REDIRECT_CHANGED_ITEM',p.http)}
+    const geo=geographicEvidence(source,p.html);
+    if(!geo)return reject('SELLER_OUTSIDE_EUROPE_OR_LOCATION_UNKNOWN',p.http,false);
+    c={...c,region:geo.region,country:geo.country,locationEvidence:geo.basis};
     const {blocked,parsed}=parsePage(source,p.html,p.http);
-    if(blocked||!parsed)return reject(blocked?'ACCESS_BLOCKED':'NO_ITEM_PRICE',p.http,true);
-    if(!itemTitleMatchesModel(p.html,meta))return reject('MODEL_TITLE_MISMATCH',p.http);
+    if(blocked||!parsed)return reject(blocked?'SELLER_ACCESS_BLOCKED':'SELLER_PRICE_NOT_READABLE',p.http,true);
+    if(!itemTitleMatchesModel(p.html,meta))return reject('SELLER_MODEL_TITLE_MISMATCH',p.http);
     // No text scraped from generic page boilerplate may prove an individual item is in stock.
     const condition=conditionFrom(parsed,''),stock=available(parsed,'');
     const price=toPln(parsed.price,parsed.currency,fx);
-    if(stock!==true)return reject(stock===false?'SOLD':'STOCK_UNKNOWN',p.http,stock!==false);
-    if(!condition)return reject('CONDITION_UNKNOWN',p.http,true);
-    if(!price)return reject('PRICE_UNKNOWN',p.http,true);
+    if(stock===false)return reject('SOLD_OR_OUT_OF_STOCK',p.http);
+    // A directly read, model-matched seller asking price is useful even when
+    // explicit stock/condition metadata is absent. Never call this LIVE.
+    if(price&&(stock!==true||!condition)){
+      stat.sellerPriceOnly=(stat.sellerPriceOnly||0)+1;
+      observe({...observation,result:'SELLER_PRICE_ONLY_AVAILABILITY_UNCONFIRMED',
+        http:p.http,pricePln:price,currency:parsed.currency});
+      return {candidate:{...c,status:'SELLER PRICE ONLY',
+        verificationState:'DIRECT_PAGE_PRICE_ONLY',verifiedAt:now,http:200,
+        pricePln:price,originalPrice:parsed.price,currency:parsed.currency,
+        priceBasis:priceBasis(source),condition:condition||null,
+        availability:'UNCONFIRMED',redTeam:['AVAILABILITY_OR_CONDITION_NOT_CONFIRMED'],
+        ...shipmentEvidence(p.html,parsed.price,price)},addition:null};
+    }
+    if(!price)return reject('SELLER_PRICE_NOT_READABLE',p.http,true);
     const peer=(base.offers||[]).find(o=>o.model===c.model&&o.condition===condition&&Number.isFinite(o.sameMarket));
     const add={
       id:'refresh-'+createHash('sha1').update(fingerprint({model:c.model,condition,seller:c.source,url:c.url})).digest('hex').slice(0,16),
       model:c.model,category:c.category,quality:c.quality,fit:c.fit,condition,
       rrp:peer?.rrp??null,newMarket:peer?.newMarket??null,sameMarket:peer?.sameMarket??null,
-      price,country:c.region,seller:c.source,region:c.region,status:condition==='USED'?'LIVE USED':'LIVE VERIFIED',
+      price,country:c.country,seller:c.source,region:c.region,status:condition==='USED'?'LIVE USED':'LIVE VERIFIED',
       original:parsed.price+' '+(parsed.currency||''),url:c.url,role:'OFFER',checked:now.slice(0,10),
       priceBasis:priceBasis(source),...shipmentEvidence(p.html,parsed.price,price),
       refresh:{verificationState:'DIRECT_OFFER_VERIFIED',checkedAt:now,firstVerifiedAt:now,http:p.http}
