@@ -214,6 +214,17 @@ if(mode!=='quick'){
     else if([401,403,429,451].includes(p.http))stat.restricted++;
     else stat.errors++;
     if(p.http<200||p.http>=400)return [];
+    if(j.s.id==='hifishark'&&j.m.model==='Beyerdynamic DT 880'){
+      const at=p.html.indexOf('/goto/');
+      const sample=at>=0?p.html.slice(Math.max(0,at-420),at+1020).slice(0,1440):p.html.slice(0,650);
+      console.log('HIFISHARK_HTML_DIAGNOSTIC',JSON.stringify({
+        http:p.http,length:p.html.length,
+        gotoOccurrences:p.html.split('/goto/').length-1,
+        classMarkerOccurrences:p.html.split('search-product-row').length-1,
+        priceMarkers:p.html.split('class="price"').length-1,
+        snippet:sample
+      }));
+    }
     // HiFiShark indexes asking prices and the origin marketplace; capture both
     // at item-row level. These amounts are not a seller-price check or live stock.
     const found=j.s.id==='hifishark'
