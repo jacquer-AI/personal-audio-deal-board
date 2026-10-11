@@ -70,6 +70,31 @@
       "canDiscover": true
     },
     {
+      "id": "vinted-pl",
+      "name": "Vinted",
+      "region": "Polska",
+      "sweep": "daily",
+      "priority": 1,
+      "role": [
+        "discovery"
+      ],
+      "canVerifyOffer": false,
+      "domains": [
+        "vinted.pl"
+      ],
+      "conditions": [
+        "USED",
+        "NEW",
+        "OPEN-BOX"
+      ],
+      "queryTerms": [
+        ""
+      ],
+      "searchUrlTemplate": "https://www.vinted.pl/catalog?search_text={q}",
+      "aggregator": false,
+      "canDiscover": true
+    },
+    {
       "id": "mediaexpert-outlet",
       "name": "Media Expert Outlet",
       "region": "Polska",
