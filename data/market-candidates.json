@@ -1,8 +1,1038 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-10-11T16:26:06.671Z",
-  "mode": "deep",
+  "refreshedAt": "2026-10-11T18:23:51.990Z",
+  "mode": "quick",
   "candidates": [
+    {
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm",
+      "query": "Beyerdynamic DT 880 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 349.69,
+      "originalPrice": 80,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:20:23.121Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cremona-648038097.htm",
+      "query": "Beyerdynamic DT 880 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 524.53,
+      "originalPrice": 120,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:20:23.121Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-treviso-656681763.htm",
+      "query": "Beyerdynamic DT 880 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 327.83,
+      "originalPrice": 75,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:20:23.121Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-blu-salerno-628578189.htm",
+      "query": "Bose SoundLink Max usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 1311.33,
+      "originalPrice": 300,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm",
+      "query": "Bose SoundLink Max usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 874.22,
+      "originalPrice": 200,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-napoli-628578057.htm",
+      "query": "Bose SoundLink Max usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 1311.33,
+      "originalPrice": 300,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm",
+      "query": "Bose SoundLink Max usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 1088.41,
+      "originalPrice": 249,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2424440655-bowers-wilkins-pi8-in-ear-koptelefoon-zwart",
+      "query": "Bowers & Wilkins Pi8 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 480.82,
+      "originalPrice": 110,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2437122439-bowers-wilkins-pi8-in-ear-true-wireless-earbuds",
+      "query": "Bowers & Wilkins Pi8 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "NEW",
+      "pricePln": 961.64,
+      "originalPrice": 220,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452229582-bowers-wilkins-pi8-zo-goed-als-nieuw",
+      "query": "Bowers & Wilkins Pi8 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 1005.31,
+      "originalPrice": 229.99,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452663844-bowers-wilkins-pi8-zwarte-draadloze-oordopjes",
+      "query": "Bowers & Wilkins Pi8 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 830.51,
+      "originalPrice": 190,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Dan Clark Audio AEON 2 Noire",
+      "category": "Closed",
+      "quality": "A",
+      "fit": 5,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2418727527-dan-clark-audio-aeon-2-noire-hoofdtelefoon",
+      "query": "Dan Clark Audio AEON 2 Noire tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 3204.02,
+      "originalPrice": 733,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Dan Clark Audio E3",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2439175303-dan-clark-audio-e3-room-s-audio-fs-classic-forza-audiowo",
+      "query": "Dan Clark Audio E3 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 7649.44,
+      "originalPrice": 1750,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "DUNU SA6 MkII",
+      "category": "IEM",
+      "quality": "B+",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2449208766-dunu-studio-sa6-mk2-in-ear-hoofdtelefoon-nieuwstaat",
+      "query": "DUNU SA6 MkII tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 1311.33,
+      "originalPrice": 300,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:20:23.121Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "DUNU SA6 MkII",
+      "category": "IEM",
+      "quality": "B+",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2424416476-dunu-sa6-mkii-nieuw-in-doos",
+      "query": "DUNU SA6 MkII tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "NEW",
+      "pricePln": 2185.55,
+      "originalPrice": 500,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T10:20:47.053Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2414191822-focal-clear-mg-koptelefoon-high-end-open-back-hoofdtelefoo",
+      "query": "Focal Clear MG tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 3453.18,
+      "originalPrice": 790,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2431333103-focal-clear-mg-extra-6n-silver-kabell-btw-verrekenbaar",
+      "query": "Focal Clear MG tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 3475.03,
+      "originalPrice": 795,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2445677648-focal-clear-mg-ex-demo-perfecte-staat",
+      "query": "Focal Clear MG tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 3912.14,
+      "originalPrice": 895,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2448930265-focal-clear-mg-professional",
+      "query": "Focal Clear MG tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 3715.44,
+      "originalPrice": 850,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450011022-focal-clear-mg-professional-nieuwstaat",
+      "query": "Focal Clear MG tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 3475.03,
+      "originalPrice": 795,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2451729233-focal-clear-mg-professional-hoofdtelefoon",
+      "query": "Focal Clear MG tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 3278.33,
+      "originalPrice": 750,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "HIFIMAN Svanar Wireless",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2415629565-hifiman-svanar-wireless-high-end-draadloze-oortjes",
+      "query": "HIFIMAN Svanar Wireless tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 305.98,
+      "originalPrice": 70,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "HIFIMAN Svanar Wireless",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/auricolari-hifiman-svanar-wireless-jr-lecce-655296961.htm",
+      "query": "HIFIMAN Svanar Wireless usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 240.41,
+      "originalPrice": 55,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2450736687-jbl-charge-6-rood-nieuw-in-doos",
+      "query": "JBL Charge 6 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "NEW",
+      "pricePln": 655.67,
+      "originalPrice": 150,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T10:20:47.053Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451373810-jbl-charge-6-red",
+      "query": "JBL Charge 6 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "NEW",
+      "pricePln": 568.24,
+      "originalPrice": 130,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-speakers/m2450565666-jbl-charge-6",
+      "query": "JBL Charge 6 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "NEW",
+      "pricePln": 437.11,
+      "originalPrice": 100,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T10:20:47.053Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-659498024.htm",
+      "query": "JBL Charge 6 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 524.53,
+      "originalPrice": 120,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-milano-648438267.htm",
+      "query": "JBL Charge 6 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 524.53,
+      "originalPrice": 120,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-prezzo-trattabile-vibo-valentia-652760291.htm",
+      "query": "JBL Charge 6 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "NEW",
+      "pricePln": 524.53,
+      "originalPrice": 120,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm",
+      "query": "JBL Charge 6 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "USED",
+      "pricePln": 546.39,
+      "originalPrice": 125,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
+    {
+      "model": "Noble FoKus Prestige Encore",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450491518-noble-fokus-prestige-encore",
+      "query": "Noble FoKus Prestige Encore tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 2972.35,
+      "originalPrice": 680,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Noble FoKus REX5",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2424994994-noble-fokus-rex5-true-wireless-stereo-earphone-groen",
+      "query": "Noble FoKus REX5 tweedehands",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": 1639.17,
+      "originalPrice": 375,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "BATTERY_HEALTH_UNVERIFIED",
+        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "METADATA_MAY_BE_BID"
+    },
+    {
+      "model": "Technics EAH-AZ100",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 3,
+      "sourceId": "subito-it",
+      "source": "Subito",
+      "region": "UE",
+      "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm",
+      "query": "Technics EAH-AZ100 usato",
+      "discoveredAt": "2026-10-11T16:26:06.671Z",
+      "status": "VERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verifiedAt": "2026-10-11T18:23:51.990Z",
+      "verificationState": "DIRECT_OFFER_VERIFIED",
+      "http": 200,
+      "condition": "NEW",
+      "pricePln": 2618.29,
+      "originalPrice": 599,
+      "currency": "EUR",
+      "availability": "InStock",
+      "redTeam": [
+        "SHIPPING_NOT_INCLUDED"
+      ],
+      "firstSeenAt": "2026-10-11T10:20:47.053Z",
+      "lastSeenAt": "2026-10-11T18:23:51.990Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
+      "priceBasis": "SELLER_PAGE_PRICE"
+    },
     {
       "model": "64 Audio U12t",
       "category": "IEM",
@@ -27,8 +1057,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audeze LCD-S20",
@@ -54,8 +1084,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -81,8 +1111,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -108,8 +1138,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -135,98 +1165,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Beyerdynamic DT 880",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm",
-      "query": "Beyerdynamic DT 880 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 349.69,
-      "originalPrice": 80,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Beyerdynamic DT 880",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cremona-648038097.htm",
-      "query": "Beyerdynamic DT 880 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 524.53,
-      "originalPrice": 120,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Beyerdynamic DT 880",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-treviso-656681763.htm",
-      "query": "Beyerdynamic DT 880 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 327.83,
-      "originalPrice": 75,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -252,8 +1192,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -279,8 +1219,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -306,8 +1246,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -333,8 +1273,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -360,8 +1300,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -387,8 +1327,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -414,8 +1354,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -441,8 +1381,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -468,8 +1408,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -495,8 +1435,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -522,8 +1462,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -549,132 +1489,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-blu-salerno-628578189.htm",
-      "query": "Bose SoundLink Max usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 1311.33,
-      "originalPrice": 300,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm",
-      "query": "Bose SoundLink Max usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 874.22,
-      "originalPrice": 200,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-napoli-628578057.htm",
-      "query": "Bose SoundLink Max usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 1311.33,
-      "originalPrice": 300,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bose SoundLink Max",
-      "category": "Głośniki BT",
-      "quality": "A-",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm",
-      "query": "Bose SoundLink Max usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 1088.41,
-      "originalPrice": 249,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -700,8 +1516,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -727,8 +1543,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -754,8 +1570,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -781,8 +1597,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -808,8 +1624,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -835,8 +1651,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -862,8 +1678,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -889,8 +1705,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -916,8 +1732,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -943,8 +1759,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -970,8 +1786,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -997,8 +1813,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1024,130 +1840,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2424440655-bowers-wilkins-pi8-in-ear-koptelefoon-zwart",
-      "query": "Bowers & Wilkins Pi8 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 480.82,
-      "originalPrice": 110,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2437122439-bowers-wilkins-pi8-in-ear-true-wireless-earbuds",
-      "query": "Bowers & Wilkins Pi8 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 961.64,
-      "originalPrice": 220,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452229582-bowers-wilkins-pi8-zo-goed-als-nieuw",
-      "query": "Bowers & Wilkins Pi8 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 1005.31,
-      "originalPrice": 229.99,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452663844-bowers-wilkins-pi8-zwarte-draadloze-oordopjes",
-      "query": "Bowers & Wilkins Pi8 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 830.51,
-      "originalPrice": 190,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1173,8 +1867,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1200,8 +1894,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1227,8 +1921,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1254,8 +1948,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1281,8 +1975,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1308,8 +2002,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1335,8 +2029,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -1362,8 +2056,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -1389,8 +2083,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -1416,8 +2110,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -1443,38 +2137,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Dan Clark Audio AEON 2 Noire",
-      "category": "Closed",
-      "quality": "A",
-      "fit": 5,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2418727527-dan-clark-audio-aeon-2-noire-hoofdtelefoon",
-      "query": "Dan Clark Audio AEON 2 Noire tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 3204.02,
-      "originalPrice": 733,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -1500,8 +2164,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio E3",
@@ -1527,8 +2191,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio E3",
@@ -1554,8 +2218,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio E3",
@@ -1581,38 +2245,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Dan Clark Audio E3",
-      "category": "Closed",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2439175303-dan-clark-audio-e3-room-s-audio-fs-classic-forza-audiowo",
-      "query": "Dan Clark Audio E3 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 7649.44,
-      "originalPrice": 1750,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio Noire X",
@@ -1638,8 +2272,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "DUNU SA6 MkII",
@@ -1665,8 +2299,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "DUNU SA6 MkII",
@@ -1692,187 +2326,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2449208766-dunu-studio-sa6-mk2-in-ear-hoofdtelefoon-nieuwstaat",
-      "query": "DUNU SA6 MkII tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 1311.33,
-      "originalPrice": 300,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "DUNU SA6 MkII",
-      "category": "IEM",
-      "quality": "B+",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2424416476-dunu-sa6-mkii-nieuw-in-doos",
-      "query": "DUNU SA6 MkII tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 2185.55,
-      "originalPrice": 500,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Focal Clear MG",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2414191822-focal-clear-mg-koptelefoon-high-end-open-back-hoofdtelefoo",
-      "query": "Focal Clear MG tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 3453.18,
-      "originalPrice": 790,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Focal Clear MG",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2431333103-focal-clear-mg-extra-6n-silver-kabell-btw-verrekenbaar",
-      "query": "Focal Clear MG tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 3475.03,
-      "originalPrice": 795,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Focal Clear MG",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2445677648-focal-clear-mg-ex-demo-perfecte-staat",
-      "query": "Focal Clear MG tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 3912.14,
-      "originalPrice": 895,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Focal Clear MG",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2448930265-focal-clear-mg-professional",
-      "query": "Focal Clear MG tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 3715.44,
-      "originalPrice": 850,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -1898,68 +2353,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Focal Clear MG",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450011022-focal-clear-mg-professional-nieuwstaat",
-      "query": "Focal Clear MG tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 3475.03,
-      "originalPrice": 795,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Focal Clear MG",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2451729233-focal-clear-mg-professional-hoofdtelefoon",
-      "query": "Focal Clear MG tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 3278.33,
-      "originalPrice": 750,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -1985,8 +2380,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -2012,8 +2407,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -2039,8 +2434,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -2066,8 +2461,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -2093,8 +2488,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -2120,70 +2515,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "HIFIMAN Svanar Wireless",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2415629565-hifiman-svanar-wireless-high-end-draadloze-oortjes",
-      "query": "HIFIMAN Svanar Wireless tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 305.98,
-      "originalPrice": 70,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "HIFIMAN Svanar Wireless",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/auricolari-hifiman-svanar-wireless-jr-lecce-655296961.htm",
-      "query": "HIFIMAN Svanar Wireless usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 240.41,
-      "originalPrice": 55,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -2209,8 +2542,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -2236,8 +2569,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2263,8 +2596,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2290,8 +2623,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2317,8 +2650,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2344,8 +2677,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2371,8 +2704,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2398,8 +2731,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2425,8 +2758,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2452,217 +2785,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2450736687-jbl-charge-6-rood-nieuw-in-doos",
-      "query": "JBL Charge 6 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 655.67,
-      "originalPrice": 150,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451373810-jbl-charge-6-red",
-      "query": "JBL Charge 6 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 568.24,
-      "originalPrice": 130,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-speakers/m2450565666-jbl-charge-6",
-      "query": "JBL Charge 6 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 437.11,
-      "originalPrice": 100,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-659498024.htm",
-      "query": "JBL Charge 6 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 524.53,
-      "originalPrice": 120,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-milano-648438267.htm",
-      "query": "JBL Charge 6 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 524.53,
-      "originalPrice": 120,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-prezzo-trattabile-vibo-valentia-652760291.htm",
-      "query": "JBL Charge 6 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 524.53,
-      "originalPrice": 120,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm",
-      "query": "JBL Charge 6 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "USED",
-      "pricePln": 546.39,
-      "originalPrice": 125,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2688,8 +2812,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2715,8 +2839,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2742,8 +2866,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2769,8 +2893,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2796,8 +2920,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2823,8 +2947,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2850,8 +2974,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2877,8 +3001,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -2904,8 +3028,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -2931,8 +3055,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -2958,8 +3082,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus Prestige Encore",
@@ -2985,8 +3109,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus Prestige Encore",
@@ -3012,8 +3136,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus Prestige Encore",
@@ -3039,39 +3163,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Noble FoKus Prestige Encore",
-      "category": "TWS",
-      "quality": "A",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450491518-noble-fokus-prestige-encore",
-      "query": "Noble FoKus Prestige Encore tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 2972.35,
-      "originalPrice": 680,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus REX5",
@@ -3097,8 +3190,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus REX5",
@@ -3124,8 +3217,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus REX5",
@@ -3151,39 +3244,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Noble FoKus REX5",
-      "category": "TWS",
-      "quality": "A",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2424994994-noble-fokus-rex5-true-wireless-stereo-earphone-groen",
-      "query": "Noble FoKus REX5 tweedehands",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 1639.17,
-      "originalPrice": 375,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus REX5",
@@ -3209,8 +3271,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -3236,8 +3298,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -3263,8 +3325,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -3290,8 +3352,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -3317,8 +3379,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -3344,8 +3406,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -3371,8 +3433,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 900",
@@ -3398,8 +3460,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 900",
@@ -3425,8 +3487,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sony IER-M9",
@@ -3452,8 +3514,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sony MDR-SA5000",
@@ -3479,8 +3541,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3506,37 +3568,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Technics EAH-AZ100",
-      "category": "TWS",
-      "quality": "A",
-      "fit": 3,
-      "sourceId": "subito-it",
-      "source": "Subito",
-      "region": "UE",
-      "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm",
-      "query": "Technics EAH-AZ100 usato",
-      "discoveredAt": "2026-10-11T16:26:06.671Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-11T16:26:06.671Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 2618.29,
-      "originalPrice": 599,
-      "currency": "EUR",
-      "availability": "InStock",
-      "redTeam": [
-        "SHIPPING_NOT_INCLUDED"
-      ],
-      "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3562,8 +3595,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3589,8 +3622,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3616,8 +3649,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3643,8 +3676,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3670,8 +3703,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3697,8 +3730,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3724,8 +3757,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -3751,8 +3784,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-11T16:26:06.671Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
