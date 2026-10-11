@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-11T20:14:35.427Z",
+  "refreshedAt": "2026-10-11T21:36:08.850Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -48,7 +48,7 @@
       "confidence": "PROVISIONAL",
       "median": 525.3,
       "min": 525.3,
-      "max": 547.19
+      "max": 569.08
     },
     {
       "key": "JBL Charge 6|NEW",
