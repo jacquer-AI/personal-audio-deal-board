@@ -39,6 +39,16 @@ describe('prioritized all-model discovery',()=>{
     for(const source of core)expect(jobs.filter(j=>j.s.id===source)).toHaveLength(32);
     expect(new Set(jobs.map(j=>j.m.model)).size).toBe(32);
   });
+  it('daily FULL budget covers six priority sources across all 32 model families',()=>{
+    const manyModels=Array.from({length:32},(_,i)=>({model:'Headphone '+i}));
+    const priority=['allegro-pl','olx-pl','mediaexpert-outlet','vinted-pl','subito-it','marktplaats-nl','kleinanzeigen-de'];
+    const mixed=priority.map(id=>({id,queryTerms:[],searchUrlTemplate:'https://site.example?q={q}'}));
+    const jobs=planDiscoveryJobs(manyModels,mixed,240,priority);
+    expect(jobs).toHaveLength(224);
+    for(const source of priority.slice(0,6))
+      expect(jobs.filter(j=>j.s.id===source)).toHaveLength(32);
+    expect(new Set(jobs.map(j=>j.m.model)).size).toBe(32);
+  });
   it('small budgets cover all models at highest-priority provider first',()=>{
     const jobs=planDiscoveryJobs(models,sources,20,['site-5','site-1']);
     expect(jobs.slice(0,16).every(j=>j.s.id==='site-5')).toBe(true);
