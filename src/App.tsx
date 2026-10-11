@@ -1,11 +1,12 @@
 import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
 import research from '../data/market-candidates.json';
-import type {Offer, Filters, Product, Status} from './types';
+import type {Offer, Filters, Product} from './types';
+import {conditionLabel, offerStatusLabel} from './lib/offerLabels';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable, percentLabel, modelCount} from './lib/board';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
-import {marketplaces, uniqueWatchModels} from './lib/marketSearch';
+import {marketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
 
 const offers = snapshot.offers as Offer[];
 type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string;originalPrice?:number;currency?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
@@ -31,9 +32,9 @@ function ResearchItem({c}: {c:ResearchLead}) {
   const inLive=verified&&offers.some(o=>o.url===c.url&&buyable(o));
   return <div className={'research-item'+(verified?' seller-checked':' research-unverified')}>
     <strong>{c.model}</strong>
-    <span>{c.source} · {c.region}{c.condition?' · '+c.condition:''}</span>
+    <span>{c.source} · {c.region} · <b>Stan: {conditionLabel(c.condition)}</b></span>
     <span>{inLive?'CENA PRODUKTU POTWIERDZONA · LIVE (bez kosztu wysyłki)':verified?'Cena produktu, stan i dostępność odczytane na stronie sprzedawcy; '+(isBid?'kwota może być licytacją':'cena bez kosztów dostawy'):'Niepotwierdzone ogłoszenie lub agregator — wymaga kontroli'}</span>
-    {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> {isBid?'· sygnał ceny z metadanych, możliwa licytacja':'· cena produktu bez dostawy do Polski'}
+    {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> · <b>Stan: {conditionLabel(c.condition)}</b> · {isBid?'· sygnał ceny z metadanych, możliwa licytacja':'· cena produktu bez dostawy do Polski'}
       {c.originalPrice!=null&&c.currency&&' · '+c.originalPrice+' '+c.currency}
       {c.fxSource==='NBP_TABLE_A'&&c.fxEffectiveDate?' · kurs NBP '+c.fxEffectiveDate:' · kurs orientacyjny, nieaktualny dla płatności'}</span>}
     {rateKnown&&<span>Deklarowana dostawa do Polski: <b>{c.shippingRate} {c.shippingCurrency}</b>
@@ -51,21 +52,17 @@ function ResearchItem({c}: {c:ResearchLead}) {
 // Price position: cheaper offers use a minus sign.
 const pct = percentLabel;
 const countryLabel = (country:string) => country === 'Poland' ? 'Polska' : country;
-const statusText: Record<Status, string> = {
-  'LIVE VERIFIED':'LIVE', 'LIVE USED':'LIVE USED', 'LEAD ONLY':'LEAD', 'HISTORICAL':'HISTORIA',
-  'NON-EU / TLC':'TLC', 'STALE / REVERIFY':'SPRAWDŹ', 'MARKET COMP':'COMP', 'OFFICIAL':'OFFICIAL'
-};
 function Source({offer, primary = false}: {offer: Offer; primary?: boolean}) {
-  const role = !buyable(offer) ? (['LIVE VERIFIED','LIVE USED'].includes(offer.status)?'NIEPOTWIERDZONE':statusText[offer.status]) : primary ? 'LIVE' : offer.condition+' COMP';
+  const role = !buyable(offer) ? offerStatusLabel(offer.status,false) : primary ? 'OFERTA POTWIERDZONA' : 'PORÓWNANIE';
   return <div className={'source ' + (offer.status === 'HISTORICAL' ? 'historical' : !buyable(offer) ? 'unverified' : '')} data-testid="source-row">
     <span className="source-role" title={offer.status} aria-label={offer.status}>{role}</span><strong>{money(offer.price)}</strong>
-    <span className="source-seller">{offer.seller}<small>{countryLabel(offer.country)}</small></span><span>{offer.condition}</span>
+    <span className="source-seller">{offer.seller}<small>{countryLabel(offer.country)}</small></span><span className="item-condition">{conditionLabel(offer.condition)}</span>
     <a href={offer.url} target="_blank" rel="noopener noreferrer" aria-label={'Otwórz źródło: ' + offer.model + ' · ' + offer.seller + ' · ' + offer.condition}>↗</a>
   </div>;
 }
 function Price({offer}: {offer: Offer}) {
   return <div className="price-position">
-    <div className="offer-price"><span className="sr-only">Cena produktu</span><strong>{money(offer.price)}</strong>{buyable(offer)&&<small className="item-price-note">Cena słuchawek · bez wysyłki i opłat</small>}</div>
+    <div className="offer-price"><span className="sr-only">Cena produktu</span><div className="price-and-condition"><strong>{money(offer.price)}</strong><span className="condition-tag" data-testid="price-condition">{conditionLabel(offer.condition)}</span></div>{buyable(offer)&&<small className="item-price-note">Cena słuchawek · bez wysyłki i opłat</small>}</div>
     <div className="market"><span>Rynek stanu <b>{money(offer.sameMarket)}</b></span><span>Nowe <b>{money(offer.newMarket)}</b></span></div>
     <div className="metrics"><span><b>{pct(discount(offer))}</b> vs stan</span><span><b>{pct(savings(offer))}</b> vs nowe</span></div>
   </div>;
@@ -74,10 +71,10 @@ function OfferDetails({product}: {product: Product}) {
   return <details className="offer-details">
     <summary>Więcej ofert ({product.offers.length})</summary>
     <div className="market-discovery"><b>Szukaj innych ogłoszeń:</b> {marketplaces.map(m => <a key={m.id} href={m.url(product.model)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj modelu '+product.model+' na '+m.label}>{m.label} ↗</a>)} <span>Linki wyszukują w zewnętrznych serwisach; nie potwierdzają liczby, ceny ani dostępności ofert.</span></div>
-    <p className="source-legend">LIVE — cena produktu, stan i dostępność potwierdzone bezpośrednio u sprzedawcy (maks. 24 h; używane 8 h); wysyłka i opłaty osobno. NIEPOTWIERDZONE — brak aktualnego dowodu, poza rankingiem. LEAD — trop do sprawdzenia. COMP — oferta porównawcza. NEW — nowe, USED — używane, B-STOCK — towar ze zwrotu lub ekspozycji.</p>
+    <p className="source-legend">OFERTA POTWIERDZONA — cena produktu, stan i dostępność sprawdzone na stronie sprzedawcy (do 24 h, używane 8 h). AKTUALNOŚĆ NIEPOTWIERDZONA — starszy zapis bez bieżącego dowodu. TROP — wymaga kontroli. PORÓWNANIE — odniesienie cenowe. Stan produktu (NOWE/UŻYWANE/PO ZWROCIE/OTWARTE OPAKOWANIE) jest osobny od statusu kontroli.</p>
     <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
-      {product.offers.map(o => <p key={o.id}><b>{o.seller} · {o.condition}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
+      {product.offers.map(o => <p key={o.id}><b>{o.seller} · {conditionLabel(o.condition)}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
       <p>MSRP / RRP: {money(product.best.rrp)} · Fit: {product.best.fit ?? '—'}/5</p>
     </details>
   </details>;
@@ -134,7 +131,7 @@ export default function App() {
         <span className="score" title="B4B: jakość × rynek tego samego stanu / cena oferty. Wyżej = lepszy stosunek jakości do ceny.">B4B <b>{b4b(o)?.toFixed(1) ?? '—'}</b></span>
         <label className="compare-select"><input type="checkbox" checked={selected.includes(p.model)} onChange={() => toggle(p.model)}/>Porównaj<span className="sr-only"> {p.model}</span></label>
       </header>
-      <p className="decision-line"><span>{o.condition}</span><span title={o.status} aria-label={o.status}>{!buyable(o)&&['LIVE VERIFIED','LIVE USED'].includes(o.status)?'NIEPOTWIERDZONE':statusText[o.status]}</span><strong>{decision(o)}</strong>
+      <p className="decision-line"><span className="verification-status" title={o.status} aria-label={'Status weryfikacji: '+offerStatusLabel(o.status,buyable(o))}>{offerStatusLabel(o.status,buyable(o))}</span><strong>{decision(o)}</strong>
         {o.refresh?.verificationState&&o.refresh.verificationState!=='DIRECT_OFFER_VERIFIED'&&<span className="recheck-badge" title={'Ostatnia próba: '+o.refresh.verificationState}>! Niepotwierdzona aktualność</span>}</p>
       <p className="offer-provenance">{buyable(o)?'Ostatnie bezpośrednie potwierdzenie: '+new Date(o.refresh!.checkedAt!).toLocaleString('pl-PL')+' · dokładne ceny i dostępność mogą ulec zmianie.':'Niezweryfikowana aktualność · ostatni zapis: '+o.checked+' · nie jest bieżącą okazją.'}</p>
       <div className="record-body"><Price offer={o}/><div className="seller-action">
@@ -150,7 +147,7 @@ export default function App() {
     <BuildFreshness/>
     <a className="skip" href="#results">Przejdź do wyników</a>
     <header className="masthead"><div><h1>PERSONAL AUDIO <span>— Deal Board</span></h1>
-      <p>PLN · Polska/UE-first · NEW/USED/B-stock porównywane do właściwego rynku</p></div>
+      <p>PLN · Polska/UE-first · stan produktu oddzielony od aktualności oferty</p></div>
       <div className="masthead-actions">
         <RefreshCenter refresh={(snapshot as {refresh?:{refreshedAt?:string|null;mode?:string|null;status?:string|null}}).refresh}/>
         <a className="ssot-link" href={snapshot.source} target="_blank" rel="noopener noreferrer" aria-label="Otwórz Google Sheets — źródło danych">Arkusz ↗</a>
@@ -175,7 +172,7 @@ export default function App() {
             <input type="checkbox" checked={f.conditions.includes(c)} onChange={() => {
               change('conditions', f.conditions.includes(c) ? f.conditions.filter(x => x !== c) : [...f.conditions, c]);
               if (c === 'HISTORICAL') { change('history', true); change('liveOnly', false); }
-            }}/>{c === 'HISTORICAL' ? 'Historyczne' : c}</label>)}
+            }}/>{c === 'HISTORICAL' ? 'Historyczne' : conditionLabel(c)}</label>)}
           </fieldset>
           <label className="status-control">Status<select aria-label="Status" value={f.status} onChange={e => {
             change('status', e.target.value); if (e.target.value === 'HISTORICAL') { change('history', true); change('liveOnly', false); }
@@ -204,7 +201,7 @@ export default function App() {
           <div className="research-grid">{unverifiedResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div>
         </details>}
       </section>}
-      {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Lista obserwacyjna — bez potwierdzonych ogłoszeń w lokalnej bazie i bez fikcyjnych ocen lub cen.</span>
+      {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Stały zakres: {trackedModelCount} rodzin modeli. Modele poniżej nie mają zapisanych ogłoszeń; nie przypisujemy im fikcyjnych ocen ani cen.</span>
         {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{marketplaces.slice(0,3).map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
       </section>}
     </main>
@@ -222,7 +219,7 @@ export default function App() {
       <header className="dialog-header"><h2 id="compare-title">Porównanie modeli</h2><button onClick={() => setComparison(false)} autoFocus>Zamknij</button></header>
       <div className="comparison-grid">{compare.map(p => <section key={p.model}>
         <h3>{p.model}</h3><p>{p.best.category} · {p.best.quality} · Fit {p.best.fit ?? '—'}/5</p><p>B4B <b>{b4b(p.best)?.toFixed(1) ?? '—'}</b> · {decision(p.best)}</p>
-        <Price offer={p.best}/><p>{p.best.condition} · {p.best.region}</p>
+        <Price offer={p.best}/><p>{conditionLabel(p.best.condition)} · {p.best.region}</p>
         {p.offers.filter(o => o.status !== 'HISTORICAL' || f.history).map(o => <Source key={o.id} offer={o} primary={o.id === p.best.id}/>)}
       </section>)}</div>
     </dialog>
