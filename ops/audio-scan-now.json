@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "hifishark-card-gate-trace-20261011",
+  "requestId": "hifishark-robust-price-e2e-20261011",
   "mode": "full",
-  "categories": "Open",
-  "purpose": "Diagnose HiFiShark parser stage counts from actual Node.js GitHub runner for Beyerdynamic DT 880, after documented HTTP200 44 item links but 0 price candidates.",
+  "categories": "all",
+  "purpose": "Acceptance: HiFiShark returns nonzero European indexed prices per item (after price markup / HTML entity fixes), keep aggregator unverified, preserve seller-check logic, publish readback.",
   "requestedOn": "2026-10-11"
 }
