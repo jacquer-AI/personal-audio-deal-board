@@ -35,7 +35,11 @@ const patterns=[
 ];
 const currencyOf=['EUR','PLN','GBP','OTHER'];
 export function aggregatorAskingPrice(s){
- const input=String(s||'');
+ const input=String(s||'')
+  .replace(/&(?:euro|#8364|#x20ac);?/gi,'€')
+  .replace(/&(?:pound|#163|#xa3);?/gi,'£')
+  .replace(/&(?:nbsp|#160|#xa0);?/gi,' ')
+  .replace(/&amp;/gi,'&');
  for(let i=0;i<patterns.length;i++){
   const match=input.match(patterns[i]);
   if(!match)continue;
