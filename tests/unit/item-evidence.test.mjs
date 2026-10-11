@@ -19,6 +19,18 @@ describe('item-specific seller evidence',()=>{
     expect(itemTitleMatchesModel(ld({'@type':'Product',name:'DUNU Studio SA6 MK2',offers:{price:200}}),dunu)).toBe(true);
     expect(itemTitleMatchesModel(ld({'@type':'Organization',name:'Beyerdynamic DT 880'}),dt)).toBe(false);
   });
+  it('rejects distinct subvariants even when their family names match',()=>{
+    const svanar={model:'HIFIMAN Svanar Wireless',aliases:['Svanar Wireless']};
+    const focal={model:'Focal Clear MG',aliases:['Clear Mg']};
+    const monarch={model:'Thieaudio Monarch MkII',aliases:['Monarch MK2','Monarch II']};
+    expect(itemTitleMatchesModel('<title>HIFIMAN Svanar Wireless Jr</title>',svanar)).toBe(false);
+    expect(itemTitleMatchesModel('<title>HIFIMAN Svanar Wireless LE</title>',svanar)).toBe(false);
+    expect(itemTitleMatchesModel('<title>HIFIMAN Svanar Wireless</title>',svanar)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Focal Clear MG Professional</title>',focal)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Focal Clear MG</title>',focal)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Thieaudio Monarch III</title>',monarch)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Thieaudio Monarch II</title>',monarch)).toBe(true);
+  });
   it('does not mistake a Marktplaats bid/metadata value for a buy-now price',()=>{
     expect(priceBasis({id:'marktplaats-nl'})).toBe('METADATA_MAY_BE_BID');
     expect(priceBasis({id:'subito-it'})).toBe('SELLER_PAGE_PRICE');
