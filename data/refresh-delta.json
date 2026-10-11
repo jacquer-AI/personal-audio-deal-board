@@ -5,172 +5,180 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-11T16:20:23.121Z",
+  "refreshedAt": "2026-10-11T16:26:06.671Z",
   "mode": "deep",
-  "runId": "38155026820",
-  "candidates": 46,
+  "runId": "38155432530",
+  "candidates": 155,
   "verifiedAdditions": 0,
-  "observationChanges": 42,
-  "freshnessRenewal": true,
+  "observationChanges": 105,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 20,
     "directVerified": 3,
-    "accessRestricted": 10,
+    "accessRestricted": 11,
     "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 4,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 3,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "discovery": {
-      "plannedJobs": 240,
+      "plannedJobs": 320,
+      "coreSources": [
+        "vinted-pl",
+        "subito-it",
+        "marktplaats-nl",
+        "kleinanzeigen-de",
+        "hifishark"
+      ],
       "plannedSources": 19,
-      "reachableSources": 9,
+      "reachableSources": 10,
       "sources": {
         "allegro-pl": {
+          "requested": 8,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 2
+        },
+        "olx-pl": {
           "requested": 9,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 8,
-          "errors": 1
-        },
-        "olx-pl": {
-          "requested": 10,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 10,
+          "restricted": 9,
           "errors": 0
         },
         "vinted-pl": {
-          "requested": 11,
-          "reachable": 11,
-          "candidateUrls": 14,
-          "restricted": 0,
+          "requested": 32,
+          "reachable": 30,
+          "candidateUrls": 46,
+          "restricted": 2,
           "errors": 0,
-          "checkedUrls": 14,
-          "unverifiedUrls": 14
+          "checkedUrls": 46,
+          "unverifiedUrls": 46
         },
         "mediaexpert-outlet": {
-          "requested": 12,
+          "requested": 11,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 12,
+          "restricted": 11,
           "errors": 0
         },
         "kleinanzeigen-de": {
-          "requested": 12,
-          "reachable": 12,
+          "requested": 32,
+          "reachable": 32,
           "candidateUrls": 0,
           "restricted": 0,
           "errors": 0
         },
         "marktplaats-nl": {
-          "requested": 13,
-          "reachable": 13,
-          "candidateUrls": 2,
+          "requested": 32,
+          "reachable": 32,
+          "candidateUrls": 22,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 2,
-          "verifiedUrls": 2
+          "checkedUrls": 22,
+          "verifiedUrls": 20,
+          "unverifiedUrls": 2
         },
         "subito-it": {
-          "requested": 14,
-          "reachable": 14,
-          "candidateUrls": 4,
+          "requested": 32,
+          "reachable": 32,
+          "candidateUrls": 13,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 4,
-          "verifiedUrls": 4
+          "checkedUrls": 13,
+          "verifiedUrls": 13
         },
         "wallapop-es": {
-          "requested": 15,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 15,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 15,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 15
-        },
-        "ebay-de": {
-          "requested": 15,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 15,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 15,
-          "reachable": 15,
-          "candidateUrls": 24,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 24,
-          "unverifiedUrls": 24
-        },
-        "geizhals": {
-          "requested": 15,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 15,
-          "errors": 0
-        },
-        "tweakers": {
-          "requested": 15,
-          "reachable": 15,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "tophifi-outlet": {
           "requested": 14,
           "reachable": 0,
           "candidateUrls": 0,
           "restricted": 14,
           "errors": 0
         },
-        "ebay-uk": {
+        "amazon-de-resale": {
+          "requested": 14,
+          "reachable": 1,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 13
+        },
+        "ebay-de": {
+          "requested": 14,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 14,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 32,
+          "reachable": 32,
+          "candidateUrls": 54,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 54,
+          "unverifiedUrls": 54
+        },
+        "geizhals": {
+          "requested": 14,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 14,
+          "errors": 0
+        },
+        "tweakers": {
+          "requested": 14,
+          "reachable": 14,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "tophifi-outlet": {
           "requested": 13,
           "reachable": 0,
           "candidateUrls": 0,
           "restricted": 13,
           "errors": 0
         },
-        "ceneo-pl": {
+        "ebay-uk": {
           "requested": 12,
-          "reachable": 12,
+          "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 0,
+          "restricted": 12,
           "errors": 0
         },
-        "allegro-lokalnie": {
+        "ceneo-pl": {
           "requested": 11,
           "reachable": 11,
           "candidateUrls": 0,
           "restricted": 0,
           "errors": 0
         },
-        "headfi-classifieds": {
+        "allegro-lokalnie": {
           "requested": 10,
           "reachable": 10,
           "candidateUrls": 0,
           "restricted": 0,
           "errors": 0
         },
-        "idealo-de": {
+        "headfi-classifieds": {
           "requested": 9,
+          "reachable": 9,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "idealo-de": {
+          "requested": 7,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 9,
+          "restricted": 7,
           "errors": 0
         }
       }
