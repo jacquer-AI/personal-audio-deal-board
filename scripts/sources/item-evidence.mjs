@@ -35,6 +35,8 @@ export function itemTitleMatchesModel(html,model){
     'thieaudio monarch mkiii':/\bmonarch (?:mk ?ii|ii|2)\b/,
     'etymotic er4s':/\ber4sr\b/,
     'beyerdynamic dt 1990 pro':/\bdt\s?1990\s?pro\s?(?:mk\s?ii|mkii|mk2|2nd|ii)\b/
+    'sony mdr m1':/\bmdr m1st\b/,
+    'beyerdynamic dt 48 25 ohm':/\bdt\s?48(?:\s?[a-z])?\s?(?:200|250|5)\s?(?:ohm|ohms)?\b/,
   };
   const conflict=knownVariantConflicts[norm(model?.model)];
   return titles.some(t=>{
