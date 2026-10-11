@@ -62,30 +62,30 @@ function matchModel(value,model){
  */
 export function discoverEuropeanHifisharkRows(html,model,limit=8){
  const results=[],seen=new Set();
- const rows=[...String(html).matchAll(/<a\\b([^>]{0,2500})>([\\s\\S]{0,12000}?)<\\/a\\s*>/gi)].slice(0,1800);
+ const rows=[...String(html).matchAll(/<a\b([^>]{0,2500})>([\s\S]{0,12000}?)<\/a\s*>/gi)].slice(0,1800);
  for(const rowMatch of rows){
   if(results.length>=limit)break;
   const attrs=rowMatch[1],body=rowMatch[2];
-  if(!/\\bsearch-product-row\\b/i.test(attrs))continue;
-  const raw=attrs.match(/\\bhref\\s*=\\s*["']([^"']+)["']/i)?.[1];
+  if(!/\bsearch-product-row\b/i.test(attrs))continue;
+  const raw=attrs.match(/\bhref\s*=\s*["']([^"']+)["']/i)?.[1];
   if(!raw)continue;
   let url;
   try{
    url=new URL(raw.replace(/&amp;/g,'&'),'https://www.hifishark.com/').toString();
    const u=new URL(url);
-   if(u.hostname.replace(/^www\\./,'')!=='hifishark.com'||!u.pathname.startsWith('/goto/'))continue;
+   if(u.hostname.replace(/^www\./,'')!=='hifishark.com'||!u.pathname.startsWith('/goto/'))continue;
   }catch{continue}
   if(seen.has(url))continue;
-  const itemHtml=body.match(/<span\\b[^>]*class=["'][^"']*\\bsearch-product-title\\b[^"']*["'][^>]*>([\\s\\S]{0,900}?)(?:<\\/span>)/i)?.[1]||'';
+  const itemHtml=body.match(/<span\b[^>]*class=["'][^"']*\bsearch-product-title\b[^"']*["'][^>]*>([\s\S]{0,900}?)(?:<\/span>)/i)?.[1]||'';
   const item=htmlText(itemHtml).trim();
   if(!item||!matchModel(item,model))continue;
 
-  const siteHtml=body.match(/<div\\b[^>]*class=["'][^"']*\\bwebsite-grid\\b[^"']*["'][^>]*>([\\s\\S]{0,800}?)<\\/div>/i)?.[1]||'';
+  const siteHtml=body.match(/<div\b[^>]*class=["'][^"']*\bwebsite-grid\b[^"']*["'][^>]*>([\s\S]{0,800}?)<\/div>/i)?.[1]||'';
   const siteText=htmlText(siteHtml).trim();
   const localized=europeanMarketplace(siteText);
-  const flagTags=[...body.matchAll(/<img\\b[^>]{0,600}>/gi)];
-  const flag=flagTags.find(m=>/\\bclass\\s*=\\s*["'][^"']*\\bflag\\b/i.test(m[0]));
-  const flagName=flag?.[0].match(/\\balt\\s*=\\s*["']([^"']+)["']/i)?.[1]||'';
+  const flagTags=[...body.matchAll(/<img\b[^>]{0,600}>/gi)];
+  const flag=flagTags.find(m=>/\bclass\s*=\s*["'][^"']*\bflag\b/i.test(m[0]));
+  const flagName=flag?.[0].match(/\balt\s*=\s*["']([^"']+)["']/i)?.[1]||'';
   const flagCountry=flagName?europeCountryFromLabel(flagName):null;
   // The presence of an explicit outside-Europe/unknown country flag must
   // take precedence over a European marketplace domain.
@@ -96,11 +96,11 @@ export function discoverEuropeanHifisharkRows(html,model,limit=8){
     ['Wielka Brytania','Norwegia','Szwajcaria','Ukraina','Islandia'].includes(country)
       ?'non-EU / TLC':'UE';
 
-  const priceSpan=body.match(/<span\\b[^>]*class=["'][^"']*\\bprice\\b[^"']*["'][^>]*>([\\s\\S]{0,600}?)<\\/span>/i)?.[1]||'';
-  const priceText=priceSpan.match(/<strong\\b[^>]*>([\\s\\S]{0,140}?)<\\/strong>/i)?.[1]||'';
+  const priceSpan=body.match(/<span\b[^>]*class=["'][^"']*\bprice\b[^"']*["'][^>]*>([\s\S]{0,600}?)<\/span>/i)?.[1]||'';
+  const priceText=priceSpan.match(/<strong\b[^>]*>([\s\S]{0,140}?)<\/strong>/i)?.[1]||'';
   const price=aggregatorAskingPrice(htmlText(priceText));
   if(!price)continue;
-  const date=body.match(/\\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+\\d{1,2},?\\s+20\\d{2}\\b/i)?.[0]||null;
+  const date=body.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},?\s+20\d{2}\b/i)?.[0]||null;
   seen.add(url);results.push({url,model:model.model,site:siteText||localized?.site||'HiFiShark',
     country,region,locationEvidence:flagCountry?'HIFISHARK_ITEM_COUNTRY_FLAG':'EUROPEAN_MARKETPLACE_NOT_SELLER',
     askingPrice:price.originalPrice,currency:price.currency,askingPriceText:price.originalPriceText,
