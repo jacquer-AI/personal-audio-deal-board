@@ -3,16 +3,23 @@
  * for every tracked model before spending a bounded budget on exploratory sites.
  * No credential, proxy, anti-bot bypass or unverifiable listing promotion.
  */
-export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[]) {
+export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[], asOfDate='') {
   if(!Array.isArray(models)||!Array.isArray(sources)||!models.length||!sources.length||maxJobs<=0)return [];
   const jobs=[],used=new Set();
+  const dateMs=Date.parse(String(asOfDate).slice(0,10)+'T00:00:00Z');
+  const day=Number.isFinite(dateMs)?Math.floor(dateMs/86400000):0;
   const add=(m,s)=>{
     if(!m||!s||jobs.length>=maxJobs)return;
     const key=m.model+'|'+s.id;
     if(used.has(key))return;
     used.add(key);
+    // Explicit variants improve recall for rare/discontinued models. Never
+    // widen the model to a different impedance or unverified revision.
+    const variants=Array.isArray(m.searchTerms)?m.searchTerms.filter(v=>typeof v==='string'&&v.trim()):[];
+    const sourceIndex=sources.findIndex(x=>x.id===s.id);
+    const modelQuery=variants.length?variants[(day+Math.max(0,sourceIndex))%variants.length]:m.model;
     const term=(s.queryTerms||[])[0]||'';
-    const query=[m.model,term].filter(Boolean).join(' ');
+    const query=[modelQuery,term].filter(Boolean).join(' ');
     jobs.push({m,s,query,url:s.searchUrlTemplate.replace('{q}',encodeURIComponent(query))});
   };
   // A full pass over models precedes the next core provider, preventing
