@@ -27,25 +27,32 @@ export function europeanMarketplace(label){
  const row=LOCAL_SITES.find(entry=>entry[3].test(site));
  return row?{site:row[0],country:row[1],region:row[2],locationEvidence:'EUROPEAN_MARKETPLACE_NOT_SELLER'}:null;
 }
-const patterns=[
- /(?:€|EUR)\s*([0-9][0-9\s.,]*)/i,
- /(?:PLN|zł)\s*([0-9][0-9\s.,]*)/i,
- /(?:£|GBP)\s*([0-9][0-9\s.,]*)/i,
- /(?:NOK|DKK|SEK|CHF|HUF|CZK|UAH)\s*([0-9][0-9\s.,]*)/i
+const currencyTokens=[
+ ['EUR','(?:€|EUR)'],
+ ['PLN','(?:PLN|zł)'],
+ ['GBP','(?:£|GBP)'],
+ ['NOK','NOK'],['DKK','DKK'],['SEK','SEK'],['CHF','CHF'],
+ ['HUF','HUF'],['CZK','CZK'],['UAH','UAH']
 ];
-const currencyOf=['EUR','PLN','GBP','OTHER'];
+/** The native asking price must be a whole currency amount, never a partial
+ * regex prefix. Both €90 and 90 € are common on EU-localized HiFiShark.
+ * Remove group separators only after capturing the complete amount. */
 export function aggregatorAskingPrice(s){
  const input=String(s||'')
   .replace(/&(?:euro|#8364|#x20ac);?/gi,'€')
   .replace(/&(?:pound|#163|#xa3);?/gi,'£')
   .replace(/&(?:nbsp|#160|#xa0);?/gi,' ')
-  .replace(/&amp;/gi,'&');
- for(let i=0;i<patterns.length;i++){
-  const match=input.match(patterns[i]);
+  .replace(/&amp;/gi,'&').replace(/[\u00a0\u202f]/g,' ');
+ const amount='([0-9]+(?:[\\s.,][0-9]+)*)';
+ for(const [currency,token] of currencyTokens){
+  const head=new RegExp('(?:^|[^A-Za-z0-9])('+token+')\\s*'+amount+'(?![0-9])','i');
+  const tail=new RegExp('(?:^|[^A-Za-z0-9])'+amount+'\\s*('+token+')(?![A-Za-z0-9])','i');
+  const match=input.match(head)||input.match(tail);
   if(!match)continue;
-  const price=toNumber(match[1].trim());
+  const isPrefix=Boolean(input.match(head));
+  const rawAmount=isPrefix?match[2]:match[1];
+  const price=toNumber(rawAmount.trim());
   if(!price)return null;
-  const currency=i===3?match[0].slice(0,3).toUpperCase():currencyOf[i];
   return {originalPrice:price,currency,originalPriceText:match[0].trim()};
  }
  return null;
