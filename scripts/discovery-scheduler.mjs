@@ -30,12 +30,16 @@ export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[]) {
   return jobs;
 }
 
-/** HiFiShark plus daily Polish baseline, with one rotating European outlet slot.
- * Prevents a static budget (e.g. 240 jobs for 48 models) from permanently
- * starving providers placed after the fifth source. Date is UTC and auditable. */
+/** Source rotation based on observed direct-page yield, not the number of search hits.
+ * Last FULL: Marktplaats 23 verified, OLX 0/48 reachable, Allegro 0/48.
+ * HiFiShark is indexed-price research only; Vinted remains Polish discovery.
+ * Prioritize Marktplaats/Subito daily, retain one rotating exploratory slot,
+ * including blocked Polish sources so access recovery remains observable.
+ * This is a transparent fixed policy until adaptive verified-yield statistics exist.
+ */
 export function coreSourceIdsForDate(isoDate) {
-  const baseline=['hifishark','allegro-pl','olx-pl','vinted-pl'];
-  const rotation=['subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
+  const baseline=['hifishark','vinted-pl','marktplaats-nl','subito-it'];
+  const rotation=['allegro-pl','olx-pl','kleinanzeigen-de','mediaexpert-outlet','ebay-de'];
   const day=Math.floor(Date.parse(String(isoDate).slice(0,10)+'T00:00:00Z')/86400000);
   const offset=Number.isFinite(day)?((day%rotation.length)+rotation.length)%rotation.length:0;
   return [...baseline,rotation[offset]];
