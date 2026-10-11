@@ -5,26 +5,26 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-11T22:02:02.254Z",
+  "refreshedAt": "2026-10-11T22:08:14.657Z",
   "mode": "full",
-  "runId": "38178766821",
-  "candidates": 385,
+  "runId": "38179189186",
+  "candidates": 420,
   "verifiedAdditions": 0,
-  "observationChanges": 170,
+  "observationChanges": 205,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 30,
     "directVerified": 15,
-    "accessRestricted": 8,
+    "accessRestricted": 9,
     "ambiguous": 5,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
+      "allegro-pl": 2,
       "olx-pl": 4,
-      "allegro-pl": 1,
       "ebay-pl": 1
     },
     "researchRechecked": 36,
@@ -45,8 +45,8 @@
           "requested": 48,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 35,
-          "errors": 13
+          "restricted": 41,
+          "errors": 7
         },
         "olx-pl": {
           "requested": 48,
@@ -57,12 +57,12 @@
         },
         "vinted-pl": {
           "requested": 48,
-          "reachable": 30,
-          "candidateUrls": 44,
+          "reachable": 29,
+          "candidateUrls": 40,
           "restricted": 18,
-          "errors": 0,
-          "checkedUrls": 44,
-          "unverifiedUrls": 44
+          "errors": 1,
+          "checkedUrls": 40,
+          "unverifiedUrls": 40
         },
         "mediaexpert-outlet": {
           "requested": 0,
@@ -120,11 +120,11 @@
         "hifishark": {
           "requested": 48,
           "reachable": 48,
-          "candidateUrls": 170,
+          "candidateUrls": 205,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 170,
-          "unverifiedUrls": 170
+          "checkedUrls": 205,
+          "unverifiedUrls": 205
         }
       }
     }
