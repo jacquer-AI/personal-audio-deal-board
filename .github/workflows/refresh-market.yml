@@ -1,6 +1,12 @@
 name: Refresh market data
-run-name: Refresh ${{ inputs.mode || 'scheduled' }} · ${{ inputs.categories || 'all' }}
+run-name: Refresh ${{ github.event_name == 'push' && 'deep' || inputs.mode || 'scheduled' }} · ${{ inputs.categories || 'all' }}
 on:
+  # Explicit, audited manual scan request by a main-branch commit to this file.
+  # Data commits never recursively trigger another refresh.
+  push:
+    branches: [main]
+    paths:
+      - 'ops/audio-scan-now.json'
   workflow_dispatch:
     inputs:
       mode:
@@ -30,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      REQUESTED_MODE: ${{ inputs.mode || 'quick' }}
+      REQUESTED_MODE: ${{ github.event_name == 'push' && 'deep' || inputs.mode || 'quick' }}
       REQUESTED_CATEGORIES: ${{ inputs.categories || 'all' }}
       SCHEDULE_EXPR: ${{ github.event.schedule }}
       GH_TOKEN: ${{ github.token }}
