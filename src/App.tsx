@@ -8,7 +8,7 @@ import BuildFreshness from './BuildFreshness';
 import {marketplaces, uniqueWatchModels} from './lib/marketSearch';
 
 const offers = snapshot.offers as Offer[];
-type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;researchFreshness?:string};
+type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string};
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Open', 'Głośniki BT'];
 const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:false, history:false, sort:'b4b'};
 function read() {
@@ -22,6 +22,21 @@ function readDensity() {
 const money = (n: number | null) => n === null ? '—' : new Intl.NumberFormat('pl-PL', {
   style:'currency', currency:'PLN', minimumFractionDigits:0, maximumFractionDigits:2
 }).format(n);
+function ResearchItem({c}: {c:ResearchLead}) {
+  const verified=c.verificationState==='DIRECT_OFFER_VERIFIED'&&Boolean(c.verifiedAt);
+  const pagePrice=verified&&Number.isFinite(c.pricePln??c.price);
+  const isBid=c.priceBasis==='METADATA_MAY_BE_BID'||c.source==='Marktplaats';
+  return <div className={'research-item'+(verified?' seller-checked':' research-unverified')}>
+    <strong>{c.model}</strong>
+    <span>{c.source} · {c.region}{c.condition?' · '+c.condition:''}</span>
+    <span>{verified?'Produkt, cena w metadanych, stan i dostępność odczytane na stronie sprzedawcy':'Niepotwierdzone ogłoszenie lub agregator — wymaga kontroli'}</span>
+    {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> {isBid?'· sygnał ceny z metadanych, możliwa licytacja':'· cena produktu bez dostawy do Polski'}</span>}
+    <span>Kontrola: {(c.verifiedAt||c.lastSeenAt||c.discoveredAt||'').slice(0,10)}
+      {c.researchFreshness==='RECHECK_REQUIRED'?' · wymaga ponownego sprawdzenia':''}
+    </span>
+    <a href={c.url} target="_blank" rel="noopener noreferrer">Otwórz ofertę i sprawdź wysyłkę do Polski ↗</a>
+  </div>;
+}
 // Price position: cheaper offers use a minus sign.
 const pct = percentLabel;
 const countryLabel = (country:string) => country === 'Poland' ? 'Polska' : country;
@@ -86,7 +101,12 @@ export default function App() {
   const products = results(offers, f);
   const liveCount = offers.filter(buyable).length;
   const shownOfferCount = products.reduce((n,p) => n + p.offers.length, 0);
-  const researchLeads = ((research.candidates||[]) as ResearchLead[]).filter(c=>(f.category==='Wszystkie'||c.category===f.category)&&(!f.search.trim()||[c.model,c.source,c.region].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase())));
+  const researchLeads = ((research.candidates||[]) as ResearchLead[])
+    .filter(c=>(f.category==='Wszystkie'||c.category===f.category)&&(!f.search.trim()||[c.model,c.source,c.region].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase())));
+  const verifiedResearch = researchLeads.filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&c.verifiedAt
+    &&Number.isFinite(Date.parse(c.verifiedAt))&&Date.now()-Date.parse(c.verifiedAt)>=0
+    &&Date.now()-Date.parse(c.verifiedAt)<=8*60*60*1000).sort((a,b)=>(a.pricePln??Infinity)-(b.pricePln??Infinity));
+  const unverifiedResearch = researchLeads.filter(c=>!verifiedResearch.includes(c));
   const otherWatchModels = uniqueWatchModels([...new Set(offers.map(o=>o.model))]);
   const watchModels = otherWatchModels.filter(m=>!f.search.trim()||m.toLocaleLowerCase().includes(f.search.toLocaleLowerCase()));
   const compare = group(f.liveOnly?offers.filter(buyable):offers).filter(p => selected.includes(p.model));
@@ -158,18 +178,21 @@ export default function App() {
       </details>
     </section>
     <main id="results" tabIndex={-1}>
-      <div className="results-heading"><span><b>{products.length}</b> {modelCount(products.length)} · <b>{shownOfferCount}</b> zapisanych ofert w widoku</span><small>{liveCount} LIVE / {offers.length} zapisanych · stan arkusza: {snapshot.snapshot}</small>{researchLeads.length>0&&<a href="#research-leads" className="research-jump">{researchLeads.length} dodatkowych ogłoszeń do kontroli ↓</a>}</div>
+      <div className="results-heading"><span><b>{products.length}</b> {modelCount(products.length)} · <b>{shownOfferCount}</b> zapisanych ofert w widoku</span><small>{liveCount} LIVE / {offers.length} zapisanych · stan arkusza: {snapshot.snapshot}</small>{researchLeads.length>0&&<a href="#research-leads" className="research-jump">{researchLeads.length} ogłoszeń · {verifiedResearch.length} po kontroli strony ↓</a>}</div>
       <div className="market-shortcuts" aria-label="Zewnętrzne wyszukiwarki słuchawek"><span>Przeszukaj rynki{f.search.trim()?' — '+f.search.trim():''}:</span>{marketplaces.map(m=><a key={m.id} href={m.url(f.search)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj na '+m.label+': '+(f.search.trim()||'słuchawki')}>{m.label} ↗</a>)}</div>
       <p className="coverage-notice"><b>{liveCount} potwierdzone LIVE.</b> Pozostałe zapisane ogłoszenia i porównania mogą być nieaktualne — wymagają sprawdzenia u sprzedawcy. <button type="button" onClick={()=>change('liveOnly',!f.liveOnly)}>{f.liveOnly?'Pokaż wszystkie zapisane oferty':'Pokaż tylko LIVE'}</button></p>
       <p role="status" className="message">{message}</p>
+      {researchLeads.length>0 && <section id="research-leads" className="research-leads">
+        <h2>Ogłoszenia znalezione na rynku: {researchLeads.length}</h2>
+        <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. Ceny nie obejmują przesyłki do Polski i opłat. Metadane Marktplaats mogą dotyczyć licytacji, a nie ceny „Kup teraz”. <b>To nie są zatwierdzone oferty LIVE.</b></p>
+        {verifiedResearch.length>0&&<div className="research-grid">{verifiedResearch.slice(0,12).map(c=><ResearchItem c={c} key={c.url}/>)}</div>}
+        {verifiedResearch.length===0&&<p>Brak aktualnie potwierdzonych stron sprzedawców. Możesz sprawdzić poniższe ogłoszenia ręcznie.</p>}
+        {(verifiedResearch.length>12||unverifiedResearch.length>0)&&<details className="research-more">
+          <summary>Pokaż pozostałe ogłoszenia ({Math.max(verifiedResearch.length-12,0)+unverifiedResearch.length}) — nie są potwierdzonymi ofertami LIVE</summary>
+          <div className="research-grid">{[...verifiedResearch.slice(12),...unverifiedResearch].map(c=><ResearchItem c={c} key={c.url}/>)}</div>
+        </details>}
+      </section>}
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
-      {researchLeads.length>0 && <details id="research-leads" className="research-leads"><summary>{researchLeads.length} znalezione ogłoszenia do ręcznej kontroli (poza rankingiem LIVE)</summary>
-        <p>Kandydaci z ostatniego skanowania ({research.refreshedAt?.slice(0,10)}). Linki mogą być nieaktualne. Koszt dostawy, kompletność i stan produktu nie zostały potwierdzone, dlatego nie pokazujemy ich jako gotowych okazji.</p>
-        <div className="research-grid">{researchLeads.map(c=><div key={c.url} className="research-item"><strong>{c.model}</strong><span>{c.source} · {c.region} · {c.verificationState==='DIRECT_OFFER_VERIFIED'?'strona produktu odczytana; pełny koszt niepotwierdzony':'bez bezpośredniego potwierdzenia'}</span>
-        {c.verificationState==='DIRECT_OFFER_VERIFIED'&&Number.isFinite(c.pricePln??c.price)&&<span>Cena zapisana: <b>{money(c.pricePln??c.price??null)}</b> · bez dostawy i opłat · nie jest aktualną wyceną końcową</span>}
-        <span>Ostatnie rozpoznanie: {(c.lastSeenAt||c.discoveredAt||research.refreshedAt||'').slice(0,10)}{c.researchFreshness==='RECHECK_REQUIRED'?' · ponowna kontrola potrzebna':''}</span>
-        <a href={c.url} target="_blank" rel="noopener noreferrer" aria-label={'Sprawdź kandydata '+c.model+' w '+c.source}>Sprawdź ogłoszenie ↗</a></div>)}</div>
-      </details>}
       {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Lista obserwacyjna — bez potwierdzonych ogłoszeń w lokalnej bazie i bez fikcyjnych ocen lub cen.</span>
         {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{marketplaces.slice(0,3).map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
       </section>}
