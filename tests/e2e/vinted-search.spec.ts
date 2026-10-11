@@ -28,7 +28,7 @@ test('default view exposes recorded offers and clearly separates leads from LIVE
   await expect(page.locator('.coverage-notice')).toContainText('potwierdzone LIVE');
   await expect(page.getByRole('link',{name:'Szukaj na OLX: słuchawki'}))
     .toHaveAttribute('href','https://www.olx.pl/oferty/q-s%C5%82uchawki/');
-  await expect(page.locator('.research-leads h2')).toContainText('Ogłoszenia znalezione na rynku');
+  await expect(page.locator('.research-leads h2').first()).toContainText('Ogłoszenia znalezione na rynku');
   await expect(page.locator('.research-leads')).toContainText('Priorytet: potwierdzona cena samych słuchawek.');
   await expect(page.locator('.research-leads')).toContainText('Brak kwoty wysyłki nie dyskwalifikuje oferty');
   await expect(page.locator('.research-leads')).toContainText('wysyłki');
