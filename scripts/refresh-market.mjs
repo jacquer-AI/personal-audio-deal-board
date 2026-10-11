@@ -204,7 +204,7 @@ if(mode!=='quick'){
   // ALL models on HiFiShark, Allegro, OLX, Vinted in FULL and DEEP.
   // One European source rotates daily; additional DEEP slots explore more sources.
   const coreSourceIds=coreSourceIdsForDate(now);
-  const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds);
+  const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds,now);
   const discoveryStats=Object.fromEntries(sweepSources.map(s=>[s.id,{requested:0,reachable:0,candidateUrls:0,restricted:0,errors:0}]));
   const discovered=await pool(jobs,async j=>{
     const stat=discoveryStats[j.s.id];
