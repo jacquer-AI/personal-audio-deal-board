@@ -62,23 +62,24 @@ function matchModel(value,model){
  */
 export function discoverEuropeanHifisharkRows(html,model,limit=8){
  const results=[],seen=new Set();
+ const audit={}; const trace=key=>{audit[key]=(audit[key]||0)+1};
  const rows=[...String(html).matchAll(/<a\b([^>]{0,2500})>([\s\S]{0,12000}?)<\/a\s*>/gi)].slice(0,1800);
  for(const rowMatch of rows){
   if(results.length>=limit)break;
   const attrs=rowMatch[1],body=rowMatch[2];
-  if(!/\bsearch-product-row\b/i.test(attrs))continue;
+  if(!/\bsearch-product-row\b/i.test(attrs)){trace('NOT_CARD');continue}
   const raw=attrs.match(/\bhref\s*=\s*["']([^"']+)["']/i)?.[1];
-  if(!raw)continue;
+  if(!raw){trace('NO_HREF');continue}
   let url;
   try{
    url=new URL(raw.replace(/&amp;/g,'&'),'https://www.hifishark.com/').toString();
    const u=new URL(url);
-   if(u.hostname.replace(/^www\./,'')!=='hifishark.com'||!u.pathname.startsWith('/goto/'))continue;
-  }catch{continue}
-  if(seen.has(url))continue;
+   if(u.hostname.replace(/^www\./,'')!=='hifishark.com'||!u.pathname.startsWith('/goto/')){trace('URL_REJECTED');continue}
+  }catch{trace('URL_THROW');continue}
+  if(seen.has(url)){trace('DUPLICATE');continue}
   const itemHtml=body.match(/<span\b[^>]*class=["'][^"']*\bsearch-product-title\b[^"']*["'][^>]*>([\s\S]{0,900}?)(?:<\/span>)/i)?.[1]||'';
   const item=htmlText(itemHtml).trim();
-  if(!item||!matchModel(item,model))continue;
+  if(!item||!matchModel(item,model)){trace('MODEL_NOT_MATCHED');continue}
 
   const siteHtml=body.match(/<div\b[^>]*class=["'][^"']*\bwebsite-grid\b[^"']*["'][^>]*>([\s\S]{0,800}?)<\/div>/i)?.[1]||'';
   const siteText=htmlText(siteHtml).trim();
@@ -89,9 +90,9 @@ export function discoverEuropeanHifisharkRows(html,model,limit=8){
   const flagCountry=flagName?europeCountryFromLabel(flagName):null;
   // The presence of an explicit outside-Europe/unknown country flag must
   // take precedence over a European marketplace domain.
-  if(flagName&&!flagCountry)continue;
+  if(flagName&&!flagCountry){trace('COUNTRY_FLAG_NOT_EU');continue}
   const country=flagCountry||localized?.country;
-  if(!country)continue;
+  if(!country){trace('NO_EU_COUNTRY');continue}
   const region=country==='Polska'?'Polska':
     ['Wielka Brytania','Norwegia','Szwajcaria','Ukraina','Islandia'].includes(country)
       ?'non-EU / TLC':'UE';
@@ -99,12 +100,13 @@ export function discoverEuropeanHifisharkRows(html,model,limit=8){
   const priceSpan=body.match(/<span\b[^>]*class=["'][^"']*\bprice\b[^"']*["'][^>]*>([\s\S]{0,600}?)<\/span>/i)?.[1]||'';
   const priceText=priceSpan.match(/<strong\b[^>]*>([\s\S]{0,140}?)<\/strong>/i)?.[1]||'';
   const price=aggregatorAskingPrice(htmlText(priceText));
-  if(!price)continue;
+  if(!price){trace('PRICE_NOT_PARSED');continue}
   const date=body.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},?\s+20\d{2}\b/i)?.[0]||null;
-  seen.add(url);results.push({url,model:model.model,site:siteText||localized?.site||'HiFiShark',
+  trace('ACCEPTED');seen.add(url);results.push({url,model:model.model,site:siteText||localized?.site||'HiFiShark',
     country,region,locationEvidence:flagCountry?'HIFISHARK_ITEM_COUNTRY_FLAG':'EUROPEAN_MARKETPLACE_NOT_SELLER',
     askingPrice:price.originalPrice,currency:price.currency,askingPriceText:price.originalPriceText,
     aggregatorListedDate:date,source:'HiFiShark',verificationState:'AGGREGATOR_PRICE_ONLY'});
  }
+ if(model?.model==='Beyerdynamic DT 880')console.log('HIFISHARK_PARSER_STAGES',JSON.stringify({rows:rows.length,...audit}));
  return results;
 }
