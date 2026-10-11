@@ -7,6 +7,7 @@ import type {Offer} from '../../src/types';
 const allOffers=snapshot.offers as Offer[];
 const currentOffers=allOffers.filter(buyable);
 const currentModels=[...new Set(currentOffers.map(o=>o.model))];
+const visibleModels=[...new Set(allOffers.filter(o=>o.status!=='HISTORICAL').map(o=>o.model))];
 
 const dispatcher='https://desktop-t47p2au.tail84c6f0.ts.net:8444/audio-refresh';
 const activeRun={id:123,status:'in_progress',conclusion:null,get created_at(){return new Date().toISOString()},get updated_at(){return new Date().toISOString()},html_url:'https://github.com/jacquer-AI/personal-audio-deal-board/actions/runs/123',display_title:'Refresh quick · all'};
