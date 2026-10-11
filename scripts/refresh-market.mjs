@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
-import {modelMatches,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
+import {conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs} from './discovery-scheduler.mjs';
 import {discoverPageLinks} from './sources/discovery-links.mjs';
@@ -118,7 +118,8 @@ async function checkOffer(o){
     return {...stamp,verificationState:v,http:page.http,note:'Refresh: direct page could not be verified automatically.'};
   }
   const meta=modelMeta.get(o.model)||{model:o.model,aliases:[]};
-  const match=modelMatches(page.html,meta);
+  // Verify this item's own title/metadata, never a navigation/sidebar mention.
+  const match=itemTitleMatchesModel(page.html,meta);
   const cond=conditionFrom(parsed,page.html);const stock=available(parsed,page.html);
   const pln=parsed?toPln(parsed.price,parsed.currency,fx):null;
   if(match&&parsed&&pln&&stock===true&&cond===o.condition){
