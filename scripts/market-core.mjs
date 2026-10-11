@@ -181,7 +181,7 @@ export function noopDelta(delta, observationChanges) {
 }
 
 /**
- * Red-team gate before a newly discovered offer may be promoted to LIVE.
+ * Red-team gate for a direct-page-confirmed item's ASKING PRICE (not all-in cost).
  * block=true keeps it out of the dashboard (stays a lead in market-candidates.json).
  */
 export function redTeam(addition, source, peer) {
@@ -192,8 +192,23 @@ export function redTeam(addition, source, peer) {
   if (Number.isFinite(ref) && Number.isFinite(addition.price) && addition.price < ref * 0.4) { flags.push('PRICE_FAR_BELOW_MARKET_CHECK_VARIANT_OR_COUNTERFEIT'); block = true; }
   if (['TWS','Głośniki BT'].includes(addition.category) && addition.condition !== 'NEW') flags.push('BATTERY_HEALTH_UNVERIFIED');
   if (addition.condition !== 'NEW') flags.push('WARRANTY_AND_ACCESSORIES_UNVERIFIED');
-  // No promotion to a purchasable LIVE deal while the final landed cost is unknown.
-  flags.push('SHIPPING_NOT_INCLUDED');
-  block = true;
+  // The user's buying signal is the confirmed ITEM price. Shipping is a visible
+  // limitation, not a promotion blocker. Never present this as an all-in quote.
+  if (addition.shippingToPoland === 'PL_EXPLICITLY_EXCLUDED')
+    flags.push('PL_SHIPPING_EXCLUDED');
+  else if (addition.shippingToPoland !== 'PL_RATE_ADVERTISED')
+    flags.push('PL_SHIPPING_COST_UNKNOWN');
+  flags.push('PRICE_EXCLUDES_SHIPPING_AND_FEES');
+  // Marketplace metadata may be a bid or an invitation to negotiate, not
+  // the seller's fixed asking price. Keep those candidates research-only.
+  if (addition.priceBasis !== 'SELLER_PAGE_PRICE') {
+    flags.push('FIXED_ITEM_PRICE_NOT_CONFIRMED');
+    block = true;
+  }
+  if (addition.refresh?.verificationState !== 'DIRECT_OFFER_VERIFIED' ||
+      addition.refresh?.http !== 200 || !Number.isFinite(addition.price) || addition.price <= 0) {
+    flags.push('EXACT_SELLER_PRICE_EVIDENCE_MISSING');
+    block = true;
+  }
   return { block, flags };
 }
