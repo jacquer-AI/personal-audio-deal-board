@@ -133,7 +133,7 @@ export default function App() {
   }
   function product(p: Product, i: number) {
     const o = p.best;
-    return <article key={p.model} className="product" data-testid="product">
+    return <article key={p.model} className="product" data-testid="product" data-price-pln={o.price??undefined}>
       <header className="product-header">
         <span className="rank">#{i + 1}</span><h2>{p.model}</h2>
         <span className="product-meta">{o.category} · <b aria-label={'Jakość ' + o.quality}>{(o.quality==='UNRATED'?'—':o.quality.replace('-', '−'))}</b></span>
