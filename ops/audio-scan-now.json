@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-recovery-2026-10-11-deep-02-source-priority",
-  "mode": "deep",
+  "requestId": "audio-candidate-recheck-2026-10-11-quick-01",
+  "mode": "quick",
   "categories": "all",
-  "purpose": "Second real DEEP scan: high-yield market sources guaranteed for each of 32 models; 320 query budget and round-robin candidate verification",
+  "purpose": "E2E verify saved research listings on real seller pages, downgrade blocked/sold/misidentified candidates, validate auction metadata semantics, and publish newest Pages snapshot",
   "requestedOn": "2026-10-11"
 }
