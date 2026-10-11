@@ -9,7 +9,7 @@ const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
 const mode=(arg('mode',process.env.REFRESH_MODE||'quick')||'quick').toLowerCase();
 if(!['quick','full','deep'].includes(mode))throw new Error('mode must be quick|full|deep');
-const CATEGORIES=['IEM','TWS','Closed','Głośniki BT'];
+const CATEGORIES=['IEM','TWS','Closed','Open','Głośniki BT'];
 const categoryArg=arg('categories',process.env.REFRESH_CATEGORIES||'all');
 if(categoryArg!=='all'&&!categoryArg.split(',').every(c=>CATEGORIES.includes(c.trim())))throw new Error('invalid categories');
 const selectedCategories=categoryArg==='all'?null:new Set(categoryArg.split(',').map(x=>x.trim()));
@@ -17,7 +17,7 @@ const runId=process.env.GITHUB_RUN_ID||('local-'+Date.now());
 const now=new Date().toISOString();
 const TIMEOUT=Number(process.env.REFRESH_TIMEOUT_MS||12000);
 const CONCURRENCY=Math.max(1,Math.min(6,Number(process.env.REFRESH_CONCURRENCY||4)));
-const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(240,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?140:60))));
+const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(320,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?240:120))));
 const DEADLINE=Date.now()+Number(process.env.REFRESH_DEADLINE_MS||20*60*1000);
 const DRY=process.env.REFRESH_DRY==='1';
 
