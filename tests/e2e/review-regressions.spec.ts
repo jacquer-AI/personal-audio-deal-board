@@ -82,6 +82,11 @@ test('closing dialog preserves polling and failed private network can use the ex
   await page.route(dispatcher+'/status',route=>route.abort());
   const cors={'access-control-allow-origin':'*','access-control-allow-headers':'*','access-control-allow-methods':'*'};
   let publicRunChecks=0;
+  await page.route('https://api.github.com/**/actions/runs?per_page=20',route=>{
+    if(route.request().method()==='OPTIONS')return route.fulfill({status:204,headers:cors});
+    return route.fulfill({status:200,contentType:'application/json',headers:cors,
+      body:JSON.stringify({workflow_runs:[{...activeRun,event:'workflow_dispatch',display_title:'Refresh quick · all',created_at:new Date().toISOString()}]})});
+  });
   await page.route('https://api.github.com/**/actions/runs/123',route=>{
     if(route.request().method()==='OPTIONS')return route.fulfill({status:204,headers:cors});
     publicRunChecks++;
