@@ -1,5 +1,6 @@
 import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
+import research from '../data/market-candidates.json';
 import type {Offer, Filters, Product, Status} from './types';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable, percentLabel, modelCount} from './lib/board';
 import RefreshCenter from './RefreshCenter';
@@ -84,6 +85,7 @@ export default function App() {
   const products = results(offers, f);
   const liveCount = offers.filter(buyable).length;
   const shownOfferCount = products.reduce((n,p) => n + p.offers.length, 0);
+  const researchLeads = (research.candidates||[]).filter(c=>(f.category==='Wszystkie'||c.category===f.category)&&(!f.search.trim()||[c.model,c.source,c.region].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase())));
   const otherWatchModels = uniqueWatchModels([...new Set(offers.map(o=>o.model))]);
   const watchModels = otherWatchModels.filter(m=>!f.search.trim()||m.toLocaleLowerCase().includes(f.search.toLocaleLowerCase()));
   const compare = group(f.liveOnly?offers.filter(buyable):offers).filter(p => selected.includes(p.model));
@@ -160,6 +162,10 @@ export default function App() {
       <p className="coverage-notice"><b>{liveCount} potwierdzone LIVE.</b> Pozostałe zapisane ogłoszenia i porównania mogą być nieaktualne — wymagają sprawdzenia u sprzedawcy. <button type="button" onClick={()=>change('liveOnly',!f.liveOnly)}>{f.liveOnly?'Pokaż wszystkie zapisane oferty':'Pokaż tylko LIVE'}</button></p>
       <p role="status" className="message">{message}</p>
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
+      {researchLeads.length>0 && <details className="research-leads"><summary>{researchLeads.length} znalezione ogłoszenia do ręcznej kontroli (poza rankingiem LIVE)</summary>
+        <p>Kandydaci z ostatniego skanowania ({research.refreshedAt?.slice(0,10)}). Linki mogą być nieaktualne. Koszt dostawy, kompletność i stan produktu nie zostały potwierdzone, dlatego nie pokazujemy ich jako gotowych okazji.</p>
+        <div className="research-grid">{researchLeads.map(c=><div key={c.url} className="research-item"><strong>{c.model}</strong><span>{c.source} · {c.region} · {c.verificationState==='DIRECT_OFFER_VERIFIED'?'strona produktu odczytana; pełny koszt niepotwierdzony':'bez bezpośredniego potwierdzenia'}</span><a href={c.url} target="_blank" rel="noopener noreferrer" aria-label={'Sprawdź kandydata '+c.model+' w '+c.source}>Sprawdź ogłoszenie ↗</a></div>)}</div>
+      </details>}
       {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Lista obserwacyjna — bez potwierdzonych ogłoszeń w lokalnej bazie i bez fikcyjnych ocen lub cen.</span>
         {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{marketplaces.slice(0,3).map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
       </section>}
