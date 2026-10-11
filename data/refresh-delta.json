@@ -1,24 +1,16 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
   "stale": 0,
-  "changes": [
-    {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9310.38,
-      "to": 9323.99,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    }
-  ],
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-11T19:52:48.828Z",
-  "mode": "deep",
-  "runId": "38169852206",
-  "candidates": 205,
+  "refreshedAt": "2026-10-11T20:05:07.025Z",
+  "mode": "full",
+  "runId": "38170698992",
+  "candidates": 206,
   "verifiedAdditions": 0,
-  "observationChanges": 84,
+  "observationChanges": 9,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 20,
@@ -36,44 +28,45 @@
       "ebay-pl": 1
     },
     "researchRechecked": 33,
-    "researchReverified": 33,
+    "researchReverified": 29,
+    "researchDowngraded": 4,
     "discovery": {
-      "plannedJobs": 320,
+      "plannedJobs": 240,
       "coreSources": [
         "allegro-pl",
         "olx-pl",
         "mediaexpert-outlet",
         "vinted-pl",
-        "kleinanzeigen-de",
         "subito-it",
         "marktplaats-nl",
+        "kleinanzeigen-de",
         "hifishark"
       ],
-      "plannedSources": 19,
-      "reachableSources": 10,
+      "plannedSources": 10,
+      "reachableSources": 5,
       "sources": {
         "allegro-pl": {
           "requested": 32,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 27,
-          "errors": 5
+          "restricted": 30,
+          "errors": 2
         },
         "olx-pl": {
           "requested": 32,
-          "reachable": 0,
+          "reachable": 1,
           "candidateUrls": 0,
-          "restricted": 32,
+          "restricted": 31,
           "errors": 0
         },
         "vinted-pl": {
           "requested": 32,
           "reachable": 30,
-          "candidateUrls": 46,
+          "candidateUrls": 44,
           "restricted": 2,
           "errors": 0,
-          "checkedUrls": 46,
-          "unverifiedUrls": 46
+          "checkedUrls": 44,
+          "unverifiedUrls": 44
         },
         "mediaexpert-outlet": {
           "requested": 32,
@@ -92,12 +85,12 @@
         "marktplaats-nl": {
           "requested": 32,
           "reachable": 32,
-          "candidateUrls": 22,
+          "candidateUrls": 21,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 22,
-          "verifiedUrls": 20,
-          "unverifiedUrls": 2
+          "checkedUrls": 21,
+          "verifiedUrls": 16,
+          "unverifiedUrls": 5
         },
         "subito-it": {
           "requested": 32,
@@ -106,92 +99,28 @@
           "restricted": 0,
           "errors": 0,
           "checkedUrls": 13,
-          "verifiedUrls": 13
+          "unverifiedUrls": 1,
+          "verifiedUrls": 12
         },
         "wallapop-es": {
-          "requested": 8,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 8,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 32,
-          "reachable": 32,
-          "candidateUrls": 56,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 56,
-          "unverifiedUrls": 56
-        },
-        "geizhals": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "tweakers": {
-          "requested": 7,
-          "reachable": 7,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "tophifi-outlet": {
           "requested": 6,
           "reachable": 0,
           "candidateUrls": 0,
           "restricted": 6,
           "errors": 0
         },
-        "ebay-uk": {
+        "amazon-de-resale": {
+          "requested": 5,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 5
+        },
+        "ebay-de": {
           "requested": 5,
           "reachable": 0,
           "candidateUrls": 0,
           "restricted": 5,
-          "errors": 0
-        },
-        "ceneo-pl": {
-          "requested": 4,
-          "reachable": 4,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "allegro-lokalnie": {
-          "requested": 4,
-          "reachable": 4,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "headfi-classifieds": {
-          "requested": 4,
-          "reachable": 4,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "idealo-de": {
-          "requested": 4,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 4,
           "errors": 0
         }
       }
