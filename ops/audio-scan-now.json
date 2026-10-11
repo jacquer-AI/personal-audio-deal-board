@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-candidate-recheck-2026-10-11-quick-01",
+  "requestId": "audio-shipping-nbp-20261011-01",
   "mode": "quick",
   "categories": "all",
-  "purpose": "E2E verify saved research listings on real seller pages, downgrade blocked/sold/misidentified candidates, validate auction metadata semantics, and publish newest Pages snapshot",
+  "purpose": "Live E2E audit seller shippingDetails for destination PL and official NBP exchange rates; recheck all 33 previously verified seller candidates and publish transparency",
   "requestedOn": "2026-10-11"
 }
