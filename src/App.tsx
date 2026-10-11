@@ -8,7 +8,7 @@ import BuildFreshness from './BuildFreshness';
 import {marketplaces, uniqueWatchModels} from './lib/marketSearch';
 
 const offers = snapshot.offers as Offer[];
-type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string};
+type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string;originalPrice?:number;currency?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Open', 'Głośniki BT'];
 const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:false, history:false, sort:'b4b'};
 function read() {
@@ -26,11 +26,21 @@ function ResearchItem({c}: {c:ResearchLead}) {
   const verified=c.verificationState==='DIRECT_OFFER_VERIFIED'&&Boolean(c.verifiedAt);
   const pagePrice=verified&&Number.isFinite(c.pricePln??c.price);
   const isBid=c.priceBasis==='METADATA_MAY_BE_BID'||c.source==='Marktplaats';
+  const rateKnown=verified&&c.shippingToPoland==='PL_RATE_ADVERTISED'&&c.shippingRate!=null;
+  const excluded=verified&&c.shippingToPoland==='PL_EXPLICITLY_EXCLUDED';
   return <div className={'research-item'+(verified?' seller-checked':' research-unverified')}>
     <strong>{c.model}</strong>
     <span>{c.source} · {c.region}{c.condition?' · '+c.condition:''}</span>
     <span>{verified?'Produkt, cena w metadanych, stan i dostępność odczytane na stronie sprzedawcy':'Niepotwierdzone ogłoszenie lub agregator — wymaga kontroli'}</span>
-    {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> {isBid?'· sygnał ceny z metadanych, możliwa licytacja':'· cena produktu bez dostawy do Polski'}</span>}
+    {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> {isBid?'· sygnał ceny z metadanych, możliwa licytacja':'· cena produktu bez dostawy do Polski'}
+      {c.originalPrice!=null&&c.currency&&' · '+c.originalPrice+' '+c.currency}
+      {c.fxSource==='NBP_TABLE_A'&&c.fxEffectiveDate?' · kurs NBP '+c.fxEffectiveDate:' · kurs orientacyjny, nieaktualny dla płatności'}</span>}
+    {rateKnown&&<span>Deklarowana dostawa do Polski: <b>{c.shippingRate} {c.shippingCurrency}</b>
+      {c.shippingRatePln!=null&&' ('+money(c.shippingRatePln)+')'}
+      {c.itemPlusShippingPln!=null&&<b> · towar + podana dostawa od {money(c.itemPlusShippingPln)}</b>}
+      {' · bez prowizji, opłat transakcyjnych i potwierdzenia przy kasie'}</span>}
+    {excluded&&<span>Sprzedawca wyklucza dostawę do Polski według danych oferty.</span>}
+    {verified&&!rateKnown&&!excluded&&<span>Dostawa do Polski: brak potwierdzonej kwoty i możliwości wysyłki.</span>}
     <span>Kontrola: {(c.verifiedAt||c.lastSeenAt||c.discoveredAt||'').slice(0,10)}
       {c.researchFreshness==='RECHECK_REQUIRED'?' · wymaga ponownego sprawdzenia':''}
     </span>
@@ -185,7 +195,7 @@ export default function App() {
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
       {researchLeads.length>0 && <section id="research-leads" className="research-leads">
         <h2>Ogłoszenia znalezione na rynku: {researchLeads.length}</h2>
-        <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. Ceny nie obejmują przesyłki do Polski i opłat. Metadane Marktplaats mogą dotyczyć licytacji, a nie ceny „Kup teraz”. <b>To nie są zatwierdzone oferty LIVE.</b></p>
+        <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. Weryfikujemy także zapisane warunki przesyłki do Polski, ale dane sprzedawcy nie zastępują wyceny w kasie. Metadane Marktplaats mogą dotyczyć licytacji, a nie ceny „Kup teraz”. <b>To nie są zatwierdzone oferty LIVE.</b></p>
         {verifiedResearch.length>0&&<div className="research-grid">{verifiedResearch.slice(0,12).map(c=><ResearchItem c={c} key={c.url}/>)}</div>}
         {verifiedResearch.length===0&&<p>Brak aktualnie potwierdzonych stron sprzedawców. Możesz sprawdzić poniższe ogłoszenia ręcznie.</p>}
         {(verifiedResearch.length>12||unverifiedResearch.length>0)&&<details className="research-more">
