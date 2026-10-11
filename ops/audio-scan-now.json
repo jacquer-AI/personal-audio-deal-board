@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "requestId": "audio-recovery-2026-10-11-deep-01",
+  "mode": "deep",
+  "categories": "all",
+  "purpose": "First real 32-model discovery scan after item-anchor ingestion repair; retain cumulative unverified leads and strict LIVE gating",
+  "requestedOn": "2026-10-11"
+}
