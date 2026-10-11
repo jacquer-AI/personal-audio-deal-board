@@ -28,10 +28,12 @@ test('default view exposes recorded offers and clearly separates leads from LIVE
   await expect(page.locator('.coverage-notice')).toContainText('potwierdzone LIVE');
   await expect(page.getByRole('link',{name:'Szukaj na OLX: słuchawki'}))
     .toHaveAttribute('href','https://www.olx.pl/oferty/q-s%C5%82uchawki/');
-  await page.locator('.research-leads > summary').click();
-  await expect(page.locator('.research-item').first()).toBeVisible();
-  await expect(page.locator('.research-leads')).toContainText('poza rankingiem LIVE');
-  await expect(page.locator('.research-leads')).toContainText('Koszt dostawy');
+  await expect(page.locator('.research-leads h2')).toContainText('Ogłoszenia znalezione na rynku');
+  await expect(page.locator('.research-leads')).toContainText('To nie są zatwierdzone oferty LIVE.');
+  await expect(page.locator('.research-leads')).toContainText('przesyłki do Polski');
+  const items=page.locator('.research-item');
+  if(!(await items.first().isVisible()))await page.locator('.research-more > summary').click();
+  await expect(items.first()).toBeVisible();
   await page.getByRole('button',{name:/Pokaż \d+ dodatkowych modeli/}).click();
   await expect(page.locator('.watchlist')).toContainText('Etymotic ER4P');
   await expect(page.locator('.watchlist')).toContainText('Sony MDR-SA5000');
