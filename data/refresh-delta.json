@@ -5,9 +5,9 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-11T21:44:24.167Z",
+  "refreshedAt": "2026-10-11T21:48:02.448Z",
   "mode": "full",
-  "runId": "38177595441",
+  "runId": "38177837902",
   "candidates": 215,
   "verifiedAdditions": 0,
   "observationChanges": 1,
@@ -15,16 +15,16 @@
   "receipt": {
     "directUrlsAttempted": 30,
     "directVerified": 15,
-    "accessRestricted": 10,
+    "accessRestricted": 9,
     "ambiguous": 5,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
       "olx-pl": 4,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchRechecked": 36,
@@ -45,8 +45,8 @@
           "requested": 48,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 41,
-          "errors": 7
+          "restricted": 42,
+          "errors": 6
         },
         "olx-pl": {
           "requested": 48,
