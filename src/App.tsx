@@ -5,12 +5,13 @@ import type {Offer, Filters, Product} from './types';
 import {conditionLabel, offerStatusLabel} from './lib/offerLabels';
 import {europeanOffer, europeanResearch} from './lib/europeScope';
 import {results, group, b4b, discount, savings, decision, selectCompare, buyable, percentLabel, modelCount} from './lib/board';
+import {sortResearch, researchSortExplanation, pricePln} from './lib/researchSort';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
 import {marketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
 
 const offers = (snapshot.offers as Offer[]).filter(europeanOffer);
-type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string|null;originalPrice?:number;currency?:string;sourceId?:string;country?:string;locationEvidence?:string;originSource?:string;originUrl?:string;aggregatorListedDate?:string|null;originalPriceText?:string;askingPriceText?:string;lastVerificationFailure?:string;priceEvidenceVersion?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
+type ResearchLead = {model:string;category:string;source:string;region:string;url:string;quality?:string;fit?:number|null;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string|null;originalPrice?:number;currency?:string;sourceId?:string;country?:string;locationEvidence?:string;originSource?:string;originUrl?:string;aggregatorListedDate?:string|null;originalPriceText?:string;askingPriceText?:string;lastVerificationFailure?:string;priceEvidenceVersion?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Open', 'Głośniki BT'];
 const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:false, history:false, sort:'b4b'};
 function read() {
@@ -33,7 +34,7 @@ function ResearchItem({c}: {c:ResearchLead}) {
   const rateKnown=verified&&c.shippingToPoland==='PL_RATE_ADVERTISED'&&c.shippingRate!=null;
   const excluded=verified&&c.shippingToPoland==='PL_EXPLICITLY_EXCLUDED';
   const inLive=verified&&offers.some(o=>o.url===c.url&&buyable(o));
-  return <div className={'research-item'+((verified||directPriceOnly||aggregatorPrice)?' seller-checked':' research-unverified')}>
+  return <div data-testid="research-lead" data-price-pln={pricePln(c)??undefined} className={'research-item'+((verified||directPriceOnly||aggregatorPrice)?' seller-checked':' research-unverified')}>
     <strong>{c.model}</strong>
     <span>{c.originSource?c.originSource+' → ':''}{c.source} · {c.country||c.region} · <b>Stan: {conditionLabel(c.condition)}</b></span>
     <span>{inLive?'CENA PRODUKTU POTWIERDZONA · LIVE (bez kosztu wysyłki)':verified?'Cena produktu, stan i dostępność odczytane na stronie sprzedawcy; '+(isBid?'kwota może być licytacją':'cena bez kosztów dostawy'):directPriceOnly?'CENA ODCZYTANA U SPRZEDAWCY · dostępność niepotwierdzona':aggregatorPrice?'CENA Z HIFISHARK · cena i dostępność u sprzedawcy niepotwierdzone':'Niepotwierdzone ogłoszenie — wymaga kontroli'}</span>
@@ -118,12 +119,11 @@ export default function App() {
     .filter(europeanResearch)
     .filter(c=>c.verificationState!=='AGGREGATOR_PRICE_ONLY'||c.priceEvidenceVersion==='HIFISHARK_CARD_PRICE_V2')
     .filter(c=>(f.category==='Wszystkie'||c.category===f.category)&&(!f.search.trim()||[c.model,c.source,c.region].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase())));
-  const verifiedResearch = researchLeads.filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&c.verifiedAt
+  const verifiedResearch = sortResearch(researchLeads.filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&c.verifiedAt
     &&Number.isFinite(Date.parse(c.verifiedAt))&&Date.now()-Date.parse(c.verifiedAt)>=0
-    &&Date.now()-Date.parse(c.verifiedAt)<=8*60*60*1000).sort((a,b)=>(a.pricePln??Infinity)-(b.pricePln??Infinity));
-  const aggregatorResearch = researchLeads.filter(c=>c.verificationState==='AGGREGATOR_PRICE_ONLY'&&c.priceEvidenceVersion==='HIFISHARK_CARD_PRICE_V2'&&Boolean(c.askingPriceText))
-    .sort((a,b)=>(a.pricePln??Infinity)-(b.pricePln??Infinity));
-  const unverifiedResearch = researchLeads.filter(c=>!verifiedResearch.includes(c)&&!aggregatorResearch.includes(c));
+    &&Date.now()-Date.parse(c.verifiedAt)<=8*60*60*1000), f.sort);
+  const aggregatorResearch = sortResearch(researchLeads.filter(c=>c.verificationState==='AGGREGATOR_PRICE_ONLY'&&c.priceEvidenceVersion==='HIFISHARK_CARD_PRICE_V2'&&Boolean(c.askingPriceText)),f.sort);
+  const unverifiedResearch = sortResearch(researchLeads.filter(c=>!verifiedResearch.includes(c)&&!aggregatorResearch.includes(c)),f.sort);
   const otherWatchModels = uniqueWatchModels([...new Set(offers.map(o=>o.model))]);
   const watchModels = otherWatchModels.filter(m=>!f.search.trim()||m.toLocaleLowerCase().includes(f.search.toLocaleLowerCase()));
   const compare = group(f.liveOnly?offers.filter(buyable):offers).filter(p => selected.includes(p.model));
@@ -170,7 +170,7 @@ export default function App() {
         <option value="Wszystkie">Region: wszystkie</option><option>Polska</option><option>UE</option><option>non-EU / TLC</option>
       </select>
       <select className="sort-control" aria-label="Sortuj" value={f.sort} onChange={e => change('sort', e.target.value)}>
-        <option value="b4b">B4B ↓</option><option value="discount">vs stan ↓</option><option value="savings">vs nowe ↓</option><option value="price">Cena ↑</option><option value="quality">Jakość ↓</option><option value="fit">Fit ↓</option>
+        <option value="b4b">B4B ↓</option><option value="discount">vs stan ↓</option><option value="savings">vs nowe ↓</option><option value="price">Cena ↑</option><option value="price_desc">Cena ↓</option><option value="quality">Jakość ↓</option><option value="fit">Fit ↓</option><option value="model">Model A–Z</option>
       </select>
       <details className="more-filters" ref={filters} onKeyDown={e => {
         if (e.key === 'Escape') { e.currentTarget.open = false; e.currentTarget.querySelector('summary')?.focus(); }
@@ -202,6 +202,14 @@ export default function App() {
       {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
       {researchLeads.length>0 && <section id="research-leads" className="research-leads">
         <h2>Ogłoszenia znalezione na rynku: {researchLeads.length}</h2>
+        <label className="research-sort-label">Sortowanie ogłoszeń
+          <select aria-label="Sortuj ogłoszenia" value={f.sort} onChange={e=>change('sort',e.target.value)}>
+            <option value="price">Cena ↑</option><option value="price_desc">Cena ↓</option><option value="model">Model A–Z</option>
+            <option value="b4b">B4B ↓ (tylko oferty LIVE)</option><option value="discount">vs stan ↓</option><option value="savings">vs nowe ↓</option>
+            <option value="quality">Jakość ↓</option><option value="fit">Fit ↓</option>
+          </select>
+        </label>
+        <p className="research-sort-note" role="status">{researchSortExplanation(f.sort)}</p>
         <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach oraz <b>{aggregatorResearch.length}</b> cen z HiFiShark (niepotwierdzonych u sprzedawcy). <b>Priorytet: potwierdzona cena samych słuchawek.</b> Brak kwoty wysyłki nie dyskwalifikuje oferty; cena nie zawiera wysyłki, prowizji ani innych opłat. Metadane Marktplaats mogą być licytacją, więc nie oznaczają stałej ceny zakupu. <b>LIVE to tylko pozycje, które przeszły weryfikację konkretnej strony, modelu, ceny, stanu i dostępności.</b></p>
         {verifiedResearch.length>0&&<div className="research-grid">{verifiedResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div>}
         {aggregatorResearch.length>0&&<><h2>Ceny z HiFiShark: {aggregatorResearch.length} — bez potwierdzenia u sprzedawcy</h2><div className="research-grid">{aggregatorResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div></>}
