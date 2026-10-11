@@ -9,6 +9,7 @@ import {mergeResearchCandidates} from './research-ledger.mjs';
 import {shippingEvidencePoland} from './shipping-evidence.mjs';
 import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
 import {geographicEvidence} from './sources/europe-scope.mjs';
+import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -213,8 +214,18 @@ if(mode!=='quick'){
     else if([401,403,429,451].includes(p.http))stat.restricted++;
     else stat.errors++;
     if(p.http<200||p.http>=400)return [];
-    const links=discoverPageLinks(p.html,p.url,j.s,j.m,known,8);
-    const found=links.map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.id==='hifishark'?'EUROPE_UNCONFIRMED':j.s.region,url,query:j.query,discoveredAt:now,status:'LEAD ONLY',evidence:'ITEM_URL_OR_ANCHOR'}));
+    // HiFiShark indexes asking prices and the origin marketplace; capture both
+    // at item-row level. These amounts are not a seller-price check or live stock.
+    const found=j.s.id==='hifishark'
+      ?discoverEuropeanHifisharkRows(p.html,j.m,8)
+        .filter(x=>!known.has(x.url))
+        .map(x=>({...x,category:j.m.category,quality:j.m.quality,fit:j.m.fit,
+          sourceId:j.s.id,source:j.s.name,query:j.query,discoveredAt:now,
+          status:'AGGREGATOR PRICE ONLY',evidence:'HIFISHARK_ITEM_ROW_PRICE'}))
+      :discoverPageLinks(p.html,p.url,j.s,j.m,known,8)
+        .map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,
+          fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,
+          query:j.query,discoveredAt:now,status:'LEAD ONLY',evidence:'ITEM_URL_OR_ANCHOR'}));
     stat.candidateUrls+=found.length;
     return found;
   });
@@ -252,9 +263,22 @@ if(mode!=='quick'){
       stat.unverifiedUrls=(stat.unverifiedUrls||0)+1;
       observe({...observation,http,result:'SEARCH_REJECT_'+reason});
       if(!retain)return null;
-      return {candidate:{...c,status:'UNVERIFIED LEAD',verificationState:reason,
-        verifiedAt:null,http,price:null,currency:null,availability:null,
-        redTeam:['NOT_VERIFIED','NO_LANDED_COST']},addition:null};
+      // Preserve HiFiShark's publicly indexed asking price and EUR seller
+      // marketplace as research evidence, even if the redirect returns 403.
+      // Never convert it into a LIVE price or imply current availability.
+      const indexed=c.askingPrice>0&&c.currency;
+      const candidate={...c,status:indexed?'AGGREGATOR PRICE ONLY':'UNVERIFIED LEAD',
+        verificationState:indexed?'AGGREGATOR_PRICE_ONLY':reason,
+        lastVerificationFailure:reason,verifiedAt:null,http,availability:null,
+        redTeam:['SELLER_NOT_VERIFIED','AVAILABILITY_UNKNOWN','SHIPPING_UNKNOWN']};
+      if(indexed){
+        candidate.originalPrice=c.askingPrice;
+        candidate.pricePln=toPln(c.askingPrice,c.currency,fx);
+        candidate.priceBasis='AGGREGATOR_INDEXED_ASK';
+        candidate.fxSource=fxSource;
+        candidate.fxEffectiveDate=fxEffectiveDate;
+      }
+      return {candidate,addition:null};
     };
     if(!source||!meta||isListingUrl(c.url)||!isPlausibleOfferLink(c.url,source))
       return reject('NOT_DIRECT_OR_MODEL');
