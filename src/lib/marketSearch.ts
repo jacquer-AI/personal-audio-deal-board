@@ -3,6 +3,7 @@ import registry from '../../config/model-registry.json';
 
 /** Marketplace entry points are discovery links, never verified inventory. */
 export const marketplaces = [
+  {id:'hifishark', label:'HiFiShark', url:(q:string)=>'https://www.hifishark.com/search?q='+encodeURIComponent(q.trim()||'headphones')},
   {id:'vinted', label:'Vinted', url:(q:string)=>vintedSearchUrl(q)},
   {id:'olx', label:'OLX', url:(q:string)=>'https://www.olx.pl/oferty/q-'+encodeURIComponent(q.trim()||'słuchawki')+'/'},
   {id:'allegro', label:'Allegro', url:(q:string)=>'https://allegro.pl/listing?string='+encodeURIComponent(q.trim()||'słuchawki')},
