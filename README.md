@@ -124,3 +124,14 @@ Neither implies a new verified offer. Promotion remains subject to direct-page v
 As of the last pre-change FULL on 2026-10-08, 2/20 direct URLs were verified and 11 blocked
 automated access. The registry lists 31 sources, of which 23 offer discovery URLs; this is
 configuration breadth, not 31 confirmed/live marketplace integrations.
+
+## Market breadth repair (2026-10-11)
+
+- **32 model families** are searched in the model registry (including IEM, TWS, Closed, Open and Bluetooth speakers). The 16 newly added headphone families have `quality: UNRATED` and `fit: null`; no performance claims, price benchmark, or B4B are invented.
+- The dashboard defaults to the **complete saved non-historical offer set** rather than the small LIVE subset. The previous browser preference is migrated safely to the new `audio-board-v2` key. The LIVE switch remains available and strict.
+- Visible counts distinguish `LIVE` offers (same direct seller verification and freshness requirements) from historical / stale / unverified **saved** offers.
+- Five direct external searches (Vinted PL, OLX, Allegro, eBay DE, Kleinanzeigen) are links, **not evidence of individual listings**. Unscored research models are clearly segregated.
+- `data/market-candidates.json` is rendered as research only. The scan may retain model-matched direct marketplace URLs in `UNVERIFIED LEAD` state when a source blocks automation or lacks structured price/stock. It never promotes such URLs to LIVE.
+- A direct-page check that finds model, price and stock but cannot verify a final delivered-to-Poland cost remains a **research candidate**. The market engine's delivery-cost gate remains fail-closed; a discovered seller URL alone is not an actionable buy.
+- FULL/DEEP plans now target up to 120/240 model-source queries respectively. Coverage counts depend on accessible sites; anti-bot HTTP 403, no structured listing, or an inaccessible marketplace can still prevent live inventory ingestion.
+- Updates to the model registry and market search require both unit and browser tests. A successful CI run proves the app builds and its static behavior, **not that a scheduled deep scan or production publication happened**.
