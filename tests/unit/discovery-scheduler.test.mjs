@@ -60,13 +60,13 @@ describe('prioritized all-model discovery',()=>{
 describe('48 model daily rotation makes foreign providers reachable under the 240-job limit',()=>{
   it('gives every model the three daily baselines and alternates all five extra sources',()=>{
     const models48=Array.from({length:48},(_,i)=>({model:'Audio '+i}));
-    const ids=['allegro-pl','olx-pl','vinted-pl','subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
+    const ids=['hifishark','allegro-pl','olx-pl','vinted-pl','subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
     const available=ids.map(id=>({id,queryTerms:[],searchUrlTemplate:'https://site.example/?q={q}'}));
     const encountered=new Set();
     for(let d=11;d<16;d++){
       const core=coreSourceIdsForDate('2026-10-'+d);
       expect(core).toHaveLength(5);
-      expect(core.slice(0,3)).toEqual(ids.slice(0,3));
+      expect(core.slice(0,4)).toEqual(['hifishark','allegro-pl','olx-pl','vinted-pl']);
       core.forEach(x=>encountered.add(x));
       const jobs=planDiscoveryJobs(models48,available,240,core);
       expect(jobs).toHaveLength(240);
