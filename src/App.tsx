@@ -182,6 +182,7 @@ export default function App() {
       <div className="market-shortcuts" aria-label="Zewnętrzne wyszukiwarki słuchawek"><span>Przeszukaj rynki{f.search.trim()?' — '+f.search.trim():''}:</span>{marketplaces.map(m=><a key={m.id} href={m.url(f.search)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj na '+m.label+': '+(f.search.trim()||'słuchawki')}>{m.label} ↗</a>)}</div>
       <p className="coverage-notice"><b>{liveCount} potwierdzone LIVE.</b> Pozostałe zapisane ogłoszenia i porównania mogą być nieaktualne — wymagają sprawdzenia u sprzedawcy. <button type="button" onClick={()=>change('liveOnly',!f.liveOnly)}>{f.liveOnly?'Pokaż wszystkie zapisane oferty':'Pokaż tylko LIVE'}</button></p>
       <p role="status" className="message">{message}</p>
+      {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
       {researchLeads.length>0 && <section id="research-leads" className="research-leads">
         <h2>Ogłoszenia znalezione na rynku: {researchLeads.length}</h2>
         <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. Ceny nie obejmują przesyłki do Polski i opłat. Metadane Marktplaats mogą dotyczyć licytacji, a nie ceny „Kup teraz”. <b>To nie są zatwierdzone oferty LIVE.</b></p>
@@ -192,7 +193,6 @@ export default function App() {
           <div className="research-grid">{[...verifiedResearch.slice(12),...unverifiedResearch].map(c=><ResearchItem c={c} key={c.url}/>)}</div>
         </details>}
       </section>}
-      {products.length ? products.map(product) : <div className="empty"><h2>Brak wyników w zapisanej bazie</h2><p>Sprawdź linki do marketplace’ów powyżej. Brak wpisu nie oznacza braku ofert na rynku.</p><button onClick={() => setF(defaults)}>Wyczyść filtry</button></div>}
       {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Lista obserwacyjna — bez potwierdzonych ogłoszeń w lokalnej bazie i bez fikcyjnych ocen lub cen.</span>
         {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{marketplaces.slice(0,3).map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
       </section>}
