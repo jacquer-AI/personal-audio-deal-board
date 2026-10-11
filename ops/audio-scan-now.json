@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-full-240-variant-recheck-20261011-e2e",
+  "requestId": "audio-item-price-e2e-20261011-fixed-price-without-shipping",
   "mode": "full",
   "categories": "all",
-  "purpose": "E2E acceptance: 240-query Poland-first + Subito + Marktplaats discovery, recheck 33 seller leads against exact item titles and variants, preserve blocked shipping and bidding exclusions, validate and publish only evidence-backed deltas.",
+  "purpose": "E2E acceptance: admit direct-page-confirmed fixed item asking prices even without Poland shipping quote, keep auctions/bids and wrong variants research-only, publish explicit item-only price disclaimer and verify storefront readback.",
   "requestedOn": "2026-10-11"
 }
