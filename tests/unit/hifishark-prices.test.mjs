@@ -27,6 +27,13 @@ describe('HiFiShark genuine card parsing: indexed asking price is not seller ver
   expect(rows[2].askingPrice).toBe(80);
   expect(rows[0].aggregatorListedDate).toBe('Sep 27, 2026');
  });
+ it('retains item price if a nested marker closes before the strong asking-price tag',()=>{
+  const html=card('Subito','Beyerdynamic DT880',
+    '<span class="hidden-marker">something</span><strong>€75</strong>',
+    'nested','Italy').replace('<strong><span class="hidden-marker">something</span><strong>€75</strong></strong>',
+      '<span class="hidden-marker">something</span><strong>€75</strong>');
+  expect(discoverEuropeanHifisharkRows(html,dt)).toMatchObject([{askingPrice:75,currency:'EUR'}]);
+ });
  it('accepts Spain even for an unfamiliar local marketplace when the flag proves European location',()=>{
   const rows=discoverEuropeanHifisharkRows(card('Como Ficho','Beyerdynamic DT 880','€50','spain','Spain'),dt);
   expect(rows).toMatchObject([{country:'Hiszpania',askingPrice:50}]);
