@@ -160,3 +160,32 @@ configuration breadth, not 31 confirmed/live marketplace integrations.
   deterministic by UTC date and testable.
 - Registries contain more providers than live integrations. Configuration coverage
   and search links are not proof of access, parsability, stock or current prices.
+
+## European-only buying scope / HiFiShark asking-price evidence (2026-10-11)
+
+- **Geographic scope is EUROPE, not EU:** Poland, EU, UK, Switzerland,
+  Norway and other supported European marketplaces; never imply that an eBay
+  listing is European just because the browsing domain ends in .de or .pl.
+  Unknown seller origin does not qualify as confirmed European stock.
+- HiFiShark is a **mandatory discovery source** in FULL (daily) and DEEP
+  (weekly). Every enabled model gets a query before lower-priority sources
+  consume the bounded job budget. A fifth direct source rotates across EU.
+- HiFiShark indexes seller asking prices. A price extracted from the **same
+  item's table row**, with a European-local marketplace identity, appears in
+  a separate **CENY Z HIFISHARK** section. It is an indicative **indexed
+  asking price**, NOT a seller-confirmed current asking price, buy-now
+  price, stock confirmation or finalized shipping total. Currency and the
+  aggregator-listed date are preserved; PLN conversion is optional.
+- The refresh tries the aggregator `/goto/` link and inspects the destination
+  seller page if accessible. Redirect failure or HTTP 403 retains the indexed
+  price as **AGGREGATOR_PRICE_ONLY**, with a visible failure reason. Valid
+  direct seller prices may be displayed separately even without confirmed
+  stock, but LIVE still needs seller-page model, condition, price and
+  availability evidence. Failed/unverified links never enter LIVE/B4B.
+- A marketplace's localized identity indicates the market's country, **not
+  verified physical seller location**. The UI discloses this uncertainty;
+  global platforms without item-location evidence are excluded from
+  European-only discovery. 14-day research lead retention remains.
+- Historical globally sourced candidates with no geographic evidence are
+  removed from the visible Europe-only research list, not rewritten to
+  imply they were European. The underlying research ledger remains auditable.
