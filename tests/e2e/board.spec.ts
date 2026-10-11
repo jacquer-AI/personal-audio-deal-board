@@ -34,6 +34,18 @@ test('Polish item condition is visible beside the price and separate from verifi
   await expect(page.getByText('Etymotic ER4SR',{exact:true})).toBeVisible();
 });
 
+test('DT 880 has two genuinely additional listings, without duplicating the primary',async({page})=>{
+  await page.getByRole('searchbox').fill('Beyerdynamic DT 880');
+  const product=page.getByTestId('product').filter({has:page.getByRole('heading',{name:'Beyerdynamic DT 880',exact:true})});
+  await expect(product.getByRole('heading',{name:'Beyerdynamic DT 880',exact:true})).toBeVisible();
+  const mainUrl=await product.getByTestId('primary-link').getAttribute('href');
+  await product.locator('.offer-details > summary').click();
+  await expect(product.locator('.offer-details > summary')).toContainText('Pozostałe oferty (2)');
+  await expect(product.getByTestId('source-row')).toHaveCount(2);
+  for(const link of await product.locator('.source-list a').all())
+    expect(await link.getAttribute('href')).not.toBe(mainUrl);
+});
+
 test('source links exact and secure',async({page})=>{const allowed=new Set(snapshot.offers.map(o=>o.url));for(const summary of await page.locator('main .offer-details > summary').all())await summary.click();const links=page.locator('main .source a,main .primary-link');expect(await links.count()).toBeGreaterThan(3);for(const link of await links.all()){expect(allowed.has((await link.getAttribute('href'))!)).toBe(true);await expect(link).toHaveAttribute('target','_blank');await expect(link).toHaveAttribute('rel','noopener noreferrer')}const first=currentOffers[0];await page.getByRole('searchbox').fill(first.model);await expect(page.getByTestId('primary-link')).toHaveAttribute('href',first.url)});
 test('compact default and independent disclosures',async({page})=>{await expect(page.locator('.app')).toHaveClass(/compact/);await expect(page.locator('.more-filters')).not.toHaveAttribute('open','');const first=page.getByTestId('product').first();await expect(first.getByTestId('primary-link')).toBeVisible();await expect(first.getByTestId('source-row').first()).not.toBeVisible();await first.locator('.offer-details > summary').click();await expect(first.getByTestId('source-row').first()).toBeVisible();await expect(first.locator('.notes p').first()).not.toBeVisible();await first.locator('.notes > summary').click();await expect(first.locator('.notes p').first()).toBeVisible();await first.locator('.offer-details > summary').click();await expect(first.getByTestId('source-row').first()).not.toBeVisible();await expect(page.locator('.methodology')).not.toHaveAttribute('open','');await expect(page.locator('.methodology p').first()).not.toBeVisible();await page.locator('.methodology > summary').click();await expect(page.locator('.methodology p').first()).toBeVisible()});
 test('desktop density budget single row and visible action',async({page})=>{await page.setViewportSize({width:1440,height:900});const m=await page.evaluate(()=>{const rs=[...document.querySelectorAll('.product')].map(e=>e.getBoundingClientRect());return{toolbar:document.querySelector('.toolbar')!.getBoundingClientRect().height,y:rs[0].y,height:rs[0].height,full:rs.filter(r=>r.bottom<=900).length,primary:document.querySelector('.primary-link')!.getBoundingClientRect().bottom}});expect(m.toolbar).toBeLessThanOrEqual(140);expect(m.y).toBeLessThanOrEqual(553.296875*.6);expect(m.height).toBeLessThan(448.34375*.6);expect(m.full).toBeGreaterThanOrEqual(Math.min(3,currentModels.length));expect(m.primary).toBeLessThan(900);const ys=await page.locator('.search,.tabs,.region-control,.sort-control,.more-filters').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().top));expect(Math.max(...ys)-Math.min(...ys)).toBeLessThan(3)});
