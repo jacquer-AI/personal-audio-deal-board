@@ -21,7 +21,9 @@ const runId=process.env.GITHUB_RUN_ID||('local-'+Date.now());
 const now=new Date().toISOString();
 const TIMEOUT=Number(process.env.REFRESH_TIMEOUT_MS||12000);
 const CONCURRENCY=Math.max(1,Math.min(6,Number(process.env.REFRESH_CONCURRENCY||4)));
-const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(500,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?320:160))));
+// FULL needs enough budget to cover Polish marketplaces plus the two EU sources
+// which actually yield directly verifiable seller pages (Subito, Marktplaats).
+const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(500,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?320:240))));
 const DEADLINE=Date.now()+Number(process.env.REFRESH_DEADLINE_MS||20*60*1000);
 const DRY=process.env.REFRESH_DRY==='1';
 
@@ -199,7 +201,7 @@ if(mode!=='quick'){
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
   // FULL has 160 jobs for 32 models: prioritize Polish direct sellers before foreign lead sources.
   // DEEP's larger budget still covers German, Dutch, Italian and aggregator discovery.
-  const coreSourceIds=['allegro-pl','olx-pl','mediaexpert-outlet','vinted-pl','kleinanzeigen-de','subito-it','marktplaats-nl','hifishark'];
+  const coreSourceIds=['allegro-pl','olx-pl','mediaexpert-outlet','vinted-pl','subito-it','marktplaats-nl','kleinanzeigen-de','hifishark'];
   const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds);
   const discoveryStats=Object.fromEntries(sweepSources.map(s=>[s.id,{requested:0,reachable:0,candidateUrls:0,restricted:0,errors:0}]));
   const discovered=await pool(jobs,async j=>{
