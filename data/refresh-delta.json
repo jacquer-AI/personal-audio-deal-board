@@ -5,79 +5,78 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-11T09:14:00.501Z",
-  "mode": "full",
-  "runId": "38127619226",
-  "candidates": 7,
+  "refreshedAt": "2026-10-11T10:20:47.053Z",
+  "mode": "deep",
+  "runId": "38131607181",
+  "candidates": 4,
   "verifiedAdditions": 0,
-  "observationChanges": 1,
+  "observationChanges": 2,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 20,
-    "directVerified": 3,
+    "directVerified": 2,
     "accessRestricted": 10,
     "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 4,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 3,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 2
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
     "discovery": {
-      "plannedJobs": 60,
-      "plannedSources": 9,
-      "reachableSources": 3,
+      "plannedJobs": 140,
+      "plannedSources": 18,
+      "reachableSources": 7,
       "sources": {
         "allegro-pl": {
-          "requested": 5,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 4,
-          "errors": 1
-        },
-        "olx-pl": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "mediaexpert-outlet": {
           "requested": 7,
           "reachable": 0,
           "candidateUrls": 0,
           "restricted": 7,
           "errors": 0
         },
+        "olx-pl": {
+          "requested": 7,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 7,
+          "errors": 0
+        },
+        "mediaexpert-outlet": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
         "kleinanzeigen-de": {
-          "requested": 8,
-          "reachable": 8,
+          "requested": 6,
+          "reachable": 6,
           "candidateUrls": 0,
           "restricted": 0,
           "errors": 0
         },
         "marktplaats-nl": {
-          "requested": 8,
-          "reachable": 8,
-          "candidateUrls": 5,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 5,
-          "verifiedUrls": 4,
-          "unverifiedUrls": 1
-        },
-        "subito-it": {
-          "requested": 8,
-          "reachable": 8,
+          "requested": 6,
+          "reachable": 6,
           "candidateUrls": 3,
           "restricted": 0,
           "errors": 0,
           "checkedUrls": 3,
           "verifiedUrls": 3
+        },
+        "subito-it": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 1,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 1,
+          "verifiedUrls": 1
         },
         "wallapop-es": {
           "requested": 7,
@@ -87,17 +86,80 @@
           "errors": 0
         },
         "amazon-de-resale": {
-          "requested": 6,
+          "requested": 8,
           "reachable": 0,
           "candidateUrls": 0,
           "restricted": 0,
-          "errors": 6
+          "errors": 8
         },
         "ebay-de": {
-          "requested": 5,
+          "requested": 9,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 5,
+          "restricted": 9,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 9,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 9
+        },
+        "geizhals": {
+          "requested": 9,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 9,
+          "errors": 0
+        },
+        "tweakers": {
+          "requested": 9,
+          "reachable": 9,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "tophifi-outlet": {
+          "requested": 9,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 9,
+          "errors": 0
+        },
+        "ebay-uk": {
+          "requested": 9,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 9,
+          "errors": 0
+        },
+        "ceneo-pl": {
+          "requested": 9,
+          "reachable": 9,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "allegro-lokalnie": {
+          "requested": 9,
+          "reachable": 9,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "headfi-classifieds": {
+          "requested": 8,
+          "reachable": 8,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "idealo-de": {
+          "requested": 7,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 7,
           "errors": 0
         }
       }
