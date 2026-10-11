@@ -237,8 +237,8 @@ if(mode!=='quick'){
       if(discoveredUrls.length>=360)break;
     }
   }
-  // Final seller verification remains mandatory for LIVE. 403 or incomplete
-  // shipping cost can only yield a separately-labelled research lead.
+  // Final seller verification remains mandatory for LIVE. A missing shipping
+  // quote is disclosed, not a blocker; a bid/non-fixed price stays research-only.
   const verify=discoveredUrls;
   const verified=await pool(verify,async c=>{
     const source=sourceById.get(c.sourceId);
@@ -284,12 +284,16 @@ if(mode!=='quick'){
       rrp:peer?.rrp??null,newMarket:peer?.newMarket??null,sameMarket:peer?.sameMarket??null,
       price,country:c.region,seller:c.source,region:c.region,status:condition==='USED'?'LIVE USED':'LIVE VERIFIED',
       original:parsed.price+' '+(parsed.currency||''),url:c.url,role:'OFFER',checked:now.slice(0,10),
+      priceBasis:priceBasis(source),...shipmentEvidence(p.html,parsed.price,price),
       refresh:{verificationState:'DIRECT_OFFER_VERIFIED',checkedAt:now,firstVerifiedAt:now,http:p.http}
     };
     const rt=redTeam(add,source,peer);
-    const candidate={...c,status:'VERIFIED LEAD',verifiedAt:now,verificationState:'DIRECT_OFFER_VERIFIED',
+    const candidate={...c,status:rt.block?'VERIFIED LEAD':'PRICE VERIFIED LIVE',verifiedAt:now,verificationState:'DIRECT_OFFER_VERIFIED',
       http:200,condition,pricePln:price,originalPrice:parsed.price,currency:parsed.currency,availability:'InStock',
-      priceBasis:priceBasis(source),...shipmentEvidence(p.html,parsed.price,price),redTeam:rt.flags};
+      priceBasis:add.priceBasis,shippingToPoland:add.shippingToPoland,shippingRate:add.shippingRate,
+      shippingCurrency:add.shippingCurrency,shippingRatePln:add.shippingRatePln,
+      itemPlusShippingPln:add.itemPlusShippingPln,shippingSource:add.shippingSource,
+      fxSource:add.fxSource,fxEffectiveDate:add.fxEffectiveDate,redTeam:rt.flags};
     stat.verifiedUrls=(stat.verifiedUrls||0)+1;
     const fp=fingerprint(add);
     if(rt.block){
@@ -297,7 +301,7 @@ if(mode!=='quick'){
         result:'DIRECT_CURRENT_NOT_PURCHASABLE_'+rt.flags.join('_'),pricePln:price});
       return {candidate,addition:null};
     }
-    add.note='Seller item verified during '+mode.toUpperCase()+' search: model, condition, price, stock and full cost checked.';
+    add.note='Seller direct page verified during '+mode.toUpperCase()+': exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed.';
     observe({fingerprint:fp,model:c.model,condition,sourceId:c.sourceId,url:c.url,http:p.http,result:'NEW_DIRECT_OFFER_VERIFIED',pricePln:price,currency:parsed.currency});
     return {candidate,addition:add};
   });
