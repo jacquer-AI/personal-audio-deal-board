@@ -187,30 +187,37 @@ if(mode!=='quick'){
     const stat=discoveryStats[c.sourceId];
     stat.checkedUrls=(stat.checkedUrls||0)+1;
     const observation={fingerprint:fingerprint({model:c.model,condition:'UNVERIFIED',seller:c.source,url:c.url}),model:c.model,condition:'UNVERIFIED',sourceId:c.sourceId,url:c.url};
-    const reject=(reason,http=null)=>{
+    const reject=(reason,http=null,retain=false)=>{
       stat.unverifiedUrls=(stat.unverifiedUrls||0)+1;
       observe({...observation,http,result:'SEARCH_REJECT_'+reason});
-      return null;
+      // Discovery-only evidence is a clickable research lead, never LIVE, priced or ranked.
+      if(!retain)return null;
+      return {candidate:{...c,status:'UNVERIFIED LEAD',verificationState:reason,
+        verifiedAt:null,http,price:null,currency:null,availability:null,
+        redTeam:['NOT_VERIFIED','NO_LANDED_COST']},addition:null};
     };
-    if(!source?.canVerifyOffer||!meta||!directOfferEligible(c.url,source)||
-       isListingUrl(c.url)||!isPlausibleOfferLink(c.url,source)||!urlMatchesModel(c.url,meta))
+    if(!source||!meta||isListingUrl(c.url)||!isPlausibleOfferLink(c.url,source)||!urlMatchesModel(c.url,meta))
+      return reject('NOT_DIRECT_OR_MODEL');
+    if(!source.canVerifyOffer)
+      return reject('SOURCE_DISCOVERY_ONLY',null,true);
+    if(!directOfferEligible(c.url,source))
       return reject('NOT_DIRECT_OR_MODEL');
     const p=await fetchPage(c.url);
-    if(p.http!==200)return reject('HTTP_'+p.http,p.http);
+    if(p.http!==200)return reject('HTTP_'+p.http,p.http,[401,403,429,451].includes(p.http));
     try{
       const expected=new URL(c.url),actual=new URL(p.url);
       if(expected.hostname!==actual.hostname||expected.pathname.replace(/[/]$/,'')!==actual.pathname.replace(/[/]$/,''))
         return reject('REDIRECT',p.http);
     }catch{return reject('REDIRECT',p.http)}
     const {blocked,parsed}=parsePage(source,p.html,p.http);
-    if(blocked||!parsed)return reject(blocked?'ACCESS_BLOCKED':'NO_ITEM_PRICE',p.http);
+    if(blocked||!parsed)return reject(blocked?'ACCESS_BLOCKED':'NO_ITEM_PRICE',p.http,true);
     if(!modelMatches(p.html,meta))return reject('MODEL_MISMATCH',p.http);
     // No text scraped from generic page boilerplate may prove an individual item is in stock.
     const condition=conditionFrom(parsed,''),stock=available(parsed,'');
     const price=toPln(parsed.price,parsed.currency,fx);
-    if(stock!==true)return reject(stock===false?'SOLD':'STOCK_UNKNOWN',p.http);
-    if(!condition)return reject('CONDITION_UNKNOWN',p.http);
-    if(!price)return reject('PRICE_UNKNOWN',p.http);
+    if(stock!==true)return reject(stock===false?'SOLD':'STOCK_UNKNOWN',p.http,stock!==false);
+    if(!condition)return reject('CONDITION_UNKNOWN',p.http,true);
+    if(!price)return reject('PRICE_UNKNOWN',p.http,true);
     const peer=(base.offers||[]).find(o=>o.model===c.model&&o.condition===condition&&Number.isFinite(o.sameMarket));
     const add={
       id:'refresh-'+createHash('sha1').update(fingerprint({model:c.model,condition,seller:c.source,url:c.url})).digest('hex').slice(0,16),
