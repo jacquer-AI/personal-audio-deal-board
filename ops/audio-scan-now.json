@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "hifishark-robust-price-e2e-20261011",
+  "requestId": "audio-hifishark-price-e2e-20261012-pr23",
   "mode": "full",
   "categories": "all",
-  "purpose": "Acceptance: HiFiShark returns nonzero European indexed prices per item (after price markup / HTML entity fixes), keep aggregator unverified, preserve seller-check logic, publish readback.",
-  "requestedOn": "2026-10-11"
+  "purpose": "Verify index asking prices extracted on actual 48-model HiFiShark FULL scan after price-window fallback and real failure diagnostic. Nonzero Europe price candidates and UI publication required.",
+  "requestedOn": "2026-10-12"
 }
