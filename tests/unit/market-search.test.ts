@@ -1,0 +1,23 @@
+import {describe,it,expect} from 'vitest';
+import {marketplaces,additionalWatchModels,uniqueWatchModels} from '../../src/lib/marketSearch';
+
+describe('market breadth without invented offers',()=>{
+  it('opens five distinct marketplace searches with Unicode model names',()=>{
+    expect(marketplaces.map(m=>m.id)).toEqual(['vinted','olx','allegro','ebay','kleinanzeigen']);
+    for(const m of marketplaces){
+      const url=new URL(m.url('Beyerdynamic DT 880'));
+      expect(url.protocol).toBe('https:');
+      expect(url.href).toContain('Beyerdynamic');
+      expect(url.href).toContain('DT');
+    }
+    expect(marketplaces[0].url('')).toContain('s%C5%82uchawki');
+    expect(marketplaces[0].url('Sony MDR-SA5000')).toContain('Sony%20MDR-SA5000');
+  });
+  it('does not count search-only models as offers or duplicate registered ones',()=>{
+    expect(additionalWatchModels).toContain('Sony MDR-SA5000');
+    const rest=uniqueWatchModels(['Sony MDR-SA5000','Beyerdynamic DT 880']);
+    expect(rest).not.toContain('Sony MDR-SA5000');
+    expect(rest).not.toContain('Beyerdynamic DT 880');
+    expect(new Set(rest).size).toBe(rest.length);
+  });
+});
