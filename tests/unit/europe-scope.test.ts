@@ -17,6 +17,7 @@ describe('Europe-only offer and aggregator admission',()=>{
  });
  it('requires provenance for global HiFiShark, excluding historic global results',()=>{
   expect(europeanResearch({sourceId:'hifishark',region:'UE'})).toBe(false);
+  expect(europeanResearch({sourceId:'ebay-de',region:'UE'})).toBe(false);
   expect(europeanResearch({sourceId:'hifishark',region:'UE',locationEvidence:'EUROPEAN_MARKETPLACE_NOT_SELLER',country:'Włochy'})).toBe(true);
   expect(europeanResearch({sourceId:'hifishark',region:'EUROPE_UNCONFIRMED'})).toBe(false);
   expect(europeanResearch({sourceId:'hifishark',region:'UE',locationEvidence:'EUROPEAN_MARKETPLACE_NOT_SELLER',country:'Japonia'})).toBe(false);
