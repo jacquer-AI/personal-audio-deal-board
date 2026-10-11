@@ -261,3 +261,14 @@ h1{font-size:21px;letter-spacing:-.55px}
 
 /* Item-only price is intentionally usable without a shipping quote. */
 .item-price-note{display:block;font-size:10px;line-height:1.35;font-weight:600;color:#465b73;max-width:190px;margin-top:3px}
+
+/* CONDITION FIRST — the asking price and physical condition remain adjacent.
+   Verified freshness is a separate status in the decision line. */
+.price-and-condition{display:flex;align-items:baseline;gap:5px 8px;flex-wrap:wrap;min-width:0}
+.condition-tag{display:inline-block;color:#193f6c;background:#e9f1fc;border:1px solid #aac2df;border-radius:4px;padding:2px 5px;font-size:10px;font-weight:800;line-height:1.2;overflow-wrap:anywhere}
+.decision-line .verification-status{background:#e7f2ec;border-color:#a6c5b1;color:#194932;font-weight:800}
+.decision-line .verification-status[title="LIVE USED"],.decision-line .verification-status[title="LIVE VERIFIED"]{letter-spacing:0}
+.source-role{overflow-wrap:anywhere;line-height:1.35}
+.source .item-condition{font-weight:750;color:#204568;overflow-wrap:anywhere}
+.research-item .item-condition{font-weight:750}
+@media(max-width:700px){.price-and-condition{align-items:center}.condition-tag{font-size:11px}}
