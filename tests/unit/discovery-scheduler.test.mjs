@@ -57,8 +57,8 @@ describe('prioritized all-model discovery',()=>{
   });
 });
 
-describe('48 model daily rotation makes foreign providers reachable under the 240-job limit',()=>{
-  it('gives every model the three daily baselines and alternates all five extra sources',()=>{
+describe('48 model daily rotation preserves 5 Europe-wide sources and a Polish discovery channel',()=>{
+  it('gives every model productive daily baselines and rotates exploratory sources',()=>{
     const models48=Array.from({length:48},(_,i)=>({model:'Audio '+i}));
     const ids=['hifishark','allegro-pl','olx-pl','vinted-pl','subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
     const available=ids.map(id=>({id,queryTerms:[],searchUrlTemplate:'https://site.example/?q={q}'}));
@@ -66,7 +66,7 @@ describe('48 model daily rotation makes foreign providers reachable under the 24
     for(let d=11;d<16;d++){
       const core=coreSourceIdsForDate('2026-10-'+d);
       expect(core).toHaveLength(5);
-      expect(core.slice(0,4)).toEqual(['hifishark','allegro-pl','olx-pl','vinted-pl']);
+      expect(core.slice(0,4)).toEqual(['hifishark','vinted-pl','marktplaats-nl','subito-it']);
       core.forEach(x=>encountered.add(x));
       const jobs=planDiscoveryJobs(models48,available,240,core);
       expect(jobs).toHaveLength(240);
@@ -90,5 +90,24 @@ describe('56 tracked models in 280-job FULL budget',()=>{
       for(const id of core)expect(jobs.filter(j=>j.s.id===id)).toHaveLength(56);
       expect(new Set(jobs.map(j=>j.m.model+'|'+j.s.id)).size).toBe(280);
     }
+  });
+});
+
+
+describe('source productivity routing and coverage',()=>{
+  it('prioritizes verified seller page sources ahead of persistently blocked searches',()=>{
+    const core=coreSourceIdsForDate('2026-10-12');
+    expect(core).toContain('marktplaats-nl');
+    expect(core).toContain('subito-it');
+    expect(core).toContain('vinted-pl');
+    expect(core).toContain('hifishark');
+    expect(core.filter(id=>id==='allegro-pl'||id==='olx-pl').length).toBeLessThanOrEqual(1);
+  });
+  it('still revisits both Polish blocked sources and all EU sources over five days',()=>{
+    const names=new Set();
+    for(let d=11;d<16;d++)
+      coreSourceIdsForDate('2026-10-'+d).forEach(x=>names.add(x));
+    for(const source of ['allegro-pl','olx-pl','kleinanzeigen-de','mediaexpert-outlet','ebay-de'])
+      expect(names.has(source)).toBe(true);
   });
 });
