@@ -17,7 +17,10 @@ describe('market breadth without invented offers',()=>{
     expect(additionalWatchModels).toContain('Sony MDR-SA5000');
     expect(additionalWatchModels).toContain('Etymotic ER4SR');
     expect(additionalWatchModels).toContain('Sennheiser HD 800 S');
-    expect(trackedModelCount).toBe(48);
+    expect(trackedModelCount).toBe(56);
+    for(const model of ['Beyerdynamic DT 48 25 Ohm','Sony MDR-CD900ST','Sony MDR-M1','Austrian Audio Hi-X65','Austrian Audio Hi-X60','Neumann NDH 30','Audio-Technica ATH-M70x','Focal Clear OG']){
+      expect(additionalWatchModels).toContain(model);
+    }
     expect(new Set(additionalWatchModels).size).toBe(trackedModelCount);
     const rest=uniqueWatchModels(['Sony MDR-SA5000','Beyerdynamic DT 880']);
     expect(rest).not.toContain('Sony MDR-SA5000');
