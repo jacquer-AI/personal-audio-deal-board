@@ -64,6 +64,23 @@ describe('HiFiShark genuine card parsing: indexed asking price is not seller ver
   expect(geographicEvidence({id:'subito-it'},'<script>{"addressCountry":"JP"}</script>')).toBeNull();
   expect(europeanMarketplace('OLX Kazakhstan')).toBeNull();
  });
+ it('parses European native amount-before-currency without truncating thousands or decimals',()=>{
+  expect(aggregatorAskingPrice('90 €')).toMatchObject({originalPrice:90,currency:'EUR'});
+  expect(aggregatorAskingPrice('1.250 €')).toMatchObject({originalPrice:1250,currency:'EUR'});
+  expect(aggregatorAskingPrice('1 450 €')).toMatchObject({originalPrice:1450,currency:'EUR'});
+  expect(aggregatorAskingPrice('1,250 €')).toMatchObject({originalPrice:1250,currency:'EUR'});
+  expect(aggregatorAskingPrice('1 299,50 zł')).toMatchObject({originalPrice:1299.5,currency:'PLN'});
+  expect(aggregatorAskingPrice('€1,250')).toMatchObject({originalPrice:1250,currency:'EUR'});
+  expect(aggregatorAskingPrice('£ 1,295')).toMatchObject({originalPrice:1295,currency:'GBP'});
+  expect(aggregatorAskingPrice('-')).toBeNull();
+ });
+ it('extracts the displayed suffix price, not the older listing amount',()=>{
+  const html=card('Kleinanzeigen','Beyerdynamic DT880','1.250 €','suffix','Germany')
+     .replace('Originally listed for €100','Originally listed for 1.600 €');
+  expect(discoverEuropeanHifisharkRows(html,dt)).toMatchObject([{
+    askingPrice:1250,currency:'EUR',askingPriceText:'1.250 €'
+  }]);
+ });
  it('keeps native currency for unsupported conversions rather than inventing PLN',()=>{
   expect(aggregatorAskingPrice('NOK 1,000')).toMatchObject({originalPrice:1000,currency:'NOK'});
   expect(aggregatorAskingPrice('HUF 45,000')).toMatchObject({originalPrice:45000,currency:'HUF'});

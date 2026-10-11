@@ -40,6 +40,17 @@ describe('durable non-buyable research register',()=>{
     expect(rows[0]).toMatchObject({pricePln:1200,researchFreshness:'RECHECK_REQUIRED',retained:true});
     expect(rows[0]).not.toHaveProperty('price');
   });
+  it('does not carry forward price evidence from the broken pre-V2 HiFiShark parser',()=>{
+    const old={model:'Beyerdynamic DT 880',sourceId:'hifishark',
+      verificationState:'AGGREGATOR_PRICE_ONLY',askingPriceText:'€ 4',
+      pricePln:17.2,region:'UE',url:'https://www.hifishark.com/goto/old',
+      discoveredAt:'2026-10-11T20:00:00Z'};
+    expect(mergeResearchCandidates([old],[],'2026-10-12T00:00:00Z')).toEqual([]);
+    const revised={...old,url:'https://www.hifishark.com/goto/v2',
+      priceEvidenceVersion:'HIFISHARK_CARD_PRICE_V2',askingPriceText:'90 €',pricePln:387};
+    expect(mergeResearchCandidates([old],[revised],'2026-10-12T00:00:00Z'))
+      .toMatchObject([{askingPriceText:'90 €',priceEvidenceVersion:'HIFISHARK_CARD_PRICE_V2'}]);
+  });
   it('refreshes last seen evidence without duplicating and drops expired candidates',()=>{
     const now='2026-10-11T16:00:00Z';
     const fresh={...prev,discoveredAt:now,status:'UNVERIFIED LEAD'};
