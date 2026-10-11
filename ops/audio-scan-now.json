@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-recovery-2026-10-11-deep-01",
+  "requestId": "audio-recovery-2026-10-11-deep-02-source-priority",
   "mode": "deep",
   "categories": "all",
-  "purpose": "First real 32-model discovery scan after item-anchor ingestion repair; retain cumulative unverified leads and strict LIVE gating",
+  "purpose": "Second real DEEP scan: high-yield market sources guaranteed for each of 32 models; 320 query budget and round-robin candidate verification",
   "requestedOn": "2026-10-11"
 }
