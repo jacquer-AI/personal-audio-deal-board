@@ -6,6 +6,7 @@ import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs} from './discovery-scheduler.mjs';
 import {discoverPageLinks} from './sources/discovery-links.mjs';
 import {mergeResearchCandidates} from './research-ledger.mjs';
+import {shippingEvidencePoland} from './shipping-evidence.mjs';
 import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
 
 const argv=process.argv.slice(2);
@@ -31,7 +32,22 @@ const base=readJson('data/offers-base.json',null)||readJson('data/offers.json',{
 const previousRuntime=readJson('data/offers.json',base);
 const previousCurrent=readJson('data/market-current.json',{updates:[],additions:[]});
 const previousCandidates=readJson('data/market-candidates.json',{candidates:[]});
-const fx=base.fx||{EUR:4.3,GBP:5.1,USD:3.9};
+const fxDoc=readJson('data/fx-latest.json',null);
+const fxDate=Date.parse((fxDoc?.effectiveDate||'')+'T00:00:00Z');
+const fxIsFresh=fxDoc?.source==='NBP_TABLE_A'&&Number.isFinite(fxDate)
+  &&Date.now()-fxDate>=0&&Date.now()-fxDate<=8*86400000
+  &&['EUR','GBP','USD'].every(code=>Number.isFinite(fxDoc.rates?.[code])&&fxDoc.rates[code]>0);
+const fx=fxIsFresh?fxDoc.rates:(base.fx||{EUR:4.3,GBP:5.1,USD:3.9});
+const fxSource=fxIsFresh?'NBP_TABLE_A':'SHEET_FALLBACK_NOT_CURRENT';
+const fxEffectiveDate=fxIsFresh?fxDoc.effectiveDate:null;
+function shipmentEvidence(html,priceInCurrency,itemPln){
+  const shipping=shippingEvidencePoland(html,priceInCurrency);
+  const ratePln=shipping.status==='PL_RATE_ADVERTISED'&&fxIsFresh?toPln(shipping.amount,shipping.currency,fx):null;
+  const itemPlusShippingPln=ratePln!==null&&Number.isFinite(itemPln)?Math.round((itemPln+ratePln)*100)/100:null;
+  return {shippingToPoland:shipping.status,shippingRate:shipping.amount,
+    shippingCurrency:shipping.currency,shippingRatePln:ratePln,itemPlusShippingPln,
+    shippingSource:shipping.source,fxSource,fxEffectiveDate};
+}
 const sources=sourceDoc.sources||[];
 const sourceById=new Map(sources.map(s=>[s.id,s]));
 const models=(modelDoc.models||[]).filter(m=>m.enabled!==false&&(!selectedCategories||selectedCategories.has(m.category)));
@@ -156,7 +172,9 @@ const researchRechecks=await pool(
         result:'RESEARCH_RECHECK_'+reason});
       return {...c,status:'UNVERIFIED LEAD',verificationState:'RECHECK_'+reason,verifiedAt:null,http,
         pricePln:null,originalPrice:null,currency:null,availability:null,
-        priceBasis:null,redTeam:['REVERIFY_REQUIRED','NO_LANDED_COST']};
+        priceBasis:null,shippingToPoland:'PL_SHIPPING_UNKNOWN',shippingRate:null,
+        shippingCurrency:null,shippingRatePln:null,itemPlusShippingPln:null,
+        shippingSource:null,redTeam:['REVERIFY_REQUIRED','NO_LANDED_COST']};
     };
     if(!source?.canVerifyOffer||!meta||!directOfferEligible(c.url,source))return reject('SOURCE_NOT_VERIFIABLE');
     const p=await fetchPage(c.url);
@@ -170,7 +188,8 @@ const researchRechecks=await pool(
     receipt.researchReverified=(receipt.researchReverified||0)+1;
     return {...c,status:'VERIFIED LEAD',verificationState:'DIRECT_OFFER_VERIFIED',
       pricePln:price,originalPrice:parsed.price,currency:parsed.currency,
-      availability:'InStock',verifiedAt:now,priceBasis:priceBasis(source),http:200};
+      availability:'InStock',verifiedAt:now,priceBasis:priceBasis(source),
+      ...shipmentEvidence(p.html,parsed.price,price),http:200};
   });
 const candidates=[];
 const newAdditions=[];
@@ -264,7 +283,8 @@ if(mode!=='quick'){
     };
     const rt=redTeam(add,source,peer);
     const candidate={...c,status:'VERIFIED LEAD',verifiedAt:now,verificationState:'DIRECT_OFFER_VERIFIED',
-      http:200,condition,pricePln:price,originalPrice:parsed.price,currency:parsed.currency,availability:'InStock',priceBasis:priceBasis(source),redTeam:rt.flags};
+      http:200,condition,pricePln:price,originalPrice:parsed.price,currency:parsed.currency,availability:'InStock',
+      priceBasis:priceBasis(source),...shipmentEvidence(p.html,parsed.price,price),redTeam:rt.flags};
     stat.verifiedUrls=(stat.verifiedUrls||0)+1;
     const fp=fingerprint(add);
     if(rt.block){
@@ -305,7 +325,9 @@ const freshnessRenewal=receipt.directVerified>0&&(!Number.isFinite(persistedAt)|
 const material=currentChanged||candidatesChanged||obsAppend.length>0||delta.changes.length>0||freshnessRenewal;
 
 Object.assign(delta,{schema:1,refreshedAt:now,mode,runId,candidates:candidatesDoc.candidates?.length??0,verifiedAdditions:newAdditions.length,observationChanges:obsAppend.length,freshnessRenewal,receipt});
-const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,newLeads:candidates.length,researchRechecked:receipt.researchRechecked||0,researchReverified:receipt.researchReverified||0,researchDowngraded:receipt.researchDowngraded||0,retainedResearchLeads:candidatesDoc.candidates?.length??0,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length,freshnessRenewal,discoveredUrlsChecked:mode==='quick'?0:(receipt.discovery?.sources?Object.values(receipt.discovery.sources).reduce((n,x)=>n+(x.checkedUrls||0),0):0)};
+const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,
+  fxSource,fxEffectiveDate,shippingToPolandEvidence:candidatesDoc.candidates?.filter(c=>c.shippingToPoland==='PL_RATE_ADVERTISED').length||0,
+  newLeads:candidates.length,researchRechecked:receipt.researchRechecked||0,researchReverified:receipt.researchReverified||0,researchDowngraded:receipt.researchDowngraded||0,retainedResearchLeads:candidatesDoc.candidates?.length??0,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length,freshnessRenewal,discoveredUrlsChecked:mode==='quick'?0:(receipt.discovery?.sources?Object.values(receipt.discovery.sources).reduce((n,x)=>n+(x.checkedUrls||0),0):0)};
 
 if(material&&!DRY){
   fs.writeFileSync('data/market-current.json',JSON.stringify(current,null,2)+'\n');
