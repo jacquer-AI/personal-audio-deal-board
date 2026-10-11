@@ -156,7 +156,7 @@ test('old unverified seller links are hidden from LIVE but remain research-only'
     const again=page.getByTestId('product').filter({hasText:mixed.model});
     await again.locator('.offer-details > summary').click();
     await expect(again.locator('.unverified').first()).toBeAttached();
-    await expect(again.locator('.source-legend')).toContainText('NIEPOTWIERDZONE');
+    await expect(again.locator('.source-legend')).toContainText('AKTUALNOŚĆ NIEPOTWIERDZONA');
   }else{
     // No mixed fresh/unchecked model remains: inspect only the unverified research pool.
     await page.locator('.more-filters > summary').click();
