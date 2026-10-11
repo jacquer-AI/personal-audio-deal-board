@@ -135,3 +135,28 @@ configuration breadth, not 31 confirmed/live marketplace integrations.
 - A direct-page check that proves exact model, condition, explicit fixed asking price and availability may become LIVE even when shipping-to-Poland cost is unknown. LIVE prices are **item-only**, not landed/checkout totals. Explicit non-fixed bids/auctions stay research-only, as do unverified URLs and non-EU offers without import-cost verification.
 - FULL/DEEP plans now target up to 240/320 model-source queries respectively. Coverage counts depend on accessible sites; anti-bot HTTP 403, no structured listing, or an inaccessible marketplace can still prevent live inventory ingestion.
 - Updates to the model registry and market search require both unit and browser tests. A successful CI run proves the app builds and its static behavior, **not that a scheduled deep scan or production publication happened**.
+
+## Condition labels and canonical search scope (2026-10-11)
+
+- The headline price has an adjacent **Polish item-condition label** (NOWE, UŻYWANE,
+  PO ZWROCIE / EKSPOZYCJI, OTWARTE OPAKOWANIE). LIVE/verified freshness is a
+  **separate** status. An unknown research-lead condition is explicitly
+  STAN NIEUSTALONY, never silently treated as NEW.
+- All primary, secondary and research rows show condition independently from
+  availability verification. The status is never proof of mechanical/electrical
+  functionality; seller statements and direct-page price checks cannot test hardware.
+- `config/model-registry.json` is the **single canonical list: 48 enabled model
+  families**, up from 32. The browser watchlist now derives from it instead of a
+  parallel hard-coded list. Sixteen additions concentrate on neutral/detail-oriented
+  open headphones and wired IEMs (including ER4SR, HD 800 S, DT 1990 PRO, K702,
+  Studio4 and MEST MkII). These are **search targets, not verified stock**.
+- No invented quality grades, user-fit scores, same-condition market benchmarks,
+  product prices, or simulated inventory were added.
+- The 240-job FULL scan covers three stable marketplaces (Allegro, OLX, Vinted)
+  and two **daily rotating** sources drawn from Subito, Kleinanzeigen,
+  Marktplaats, Media Expert Outlet, eBay DE. With 48 families, that covers the
+  five selected sources across all models (subject to per-run network deadline).
+  DEEP still has 320 jobs and explores additional sources. All rotation is
+  deterministic by UTC date and testable.
+- Registries contain more providers than live integrations. Configuration coverage
+  and search links are not proof of access, parsability, stock or current prices.
