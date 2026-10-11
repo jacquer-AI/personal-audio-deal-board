@@ -74,11 +74,13 @@ function Price({offer}: {offer: Offer}) {
   </div>;
 }
 function OfferDetails({product}: {product: Product}) {
+  // The highlighted primary offer already has its own price and seller link.
+  const otherOffers=product.offers.filter(o=>o.id!==product.best.id);
   return <details className="offer-details">
-    <summary>Więcej ofert ({product.offers.length})</summary>
+    <summary>Pozostałe oferty ({otherOffers.length}) i szukanie</summary>
     <div className="market-discovery"><b>Szukaj innych ogłoszeń:</b> {marketplaces.map(m => <a key={m.id} href={m.url(product.model)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj modelu '+product.model+' na '+m.label}>{m.label} ↗</a>)} <span>Linki wyszukują w zewnętrznych serwisach; nie potwierdzają liczby, ceny ani dostępności ofert.</span></div>
     <p className="source-legend">OFERTA POTWIERDZONA — cena produktu, stan i dostępność sprawdzone na stronie sprzedawcy (do 24 h, używane 8 h). AKTUALNOŚĆ NIEPOTWIERDZONA — starszy zapis bez bieżącego dowodu. TROP — wymaga kontroli. PORÓWNANIE — odniesienie cenowe. Stan produktu (NOWE/UŻYWANE/PO ZWROCIE/OTWARTE OPAKOWANIE) jest osobny od statusu kontroli.</p>
-    <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
+    <div className="source-list">{otherOffers.map(o => <Source key={o.id} offer={o}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
       {product.offers.map(o => <p key={o.id}><b>{o.seller} · {conditionLabel(o.condition)}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
       <p>MSRP / RRP: {money(product.best.rrp)} · Fit: {product.best.fit ?? '—'}/5</p>
