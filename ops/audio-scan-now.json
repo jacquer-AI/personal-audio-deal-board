@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-hifishark-price-e2e-20261012-pr23",
+  "requestId": "hifishark-v2-europe-price-rebuild-20261012",
   "mode": "full",
   "categories": "all",
-  "purpose": "Verify index asking prices extracted on actual 48-model HiFiShark FULL scan after price-window fallback and real failure diagnostic. Nonzero Europe price candidates and UI publication required.",
+  "purpose": "FINAL E2E: retrieve all 48 HiFiShark models, parse both 90 € and €90, evict legacy corrupted indexed prices, verify country-local provenance and show indexed price separately from live seller listing.",
   "requestedOn": "2026-10-12"
 }
