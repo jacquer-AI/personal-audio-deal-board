@@ -122,9 +122,18 @@ test('slow polling times out and recovers through the public run without duplica
   await expect(page.getByTestId('refresh-state')).toContainText(/QUEUED|RUNNING/);
   let unblock:()=>void=()=>{};
   await page.route(dispatcher+'/status',async route=>{await new Promise<void>(resolve=>{unblock=resolve});await route.abort().catch(()=>{})});
-  await page.route('https://api.github.com/**/actions/runs/123',route=>route.fulfill({json:{...activeRun,status:'completed',conclusion:'success'}}));
+  // The real public GitHub fallback is cross-origin. Mock its CORS response,
+  // otherwise Chromium rejects the response and the slow-poll recovery is never exercised.
+  let publicChecks=0;
+  await page.route('https://api.github.com/**/actions/runs/123',route=>{
+    publicChecks++;
+    return route.fulfill({status:200,contentType:'application/json',
+      headers:{'access-control-allow-origin':'*'},
+      body:JSON.stringify({...activeRun,status:'completed',conclusion:'success'})});
+  });
   await page.clock.runFor(21000);
   await expect(page.getByTestId('delta-none')).toContainText('Rynek się nie zmienił');
+  expect(publicChecks).toBeGreaterThan(0);
   expect(gh.dispatcherRequests).toHaveLength(1);unblock();
 });
 
