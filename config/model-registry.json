@@ -505,6 +505,97 @@
         "Beyerdynamic T1 Gen 2"
       ],
       "enabled": true
+    },
+    {
+      "model": "Beyerdynamic DT 48 25 Ohm",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "DT48 25 Ohm",
+        "DT 48 E 25",
+        "DT48E 25",
+        "DT 48 25 ohm"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sony MDR-CD900ST",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "MDR CD900ST",
+        "CD900ST"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Sony MDR-M1",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Sony MDR M1",
+        "MDR-M1"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Austrian Audio Hi-X65",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "HiX65",
+        "Hi-X65"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Austrian Audio Hi-X60",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "HiX60",
+        "Hi-X60"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Neumann NDH 30",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "NDH30",
+        "NDH-30"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Audio-Technica ATH-M70x",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ATH M70x",
+        "M70x"
+      ],
+      "enabled": true
+    },
+    {
+      "model": "Focal Clear OG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "Focal Clear Original",
+        "Focal Clear OG",
+        "Focal Clear (Original)"
+      ],
+      "enabled": true
     }
   ]
 }
