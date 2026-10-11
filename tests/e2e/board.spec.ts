@@ -29,7 +29,7 @@ test('Polish item condition is visible beside the price and separate from verifi
   expect(await condition.textContent()).not.toMatch(/LIVE|VERIFIED|NIEPOTWIERDZONE/);
   await first.locator('.offer-details > summary').click();
   await expect(first.getByTestId('source-row').first().locator('.item-condition')).toBeVisible();
-  await expect(page.locator('.watchlist')).toContainText('48 rodzin modeli');
+  await expect(page.locator('.watchlist')).toContainText('56 rodzin modeli');
   await page.getByRole('button',{name:/Pokaż .*dodatkowych modeli do wyszukania/}).click();
   await expect(page.getByText('Etymotic ER4SR',{exact:true})).toBeVisible();
 });
