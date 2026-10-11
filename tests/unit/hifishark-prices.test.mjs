@@ -34,6 +34,11 @@ describe('HiFiShark genuine card parsing: indexed asking price is not seller ver
       '<span class="hidden-marker">something</span><strong>€75</strong>');
   expect(discoverEuropeanHifisharkRows(html,dt)).toMatchObject([{askingPrice:75,currency:'EUR'}]);
  });
+ it('reads visible asking price when vendor HTML has no strong wrapper, not the original discount-price attribute',()=>{
+  const html=card('Subito','Beyerdynamic DT880','€75','no-strong','Italy')
+    .replace('<strong>€75</strong>','<span>€75</span>');
+  expect(discoverEuropeanHifisharkRows(html,dt)).toMatchObject([{askingPrice:75,currency:'EUR'}]);
+ });
  it('accepts Spain even for an unfamiliar local marketplace when the flag proves European location',()=>{
   const rows=discoverEuropeanHifisharkRows(card('Como Ficho','Beyerdynamic DT 880','€50','spain','Spain'),dt);
   expect(rows).toMatchObject([{country:'Hiszpania',askingPrice:50}]);
