@@ -10,7 +10,7 @@ import BuildFreshness from './BuildFreshness';
 import {marketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
 
 const offers = (snapshot.offers as Offer[]).filter(europeanOffer);
-type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string|null;originalPrice?:number;currency?:string;sourceId?:string;country?:string;locationEvidence?:string;originSource?:string;originUrl?:string;aggregatorListedDate?:string|null;originalPriceText?:string;askingPriceText?:string;lastVerificationFailure?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
+type ResearchLead = {model:string;category:string;source:string;region:string;url:string;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string|null;originalPrice?:number;currency?:string;sourceId?:string;country?:string;locationEvidence?:string;originSource?:string;originUrl?:string;aggregatorListedDate?:string|null;originalPriceText?:string;askingPriceText?:string;lastVerificationFailure?:string;priceEvidenceVersion?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
 const categories = ['Wszystkie', 'IEM', 'TWS', 'Closed', 'Open', 'Głośniki BT'];
 const defaults: Filters = {search:'', category:'Wszystkie', conditions:[], region:'Wszystkie', status:'Wszystkie', liveOnly:false, history:false, sort:'b4b'};
 function read() {
@@ -26,7 +26,7 @@ const money = (n: number | null) => n === null ? '—' : new Intl.NumberFormat('
 }).format(n);
 function ResearchItem({c}: {c:ResearchLead}) {
   const verified=c.verificationState==='DIRECT_OFFER_VERIFIED'&&Boolean(c.verifiedAt);
-  const aggregatorPrice=c.verificationState==='AGGREGATOR_PRICE_ONLY'&&Boolean(c.askingPriceText);
+  const aggregatorPrice=c.verificationState==='AGGREGATOR_PRICE_ONLY'&&c.priceEvidenceVersion==='HIFISHARK_CARD_PRICE_V2'&&Boolean(c.askingPriceText);
   const directPriceOnly=c.verificationState==='DIRECT_PAGE_PRICE_ONLY'&&Boolean(c.verifiedAt);
   const pagePrice=(verified||directPriceOnly)&&Number.isFinite(c.pricePln??c.price);
   const isBid=c.priceBasis==='METADATA_MAY_BE_BID'||c.source==='Marktplaats';
@@ -116,11 +116,12 @@ export default function App() {
   const shownOfferCount = products.reduce((n,p) => n + p.offers.length, 0);
   const researchLeads = ((research.candidates||[]) as ResearchLead[])
     .filter(europeanResearch)
+    .filter(c=>c.verificationState!=='AGGREGATOR_PRICE_ONLY'||c.priceEvidenceVersion==='HIFISHARK_CARD_PRICE_V2')
     .filter(c=>(f.category==='Wszystkie'||c.category===f.category)&&(!f.search.trim()||[c.model,c.source,c.region].join(' ').toLocaleLowerCase().includes(f.search.toLocaleLowerCase())));
   const verifiedResearch = researchLeads.filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&c.verifiedAt
     &&Number.isFinite(Date.parse(c.verifiedAt))&&Date.now()-Date.parse(c.verifiedAt)>=0
     &&Date.now()-Date.parse(c.verifiedAt)<=8*60*60*1000).sort((a,b)=>(a.pricePln??Infinity)-(b.pricePln??Infinity));
-  const aggregatorResearch = researchLeads.filter(c=>c.verificationState==='AGGREGATOR_PRICE_ONLY'&&Boolean(c.askingPriceText))
+  const aggregatorResearch = researchLeads.filter(c=>c.verificationState==='AGGREGATOR_PRICE_ONLY'&&c.priceEvidenceVersion==='HIFISHARK_CARD_PRICE_V2'&&Boolean(c.askingPriceText))
     .sort((a,b)=>(a.pricePln??Infinity)-(b.pricePln??Infinity));
   const unverifiedResearch = researchLeads.filter(c=>!verifiedResearch.includes(c)&&!aggregatorResearch.includes(c));
   const otherWatchModels = uniqueWatchModels([...new Set(offers.map(o=>o.model))]);
