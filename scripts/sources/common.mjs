@@ -104,6 +104,9 @@ export function isPlausibleOfferLink(url,source=null){
     if(/^\/s-[^/]+\/k\d+\/?$/i.test(path) || /^\/annunci-[^/]+\/vendita\//i.test(path))return false;
     const id=String(source?.id||'');
     if(id==='subito-it'&&!['subito.it','www.subito.it'].includes(u.hostname.toLowerCase()))return false;
+    if(id==='vinted-pl')return /^\/items\/\d{5,}(?:-|\/|$)/i.test(path);
+    if(id==='headfi-classifieds')return /^\/classifieds\//i.test(path);
+    if(id==='ceneo-pl')return /^\/\d{4,}(?:\/|$)/i.test(path);
     if(id==='kleinanzeigen-de')return /^\/s-anzeige\/[^/]+\/\d{6,}(?:-|\/|$)/i.test(path);
     if(id==='marktplaats-nl')return /^\/v\/[^/]+\/[^/]+\/m\d{7,}/i.test(path);
     if(id==='subito-it')return /^\/[^/]+\/[^/]+\.htm$/i.test(path);

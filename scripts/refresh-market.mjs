@@ -1,9 +1,11 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
-import {modelMatches,urlMatchesModel,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
+import {modelMatches,conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs} from './discovery-scheduler.mjs';
+import {discoverPageLinks} from './sources/discovery-links.mjs';
+import {mergeResearchCandidates} from './research-ledger.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -155,16 +157,8 @@ if(mode!=='quick'){
     else if([401,403,429,451].includes(p.http))stat.restricted++;
     else stat.errors++;
     if(p.http<200||p.http>=400)return [];
-    const links=[];const re=/href=["']([^"'#]+)["']/gi;let x;
-    while((x=re.exec(p.html))&&links.length<80){
-      try{
-        const u=new URL(x[1],p.url).toString();
-        const src=sourceForUrl(u);
-        if(src?.id!==j.s.id||isListingUrl(u)||!isPlausibleOfferLink(u,src)||!urlMatchesModel(u,j.m)||known.has(u))continue;
-        if(!links.includes(u))links.push(u);
-      }catch{/* unparsable href */}
-    }
-    const found=links.slice(0,2).map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,query:j.query,discoveredAt:now,status:'LEAD ONLY'}));
+    const links=discoverPageLinks(p.html,p.url,j.s,j.m,known,6);
+    const found=links.map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,query:j.query,discoveredAt:now,status:'LEAD ONLY',evidence:'ITEM_URL_OR_ANCHOR'}));
     stat.candidateUrls+=found.length;
     return found;
   });
@@ -196,7 +190,7 @@ if(mode!=='quick'){
         verifiedAt:null,http,price:null,currency:null,availability:null,
         redTeam:['NOT_VERIFIED','NO_LANDED_COST']},addition:null};
     };
-    if(!source||!meta||isListingUrl(c.url)||!isPlausibleOfferLink(c.url,source)||!urlMatchesModel(c.url,meta))
+    if(!source||!meta||isListingUrl(c.url)||!isPlausibleOfferLink(c.url,source))
       return reject('NOT_DIRECT_OR_MODEL');
     if(!source.canVerifyOffer)
       return reject('SOURCE_DISCOVERY_ONLY',null,true);
@@ -229,7 +223,7 @@ if(mode!=='quick'){
     };
     const rt=redTeam(add,source,peer);
     const candidate={...c,status:'VERIFIED LEAD',verifiedAt:now,verificationState:'DIRECT_OFFER_VERIFIED',
-      http:200,condition,price,currency:parsed.currency,availability:'InStock',redTeam:rt.flags};
+      http:200,condition,pricePln:price,originalPrice:parsed.price,currency:parsed.currency,availability:'InStock',redTeam:rt.flags};
     stat.verifiedUrls=(stat.verifiedUrls||0)+1;
     const fp=fingerprint(add);
     if(rt.block){
@@ -260,9 +254,9 @@ const ledgerLines=fs.existsSync(ledgerPath)?fs.readFileSync(ledgerPath,'utf8').s
 const last=lastObservations(ledgerLines);
 const obsAppend=dedupeObservations(rawObs,last);
 
-const candidatesDoc=mode==='quick'?previousCandidates:{schema:1,refreshedAt:now,mode,candidates};
+const candidatesDoc=mode==='quick'?previousCandidates:{schema:2,refreshedAt:now,mode,candidates:mergeResearchCandidates(previousCandidates.candidates||[],candidates,now)};
 const currentChanged=!materiallyEqual({...previousCurrent,status:undefined,mode:undefined},{...current,status:undefined,mode:undefined});
-const candidatesChanged=mode!=='quick'&&!materiallyEqual(previousCandidates.candidates||[],candidates);
+const candidatesChanged=mode!=='quick'&&!materiallyEqual(previousCandidates.candidates||[],candidatesDoc.candidates);
 // Fresh seller verification is perishable evidence. Persist a positive recheck at
 // least every four hours even if price is unchanged, so static Pages can prove recency.
 const persistedAt=Date.parse(previousRuntime?.refresh?.refreshedAt||'');
@@ -270,7 +264,7 @@ const freshnessRenewal=receipt.directVerified>0&&(!Number.isFinite(persistedAt)|
 const material=currentChanged||candidatesChanged||obsAppend.length>0||delta.changes.length>0||freshnessRenewal;
 
 Object.assign(delta,{schema:1,refreshedAt:now,mode,runId,candidates:candidatesDoc.candidates?.length??0,verifiedAdditions:newAdditions.length,observationChanges:obsAppend.length,freshnessRenewal,receipt});
-const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,newLeads:candidates.length,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length,freshnessRenewal,discoveredUrlsChecked:mode==='quick'?0:(receipt.discovery?.sources?Object.values(receipt.discovery.sources).reduce((n,x)=>n+(x.checkedUrls||0),0):0)};
+const summary={mode,categories:categoryArg,material,DELTA:material?'CHANGED':'NONE',receipt,newLeads:candidates.length,retainedResearchLeads:candidatesDoc.candidates?.length??0,newVerifiedOffers:newAdditions.length,deepCandidates:candidates.filter(c=>c.deep).length,priceChanged:delta.priceChanged,sold:delta.sold,stale:delta.stale,new:delta.new,observationChanges:obsAppend.length,freshnessRenewal,discoveredUrlsChecked:mode==='quick'?0:(receipt.discovery?.sources?Object.values(receipt.discovery.sources).reduce((n,x)=>n+(x.checkedUrls||0),0):0)};
 
 if(material&&!DRY){
   fs.writeFileSync('data/market-current.json',JSON.stringify(current,null,2)+'\n');
