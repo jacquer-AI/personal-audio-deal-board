@@ -108,8 +108,19 @@ export function discoverEuropeanHifisharkRows(html,model,limit=8){
   const priceAt=priceOpen?body.indexOf(priceOpen[0])+priceOpen[0].length:-1;
   const priceWindow=priceAt>=0?body.slice(priceAt,priceAt+1400):'';
   const priceText=priceWindow.match(/<strong\b[^>]*>([\s\S]{0,160}?)<\/strong>/i)?.[1]||'';
-  const price=aggregatorAskingPrice(htmlText(priceText));
-  if(!price){trace('PRICE_NOT_PARSED');continue}
+  // Read text from only THIS item's price section; the discount metadata
+  // and strike-through original price are not seller asking-price evidence.
+  const currentPriceWindow=priceWindow.split(/<span\b[^>]*class=["'][^"']*\bprice-converted\b/i)[0];
+  const price=aggregatorAskingPrice(htmlText(priceText))||
+    aggregatorAskingPrice(htmlText(currentPriceWindow));
+  if(!price){
+    if(model?.model==='Beyerdynamic DT 880'&&!audit.PRICE_NOT_PARSED)
+      console.log('HIFISHARK_PRICE_FAILURE_SAMPLE',JSON.stringify({
+        open:priceOpen?.[0]||null,strong:priceText,
+        window:priceWindow.slice(0,900),visible:htmlText(priceWindow).slice(0,300)
+      }));
+    trace('PRICE_NOT_PARSED');continue;
+  }
   const date=body.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},?\s+20\d{2}\b/i)?.[0]||null;
   trace('ACCEPTED');seen.add(url);results.push({url,model:model.model,site:siteText||localized?.site||'HiFiShark',
     country,region,locationEvidence:flagCountry?'HIFISHARK_ITEM_COUNTRY_FLAG':'EUROPEAN_MARKETPLACE_NOT_SELLER',
