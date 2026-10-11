@@ -35,7 +35,11 @@ const patterns=[
 ];
 const currencyOf=['EUR','PLN','GBP','OTHER'];
 export function aggregatorAskingPrice(s){
- const input=String(s||'');
+ const input=String(s||'')
+  .replace(/&(?:euro|#8364|#x20ac);?/gi,'€')
+  .replace(/&(?:pound|#163|#xa3);?/gi,'£')
+  .replace(/&(?:nbsp|#160|#xa0);?/gi,' ')
+  .replace(/&amp;/gi,'&');
  for(let i=0;i<patterns.length;i++){
   const match=input.match(patterns[i]);
   if(!match)continue;
@@ -97,8 +101,13 @@ export function discoverEuropeanHifisharkRows(html,model,limit=8){
     ['Wielka Brytania','Norwegia','Szwajcaria','Ukraina','Islandia'].includes(country)
       ?'non-EU / TLC':'UE';
 
-  const priceSpan=body.match(/<span\b[^>]*class=["'][^"']*\bprice\b[^"']*["'][^>]*>([\s\S]{0,600}?)<\/span>/i)?.[1]||'';
-  const priceText=priceSpan.match(/<strong\b[^>]*>([\s\S]{0,140}?)<\/strong>/i)?.[1]||'';
+  // Real HiFiShark cards sometimes place nested spans BEFORE the asking-price
+  // <strong>. Stopping at the first </span> drops every price in such cards.
+  // Anchor boundaries already isolate the item; search a bounded price window.
+  const priceOpen=body.match(/<span\b[^>]*class=["'][^"']*\bprice\b[^"']*["'][^>]*>/i);
+  const priceAt=priceOpen?body.indexOf(priceOpen[0])+priceOpen[0].length:-1;
+  const priceWindow=priceAt>=0?body.slice(priceAt,priceAt+1400):'';
+  const priceText=priceWindow.match(/<strong\b[^>]*>([\s\S]{0,160}?)<\/strong>/i)?.[1]||'';
   const price=aggregatorAskingPrice(htmlText(priceText));
   if(!price){trace('PRICE_NOT_PARSED');continue}
   const date=body.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},?\s+20\d{2}\b/i)?.[0]||null;
