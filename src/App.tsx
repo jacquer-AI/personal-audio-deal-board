@@ -34,7 +34,7 @@ function ResearchItem({c}: {c:ResearchLead}) {
     <strong>{c.model}</strong>
     <span>{c.source} · {c.region} · <b>Stan: {conditionLabel(c.condition)}</b></span>
     <span>{inLive?'CENA PRODUKTU POTWIERDZONA · LIVE (bez kosztu wysyłki)':verified?'Cena produktu, stan i dostępność odczytane na stronie sprzedawcy; '+(isBid?'kwota może być licytacją':'cena bez kosztów dostawy'):'Niepotwierdzone ogłoszenie lub agregator — wymaga kontroli'}</span>
-    {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> · <b>Stan: {conditionLabel(c.condition)}</b> · {isBid?'· sygnał ceny z metadanych, możliwa licytacja':'· cena produktu bez dostawy do Polski'}
+    {pagePrice&&<span><b>{money(c.pricePln??c.price??null)}</b> · <b>Stan: {conditionLabel(c.condition)}</b> · {isBid?'sygnał ceny z metadanych, możliwa licytacja':'cena produktu bez dostawy do Polski'}
       {c.originalPrice!=null&&c.currency&&' · '+c.originalPrice+' '+c.currency}
       {c.fxSource==='NBP_TABLE_A'&&c.fxEffectiveDate?' · kurs NBP '+c.fxEffectiveDate:' · kurs orientacyjny, nieaktualny dla płatności'}</span>}
     {rateKnown&&<span>Deklarowana dostawa do Polski: <b>{c.shippingRate} {c.shippingCurrency}</b>
