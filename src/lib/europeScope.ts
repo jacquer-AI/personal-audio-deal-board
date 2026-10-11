@@ -12,7 +12,9 @@ export function europeanOffer(o:Offer):boolean {
   return /(?:uk|united kingdom|norway|norwegia|switzerland|szwajcaria|wielka brytania|islandia|iceland)/i.test(o.country);
 }
 export function europeanResearch(c:{region?:string;country?:string;sourceId?:string;locationEvidence?:string}):boolean {
-  if(c.sourceId==='hifishark'&&!c.locationEvidence)return false;
+  // Global merchant marketplaces (including eBay DE) do not establish where
+  // this particular seller is located. Do not use site domain as location.
+  if(['hifishark','ebay-de','ebay-uk','ebay-pl','headfi-classifieds'].includes(c.sourceId||'')&&!c.locationEvidence)return false;
   if(!c.region||c.region==='EUROPE_UNCONFIRMED')return false;
   if(c.country&&(outside.test(c.country)||unknown.test(c.country)))return false;
   // A directly reached HiFiShark seller needs explicit geographic provenance.
