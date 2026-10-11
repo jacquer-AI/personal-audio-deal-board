@@ -63,5 +63,7 @@ describe('HiFiShark genuine card parsing: indexed asking price is not seller ver
   expect(aggregatorAskingPrice('NOK 1,000')).toMatchObject({originalPrice:1000,currency:'NOK'});
   expect(aggregatorAskingPrice('HUF 45,000')).toMatchObject({originalPrice:45000,currency:'HUF'});
   expect(aggregatorAskingPrice('€75')).toMatchObject({originalPrice:75,currency:'EUR'});
+  expect(aggregatorAskingPrice('&euro;75')).toMatchObject({originalPrice:75,currency:'EUR'});
+  expect(aggregatorAskingPrice('&#8364;75')).toMatchObject({originalPrice:75,currency:'EUR'});
  });
 });
