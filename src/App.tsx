@@ -8,7 +8,7 @@ import {results, group, b4b, discount, savings, decision, selectCompare, buyable
 import {sortResearch, researchSortExplanation, pricePln} from './lib/researchSort';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
-import {marketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
+import {marketplaces, watchMarketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
 
 const offers = (snapshot.offers as Offer[]).filter(europeanOffer);
 type ResearchLead = {model:string;category:string;source:string;region:string;url:string;quality?:string;fit?:number|null;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string|null;originalPrice?:number;currency?:string;sourceId?:string;country?:string;locationEvidence?:string;originSource?:string;originUrl?:string;aggregatorListedDate?:string|null;originalPriceText?:string;askingPriceText?:string;lastVerificationFailure?:string;priceEvidenceVersion?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
@@ -222,7 +222,7 @@ export default function App() {
         </details>}
       </section>}
       {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Stały zakres: {trackedModelCount} rodzin modeli. Modele poniżej nie mają zapisanych ogłoszeń; nie przypisujemy im fikcyjnych ocen ani cen.</span>
-        {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{marketplaces.slice(0,3).map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
+        {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{watchMarketplaces.map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
       </section>}
     </main>
     <footer><details className="methodology"><summary>Jak liczymy ceny i B4B?</summary>
