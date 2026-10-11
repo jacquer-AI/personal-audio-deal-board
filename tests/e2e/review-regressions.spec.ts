@@ -131,10 +131,14 @@ test('slow polling times out and recovers through the public run without duplica
       headers:{'access-control-allow-origin':'*'},
       body:JSON.stringify({...activeRun,status:'completed',conclusion:'success'})});
   });
-  await page.clock.runFor(21000);
+  // Advance past the app's 15s timeout, then release the Playwright
+  // intercepted network request: route handlers are external to fake timers
+  // and otherwise remain pending even after the browser aborts fetch().
+  await page.clock.runFor(16000);
+  unblock();
+  await expect.poll(()=>publicChecks,{timeout:10000}).toBeGreaterThan(0);
   await expect(page.getByTestId('delta-none')).toContainText('Rynek się nie zmienił');
-  expect(publicChecks).toBeGreaterThan(0);
-  expect(gh.dispatcherRequests).toHaveLength(1);unblock();
+  expect(gh.dispatcherRequests).toHaveLength(1);
 });
 
 test('old unverified seller links are hidden from LIVE but remain research-only',async({page})=>{
