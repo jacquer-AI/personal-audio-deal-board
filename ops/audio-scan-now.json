@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-hifishark-europe-price-smoke-20261011-pr18",
+  "requestId": "audio-hifishark-real-card-EU-pr19-20261011",
   "mode": "full",
   "categories": "all",
-  "purpose": "Run actual Europe-only HiFiShark-first scan across all 48 models; retain indexed asking prices when merchant redirect is blocked; check seller prices when accessible and do not promote aggregate-only records to LIVE.",
+  "purpose": "E2E production acceptance for real HiFiShark search-product-row parser, all 48 monitored models, Europe-only country flags, preserved indexed asking prices, no aggregator-to-LIVE promotion.",
   "requestedOn": "2026-10-11"
 }
