@@ -215,13 +215,18 @@ test('all sorts match independent visible numeric order',async({page})=>{
       const kind=sort==='discount'?'stan':'nowe';
       const values=cards.map(c=>{
         const m=c.match(new RegExp('([−+]?[0-9]+[.,][0-9]+)% vs '+kind));
-        expect(m,c).not.toBeNull();
-        return -Number(m![1].replace('−','-').replace(',','.'));
+        // Newly verified asking prices can legitimately have no same-condition
+        // benchmark; they must display a dash, not a fabricated discount.
+        return m?-Number(m[1].replace('−','-').replace(',','.')):null;
       });
-      expect(values).toEqual([...values].sort((a,b)=>b-a));
+      expect(values.filter((v):v is number=>v!==null)).toEqual(
+        [...values.filter((v):v is number=>v!==null)].sort((a,b)=>b-a));
+      expect(values).toEqual([
+        ...values.filter(v=>v!==null),...values.filter(v=>v===null)
+      ]);
     }
     if(sort==='b4b'){
-      const scores=cards.map(c=>Number(c.match(/B4B ([\d.]+)/)?.[1]));
+      const scores=cards.map(c=>Number(c.match(/B4B ([\d.]+)/)?.[1]??-Infinity));
       expect(scores).toEqual([...scores].sort((a,b)=>b-a));
     }
   }
