@@ -26,8 +26,19 @@ export function itemTitleEvidence(html){
 export function itemTitleMatchesModel(html,model){
   const expected=[model?.model,...(model?.aliases||[])].map(norm).filter(n=>n.length>=5);
   const titles=itemTitleEvidence(html);
+  // A family-name prefix is not evidence of the exact commercial variant.
+  // These are distinct products, with different specifications and prices.
+  const knownVariantConflicts={
+    'hifiman svanar wireless':/\bsvanar wireless (?:jr|le)\b/,
+    'focal clear mg':/\bclear mg (?:professional|pro)\b/,
+    'thieaudio monarch mkii':/\bmonarch (?:mk ?iii|iii|3)\b/,
+    'thieaudio monarch mkiii':/\bmonarch (?:mk ?ii|ii|2)\b/
+  };
+  const conflict=knownVariantConflicts[norm(model?.model)];
   return titles.some(t=>{
-    const words=' '+norm(t)+' ',compact=norm(t).replace(/\s+/g,'');
+    const normalized=norm(t);
+    if(conflict?.test(normalized))return false;
+    const words=' '+normalized+' ',compact=normalized.replace(/\s+/g,'');
     return expected.some(n=>words.includes(' '+n+' ')||(n.replace(/\s+/g,'').length>=6&&compact.includes(n.replace(/\s+/g,''))));
   });
 }
