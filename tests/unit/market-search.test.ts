@@ -3,14 +3,14 @@ import {marketplaces,additionalWatchModels,uniqueWatchModels,trackedModelCount} 
 
 describe('market breadth without invented offers',()=>{
   it('opens five distinct marketplace searches with Unicode model names',()=>{
-    expect(marketplaces.map(m=>m.id)).toEqual(['vinted','olx','allegro','ebay','kleinanzeigen']);
+    expect(marketplaces.map(m=>m.id)).toEqual(['hifishark','vinted','olx','allegro','ebay','kleinanzeigen']);
     for(const m of marketplaces){
       const url=new URL(m.url('Beyerdynamic DT 880'));
       expect(url.protocol).toBe('https:');
       expect(url.href).toContain('Beyerdynamic');
       expect(url.href).toContain('DT');
     }
-    expect(marketplaces[0].url('')).toContain('s%C5%82uchawki');
+    expect(marketplaces[1].url('')).toContain('s%C5%82uchawki');
     expect(marketplaces[0].url('Sony MDR-SA5000')).toContain('Sony%20MDR-SA5000');
   });
   it('does not count search-only models as offers or duplicate registered ones',()=>{
