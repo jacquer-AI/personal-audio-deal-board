@@ -36,6 +36,14 @@ describe('item-specific seller evidence',()=>{
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT 1990 PRO</title>',dt1990)).toBe(true);
     expect(itemTitleMatchesModel('<title>Etymotic ER4SR</title>',er4s)).toBe(false);
     expect(itemTitleMatchesModel('<title>Etymotic ER4S</title>',er4s)).toBe(true);
+    const dt48={model:'Beyerdynamic DT 48 25 Ohm',aliases:['DT48 25 Ohm','DT 48 E 25','DT48E 25','DT 48 25 ohm']};
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT 48 E 25 Ohm used</title>',dt48)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 25 Ohm classic</title>',dt48)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 E 200 Ohm</title>',dt48)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 250 Ohm</title>',dt48)).toBe(false);
+    const m1={model:'Sony MDR-M1',aliases:['Sony MDR M1','MDR-M1']};
+    expect(itemTitleMatchesModel('<title>Sony MDR-M1 monitor headphones</title>',m1)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Sony MDR-M1ST vintage</title>',m1)).toBe(false);
   });
   it('does not mistake a Marktplaats bid/metadata value for a buy-now price',()=>{
     expect(priceBasis({id:'marktplaats-nl'})).toBe('METADATA_MAY_BE_BID');
