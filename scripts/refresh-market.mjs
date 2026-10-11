@@ -232,7 +232,7 @@ if(mode!=='quick'){
         .filter(x=>!known.has(x.url))
         .map(x=>({...x,category:j.m.category,quality:j.m.quality,fit:j.m.fit,
           sourceId:j.s.id,source:j.s.name,query:j.query,discoveredAt:now,
-          status:'AGGREGATOR PRICE ONLY',evidence:'HIFISHARK_ITEM_ROW_PRICE'}))
+          status:'AGGREGATOR PRICE ONLY',priceEvidenceVersion:'HIFISHARK_CARD_PRICE_V2',evidence:'HIFISHARK_ITEM_ROW_PRICE'}))
       :discoverPageLinks(p.html,p.url,j.s,j.m,known,8)
         .map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,
           fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,
