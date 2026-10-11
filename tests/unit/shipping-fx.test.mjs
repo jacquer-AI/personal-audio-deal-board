@@ -1,4 +1,4 @@
-import {describe,it,expect,vi} from 'vitest';
+import {describe,it,expect} from 'vitest';
 import {shippingEvidencePoland} from '../../scripts/shipping-evidence.mjs';
 import {validatedNbpTable} from '../../scripts/refresh-fx.mjs';
 const page=offer=>'<script type="application/ld+json">'+JSON.stringify({'@context':'https://schema.org','@type':'Product',name:'Example IEM',offers:offer})+'</script>';
