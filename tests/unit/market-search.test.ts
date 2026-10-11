@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {marketplaces,additionalWatchModels,uniqueWatchModels} from '../../src/lib/marketSearch';
+import {marketplaces,additionalWatchModels,uniqueWatchModels,trackedModelCount} from '../../src/lib/marketSearch';
 
 describe('market breadth without invented offers',()=>{
   it('opens five distinct marketplace searches with Unicode model names',()=>{
@@ -15,6 +15,10 @@ describe('market breadth without invented offers',()=>{
   });
   it('does not count search-only models as offers or duplicate registered ones',()=>{
     expect(additionalWatchModels).toContain('Sony MDR-SA5000');
+    expect(additionalWatchModels).toContain('Etymotic ER4SR');
+    expect(additionalWatchModels).toContain('Sennheiser HD 800 S');
+    expect(trackedModelCount).toBe(48);
+    expect(new Set(additionalWatchModels).size).toBe(trackedModelCount);
     const rest=uniqueWatchModels(['Sony MDR-SA5000','Beyerdynamic DT 880']);
     expect(rest).not.toContain('Sony MDR-SA5000');
     expect(rest).not.toContain('Beyerdynamic DT 880');
