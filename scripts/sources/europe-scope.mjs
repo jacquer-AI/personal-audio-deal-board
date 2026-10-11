@@ -2,7 +2,6 @@
  * portal's TLD or the global aggregator's headquarters. Fail closed on unknown.
  * European non-EU countries (UK, Norway, Switzerland) remain in Europe.
  */
-const normalize=x=>String(x||'').toLowerCase();
 const europeCountries=[
   ['Polska',/\b(?:poland|polska|polen|polonia|pl)\b/i],
   ['Niemcy',/\b(?:germany|deutschland|niemcy|de)\b/i],
@@ -49,7 +48,7 @@ const localized=new Map([
 export function europeCountryFromLabel(value){
  const text=String(value||'').trim();
  if(!text||outside.test(text))return null;
- return europeCountries.find(([country,rx])=>rx.test(text))?.[0]||null;
+ return europeCountries.find(([,rx])=>rx.test(text))?.[0]||null;
 }
 export function geographicEvidence(source,html=''){
  const id=String(source?.id||'');
