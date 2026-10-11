@@ -31,7 +31,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-11T19:52:48.828Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -83,7 +83,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -369,7 +369,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -473,7 +473,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -499,7 +499,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -525,7 +525,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -551,7 +551,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -577,7 +577,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
     },
     {
@@ -629,14 +629,446 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-11T20:05:07.025Z"
+        "checkedAt": "2026-10-11T20:14:35.427Z"
       }
+    },
+    {
+      "id": "refresh-02f57b5d6be8f8d7",
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 350.2,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "80 EUR",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-9f5a327c7d9b9a5e",
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 525.3,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cremona-648038097.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-1134fb89bc677e69",
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 328.31,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "75 EUR",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-treviso-656681763.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-7e1ad9b146f46d6a",
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": 1498,
+      "sameMarket": 1050,
+      "price": 1313.25,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "300 EUR",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-blu-salerno-628578189.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-8c5afc9308fa5d80",
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": 1498,
+      "sameMarket": 1050,
+      "price": 875.5,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "200 EUR",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-db065d10a142923b",
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": 1498,
+      "sameMarket": 1050,
+      "price": 1313.25,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "300 EUR",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-napoli-628578057.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-69310b67d25d663f",
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": 1498,
+      "sameMarket": 1050,
+      "price": 1090,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "249 EUR",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-e0b6ea7ffad009e8",
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "condition": "NEW",
+      "rrp": 799,
+      "newMarket": 599,
+      "sameMarket": 599,
+      "price": 525.3,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-prezzo-trattabile-vibo-valentia-652760291.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-1dd201cddd078308",
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 525.3,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-659498024.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-bf93aa19ff5f6f79",
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 525.3,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-milano-648438267.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-b1fb0d7c0dc69123",
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 547.19,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "125 EUR",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-7f99945107aa3c3d",
+      "model": "Technics EAH-AZ100",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 3,
+      "condition": "NEW",
+      "rrp": 1300,
+      "newMarket": 841,
+      "sameMarket": 841,
+      "price": 2622.12,
+      "country": "UE",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "599 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm",
+      "role": "OFFER",
+      "checked": "2026-10-11",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-11T20:14:35.427Z",
+        "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-11T20:05:07.025Z",
+    "refreshedAt": "2026-10-11T20:14:35.427Z",
     "mode": "full",
-    "runId": "38170698992",
+    "runId": "38171356654",
     "status": "COMPLETED"
   }
 }

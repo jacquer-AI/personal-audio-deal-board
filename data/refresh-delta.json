@@ -1,35 +1,107 @@
 {
-  "new": 0,
+  "new": 12,
   "priceChanged": 0,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 880",
+      "price": 350.2,
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 880",
+      "price": 525.3,
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cremona-648038097.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 880",
+      "price": 328.31,
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-treviso-656681763.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 1313.25,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-blu-salerno-628578189.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 875.5,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 1313.25,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-napoli-628578057.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Bose SoundLink Max",
+      "price": 1090,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 525.3,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-prezzo-trattabile-vibo-valentia-652760291.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 525.3,
+      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-659498024.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 525.3,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-milano-648438267.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 547.19,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Technics EAH-AZ100",
+      "price": 2622.12,
+      "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-11T20:05:07.025Z",
+  "refreshedAt": "2026-10-11T20:14:35.427Z",
   "mode": "full",
-  "runId": "38170698992",
+  "runId": "38171356654",
   "candidates": 206,
-  "verifiedAdditions": 0,
-  "observationChanges": 9,
+  "verifiedAdditions": 12,
+  "observationChanges": 29,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 20,
-    "directVerified": 2,
+    "directVerified": 3,
     "accessRestricted": 11,
     "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 4,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 3,
       "olx-pl": 4,
       "allegro-pl": 3,
       "ebay-pl": 1
     },
-    "researchRechecked": 33,
+    "researchRechecked": 29,
     "researchReverified": 29,
-    "researchDowngraded": 4,
     "discovery": {
       "plannedJobs": 240,
       "coreSources": [
@@ -43,30 +115,30 @@
         "hifishark"
       ],
       "plannedSources": 10,
-      "reachableSources": 5,
+      "reachableSources": 4,
       "sources": {
         "allegro-pl": {
           "requested": 32,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 30,
-          "errors": 2
+          "restricted": 32,
+          "errors": 0
         },
         "olx-pl": {
           "requested": 32,
-          "reachable": 1,
+          "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 31,
+          "restricted": 32,
           "errors": 0
         },
         "vinted-pl": {
           "requested": 32,
           "reachable": 30,
-          "candidateUrls": 44,
+          "candidateUrls": 45,
           "restricted": 2,
           "errors": 0,
-          "checkedUrls": 44,
-          "unverifiedUrls": 44
+          "checkedUrls": 45,
+          "unverifiedUrls": 45
         },
         "mediaexpert-outlet": {
           "requested": 32,
@@ -85,11 +157,11 @@
         "marktplaats-nl": {
           "requested": 32,
           "reachable": 32,
-          "candidateUrls": 21,
+          "candidateUrls": 22,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 21,
-          "verifiedUrls": 16,
+          "checkedUrls": 22,
+          "verifiedUrls": 17,
           "unverifiedUrls": 5
         },
         "subito-it": {

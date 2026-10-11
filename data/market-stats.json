@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-11T20:05:07.025Z",
+  "refreshedAt": "2026-10-11T20:14:35.427Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,11 +20,43 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 999,
-      "max": 999
+      "max": 2622.12
+    },
+    {
+      "key": "Bose SoundLink Max|USED",
+      "n": 4,
+      "confidence": "PROVISIONAL",
+      "median": 1201.625,
+      "min": 875.5,
+      "max": 1313.25
+    },
+    {
+      "key": "Beyerdynamic DT 880|USED",
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 350.2,
+      "min": 328.31,
+      "max": 525.3
+    },
+    {
+      "key": "JBL Charge 6|USED",
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 525.3,
+      "min": 525.3,
+      "max": 547.19
+    },
+    {
+      "key": "JBL Charge 6|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 525.3,
+      "max": 525.3
     }
   ]
 }
