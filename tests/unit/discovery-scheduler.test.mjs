@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {planDiscoveryJobs} from '../../scripts/discovery-scheduler.mjs';
+import {planDiscoveryJobs,coreSourceIdsForDate} from '../../scripts/discovery-scheduler.mjs';
 
 const models=Array.from({length:16},(_,i)=>({model:'Headphone '+i}));
 const sources=Array.from({length:9},(_,i)=>({id:'site-'+i,queryTerms:[],searchUrlTemplate:'https://site.example/?q={q}'}));
@@ -54,5 +54,25 @@ describe('prioritized all-model discovery',()=>{
     expect(jobs.slice(0,16).every(j=>j.s.id==='site-5')).toBe(true);
     expect(new Set(jobs.slice(0,16).map(j=>j.m.model)).size).toBe(16);
     expect(jobs.slice(16).every(j=>j.s.id==='site-1')).toBe(true);
+  });
+});
+
+describe('48 model daily rotation makes foreign providers reachable under the 240-job limit',()=>{
+  it('gives every model the three daily baselines and alternates all five extra sources',()=>{
+    const models48=Array.from({length:48},(_,i)=>({model:'Audio '+i}));
+    const ids=['allegro-pl','olx-pl','vinted-pl','subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
+    const available=ids.map(id=>({id,queryTerms:[],searchUrlTemplate:'https://site.example/?q={q}'}));
+    const encountered=new Set();
+    for(let d=11;d<16;d++){
+      const core=coreSourceIdsForDate('2026-10-'+d);
+      expect(core).toHaveLength(5);
+      expect(core.slice(0,3)).toEqual(ids.slice(0,3));
+      core.forEach(x=>encountered.add(x));
+      const jobs=planDiscoveryJobs(models48,available,240,core);
+      expect(jobs).toHaveLength(240);
+      for(const id of core)expect(jobs.filter(j=>j.s.id===id)).toHaveLength(48);
+      expect(new Set(jobs.map(j=>j.m.model)).size).toBe(48);
+    }
+    expect([...encountered].sort()).toEqual([...ids].sort());
   });
 });
