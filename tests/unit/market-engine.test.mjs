@@ -115,13 +115,28 @@ describe('overlay, delta and no-op',()=>{
 });
 
 describe('red team',()=>{
-  it('blocks non-EU and implausibly cheap offers, flags battery risk',()=>{
-    expect(redTeam({...offer,condition:'NEW'},{region:'non-EU / TLC'},offer).block).toBe(true);
-    expect(redTeam({...offer,price:100},{region:'UE'},offer).block).toBe(true);
-    const r=redTeam({...offer,category:'TWS',price:500},{region:'UE'},offer);
-    expect(r.block).toBe(true);
+  const confirmed={...offer,priceBasis:'SELLER_PAGE_PRICE',
+    shippingToPoland:'PL_SHIPPING_UNKNOWN',
+    refresh:{verificationState:'DIRECT_OFFER_VERIFIED',http:200,checkedAt:'2026-10-11T20:00:00Z'}};
+  it('promotes a verified EU seller asking price even with unknown PL shipping',()=>{
+    const r=redTeam({...confirmed,price:500},{id:'subito-it',region:'UE'},offer);
+    expect(r.block).toBe(false);
+    expect(r.flags).toContain('PL_SHIPPING_COST_UNKNOWN');
+    expect(r.flags).toContain('PRICE_EXCLUDES_SHIPPING_AND_FEES');
+  });
+  it('still blocks bids, implausibly cheap offers and unverified item prices',()=>{
+    expect(redTeam({...confirmed,priceBasis:'METADATA_MAY_BE_BID'},
+      {id:'marktplaats-nl',region:'UE'},offer).block).toBe(true);
+    expect(redTeam({...confirmed,price:100},{region:'UE'},offer).block).toBe(true);
+    expect(redTeam({...confirmed,refresh:{verificationState:'REACHABLE',http:200}},
+      {region:'UE'},offer).block).toBe(true);
+    expect(redTeam({...confirmed,price:null},{region:'UE'},offer).block).toBe(true);
+    expect(redTeam({...confirmed,condition:'NEW'},{region:'non-EU / TLC'},offer).block).toBe(true);
+  });
+  it('discloses battery risk without blocking a verified asking price',()=>{
+    const r=redTeam({...confirmed,category:'TWS',price:500},{id:'subito-it',region:'UE'},offer);
+    expect(r.block).toBe(false);
     expect(r.flags).toContain('BATTERY_HEALTH_UNVERIFIED');
-    expect(r.flags).toContain('SHIPPING_NOT_INCLUDED');
   });
 });
 
