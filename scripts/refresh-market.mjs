@@ -19,7 +19,7 @@ const runId=process.env.GITHUB_RUN_ID||('local-'+Date.now());
 const now=new Date().toISOString();
 const TIMEOUT=Number(process.env.REFRESH_TIMEOUT_MS||12000);
 const CONCURRENCY=Math.max(1,Math.min(6,Number(process.env.REFRESH_CONCURRENCY||4)));
-const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(320,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?240:120))));
+const MAX_DISCOVERY_JOBS=Math.max(1,Math.min(500,Number(process.env.REFRESH_DISCOVERY_LIMIT||(mode==='deep'?320:160))));
 const DEADLINE=Date.now()+Number(process.env.REFRESH_DEADLINE_MS||20*60*1000);
 const DRY=process.env.REFRESH_DRY==='1';
 
@@ -147,7 +147,8 @@ const newAdditions=[];
 if(mode!=='quick'){
   const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(mode==='deep'||s.sweep==='daily'));
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
-  const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS);
+  const coreSourceIds=['vinted-pl','subito-it','marktplaats-nl','kleinanzeigen-de','hifishark'];
+  const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds);
   const discoveryStats=Object.fromEntries(sweepSources.map(s=>[s.id,{requested:0,reachable:0,candidateUrls:0,restricted:0,errors:0}]));
   const discovered=await pool(jobs,async j=>{
     const stat=discoveryStats[j.s.id];
@@ -157,24 +158,34 @@ if(mode!=='quick'){
     else if([401,403,429,451].includes(p.http))stat.restricted++;
     else stat.errors++;
     if(p.http<200||p.http>=400)return [];
-    const links=discoverPageLinks(p.html,p.url,j.s,j.m,known,6);
+    const links=discoverPageLinks(p.html,p.url,j.s,j.m,known,8);
     const found=links.map(url=>({model:j.m.model,category:j.m.category,quality:j.m.quality,fit:j.m.fit,sourceId:j.s.id,source:j.s.name,region:j.s.region,url,query:j.query,discoveredAt:now,status:'LEAD ONLY',evidence:'ITEM_URL_OR_ANCHOR'}));
     stat.candidateUrls+=found.length;
     return found;
   });
-  receipt.discovery={plannedJobs:jobs.length,plannedSources:Object.values(discoveryStats).filter(s=>s.requested>0).length,reachableSources:Object.values(discoveryStats).filter(s=>s.reachable>0).length,sources:discoveryStats};
+  receipt.discovery={plannedJobs:jobs.length,coreSources:coreSourceIds,plannedSources:Object.values(discoveryStats).filter(s=>s.requested>0).length,reachableSources:Object.values(discoveryStats).filter(s=>s.reachable>0).length,sources:discoveryStats};
   // Discovery URLs are INTERNAL INPUT, never publishable offers or even user-facing leads.
-  const discoveredUrls=[];
+  // Round-robin by model: a prolific seller cannot consume all verification
+  // slots before other headphone families receive a chance.
+  const buckets=new Map(models.map(m=>[m.model,[]]));
   const seen=new Set();
   for(const rows of discovered)for(const c of rows||[]){
-    if(seen.has(c.url)||discoveredUrls.length>=120)continue;
-    seen.add(c.url);discoveredUrls.push(c);
+    if(seen.has(c.url))continue;
+    seen.add(c.url);buckets.get(c.model)?.push(c);
   }
-
-  // Open every bounded candidate on the final seller page BEFORE allowing it into
-  // the candidate register or LIVE. 403, navigation, absent price/stock/condition
-  // and redirects to unrelated products are audit observations only.
-  const verify=discoveredUrls.slice(0,120);
+  const discoveredUrls=[];
+  let left=true;
+  while(left&&discoveredUrls.length<360){
+    left=false;
+    for(const group of buckets.values()){
+      if(!group.length)continue;
+      left=true;discoveredUrls.push(group.shift());
+      if(discoveredUrls.length>=360)break;
+    }
+  }
+  // Final seller verification remains mandatory for LIVE. 403 or incomplete
+  // shipping cost can only yield a separately-labelled research lead.
+  const verify=discoveredUrls;
   const verified=await pool(verify,async c=>{
     const source=sourceById.get(c.sourceId);
     const meta=modelMeta.get(c.model);
