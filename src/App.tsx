@@ -196,11 +196,11 @@ export default function App() {
       {researchLeads.length>0 && <section id="research-leads" className="research-leads">
         <h2>Ogłoszenia znalezione na rynku: {researchLeads.length}</h2>
         <p><b>{verifiedResearch.length}</b> stron produktów sprawdzonych w ostatnich 8 godzinach. Weryfikujemy także zapisane warunki przesyłki do Polski, ale dane sprzedawcy nie zastępują wyceny w kasie. Metadane Marktplaats mogą dotyczyć licytacji, a nie ceny „Kup teraz”. <b>To nie są zatwierdzone oferty LIVE.</b></p>
-        {verifiedResearch.length>0&&<div className="research-grid">{verifiedResearch.slice(0,12).map(c=><ResearchItem c={c} key={c.url}/>)}</div>}
+        {verifiedResearch.length>0&&<div className="research-grid">{verifiedResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div>}
         {verifiedResearch.length===0&&<p>Brak aktualnie potwierdzonych stron sprzedawców. Możesz sprawdzić poniższe ogłoszenia ręcznie.</p>}
-        {(verifiedResearch.length>12||unverifiedResearch.length>0)&&<details className="research-more">
-          <summary>Pokaż pozostałe ogłoszenia ({Math.max(verifiedResearch.length-12,0)+unverifiedResearch.length}) — nie są potwierdzonymi ofertami LIVE</summary>
-          <div className="research-grid">{[...verifiedResearch.slice(12),...unverifiedResearch].map(c=><ResearchItem c={c} key={c.url}/>)}</div>
+        {unverifiedResearch.length>0&&<details className="research-more">
+          <summary>Pokaż pozostałe ogłoszenia ({unverifiedResearch.length}) — nie są potwierdzonymi ofertami LIVE</summary>
+          <div className="research-grid">{unverifiedResearch.map(c=><ResearchItem c={c} key={c.url}/>)}</div>
         </details>}
       </section>}
       {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Lista obserwacyjna — bez potwierdzonych ogłoszeń w lokalnej bazie i bez fikcyjnych ocen lub cen.</span>
