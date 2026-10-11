@@ -1,4 +1,5 @@
 import {norm,htmlText,toNumber} from './common.mjs';
+import {europeCountryFromLabel} from './europe-scope.mjs';
 
 /** Strict geographic marketplace identity. HiFiShark is worldwide; a currency
  * or a .de mirror alone does not locate the merchant. This allowlist admits
@@ -54,37 +55,55 @@ function matchModel(value,model){
  if(norm(model?.model)==='beyerdynamic dt 1990 pro' && /dt 1990 pro (?:mk\s?ii|mkii|mk2|ii)\b/.test(full))return false;
  return true;
 }
-/** Parse only a complete result row with one /goto item link, known European
- * marketplace label and its OWN asking price. Never infer price from global
- * page text, recommendation links, sidebar or unrelated rows.
- * Optional date is the listing's index date, NOT live seller verification.
+/** Parse ONLY an individual HiFiShark result anchor, never the whole search
+ * page. HiFiShark uses <a class="search-product-row"> cards, not table <tr>.
+ * The price is the <strong> inside that item's <span class="price">.
+ * The country flag is per-item aggregator market-location evidence.
  */
 export function discoverEuropeanHifisharkRows(html,model,limit=8){
  const results=[],seen=new Set();
- const rows=[...String(html).matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr>/gi)].slice(0,1200);
+ const rows=[...String(html).matchAll(/<a\b([^>]{0,2500})>([\s\S]{0,12000}?)<\/a\s*>/gi)].slice(0,1800);
  for(const rowMatch of rows){
   if(results.length>=limit)break;
-  const row=rowMatch[0];
-  const goto=[...row.matchAll(/<a\b[^>]*href\s*=\s*["']([^"']*\/goto\/[^"']+)["'][^>]*>/gi)];
-  if(goto.length!==1)continue;
+  const attrs=rowMatch[1],body=rowMatch[2];
+  if(!/\bsearch-product-row\b/i.test(attrs))continue;
+  const raw=attrs.match(/\bhref\s*=\s*["']([^"']+)["']/i)?.[1];
+  if(!raw)continue;
   let url;
-  try{url=new URL(goto[0][1].replace(/&amp;/g,'&'),'https://www.hifishark.com/').toString();
-   if(new URL(url).hostname.replace(/^www\./,'')!=='hifishark.com'||!new URL(url).pathname.startsWith('/goto/'))continue;
+  try{
+   url=new URL(raw.replace(/&amp;/g,'&'),'https://www.hifishark.com/').toString();
+   const u=new URL(url);
+   if(u.hostname.replace(/^www\./,'')!=='hifishark.com'||!u.pathname.startsWith('/goto/'))continue;
   }catch{continue}
   if(seen.has(url))continue;
-  const anchors=[...row.matchAll(/<a\b[^>]*>([\s\S]*?)<\/a\s*>/gi)].map(a=>htmlText(a[1]).trim());
-  const item=anchors.find(a=>matchModel(a,model));
-  if(!item)continue;
-  // Only named European marketplace cells may locate an aggregator lead.
-  const cells=[...row.matchAll(/<t[dh]\b[^>]*>([\s\S]*?)<\/t[dh]\s*>/gi)].map(m=>htmlText(m[1]).trim());
-  const site=cells.map(europeanMarketplace).find(Boolean)||anchors.map(europeanMarketplace).find(Boolean);
-  if(!site)continue;
-  const price=cells.map(aggregatorAskingPrice).find(Boolean);
+  const itemHtml=body.match(/<span\b[^>]*class=["'][^"']*\bsearch-product-title\b[^"']*["'][^>]*>([\s\S]{0,900}?)(?:<\/span>)/i)?.[1]||'';
+  const item=htmlText(itemHtml).trim();
+  if(!item||!matchModel(item,model))continue;
+
+  const siteHtml=body.match(/<div\b[^>]*class=["'][^"']*\bwebsite-grid\b[^"']*["'][^>]*>([\s\S]{0,800}?)<\/div>/i)?.[1]||'';
+  const siteText=htmlText(siteHtml).trim();
+  const localized=europeanMarketplace(siteText);
+  const flagTags=[...body.matchAll(/<img\b[^>]{0,600}>/gi)];
+  const flag=flagTags.find(m=>/\bclass\s*=\s*["'][^"']*\bflag\b/i.test(m[0]));
+  const flagName=flag?.[0].match(/\balt\s*=\s*["']([^"']+)["']/i)?.[1]||'';
+  const flagCountry=flagName?europeCountryFromLabel(flagName):null;
+  // The presence of an explicit outside-Europe/unknown country flag must
+  // take precedence over a European marketplace domain.
+  if(flagName&&!flagCountry)continue;
+  const country=flagCountry||localized?.country;
+  if(!country)continue;
+  const region=country==='Polska'?'Polska':
+    ['Wielka Brytania','Norwegia','Szwajcaria','Ukraina','Islandia'].includes(country)
+      ?'non-EU / TLC':'UE';
+
+  const priceSpan=body.match(/<span\b[^>]*class=["'][^"']*\bprice\b[^"']*["'][^>]*>([\s\S]{0,600}?)<\/span>/i)?.[1]||'';
+  const priceText=priceSpan.match(/<strong\b[^>]*>([\s\S]{0,140}?)<\/strong>/i)?.[1]||'';
+  const price=aggregatorAskingPrice(htmlText(priceText));
   if(!price)continue;
-  const date=row.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},?\s+20\d{2}\b/i)?.[0]||null;
-  seen.add(url);results.push({url,model:model.model,site:site.site,country:site.country,region:site.region,
-    locationEvidence:site.locationEvidence,askingPrice:price.originalPrice,
-    currency:price.currency,askingPriceText:price.originalPriceText,
+  const date=body.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},?\s+20\d{2}\b/i)?.[0]||null;
+  seen.add(url);results.push({url,model:model.model,site:siteText||localized?.site||'HiFiShark',
+    country,region,locationEvidence:flagCountry?'HIFISHARK_ITEM_COUNTRY_FLAG':'EUROPEAN_MARKETPLACE_NOT_SELLER',
+    askingPrice:price.originalPrice,currency:price.currency,askingPriceText:price.originalPriceText,
     aggregatorListedDate:date,source:'HiFiShark',verificationState:'AGGREGATOR_PRICE_ONLY'});
  }
  return results;
