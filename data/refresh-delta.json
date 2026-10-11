@@ -2,21 +2,27 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 0,
-  "changes": [],
+  "stale": 1,
+  "changes": [
+    {
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-11T21:52:44.075Z",
-  "mode": "full",
-  "runId": "38178151086",
+  "refreshedAt": "2026-10-11T21:54:07.342Z",
+  "mode": "quick",
+  "runId": "38178215044",
   "candidates": 215,
   "verifiedAdditions": 0,
-  "observationChanges": 0,
+  "observationChanges": 1,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 30,
-    "directVerified": 14,
+    "directVerified": 13,
     "accessRestricted": 10,
-    "ambiguous": 5,
+    "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
@@ -28,103 +34,6 @@
       "ebay-pl": 1
     },
     "researchRechecked": 36,
-    "researchReverified": 36,
-    "discovery": {
-      "plannedJobs": 240,
-      "coreSources": [
-        "hifishark",
-        "allegro-pl",
-        "olx-pl",
-        "vinted-pl",
-        "marktplaats-nl"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 3,
-      "sources": {
-        "allegro-pl": {
-          "requested": 48,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 43,
-          "errors": 5
-        },
-        "olx-pl": {
-          "requested": 48,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 48,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 48,
-          "reachable": 30,
-          "candidateUrls": 44,
-          "restricted": 18,
-          "errors": 0,
-          "checkedUrls": 44,
-          "unverifiedUrls": 44
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 48,
-          "reachable": 48,
-          "candidateUrls": 29,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 29,
-          "verifiedUrls": 23,
-          "unverifiedUrls": 4,
-          "sellerPriceOnly": 2
-        },
-        "subito-it": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 48,
-          "reachable": 48,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        }
-      }
-    }
+    "researchReverified": 36
   }
 }
