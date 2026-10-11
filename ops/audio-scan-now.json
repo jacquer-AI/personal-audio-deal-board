@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-item-price-e2e-20261011-fixed-price-without-shipping",
+  "requestId": "audio-hifishark-europe-price-smoke-20261011-pr18",
   "mode": "full",
   "categories": "all",
-  "purpose": "E2E acceptance: admit direct-page-confirmed fixed item asking prices even without Poland shipping quote, keep auctions/bids and wrong variants research-only, publish explicit item-only price disclaimer and verify storefront readback.",
+  "purpose": "Run actual Europe-only HiFiShark-first scan across all 48 models; retain indexed asking prices when merchant redirect is blocked; check seller prices when accessible and do not promote aggregate-only records to LIVE.",
   "requestedOn": "2026-10-11"
 }
