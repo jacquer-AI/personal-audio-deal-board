@@ -54,7 +54,11 @@ function shipmentEvidence(html,priceInCurrency,itemPln){
 }
 const sources=sourceDoc.sources||[];
 const sourceById=new Map(sources.map(s=>[s.id,s]));
-const models=(modelDoc.models||[]).filter(m=>m.enabled!==false&&(!selectedCategories||selectedCategories.has(m.category)));
+// When the DEEP exploratory budget is truncated, keep listener priorities first.
+// Priority is personal search interest, never evidence of sonic quality or a deal.
+const models=(modelDoc.models||[])
+  .filter(m=>m.enabled!==false&&(!selectedCategories||selectedCategories.has(m.category)))
+  .sort((a,b)=>(a.priority??99)-(b.priority??99));
 const modelMeta=new Map((modelDoc.models||[]).map(m=>[m.model,m]));
 
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
