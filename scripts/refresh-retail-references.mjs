@@ -193,6 +193,6 @@ if(self){
   if(process.env.GITHUB_OUTPUT)fs.appendFileSync(process.env.GITHUB_OUTPUT,'retail_changed='+result.changed+'\n');
   if(process.env.GITHUB_STEP_SUMMARY)
     fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,
-      '### Retail index · Ceneo (research only)\n\n'+result.audit.map(a=>
+      '### Retail references · Ceneo / exact retailers (research only)\n\n'+result.audit.map(a=>
         '- '+a.model+': '+a.status+(a.pricePln?' · '+a.pricePln+' PLN':'')).join('\n')+'\n\n');
 }
