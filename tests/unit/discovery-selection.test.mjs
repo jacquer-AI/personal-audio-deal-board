@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {selectDiscoveryCandidates,recentResearchUrls} from '../../scripts/discovery-selection.mjs';
+import {selectDiscoveryCandidates,recentResearchUrls,planResearchRechecks} from '../../scripts/discovery-selection.mjs';
 
 const sources=[
  {id:'hifishark',canVerifyOffer:false},
@@ -95,5 +95,66 @@ describe('recent search-lead cooldown',()=>{
    ];
    expect([...recentResearchUrls(records,now)]).toEqual([]);
    expect([...recentResearchUrls(records,'not-a-date')]).toEqual([]);
+ });
+});
+
+describe('research refresh fairness and non-duplicated seller verification',()=>{
+ const tracked=[
+  {model:'Beyerdynamic DT 48 25 Ohm',category:'Closed',priority:1},
+  {model:'Sony MDR-SA5000',category:'Open',priority:2},
+  {model:'JBL Charge 6',category:'Głośniki BT',priority:99}
+ ];
+ const c=(model,n,extra={})=>({
+  model,category:tracked.find(m=>m.model===model)?.category,
+  verificationState:'DIRECT_OFFER_VERIFIED',region:'UE',
+  priceBasis:'METADATA_MAY_BE_BID',verifiedAt:'2026-10-12T09:00:00Z',
+  url:'https://www.marktplaats.nl/v/item/'+n,...extra
+ });
+ it('skips 66 board URLs and includes all 33 unpromoted leads formerly beyond position 80',()=>{
+  const all=Array.from({length:99},(_,i)=>c('JBL Charge 6',i));
+  const board=all.slice(0,66).map(x=>({url:x.url,model:x.model}));
+  const plan=planResearchRechecks(all,tracked,board,80);
+  expect(plan.skippedOnBoard).toBe(66);
+  expect(plan.eligible).toBe(33);
+  expect(plan.selected).toHaveLength(33);
+  expect(plan.selected.map(x=>x.url)).toEqual(all.slice(66).map(x=>x.url));
+ });
+ it('prioritizes rare preferred models, rotates across families, and deduplicates URLs',()=>{
+  const all=[
+   ...Array.from({length:8},(_,i)=>c('JBL Charge 6','j'+i)),
+   c('Sony MDR-SA5000','sony'),
+   c('Beyerdynamic DT 48 25 Ohm','dt48'),
+   c('Beyerdynamic DT 48 25 Ohm','dt48'),
+   c('Beyerdynamic DT 48 25 Ohm','dt48-other')
+  ];
+  const plan=planResearchRechecks(all,tracked,[],3);
+  expect(plan.eligible).toBe(11);
+  expect(plan.skippedDuplicates).toBe(1);
+  expect(plan.selected.map(x=>x.model)).toEqual([
+   'Beyerdynamic DT 48 25 Ohm','Sony MDR-SA5000','JBL Charge 6'
+  ]);
+  expect(new Set(plan.selected.map(x=>x.url)).size).toBe(3);
+ });
+ it('excludes aggregates, unknown region, untracked category and already-board items',()=>{
+  const all=[
+   c('Sony MDR-SA5000','agg',{verificationState:'AGGREGATOR_PRICE_ONLY'}),
+   c('Sony MDR-SA5000','global',{region:'GLOBAL'}),
+   c('Sony MDR-SA5000','valid'),
+   c('Beyerdynamic DT 48 25 Ohm','closed'),
+   c('JBL Charge 6','speaker')
+  ];
+  const plan=planResearchRechecks(all,tracked.filter(m=>m.category==='Open'),
+    [{url:all[2].url}],80);
+  expect(plan.selected).toEqual([]);
+  expect(plan.skippedOnBoard).toBe(1);
+ });
+ it('is a pure planner: it never creates an offer or changes seller evidence',()=>{
+  const lead=c('Beyerdynamic DT 48 25 Ohm','one');
+  const before=JSON.stringify(lead);
+  const plan=planResearchRechecks([lead],tracked,[],80);
+  expect(plan.selected).toEqual([lead]);
+  expect(JSON.stringify(lead)).toBe(before);
+  expect(lead.status).toBeUndefined();
+  expect(planResearchRechecks([lead],tracked,[],0).selected).toEqual([]);
  });
 });
