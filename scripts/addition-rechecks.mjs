@@ -29,8 +29,15 @@ export function applyAdditionRecheck(a,u,now){
   }
   // Do not renew last successful evidence on a blocked/ambiguous/dead/timeout
   // response. A stale listing is visible for research only, not buyable.
+  // A new explicit seller refusal supersedes the old UNKNOWN shipping quote.
+  const shippingCorrection=reason==='PL_SHIPPING_EXCLUDED'?{
+    shippingToPoland:'PL_EXPLICITLY_EXCLUDED',shippingRate:null,
+    shippingCurrency:null,shippingRatePln:null,itemPlusShippingPln:null,
+    shippingSource:'SELLER_DESCRIPTION',
+    note:[a.note,u?.note].filter(Boolean).join(' · ')
+  }:{};
   return {
-    ...a,status:'STALE / REVERIFY',role:'OFFER',
+    ...a,...shippingCorrection,status:'STALE / REVERIFY',role:'OFFER',
     refresh:{...preserved,verificationState:reason,http:u?.http??null,
       checkedAt:a.refresh?.checkedAt||first,lastAttemptAt:now}
   };

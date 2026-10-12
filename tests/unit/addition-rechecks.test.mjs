@@ -34,6 +34,18 @@ describe('P0: reverified discovered offers fail closed and can recover safely',(
      expect(o.refresh.verificationState).toBe(reason);
    }
  });
+ it('preserves seller-proven no-shipping state on a stale offer, never as LIVE',()=>{
+   const o=change(offer,{verificationState:'PL_SHIPPING_EXCLUDED',http:200,
+     note:'Seller explicitly excludes all shipping. Price retained for research.'});
+   expect(o.status).toBe('STALE / REVERIFY');
+   expect(o).toMatchObject({shippingToPoland:'PL_EXPLICITLY_EXCLUDED',
+     shippingRate:null,shippingSource:'SELLER_DESCRIPTION'});
+   expect(o.note).toContain('Seller explicitly excludes all shipping');
+   expect(o.refresh.verificationState).toBe('PL_SHIPPING_EXCLUDED');
+   const board=mergeOverlay({offers:[]},{status:'COMPLETED',updates:[],additions:[o]});
+   expect(board.offers[0].status).not.toMatch(/^LIVE/);
+   expect(board.offers[0].shippingToPoland).toBe('PL_EXPLICITLY_EXCLUDED');
+ });
  it('a timeout does not renew verified evidence or preserve LIVE authority',()=>{
    const o=change(offer,null);
    expect(o.status).toBe('STALE / REVERIFY');
