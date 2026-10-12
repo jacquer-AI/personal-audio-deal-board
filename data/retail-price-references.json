@@ -16,20 +16,20 @@
       "model": "AKG K702",
       "variant": "AKG K702",
       "condition": "NEW",
-      "pricePln": 679,
-      "source": "Ceneo.pl",
-      "url": "https://www.ceneo.pl/28644030",
-      "observedAt": "2026-10-12T06:39:00+02:00",
+      "pricePln": 777,
+      "source": "Thomann.pl",
+      "url": "https://www.thomann.pl/akg_k702.htm",
+      "observedAt": "2026-10-12T06:37:38.541Z",
       "evidence": "INDEXED_RETAIL_ASKING_PRICE"
     },
     {
       "model": "HIFIMAN Edition XS",
       "variant": "HIFIMAN Edition XS",
       "condition": "NEW",
-      "pricePln": 953,
-      "source": "Ceneo.pl",
-      "url": "https://www.ceneo.pl/124339502",
-      "observedAt": "2026-10-12T06:39:00+02:00",
+      "pricePln": 990,
+      "source": "Thomann.pl",
+      "url": "https://www.thomann.pl/hifiman_edition_xs.htm",
+      "observedAt": "2026-10-12T06:37:38.541Z",
       "evidence": "INDEXED_RETAIL_ASKING_PRICE"
     }
   ]
