@@ -93,6 +93,47 @@ export function mergeOverlay(baseDoc, currentDoc) {
 
 /** Fail closed when a previously promoted offer is conclusively the wrong model.
  * Preserve historic price evidence, but never leave it labeled LIVE. */
+/** A refresh result can be newer than the last good evidence. Never keep a
+ * previously promoted seller item LIVE after a blocked, ambiguous or timed-out
+ * recheck. Retain its previous price for history but not as a current quote. */
+export function reconcileVerifiedAddition(addition, check, now) {
+  const previous=addition.refresh||{};
+  const firstVerifiedAt=previous.firstVerifiedAt||previous.checkedAt||now;
+  const baseRefresh={...previous,firstVerifiedAt,checkedAt:now};
+  if(!check) {
+    return {...addition,status:'STALE / REVERIFY',role:'OFFER',
+      refresh:{...baseRefresh,verificationState:'CHECK_INCOMPLETE',http:null}};
+  }
+  if(check.verificationState==='DIRECT_OFFER_VERIFIED'&&check.status==='HISTORICAL'){
+    return {...addition,status:'HISTORICAL',role:'HISTORICAL',
+      refresh:{...baseRefresh,verificationState:'DIRECT_OFFER_VERIFIED',
+        http:check.http??null}};
+  }
+  if(check.verificationState==='DIRECT_OFFER_VERIFIED' &&
+     check.http===200 && Number.isFinite(check.price) && check.price>0 &&
+     (check.status==='LIVE USED'||check.status==='LIVE VERIFIED')) {
+    return {...addition,status:check.status,role:'OFFER',price:check.price,
+      original:check.original||addition.original,checked:check.checked||addition.checked,
+      refresh:{...baseRefresh,verificationState:'DIRECT_OFFER_VERIFIED',http:200,
+        lastVerifiedAt:now}};
+  }
+  return {...addition,status:'STALE / REVERIFY',role:'OFFER',
+    refresh:{...baseRefresh,verificationState:check.verificationState||'REVERIFY_REQUIRED',
+      http:check.http??null}};
+}
+
+/** A seller redirect must point to the exact same listing identity; a valid
+ * HTTP 200 or matching product name on another item is not enough. */
+export function sameSellerItemUrl(expectedUrl, actualUrl) {
+  try {
+    const a=new URL(expectedUrl),b=new URL(actualUrl);
+    const itemPath=u=>decodeURIComponent(u.pathname).replace(/\/+$/,'');
+    return a.protocol==='https:'&&b.protocol==='https:'&&
+      a.hostname.toLowerCase()===b.hostname.toLowerCase()&&
+      itemPath(a)===itemPath(b);
+  } catch {return false}
+}
+
 export function downgradeModelMismatch(addition, check, now) {
   if(check?.verificationState !== 'MODEL_NOT_CONFIRMED') return addition;
   return {...addition,status:'STALE / REVERIFY',role:'OFFER',refresh:{
