@@ -50,28 +50,29 @@ export function selectDiscoveryCandidates(discovered, models, sources, max=360) 
     queues.push({model,queue});
   }
   const out=[];
-  // Aggregator redirects are valuable research, but cannot themselves establish
-  // a fixed seller price. Keep a bounded one-per-model sample so old search
-  // indexes never absorb hundreds of checks needed for direct seller items.
-  const maxAggregators=Math.min(models.length,Math.max(1,Math.floor(max/4)));
-  let aggregateCount=0;
-  const aggregateSeen=new Set();
-  let remaining=true;
-  while(remaining&&out.length<max){
-    remaining=false;
-    for(const {model,queue} of queues){
-      if(!queue.length)continue;
-      remaining=true;
-      const next=queue.shift();
-      if(next.sourceId==='hifishark'){
-        if(aggregateSeen.has(model)||aggregateCount>=maxAggregators)continue;
-        aggregateSeen.add(model);
-        aggregateCount++;
+  // Seller URLs are actionable verification targets. Exhaust direct seller
+  // candidates before using a bounded HTTP budget on aggregator /goto links.
+  // The remaining indexed prices are retained as non-LIVE research below.
+  const maxAggregators=Math.min(models.length,6,Math.max(1,Math.floor(max/4)));
+  const direct=queues.map(({model,queue})=>({model,queue:queue.filter(c=>c.sourceId!=='hifishark')}));
+  const aggregate=queues.map(({model,queue})=>({
+    model,queue:queue.filter(c=>c.sourceId==='hifishark').slice(0,1)
+  }));
+  function takeRounds(groups,stopAt){
+    let remaining=true;
+    while(remaining&&out.length<stopAt){
+      remaining=false;
+      for(const item of groups){
+        const next=item.queue.shift();
+        if(!next)continue;
+        remaining=true;
+        out.push(next);
+        if(out.length>=stopAt)break;
       }
-      out.push(next);
-      if(out.length>=max)break;
     }
   }
+  takeRounds(direct,max);
+  takeRounds(aggregate,Math.min(max,out.length+maxAggregators));
   return out;
 }
 
@@ -150,4 +151,28 @@ export function planResearchRechecks(candidates, trackedModels, existingOffers, 
     }
   }
   return {selected,eligible,skippedOnBoard,skippedDuplicates};
+}
+
+/** Keep all source-parsed HiFiShark asking prices as RESEARCH when their
+ * redirects were not probed. An indexed price is neither current stock nor
+ * a seller-confirmed asking price. Crucially, no HTTP calls occur here. */
+export function retainUnprobedIndexedPrices(discovered,probed,convertToPln=()=>null,fxSource=null,fxEffectiveDate=null){
+  const checked=new Set((probed||[]).filter(c=>c?.sourceId==='hifishark').map(c=>canonicalUrl(c.url)));
+  const seen=new Set(),out=[];
+  for(const rows of discovered||[])for(const c of rows||[]){
+    if(c?.sourceId!=='hifishark'||c.priceEvidenceVersion!=='HIFISHARK_CARD_PRICE_V2'||
+       !(c.askingPrice>0)||!c.currency||typeof c.url!=='string')continue;
+    const key=canonicalUrl(c.url);
+    if(checked.has(key)||seen.has(key))continue;
+    seen.add(key);
+    const pricePln=convertToPln(c.askingPrice,c.currency);
+    out.push({...c,status:'AGGREGATOR PRICE ONLY',
+      verificationState:'AGGREGATOR_PRICE_ONLY',
+      lastVerificationFailure:'GOTO_NOT_PROBED_BUDGET',
+      verifiedAt:null,http:null,availability:null,
+      originalPrice:c.askingPrice,pricePln:Number.isFinite(pricePln)?pricePln:null,
+      priceBasis:'AGGREGATOR_INDEXED_ASK',fxSource,fxEffectiveDate,
+      redTeam:['SELLER_NOT_VERIFIED','AVAILABILITY_UNKNOWN','SHIPPING_UNKNOWN']});
+  }
+  return out;
 }
