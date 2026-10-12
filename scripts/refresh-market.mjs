@@ -10,7 +10,7 @@ import {shippingEvidencePoland} from './shipping-evidence.mjs';
 import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
 import {geographicEvidence,isEuropeRecordedOffer} from './sources/europe-scope.mjs';
 import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
-import {selectDiscoveryCandidates,recentResearchUrls} from './discovery-selection.mjs';
+import {selectDiscoveryCandidates,recentResearchUrls,planResearchRechecks} from './discovery-selection.mjs';
 import {applyAdditionRecheck,sameSellerItemUrl} from './addition-rechecks.mjs';
 import {memoizeScanFetch} from './fetch-cache.mjs';
 import {promoteRecheckedResearch} from './research-promotion.mjs';
@@ -193,8 +193,14 @@ for(const r of reAdds.filter(Boolean)){
 }
 for(const a of priorAdditions.filter(a=>!inScope(a)&&isEuropeRecordedOffer(a)))additions.push(a);
 
+// Existing board offers have already been checked above; prioritize the
+// research-only URLs, including candidates beyond the prior fixed first-80 cap.
+const researchPlan=planResearchRechecks(previousCandidates.candidates||[],models,
+  [...(base.offers||[]),...priorAdditions],80);
+receipt.researchSelection={eligible:researchPlan.eligible,selected:researchPlan.selected.length,
+  skippedOnBoard:researchPlan.skippedOnBoard,skippedDuplicates:researchPlan.skippedDuplicates};
 const researchRechecks=await pool(
-  (previousCandidates.candidates||[]).filter(c=>c.verificationState==='DIRECT_OFFER_VERIFIED'&&inScope(c) && c.region!=='GLOBAL' && c.region!=='EUROPE_UNCONFIRMED').slice(0,80),
+  researchPlan.selected,
   async c=>{
     receipt.researchRechecked=(receipt.researchRechecked||0)+1;
     const source=sourceById.get(c.sourceId);
