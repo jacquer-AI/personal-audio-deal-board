@@ -16,13 +16,14 @@ for(const url of pages){
     const bids=[...body.matchAll(/(?:"|&quot;)(?:priceType|modelType|priceModel)(?:"|&quot;)\s*[:=]/gi)].length;
     const priceTypeAt=body.indexOf('"priceType"');
     const priceInfoAt=body.indexOf('"priceInfo"');
-    const compactShape=priceInfoAt>=0?body.slice(priceInfoAt,priceInfoAt+650).replace(/(?:"(?:sellerName|name|email|phone|postcode|address|street)"\s*:\s*)"[^"]+"/gi,'"$1":"[REDACTED]"'):null;
+    const itemIds=[...body.matchAll(/"itemId"\s*:\s*"(m\d+)"/gi)].map(m=>({id:m[1],offset:m.index}));
+    const compactShape=priceInfoAt>=0?body.slice(priceInfoAt,priceInfoAt+75):null;
     const dataFields=Object.fromEntries(['priceCents','askingPrice','priceType','itemId','listingId','adId'].map(k=>{
       const pattern=new RegExp('"'+k+'"\\s*:\\s*(?:"([^"]{1,80})"|([0-9]{1,12}))','i');
       const match=body.match(pattern);
       return [k,match?.[1]||match?.[2]||null];
     }));
-    console.log('MP_PRICE_SCHEMA',JSON.stringify({path:new URL(url).pathname,priceTypeAt,priceInfoAt,compactShape,dataFields}));
+    console.log('MP_PRICE_SCHEMA',JSON.stringify({path:new URL(url).pathname,priceTypeAt,priceInfoAt,itemIds:itemIds.slice(0,10),compactShape,dataFields}));
     console.log('MP_PUBLIC_PRICE_EVIDENCE',JSON.stringify({path:new URL(url).pathname,http:r.status,bytes:body.length,counts,enumHints,bids,
       itemIdFromUrl:new URL(url).pathname.match(/\/(m\d+)/)?.[1]||null}));
   }catch(e){console.log('MP_PUBLIC_PRICE_EVIDENCE',JSON.stringify({path:new URL(url).pathname,error:String(e).slice(0,60)}));}
