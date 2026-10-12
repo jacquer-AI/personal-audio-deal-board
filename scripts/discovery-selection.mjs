@@ -48,13 +48,25 @@ export function selectDiscoveryCandidates(discovered, models, sources, max=360) 
     queues.push({model,queue});
   }
   const out=[];
+  // Aggregator redirects are valuable research, but cannot themselves establish
+  // a fixed seller price. Keep a bounded one-per-model sample so old search
+  // indexes never absorb hundreds of checks needed for direct seller items.
+  const maxAggregators=Math.min(models.length,Math.max(1,Math.floor(max/4)));
+  let aggregateCount=0;
+  const aggregateSeen=new Set();
   let remaining=true;
   while(remaining&&out.length<max){
     remaining=false;
-    for(const {queue} of queues){
+    for(const {model,queue} of queues){
       if(!queue.length)continue;
       remaining=true;
-      out.push(queue.shift());
+      const next=queue.shift();
+      if(next.sourceId==='hifishark'){
+        if(aggregateSeen.has(model)||aggregateCount>=maxAggregators)continue;
+        aggregateSeen.add(model);
+        aggregateCount++;
+      }
+      out.push(next);
       if(out.length>=max)break;
     }
   }

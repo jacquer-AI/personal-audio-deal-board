@@ -18,7 +18,10 @@ export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[], asOfDate
     const variants=Array.isArray(m.searchTerms)?m.searchTerms.filter(v=>typeof v==='string'&&v.trim()):[];
     const sourceIndex=sources.findIndex(x=>x.id===s.id);
     const modelQuery=variants.length?variants[(day+Math.max(0,sourceIndex))%variants.length]:m.model;
-    const term=(s.queryTerms||[])[0]||'';
+    // Subito already constrains used items in /vendita/usato/, and Marktplaats
+    // listings rarely include the words "usato"/"tweedehands" in item titles.
+    // Model-only queries improve recall without relaxing product verification.
+    const term=['subito-it','marktplaats-nl'].includes(s.id)?'':((s.queryTerms||[])[0]||'');
     const query=[modelQuery,term].filter(Boolean).join(' ');
     jobs.push({m,s,query,url:s.searchUrlTemplate.replace('{q}',encodeURIComponent(query))});
   };
@@ -45,7 +48,7 @@ export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[], asOfDate
  * This is a transparent fixed policy until adaptive verified-yield statistics exist.
  */
 export function coreSourceIdsForDate(isoDate) {
-  const baseline=['hifishark','vinted-pl','marktplaats-nl','subito-it'];
+  const baseline=['subito-it','marktplaats-nl','hifishark','vinted-pl'];
   const rotation=['allegro-pl','olx-pl','kleinanzeigen-de','mediaexpert-outlet','ebay-de'];
   const day=Math.floor(Date.parse(String(isoDate).slice(0,10)+'T00:00:00Z')/86400000);
   const offset=Number.isFinite(day)?((day%rotation.length)+rotation.length)%rotation.length:0;

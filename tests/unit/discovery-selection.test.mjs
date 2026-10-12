@@ -27,6 +27,16 @@ describe('direct seller first: full scan must not starve product verification',(
     expect(out.filter(x=>x.sourceId==='hifishark').length).toBeLessThan(180);
     expect(new Set(out.map(x=>x.url)).size).toBe(out.length);
   });
+  it('limits HiFiShark to one research-only redirect per model even when 8 rows are available',()=>{
+    const aggregateOnly=[];
+    for(const m of models)aggregateOnly.push(
+      Array.from({length:8},(_,i)=>lead(m.model,'hifishark',i))
+    );
+    const out=selectDiscoveryCandidates(aggregateOnly,models,sources,360);
+    expect(out).toHaveLength(models.length);
+    expect(new Set(out.map(x=>x.model)).size).toBe(models.length);
+    expect(out.every(x=>x.sourceId==='hifishark')).toBe(true);
+  });
   it('interleaves each direct seller source before the next offer from that source',()=>{
     const m=[{model:'A'}];
     const all=[[

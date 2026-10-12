@@ -28,6 +28,22 @@ describe('refresh discovery breadth under budgets',()=>{
   });
 });
 
+describe('model-only search restores seller recall',()=>{
+ it('avoids redundant used-condition keywords on Subito and Marktplaats',()=>{
+   const pair=[{model:'Beyerdynamic DT 48 25 Ohm'}];
+   const s=[
+     {id:'subito-it',canVerifyOffer:true,queryTerms:['usato'],searchUrlTemplate:'https://subito.it/annunci-italia/vendita/usato/?q={q}'},
+     {id:'marktplaats-nl',canVerifyOffer:true,queryTerms:['tweedehands'],searchUrlTemplate:'https://www.marktplaats.nl/q/{q}/'},
+     {id:'olx-pl',canVerifyOffer:true,queryTerms:['używane'],searchUrlTemplate:'https://www.olx.pl/oferty/q-{q}/'}
+   ];
+   const jobs=planDiscoveryJobs(pair,s,3,['subito-it','marktplaats-nl','olx-pl'],'2026-10-12');
+   expect(jobs[0].query).toBe('Beyerdynamic DT 48 25 Ohm');
+   expect(jobs[1].query).toBe('Beyerdynamic DT 48 25 Ohm');
+   expect(jobs[2].query).toContain('używane');
+   expect(jobs[0].url).toContain('DT%2048%2025%20Ohm');
+ });
+});
+
 describe('prioritized all-model discovery',()=>{
   it('queries each active marketplace for all 32 models before low-yield exploration',()=>{
     const manyModels=Array.from({length:32},(_,i)=>({model:'Headphone '+i}));
@@ -66,7 +82,7 @@ describe('48 model daily rotation preserves 5 Europe-wide sources and a Polish d
     for(let d=11;d<16;d++){
       const core=coreSourceIdsForDate('2026-10-'+d);
       expect(core).toHaveLength(5);
-      expect(core.slice(0,4)).toEqual(['hifishark','vinted-pl','marktplaats-nl','subito-it']);
+      expect(core.slice(0,4)).toEqual(['subito-it','marktplaats-nl','hifishark','vinted-pl']);
       core.forEach(x=>encountered.add(x));
       const jobs=planDiscoveryJobs(models48,available,240,core);
       expect(jobs).toHaveLength(240);
