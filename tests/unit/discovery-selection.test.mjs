@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {selectDiscoveryCandidates,recentResearchUrls,planResearchRechecks} from '../../scripts/discovery-selection.mjs';
+import {selectDiscoveryCandidates,recentResearchUrls,planResearchRechecks,retainUnprobedIndexedPrices} from '../../scripts/discovery-selection.mjs';
 
 const sources=[
  {id:'hifishark',canVerifyOffer:false},
@@ -19,12 +19,12 @@ describe('direct seller first: full scan must not starve product verification',(
       for(const m of models)discovered.push(Array.from({length:n},(_,i)=>lead(m.model,sourceId,i)));
     }
     const out=selectDiscoveryCandidates(discovered,models,sources,360);
-    expect(out).toHaveLength(360);
+    expect(out).toHaveLength(286);
     expect(new Set(out.map(x=>x.model)).size).toBe(56);
     expect(out.filter(x=>x.sourceId==='subito-it').length).toBeGreaterThanOrEqual(56);
     expect(out.filter(x=>x.sourceId==='marktplaats-nl').length).toBeGreaterThanOrEqual(56);
     // Old algorithm selected only HiFiShark here because its 448 leads came first.
-    expect(out.filter(x=>x.sourceId==='hifishark').length).toBeLessThan(180);
+    expect(out.filter(x=>x.sourceId==='hifishark').length).toBe(6);
     expect(new Set(out.map(x=>x.url)).size).toBe(out.length);
   });
   it('limits HiFiShark to one research-only redirect per model even when 8 rows are available',()=>{
@@ -33,8 +33,8 @@ describe('direct seller first: full scan must not starve product verification',(
       Array.from({length:8},(_,i)=>lead(m.model,'hifishark',i))
     );
     const out=selectDiscoveryCandidates(aggregateOnly,models,sources,360);
-    expect(out).toHaveLength(models.length);
-    expect(new Set(out.map(x=>x.model)).size).toBe(models.length);
+    expect(out).toHaveLength(6);
+    expect(new Set(out.map(x=>x.model)).size).toBe(6);
     expect(out.every(x=>x.sourceId==='hifishark')).toBe(true);
   });
   it('interleaves each direct seller source before the next offer from that source',()=>{
@@ -46,7 +46,7 @@ describe('direct seller first: full scan must not starve product verification',(
       lead('A','vinted-pl',0)
     ]];
     const first=selectDiscoveryCandidates(all,m,sources,5);
-    expect(first.map(x=>x.sourceId)).toEqual(['subito-it','marktplaats-nl','vinted-pl','hifishark','subito-it']);
+    expect(first.map(x=>x.sourceId)).toEqual(['subito-it','marktplaats-nl','vinted-pl','subito-it','marktplaats-nl']);
   });
   it('deduplicates URLs across model aliases and ignores malformed candidates',()=>{
     const duplicate=lead('Audio 1','subito-it',0);
@@ -156,5 +156,54 @@ describe('research refresh fairness and non-duplicated seller verification',()=>
   expect(JSON.stringify(lead)).toBe(before);
   expect(lead.status).toBeUndefined();
   expect(planResearchRechecks([lead],tracked,[],0).selected).toEqual([]);
+ });
+});
+
+describe('HiFiShark bounded /goto budget without losing indexed asking prices',()=>{
+ const tracked=Array.from({length:48},(_,i)=>({model:'H '+i}));
+ const hifishark=(model,n)=>({
+  model,sourceId:'hifishark',url:'https://www.hifishark.com/goto/'+model+'-'+n,
+  priceEvidenceVersion:'HIFISHARK_CARD_PRICE_V2',askingPrice:90+n,
+  askingPriceText:'€'+(90+n),currency:'EUR',region:'UE',
+  site:'Subito',status:'AGGREGATOR PRICE ONLY'
+ });
+ it('checks all ten direct sellers first and limits redirects to six',()=>{
+  const discovered=[];
+  for(const model of tracked){
+   discovered.push(Array.from({length:3},(_,i)=>hifishark(model.model,i)));
+  }
+  for(let i=0;i<10;i++)discovered.push([lead(tracked[i].model,'subito-it','seller'+i)]);
+  const selected=selectDiscoveryCandidates(discovered,tracked,sources,360);
+  expect(selected.filter(c=>c.sourceId==='subito-it')).toHaveLength(10);
+  expect(selected.filter(c=>c.sourceId==='hifishark')).toHaveLength(6);
+  expect(selected.slice(0,10).every(c=>c.sourceId==='subito-it')).toBe(true);
+  expect(new Set(selected.map(c=>c.url)).size).toBe(selected.length);
+ });
+ it('retains unprobed indexed prices as research, never LIVE',()=>{
+  const rows=[[hifishark('H 0',1),hifishark('H 0',2)],
+    [hifishark('H 1',1),hifishark('H 1',1)]];
+  const checked=[rows[0][0]];
+  const original=JSON.stringify(rows);
+  const retained=retainUnprobedIndexedPrices(rows,checked,
+    (amount,currency)=>currency==='EUR'?amount*4:NaN,'NBP_TABLE_A','2026-10-12');
+  expect(retained).toHaveLength(2);
+  expect(retained.map(c=>c.url)).toEqual([rows[0][1].url,rows[1][0].url]);
+  expect(retained[0]).toMatchObject({
+   status:'AGGREGATOR PRICE ONLY',verificationState:'AGGREGATOR_PRICE_ONLY',
+   lastVerificationFailure:'GOTO_NOT_PROBED_BUDGET',verifiedAt:null,
+   availability:null,originalPrice:92,pricePln:368,priceBasis:'AGGREGATOR_INDEXED_ASK'
+  });
+  expect(retained.every(c=>c.status!=='LIVE VERIFIED'&&c.status!=='LIVE USED')).toBe(true);
+  expect(JSON.stringify(rows)).toBe(original);
+ });
+ it('does not retain unpriced or old evidence-version items',()=>{
+  const good=hifishark('H 0',3);
+  const result=retainUnprobedIndexedPrices([[
+   {...good,priceEvidenceVersion:'HIFISHARK_CARD_PRICE_V1'},
+   {...good,url:'https://www.hifishark.com/goto/no-price',askingPrice:null},
+   good
+  ]],[],()=>null);
+  expect(result).toHaveLength(1);
+  expect(result[0].pricePln).toBeNull();
  });
 });
