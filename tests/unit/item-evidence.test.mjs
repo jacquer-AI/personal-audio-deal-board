@@ -54,4 +54,13 @@ describe('item-specific seller evidence',()=>{
     expect(priceBasis({id:'marktplaats-nl'})).toBe('METADATA_MAY_BE_BID');
     expect(priceBasis({id:'subito-it'})).toBe('SELLER_PAGE_PRICE');
   });
+  it('never promotes HD 800 S as original HD 800 even if JSON-LD is generic',()=>{
+    const original={model:'Sennheiser HD 800',aliases:['HD800','HD 800']};
+    const wrong='<title>Sennheiser HD 800 S headphones</title>'+
+      '<script type="application/ld+json">{"@type":"Product","name":"Sennheiser HD 800"}</script>';
+    expect(itemTitleMatchesModel(wrong,original)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Sennheiser HD800S used</title>',original)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Sennheiser HD 800 original headphones</title>',original)).toBe(true);
+  });
+
 });
