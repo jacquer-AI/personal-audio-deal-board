@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-shipping-persistence-final-e2e-20261012-v1",
-  "mode": "quick",
-  "categories": "all",
-  "purpose": "Final physical QUICK E2E after PR50: recheck seller HIFIMAN Ananda Nano pickup-only, persist PL_EXPLICITLY_EXCLUDED and seller note, ensure DT900/DT700 combined listing is not LIVE, preserve unknown-delivery offers, validate and deploy Pages, public readback.",
+  "requestId": "audio-category-open-full-e2e-20261012-v1",
+  "mode": "full",
+  "categories": "Open",
+  "purpose": "Real production E2E acceptance of PR51: require validated scoped Open category from request-file, count search jobs for Open models only, verify direct-seller exact variant and buyable status gates, persist market receipts and confirm Pages public readback. No bypass of restricted sites or unverified offers.",
   "requestedOn": "2026-10-12"
 }
