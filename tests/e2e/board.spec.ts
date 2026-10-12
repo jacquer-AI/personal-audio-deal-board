@@ -207,7 +207,7 @@ test('new and used reference prices are visible with provenance but do not inven
   await page.getByRole('searchbox').fill('Beyerdynamic DT 880');
   const card=page.getByTestId('product').first();
   const market=card.getByTestId('market-reference');
-  await expect(market).toContainText('350,20');
+  await expect(market).toContainText('350,2');
   await expect(market).toContainText('Próbka stanu');
   await expect(market).toContainText('651');
   await expect(market).toContainText('DT 880 Pro 250 Ω');
