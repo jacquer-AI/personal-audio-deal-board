@@ -90,6 +90,30 @@ describe('scheduled retail price index: never a confirmed retail offer',()=>{
     expect(r.changed).toBe(false);
   });
 
+  it('Profi-dj exact 250-ohm product structured PLN reference requires Beyerdynamic brand',()=>{
+    const seller=SOURCES[0].tertiary;
+    const product=JSON.stringify({'@type':'Product',name:'DT 880 PRO 250 Ohm',
+      offers:{'@type':'Offer',price:'759.00',priceCurrency:'PLN'}});
+    const body='<html><h1>DT 880 PRO 250 Ohm</h1><p>Marka: Beyerdynamic</p>'+
+      '<script type="application/ld+json">'+product+'</script></html>';
+    expect(parseVendorReference(body,seller)).toMatchObject({pricePln:759,method:'RETAILER_PRODUCT_JSONLD'});
+    expect(parseVendorReference(body.replace('Beyerdynamic','SomeBrand'),seller).error).toBe('BRAND_NOT_CONFIRMED');
+    expect(parseVendorReference(body.replace('DT 880 PRO','DT 990 PRO'),seller).error).toBe('WRONG_PRODUCT_TITLE');
+  });
+  it('third provider is used only if all earlier exact-source checks are invalid',async()=>{
+    const last=SOURCES[0].tertiary;
+    const data='<html><h1>DT 880 PRO 250 Ohm</h1><p>Marka: Beyerdynamic</p>'+
+      '<script type="application/ld+json">'+JSON.stringify({'@type':'Product',
+      name:'DT 880 PRO 250 Ohm',offers:{price:759,priceCurrency:'PLN'}})+'</script></html>';
+    const fetcher=async url=>url===last.url?
+      {url,status:200,headers:{get:()=> 'text/html'},text:async()=>data}:
+      {url,status:403,headers:{get:()=> 'text/html'},text:async()=>''};
+    const result=await refreshRetail({fetcher,now:date,dryRun:true});
+    expect(result.audit.find(x=>x.model==='Beyerdynamic DT 880')).toMatchObject({
+      source:'Profi-dj.pl',pricePln:759
+    });
+  });
+
   it('uses retailer fallback when protected Ceneo returns a generic productless page',async()=>{
     const oldHtml='<html><body><h2>Włącz JavaScript</h2><p>Oferty ogólne</p></body></html>';
     const sellerHtml='<html><body><h1>AKG K-702</h1><h2>Słuchawki</h2><div>759 zł Ceny z podatkiem VAT</div></body></html>';
