@@ -34,7 +34,7 @@ describe('scheduled retail price index: never a confirmed retail offer',()=>{
     expect(r.changed).toBe(true);
     expect(r.doc.references.find(x=>x.model==='AKG K702').pricePln).toBe(699);
     expect(r.doc.references.find(x=>x.model==='Beyerdynamic DT 880').variant).toContain('nieustalona');
-    expect(before.references.find(x=>x.model==='AKG K702').pricePln).toBe(679);
+    expect(before.references.find(x=>x.model==='AKG K702').pricePln).toBe(snapshot.references.find(x=>x.model==='AKG K702').pricePln);
   });
   it('preserves original price and date during HTTP blocks or implausible price jumps',()=>{
     const blocked=applyRetailChecks(snapshot,new Map(SOURCES.map(s=>[s.model,{error:'HTTP_403'}])),date);
@@ -45,10 +45,12 @@ describe('scheduled retail price index: never a confirmed retail offer',()=>{
     expect(spike.audit.find(x=>x.model==='AKG K702').status).toBe('PRICE_ANOMALY_KEEP_OLD');
   });
   it('does not advance timestamp for identical within 24h, renews real confirmation later',()=>{
-    const sample=new Map([['AKG K702',{pricePln:679,method:'PRODUCT_HEADER_PLN'}]]);
-    const close=applyRetailChecks(snapshot,sample,'2026-10-12T07:40:00+02:00');
+    const current=snapshot.references.find(x=>x.model==='AKG K702');
+    const sample=new Map([['AKG K702',{pricePln:current.pricePln,method:'PRODUCT_HEADER_PLN',url:current.url,source:current.source,variant:current.variant}]]);
+    const observed=Date.parse(current.observedAt);
+    const close=applyRetailChecks(snapshot,sample,new Date(observed+3600000).toISOString());
     expect(close.changed).toBe(false);
-    const later=applyRetailChecks(snapshot,sample,'2026-10-14T07:40:00+02:00');
+    const later=applyRetailChecks(snapshot,sample,new Date(observed+49*3600000).toISOString());
     expect(later.changed).toBe(true);
   });
 
