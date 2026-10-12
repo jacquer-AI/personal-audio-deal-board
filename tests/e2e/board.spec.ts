@@ -43,7 +43,13 @@ test('Polish item condition is visible beside the price and separate from verifi
   await expect(page.locator('.watchlist')).toContainText('60 rodzin modeli');
   await page.getByRole('button',{name:/Pokaż .*dodatkowych modeli do wyszukania/}).click();
   await expect(page.locator('.watchlist').getByText('Etymotic ER4SR',{exact:true})).toBeVisible();
-  for(const model of ['Sennheiser HD 540 Reference II','Audio-Technica ATH-AD2000X','AKG K501','Sennheiser HD 800']) await expect(page.locator('.watchlist').getByText(model,{exact:true})).toBeVisible();
+  // Once a real offer is verified, the model graduates out of the search-only
+  // watchlist into the normal product cards. Both outcomes prove coverage.
+  for(const model of ['Sennheiser HD 540 Reference II','Audio-Technica ATH-AD2000X','AKG K501','Sennheiser HD 800']) {
+    const hasOffer=allOffers.some(o=>o.model===model&&o.status!=='HISTORICAL');
+    if(hasOffer) await expect(page.getByRole('heading',{name:model,exact:true})).toBeVisible();
+    else await expect(page.locator('.watchlist').getByText(model,{exact:true})).toBeVisible();
+  }
 });
 
 test('DT 880 has two genuinely additional listings, without duplicating the primary',async({page})=>{
