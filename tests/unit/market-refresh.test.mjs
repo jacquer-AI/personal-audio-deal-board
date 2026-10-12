@@ -38,8 +38,8 @@ describe('refresh market core',()=>{
     expect(stale).toMatchObject({status:'STALE / REVERIFY',price:add.price,
       refresh:{verificationState:'MODEL_NOT_CONFIRMED',http:200,firstVerifiedAt:'2026-10-11T10:00:00Z'}});
     const merged=mergeOverlay({offers:[]},{additions:[stale]}).offers;
-    expect(merged).toHaveLength(1);
-    expect(merged[0].status).not.toMatch(/^LIVE/);
+    // Wrong-product asking prices must not pollute the headphone ranking.
+    expect(merged).toHaveLength(0);
     expect(downgradeModelMismatch(add,{verificationState:'DIRECT_OFFER_VERIFIED'},'now')).toBe(add);
   });
   it('immediately revokes prior LIVE on a failed remote HTTP or transient timeout recheck',()=>{
