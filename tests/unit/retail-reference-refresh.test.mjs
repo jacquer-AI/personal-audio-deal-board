@@ -65,6 +65,68 @@ describe('scheduled retail price index: never a confirmed retail offer',()=>{
     expect(parseVendorReference(htmlH,h)).toMatchObject({pricePln:645,method:'SUPER_SOUND_GROSS_PRICE'});
     expect(parseVendorReference(htmlH.replace('DT 880 PRO','DT 990 PRO'),h).error).toBe('WRONG_PRODUCT_TITLE');
   });
+  it('Cyfrowe exact 250-ohm DT880 reference excludes bundles, rates and wrong variants',()=>{
+    const product=SOURCES[0].secondary;
+    const markup='<html><h1>Beyerdynamic DT 880 PRO 250 Ohm</h1>'+
+      '<div>Kod produktu: SLUBEYDT880PRO250</div><div>826,00 zł</div>'+
+      '<div>Raty od 82,60 zł x 10</div><div>Do koszyka</div>'+
+      '<h2>Akcesoria 500,00 zł</h2></html>';
+    expect(parseVendorReference(markup,product)).toMatchObject({pricePln:826,method:'CYFROWE_PRODUCT_HERO'});
+    expect(parseVendorReference(markup.replace('DT 880 PRO','DT 990 PRO'),product).error).toBe('WRONG_PRODUCT_TITLE');
+    expect(parseVendorReference(markup.replace('826,00 zł','100,00 zł'),product).error).toBe('NO_PRODUCT_SCOPED_PLN_PRICE');
+  });
+  it('fallback iterates through blocked Supersound and accepts exact Cyfrowe model only',async()=>{
+    const seller='<html><h1>Beyerdynamic DT 880 PRO 250 Ohm</h1>'+
+      '<div>Kod produktu: SLUBEYDT880PRO250</div><strong>826,00 zł</strong>'+
+      '<span>Do koszyka</span></html>';
+    const fetcher=async url=>url===SOURCES[0].secondary.url?
+      {url,status:200,headers:{get:()=> 'text/html'},text:async()=>seller}:
+      {url,status:403,headers:{get:()=> 'text/html'},text:async()=>''};
+    const r=await refreshRetail({fetcher,now:date,dryRun:true});
+    expect(r.audit.find(x=>x.model==='Beyerdynamic DT 880')).toMatchObject({
+      source:'Cyfrowe.pl',pricePln:826
+    });
+    expect(r.doc.references.find(x=>x.model==='Beyerdynamic DT 880').url).toBe(SOURCES[0].secondary.url);
+    expect(r.changed).toBe(false);
+  });
+
+  it('reads exact DT 880 current PLN retail metadata, not old or net amount',()=>{
+    const seller=SOURCES[0].tertiary;
+    const body='<html><head><meta property="product:price:amount" content="781">'+
+      '<meta property="product:price:currency" content="PLN"></head>'+
+      '<body><h1>DT 880 PRO 250 Ohm</h1><p>Marka: Beyerdynamic</p>'+
+      '<span class="price-standard">971 zł</span><span>781 zł</span>'+
+      '<span class="price-additional">645,45 zł bez VAT</span></body></html>';
+    expect(parseVendorReference(body,seller)).toMatchObject({pricePln:781,method:'PROFIDJ_PRODUCT_META_PLN'});
+    expect(parseVendorReference(body.replace('product:price:currency" content="PLN"','product:price:currency" content="EUR"'),seller).error)
+      .toBe('NO_PRODUCT_SCOPED_PLN_PRICE');
+    expect(parseVendorReference(body.replace('DT 880 PRO','DT 990 PRO'),seller).error).toBe('WRONG_PRODUCT_TITLE');
+    expect(parseVendorReference(body.replace('781','971'),seller).pricePln).toBe(971);
+  });
+  it('Profi-dj exact 250-ohm product structured PLN reference requires Beyerdynamic brand',()=>{
+    const seller=SOURCES[0].tertiary;
+    const product=JSON.stringify({'@type':'Product',name:'DT 880 PRO 250 Ohm',
+      offers:{'@type':'Offer',price:'759.00',priceCurrency:'PLN'}});
+    const body='<html><h1>DT 880 PRO 250 Ohm</h1><p>Marka: Beyerdynamic</p>'+
+      '<script type="application/ld+json">'+product+'</script></html>';
+    expect(parseVendorReference(body,seller)).toMatchObject({pricePln:759,method:'RETAILER_PRODUCT_JSONLD'});
+    expect(parseVendorReference(body.replace('Beyerdynamic','SomeBrand'),seller).error).toBe('BRAND_NOT_CONFIRMED');
+    expect(parseVendorReference(body.replace('DT 880 PRO','DT 990 PRO'),seller).error).toBe('WRONG_PRODUCT_TITLE');
+  });
+  it('third provider is used only if all earlier exact-source checks are invalid',async()=>{
+    const last=SOURCES[0].tertiary;
+    const data='<html><h1>DT 880 PRO 250 Ohm</h1><p>Marka: Beyerdynamic</p>'+
+      '<script type="application/ld+json">'+JSON.stringify({'@type':'Product',
+      name:'DT 880 PRO 250 Ohm',offers:{price:759,priceCurrency:'PLN'}})+'</script></html>';
+    const fetcher=async url=>url===last.url?
+      {url,status:200,headers:{get:()=> 'text/html'},text:async()=>data}:
+      {url,status:403,headers:{get:()=> 'text/html'},text:async()=>''};
+    const result=await refreshRetail({fetcher,now:date,dryRun:true});
+    expect(result.audit.find(x=>x.model==='Beyerdynamic DT 880')).toMatchObject({
+      source:'Profi-dj.pl',pricePln:759
+    });
+  });
+
   it('uses retailer fallback when protected Ceneo returns a generic productless page',async()=>{
     const oldHtml='<html><body><h2>Włącz JavaScript</h2><p>Oferty ogólne</p></body></html>';
     const sellerHtml='<html><body><h1>AKG K-702</h1><h2>Słuchawki</h2><div>759 zł Ceny z podatkiem VAT</div></body></html>';

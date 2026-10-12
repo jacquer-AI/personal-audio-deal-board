@@ -7,7 +7,12 @@ export const SOURCES = [
    titleTokens:['beyerdynamic','dt880','pro'],
    variant:'DT 880 Pro (impedancja ceny indeksowej nieustalona)',
    fallback:{url:'https://supersound.pl/60737-beyerdynamic-dt-880-pro-250-ohm-studio-headphones-for-mixing-and-mastering-semi-open',
-     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Supersound.pl',host:'supersound.pl'}},
+     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Supersound.pl',host:'supersound.pl'},
+   secondary:{url:'https://www.cyfrowe.pl/sluchawki-beyerdynamic-sluchawki-polotwarte-dt-880-pro-250-ohm-p.html',
+     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Cyfrowe.pl',host:'www.cyfrowe.pl'},
+   tertiary:{url:'https://www.profi-dj.pl/dt-880-pro-250-ohm/',
+     titleTokens:['dt880','pro','250'],brandToken:'beyerdynamic',
+     variant:'DT 880 Pro 250 Ω',source:'Profi-dj.pl',host:'www.profi-dj.pl'}},
   {model:'AKG K702',url:'https://www.ceneo.pl/28644030',
    titleTokens:['akg','k702'],variant:'AKG K702',
    fallback:{url:'https://www.thomann.pl/akg_k702.htm',titleTokens:['akg','k702'],
@@ -94,6 +99,8 @@ export function parseVendorReference(html, config) {
   const title=plain(h[1]),code=compact(title);
   if(!config.titleTokens.every(token=>code.includes(compact(token))))
     return {error:'WRONG_PRODUCT_TITLE',title};
+  if(config.brandToken && !compact(input.slice(0,20000)).includes(compact(config.brandToken)))
+    return {error:'BRAND_NOT_CONFIRMED',title};
   const after=input.slice(h.index+h[0].length,h.index+h[0].length+65000);
   const structured=jsonPrice(input,config.titleTokens.map(compact).join(''));
   let price=null,method=null;
@@ -111,6 +118,31 @@ export function parseVendorReference(html, config) {
     if(marker>=0){
       price=scopedAmount(after.slice(marker,marker+1700));
       if(price!==null)method='SUPER_SOUND_GROSS_PRICE';
+    }
+  }else if(config.host==='www.profi-dj.pl'){
+    // Current product's OpenGraph price, not the crossed-out old price,
+    // installment, related products or the displayed net-of-VAT amount.
+    // Caller has already verified exact variant H1 and brand identity.
+    const tags=[...input.matchAll(/<meta\b[^>]{0,700}>/gi)].map(m=>m[0]);
+    const contentOf=t=>t.match(/\bcontent\s*=\s*["']([^"']+)["']/i)?.[1]||'';
+    const amountTags=tags.filter(t=>/\bproperty\s*=\s*["']product:price:amount["']/i.test(t));
+    const currencyTags=tags.filter(t=>/\bproperty\s*=\s*["']product:price:currency["']/i.test(t));
+    if(amountTags.length===1 && currencyTags.length===1 &&
+       contentOf(currencyTags[0]).toUpperCase()==='PLN') {
+      price=readPln(contentOf(amountTags[0]));
+      if(price!==null)method='PROFIDJ_PRODUCT_META_PLN';
+    }
+  }else if(config.host==='www.cyfrowe.pl'){
+    // A site-specific, bounded hero price: NOT installments, bundles or related offers.
+    // The product heading must explicitly identify the 250-ohm PRO revision.
+    const hero=after.slice(0,7000).split(/Wybierz swój zestaw|Zestawy promocyjne|Akcesoria|<h2\b/i)[0];
+    // Preserve HTML block boundaries; product SKU ending in 250 must not
+    // concatenate with next product price (e.g. "250 826,00 zł").
+    const productArea=plain(hero.replace(/<\/[^>]+>/g,' | '));
+    const candidates=[...productArea.matchAll(/(?:^|[^\d])(\d{1,5}(?:[\s\u00a0\u202f]\d{3})*(?:[,.]\d{2})?)\s*(?:zł|PLN)(?![a-z])/gi)]
+      .map(m=>readPln(m[1])).filter(n=>n!==null);
+    if(candidates.length && /Kod produktu|Cena:|Do koszyka|price/i.test(productArea)){
+      price=candidates[0]; method='CYFROWE_PRODUCT_HERO';
     }
   }
   if(price===null&&structured!==null){price=structured;method='RETAILER_PRODUCT_JSONLD';}
@@ -157,7 +189,7 @@ export async function refreshRetail({fetcher=fetch,now=new Date().toISOString(),
 
   for(const s of SOURCES) {
     let verified=null;
-    for(const endpoint of [{...s,source:'Ceneo.pl',kind:'CENEO'}, {...s.fallback,kind:'VENDOR'}]){
+    for(const endpoint of [{...s,source:'Ceneo.pl',kind:'CENEO'}, {...s.fallback,kind:'VENDOR'}, ...(s.secondary?[{...s.secondary,kind:'VENDOR'}]:[]), ...(s.tertiary?[{...s.tertiary,kind:'VENDOR'}]:[])]){
       if(verified?.pricePln)break;
       try{
         const response=await fetcher(endpoint.url,{signal:AbortSignal.timeout(11000),redirect:'follow',
