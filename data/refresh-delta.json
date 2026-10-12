@@ -2,52 +2,212 @@
   "new": 0,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 1,
+  "stale": 2,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9348.27,
+      "from": 9348.27,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2413047552-beyerdynamic-dt-900-pro-x-zo-goed-als-nieuw"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-12T12:51:46.456Z",
-  "mode": "quick",
-  "runId": "38251695239",
+  "refreshedAt": "2026-10-12T13:06:34.264Z",
+  "mode": "deep",
+  "runId": "38253367508",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 8,
+  "observationChanges": 56,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 87,
-    "directVerified": 68,
-    "accessRestricted": 9,
+    "directVerified": 66,
+    "accessRestricted": 10,
     "ambiguous": 8,
-    "dead": 0,
+    "dead": 1,
     "soldOrOut": 0,
     "notDirect": 2,
     "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 2
+      "allegro-pl": 3,
+      "ebay-pl": 1
     },
     "researchRechecked": 80,
     "researchReverified": 79,
     "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "ALREADY_ON_BOARD": 67,
+      "ALREADY_ON_BOARD": 66,
       "NOT_VERIFIED_IN_THIS_RUN": 1,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 12
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 13
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 500,
+    "discovery": {
+      "plannedJobs": 380,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "mediaexpert-outlet"
+      ],
+      "plannedSources": 18,
+      "reachableSources": 8,
+      "sources": {
+        "allegro-pl": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 5,
+          "errors": 1
+        },
+        "olx-pl": {
+          "requested": 7,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 7,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 0,
+          "restricted": 30,
+          "errors": 0
+        },
+        "mediaexpert-outlet": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 7,
+          "reachable": 7,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 8,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 8,
+          "unverifiedUrls": 6,
+          "verifiedUrls": 2
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 2,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 2,
+          "unverifiedUrls": 2
+        },
+        "wallapop-es": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 6
+        },
+        "ebay-de": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 258,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 48,
+          "unverifiedUrls": 48
+        },
+        "geizhals": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "tweakers": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "tophifi-outlet": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "ebay-uk": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "ceneo-pl": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "allegro-lokalnie": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "idealo-de": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        }
+      },
+      "selectedUrls": 58,
+      "selectedBySource": {
+        "hifishark": 48,
+        "marktplaats-nl": 8,
+        "subito-it": 2
+      },
+      "modelsSelected": 48
+    }
   }
 }

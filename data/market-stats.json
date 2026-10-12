@@ -1,15 +1,7 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T12:51:46.456Z",
+  "refreshedAt": "2026-10-12T13:06:34.264Z",
   "stats": [
-    {
-      "key": "64 Audio U12t|NEW",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 9348.27,
-      "max": 9348.27
-    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 2,
@@ -73,14 +65,6 @@
       "median": null,
       "min": 658.33,
       "max": 811.95
-    },
-    {
-      "key": "Beyerdynamic DT 900 PRO X|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 877.78,
-      "max": 877.78
     },
     {
       "key": "HIFIMAN Ananda Nano|B-STOCK",
