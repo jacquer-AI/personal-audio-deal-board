@@ -40,9 +40,10 @@ test('Polish item condition is visible beside the price and separate from verifi
   expect(await condition.textContent()).not.toMatch(/LIVE|VERIFIED|NIEPOTWIERDZONE/);
   await first.locator('.offer-details > summary').click();
   await expect(first.getByTestId('source-row').first().locator('.item-condition')).toBeVisible();
-  await expect(page.locator('.watchlist')).toContainText('56 rodzin modeli');
+  await expect(page.locator('.watchlist')).toContainText('60 rodzin modeli');
   await page.getByRole('button',{name:/Pokaż .*dodatkowych modeli do wyszukania/}).click();
   await expect(page.locator('.watchlist').getByText('Etymotic ER4SR',{exact:true})).toBeVisible();
+  for(const model of ['Sennheiser HD 540 Reference II','Audio-Technica ATH-AD2000X','AKG K501','Sennheiser HD 800']) await expect(page.locator('.watchlist').getByText(model,{exact:true})).toBeVisible();
 });
 
 test('DT 880 has two genuinely additional listings, without duplicating the primary',async({page})=>{
