@@ -133,6 +133,13 @@ describe('red team',()=>{
     expect(redTeam({...confirmed,price:null},{region:'UE'},offer).block).toBe(true);
     expect(redTeam({...confirmed,condition:'NEW'},{region:'non-EU / TLC'},offer).block).toBe(true);
   });
+  it('blocks seller-declared no-shipping listings but keeps unknown shipping eligible',()=>{
+    const blocked=redTeam({...confirmed,shippingToPoland:'PL_EXPLICITLY_EXCLUDED'}, {id:'subito-it',region:'UE'},offer);
+    expect(blocked.block).toBe(true);
+    expect(blocked.flags).toContain('PL_SHIPPING_EXCLUDED');
+    const unknown=redTeam({...confirmed,shippingToPoland:'PL_SHIPPING_UNKNOWN'}, {id:'subito-it',region:'UE'},offer);
+    expect(unknown.block).toBe(false);
+  });
   it('discloses battery risk without blocking a verified asking price',()=>{
     const r=redTeam({...confirmed,category:'TWS',price:500},{id:'subito-it',region:'UE'},offer);
     expect(r.block).toBe(false);

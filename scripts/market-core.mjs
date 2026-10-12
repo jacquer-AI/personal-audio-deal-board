@@ -209,8 +209,10 @@ export function redTeam(addition, source, peer) {
   if (addition.condition !== 'NEW') flags.push('WARRANTY_AND_ACCESSORIES_UNVERIFIED');
   // The user's buying signal is the confirmed ITEM price. Shipping is a visible
   // limitation, not a promotion blocker. Never present this as an all-in quote.
-  if (addition.shippingToPoland === 'PL_EXPLICITLY_EXCLUDED')
+  if (addition.shippingToPoland === 'PL_EXPLICITLY_EXCLUDED') {
     flags.push('PL_SHIPPING_EXCLUDED');
+    block = true;
+  }
   else if (addition.shippingToPoland !== 'PL_RATE_ADVERTISED')
     flags.push('PL_SHIPPING_COST_UNKNOWN');
   flags.push('PRICE_EXCLUDES_SHIPPING_AND_FEES');

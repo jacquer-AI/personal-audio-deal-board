@@ -27,9 +27,24 @@ function money(rate){
   return null;
 }
 
+/** Item-specific seller description, not recommendation cards or general FAQ. */
+function sellerRejectsAllShipping(html){
+  const descriptions=[];
+  for(const m of String(html||'').matchAll(/<meta\b[^>]{0,1800}>/gi)){
+    const tag=m[0];
+    const kind=tag.match(/(?:property|name)\s*=\s*["']([^"']+)["']/i)?.[1]?.toLowerCase();
+    if(!['description','og:description','twitter:description'].includes(kind))continue;
+    const value=tag.match(/\bcontent\s*=\s*["']([^"']{1,1400})["']/i)?.[1];
+    if(value)descriptions.push(value);
+  }
+  return descriptions.some(s=>
+    /non si effettuano spedizioni|non spedisco|non effettuo spedizioni|solo ritiro a mano|solo ritiro in zona|kein versand|nur abholung|pickup only|collection only|no shipping available|no shipping offered|bez wysyłki|bez wysylki|tylko odbiór osobisty|tylko odbior osobisty/i.test(s));
+}
+
 /** Structured seller-declared shipping to Poland, not guessed shipping or a
  * platform-wide promise. Does not prove checkout, payment fees or customs. */
 export function shippingEvidencePoland(html,selectedPrice=null){
+  if(sellerRejectsAllShipping(html))return {status:'PL_EXPLICITLY_EXCLUDED',amount:null,currency:null,source:'SELLER_DESCRIPTION'};
   const options=[];
   let explicitlyExcluded=false;
   for(const block of jsonLdBlocks(html)){

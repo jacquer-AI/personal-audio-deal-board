@@ -146,8 +146,17 @@ async function checkOffer(o){
   // Never infer this item's condition or stock from whole-page recommendations.
   const cond=conditionFrom(parsed,'');const stock=available(parsed,'');
   const pln=parsed?toPln(parsed.price,parsed.currency,fx):null;
-  if(match&&parsed&&parsed.currency&&pln&&stock===true&&cond===o.condition&&
-     priceBasis(source,page.html,o.url,parsed)==='SELLER_PAGE_PRICE'){
+  const exactOffer=match&&parsed&&parsed.currency&&pln&&stock===true&&cond===o.condition&&
+     priceBasis(source,page.html,o.url,parsed)==='SELLER_PAGE_PRICE';
+  // Keep an authentic asking price for research, but do not advertise
+  // a seller-declared collection-only listing as remotely buyable in Poland.
+  if(exactOffer&&shippingEvidencePoland(page.html,parsed.price).status==='PL_EXPLICITLY_EXCLUDED'){
+    receipt.ambiguous++;
+    observe({...row,http:page.http,result:'PL_SHIPPING_EXCLUDED',pricePln:pln,currency:parsed.currency});
+    return {...stamp,verificationState:'PL_SHIPPING_EXCLUDED',http:page.http,
+      note:'Seller explicitly excludes all shipping. Price retained as a research-only quote.'};
+  }
+  if(exactOffer){
     receipt.directVerified++;
     observe({...row,http:page.http,result:'DIRECT_OFFER_VERIFIED',pricePln:pln,currency:parsed.currency});
     // Foreign-currency price unchanged at the source: keep the stored PLN value so FX drift is not reported as a price change.

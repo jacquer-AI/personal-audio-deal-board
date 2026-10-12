@@ -28,6 +28,14 @@ describe('seller shipping evidence to Poland',()=>{
     expect(shippingEvidencePoland(page(offer({...detail('PL',10),shippingRate:{value:10}})),150).status).toBe('PL_SHIPPING_UNKNOWN');
     expect(shippingEvidencePoland(page(offer({...detail('PL',10),shippingDestination:{addressCountry:'PL',postalCode:'00-001'}})),150).status).toBe('PL_SHIPPING_UNKNOWN');
   });
+  it('respects seller no-shipping description but not missing delivery price',()=>{
+    const noShipping='<meta property="og:description" content="Prodotto in perfette condizioni, non si effettuano spedizioni">';
+    expect(shippingEvidencePoland(noShipping)).toMatchObject({status:'PL_EXPLICITLY_EXCLUDED',source:'SELLER_DESCRIPTION'});
+    expect(shippingEvidencePoland('<meta name="description" content="Nur Abholung, kein Versand">').status).toBe('PL_EXPLICITLY_EXCLUDED');
+    expect(shippingEvidencePoland('<meta name="description" content="No shipping offered">').status).toBe('PL_EXPLICITLY_EXCLUDED');
+    expect(shippingEvidencePoland('<meta name="description" content="Wysyłka do ustalenia">').status).toBe('PL_SHIPPING_UNKNOWN');
+    expect(shippingEvidencePoland('<body>Related product: no shipping offered</body>').status).toBe('PL_SHIPPING_UNKNOWN');
+  });
   it('does not promote one price option with min/max variable values',()=>{
     expect(shippingEvidencePoland(page(offer({...detail('PL',10),shippingRate:{minValue:10,maxValue:55,currency:'EUR'}})),150).status).toBe('PL_SHIPPING_UNKNOWN');
   });
