@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-funnel-broad-seller-query-e2e-20261012-v2",
+  "requestId": "audio-funnel-e2e-agy-pr37-20261012-v3",
   "mode": "full",
   "categories": "all",
-  "purpose": "Second physical 56-model FULL E2E after PR35: compare discoverable direct seller URLs against previous 1 Subito + 5 Marktplaats, enforce <=56 HiFiShark aggregator verification attempts, preserve strict product+fixed price+stock gates, report verified additions, persist and deploy only real changes.",
+  "purpose": "E2E after PR37: FULL search all 56 models, verify source-balanced candidate slots, fail-closed seller errors, prevent same URL duplicate HTTP between board/research, keep all Marktplaats bid-only and HiFiShark aggregator prices research-only; persist meaningful diff then deploy Pages; report real LIVE offer count.",
   "requestedOn": "2026-10-12"
 }
