@@ -61,8 +61,9 @@ export async function mockGitHub(page:Page,opts:Options={}){
     if(path==='/actions/runs/123/jobs')return json({jobs:[{steps:[{name:'No material change',conclusion:opts.noop?'success':'skipped'}]}]});
     if(path==='/actions/runs'){
       pagesPolls++;
-      const pages=run(124,pagesPolls<2?'in_progress':'completed',pagesPolls<2?null:'success');
-      pages.display_title='Verify and deploy audio board';
+      const pages={...run(124,pagesPolls<2?'in_progress':'completed',pagesPolls<2?null:'success'),
+        name:'Verify and deploy audio board',display_title:'Verify and deploy audio board',
+        head_commit:{message:'data: market refresh full (123)'}};
       return json({workflow_runs:[pages]});
     }
     return json({workflow_runs:[]});
