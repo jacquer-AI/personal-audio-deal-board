@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
-import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam,downgradeModelMismatch} from './market-core.mjs';
+import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
 import {conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs,coreSourceIdsForDate} from './discovery-scheduler.mjs';
@@ -11,6 +11,7 @@ import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
 import {geographicEvidence,isEuropeRecordedOffer} from './sources/europe-scope.mjs';
 import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
 import {selectDiscoveryCandidates,recentResearchUrls} from './discovery-selection.mjs';
+import {applyAdditionRecheck,sameSellerItemUrl} from './addition-rechecks.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -126,17 +127,25 @@ async function checkOffer(o){
     observe({...row,http:page.http,result:v,pricePln:o.price});
     return {...stamp,verificationState:v,http:page.http,note:'Refresh: direct page could not be verified automatically.'};
   }
+  if(!sameSellerItemUrl(o.url,page.url)){
+    receipt.ambiguous++;
+    observe({...row,http:page.http,result:'SELLER_REDIRECT_CHANGED_ITEM',pricePln:o.price});
+    return {...stamp,verificationState:'SELLER_REDIRECT_CHANGED_ITEM',http:page.http,
+      note:'Refresh: redirect changed the seller item; previous price retained as historical evidence.'};
+  }
   const meta=modelMeta.get(o.model)||{model:o.model,aliases:[]};
   // Verify this item's own title/metadata, never a navigation/sidebar mention.
   const match=itemTitleMatchesModel(page.html,meta);
-  const cond=conditionFrom(parsed,page.html);const stock=available(parsed,page.html);
+  // Never infer this item's condition or stock from whole-page recommendations.
+  const cond=conditionFrom(parsed,'');const stock=available(parsed,'');
   const pln=parsed?toPln(parsed.price,parsed.currency,fx):null;
-  if(match&&parsed&&pln&&stock===true&&cond===o.condition){
+  if(match&&parsed&&parsed.currency&&pln&&stock===true&&cond===o.condition&&
+     priceBasis(source)==='SELLER_PAGE_PRICE'){
     receipt.directVerified++;
     observe({...row,http:page.http,result:'DIRECT_OFFER_VERIFIED',pricePln:pln,currency:parsed.currency});
     // Foreign-currency price unchanged at the source: keep the stored PLN value so FX drift is not reported as a price change.
     const sameForeign=parsed.currency&&parsed.currency!=='PLN'&&toNumber(o.original)===parsed.price;
-    return {...stamp,verificationState:'DIRECT_OFFER_VERIFIED',http:page.http,status:o.status,price:sameForeign?o.price:pln,original:sameForeign?o.original:parsed.price+' '+(parsed.currency||''),note:'Refresh: exact model + explicit price on direct offer page ('+parsed.via+').'};
+    return {...stamp,verificationState:'DIRECT_OFFER_VERIFIED',http:page.http,status:o.condition==='USED'?'LIVE USED':'LIVE VERIFIED',price:sameForeign?o.price:pln,original:sameForeign?o.original:parsed.price+' '+(parsed.currency||''),note:'Refresh: exact model + explicit price on direct offer page ('+parsed.via+').'};
   }
   if(match&&stock===false){
     receipt.soldOrOut++;
@@ -144,7 +153,10 @@ async function checkOffer(o){
     return {...stamp,verificationState:'DIRECT_OFFER_VERIFIED',http:page.http,status:'HISTORICAL',note:'Refresh: exact model direct page is sold/out of stock.'};
   }
   receipt.ambiguous++;
-  const reason=!match?'MODEL_NOT_CONFIRMED':!parsed?'PAGE_REACHABLE_PRICE_UNPARSED':!pln?'CURRENCY_UNRESOLVED':stock!==true?'AVAILABILITY_NOT_CONFIRMED':cond!==o.condition?'CONDITION_NOT_CONFIRMED':'REVERIFY';
+  const reason=!match?'MODEL_NOT_CONFIRMED':!parsed?'PAGE_REACHABLE_PRICE_UNPARSED':
+    !parsed.currency||!pln?'CURRENCY_UNRESOLVED':stock!==true?'AVAILABILITY_NOT_CONFIRMED':
+    cond!==o.condition?'CONDITION_NOT_CONFIRMED':
+    priceBasis(source)!=='SELLER_PAGE_PRICE'?'FIXED_PRICE_NOT_CONFIRMED':'REVERIFY';
   observe({...row,http:page.http,result:reason,pricePln:o.price});
   return {...stamp,verificationState:reason,http:page.http,note:'Refresh: '+reason+'. Prior SSOT value retained.'};
 }
@@ -160,13 +172,8 @@ const updates=(await pool((base.offers||[]).filter(o=>inScope(o)&&isEuropeRecord
 const additions=[];
 const reAdds=await pool(priorAdditions.filter(o=>inScope(o)&&isEuropeRecordedOffer(o)),async a=>({a,u:await checkOffer(a)}));
 for(const r of reAdds.filter(Boolean)){
-  const {a,u}=r;if(!u){additions.push(a);continue}
-  const first=a.refresh?.firstVerifiedAt||a.refresh?.checkedAt||now;
-  if(u.verificationState==='DEAD')additions.push({...a,status:'STALE / REVERIFY',role:'OFFER',checked:u.checked,refresh:{...a.refresh,verificationState:'DEAD',http:u.http,checkedAt:now,firstVerifiedAt:first}});
-  else if(u.status==='HISTORICAL')additions.push({...a,status:'HISTORICAL',role:'HISTORICAL',checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
-  else if(u.verificationState==='DIRECT_OFFER_VERIFIED')additions.push({...a,price:u.price,original:u.original,checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
-  // A concrete model mismatch invalidates previously promoted LIVE authority.
-  else additions.push(downgradeModelMismatch(a,u,now));
+  const {a,u}=r;
+  additions.push(applyAdditionRecheck(a,u,now));
 }
 for(const a of priorAdditions.filter(a=>!inScope(a)&&isEuropeRecordedOffer(a)))additions.push(a);
 
