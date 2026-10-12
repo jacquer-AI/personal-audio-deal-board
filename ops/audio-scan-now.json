@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-accessory-guard-quick-e2e-20261012-01",
+  "requestId": "audio-no-shipping-mixed-variant-quick-e2e-20261012-v1",
   "mode": "quick",
   "categories": "all",
-  "purpose": "Production E2E regression after PR46: directly recheck saved headphone offers, reject HD800S cable-only seller metadata, exclude disproved model from displayed listings and price comparisons, persist audited delta, deploy Pages and verify public readback.",
+  "purpose": "Production E2E recheck after PR49: downgrade two-model DT900/DT700 shared-price seller listing and HIFIMAN Ananda Nano seller explicitly excludes all shipping; preserve legitimate unknown-shipping offers; sync ledger, market stats, Pages publish + public readback.",
   "requestedOn": "2026-10-12"
 }
