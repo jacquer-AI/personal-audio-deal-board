@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-11T22:08:14.657Z",
+  "refreshedAt": "2026-10-12T00:44:17.767Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -57,6 +57,46 @@
       "median": null,
       "min": 525.3,
       "max": 525.3
+    },
+    {
+      "key": "Sony MDR-M1|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 652.25,
+      "max": 652.25
+    },
+    {
+      "key": "Focal Clear OG|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 2932.93,
+      "max": 2932.93
+    },
+    {
+      "key": "7Hz Timeless|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 656.63,
+      "max": 656.63
+    },
+    {
+      "key": "AKG K702|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 525.3,
+      "max": 525.3
+    },
+    {
+      "key": "HIFIMAN Edition XS|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1050.6,
+      "max": 1050.6
     }
   ]
 }

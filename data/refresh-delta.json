@@ -1,16 +1,47 @@
 {
-  "new": 0,
+  "new": 5,
   "priceChanged": 0,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "NEW",
+      "model": "7Hz Timeless",
+      "price": 656.63,
+      "url": "https://www.subito.it/audio-video/auricolari-planari-linsoul-7hertz-timeless-ae-dac-roma-663684845.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "AKG K702",
+      "price": 525.3,
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-premium-catanzaro-661281208.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Focal Clear OG",
+      "price": 2932.93,
+      "url": "https://www.subito.it/audio-video/focal-clear-og-no-hifiman-sennheiser-salerno-657704961.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "HIFIMAN Edition XS",
+      "price": 1050.6,
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-roma-660795817.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Sony MDR-M1",
+      "price": 652.25,
+      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-professional-come-nuove-2cavi-trento-656522340.htm"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-11T22:08:14.657Z",
+  "refreshedAt": "2026-10-12T00:44:17.767Z",
   "mode": "full",
-  "runId": "38179189186",
-  "candidates": 420,
-  "verifiedAdditions": 0,
-  "observationChanges": 205,
+  "runId": "38189144861",
+  "candidates": 500,
+  "verifiedAdditions": 5,
+  "observationChanges": 260,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 30,
@@ -23,52 +54,52 @@
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchRechecked": 36,
     "researchReverified": 36,
     "discovery": {
-      "plannedJobs": 240,
+      "plannedJobs": 280,
       "coreSources": [
         "hifishark",
-        "allegro-pl",
-        "olx-pl",
         "vinted-pl",
-        "marktplaats-nl"
+        "marktplaats-nl",
+        "subito-it",
+        "mediaexpert-outlet"
       ],
       "plannedSources": 5,
-      "reachableSources": 3,
+      "reachableSources": 4,
       "sources": {
         "allegro-pl": {
-          "requested": 48,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 41,
-          "errors": 7
-        },
-        "olx-pl": {
-          "requested": 48,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 48,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 48,
-          "reachable": 29,
-          "candidateUrls": 40,
-          "restricted": 18,
-          "errors": 1,
-          "checkedUrls": 40,
-          "unverifiedUrls": 40
-        },
-        "mediaexpert-outlet": {
           "requested": 0,
           "reachable": 0,
           "candidateUrls": 0,
           "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 56,
+          "reachable": 30,
+          "candidateUrls": 45,
+          "restricted": 26,
+          "errors": 0,
+          "checkedUrls": 45,
+          "unverifiedUrls": 45
+        },
+        "mediaexpert-outlet": {
+          "requested": 56,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 56,
           "errors": 0
         },
         "kleinanzeigen-de": {
@@ -79,22 +110,25 @@
           "errors": 0
         },
         "marktplaats-nl": {
-          "requested": 48,
-          "reachable": 48,
-          "candidateUrls": 29,
+          "requested": 56,
+          "reachable": 56,
+          "candidateUrls": 31,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 29,
-          "verifiedUrls": 23,
+          "checkedUrls": 31,
+          "verifiedUrls": 25,
           "unverifiedUrls": 4,
           "sellerPriceOnly": 2
         },
         "subito-it": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
+          "requested": 56,
+          "reachable": 56,
+          "candidateUrls": 6,
           "restricted": 0,
-          "errors": 0
+          "errors": 0,
+          "checkedUrls": 6,
+          "verifiedUrls": 5,
+          "unverifiedUrls": 1
         },
         "wallapop-es": {
           "requested": 0,
@@ -118,13 +152,13 @@
           "errors": 0
         },
         "hifishark": {
-          "requested": 48,
-          "reachable": 48,
-          "candidateUrls": 205,
+          "requested": 56,
+          "reachable": 56,
+          "candidateUrls": 240,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 205,
-          "unverifiedUrls": 205
+          "checkedUrls": 240,
+          "unverifiedUrls": 240
         }
       }
     }

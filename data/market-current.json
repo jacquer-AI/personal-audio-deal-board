@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-11T22:08:14.657Z",
+  "refreshedAt": "2026-10-12T00:44:17.767Z",
   "mode": "full",
-  "runId": "38179189186",
+  "runId": "38189144861",
   "status": "COMPLETED",
   "updates": [
     {
       "fingerprint": "64 audio u12t||NEW|muzix|https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor",
       "category": "IEM",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "status": "LIVE VERIFIED",
@@ -20,8 +20,8 @@
     {
       "fingerprint": "64 audio u12t||USED|ebay|https://www.ebay.de/itm/227532985491",
       "category": "IEM",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -29,8 +29,8 @@
     {
       "fingerprint": "audeze lcd-s20||NEW|thomann pl|https://www.thomann.pl/audeze_lcd_s20.htm",
       "category": "Closed",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "CONDITION_NOT_CONFIRMED",
       "http": 200,
       "note": "Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained."
@@ -47,8 +47,8 @@
     {
       "fingerprint": "bose soundlink max||USED|olx suwałki|https://www.olx.pl/d/oferta/bose-soundlink-max-czarny-jak-nowy-w-oryginalnym-opakowaniu-z-dodatkowa-ochronna-torba-CID99-ID1cA77n.html",
       "category": "Głośniki BT",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -56,8 +56,8 @@
     {
       "fingerprint": "bowers & wilkins pi8||NEW|mediamarkt/allegro|https://allegro.pl/kategoria/sluchawki-bezprzewodowe-85166?string=s%C5%82uchawki+pi8",
       "category": "TWS",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "NOT_DIRECT_OFFER_PAGE",
       "http": null,
       "note": "Refresh: source URL is discovery/listing or source cannot verify a concrete offer."
@@ -65,8 +65,8 @@
     {
       "fingerprint": "bowers & wilkins pi8||USED|olx wrocław|https://www.olx.pl/d/oferta/sluchawki-bowers-wilkins-pi8-CID99-ID1cxGcP.html",
       "category": "TWS",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -74,8 +74,8 @@
     {
       "fingerprint": "dan clark audio aeon 2 noire||USED|ebay|https://www.ebay.de/itm/227285753129",
       "category": "Closed",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -83,8 +83,8 @@
     {
       "fingerprint": "dan clark audio noire x||B-STOCK|thomann pl|https://www.thomann.pl/dan_clark_audio_noire_x_b_stock.htm",
       "category": "Closed",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "status": "LIVE VERIFIED",
@@ -95,8 +95,8 @@
     {
       "fingerprint": "dan clark audio noire x||NEW|thomann pl|https://www.thomann.pl/dan_clark_audio_noire_x.htm",
       "category": "Closed",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "CONDITION_NOT_CONFIRMED",
       "http": 200,
       "note": "Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained."
@@ -104,8 +104,8 @@
     {
       "fingerprint": "dan clark audio noire x||USED|ebay / premium sound|https://www.ebay.pl/itm/267779562566",
       "category": "Closed",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -113,8 +113,8 @@
     {
       "fingerprint": "dunu sa6 mkii||NEW|nt-global / hifi-passion|https://nt-global.de/Marken/DUNU/DUNU-Studio-SA6-MK2",
       "category": "IEM",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "CONDITION_NOT_CONFIRMED",
       "http": 200,
       "note": "Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained."
@@ -122,8 +122,8 @@
     {
       "fingerprint": "hifiman svanar wireless||OPEN-BOX|hifiman europe|https://eu.hifiman.com/products/svanar-wireless-open-box",
       "category": "TWS",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "NOT_DIRECT_OFFER_PAGE",
       "http": null,
       "note": "Refresh: source URL is discovery/listing or source cannot verify a concrete offer."
@@ -131,8 +131,8 @@
     {
       "fingerprint": "jbl charge 6||NEW|jbl official|https://pl.jbl.com/CHARGE-6.html",
       "category": "Głośniki BT",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "CONDITION_NOT_CONFIRMED",
       "http": 200,
       "note": "Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained."
@@ -140,8 +140,8 @@
     {
       "fingerprint": "marshall middleton ii||NEW|marshall official|https://www.marshall.com/pl/en/product/middleton-ii?pid=1007428",
       "category": "Głośniki BT",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "CONDITION_NOT_CONFIRMED",
       "http": 200,
       "note": "Refresh: CONDITION_NOT_CONFIRMED. Prior SSOT value retained."
@@ -158,8 +158,8 @@
     {
       "fingerprint": "noble fokus rex5||NEW|allegro / hifipro-poznan|https://allegro.pl/produkt/sluchawki-bezprzewodowe-dokanalowe-noble-audio-fokus-rex5-green-f9ee1b1a-5e4c-42e4-bf49-617e58490682?offerId=17454902763",
       "category": "TWS",
-      "checkedAt": "2026-10-11T21:57:27.544Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -185,8 +185,8 @@
     {
       "fingerprint": "technics eah-az100||NEW|allegro|https://allegro.pl/produkt/technics-eah-az100e-s-sluchawki-bezprzewodowe-douszne-anc-srebrne-7c106113-254c-4f5d-8a5c-b97483d3ed15?offerId=17201751429",
       "category": "TWS",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -194,8 +194,8 @@
     {
       "fingerprint": "technics eah-az100||NEW|technics poland|https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/",
       "category": "TWS",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "status": "LIVE VERIFIED",
@@ -206,8 +206,8 @@
     {
       "fingerprint": "technics eah-az100||USED|olx przeworsk|https://www.olx.pl/elektronika/sprzet-audio/sluchawki/sluchawki-bezprzewodowe/q-technics-uzywane/",
       "category": "TWS",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -215,8 +215,8 @@
     {
       "fingerprint": "technics eah-az100||USED|olx wrocław|https://www.olx.pl/d/oferta/flagowe-sluchawki-technics-eah-az100-anc-pudrowy-roz-rose-gold-CID99-ID1ccCBL.html",
       "category": "TWS",
-      "checkedAt": "2026-10-11T22:08:14.657Z",
-      "checked": "2026-10-11",
+      "checkedAt": "2026-10-12T00:44:17.767Z",
+      "checked": "2026-10-12",
       "verificationState": "ACCESS_RESTRICTED_REVERIFY",
       "http": 403,
       "note": "Refresh: source restricted automated access. Prior SSOT value retained."
@@ -232,6 +232,78 @@
     }
   ],
   "additions": [
+    {
+      "id": "refresh-1088d32f424c9fff",
+      "model": "7Hz Timeless",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 656.63,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "150 EUR",
+      "url": "https://www.subito.it/audio-video/auricolari-planari-linsoul-7hertz-timeless-ae-dac-roma-663684845.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
+        "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-22d3aa970c2090eb",
+      "model": "AKG K702",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 525.3,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-premium-catanzaro-661281208.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
+        "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
     {
       "id": "refresh-02f57b5d6be8f8d7",
       "model": "Beyerdynamic DT 880",
@@ -250,7 +322,7 @@
       "original": "80 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -262,7 +334,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -286,7 +358,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cremona-648038097.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -298,7 +370,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -322,7 +394,7 @@
       "original": "75 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-treviso-656681763.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -334,7 +406,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -358,7 +430,7 @@
       "original": "300 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-blu-salerno-628578189.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -370,7 +442,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -394,7 +466,7 @@
       "original": "200 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -406,7 +478,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -430,7 +502,7 @@
       "original": "300 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-napoli-628578057.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -442,7 +514,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -466,7 +538,7 @@
       "original": "249 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -478,8 +550,80 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-469cd3e1567814c9",
+      "model": "Focal Clear OG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 2932.93,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "670 EUR",
+      "url": "https://www.subito.it/audio-video/focal-clear-og-no-hifiman-sennheiser-salerno-657704961.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
+        "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-913106006ef76e28",
+      "model": "HIFIMAN Edition XS",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 1050.6,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "240 EUR",
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-roma-660795817.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
+        "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -502,7 +646,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-prezzo-trattabile-vibo-valentia-652760291.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -514,7 +658,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -538,7 +682,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-659498024.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -550,7 +694,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -574,7 +718,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-milano-648438267.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -586,7 +730,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
@@ -610,7 +754,7 @@
       "original": "130 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -622,8 +766,44 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-e1cf88e6cd648844",
+      "model": "Sony MDR-M1",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 652.25,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "149 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-professional-come-nuove-2cavi-trento-656522340.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-09",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
+        "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -646,7 +826,7 @@
       "original": "599 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm",
       "role": "OFFER",
-      "checked": "2026-10-11",
+      "checked": "2026-10-12",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -658,7 +838,7 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-11T22:08:14.657Z",
+        "checkedAt": "2026-10-12T00:44:17.767Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200
       },
