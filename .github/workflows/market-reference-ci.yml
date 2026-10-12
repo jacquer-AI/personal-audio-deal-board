@@ -21,8 +21,6 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Inspect Marktplaats item-local price-model enum (diagnostic only)
-        run: node scripts/inspect-mp-price-evidence.mjs
       - name: Retail Ceneo live probe (read-only, no data writes)
         run: node scripts/refresh-retail-references.mjs --dry-run
       - run: npm run prepare-data
