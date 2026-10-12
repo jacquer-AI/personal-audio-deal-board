@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-mp-fixed-full-e2e-20261012-v1",
-  "mode": "full",
+  "requestId": "audio-fixed-research-to-live-quick-e2e-20261012-v1",
+  "mode": "quick",
   "categories": "all",
-  "purpose": "Post-PR40 physical FULL E2E: reverify Marktplaats item-bound FIXED EUR price against parsed seller price, exact ID/model/stock/condition, promote only authentic current fixed-price items; preserve bidding leads as research, commit verified evidence, validate, dispatch Pages, public readback.",
+  "purpose": "Production QUICK E2E after PR41: recheck exact current seller pages for 9 verified-but-not-board Marktplaats FIXED research candidates, promote only fresh evidence with matching item/model/price/stock/condition/geo and redTeam PASS, never promote bids or stale evidence, persist data and deploy Pages.",
   "requestedOn": "2026-10-12"
 }
