@@ -123,7 +123,13 @@ export async function refreshRetail({fetcher=fetch,now=new Date().toISOString(),
       const type=response.headers?.get?.('content-type')||'text/html';
       if(!type.includes('text/html'))throw new Error('NOT_HTML');
       const body=(await response.text()).slice(0,2_000_000);
-      checked.set(s.model,parseCeneoIndex(body,s));
+      const parsed=parseCeneoIndex(body,s);
+      checked.set(s.model,parsed);
+      if(parsed.error)console.log('RETAIL_SOURCE_DIAGNOSTIC',
+        JSON.stringify({model:s.model,http:response.status,bytes:body.length,
+        hasH1:body.toLowerCase().includes('<h1'),hasJsonLd:body.includes('ld+json'),
+        mentionsModel:body.toLowerCase().includes(s.model.toLowerCase()),
+        looksBlocked:body.toLowerCase().includes('challenge'),failure:parsed.error}));
     }catch(e){checked.set(s.model,{error:String(e?.message||e).slice(0,100)})}
   }
   const result=applyRetailChecks(before,checked,now);
