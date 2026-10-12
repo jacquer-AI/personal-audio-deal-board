@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "retail-references-e2e-20261012-0835-v1",
+  "requestId": "retail-references-e2e-20261012-retry-after-data-independent-tests-v2",
   "mode": "quick",
   "categories": "all",
-  "purpose": "One end-to-end post-PR31 quick scan: verify exact retailer catalog references, preserve blocked Ceneo/DT880 values, persist data/retail-price-references.json only for valid evidence, dispatch Pages and verify public readback.",
+  "purpose": "Retry FULL E2E retail benchmark pipeline after fixing tests dependent on original Ceneo prices; expect Thomann AKG and Edition XS validated reference updates, safe DT 880 retention, CI, Pages.",
   "requestedOn": "2026-10-12"
 }
