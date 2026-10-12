@@ -188,6 +188,26 @@ export async function refreshRetail({fetcher=fetch,now=new Date().toISOString(),
         if(!type.includes('text/html'))throw new Error('NOT_HTML');
         const body=(await response.text()).slice(0,2_000_000);
         const parsed=endpoint.kind==='CENEO'?parseCeneoIndex(body,endpoint):parseVendorReference(body,endpoint);
+        if(process.env.RETAIL_DEBUG==='1' && endpoint.host==='www.profi-dj.pl'){
+          const headline=body.match(/<h1\b[^>]*>([\s\S]{0,1400}?)<\/h1>/i);
+          const near= headline ? body.slice(headline.index+headline[0].length,headline.index+headline[0].length+35000) : '';
+          const prices=[...near.matchAll(/(\d[\d\s.,]{0,16})\s*(?:zł|PLN)(?![a-z])/gi)]
+            .slice(0,12).map(m=>({amount:m[1].trim().slice(0,20),
+              context:plain(near.slice(Math.max(0,m.index-70),m.index+90)).slice(0,120)}));
+          const meta=[...body.matchAll(/<meta\b[^>]{0,400}(?:price|currency)[^>]{0,400}>/gi)]
+            .slice(0,8).map(m=>m[0].slice(0,160));
+          const schema=[...body.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]{0,100000}?)<\/script>/gi)]
+            .slice(0,5).map(m=>{try{
+              const data=JSON.parse(m[1]);
+              const d=Array.isArray(data)?data[0]:data;
+              return {type:d?.['@type'],name:String(d?.name||'').slice(0,100),
+                offers:d?.offers ? Object.keys(d.offers).slice(0,8) : []};
+            }catch{return {parse:'INVALID'}}});
+          console.log('RETAIL_PRODUCT_PRICE_SHAPE',JSON.stringify({
+            product:parsed.title||plain(headline?.[1]||'').slice(0,100),
+            bytes:body.length,prices,meta,schema
+          }));
+        }
         if(parsed.pricePln)verified={...parsed,url:endpoint.url,variant:endpoint.variant,source:endpoint.source};
         else{
           console.log('RETAIL_SOURCE_DIAGNOSTIC',JSON.stringify({model:s.model,
