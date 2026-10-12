@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-no-shipping-mixed-variant-quick-e2e-20261012-v1",
+  "requestId": "audio-shipping-persistence-final-e2e-20261012-v1",
   "mode": "quick",
   "categories": "all",
-  "purpose": "Production E2E recheck after PR49: downgrade two-model DT900/DT700 shared-price seller listing and HIFIMAN Ananda Nano seller explicitly excludes all shipping; preserve legitimate unknown-shipping offers; sync ledger, market stats, Pages publish + public readback.",
+  "purpose": "Final physical QUICK E2E after PR50: recheck seller HIFIMAN Ananda Nano pickup-only, persist PL_EXPLICITLY_EXCLUDED and seller note, ensure DT900/DT700 combined listing is not LIVE, preserve unknown-delivery offers, validate and deploy Pages, public readback.",
   "requestedOn": "2026-10-12"
 }
