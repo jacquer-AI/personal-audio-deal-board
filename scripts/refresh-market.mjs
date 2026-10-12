@@ -12,6 +12,7 @@ import {geographicEvidence,isEuropeRecordedOffer} from './sources/europe-scope.m
 import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
 import {selectDiscoveryCandidates,recentResearchUrls} from './discovery-selection.mjs';
 import {applyAdditionRecheck,sameSellerItemUrl} from './addition-rechecks.mjs';
+import {memoizeScanFetch} from './fetch-cache.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -83,6 +84,8 @@ async function fetchPage(url){
   }catch(e){return {http:0,url,html:'',error:e?.name||String(e)}}
   finally{clearTimeout(timer)}
 }
+// One seller URL is fetched once even if referenced by the board and research.
+const checkedPage=memoizeScanFetch(fetchPage);
 async function pool(items,worker){
   let index=0;const out=[];
   async function lane(){while(index<items.length&&Date.now()<DEADLINE){const i=index++;out[i]=await worker(items[i],i);await sleep(120)}}
@@ -104,7 +107,7 @@ async function checkOffer(o){
     return {...stamp,verificationState:'NOT_DIRECT_OFFER_PAGE',http:null,note:'Refresh: source URL is discovery/listing or source cannot verify a concrete offer.'};
   }
   receipt.directUrlsAttempted++;
-  const page=await fetchPage(o.url);
+  const page=await checkedPage(o.url);
   const v=verificationFromHttp(page.http);
   if(v==='DEAD'){
     receipt.dead++;
@@ -118,9 +121,12 @@ async function checkOffer(o){
     return {...stamp,verificationState:'ACCESS_RESTRICTED_REVERIFY',http:page.http,note:'Refresh: source restricted automated access. Prior SSOT value retained.'};
   }
   if(page.http===0||page.http>=500){
-    // Transient network/server failure: keep the previous state and ledger untouched instead of flapping.
+    // Keep the old price as evidence but revoke LIVE until seller can be checked.
+    // A timeout or HTTP 5xx is NOT confirmation of current availability.
     receipt.remoteErrors++;
-    return null;
+    observe({...row,http:page.http,result:'REMOTE_ERROR_RECHECK',pricePln:o.price});
+    return {...stamp,verificationState:'REMOTE_ERROR_RECHECK',http:page.http||null,
+      note:'Refresh: temporary seller error; prior quote retained, current availability unconfirmed.'};
   }
   if(v!=='REACHABLE'){
     receipt.ambiguous++;
@@ -195,14 +201,15 @@ const researchRechecks=await pool(
         shippingSource:null,redTeam:['REVERIFY_REQUIRED','NO_LANDED_COST']};
     };
     if(!source?.canVerifyOffer||!meta||!directOfferEligible(c.url,source))return reject('SOURCE_NOT_VERIFIABLE');
-    const p=await fetchPage(c.url);
+    const p=await checkedPage(c.url);
     if(p.http!==200)return reject('HTTP_'+p.http,p.http);
+    if(!sameSellerItemUrl(c.url,p.url))return reject('SELLER_REDIRECT_CHANGED_ITEM',p.http);
     const {blocked,parsed}=parsePage(source,p.html,p.http);
     if(blocked||!parsed)return reject(blocked?'BLOCKED':'PRICE_UNPARSED',p.http);
     if(!itemTitleMatchesModel(p.html,meta))return reject('MODEL_TITLE_MISMATCH',p.http);
     const cond=conditionFrom(parsed,''),stock=available(parsed,'');
     const price=toPln(parsed.price,parsed.currency,fx);
-    if(cond!==c.condition||stock!==true||!price)return reject(stock===false?'SOLD':'PRICE_CONDITION_OR_STOCK_UNKNOWN',p.http);
+    if(cond!==c.condition||stock!==true||!price||!parsed.currency)return reject(stock===false?'SOLD':'PRICE_CONDITION_OR_STOCK_UNKNOWN',p.http);
     receipt.researchReverified=(receipt.researchReverified||0)+1;
     return {...c,status:'VERIFIED LEAD',verificationState:'DIRECT_OFFER_VERIFIED',
       pricePln:price,originalPrice:parsed.price,currency:parsed.currency,
@@ -316,7 +323,7 @@ if(mode!=='quick'){
     }
     if(!source.canVerifyOffer||!directOfferEligible(c.url,source))
       return reject('SELLER_PAGE_NOT_SUPPORTED',p?.http??null,true);
-    if(!p)p=await fetchPage(c.url);
+    if(!p)p=await checkedPage(c.url);
     if(p.http!==200)return reject('HTTP_'+p.http,p.http,[401,403,429,451].includes(p.http));
     try{
       const expected=new URL(c.url),actual=new URL(p.url);
