@@ -627,6 +627,75 @@
       ],
       "enabled": true,
       "priority": 3
+    },
+    {
+      "model": "Sennheiser HD 540 Reference II",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "HD 540 Reference II",
+        "HD540 Reference II",
+        "Sennheiser HD540 II"
+      ],
+      "enabled": true,
+      "searchTerms": [
+        "Sennheiser HD 540 Reference II",
+        "Sennheiser HD540 Reference II",
+        "HD 540 Reference II"
+      ],
+      "priority": 2
+    },
+    {
+      "model": "Audio-Technica ATH-AD2000X",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "ATH AD2000X",
+        "AD2000X",
+        "Audio Technica ATH-AD2000X"
+      ],
+      "enabled": true,
+      "searchTerms": [
+        "Audio-Technica ATH-AD2000X",
+        "ATH-AD2000X",
+        "AD2000X"
+      ],
+      "priority": 2
+    },
+    {
+      "model": "AKG K501",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "AKG K 501",
+        "K501",
+        "K 501"
+      ],
+      "enabled": true,
+      "searchTerms": [
+        "AKG K501",
+        "AKG K 501"
+      ],
+      "priority": 3
+    },
+    {
+      "model": "Sennheiser HD 800",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "aliases": [
+        "HD800",
+        "HD 800"
+      ],
+      "enabled": true,
+      "searchTerms": [
+        "Sennheiser HD 800",
+        "Sennheiser HD800"
+      ],
+      "priority": 3
     }
   ]
 }

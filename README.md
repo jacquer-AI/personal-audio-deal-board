@@ -278,3 +278,23 @@ Acceptance: unit tests for 56-model/360-URL saturation, source fairness, HiFiSha
 ### Post-FULL yield tuning (readback: 2026-10-12)
 
 Production FULL run 38221894682 completed with 280 discovery requests but only 6 newly discovered direct seller URLs (1 Subito, 5 Marktplaats), versus 242 HiFiShark /goto rows. Zero additional buyable LIVE offers qualified; existing strict gates remain intact. To prioritize actionable evidence, FULL now uses model-only search queries on Subito and Marktplaats (avoids redundant used-condition keywords), orders seller search sources first, and limits HiFiShark's seller-verification follow-ups to one candidate per model. HiFiShark remains a research source, never a LIVE evidence source. Actual next-run conversion must be measured; these are recall/performance changes, not a guarantee of more buyable inventory.
+
+## Vintage/detail-focused expansion (2026-10-12)
+
+The canonical watchlist now contains **60 enabled families**, including four newly
+added, listener-relevant discovery targets: Sennheiser HD 540 Reference II,
+Audio-Technica ATH-AD2000X, AKG K501 and the original Sennheiser HD 800.
+They complement the already-present Beyerdynamic DT 48 **25 Ω**, Sony MDR-SA5000,
+HIFIMAN Ananda Nano and DT 1990 PRO. Do not conflate Sennheiser HD 800 with HD 800 S.
+
+These additional models are **search-only hypotheses**, not validated individual
+offers. All start with `quality: UNRATED`, `fit: null`, no invented used-price
+benchmarks and no made-up buy-now claim. Precision of the model variant and direct
+seller-page verification continue to gate LIVE. Historical asking prices and the
+listener's suggested targets never become a market median.
+
+The daily FULL discovery default is now **300 jobs** (60 families × five core/
+rotating source channels); DEEP allows **380 jobs**. This preserves the former
+per-model source coverage rather than silently starving later models. Actual
+seller verification and public Pages readback must be demonstrated by the
+corresponding Actions run; a passing PR suite alone proves only code behavior.

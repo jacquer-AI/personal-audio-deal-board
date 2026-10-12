@@ -94,17 +94,17 @@ describe('48 model daily rotation preserves 5 Europe-wide sources and a Polish d
 });
 
 
-describe('56 tracked models in 280-job FULL budget',()=>{
+describe('60 tracked models in 300-job FULL budget',()=>{
   it('covers every model across all four baselines plus the daily European outlet',()=>{
-    const models56=Array.from({length:56},(_,i)=>({model:'Headphone '+i}));
+    const models60=Array.from({length:60},(_,i)=>({model:'Headphone '+i}));
     const ids=['hifishark','allegro-pl','olx-pl','vinted-pl','subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
-    const sources56=ids.map(id=>({id,queryTerms:[],searchUrlTemplate:'https://site.example/?q={q}'}));
+    const sources60=ids.map(id=>({id,queryTerms:[],searchUrlTemplate:'https://site.example/?q={q}'}));
     for(let d=11;d<16;d++){
       const core=coreSourceIdsForDate('2026-10-'+d);
-      const jobs=planDiscoveryJobs(models56,sources56,280,core);
-      expect(jobs).toHaveLength(280);
-      for(const id of core)expect(jobs.filter(j=>j.s.id===id)).toHaveLength(56);
-      expect(new Set(jobs.map(j=>j.m.model+'|'+j.s.id)).size).toBe(280);
+      const jobs=planDiscoveryJobs(models60,sources60,300,core);
+      expect(jobs).toHaveLength(300);
+      for(const id of core)expect(jobs.filter(j=>j.s.id===id)).toHaveLength(60);
+      expect(new Set(jobs.map(j=>j.m.model+'|'+j.s.id)).size).toBe(300);
     }
   });
 });
