@@ -42,6 +42,17 @@ describe('refresh market core',()=>{
     expect(merged[0].status).not.toMatch(/^LIVE/);
     expect(downgradeModelMismatch(add,{verificationState:'DIRECT_OFFER_VERIFIED'},'now')).toBe(add);
   });
+  it('immediately revokes prior LIVE on a failed remote HTTP or transient timeout recheck',()=>{
+    for(const fail of ['REMOTE_ERROR_RECHECK','ACCESS_RESTRICTED_REVERIFY','SELLER_REDIRECT_CHANGED_ITEM','CURRENCY_UNRESOLVED']){
+      const merged=mergeOverlay({offers:[baseOffer]},{status:'COMPLETED',
+        updates:[{fingerprint:fingerprint(baseOffer),verificationState:fail,http:503,
+          checkedAt:'2026-10-12T11:00:00Z',price:50,status:'LIVE USED'}],additions:[]});
+      expect(merged.offers[0].status).toBe('STALE / REVERIFY');
+      expect(merged.offers[0].price).toBe(650);
+      expect(merged.offers[0].refresh.verificationState).toBe(fail);
+      expect(merged.offers[0].checked).toBe('2026-10-07');
+    }
+  });
   it('computes new price sold and stale delta',()=>{
     const before=[baseOffer,{...baseOffer,id:'y',url:'https://example.com/item/5',status:'LIVE USED'}];
     const after=[{...baseOffer,price:600},{...before[1],status:'STALE / REVERIFY'},{...baseOffer,id:'z',url:'https://example.com/item/6'}];
