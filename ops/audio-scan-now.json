@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "quick-downgrade-timeless-ae-20261012-v1",
+  "requestId": "retail-references-e2e-20261012-0835-v1",
   "mode": "quick",
   "categories": "all",
-  "purpose": "Final E2E after PR29: reverify added seller item URLs with strict 7Hz Timeless OG vs AE identity; persist MODEL_NOT_CONFIRMED as STALE/REVERIFY rather than LIVE; validate delta and republish corrected board.",
+  "purpose": "One end-to-end post-PR31 quick scan: verify exact retailer catalog references, preserve blocked Ceneo/DT880 values, persist data/retail-price-references.json only for valid evidence, dispatch Pages and verify public readback.",
   "requestedOn": "2026-10-12"
 }
