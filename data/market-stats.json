@@ -1,12 +1,20 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T12:20:37.872Z",
+  "refreshedAt": "2026-10-12T12:51:46.456Z",
   "stats": [
     {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9348.27,
+      "max": 9348.27
+    },
+    {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 961.17,
       "max": 2628.95
     },
@@ -204,10 +212,10 @@
     },
     {
       "key": "Sennheiser HD 800 S|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 109.72,
+      "min": 4388.9,
       "max": 4388.9
     },
     {

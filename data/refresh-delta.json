@@ -1,5 +1,5 @@
 {
-  "new": 3,
+  "new": 0,
   "priceChanged": 1,
   "sold": 0,
   "stale": 1,
@@ -7,169 +7,47 @@
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9348.27,
-      "to": 9206,
+      "from": 9206,
+      "to": 9348.27,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 434.5,
-      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-milano-664245426.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Sennheiser HD 800",
-      "price": 4301.12,
-      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-verona-630304675.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Sennheiser HD 800",
-      "price": 2457.78,
-      "url": "https://www.subito.it/audio-video/cuffie-audiophile-sennheiser-hd-800-roma-662794642.htm"
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-12T12:20:37.872Z",
-  "mode": "full",
-  "runId": "38248414532",
+  "refreshedAt": "2026-10-12T12:51:46.456Z",
+  "mode": "quick",
+  "runId": "38251695239",
   "candidates": 500,
-  "verifiedAdditions": 3,
-  "observationChanges": 57,
+  "verifiedAdditions": 0,
+  "observationChanges": 8,
   "freshnessRenewal": false,
   "receipt": {
-    "directUrlsAttempted": 84,
-    "directVerified": 66,
-    "accessRestricted": 10,
-    "ambiguous": 7,
+    "directUrlsAttempted": 87,
+    "directVerified": 68,
+    "accessRestricted": 9,
+    "ambiguous": 8,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     },
     "researchRechecked": 80,
-    "researchReverified": 80,
+    "researchReverified": 79,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "ALREADY_ON_BOARD": 65,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 15
+      "ALREADY_ON_BOARD": 67,
+      "NOT_VERIFIED_IN_THIS_RUN": 1,
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 12
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 500,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "mediaexpert-outlet"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 4,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 4,
-          "unverifiedUrls": 4
-        },
-        "mediaexpert-outlet": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 57,
-          "candidateUrls": 0,
-          "restricted": 3,
-          "errors": 0
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 5,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 5,
-          "verifiedUrls": 3,
-          "unverifiedUrls": 2
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 263,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 48,
-          "unverifiedUrls": 48
-        }
-      },
-      "selectedUrls": 57,
-      "selectedBySource": {
-        "hifishark": 48,
-        "vinted-pl": 4,
-        "subito-it": 5
-      },
-      "modelsSelected": 49
-    }
+    "researchPromoted": 0
   }
 }
