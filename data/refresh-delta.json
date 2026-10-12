@@ -1,34 +1,89 @@
 {
-  "new": 0,
+  "new": 10,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9348.27,
-      "to": 9206,
+      "from": 9206,
+      "to": 9348.27,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "STALE",
+      "type": "NEW",
       "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "price": 8119.46,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452309377-64-audio-u12t-high-end-in-ear-monitors"
+    },
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "price": 1294.73,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2436480559-beyerdynamic-dt-1990-pro-studio-koptelefoon-v1"
+    },
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "price": 1053.34,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2448250086-beyerdynamic-dt-1990-pro-250-ohm"
+    },
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "price": 877.78,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2413047552-beyerdynamic-dt-900-pro-x-zo-goed-als-nieuw"
+    },
+    {
+      "type": "NEW",
+      "model": "Dan Clark Audio E3",
+      "price": 8448.63,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2437308762-dan-clark-audio-e3-6-35mm-2m-vivo-kabel"
+    },
+    {
+      "type": "NEW",
+      "model": "Etymotic ER2SE",
+      "price": 390.61,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450603834-etymotic-er2se-oortjes-zwart"
+    },
+    {
+      "type": "NEW",
+      "model": "HIFIMAN Ananda Nano",
+      "price": 1119.17,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2449671340-hifiman-ananda-nano-as-good-as-new"
+    },
+    {
+      "type": "NEW",
+      "model": "HIFIMAN Edition XS",
+      "price": 811.95,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450767765-hifiman-edition-xs-zgan"
+    },
+    {
+      "type": "NEW",
+      "model": "HIFIMAN Edition XS",
+      "price": 658.33,
+      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2449537584-hifiman-edition-xs"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 614.45,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2443065935-jbl-charge-6"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-12T10:39:31.116Z",
+  "refreshedAt": "2026-10-12T11:25:53.570Z",
   "mode": "quick",
-  "runId": "38237682810",
+  "runId": "38242571392",
   "candidates": 500,
   "verifiedAdditions": 10,
-  "observationChanges": 14,
+  "observationChanges": 2,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 74,
-    "directVerified": 56,
-    "accessRestricted": 10,
+    "directVerified": 57,
+    "accessRestricted": 9,
     "ambiguous": 7,
     "dead": 0,
     "soldOrOut": 0,
@@ -36,9 +91,9 @@
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
       "olx-pl": 4,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     },
     "researchRechecked": 80,
     "researchReverified": 80,
