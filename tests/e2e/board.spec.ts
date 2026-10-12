@@ -201,3 +201,22 @@ for(const width of [390,320]){
     expect(await fits()).toBe(true);
   });
 }
+
+
+test('new and used reference prices are visible with provenance but do not invent discounts',async({page})=>{
+  await page.getByRole('searchbox').fill('Beyerdynamic DT 880');
+  const card=page.getByTestId('product').first();
+  const market=card.getByTestId('market-reference');
+  await expect(market).toContainText('350,20');
+  await expect(market).toContainText('Próbka stanu');
+  await expect(market).toContainText('651');
+  await expect(market).toContainText('DT 880 Pro 250 Ω');
+  await expect(market.getByRole('link',{name:/Źródło indeksu nowej ceny/})).toHaveAttribute('href','https://www.ceneo.pl/5810846');
+  await expect(card.locator('.metrics')).toContainText('— vs stan');
+  await expect(card.locator('.metrics')).toContainText('— vs nowe');
+  await page.getByRole('searchbox').fill('AKG K702');
+  await expect(page.getByTestId('market-reference').first()).toContainText('1 odczytana cena ofertowa');
+  await expect(page.getByTestId('market-reference').first()).toContainText('679');
+  await page.getByRole('searchbox').fill('HIFIMAN Edition XS');
+  await expect(page.getByTestId('market-reference').first()).toContainText('953');
+});
