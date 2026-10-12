@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T14:15:54.055Z",
+  "refreshedAt": "2026-10-12T15:15:05.878Z",
   "stats": [
+    {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9348.27,
+      "max": 9348.27
+    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -25,6 +33,14 @@
       "median": 526.67,
       "min": 329.17,
       "max": 790
+    },
+    {
+      "key": "Focal Clear MG|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 3928.07,
+      "max": 3928.07
     },
     {
       "key": "JBL Charge 6|USED",

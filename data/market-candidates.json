@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-10-12T14:15:54.055Z",
-  "mode": "full",
+  "refreshedAt": "2026-10-12T15:15:05.878Z",
+  "mode": "quick",
   "candidates": [
     {
       "model": "64 Audio U12t",
@@ -18,7 +18,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -42,9 +42,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "AKG K702",
@@ -61,7 +61,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -84,9 +84,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -103,7 +103,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:15:54.055Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -125,7 +125,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -144,7 +144,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -168,9 +168,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -185,7 +185,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -208,9 +208,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -229,7 +229,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -252,9 +252,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bose SoundLink Max",
@@ -271,7 +271,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -295,9 +295,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -314,7 +314,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -338,9 +338,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -357,7 +357,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:15:54.055Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -380,7 +380,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -399,7 +399,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:15:54.055Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -422,7 +422,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -441,7 +441,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -465,9 +465,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Etymotic ER4XR",
@@ -484,7 +484,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -507,9 +507,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Focal Clear MG",
@@ -526,7 +526,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -550,9 +550,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Focal Clear OG",
@@ -569,7 +569,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -592,9 +592,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -611,7 +611,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -635,9 +635,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -654,7 +654,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -677,9 +677,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -696,7 +696,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -720,9 +720,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -739,7 +739,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -761,9 +761,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "JBL Charge 6",
@@ -780,7 +780,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -803,9 +803,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Moondrop Blessing 3",
@@ -822,7 +822,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -845,9 +845,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Neumann NDH 30",
@@ -864,7 +864,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -886,9 +886,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sennheiser HD 800",
@@ -905,7 +905,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -928,9 +928,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -947,7 +947,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -970,9 +970,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sony MDR-M1",
@@ -989,7 +989,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:15:54.055Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1012,7 +1012,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1031,7 +1031,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1053,9 +1053,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "64 Audio U12t",
@@ -1072,7 +1072,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1095,9 +1095,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "AKG K702",
@@ -1114,7 +1114,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1137,9 +1137,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -1156,7 +1156,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1180,9 +1180,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -1199,7 +1199,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1222,9 +1222,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bose SoundLink Max",
@@ -1239,7 +1239,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1263,9 +1263,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -1284,7 +1284,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1306,9 +1306,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Focal Clear MG",
@@ -1325,7 +1325,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1348,9 +1348,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -1367,7 +1367,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1390,9 +1390,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -1409,7 +1409,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1433,9 +1433,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "JBL Charge 6",
@@ -1452,7 +1452,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1474,9 +1474,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Moondrop Blessing 3",
@@ -1493,7 +1493,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1515,9 +1515,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Neumann NDH 30",
@@ -1534,7 +1534,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1557,9 +1557,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sennheiser HD 800",
@@ -1576,7 +1576,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1598,9 +1598,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Technics EAH-AZ100",
@@ -1615,7 +1615,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1637,9 +1637,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -1658,7 +1658,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1681,9 +1681,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -1700,7 +1700,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1723,9 +1723,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -1740,7 +1740,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1763,9 +1763,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -1782,7 +1782,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1806,9 +1806,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -1827,7 +1827,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1850,9 +1850,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -1869,7 +1869,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1892,9 +1892,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "JBL Charge 6",
@@ -1911,7 +1911,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1933,9 +1933,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Technics EAH-AZ100",
@@ -1952,7 +1952,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1976,9 +1976,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "AKG K702",
@@ -1995,7 +1995,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2018,9 +2018,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -2037,7 +2037,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2060,9 +2060,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bose SoundLink Max",
@@ -2079,7 +2079,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2103,9 +2103,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -2122,7 +2122,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2145,9 +2145,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "JBL Charge 6",
@@ -2162,7 +2162,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2186,9 +2186,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2207,7 +2207,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2231,9 +2231,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "AKG K702",
@@ -2250,7 +2250,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2273,9 +2273,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -2290,7 +2290,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2313,9 +2313,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2334,7 +2334,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2358,9 +2358,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "JBL Charge 6",
@@ -2377,7 +2377,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2399,9 +2399,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "AKG K702",
@@ -2418,7 +2418,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2441,9 +2441,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -2460,7 +2460,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2483,9 +2483,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bose SoundLink Max",
@@ -2500,7 +2500,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2524,9 +2524,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2545,7 +2545,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2567,9 +2567,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bose SoundLink Max",
@@ -2584,7 +2584,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2608,9 +2608,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2627,7 +2627,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2651,9 +2651,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2672,7 +2672,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2694,9 +2694,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "JBL Charge 6",
@@ -2711,7 +2711,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2733,9 +2733,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2752,7 +2752,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2776,9 +2776,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true,
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2797,7 +2797,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2820,9 +2820,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -2839,7 +2839,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2864,9 +2864,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -2883,7 +2883,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:15:54.055Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2907,7 +2907,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2926,7 +2926,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:15:54.055Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2950,7 +2950,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2969,7 +2969,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2992,9 +2992,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Focal Clear MG",
@@ -3011,7 +3011,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3035,9 +3035,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -3054,7 +3054,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3078,9 +3078,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -3097,7 +3097,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3122,9 +3122,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "JBL Charge 6",
@@ -3141,7 +3141,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -3164,9 +3164,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Neumann NDH 30",
@@ -3183,7 +3183,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3207,9 +3207,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Noble FoKus Prestige Encore",
@@ -3226,7 +3226,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3251,9 +3251,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Noble FoKus REX5",
@@ -3270,7 +3270,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3295,9 +3295,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sennheiser HD 800",
@@ -3314,7 +3314,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T14:12:31.820Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3338,9 +3338,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sennheiser IE 600",
@@ -3357,7 +3357,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T15:15:05.878Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3381,9 +3381,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T15:15:05.878Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -7920,8 +7920,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/346_audio-technica-ath-adx5000/fee95b0c-c647-11f1-ad5b-366530616539",
@@ -8002,8 +8002,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/7438f0a2-c647-11f1-9f64-366530616539",
@@ -8043,8 +8043,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1afSTh/fee57f78-c647-11f1-8ee8-393862626263",
@@ -8371,8 +8371,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/747f3d0a-c647-11f1-bb33-393862626263",
@@ -8412,8 +8412,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_463579059/7447d6e4-c647-11f1-9edb-393862626263",
@@ -8453,8 +8453,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/e1ba7d76-c63d-11f1-8ae8-366530616539",
@@ -9478,8 +9478,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/73fc4882-c647-11f1-8f44-366530616539",
@@ -9519,8 +9519,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:15:54.055Z",
       "lastSeenAt": "2026-10-12T14:15:54.055Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_2137729544/e01c4f9e-c63d-11f1-aef0-363166383366",

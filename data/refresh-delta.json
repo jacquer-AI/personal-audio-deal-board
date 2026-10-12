@@ -1,135 +1,46 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9206,
+      "to": 9348.27,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-12T14:15:54.055Z",
-  "mode": "full",
-  "runId": "38261616391",
+  "refreshedAt": "2026-10-12T15:15:05.878Z",
+  "mode": "quick",
+  "runId": "38268818295",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 8,
+  "observationChanges": 3,
   "freshnessRenewal": false,
   "receipt": {
-    "directUrlsAttempted": 9,
-    "directVerified": 4,
-    "accessRestricted": 2,
-    "ambiguous": 3,
-    "dead": 0,
+    "directUrlsAttempted": 88,
+    "directVerified": 66,
+    "accessRestricted": 9,
+    "ambiguous": 11,
+    "dead": 1,
     "soldOrOut": 0,
-    "notDirect": 0,
-    "remoteErrors": 0,
+    "notDirect": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
-      "ebay-pl": 1,
-      "ebay-de": 1
+      "ebay-de": 2,
+      "olx-pl": 4,
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
-    "researchRechecked": 6,
-    "researchReverified": 6,
+    "researchRechecked": 80,
+    "researchReverified": 80,
     "researchPromotionBlocked": {
-      "ALREADY_ON_BOARD": 4,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 2
+      "ALREADY_ON_BOARD": 66,
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 14
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 500,
-    "discovery": {
-      "plannedJobs": 99,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "mediaexpert-outlet"
-      ],
-      "plannedSources": 11,
-      "reachableSources": 6,
-      "sources": {
-        "allegro-pl": {
-          "requested": 9,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 5,
-          "errors": 4
-        },
-        "olx-pl": {
-          "requested": 9,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 9,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 9,
-          "reachable": 9,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "mediaexpert-outlet": {
-          "requested": 9,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 9,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 9,
-          "reachable": 9,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 9,
-          "reachable": 9,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "subito-it": {
-          "requested": 9,
-          "reachable": 9,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "wallapop-es": {
-          "requested": 9,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 9,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 9,
-          "reachable": 1,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 8
-        },
-        "ebay-de": {
-          "requested": 9,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 9,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 9,
-          "reachable": 9,
-          "candidateUrls": 32,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 8,
-          "unverifiedUrls": 8
-        }
-      },
-      "selectedUrls": 8,
-      "selectedBySource": {
-        "hifishark": 8
-      },
-      "modelsSelected": 8
-    }
+    "researchPromoted": 0
   }
 }
