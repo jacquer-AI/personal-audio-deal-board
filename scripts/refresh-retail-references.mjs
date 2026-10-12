@@ -9,7 +9,10 @@ export const SOURCES = [
    fallback:{url:'https://supersound.pl/60737-beyerdynamic-dt-880-pro-250-ohm-studio-headphones-for-mixing-and-mastering-semi-open',
      titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Supersound.pl',host:'supersound.pl'},
    secondary:{url:'https://www.cyfrowe.pl/sluchawki-beyerdynamic-sluchawki-polotwarte-dt-880-pro-250-ohm-p.html',
-     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Cyfrowe.pl',host:'www.cyfrowe.pl'}},
+     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Cyfrowe.pl',host:'www.cyfrowe.pl'},
+   tertiary:{url:'https://www.profi-dj.pl/dt-880-pro-250-ohm/',
+     titleTokens:['dt880','pro','250'],brandToken:'beyerdynamic',
+     variant:'DT 880 Pro 250 Ω',source:'Profi-dj.pl',host:'www.profi-dj.pl'}},
   {model:'AKG K702',url:'https://www.ceneo.pl/28644030',
    titleTokens:['akg','k702'],variant:'AKG K702',
    fallback:{url:'https://www.thomann.pl/akg_k702.htm',titleTokens:['akg','k702'],
@@ -96,6 +99,8 @@ export function parseVendorReference(html, config) {
   const title=plain(h[1]),code=compact(title);
   if(!config.titleTokens.every(token=>code.includes(compact(token))))
     return {error:'WRONG_PRODUCT_TITLE',title};
+  if(config.brandToken && !compact(input.slice(0,20000)).includes(compact(config.brandToken)))
+    return {error:'BRAND_NOT_CONFIRMED',title};
   const after=input.slice(h.index+h[0].length,h.index+h[0].length+65000);
   const structured=jsonPrice(input,config.titleTokens.map(compact).join(''));
   let price=null,method=null;
@@ -171,7 +176,7 @@ export async function refreshRetail({fetcher=fetch,now=new Date().toISOString(),
 
   for(const s of SOURCES) {
     let verified=null;
-    for(const endpoint of [{...s,source:'Ceneo.pl',kind:'CENEO'}, {...s.fallback,kind:'VENDOR'}, ...(s.secondary?[{...s.secondary,kind:'VENDOR'}]:[])]){
+    for(const endpoint of [{...s,source:'Ceneo.pl',kind:'CENEO'}, {...s.fallback,kind:'VENDOR'}, ...(s.secondary?[{...s.secondary,kind:'VENDOR'}]:[]), ...(s.tertiary?[{...s.tertiary,kind:'VENDOR'}]:[])]){
       if(verified?.pricePln)break;
       try{
         const response=await fetcher(endpoint.url,{signal:AbortSignal.timeout(11000),redirect:'follow',
