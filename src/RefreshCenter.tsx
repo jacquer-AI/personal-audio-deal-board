@@ -1,5 +1,6 @@
 import {useEffect,useMemo,useRef,useState} from 'react';
 import deltaSnapshot from '../data/refresh-delta.json';
+import {pagesForMarketRun} from './lib/pagesReceipt';
 
 const REPO='jacquer-AI/personal-audio-deal-board';
 const API='https://api.github.com/repos/'+REPO;
@@ -229,8 +230,8 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
         setDelta(fresh!);setOutcome('CHANGED');
         const p=await publicGh('/actions/runs?per_page=20');
         if(p.ok){
-          const list=(await p.json() as {workflow_runs?:Array<Run&{name?:string}>}).workflow_runs||[];
-          const pages=list.find(x=>(x.display_title||x.name||'').includes('Verify and deploy audio board')&&Date.parse(x.created_at)>=Date.parse(run.created_at));
+          const list=(await p.json() as {workflow_runs?:Array<Run&{name?:string;head_commit?:{message?:string|null}|null}>}).workflow_runs||[];
+          const pages=pagesForMarketRun(list,run);
           if(pages?.status==='completed'){
             if(pages.conclusion==='success')finish('done');else finish('failed','Odświeżono dane, ale ich publikacja nie powiodła się. Sprawdź szczegóły odświeżenia.');
             return;
