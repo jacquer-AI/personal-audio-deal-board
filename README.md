@@ -262,3 +262,15 @@ Retailer fallback results show the actual retailer name, variant and price as a 
 ### DT 880 price source redundancy
 
 After Ceneo protected the catalog endpoint (HTTP 200 with no product details), DT 880 PRO 250 Ω probes exact product pages at Supersound, Cyfrowe and Profi-dj. Profi-dj's product page presents distinct regular, current gross and net prices; the updater accepts only product:price:amount with a matching PLN currency meta tag after validating DT 880 PRO 250 Ohm and Beyerdynamic brand. The Cyfrowe parser requires a matching product H1 including PRO and 250, scopes the gross item price to the purchase hero before related accessories/bundles, and rejects low installment prices. No automatic update is made when all sources return blocked/ambiguous pages. All observations stay informational; same-condition ranking and B4B are unaffected. See PR CI `Retail Ceneo live probe` for the HTTP/source outcome.
+
+## Candidate-to-offer E2E hardening (12 October 2026)
+
+Independent read-only AGY/Codex review on host ZEN identified two independent failure modes: (1) HiFiShark results filled a 360-URL verification queue ahead of direct seller items; (2) previously admitted LIVE additions were not consistently revoked on unsuccessful rechecks.
+
+The existing scanner now prioritizes individual seller items by model and marketplace before HiFiShark redirects. Previously attempted research URLs, including resolved HiFiShark origins, have bounded cooldowns so daily FULL scans do not waste checks on the same recently verified/blocked candidates. This is **not** a blanket promotion: seller URL identity, model, product-local condition and stock, explicit currency, fixed-price evidence, geography and red-team gate remain mandatory.
+
+Rechecks of promoted additions now fail closed immediately when a merchant redirects to a different item, blocks access, changes variant/condition, lacks evidence of fixed price or becomes inaccessible. The former price is retained for research, but LIVE authority is revoked. Only a full fresh direct-page confirmation can restore LIVE status. Re-verification does not renew the prior successful timestamp on failures. Historical sold items remain separate.
+
+Research ledger display selection favors concrete seller evidence over aggregator-only hits at the 500-item cap and balances items across tracked models. In the dashboard, directly read seller asking prices are separated from Marktplaats values that may be bids; expired confirmations are labeled historical research rather than current offers.
+
+Acceptance: unit tests for 56-model/360-URL saturation, source fairness, HiFiShark redirect deduplication, 500-lead overflow and prior-LIVE fail-closed transitions; complete browser Playwright test; actual FULL scan followed by public deployment/readback. This change does not establish that bid prices are buy-now prices or that any source ships to Poland.
