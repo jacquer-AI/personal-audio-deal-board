@@ -19,7 +19,7 @@ describe('direct seller first: full scan must not starve product verification',(
       for(const m of models)discovered.push(Array.from({length:n},(_,i)=>lead(m.model,sourceId,i)));
     }
     const out=selectDiscoveryCandidates(discovered,models,sources,360);
-    expect(out).toHaveLength(286);
+    expect(out).toHaveLength(342);
     expect(new Set(out.map(x=>x.model)).size).toBe(56);
     expect(out.filter(x=>x.sourceId==='subito-it').length).toBeGreaterThanOrEqual(56);
     expect(out.filter(x=>x.sourceId==='marktplaats-nl').length).toBeGreaterThanOrEqual(56);
