@@ -13,6 +13,7 @@ import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
 import {selectDiscoveryCandidates,recentResearchUrls} from './discovery-selection.mjs';
 import {applyAdditionRecheck,sameSellerItemUrl} from './addition-rechecks.mjs';
 import {memoizeScanFetch} from './fetch-cache.mjs';
+import {promoteRecheckedResearch} from './research-promotion.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -207,17 +208,40 @@ const researchRechecks=await pool(
     const {blocked,parsed}=parsePage(source,p.html,p.http);
     if(blocked||!parsed)return reject(blocked?'BLOCKED':'PRICE_UNPARSED',p.http);
     if(!itemTitleMatchesModel(p.html,meta))return reject('MODEL_TITLE_MISMATCH',p.http);
+    const freshGeo=geographicEvidence(source,p.html);
+    if(!freshGeo)return reject('SELLER_LOCATION_NOT_CONFIRMED',p.http);
     const cond=conditionFrom(parsed,''),stock=available(parsed,'');
     const price=toPln(parsed.price,parsed.currency,fx);
     if(cond!==c.condition||stock!==true||!price||!parsed.currency)return reject(stock===false?'SOLD':'PRICE_CONDITION_OR_STOCK_UNKNOWN',p.http);
     receipt.researchReverified=(receipt.researchReverified||0)+1;
-    return {...c,status:'VERIFIED LEAD',verificationState:'DIRECT_OFFER_VERIFIED',
+    return {...c,region:freshGeo.region,country:freshGeo.country,
+      locationEvidence:freshGeo.basis,status:'VERIFIED LEAD',verificationState:'DIRECT_OFFER_VERIFIED',
       pricePln:price,originalPrice:parsed.price,currency:parsed.currency,
       availability:'InStock',verifiedAt:now,priceBasis:priceBasis(source,p.html,c.url,parsed),
       ...shipmentEvidence(p.html,parsed.price,price),http:200};
   });
+// QUICK and FULL both re-verify research, but only a fresh fixed-price seller
+// proof may become an offer. Research from a previous run is never promoted
+// without re-opening the exact seller item URL in the current run.
+const existingResearchBoard=[...(base.offers||[]),...priorAdditions];
+const researchPromotions=[];
+receipt.researchPromotionBlocked={};
+for(const c of researchRechecks.filter(Boolean)){
+  const verdict=promoteRecheckedResearch(c,modelMeta.get(c.model),
+    sourceById.get(c.sourceId),existingResearchBoard,now);
+  if(verdict.addition){
+    researchPromotions.push(verdict.addition);
+    existingResearchBoard.push(verdict.addition);
+    observe({fingerprint:fingerprint(verdict.addition),model:c.model,
+      condition:c.condition,sourceId:c.sourceId,url:c.url,http:200,
+      result:'RESEARCH_RECHECK_PROMOTED_FIXED',pricePln:c.pricePln});
+  }else{
+    receipt.researchPromotionBlocked[verdict.reason]=(receipt.researchPromotionBlocked[verdict.reason]||0)+1;
+  }
+}
+receipt.researchPromoted=researchPromotions.length;
 const candidates=[];
-const newAdditions=[];
+const newAdditions=[...researchPromotions];
 if(mode!=='quick'){
   const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(s.id==='hifishark'||(s.region!=='GLOBAL'&&(mode==='deep'||s.sweep==='daily'))));
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
