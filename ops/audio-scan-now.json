@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-funnel-agy-validated-full-retry-20261012-v4",
+  "requestId": "audio-mp-fixed-full-e2e-20261012-v1",
   "mode": "full",
   "categories": "all",
-  "purpose": "Physical retry after fixing price unit tests PR38: FULL discover and independently validate all 56 models; candidate source fairness; persist verified additions only, retain bids/aggregator-only research statuses; deploy Pages after complete data validation and check live count.",
+  "purpose": "Post-PR40 physical FULL E2E: reverify Marktplaats item-bound FIXED EUR price against parsed seller price, exact ID/model/stock/condition, promote only authentic current fixed-price items; preserve bidding leads as research, commit verified evidence, validate, dispatch Pages, public readback.",
   "requestedOn": "2026-10-12"
 }
