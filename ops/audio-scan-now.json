@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-vintage-60-full-e2e-20261012",
-  "mode": "full",
+  "requestId": "audio-accessory-guard-quick-e2e-20261012-01",
+  "mode": "quick",
   "categories": "all",
-  "purpose": "End-to-end physical market refresh after vintage-focused 60-model registry rollout (PR44). Validate 300 model-source discovery jobs, direct seller item/price/condition/availability evidence, rejection of HD800S for original HD800, Europe-first rules, honest missing shipping cost, updated offers persistence and public Pages readback. Report per-source reachability and verification; no speculative LIVE claims.",
+  "purpose": "Production E2E regression after PR46: directly recheck saved headphone offers, reject HD800S cable-only seller metadata, exclude disproved model from displayed listings and price comparisons, persist audited delta, deploy Pages and verify public readback.",
   "requestedOn": "2026-10-12"
 }
