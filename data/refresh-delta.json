@@ -5,12 +5,12 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-12T06:37:18.518Z",
+  "refreshedAt": "2026-10-12T07:06:58.734Z",
   "mode": "quick",
-  "runId": "38213396695",
+  "runId": "38215954968",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 1,
+  "observationChanges": 0,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 35,
@@ -24,11 +24,10 @@
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 2
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
-    "researchRechecked": 42,
-    "researchReverified": 41,
-    "researchDowngraded": 1
+    "researchRechecked": 41,
+    "researchReverified": 41
   }
 }
