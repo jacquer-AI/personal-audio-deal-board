@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {fingerprint,marketStats,mergeOverlay,safeStatus,computeDelta} from '../../scripts/market-core.mjs';
+import {fingerprint,marketStats,mergeOverlay,safeStatus,computeDelta,downgradeModelMismatch} from '../../scripts/market-core.mjs';
 
 const baseOffer={id:'x',model:'Model X',category:'IEM',quality:'A',fit:5,condition:'USED',rrp:1000,newMarket:900,sameMarket:600,price:650,country:'PL',seller:'Seller',region:'Polska',status:'LIVE USED',original:'650 PLN',url:'https://example.com/item/1',note:'',role:'OFFER',checked:'2026-10-07'};
 const lead={...baseOffer,id:'lead',status:'LEAD ONLY',url:'https://example.com/item/2'};
@@ -29,6 +29,18 @@ describe('refresh market core',()=>{
     const m=mergeOverlay({offers:[baseOffer]},{status:'COMPLETED',updates:[],additions:[good,bad]});
     expect(m.offers.some(x=>x.id==='good')).toBe(true);
     expect(m.offers.some(x=>x.id==='bad')).toBe(false);
+  });
+  it('revokes LIVE on a confirmed variant mismatch without erasing historic evidence',()=>{
+    const add={...baseOffer,url:'https://example.com/item/ae',status:'LIVE USED',
+      refresh:{verificationState:'DIRECT_OFFER_VERIFIED',firstVerifiedAt:'2026-10-11T10:00:00Z',checkedAt:'2026-10-11T10:00:00Z'}};
+    const check={verificationState:'MODEL_NOT_CONFIRMED',http:200};
+    const stale=downgradeModelMismatch(add,check,'2026-10-12T01:00:00Z');
+    expect(stale).toMatchObject({status:'STALE / REVERIFY',price:add.price,
+      refresh:{verificationState:'MODEL_NOT_CONFIRMED',http:200,firstVerifiedAt:'2026-10-11T10:00:00Z'}});
+    const merged=mergeOverlay({offers:[]},{additions:[stale]}).offers;
+    expect(merged).toHaveLength(1);
+    expect(merged[0].status).not.toMatch(/^LIVE/);
+    expect(downgradeModelMismatch(add,{verificationState:'DIRECT_OFFER_VERIFIED'},'now')).toBe(add);
   });
   it('computes new price sold and stale delta',()=>{
     const before=[baseOffer,{...baseOffer,id:'y',url:'https://example.com/item/5',status:'LIVE USED'}];
