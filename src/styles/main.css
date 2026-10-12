@@ -288,3 +288,7 @@ h1{font-size:21px;letter-spacing:-.55px}
 .research-sort-label select{max-width:100%;min-width:0;padding:7px;border:1px solid #a6bcd4;border-radius:5px;background:#fff;color:#173f6e}
 .research-sort-note{font-size:11px;line-height:1.5;color:#415b77;margin:4px 0 10px;overflow-wrap:anywhere}
 @media(max-width:480px){.research-sort-label{align-items:stretch;flex-direction:column}.research-sort-label select{width:100%}}
+
+/* Informational market evidence must remain legible, not masquerade as a verified deal. */
+.market small{font-size:10px;color:#58677b;line-height:1.3}
+.market small a{font-size:10px;color:#145a9e;text-decoration:underline;text-underline-offset:2px}

@@ -1,5 +1,9 @@
 import {useState, useEffect, useRef} from 'react';
 import snapshot from '../data/offers.json';
+import marketSamples from '../data/market-stats.json';
+import retailReferences from '../data/retail-price-references.json';
+import {priceReferences} from './lib/marketReferences';
+import type {RetailReferenceDocument} from './lib/marketReferences';
 import research from '../data/market-candidates.json';
 import type {Offer, Filters, Product} from './types';
 import {conditionLabel, offerStatusLabel} from './lib/offerLabels';
@@ -67,10 +71,26 @@ function Source({offer, primary = false}: {offer: Offer; primary?: boolean}) {
   </div>;
 }
 function Price({offer}: {offer: Offer}) {
+  const {same, newest} = priceReferences(offer, marketSamples,
+    retailReferences as unknown as RetailReferenceDocument);
+  const date = (iso?: string) => iso ? iso.slice(0, 10) : 'brak daty';
   return <div className="price-position">
     <div className="offer-price"><span className="sr-only">Cena produktu</span><div className="price-and-condition"><strong>{money(offer.price)}</strong><span className="condition-tag" data-testid="price-condition">{conditionLabel(offer.condition)}</span></div>{buyable(offer)&&<small className="item-price-note">Cena słuchawek · bez wysyłki i opłat</small>}</div>
-    <div className="market"><span>Rynek stanu <b>{money(offer.sameMarket)}</b></span><span>Nowe <b>{money(offer.newMarket)}</b></span></div>
-    <div className="metrics"><span><b>{pct(discount(offer))}</b> vs stan</span><span><b>{pct(savings(offer))}</b> vs nowe</span></div>
+    <div className="market" data-testid="market-reference">
+      <span title={same.explanation+' · stan: '+conditionLabel(offer.condition)+' · przegląd: '+date(same.observedAt)}>
+        {same.basis==='VERIFIED_SELLER_SAMPLE'?'Próbka stanu':'Rynek stanu'} <b>{money(same.value)}</b>
+        {same.basis==='VERIFIED_SELLER_SAMPLE'&&<small> · {same.explanation}{same.stale?' (starsza)':''}</small>}
+      </span>
+      <span title={newest.explanation+' · przegląd: '+date(newest.observedAt)}>
+        Nowe <b>{money(newest.value)}</b>
+        {newest.basis==='VERIFIED_SELLER_SAMPLE'&&<small> · {newest.explanation}{newest.stale?' (starsza)':''}</small>}
+        {newest.basis==='RETAIL_INDEX'&&<small> · indeks {date(newest.observedAt)}{newest.stale?' (starszy)':''}
+          {newest.variant&&' · '+newest.variant}
+          {newest.url&&<> · <a href={newest.url} target="_blank" rel="noopener noreferrer" aria-label={'Źródło indeksu nowej ceny: '+offer.model}>źródło ↗</a></>}
+        </small>}
+      </span>
+    </div>
+    <div className="metrics" title="Procentowe porównania i B4B używają tylko zatwierdzonych benchmarków porównywalnego stanu. Próbki i indeksy nie podwyższają rankingu."><span><b>{pct(discount(offer))}</b> vs stan</span><span><b>{pct(savings(offer))}</b> vs nowe</span></div>
   </div>;
 }
 function OfferDetails({product}: {product: Product}) {

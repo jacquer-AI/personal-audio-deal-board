@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "methodology": "Research-only price index observations, not direct seller offers, not checkout prices. Never use for B4B, percentages or promotion decisions. DT 880 Pro 250 Ohm is a specific variant, while board model is a family.",
+  "references": [
+    {
+      "model": "Beyerdynamic DT 880",
+      "variant": "DT 880 Pro 250 Ω",
+      "condition": "NEW",
+      "pricePln": 651,
+      "source": "Ceneo.pl",
+      "url": "https://www.ceneo.pl/5810846",
+      "observedAt": "2026-10-12T06:39:00+02:00",
+      "evidence": "INDEXED_RETAIL_ASKING_PRICE"
+    },
+    {
+      "model": "AKG K702",
+      "variant": "AKG K702",
+      "condition": "NEW",
+      "pricePln": 679,
+      "source": "Ceneo.pl",
+      "url": "https://www.ceneo.pl/28644030",
+      "observedAt": "2026-10-12T06:39:00+02:00",
+      "evidence": "INDEXED_RETAIL_ASKING_PRICE"
+    },
+    {
+      "model": "HIFIMAN Edition XS",
+      "variant": "HIFIMAN Edition XS",
+      "condition": "NEW",
+      "pricePln": 953,
+      "source": "Ceneo.pl",
+      "url": "https://www.ceneo.pl/124339502",
+      "observedAt": "2026-10-12T06:39:00+02:00",
+      "evidence": "INDEXED_RETAIL_ASKING_PRICE"
+    }
+  ]
+}
