@@ -1,9 +1,19 @@
 import {describe,it,expect} from 'vitest';
 import {priceReferences} from '../../src/lib/marketReferences';
-import market from '../../data/market-stats.json';
 import retail from '../../data/retail-price-references.json';
 import {b4b, discount} from '../../src/lib/board';
 import type {Offer} from '../../src/types';
+
+// Contract fixtures must not change when today's actual marketplace prices do.
+// Live snapshots remain inputs to integration tests, not fixed unit expectations.
+const market = {
+  refreshedAt:'2026-10-12T04:00:00Z',
+  stats:[
+    {key:'Beyerdynamic DT 880|USED',n:3,confidence:'PROVISIONAL',median:350.2,min:328.31,max:525.3},
+    {key:'AKG K702|USED',n:1,confidence:'INSUFFICIENT MARKET SAMPLE',median:null,min:525.3,max:525.3},
+    {key:'HIFIMAN Edition XS|USED',n:1,confidence:'INSUFFICIENT MARKET SAMPLE',median:null,min:1050.6,max:1050.6}
+  ]
+};
 
 const base = {model:'Beyerdynamic DT 880',condition:'USED',sameMarket:null,newMarket:null} as const;
 const at = Date.parse('2026-10-12T07:00:00+02:00');
