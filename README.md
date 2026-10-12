@@ -248,3 +248,12 @@ not 3). The complete notes ledger still includes source provenance.
 Validation: unit, typecheck, lint, build, Playwright, clean GitHub CI and public Pages
 readback are required before claiming the changed UI is deployed. A successful build
 does **not** imply fresh offers were fetched in a new market scan.
+
+
+## Automated retail reference updates (2026-10-12)
+
+`scripts/refresh-retail-references.mjs` checks three explicitly configured Ceneo catalog pages, then exact-model merchant pages at Thomann or Supersound if the catalog response is unavailable, in every market-refresh run (the existing 6-hour schedule, including FULL and DEEP). Only a model-matching product heading with an explicit price in the catalog or merchant's own purchase area, or matching product-scoped JSON-LD, can update `data/retail-price-references.json`. This is a product **index asking price**, not a seller-verified offer, guaranteed available item, minimum same-variant price, or landed checkout amount. The generic DT 880 Pro catalog page does **not** prove the headline price corresponds to 250 Ω.
+
+A 403, CAPTCHA, missing/mismatched title, redirect to a different product, non-PLN price or abnormal price movement retains the last confirmed indexed reference **with the original observedAt**. UI automatically labels index entries older than seven days as older. A successful unchanged check renews evidence only at most once per 24 hours to avoid needless Git commits. The separate index never enters the `sameMarket`/`newMarket` trusted benchmark used by discount and B4B. Human review can investigate anomalies. All refresh audit results appear in the Actions step summary. PR workflow runs the updater with `--dry-run` against real URLs and runs regression tests. On data change, the existing refresh workflow pushes the index and dispatches the Pages deployment. No new credential or paid service is required.
+
+Retailer fallback results show the actual retailer name, variant and price as a **single-store asking price**, never as the lowest available market quote; the link follows the specific retailer product instead of the blocked Ceneo catalog. A retailer's displayed gross price does not by itself establish confirmed stock or shipment to Poland. When both sources are inaccessible the last valid observation remains unchanged and becomes visibly older.

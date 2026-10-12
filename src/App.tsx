@@ -85,7 +85,7 @@ function Price({offer}: {offer: Offer}) {
         Nowe <b>{money(newest.value)}</b>
         {newest.basis==='VERIFIED_SELLER_SAMPLE'&&<small> · {newest.explanation}{newest.stale?' (starsza)':''}</small>}
         {newest.basis==='RETAIL_INDEX'&&<small> · indeks {date(newest.observedAt)}{newest.stale?' (starszy)':''}
-          {newest.variant&&' · '+newest.variant}
+          {newest.source&&' · '+newest.source}{newest.variant&&' · '+newest.variant}
           {newest.url&&<> · <a href={newest.url} target="_blank" rel="noopener noreferrer" aria-label={'Źródło indeksu nowej ceny: '+offer.model}>źródło ↗</a></>}
         </small>}
       </span>

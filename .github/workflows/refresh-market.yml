@@ -68,17 +68,20 @@ jobs:
           node scripts/refresh-fx.mjs
           npm run refresh-market -- --mode "$REFRESH_MODE" --categories "$REFRESH_CATEGORIES"
           npm run merge-market
+      - name: "Phase: RETAIL (bounded direct catalog read; fail closed)"
+        id: retail
+        run: node scripts/refresh-retail-references.mjs
       - name: "Phase: VALIDATE (corrupt data never publishes)"
         run: |
           npm run validate-data
           npm test
       - name: "Phase: PERSIST (commit only material changes)"
         id: persist
-        if: steps.refresh.outputs.changed == 'true'
+        if: steps.refresh.outputs.changed == 'true' || steps.retail.outputs.retail_changed == 'true'
         run: |
           git config user.name "audio-market-refresh[bot]"
           git config user.email "audio-market-refresh@users.noreply.github.com"
-          git add data/market-current.json data/market-observations.jsonl data/refresh-delta.json data/market-candidates.json data/market-stats.json data/offers.json
+          git add data/market-current.json data/market-observations.jsonl data/refresh-delta.json data/market-candidates.json data/market-stats.json data/offers.json data/retail-price-references.json
           if [ -f data/fx-latest.json ]; then git add data/fx-latest.json; fi
           git commit -m "data: market refresh $REFRESH_MODE ($GITHUB_RUN_ID)"
           for i in 1 2 3; do
@@ -88,8 +91,8 @@ jobs:
           exit 1
       # Pushes made with GITHUB_TOKEN do not trigger other workflows, so deploy is dispatched explicitly.
       - name: "Phase: DEPLOY (dispatch Pages build)"
-        if: steps.refresh.outputs.changed == 'true'
+        if: steps.refresh.outputs.changed == 'true' || steps.retail.outputs.retail_changed == 'true'
         run: gh workflow run pages.yml --ref main
       - name: No material change
-        if: steps.refresh.outputs.changed != 'true'
+        if: steps.refresh.outputs.changed != 'true' && steps.retail.outputs.retail_changed != 'true'
         run: echo "DELTA=NONE - no commit, no deploy"

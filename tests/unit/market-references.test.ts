@@ -13,7 +13,7 @@ describe('price reference evidence', () => {
     const result=priceReferences(base,market,retail as never,at);
     expect(result.same).toMatchObject({value:350.2,basis:'VERIFIED_SELLER_SAMPLE'});
     expect(result.same.explanation).toContain('3 cen');
-    expect(result.newest).toMatchObject({value:651,basis:'RETAIL_INDEX',variant:'DT 880 Pro 250 Ω'});
+    expect(result.newest).toMatchObject({value:retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.pricePln,basis:'RETAIL_INDEX'});
     expect(result.newest.url).toMatch(/^https:\/\//);
   });
   it('identifies single used listings as weak samples, never medians', () => {
@@ -21,7 +21,7 @@ describe('price reference evidence', () => {
     expect(k702.same).toMatchObject({value:525.3,basis:'VERIFIED_SELLER_SAMPLE'});
     expect(k702.same.explanation).toContain('1 odczytana');
     const xs=priceReferences({...base,model:'HIFIMAN Edition XS'},market,retail as never,at);
-    expect(xs.newest.value).toBe(953);
+    expect(xs.newest.value).toBe(retail.references.find(x=>x.model==='HIFIMAN Edition XS')!.pricePln);
     expect(xs.same.value).toBe(1050.6);
   });
   it('does not label aging indexed information as fresh, and never uses it for B4B', () => {
