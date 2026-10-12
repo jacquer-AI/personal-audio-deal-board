@@ -36,8 +36,11 @@ describe('Marktplaats exact fixed-price evidence cannot convert bids to LIVE',()
       document().replace('"priceCents":24000,',''),
       document().replace('"itemId":"m2448250086",',''),
       document().replace('"priceCents":24000,"priceType":"FIXED"','"priceType":"FIXED","priceCents":24000'),
-      document().replace('"itemId":"m2448250086",','"itemId":"m2448250086","nested":{"k":1},')
+      document().replace('"itemId":"m2448250086",','"recommendation":{"itemId":"m2448250086"},')
     ])expect(priceBasis(source,html,url,parsed)).toBe('METADATA_MAY_BE_BID');
+    // Sibling metadata can contain other nested fields without changing ownership.
+    const owned=document().replace('"itemId":"m2448250086",','"itemId":"m2448250086","details":{"v":1},');
+    expect(priceBasis(source,owned,url,parsed)).toBe('SELLER_PAGE_PRICE');
     for(const input of [{price:240,currency:'PLN'},{price:241,currency:'EUR'},{price:NaN,currency:'EUR'},null])
       expect(priceBasis(source,document(),url,input)).toBe('METADATA_MAY_BE_BID');
   });
