@@ -37,11 +37,14 @@ export function itemTitleMatchesModel(html,model){
     'beyerdynamic dt 1990 pro':/\bdt\s?1990\s?pro\s?(?:mk\s?ii|mkii|mk2|2nd|ii)\b/,
     'sony mdr m1':/\bmdr m1st\b/,
     'beyerdynamic dt 48 25 ohm':/\bdt\s?48(?:\s?[a-z])?\s?(?:200|250|5)\s?(?:ohm|ohms)?\b/,
+    '7hz timeless':/\b(?:7hz|7hertz)\s*timeless\s*(?:ae|anniversary edition|x ae)\b/,
   };
   const conflict=knownVariantConflicts[norm(model?.model)];
-  return titles.some(t=>{
-    const normalized=norm(t);
-    if(conflict?.test(normalized))return false;
+  // Conflicting evidence in ANY item-title channel blocks promotion. A generic
+  // Product JSON-LD name must not override a more precise OG title (e.g. Timeless AE).
+  const normalizedTitles=titles.map(norm);
+  if(conflict&&normalizedTitles.some(t=>conflict.test(t)))return false;
+  return normalizedTitles.some(normalized=>{
     const words=' '+normalized+' ',compact=normalized.replace(/\s+/g,'');
     return expected.some(n=>words.includes(' '+n+' ')||(n.replace(/\s+/g,'').length>=6&&compact.includes(n.replace(/\s+/g,''))));
   });
