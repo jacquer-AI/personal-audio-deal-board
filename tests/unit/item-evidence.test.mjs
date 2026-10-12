@@ -63,6 +63,16 @@ describe('item-specific seller evidence',()=>{
     expect(itemTitleMatchesModel('<title>Sennheiser HD800S headphones</title>',hd800s)).toBe(true);
   });
 
+  it('rejects one ambiguous price shared by DT900 PRO X and DT700 PRO X',()=>{
+    const dt900={model:'Beyerdynamic DT 900 PRO X',aliases:['DT 900 Pro X']};
+    const dt700={model:'Beyerdynamic DT 700 PRO X',aliases:['DT 700 Pro X']};
+    const multi='<title>Beyerdynamic DT 900 Pro x / DT 700 Pro x nuovi | Subito</title>'+
+      '<meta name="description" content="8 paia DT 900 Pro X e 9 paia DT 700 Pro X">';
+    expect(itemTitleMatchesModel(multi,dt900)).toBe(false);
+    expect(itemTitleMatchesModel(multi,dt700)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT 900 PRO X original headphones</title>',dt900)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT 700 PRO X new headphones</title>',dt700)).toBe(true);
+  });
   it('does not mistake a Marktplaats bid/metadata value for a buy-now price',()=>{
     expect(priceBasis({id:'marktplaats-nl'})).toBe('METADATA_MAY_BE_BID');
     expect(priceBasis({id:'subito-it'})).toBe('SELLER_PAGE_PRICE');
