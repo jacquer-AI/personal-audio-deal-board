@@ -50,6 +50,19 @@ describe('item-specific seller evidence',()=>{
     expect(itemTitleMatchesModel('<title>Sony MDR-M1 monitor headphones</title>',m1)).toBe(true);
     expect(itemTitleMatchesModel('<title>Sony MDR-M1ST vintage</title>',m1)).toBe(false);
   });
+
+  it('rejects a 25-euro HD800S balanced-cable listing as an accessory',()=>{
+    const hd800s={model:'Sennheiser HD 800 S',aliases:['HD 800 S','HD800S']};
+    const cable='<title>Cuffia Sennheiser HD 800 s cavo bilanciato 4.4 mm | Subito</title>'+
+      '<meta name="description" content="Vendo cavo bilanciato per cuffia Sennheiser HD 800 s lunghezza 2 metri pari al nuovo">'+
+      '<script type="application/ld+json">{"@type":"Product","name":"Sennheiser HD 800 S"}</script>';
+    expect(itemTitleMatchesModel(cable,hd800s)).toBe(false);
+    expect(itemTitleMatchesModel('<title>HD800S replacement cable for headphones</title>',hd800s)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Sennheiser HD 800 S headphones with balanced cable</title>'+
+      '<meta name="description" content="Vendo cuffie Sennheiser HD 800 S in ottimo stato">',hd800s)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Sennheiser HD800S headphones</title>',hd800s)).toBe(true);
+  });
+
   it('does not mistake a Marktplaats bid/metadata value for a buy-now price',()=>{
     expect(priceBasis({id:'marktplaats-nl'})).toBe('METADATA_MAY_BE_BID');
     expect(priceBasis({id:'subito-it'})).toBe('SELLER_PAGE_PRICE');
