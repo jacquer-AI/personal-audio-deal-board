@@ -91,6 +91,17 @@ export function mergeOverlay(baseDoc, currentDoc) {
   return {...baseDoc,refresh:{refreshedAt:currentDoc?.refreshedAt || null,mode:currentDoc?.mode || null,runId:currentDoc?.runId || null,status:currentDoc?.status || 'NEVER'},offers};
 }
 
+/** Fail closed when a previously promoted offer is conclusively the wrong model.
+ * Preserve historic price evidence, but never leave it labeled LIVE. */
+export function downgradeModelMismatch(addition, check, now) {
+  if(check?.verificationState !== 'MODEL_NOT_CONFIRMED') return addition;
+  return {...addition,status:'STALE / REVERIFY',role:'OFFER',refresh:{
+    ...addition.refresh,verificationState:'MODEL_NOT_CONFIRMED',
+    http:check.http??null,checkedAt:now,
+    firstVerifiedAt:addition.refresh?.firstVerifiedAt||addition.refresh?.checkedAt||now
+  }};
+}
+
 export function computeDelta(before=[], after=[]) {
   const prior = new Map(before.map(o=>[fingerprint(o),o]));
   const out = {new:0,priceChanged:0,sold:0,stale:0,changes:[]};
