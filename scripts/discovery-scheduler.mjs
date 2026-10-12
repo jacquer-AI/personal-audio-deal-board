@@ -3,16 +3,23 @@
  * for every tracked model before spending a bounded budget on exploratory sites.
  * No credential, proxy, anti-bot bypass or unverifiable listing promotion.
  */
-export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[]) {
+export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[], asOfDate='') {
   if(!Array.isArray(models)||!Array.isArray(sources)||!models.length||!sources.length||maxJobs<=0)return [];
   const jobs=[],used=new Set();
+  const dateMs=Date.parse(String(asOfDate).slice(0,10)+'T00:00:00Z');
+  const day=Number.isFinite(dateMs)?Math.floor(dateMs/86400000):0;
   const add=(m,s)=>{
     if(!m||!s||jobs.length>=maxJobs)return;
     const key=m.model+'|'+s.id;
     if(used.has(key))return;
     used.add(key);
+    // Explicit variants improve recall for rare/discontinued models. Never
+    // widen the model to a different impedance or unverified revision.
+    const variants=Array.isArray(m.searchTerms)?m.searchTerms.filter(v=>typeof v==='string'&&v.trim()):[];
+    const sourceIndex=sources.findIndex(x=>x.id===s.id);
+    const modelQuery=variants.length?variants[(day+Math.max(0,sourceIndex))%variants.length]:m.model;
     const term=(s.queryTerms||[])[0]||'';
-    const query=[m.model,term].filter(Boolean).join(' ');
+    const query=[modelQuery,term].filter(Boolean).join(' ');
     jobs.push({m,s,query,url:s.searchUrlTemplate.replace('{q}',encodeURIComponent(query))});
   };
   // A full pass over models precedes the next core provider, preventing
@@ -30,12 +37,16 @@ export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[]) {
   return jobs;
 }
 
-/** HiFiShark plus daily Polish baseline, with one rotating European outlet slot.
- * Prevents a static budget (e.g. 240 jobs for 48 models) from permanently
- * starving providers placed after the fifth source. Date is UTC and auditable. */
+/** Source rotation based on observed direct-page yield, not the number of search hits.
+ * Last FULL: Marktplaats 23 verified, OLX 0/48 reachable, Allegro 0/48.
+ * HiFiShark is indexed-price research only; Vinted remains Polish discovery.
+ * Prioritize Marktplaats/Subito daily, retain one rotating exploratory slot,
+ * including blocked Polish sources so access recovery remains observable.
+ * This is a transparent fixed policy until adaptive verified-yield statistics exist.
+ */
 export function coreSourceIdsForDate(isoDate) {
-  const baseline=['hifishark','allegro-pl','olx-pl','vinted-pl'];
-  const rotation=['subito-it','kleinanzeigen-de','marktplaats-nl','mediaexpert-outlet','ebay-de'];
+  const baseline=['hifishark','vinted-pl','marktplaats-nl','subito-it'];
+  const rotation=['allegro-pl','olx-pl','kleinanzeigen-de','mediaexpert-outlet','ebay-de'];
   const day=Math.floor(Date.parse(String(isoDate).slice(0,10)+'T00:00:00Z')/86400000);
   const offset=Number.isFinite(day)?((day%rotation.length)+rotation.length)%rotation.length:0;
   return [...baseline,rotation[offset]];

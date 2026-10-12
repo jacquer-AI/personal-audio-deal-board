@@ -8,7 +8,7 @@ import {results, group, b4b, discount, savings, decision, selectCompare, buyable
 import {sortResearch, researchSortExplanation, pricePln} from './lib/researchSort';
 import RefreshCenter from './RefreshCenter';
 import BuildFreshness from './BuildFreshness';
-import {marketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
+import {marketplaces, watchMarketplaces, uniqueWatchModels, trackedModelCount} from './lib/marketSearch';
 
 const offers = (snapshot.offers as Offer[]).filter(europeanOffer);
 type ResearchLead = {model:string;category:string;source:string;region:string;url:string;quality?:string;fit?:number|null;verificationState?:string;pricePln?:number|null;price?:number|null;lastSeenAt?:string;discoveredAt?:string;verifiedAt?:string|null;researchFreshness?:string;priceBasis?:string|null;condition?:string|null;originalPrice?:number;currency?:string;sourceId?:string;country?:string;locationEvidence?:string;originSource?:string;originUrl?:string;aggregatorListedDate?:string|null;originalPriceText?:string;askingPriceText?:string;lastVerificationFailure?:string;priceEvidenceVersion?:string;shippingToPoland?:string;shippingRate?:number|null;shippingCurrency?:string|null;shippingRatePln?:number|null;itemPlusShippingPln?:number|null;fxSource?:string;fxEffectiveDate?:string|null};
@@ -74,11 +74,13 @@ function Price({offer}: {offer: Offer}) {
   </div>;
 }
 function OfferDetails({product}: {product: Product}) {
+  // The highlighted primary offer already has its own price and seller link.
+  const otherOffers=product.offers.filter(o=>o.id!==product.best.id);
   return <details className="offer-details">
-    <summary>Więcej ofert ({product.offers.length})</summary>
+    <summary>Pozostałe oferty ({otherOffers.length}) i szukanie</summary>
     <div className="market-discovery"><b>Szukaj innych ogłoszeń:</b> {marketplaces.map(m => <a key={m.id} href={m.url(product.model)} target="_blank" rel="noopener noreferrer" aria-label={'Szukaj modelu '+product.model+' na '+m.label}>{m.label} ↗</a>)} <span>Linki wyszukują w zewnętrznych serwisach; nie potwierdzają liczby, ceny ani dostępności ofert.</span></div>
     <p className="source-legend">OFERTA POTWIERDZONA — cena produktu, stan i dostępność sprawdzone na stronie sprzedawcy (do 24 h, używane 8 h). AKTUALNOŚĆ NIEPOTWIERDZONA — starszy zapis bez bieżącego dowodu. TROP — wymaga kontroli. PORÓWNANIE — odniesienie cenowe. Stan produktu (NOWE/UŻYWANE/PO ZWROCIE/OTWARTE OPAKOWANIE) jest osobny od statusu kontroli.</p>
-    <div className="source-list">{product.offers.map(o => <Source key={o.id} offer={o} primary={o.id === product.best.id}/>)}</div>
+    <div className="source-list">{otherOffers.map(o => <Source key={o.id} offer={o}/>)}</div>
     <details className="notes"><summary>Uwagi</summary>
       {product.offers.map(o => <p key={o.id}><b>{o.seller} · {conditionLabel(o.condition)}</b> — {o.note}<small>Cena oryginalna: {o.original} · Zapis SSOT: {o.checked}</small></p>)}
       <p>MSRP / RRP: {money(product.best.rrp)} · Fit: {product.best.fit ?? '—'}/5</p>
@@ -220,7 +222,7 @@ export default function App() {
         </details>}
       </section>}
       {watchModels.length > 0 && <section className="watchlist" aria-label="Modele do wyszukania w marketplace'ach"><button type="button" className="watchlist-toggle" aria-expanded={showWatchlist} onClick={()=>setShowWatchlist(x=>!x)}>{showWatchlist?'Ukryj':'Pokaż'} {watchModels.length} dodatkowych modeli do wyszukania</button><span> Stały zakres: {trackedModelCount} rodzin modeli. Modele poniżej nie mają zapisanych ogłoszeń; nie przypisujemy im fikcyjnych ocen ani cen.</span>
-        {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{marketplaces.slice(0,3).map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
+        {showWatchlist&&<div className="watchlist-grid">{watchModels.map(m=><div className="watch-item" key={m}><strong>{m}</strong><span>{watchMarketplaces.map(market=><a key={market.id} href={market.url(m)} target="_blank" rel="noopener noreferrer">{market.label} ↗</a>)}</span></div>)}</div>}
       </section>}
     </main>
     <footer><details className="methodology"><summary>Jak liczymy ceny i B4B?</summary>

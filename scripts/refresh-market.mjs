@@ -54,7 +54,11 @@ function shipmentEvidence(html,priceInCurrency,itemPln){
 }
 const sources=sourceDoc.sources||[];
 const sourceById=new Map(sources.map(s=>[s.id,s]));
-const models=(modelDoc.models||[]).filter(m=>m.enabled!==false&&(!selectedCategories||selectedCategories.has(m.category)));
+// When the DEEP exploratory budget is truncated, keep listener priorities first.
+// Priority is personal search interest, never evidence of sonic quality or a deal.
+const models=(modelDoc.models||[])
+  .filter(m=>m.enabled!==false&&(!selectedCategories||selectedCategories.has(m.category)))
+  .sort((a,b)=>(a.priority??99)-(b.priority??99));
 const modelMeta=new Map((modelDoc.models||[]).map(m=>[m.model,m]));
 
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
@@ -204,7 +208,7 @@ if(mode!=='quick'){
   // ALL models on HiFiShark, Allegro, OLX, Vinted in FULL and DEEP.
   // One European source rotates daily; additional DEEP slots explore more sources.
   const coreSourceIds=coreSourceIdsForDate(now);
-  const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds);
+  const jobs=planDiscoveryJobs(models,sweepSources,MAX_DISCOVERY_JOBS,coreSourceIds,now);
   const discoveryStats=Object.fromEntries(sweepSources.map(s=>[s.id,{requested:0,reachable:0,candidateUrls:0,restricted:0,errors:0}]));
   const discovered=await pool(jobs,async j=>{
     const stat=discoveryStats[j.s.id];

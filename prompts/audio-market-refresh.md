@@ -30,3 +30,13 @@ data/market-stats.json
 Do not edit code, workflows, registries, quality/fit judgments or the Google Sheet. Do not perform transactions or outreach. Do not expose secrets.
 
 Return a compact receipt: mode, timestamp, sources attempted/restricted, current URLs verified/stale/ambiguous, discovered leads, directly verified additions, challenger candidates, price changes, sold/stale deltas and blockers.
+
+## Canonical listener-specific execution notes (2026-10-12)
+
+- This file inherits the audio forensic master on Google Drive (`PROMPT_MASTER_AUDIO_BEST_BUY_LIVE_MARKET_FORENSIC_v1_0_CURRENT`) and the global source-verification master, but **current user preference wins**: the listener owned and liked **Beyerdynamic DT 48 25 Ω**. Sound preferences are fast transients, microdetail, immediate articulated midrange, clean separation and tight controlled bass. Bright treble alone is not a proxy for resolution.
+- Current device is **iBasso DX220**; do not reuse the older Drive master statement that it is DX200. Verify the installed AMP module before asserting demanding-headphone voltage headroom.
+- The `priority` and `searchTerms` fields in model registry are **user-interest/retrieval controls, not technical sound-fit evidence**. DT48 search strings must explicitly include 25 Ω; no unspecified 48 model or 200 Ω / 250 Ω substitution.
+- Separate model suitability, verified seller asking price, listing freshness, shipping-to-Poland uncertainty and total cost. Same-condition sold transaction values must not be conflated with active asking prices.
+- A blocked OLX/Allegro search page is evidence of **automation access restriction**, not evidence that the market has no stock. Never bypass marketplace rate limits/captchas. Manual model-specific search links remain available.
+- If a buyer-facing listing is featured as the main result, don't repeat that same record under additional offers. No invented quality/fit scores, no simulated shipping rates, no speculative bargains.
+- When analyzing new acquisition results, report per source **requests / reachable pages / candidate ads / seller pages checked / directly verified / blocked / stale**, plus unresolved blockers. Compare yield, not raw record count.

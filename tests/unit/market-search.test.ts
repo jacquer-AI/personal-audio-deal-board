@@ -1,9 +1,9 @@
 import {describe,it,expect} from 'vitest';
-import {marketplaces,additionalWatchModels,uniqueWatchModels,trackedModelCount} from '../../src/lib/marketSearch';
+import {marketplaces,watchMarketplaces,additionalWatchModels,uniqueWatchModels,trackedModelCount} from '../../src/lib/marketSearch';
 
 describe('market breadth without invented offers',()=>{
-  it('opens five distinct marketplace searches with Unicode model names',()=>{
-    expect(marketplaces.map(m=>m.id)).toEqual(['hifishark','vinted','olx','allegro','ebay','kleinanzeigen']);
+  it('opens eight distinct marketplace searches with Unicode model names',()=>{
+    expect(marketplaces.map(m=>m.id)).toEqual(['hifishark','vinted','olx','allegro','subito','marktplaats','ebay','kleinanzeigen']);
     for(const m of marketplaces){
       const url=new URL(m.url('Beyerdynamic DT 880'));
       expect(url.protocol).toBe('https:');
@@ -12,9 +12,13 @@ describe('market breadth without invented offers',()=>{
     }
     expect(marketplaces[1].url('')).toContain('s%C5%82uchawki');
     expect(marketplaces[0].url('Sony MDR-SA5000')).toContain('Sony%20MDR-SA5000');
+    expect(watchMarketplaces.map(m=>m.id)).toEqual(['hifishark','vinted','subito','marktplaats']);
+    expect(marketplaces.find(m=>m.id==='subito')!.url('DT 48 25 Ω')).toContain('25%20%CE%A9');
+    expect(marketplaces.find(m=>m.id==='marktplaats')!.url('DT 48 25 Ω')).toContain('25%20%CE%A9');
   });
   it('does not count search-only models as offers or duplicate registered ones',()=>{
     expect(additionalWatchModels).toContain('Sony MDR-SA5000');
+    expect(additionalWatchModels[0]).toBe('Beyerdynamic DT 48 25 Ohm');
     expect(additionalWatchModels).toContain('Etymotic ER4SR');
     expect(additionalWatchModels).toContain('Sennheiser HD 800 S');
     expect(trackedModelCount).toBe(56);

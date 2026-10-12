@@ -180,7 +180,8 @@
         "ER-4P",
         "ER4 P"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 2
     },
     {
       "model": "Etymotic ER4S",
@@ -191,7 +192,8 @@
         "ER-4S",
         "ER4 S"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 2
     },
     {
       "model": "Etymotic ER4XR",
@@ -213,7 +215,11 @@
         "DT880",
         "DT 880 Pro"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Beyerdynamic DT 880",
+        "Beyerdynamic DT880"
+      ]
     },
     {
       "model": "Sony MDR-SA5000",
@@ -224,7 +230,12 @@
         "SA5000",
         "MDR SA5000"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Sony MDR-SA5000",
+        "Sony SA5000"
+      ],
+      "priority": 2
     },
     {
       "model": "Thieaudio Monarch MkII",
@@ -347,7 +358,8 @@
         "ER-4SR",
         "ER4 SR"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     },
     {
       "model": "Etymotic ER2SE",
@@ -493,7 +505,8 @@
         "ADX5000",
         "ATH ADX5000"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     },
     {
       "model": "Beyerdynamic T1 2nd Gen",
@@ -515,9 +528,16 @@
         "DT48 25 Ohm",
         "DT 48 E 25",
         "DT48E 25",
-        "DT 48 25 ohm"
+        "DT 48 25 ohm",
+        "DT48 25ohm"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Beyerdynamic DT48 25 Ohm",
+        "Beyerdynamic DT 48 E 25",
+        "DT48 25 Ohm"
+      ],
+      "priority": 1
     },
     {
       "model": "Sony MDR-CD900ST",
@@ -528,7 +548,12 @@
         "MDR CD900ST",
         "CD900ST"
       ],
-      "enabled": true
+      "enabled": true,
+      "searchTerms": [
+        "Sony MDR-CD900ST",
+        "Sony CD900ST"
+      ],
+      "priority": 3
     },
     {
       "model": "Sony MDR-M1",
@@ -539,7 +564,8 @@
         "Sony MDR M1",
         "MDR-M1"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     },
     {
       "model": "Austrian Audio Hi-X65",
@@ -550,7 +576,8 @@
         "HiX65",
         "Hi-X65"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -561,7 +588,8 @@
         "HiX60",
         "Hi-X60"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     },
     {
       "model": "Neumann NDH 30",
@@ -572,7 +600,8 @@
         "NDH30",
         "NDH-30"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     },
     {
       "model": "Audio-Technica ATH-M70x",
@@ -583,7 +612,8 @@
         "ATH M70x",
         "M70x"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     },
     {
       "model": "Focal Clear OG",
@@ -595,7 +625,8 @@
         "Focal Clear OG",
         "Focal Clear (Original)"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": 3
     }
   ]
 }

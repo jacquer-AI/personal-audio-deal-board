@@ -213,3 +213,38 @@ Eight new **discovery targets** added to the canonical `config/model-registry.js
 These are **candidate hypotheses, not claims of identical sound** and not current live listings. They retain `quality: UNRATED`, `fit: null`, no fictional prices or comparables. ER4SR, HD 800 S, ATH-ADX5000, DT 1990 Pro and other detail-oriented families are already on the list.
 
 To preserve daily source coverage with 56 models, FULL default discovery budget is **280** jobs (56 × HiFiShark, Allegro, OLX, Vinted and one rotating European source); DEEP is **360** jobs. The source-provider cap, page verification and Europe-only constraints remain unchanged.
+
+## Yield-first discovery and listener-specific searches (2026-10-12)
+
+The daily FULL search remains **56 enabled model families × five source queries = 280 discovery requests**.
+The previous core policy allocated 56 requests every day to each of OLX and Allegro, although the last
+saved FULL receipt showed **0/48 reachable search pages** for both sources (automation access
+restrictions, not proof of unavailable market listings). Marktplaats returned 23 directly verified
+listing URLs in that receipt; HiFiShark yielded 205 priced indexed leads without a working
+seller redirect. This is an **observed sample**, not a promise about future reachability.
+
+The updated core is **HiFiShark (index only), Vinted PL (leads), Marktplaats, Subito**
+plus one rotating exploratory slot: **Allegro, OLX, Kleinanzeigen, Media Expert Outlet,
+eBay DE**. OLX and Allegro remain one-click manual searches and receive periodic automated
+rechecks; never bypass marketplace access controls. The fixed baseline is a transparent
+interim policy, not an adaptive algorithm trained on unverified outcomes.
+
+For rare models, the canonical model registry now supports optional `searchTerms`.
+Each provider/day deterministically selects a different exact synonym; DT 48's variants
+all retain the explicit **25 Ω** specification. Aliases used for item-title verification
+are separate from search query variants. **No generic DT 48 without impedance**
+is promoted as a confirmed DT 48 25 Ω listing.
+
+The canonical watchlist now sorts by **user search priority**, not a fabricated audio
+quality score: DT 48 25 Ω first, followed by owned/listened references, then
+comparative studio monitor hypotheses. Priority does not change the existing `quality`
+and `fit` evidence requirements. Manual search links for HiFiShark, Vinted,
+Subito and Marktplaats appear even when no verified offer is stored.
+
+The expanded offer section counts **only additional seller advertisements**, excluding
+the price/link already featured as the main item (e.g. DT 880: 2 additional ads,
+not 3). The complete notes ledger still includes source provenance.
+
+Validation: unit, typecheck, lint, build, Playwright, clean GitHub CI and public Pages
+readback are required before claiming the changed UI is deployed. A successful build
+does **not** imply fresh offers were fetched in a new market scan.
