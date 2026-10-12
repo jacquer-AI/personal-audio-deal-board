@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T07:06:58.734Z",
+  "refreshedAt": "2026-10-12T08:10:00.085Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -9,14 +9,6 @@
       "median": null,
       "min": 9323.99,
       "max": 9323.99
-    },
-    {
-      "key": "Dan Clark Audio Noire X|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 4555,
-      "max": 4555
     },
     {
       "key": "Technics EAH-AZ100|NEW",
