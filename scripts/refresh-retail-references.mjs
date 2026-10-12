@@ -123,7 +123,7 @@ export function applyRetailChecks(previous, checks, observedAt, minRenewHours=24
   let changed=false;
   const audit=[];
   for(const source of SOURCES){
-    const prev=doc.references.find(r=>r.model===source.model&&r.url===source.url);
+    const prev=doc.references.find(r=>r.model===source.model);
     const check=checks.get(source.model);
     if(!prev){audit.push({model:source.model,status:'SOURCE_NOT_CONFIGURED'});continue}
     if(!check?.pricePln){audit.push({model:source.model,status:check?.error||'NO_EVIDENCE_KEEP_OLD'});continue}
@@ -135,42 +135,51 @@ export function applyRetailChecks(previous, checks, observedAt, minRenewHours=24
     const oldTime=Date.parse(prev.observedAt||'');
     const renew=!Number.isFinite(oldTime)||t-oldTime>=minRenewHours*3600000;
     const priceChanged=Math.abs(prev.pricePln-check.pricePln)>=0.005;
-    const variantChanged=prev.variant!==source.variant;
-    if(renew||priceChanged||variantChanged){
+    const variantChanged=prev.variant!==(check.variant||source.variant);
+    const sourceChanged=prev.url!==(check.url||source.url)||prev.source!==(check.source||'Ceneo.pl');
+    if(renew||priceChanged||variantChanged||sourceChanged){
       prev.pricePln=check.pricePln;
-      prev.variant=source.variant;
+      prev.variant=check.variant||source.variant;
+      prev.url=check.url||source.url;
       prev.observedAt=observedAt;
       prev.evidence='INDEXED_RETAIL_ASKING_PRICE';
-      prev.source='Ceneo.pl';
+      prev.source=check.source||'Ceneo.pl';
       changed=true;
     }
-    audit.push({model:source.model,status:priceChanged?'PRICE_UPDATED':renew||variantChanged?'RECONFIRMED':'UNCHANGED',
-      pricePln:check.pricePln,method:check.method});
+    audit.push({model:source.model,status:priceChanged?'PRICE_UPDATED':renew||variantChanged||sourceChanged?'RECONFIRMED':'UNCHANGED',
+      pricePln:check.pricePln,method:check.method,source:check.source||'Ceneo.pl'});
   }
   return {doc,changed,audit};
 }
 export async function refreshRetail({fetcher=fetch,now=new Date().toISOString(),dryRun=false,readPath='data/retail-price-references.json'}={}) {
   const before=JSON.parse(fs.readFileSync(readPath,'utf8'));
   const checked=new Map();
+
   for(const s of SOURCES) {
-    let response=null;
-    try{
-      response=await fetcher(s.url,{signal:AbortSignal.timeout(11000),redirect:'follow',
-        headers:{'user-agent':'Mozilla/5.0 (compatible; AudioDealBoard/1.0)','accept':'text/html','accept-language':'pl-PL,pl;q=0.9,en;q=0.5'}});
-      const u=new URL(response.url||s.url);
-      if(u.protocol!=='https:'||u.hostname!=='www.ceneo.pl'||u.pathname!==new URL(s.url).pathname)throw new Error('REDIRECT_CHANGED_PRODUCT');
-      if(response.status!==200)throw new Error('HTTP_'+response.status);
-      const type=response.headers?.get?.('content-type')||'text/html';
-      if(!type.includes('text/html'))throw new Error('NOT_HTML');
-      const body=(await response.text()).slice(0,2_000_000);
-      const parsed=parseCeneoIndex(body,s);
-      checked.set(s.model,parsed);
-      if(parsed.error)console.log('RETAIL_SOURCE_DIAGNOSTIC',
-        JSON.stringify({model:s.model,http:response.status,bytes:body.length,
-        hasH1:body.toLowerCase().includes('<h1'),hasJsonLd:body.includes('ld+json'),
-        mentionsModel:body.toLowerCase().includes(s.model.toLowerCase()),
-        looksBlocked:body.toLowerCase().includes('challenge'),failure:parsed.error}));
-    }catch(e){checked.set(s.model,{error:String(e?.message||e).slice(0,100)})}
+    let verified=null;
+    for(const endpoint of [{...s,source:'Ceneo.pl',kind:'CENEO'}, {...s.fallback,kind:'VENDOR'}]){
+      if(verified?.pricePln)break;
+      try{
+        const response=await fetcher(endpoint.url,{signal:AbortSignal.timeout(11000),redirect:'follow',
+          headers:{'user-agent':'Mozilla/5.0 (compatible; AudioDealBoard/1.0)','accept':'text/html','accept-language':'pl-PL,pl;q=0.9,en;q=0.5'}});
+        const u=new URL(response.url||endpoint.url),wanted=new URL(endpoint.url);
+        if(u.protocol!=='https:'||u.hostname!==wanted.hostname||u.pathname!==wanted.pathname)throw new Error('REDIRECT_CHANGED_PRODUCT');
+        if(response.status!==200)throw new Error('HTTP_'+response.status);
+        const type=response.headers?.get?.('content-type')||'text/html';
+        if(!type.includes('text/html'))throw new Error('NOT_HTML');
+        const body=(await response.text()).slice(0,2_000_000);
+        const parsed=endpoint.kind==='CENEO'?parseCeneoIndex(body,endpoint):parseVendorReference(body,endpoint);
+        if(parsed.pricePln)verified={...parsed,url:endpoint.url,variant:endpoint.variant,source:endpoint.source};
+        else{
+          console.log('RETAIL_SOURCE_DIAGNOSTIC',JSON.stringify({model:s.model,
+            source:endpoint.kind,http:response.status,bytes:body.length,
+            hasH1:body.toLowerCase().includes('<h1'),hasJsonLd:body.includes('ld+json'),
+            failure:parsed.error}));
+          checked.set(s.model,{error:parsed.error});
+        }
+      }catch(e){checked.set(s.model,{error:String(e?.message||e).slice(0,100)});}
+    }
+    if(verified)checked.set(s.model,verified);
   }
   const result=applyRetailChecks(before,checked,now);
   if(result.changed&&!dryRun)fs.writeFileSync(readPath,JSON.stringify(result.doc,null,2)+'\n');
