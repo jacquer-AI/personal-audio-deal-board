@@ -410,8 +410,11 @@ if(mode!=='quick'){
     candidates.push(v.candidate);
     if(v.addition)newAdditions.push(v.addition);
   }
-  for(const a of newAdditions)if(!additions.some(x=>fingerprint(x)===fingerprint(a)))additions.push(a);
 }
+// QUICK also produces fresh research promotions, not only FULL/DEEP discovery.
+// Persist exactly one offer per fingerprint regardless of which path verified it.
+for(const a of newAdditions)
+  if(!additions.some(x=>fingerprint(x)===fingerprint(a)))additions.push(a);
 
 // Deep discovery of new model families requires separate research; unverified
 // search-engine hits must never be serialized as customer-visible offers.
