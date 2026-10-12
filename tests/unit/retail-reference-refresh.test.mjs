@@ -65,6 +65,31 @@ describe('scheduled retail price index: never a confirmed retail offer',()=>{
     expect(parseVendorReference(htmlH,h)).toMatchObject({pricePln:645,method:'SUPER_SOUND_GROSS_PRICE'});
     expect(parseVendorReference(htmlH.replace('DT 880 PRO','DT 990 PRO'),h).error).toBe('WRONG_PRODUCT_TITLE');
   });
+  it('Cyfrowe exact 250-ohm DT880 reference excludes bundles, rates and wrong variants',()=>{
+    const product=SOURCES[0].secondary;
+    const markup='<html><h1>Beyerdynamic DT 880 PRO 250 Ohm</h1>'+
+      '<div>Kod produktu: SLUBEYDT880PRO250</div><div>826,00 zł</div>'+
+      '<div>Raty od 82,60 zł x 10</div><div>Do koszyka</div>'+
+      '<h2>Akcesoria 500,00 zł</h2></html>';
+    expect(parseVendorReference(markup,product)).toMatchObject({pricePln:826,method:'CYFROWE_PRODUCT_HERO'});
+    expect(parseVendorReference(markup.replace('DT 880 PRO','DT 990 PRO'),product).error).toBe('WRONG_PRODUCT_TITLE');
+    expect(parseVendorReference(markup.replace('826,00 zł','100,00 zł'),product).error).toBe('NO_PRODUCT_SCOPED_PLN_PRICE');
+  });
+  it('fallback iterates through blocked Supersound and accepts exact Cyfrowe model only',async()=>{
+    const seller='<html><h1>Beyerdynamic DT 880 PRO 250 Ohm</h1>'+
+      '<div>Kod produktu: SLUBEYDT880PRO250</div><strong>826,00 zł</strong>'+
+      '<span>Do koszyka</span></html>';
+    const fetcher=async url=>url===SOURCES[0].secondary.url?
+      {url,status:200,headers:{get:()=> 'text/html'},text:async()=>seller}:
+      {url,status:403,headers:{get:()=> 'text/html'},text:async()=>''};
+    const r=await refreshRetail({fetcher,now:date,dryRun:true});
+    expect(r.audit.find(x=>x.model==='Beyerdynamic DT 880')).toMatchObject({
+      source:'Cyfrowe.pl',pricePln:826
+    });
+    expect(r.doc.references.find(x=>x.model==='Beyerdynamic DT 880').url).toBe(SOURCES[0].secondary.url);
+    expect(r.changed).toBe(false);
+  });
+
   it('uses retailer fallback when protected Ceneo returns a generic productless page',async()=>{
     const oldHtml='<html><body><h2>Włącz JavaScript</h2><p>Oferty ogólne</p></body></html>';
     const sellerHtml='<html><body><h1>AKG K-702</h1><h2>Słuchawki</h2><div>759 zł Ceny z podatkiem VAT</div></body></html>';
