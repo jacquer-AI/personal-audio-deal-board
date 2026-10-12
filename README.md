@@ -274,3 +274,7 @@ Rechecks of promoted additions now fail closed immediately when a merchant redir
 Research ledger display selection favors concrete seller evidence over aggregator-only hits at the 500-item cap and balances items across tracked models. In the dashboard, directly read seller asking prices are separated from Marktplaats values that may be bids; expired confirmations are labeled historical research rather than current offers.
 
 Acceptance: unit tests for 56-model/360-URL saturation, source fairness, HiFiShark redirect deduplication, 500-lead overflow and prior-LIVE fail-closed transitions; complete browser Playwright test; actual FULL scan followed by public deployment/readback. This change does not establish that bid prices are buy-now prices or that any source ships to Poland.
+
+### Post-FULL yield tuning (readback: 2026-10-12)
+
+Production FULL run 38221894682 completed with 280 discovery requests but only 6 newly discovered direct seller URLs (1 Subito, 5 Marktplaats), versus 242 HiFiShark /goto rows. Zero additional buyable LIVE offers qualified; existing strict gates remain intact. To prioritize actionable evidence, FULL now uses model-only search queries on Subito and Marktplaats (avoids redundant used-condition keywords), orders seller search sources first, and limits HiFiShark's seller-verification follow-ups to one candidate per model. HiFiShark remains a research source, never a LIVE evidence source. Actual next-run conversion must be measured; these are recall/performance changes, not a guarantee of more buyable inventory.
