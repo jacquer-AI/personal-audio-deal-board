@@ -1,5 +1,5 @@
 name: Refresh market data
-run-name: Refresh ${{ github.event_name == 'push' && 'request-file' || inputs.mode || 'scheduled' }} · ${{ inputs.categories || 'all' }}
+run-name: Refresh ${{ github.event_name == 'push' && 'request-file' || inputs.mode || 'scheduled' }} · ${{ github.event_name == 'push' && 'request-file-scope' || inputs.categories || 'all' }}
 on:
   # Explicit, audited manual scan request by a main-branch commit to this file.
   # Data commits never recursively trigger another refresh.
@@ -51,16 +51,21 @@ jobs:
       - run: npm ci
       - name: "Phase: PLAN (validate mode and scope)"
         run: |
-          mode="$REQUESTED_MODE"
           if [ "$GITHUB_EVENT_NAME" = "push" ]; then
-            mode="$(node -e "const fs=require('fs');const d=JSON.parse(fs.readFileSync('ops/audio-scan-now.json','utf8'));process.stdout.write(String(d.mode||''))")"
+            # Request-file triggers must respect their own validated category,
+            # not the implicit workflow_dispatch default of "all".
+            node scripts/scan-request.mjs ops/audio-scan-now.json >> "$GITHUB_ENV"
+            echo "SCAN_SCOPE=VALIDATED_REQUEST_FILE"
+            exit 0
           fi
+          mode="$REQUESTED_MODE"
+          categories="$REQUESTED_CATEGORIES"
           if [ "$SCHEDULE_EXPR" = "37 2 * * *" ]; then mode="full"; fi
           if [ "$SCHEDULE_EXPR" = "53 3 * * 0" ]; then mode="deep"; fi
           case "$mode" in quick|full|deep) ;; *) echo "invalid mode"; exit 2 ;; esac
-          case "$REQUESTED_CATEGORIES" in all|IEM|TWS|Closed|Open|"Głośniki BT") ;; *) echo "invalid categories"; exit 2 ;; esac
+          case "$categories" in all|IEM|TWS|Closed|Open|"Głośniki BT") ;; *) echo "invalid categories"; exit 2 ;; esac
           echo "REFRESH_MODE=$mode" >> "$GITHUB_ENV"
-          echo "REFRESH_CATEGORIES=$REQUESTED_CATEGORIES" >> "$GITHUB_ENV"
+          echo "REFRESH_CATEGORIES=$categories" >> "$GITHUB_ENV"
       - name: "Phase: REFRESH (discovery and direct-page verification)"
         id: refresh
         run: |
