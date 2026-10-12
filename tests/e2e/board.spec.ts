@@ -2,6 +2,7 @@ import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import snapshot from '../../data/offers.json' with {type:'json'};
 import retail from '../../data/retail-price-references.json' with {type:'json'};
+import marketStats from '../../data/market-stats.json' with {type:'json'};
 import {mockGitHub} from './github-mock';
 import {buyable} from '../../src/lib/board';
 import {europeanOffer} from '../../src/lib/europeScope';
@@ -19,7 +20,16 @@ test('HiFiShark is directly accessible and European-only visible offers exclude 
 test('search model seller country and empty',async({page})=>{await page.locator('.more-filters > summary').click();await page.getByLabel('Live',{exact:true}).uncheck();await page.keyboard.press('Escape');const s=page.getByRole('searchbox');await s.fill('AZ100');await expect(page.getByTestId('product')).toHaveCount(1);await s.fill('Thomann');await expect(page.getByRole('heading',{name:'Dan Clark Audio Noire X',exact:true})).toBeVisible();await s.fill('Niemcy');await expect(page.getByTestId('product').first()).toBeVisible();await s.fill('does-not-exist');await expect(page.getByRole('heading',{name:'Brak wyników'})).toBeVisible()});
 test('sorting',async({page})=>{await page.getByLabel('Sortuj',{exact:true}).selectOption('price');await expect(page.getByTestId('product').first().getByRole('heading',{level:2})).toHaveText([...currentOffers].sort((a,b)=>a.price!-b.price!)[0].model)});
 test('region condition status reset',async({page})=>{await page.getByLabel('Region',{exact:true}).selectOption('UE');await expect(page.getByRole('heading',{name:'Bose SoundLink Max',exact:true})).toBeVisible();await page.locator('.more-filters > summary').click();await page.getByLabel('PO ZWROCIE / EKSPOZYCJI',{exact:true}).check();await expect(page.getByTestId('product')).toHaveCount(1);await page.getByLabel('Status',{exact:true}).selectOption('LEAD ONLY');await expect(page.getByTestId('product')).toHaveCount(0);await page.getByRole('button',{name:'Wyczyść filtry'}).first().click();await expect(page.getByTestId('product').first()).toBeVisible()});
-test('history and live exclusive',async({page})=>{await expect(page.getByRole('heading',{name:'HIFIMAN Svanar Wireless',exact:true})).toHaveCount(0);await page.locator('.more-filters > summary').click();await page.getByLabel('Historia',{exact:true}).check();await expect(page.getByRole('heading',{name:'HIFIMAN Svanar Wireless',exact:true})).toBeVisible();await page.getByLabel('Live',{exact:true}).check();await expect(page.getByRole('heading',{name:'HIFIMAN Svanar Wireless',exact:true})).toHaveCount(0)});
+test('history and live are mutually exclusive for historical-only status',async({page})=>{
+  const historical=allOffers.find(o=>o.status==='HISTORICAL');
+  expect(historical).toBeDefined();
+  await page.locator('.more-filters > summary').click();
+  await page.getByLabel('Historia',{exact:true}).check();
+  await page.getByLabel('Status',{exact:true}).selectOption('HISTORICAL');
+  await expect(page.getByRole('heading',{name:historical!.model,exact:true})).toBeVisible();
+  await page.getByLabel('Live',{exact:true}).check();
+  await expect(page.getByTestId('product')).toHaveCount(0);
+});
 test('compare three reject fourth close and focus',async({page})=>{const boxes=page.getByRole('checkbox',{name:/Porównaj/});await page.locator('.more-filters > summary').click();await page.getByLabel('Live',{exact:true}).uncheck();await page.keyboard.press('Escape');for(let i=0;i<3;i++)await boxes.nth(i).check();await boxes.nth(3).click();await expect(boxes.nth(3)).not.toBeChecked();await expect(page.locator('main .message[role="status"]')).toContainText('maksymalnie 3');await page.getByRole('button',{name:'Otwórz porównanie'}).click();await expect(page.getByRole('dialog')).toBeVisible();await expect(page.locator('.comparison-grid > section')).toHaveCount(3);await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).not.toBeVisible();await expect(page.getByRole('button',{name:'Otwórz porównanie'})).toBeFocused()});
 test('Polish item condition is visible beside the price and separate from verification',async({page})=>{
   const first=page.getByTestId('product').first();
@@ -41,8 +51,10 @@ test('DT 880 has two genuinely additional listings, without duplicating the prim
   await expect(product.getByRole('heading',{name:'Beyerdynamic DT 880',exact:true})).toBeVisible();
   const mainUrl=await product.getByTestId('primary-link').getAttribute('href');
   await product.locator('.offer-details > summary').click();
-  await expect(product.locator('.offer-details > summary')).toContainText('Pozostałe oferty (2)');
-  await expect(product.getByTestId('source-row')).toHaveCount(2);
+  const count=allOffers.filter(o=>o.model==='Beyerdynamic DT 880'&&o.status!=='HISTORICAL').length-1;
+  expect(count).toBeGreaterThanOrEqual(2);
+  await expect(product.locator('.offer-details > summary')).toContainText('Pozostałe oferty ('+count+')');
+  await expect(product.getByTestId('source-row')).toHaveCount(count);
   for(const link of await product.locator('.source-list a').all())
     expect(await link.getAttribute('href')).not.toBe(mainUrl);
 });
@@ -208,7 +220,10 @@ test('new and used reference prices are visible with provenance but do not inven
   await page.getByRole('searchbox').fill('Beyerdynamic DT 880');
   const card=page.getByTestId('product').first();
   const market=card.getByTestId('market-reference');
-  await expect(market).toContainText('350,2');
+  const used=marketStats.stats.find(s=>s.key==='Beyerdynamic DT 880|USED');
+  expect(used?.n).toBeGreaterThanOrEqual(3);
+  expect(used?.median).not.toBeNull();
+  await expect(market).toContainText(new Intl.NumberFormat('pl-PL',{maximumFractionDigits:2}).format(used!.median!));
   await expect(market).toContainText('Próbka stanu');
   await expect(market).toContainText(String(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.pricePln).replace('.',','));
   await expect(market).toContainText(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.variant);
@@ -216,7 +231,7 @@ test('new and used reference prices are visible with provenance but do not inven
   await expect(card.locator('.metrics')).toContainText('— vs stan');
   await expect(card.locator('.metrics')).toContainText('— vs nowe');
   await page.getByRole('searchbox').fill('AKG K702');
-  await expect(page.getByTestId('market-reference').first()).toContainText('1 odczytana cena ofertowa');
+  await expect(page.getByTestId('market-reference').first()).toContainText('Próbka stanu');
   await expect(page.getByTestId('market-reference').first()).toContainText(String(retail.references.find(x=>x.model==='AKG K702')!.pricePln).replace('.',','));
   await page.getByRole('searchbox').fill('HIFIMAN Edition XS');
   await expect(page.getByTestId('market-reference').first()).toContainText(String(retail.references.find(x=>x.model==='HIFIMAN Edition XS')!.pricePln).replace('.',','));

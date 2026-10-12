@@ -146,7 +146,7 @@ async function checkOffer(o){
   const cond=conditionFrom(parsed,'');const stock=available(parsed,'');
   const pln=parsed?toPln(parsed.price,parsed.currency,fx):null;
   if(match&&parsed&&parsed.currency&&pln&&stock===true&&cond===o.condition&&
-     priceBasis(source)==='SELLER_PAGE_PRICE'){
+     priceBasis(source,page.html,o.url,parsed)==='SELLER_PAGE_PRICE'){
     receipt.directVerified++;
     observe({...row,http:page.http,result:'DIRECT_OFFER_VERIFIED',pricePln:pln,currency:parsed.currency});
     // Foreign-currency price unchanged at the source: keep the stored PLN value so FX drift is not reported as a price change.
@@ -162,7 +162,7 @@ async function checkOffer(o){
   const reason=!match?'MODEL_NOT_CONFIRMED':!parsed?'PAGE_REACHABLE_PRICE_UNPARSED':
     !parsed.currency||!pln?'CURRENCY_UNRESOLVED':stock!==true?'AVAILABILITY_NOT_CONFIRMED':
     cond!==o.condition?'CONDITION_NOT_CONFIRMED':
-    priceBasis(source)!=='SELLER_PAGE_PRICE'?'FIXED_PRICE_NOT_CONFIRMED':'REVERIFY';
+    priceBasis(source,page.html,o.url,parsed)!=='SELLER_PAGE_PRICE'?'FIXED_PRICE_NOT_CONFIRMED':'REVERIFY';
   observe({...row,http:page.http,result:reason,pricePln:o.price});
   return {...stamp,verificationState:reason,http:page.http,note:'Refresh: '+reason+'. Prior SSOT value retained.'};
 }
@@ -213,7 +213,7 @@ const researchRechecks=await pool(
     receipt.researchReverified=(receipt.researchReverified||0)+1;
     return {...c,status:'VERIFIED LEAD',verificationState:'DIRECT_OFFER_VERIFIED',
       pricePln:price,originalPrice:parsed.price,currency:parsed.currency,
-      availability:'InStock',verifiedAt:now,priceBasis:priceBasis(source),
+      availability:'InStock',verifiedAt:now,priceBasis:priceBasis(source,p.html,c.url,parsed),
       ...shipmentEvidence(p.html,parsed.price,price),http:200};
   });
 const candidates=[];
@@ -349,7 +349,7 @@ if(mode!=='quick'){
       return {candidate:{...c,status:'SELLER PRICE ONLY',
         verificationState:'DIRECT_PAGE_PRICE_ONLY',verifiedAt:now,http:200,
         pricePln:price,originalPrice:parsed.price,currency:parsed.currency,
-        priceBasis:priceBasis(source),condition:condition||null,
+        priceBasis:priceBasis(source,p.html,c.url,parsed),condition:condition||null,
         availability:'UNCONFIRMED',redTeam:['AVAILABILITY_OR_CONDITION_NOT_CONFIRMED'],
         ...shipmentEvidence(p.html,parsed.price,price)},addition:null};
     }
@@ -361,7 +361,7 @@ if(mode!=='quick'){
       rrp:peer?.rrp??null,newMarket:peer?.newMarket??null,sameMarket:peer?.sameMarket??null,
       price,country:c.country,seller:c.source,region:c.region,status:condition==='USED'?'LIVE USED':'LIVE VERIFIED',
       original:parsed.price+' '+(parsed.currency||''),url:c.url,role:'OFFER',checked:now.slice(0,10),
-      priceBasis:priceBasis(source),...shipmentEvidence(p.html,parsed.price,price),
+      priceBasis:priceBasis(source,p.html,c.url,parsed),...shipmentEvidence(p.html,parsed.price,price),
       refresh:{verificationState:'DIRECT_OFFER_VERIFIED',checkedAt:now,firstVerifiedAt:now,http:p.http}
     };
     const rt=redTeam(add,source,peer);

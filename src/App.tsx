@@ -36,7 +36,7 @@ function ResearchItem({c}: {c:ResearchLead}) {
   const aggregatorPrice=c.verificationState==='AGGREGATOR_PRICE_ONLY'&&c.priceEvidenceVersion==='HIFISHARK_CARD_PRICE_V2'&&Boolean(c.askingPriceText);
   const directPriceOnly=c.verificationState==='DIRECT_PAGE_PRICE_ONLY'&&Boolean(c.verifiedAt);
   const pagePrice=(historicallyVerified||directPriceOnly)&&Number.isFinite(c.pricePln??c.price);
-  const isBid=c.priceBasis==='METADATA_MAY_BE_BID'||c.source==='Marktplaats';
+  const isBid=c.priceBasis==='METADATA_MAY_BE_BID';
   const rateKnown=verified&&c.shippingToPoland==='PL_RATE_ADVERTISED'&&c.shippingRate!=null;
   const excluded=verified&&c.shippingToPoland==='PL_EXPLICITLY_EXCLUDED';
   const inLive=verified&&offers.some(o=>o.url===c.url&&buyable(o));

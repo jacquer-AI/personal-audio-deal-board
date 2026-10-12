@@ -51,6 +51,46 @@ export function itemTitleMatchesModel(html,model){
 }
 /** The listing can be a bid/offer without a guaranteed buy-now price.
  * Price parsed from page metadata is only an indicative research signal. */
-export function priceBasis(source){
-  return source?.id==='marktplaats-nl'?'METADATA_MAY_BE_BID':'SELLER_PAGE_PRICE';
+/**
+ * Marktplaats public ad state associates the exact itemId with priceInfo:
+ * {priceCents: 24000, priceType:"FIXED"}. Both FIXED and BID may contain a
+ * numerical price. Accept only one item-bound FIXED quote consistent with the
+ * parsed EUR seller-page price; all ambiguous and unsupported states fail closed.
+ * https://api.marktplaats.nl/docs/v2/reference/price-models.html
+ */
+export function marktplaatsFixedPriceEvidence(html, itemUrl, parsed){
+  if(parsed?.currency!=='EUR'||!Number.isFinite(parsed?.price)||parsed.price<=0)return false;
+  const id=String(itemUrl||'').match(/\/(m\d+)(?:[-/?#]|$)/)?.[1];
+  if(!id)return false;
+  const body=String(html||'').slice(0,2000000);
+  const items=[...body.matchAll(/"itemId"\s*:\s*"(m\d+)"/gi)];
+  const priceInfos=[...body.matchAll(/"priceInfo"\s*:\s*\{\s*"priceCents"\s*:\s*(\d{1,12})\s*,\s*"priceType"\s*:\s*"([^"]{1,30})"\s*\}/gi)];
+  // One primary item and one explicit price model only. Related-price blocks
+  // or contradictory item ids are never grounds for a LIVE promotion.
+  if(items.length!==1||priceInfos.length!==1)return false;
+  if(items[0][1].toLowerCase()!==id.toLowerCase())return false;
+  const info=priceInfos[0];
+  if(info[2]!=='FIXED')return false;
+  if(info.index<items[0].index||info.index-items[0].index>650)return false;
+  // itemId and priceInfo must be sibling keys in the SAME item object,
+  // not merely two occurrences near an unrelated recommendation.
+  let depth=0,quoted=false,escaped=false;
+  for(const ch of body.slice(items[0].index+items[0][0].length,info.index)){
+    if(escaped){escaped=false;continue}
+    if(ch==='\\'&&quoted){escaped=true;continue}
+    if(ch==='"'){quoted=!quoted;continue}
+    if(quoted)continue;
+    if(ch==='{')depth++;
+    else if(ch==='}'){depth--;if(depth<0)return false}
+  }
+  if(depth!==0||quoted)return false;
+  const cents=Number(info[1]);
+  return Number.isSafeInteger(cents)&&cents>0&&Math.round(parsed.price*100)===cents;
+}
+/** No marketplace-wide exemption: Marktplaats becomes SELLER_PAGE_PRICE
+ * solely after fresh, item-bound, exact-EUR fixed-price proof. */
+export function priceBasis(source,html='',itemUrl='',parsed=null){
+  if(source?.id!=='marktplaats-nl')return 'SELLER_PAGE_PRICE';
+  return marktplaatsFixedPriceEvidence(html,itemUrl,parsed)
+    ?'SELLER_PAGE_PRICE':'METADATA_MAY_BE_BID';
 }
