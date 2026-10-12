@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-fixed-research-quick-persist-e2e-20261012-retry-v2",
-  "mode": "quick",
+  "requestId": "audio-vintage-60-full-e2e-20261012",
+  "mode": "full",
   "categories": "all",
-  "purpose": "Validate merged PR42 in live QUICK: 10 fresh item-bound fixed-price research promotions should persist to current.additions, offers and published Pages, while stale/bid and non-EU remain excluded; verify delta/new counts and public readback.",
+  "purpose": "End-to-end physical market refresh after vintage-focused 60-model registry rollout (PR44). Validate 300 model-source discovery jobs, direct seller item/price/condition/availability evidence, rejection of HD800S for original HD800, Europe-first rules, honest missing shipping cost, updated offers persistence and public Pages readback. Report per-source reachability and verification; no speculative LIVE claims.",
   "requestedOn": "2026-10-12"
 }
