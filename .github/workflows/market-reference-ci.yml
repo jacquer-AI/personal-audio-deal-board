@@ -21,6 +21,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Retail Ceneo live probe (read-only, no data writes)
+        run: node scripts/refresh-retail-references.mjs --dry-run
       - run: npm run prepare-data
       - run: npm run validate-data
       - run: npm run typecheck
