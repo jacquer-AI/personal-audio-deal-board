@@ -50,6 +50,26 @@ describe('item-specific seller evidence',()=>{
     expect(itemTitleMatchesModel('<title>Sony MDR-M1 monitor headphones</title>',m1)).toBe(true);
     expect(itemTitleMatchesModel('<title>Sony MDR-M1ST vintage</title>',m1)).toBe(false);
   });
+  it('rejects actual Sennheiser HD 800 S accessory-only 25 EUR cable despite matching model',()=>{
+    const hd800={model:'Sennheiser HD 800 S',aliases:['HD 800 S','HD800S']};
+    const title='Cuffia Sennheiser HD 800 S cavo bilanciato 4.4 mm';
+    const product={'@type':'Product',name:'Sennheiser HD 800 S'};
+    const page='<title>'+title+'</title><meta property="og:title" content="'+title+'">'+
+      '<script type="application/ld+json">'+JSON.stringify(product)+'</script>';
+    expect(itemTitleMatchesModel(page,hd800)).toBe(false);
+    // A real seller page for the complete headphone, even with its accessories
+    // described outside the product title, must remain matchable.
+    expect(itemTitleMatchesModel('<title>Sennheiser HD800S nuove</title>'+
+      '<section>Scatola originale e cavo bilanciato incluso</section>',hd800)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Sennheiser HD 800 S original</title>',hd800)).toBe(true);
+  });
+  it('rejects replacement earpads and headphone-only cable titles, without blocking other models',()=>{
+    const senn={model:'Sennheiser HD 800 S',aliases:['HD800S']};
+    expect(itemTitleMatchesModel('<title>Replacement ear pads only - Sennheiser HD 800 S</title>',senn)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Solo cavo per Sennheiser HD800S</title>',senn)).toBe(false);
+    expect(itemTitleMatchesModel('<meta property="og:title" content="Sennheiser HD 800 S cavo bilanciato">'+
+      '<script type="application/ld+json">{"@type":"Product","name":"Sennheiser HD800S"}</script>',senn)).toBe(false);
+  });
   it('does not mistake a Marktplaats bid/metadata value for a buy-now price',()=>{
     expect(priceBasis({id:'marktplaats-nl'})).toBe('METADATA_MAY_BE_BID');
     expect(priceBasis({id:'subito-it'})).toBe('SELLER_PAGE_PRICE');

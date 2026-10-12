@@ -43,6 +43,14 @@ export function itemTitleMatchesModel(html,model){
   // Conflicting evidence in ANY item-title channel blocks promotion. A generic
   // Product JSON-LD name must not override a more precise OG title (e.g. Timeless AE).
   const normalizedTitles=titles.map(norm);
+  // A seller can use a very expensive headphone model in the title of a
+  // cheap accessory. One Subito listing titled "Cuffia Sennheiser HD 800 S
+  // cavo bilanciato 4.4 mm" explicitly sells ONLY a 25 EUR cable.
+  // Product JSON-LD carrying the bare headphone name must not override
+  // accessory evidence in another item-local title channel. Conservative
+  // review is preferable to a false 110 PLN "HD 800 S" buy-now offer.
+  const accessoryOnlyTitle=/\b(?:cavo bilanciato|cavo per cuffi|solo cavo|solo il cavo|replacement cable|cable only|replacement ear ?pads?|ear ?pads? only|cuscinetti|ricambi per|custodia per cuffi|adattatore per cuffi)\b/;
+  if(normalizedTitles.some(t=>accessoryOnlyTitle.test(t)))return false;
   if(conflict&&normalizedTitles.some(t=>conflict.test(t)))return false;
   return normalizedTitles.some(normalized=>{
     const words=' '+normalized+' ',compact=normalized.replace(/\s+/g,'');
