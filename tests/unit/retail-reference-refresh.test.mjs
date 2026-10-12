@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {SOURCES,parseCeneoIndex,applyRetailChecks,refreshRetail} from '../../scripts/refresh-retail-references.mjs';
+import {SOURCES,parseCeneoIndex,parseVendorReference,applyRetailChecks,refreshRetail} from '../../scripts/refresh-retail-references.mjs';
 import snapshot from '../../data/retail-price-references.json';
 const html=(title,hero,other='')=>'<html><head><title>Ceneo</title></head><body><h1>'+title+'</h1><div>Oferty (27) <strong>'+hero+'</strong></div><h2>Wybrane oferty firm</h2>'+other+'</body></html>';
 const date='2026-10-12T10:00:00+02:00';
@@ -51,6 +51,30 @@ describe('scheduled retail price index: never a confirmed retail offer',()=>{
     const later=applyRetailChecks(snapshot,sample,'2026-10-14T07:40:00+02:00');
     expect(later.changed).toBe(true);
   });
+
+  it('extracts exact same-model price from a retailer product page rather than recommendations or installments',()=>{
+    const akg=SOURCES[1].fallback;
+    const htmlA='<html><body><h1>AKG K-702</h1><h2>Referencyjne słuchawki</h2>'+
+      '<div>Inne produkty 12 000 zł</div><div>759 zł Ceny z podatkiem VAT</div><p>Inny 1200 zł</p></body></html>';
+    expect(parseVendorReference(htmlA,akg)).toMatchObject({pricePln:759,method:'THOMANN_PRICE_BEFORE_VAT'});
+    const h=SOURCES[0].fallback;
+    const htmlH='<html><body><h1>BEYERDYNAMIC DT 880 PRO 250 Ohm</h1>'+
+      '<span>Raty od 27,02 zł</span><section>Cena brutto 645,00 zł</section></body></html>';
+    expect(parseVendorReference(htmlH,h)).toMatchObject({pricePln:645,method:'SUPER_SOUND_GROSS_PRICE'});
+    expect(parseVendorReference(htmlH.replace('DT 880 PRO','DT 990 PRO'),h).error).toBe('WRONG_PRODUCT_TITLE');
+  });
+  it('uses retailer fallback when protected Ceneo returns a generic productless page',async()=>{
+    const oldHtml='<html><body><h2>Włącz JavaScript</h2><p>Oferty ogólne</p></body></html>';
+    const sellerHtml='<html><body><h1>AKG K-702</h1><h2>Słuchawki</h2><div>759 zł Ceny z podatkiem VAT</div></body></html>';
+    const fetcher=async url=>({url,status:200,headers:{get:()=> 'text/html'},
+      text:async()=>url===SOURCES[1].fallback.url?sellerHtml:oldHtml});
+    const r=await refreshRetail({fetcher,now:date,dryRun:true});
+    const row=r.audit.find(x=>x.model==='AKG K702');
+    expect(row).toMatchObject({source:'Thomann.pl',pricePln:759});
+    expect(r.changed).toBe(false);
+    expect(r.doc.references.find(x=>x.model==='AKG K702').url).toBe(SOURCES[1].fallback.url);
+  });
+
   it('uses verified single page HTTP200; redirect or access denial never becomes fresh',async()=>{
     const response={url:SOURCES[0].url,status:200,headers:{get:()=> 'text/html'},text:async()=>html('Beyerdynamic DT880 PRO','699,01 zł')};
     const fetcher=async url=>url===SOURCES[0].url?response:
