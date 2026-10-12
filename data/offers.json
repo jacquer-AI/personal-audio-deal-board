@@ -18,7 +18,7 @@
       "rrp": 9612,
       "newMarket": 9612,
       "sameMarket": 9612,
-      "price": 9323.99,
+      "price": 9348.27,
       "country": "Węgry",
       "seller": "Muzix",
       "region": "UE",
@@ -31,7 +31,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -369,7 +369,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -525,7 +525,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-12T07:06:58.734Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -551,7 +551,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
     },
     {
@@ -629,8 +629,44 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-12T08:10:00.085Z"
+        "checkedAt": "2026-10-12T09:51:25.481Z"
       }
+    },
+    {
+      "id": "refresh-f13218d07000beb2",
+      "model": "64 Audio U12t",
+      "category": "IEM",
+      "quality": "S-",
+      "fit": 4,
+      "condition": "USED",
+      "rrp": 9612,
+      "newMarket": 9612,
+      "sameMarket": 5639,
+      "price": 5486.12,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "1250 EUR",
+      "url": "https://www.subito.it/audio-video/iem-64-audio-u12t-genova-656297868.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
     {
       "id": "refresh-1088d32f424c9fff",
@@ -666,7 +702,79 @@
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
         "lastVerifiedAt": "2026-10-12T00:44:17.767Z",
-        "lastAttemptAt": "2026-10-12T08:10:00.085Z"
+        "lastAttemptAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-4054a5288329e350",
+      "model": "AKG K702",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 526.67,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-aperte-reference-come-nuove-rimini-637918232.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-7067f8bcb8ab2b57",
+      "model": "AKG K702",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 526.67,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-aperte-come-nuove-novara-660405294.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -700,10 +808,190 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-3729bbfc480ecc30",
+      "model": "AKG K702",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 526.67,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-torino-663913945.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-afa3c8e96bb9cecd",
+      "model": "AKG K702",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 438.89,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "100 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-varese-645630703.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-94c56b170a202b01",
+      "model": "AKG K702",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 263.33,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "60 EUR",
+      "url": "https://www.subito.it/informatica/akg-k702-cuffie-over-ear-premium-da-studio-grosseto-661537347.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-ee2ad5c83eac9b91",
+      "model": "Austrian Audio Hi-X60",
+      "category": "Closed",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "NEW",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 877.78,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "200 EUR",
+      "url": "https://www.subito.it/audio-video/austrian-audio-hi-x60-brescia-656444196.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-6c47e1e9eb68c5cc",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 1228.89,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "280 EUR",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-1990-pro-roma-654113103.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -737,10 +1025,46 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-774006ede144ac21",
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 790,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "180 EUR",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-250-ohm-mod-xlr-4-pin-modena-639178130.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -774,10 +1098,46 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-e822b10b48a50c96",
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 570.56,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "130 EUR",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-roma-629515301.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -811,10 +1171,154 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-c0841e343bf5f358",
+      "model": "Beyerdynamic DT 880",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 526.67,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-beyerdynamic-dt-880-pro-250-ohm-pesaro-urbino-654466161.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-96275ad3e29386a6",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "NEW",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 899.72,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "205 EUR",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-dt-700-pro-x-nuovi-como-638956237.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-67c034adaf04ea6b",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 921.67,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "210 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-studio-beyerdynamic-dt-900-pro-x-catania-627178822.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-7ced46a4a07f7779",
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": 1498,
+      "sameMarket": 1050,
+      "price": 1185,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "270 EUR",
+      "url": "https://www.subito.it/audio-video/bose-nuovo-diffusore-portatile-soundlink-max-diff-roma-663535135.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -848,10 +1352,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -885,10 +1389,82 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-479e232a9a737a4b",
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": 1498,
+      "sameMarket": 1050,
+      "price": 1092.84,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "249 EUR",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-chieti-661216847.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-b2fe9b555823f98a",
+      "model": "Bose SoundLink Max",
+      "category": "Głośniki BT",
+      "quality": "A-",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": 1498,
+      "sameMarket": 1050,
+      "price": 1092.84,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "249 EUR",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-frosinone-660128620.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -922,10 +1498,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -959,10 +1535,190 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-1932ffe396c19ae7",
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "condition": "NEW",
+      "rrp": 1399,
+      "newMarket": 1364,
+      "sameMarket": 1364,
+      "price": 877.78,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "200 EUR",
+      "url": "https://www.subito.it/telefonia/auricolari-bowers-wilkins-pi8-mclaren-edition-milano-652804473.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-60773e74c376a4d9",
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "condition": "USED",
+      "rrp": 1399,
+      "newMarket": 1364,
+      "sameMarket": 890,
+      "price": 1228.89,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "280 EUR",
+      "url": "https://www.subito.it/audio-video/bowers-wilkins-pi8-brindisi-640254706.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-b38d75fb75da8869",
+      "model": "Dan Clark Audio AEON 2 Noire",
+      "category": "Closed",
+      "quality": "A",
+      "fit": 5,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 2413.9,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "550 EUR",
+      "url": "https://www.subito.it/audio-video/dan-clark-audio-aeon-2-noire-vicenza-662807570.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-717de03a0fa613b5",
+      "model": "Etymotic ER4XR",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 658.33,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "150 EUR",
+      "url": "https://www.subito.it/audio-video/etymotic-er4xr-milano-659831454.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-0b77fb1b8aa67218",
+      "model": "Focal Clear MG",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 3598.9,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "820 EUR",
+      "url": "https://www.subito.it/audio-video/cuffia-focal-clear-mg-accessori-lecco-659585447.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -996,10 +1752,154 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-26eeced0ddd785e2",
+      "model": "HIFIMAN Ananda Nano",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 987.5,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "225 EUR",
+      "url": "https://www.subito.it/audio-video/ananda-nano-cuffie-hifiman-torino-651265610.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-3ac7c5a2b5e7f6bc",
+      "model": "HIFIMAN Ananda Nano",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 1092.84,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "249 EUR",
+      "url": "https://www.subito.it/audio-video/hifiman-ananda-nano-cuffie-hi-fi-frosinone-660123600.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-93ecfd528568e374",
+      "model": "HIFIMAN Arya Stealth",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 1492.23,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "340 EUR",
+      "url": "https://www.subito.it/audio-video/hifiman-arya-stealth-con-scatola-originale-roma-663296476.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-cec6555961665845",
+      "model": "HIFIMAN Edition XS",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 877.78,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "200 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-magnetoplanari-hifiman-edition-xs-trento-662348828.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1033,10 +1933,154 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-53751f081ee7a31e",
+      "model": "HIFIMAN Svanar Wireless",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "condition": "NEW",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 592.5,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "135 EUR",
+      "url": "https://www.subito.it/audio-video/cuffie-hifiman-svanar-wireless-hymalaya-ipx5-anc-milano-624411234.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-37365d914f873674",
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "condition": "NEW",
+      "rrp": 799,
+      "newMarket": 599,
+      "sameMarket": 599,
+      "price": 373.06,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "85 EUR",
+      "url": "https://www.subito.it/audio-video/cassa-jbl-charge-6-bari-652189816.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-5691166ae35de34e",
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "condition": "NEW",
+      "rrp": 799,
+      "newMarket": 599,
+      "sameMarket": 599,
+      "price": 610.06,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "139 EUR",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-cassa-portatile-potente-napoli-652596052.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-f13a6d23f1f9530f",
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "condition": "NEW",
+      "rrp": 799,
+      "newMarket": 599,
+      "sameMarket": 599,
+      "price": 526.67,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "120 EUR",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-portable-bluetooth-speaker-powerbank-trento-623727337.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1070,10 +2114,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1107,10 +2151,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1144,10 +2188,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1181,10 +2225,226 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-a16743eaf8971ccc",
+      "model": "Moondrop Blessing 3",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "NEW",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 1580,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "360 EUR",
+      "url": "https://www.subito.it/audio-video/moondrop-blessing-3-brescia-623152373.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-f9518cbc77d5bee1",
+      "model": "Moondrop Blessing 3",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 965.56,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "220 EUR",
+      "url": "https://www.subito.it/audio-video/auricolari-in-ear-moondrop-blessing-3-bari-641420328.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-6668946ff6c08bea",
+      "model": "Neumann NDH 30",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "NEW",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 1975.01,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "450 EUR",
+      "url": "https://www.subito.it/audio-video/ndh-30-neumann-cuffie-aperte-mix-mastering-napoli-643597326.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-511a4c37396f2ab2",
+      "model": "Neumann NDH 30",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 3511.12,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "800 EUR",
+      "url": "https://www.subito.it/informatica/neumann-ndh30-coppia-perfette-roma-660319225.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-adcfbd52648fb1d6",
+      "model": "Sennheiser HD 800 S",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 109.72,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "25 EUR",
+      "url": "https://www.subito.it/audio-video/cuffia-sennheiser-hd-800-s-cavo-bilanciato-4-4-mm-monza-650431376.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-0696de8879a7ec5c",
+      "model": "Sennheiser HD 800 S",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "condition": "USED",
+      "rrp": null,
+      "newMarket": null,
+      "sameMarket": null,
+      "price": 4388.9,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "1000 EUR",
+      "url": "https://www.subito.it/audio-video/sennheiser-hd800s-nuove-roma-663044659.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1218,10 +2478,46 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-204a533e6e176c4e",
+      "model": "Technics EAH-AZ100",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 3,
+      "condition": "NEW",
+      "rrp": 1300,
+      "newMarket": 841,
+      "sameMarket": 841,
+      "price": 961.17,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE VERIFIED",
+      "original": "219 EUR",
+      "url": "https://www.subito.it/audio-video/auricolari-true-wireless-technics-eah-az100-roma-663954903.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1255,18 +2551,90 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-12T08:10:00.085Z",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-12T08:10:00.085Z"
+        "lastVerifiedAt": "2026-10-12T09:51:25.481Z"
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-48b9a35d404e8c11",
+      "model": "Technics EAH-AZ100",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": 1300,
+      "newMarket": 841,
+      "sameMarket": 540,
+      "price": 833.89,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "190 EUR",
+      "url": "https://www.subito.it/audio-video/technics-eah-az100-auricolari-hi-fi-flagship-verona-663126730.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
+      },
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
+    },
+    {
+      "id": "refresh-74a4f9d993c18df9",
+      "model": "Technics EAH-AZ100",
+      "category": "TWS",
+      "quality": "A",
+      "fit": 3,
+      "condition": "USED",
+      "rrp": 1300,
+      "newMarket": 841,
+      "sameMarket": 540,
+      "price": 877.78,
+      "country": "Włochy",
+      "seller": "Subito",
+      "region": "UE",
+      "status": "LIVE USED",
+      "original": "200 EUR",
+      "url": "https://www.subito.it/audio-video/technics-eah-az100-auricolari-wireless-milano-644500085.htm",
+      "role": "OFFER",
+      "checked": "2026-10-12",
+      "priceBasis": "SELLER_PAGE_PRICE",
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-12",
+      "refresh": {
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "checkedAt": "2026-10-12T09:51:25.481Z",
+        "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
+        "http": 200
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-12T08:10:00.085Z",
+    "refreshedAt": "2026-10-12T09:51:25.481Z",
     "mode": "full",
-    "runId": "38221894682",
+    "runId": "38232559986",
     "status": "COMPLETED"
   }
 }
