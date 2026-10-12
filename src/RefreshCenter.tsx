@@ -248,7 +248,7 @@ export default function RefreshCenter({refresh}:{refresh?:RefreshMeta}){
     void tick();
     const id=window.setInterval(()=>void tick(),POLL_MS);
     return()=>{stopped=true;window.clearInterval(id)};
-  },[track]);
+  },[track,mode,category]);
 
   async function start(){
     if(starting.current||track)return;
