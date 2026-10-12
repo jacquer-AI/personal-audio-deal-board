@@ -13,8 +13,10 @@ export function planDiscoveryJobs(models, sources, maxJobs, coreIds=[], asOfDate
     const key=m.model+'|'+s.id;
     if(used.has(key))return;
     used.add(key);
-    // Explicit variants improve recall for rare/discontinued models. Never
-    // widen the model to a different impedance or unverified revision.
+    // Discovery-only aliases improve recall for rare/discontinued models:
+    // sellers may omit impedance from the result title. A broad query is NOT
+    // evidence of the variant; final item-title and price checks still require
+    // the exact tracked impedance and reject conflicting revisions.
     const variants=Array.isArray(m.searchTerms)?m.searchTerms.filter(v=>typeof v==='string'&&v.trim()):[];
     const sourceIndex=sources.findIndex(x=>x.id===s.id);
     const modelQuery=variants.length?variants[(day+Math.max(0,sourceIndex))%variants.length]:m.model;
