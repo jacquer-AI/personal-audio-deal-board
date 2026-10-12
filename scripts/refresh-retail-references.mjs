@@ -58,7 +58,7 @@ function jsonPrice(html,titleTokenString) {
 }
 export function parseCeneoIndex(html,config) {
   const input=String(html||'');
-  if(input.length<250||/captcha|access denied|verify you are human/i.test(input.slice(0,2500)))
+  if(input.length<100||/captcha|access denied|verify you are human/i.test(input.slice(0,2500)))
     return {error:'BLOCKED_OR_EMPTY'};
   const h=input.match(/<h1\b[^>]*>([\s\S]{0,1600}?)<\/h1\s*>/i);
   if(!h)return {error:'NO_PRODUCT_H1'};
