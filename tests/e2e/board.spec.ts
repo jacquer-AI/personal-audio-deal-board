@@ -31,7 +31,7 @@ test('Polish item condition is visible beside the price and separate from verifi
   await expect(first.getByTestId('source-row').first().locator('.item-condition')).toBeVisible();
   await expect(page.locator('.watchlist')).toContainText('56 rodzin modeli');
   await page.getByRole('button',{name:/Pokaż .*dodatkowych modeli do wyszukania/}).click();
-  await expect(page.getByText('Etymotic ER4SR',{exact:true})).toBeVisible();
+  await expect(page.locator('.watchlist').getByText('Etymotic ER4SR',{exact:true})).toBeVisible();
 });
 
 test('DT 880 has two genuinely additional listings, without duplicating the primary',async({page})=>{
