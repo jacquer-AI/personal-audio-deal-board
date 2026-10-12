@@ -1,166 +1,40 @@
 {
-  "new": 5,
+  "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 0,
+  "stale": 1,
   "changes": [
     {
-      "type": "NEW",
+      "type": "STALE",
       "model": "7Hz Timeless",
-      "price": 656.63,
       "url": "https://www.subito.it/audio-video/auricolari-planari-linsoul-7hertz-timeless-ae-dac-roma-663684845.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "AKG K702",
-      "price": 525.3,
-      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-premium-catanzaro-661281208.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Focal Clear OG",
-      "price": 2932.93,
-      "url": "https://www.subito.it/audio-video/focal-clear-og-no-hifiman-sennheiser-salerno-657704961.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 1050.6,
-      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-roma-660795817.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Sony MDR-M1",
-      "price": 652.25,
-      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-professional-come-nuove-2cavi-trento-656522340.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-12T00:44:17.767Z",
-  "mode": "full",
-  "runId": "38189144861",
+  "refreshedAt": "2026-10-12T00:51:42.291Z",
+  "mode": "quick",
+  "runId": "38189616588",
   "candidates": 500,
-  "verifiedAdditions": 5,
-  "observationChanges": 260,
+  "verifiedAdditions": 0,
+  "observationChanges": 6,
   "freshnessRenewal": false,
   "receipt": {
-    "directUrlsAttempted": 30,
-    "directVerified": 15,
+    "directUrlsAttempted": 35,
+    "directVerified": 19,
     "accessRestricted": 9,
-    "ambiguous": 5,
+    "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "olx-pl": 4,
       "allegro-pl": 2,
+      "olx-pl": 4,
       "ebay-pl": 1
     },
-    "researchRechecked": 36,
-    "researchReverified": 36,
-    "discovery": {
-      "plannedJobs": 280,
-      "coreSources": [
-        "hifishark",
-        "vinted-pl",
-        "marktplaats-nl",
-        "subito-it",
-        "mediaexpert-outlet"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 56,
-          "reachable": 30,
-          "candidateUrls": 45,
-          "restricted": 26,
-          "errors": 0,
-          "checkedUrls": 45,
-          "unverifiedUrls": 45
-        },
-        "mediaexpert-outlet": {
-          "requested": 56,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 56,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 56,
-          "reachable": 56,
-          "candidateUrls": 31,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 31,
-          "verifiedUrls": 25,
-          "unverifiedUrls": 4,
-          "sellerPriceOnly": 2
-        },
-        "subito-it": {
-          "requested": 56,
-          "reachable": 56,
-          "candidateUrls": 6,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "verifiedUrls": 5,
-          "unverifiedUrls": 1
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 56,
-          "reachable": 56,
-          "candidateUrls": 240,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 240,
-          "unverifiedUrls": 240
-        }
-      }
-    }
+    "researchRechecked": 43,
+    "researchReverified": 42,
+    "researchDowngraded": 1
   }
 }
