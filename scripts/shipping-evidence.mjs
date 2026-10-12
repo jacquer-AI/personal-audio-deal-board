@@ -30,11 +30,11 @@ function money(rate){
 /** Item-specific seller description, not recommendation cards or general FAQ. */
 function sellerRejectsAllShipping(html){
   const descriptions=[];
-  for(const m of String(html||'').matchAll(/<meta\\b[^>]{0,1800}>/gi)){
+  for(const m of String(html||'').matchAll(/<meta\b[^>]{0,1800}>/gi)){
     const tag=m[0];
-    const kind=tag.match(/(?:property|name)\\s*=\\s*["']([^"']+)["']/i)?.[1]?.toLowerCase();
+    const kind=tag.match(/(?:property|name)\s*=\s*["']([^"']+)["']/i)?.[1]?.toLowerCase();
     if(!['description','og:description','twitter:description'].includes(kind))continue;
-    const value=tag.match(/\\bcontent\\s*=\\s*["']([^"']{1,1400})["']/i)?.[1];
+    const value=tag.match(/\bcontent\s*=\s*["']([^"']{1,1400})["']/i)?.[1];
     if(value)descriptions.push(value);
   }
   return descriptions.some(s=>
