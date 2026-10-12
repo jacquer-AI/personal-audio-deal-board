@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "hifishark-v2-europe-price-rebuild-20261012",
+  "requestId": "post-pr28-56model-full-e2e-20261012-v1",
   "mode": "full",
   "categories": "all",
-  "purpose": "FINAL E2E: retrieve all 48 HiFiShark models, parse both 90 € and €90, evict legacy corrupted indexed prices, verify country-local provenance and show indexed price separately from live seller listing.",
+  "purpose": "E2E post-merge PR28: verify 56-model yield-first discovery across HiFiShark, Vinted PL, Marktplaats NL, Subito IT and rotating Europe source; refresh current live seller evidence, preserve strict listing/model/price/availability states; inspect complete source counters and publication receipt.",
   "requestedOn": "2026-10-12"
 }
