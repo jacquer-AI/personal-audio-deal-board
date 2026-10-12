@@ -2,6 +2,7 @@ import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import snapshot from '../../data/offers.json' with {type:'json'};
 import retail from '../../data/retail-price-references.json' with {type:'json'};
+import marketStats from '../../data/market-stats.json' with {type:'json'};
 import {mockGitHub} from './github-mock';
 import {buyable} from '../../src/lib/board';
 import {europeanOffer} from '../../src/lib/europeScope';
@@ -208,7 +209,10 @@ test('new and used reference prices are visible with provenance but do not inven
   await page.getByRole('searchbox').fill('Beyerdynamic DT 880');
   const card=page.getByTestId('product').first();
   const market=card.getByTestId('market-reference');
-  await expect(market).toContainText('350,2');
+  const usedStats=marketStats.stats.find(x=>x.key==='Beyerdynamic DT 880|USED')!;
+  const usedPrice=usedStats.n>=3?usedStats.median:usedStats.min;
+  const usedLabel=new Intl.NumberFormat('pl-PL',{minimumFractionDigits:0,maximumFractionDigits:2}).format(usedPrice!);
+  await expect(market).toContainText(usedLabel);
   await expect(market).toContainText('Próbka stanu');
   await expect(market).toContainText(String(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.pricePln).replace('.',','));
   await expect(market).toContainText(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.variant);
@@ -216,7 +220,11 @@ test('new and used reference prices are visible with provenance but do not inven
   await expect(card.locator('.metrics')).toContainText('— vs stan');
   await expect(card.locator('.metrics')).toContainText('— vs nowe');
   await page.getByRole('searchbox').fill('AKG K702');
-  await expect(page.getByTestId('market-reference').first()).toContainText('1 odczytana cena ofertowa');
+  const akgStats=marketStats.stats.find(x=>x.key==='AKG K702|USED')!;
+  await expect(page.getByTestId('market-reference').first()).toContainText(
+    akgStats.n>=3?'mediana '+akgStats.n+' cen ofertowych':
+      akgStats.n===1?'1 odczytana cena ofertowa':'od '+akgStats.n+' odczytanych cen ofertowych'
+  );
   await expect(page.getByTestId('market-reference').first()).toContainText(String(retail.references.find(x=>x.model==='AKG K702')!.pricePln).replace('.',','));
   await page.getByRole('searchbox').fill('HIFIMAN Edition XS');
   await expect(page.getByTestId('market-reference').first()).toContainText(String(retail.references.find(x=>x.model==='HIFIMAN Edition XS')!.pricePln).replace('.',','));
