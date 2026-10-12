@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-fixed-research-to-live-quick-e2e-20261012-v1",
+  "requestId": "audio-fixed-research-quick-persist-e2e-20261012-retry-v2",
   "mode": "quick",
   "categories": "all",
-  "purpose": "Production QUICK E2E after PR41: recheck exact current seller pages for 9 verified-but-not-board Marktplaats FIXED research candidates, promote only fresh evidence with matching item/model/price/stock/condition/geo and redTeam PASS, never promote bids or stale evidence, persist data and deploy Pages.",
+  "purpose": "Validate merged PR42 in live QUICK: 10 fresh item-bound fixed-price research promotions should persist to current.additions, offers and published Pages, while stale/bid and non-EU remain excluded; verify delta/new counts and public readback.",
   "requestedOn": "2026-10-12"
 }
