@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "dt880-retail-profidj-live-20261012-v3",
-  "mode": "quick",
+  "requestId": "audio-funnel-full-seller-first-agy-20261012-v1",
+  "mode": "full",
   "categories": "all",
-  "purpose": "Production E2E after PR32: verify DT 880 Pro 250Ω direct Profi-dj price metadata, update indexed NEW reference with source/date, run all test gates, push to main, deploy Pages, verify public readback. Preserve condition-only used samples and B4B gating.",
+  "purpose": "Production E2E verification of PR34 AGY-assisted seller-first discovery. Search all 56 tracked families, audit selectedUrls selectedBySource and genuinely new fixed-price LIVE offers; block bids, recheck previously promoted items fail-closed, persist candidate ledger and offer differences, require CI PASS, deploy Pages and public readback.",
   "requestedOn": "2026-10-12"
 }
