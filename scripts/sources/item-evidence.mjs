@@ -72,6 +72,18 @@ export function marktplaatsFixedPriceEvidence(html, itemUrl, parsed){
   const info=priceInfos[0];
   if(info[2]!=='FIXED')return false;
   if(info.index<items[0].index||info.index-items[0].index>650)return false;
+  // itemId and priceInfo must be sibling keys in the SAME item object,
+  // not merely two occurrences near an unrelated recommendation.
+  let depth=0,quoted=false,escaped=false;
+  for(const ch of body.slice(items[0].index+items[0][0].length,info.index)){
+    if(escaped){escaped=false;continue}
+    if(ch==='\\'&&quoted){escaped=true;continue}
+    if(ch==='"'){quoted=!quoted;continue}
+    if(quoted)continue;
+    if(ch==='{')depth++;
+    else if(ch==='}'){depth--;if(depth<0)return false}
+  }
+  if(depth!==0||quoted)return false;
   const cents=Number(info[1]);
   return Number.isSafeInteger(cents)&&cents>0&&Math.round(parsed.price*100)===cents;
 }
