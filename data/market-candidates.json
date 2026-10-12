@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-10-12T13:51:29.702Z",
+  "refreshedAt": "2026-10-12T13:56:43.709Z",
   "mode": "quick",
   "candidates": [
     {
@@ -18,7 +18,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -42,7 +42,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -61,7 +61,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -84,7 +84,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -103,7 +103,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -125,7 +125,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -144,7 +144,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -168,7 +168,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -185,7 +185,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -208,7 +208,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -229,7 +229,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -252,7 +252,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -271,7 +271,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -295,7 +295,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -314,7 +314,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -338,7 +338,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -357,7 +357,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -380,7 +380,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -399,7 +399,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -422,7 +422,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -441,7 +441,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -465,7 +465,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -484,7 +484,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -507,7 +507,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -526,7 +526,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -549,7 +549,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -568,7 +568,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -591,7 +591,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -610,7 +610,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -634,7 +634,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -653,7 +653,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -676,7 +676,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -695,7 +695,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -719,7 +719,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -738,7 +738,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -760,7 +760,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -779,7 +779,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -802,7 +802,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -821,7 +821,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -844,7 +844,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -863,7 +863,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -885,7 +885,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -904,7 +904,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -927,7 +927,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -946,7 +946,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -969,7 +969,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -988,7 +988,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1011,7 +1011,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1030,7 +1030,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1052,7 +1052,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1071,7 +1071,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1094,7 +1094,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1113,7 +1113,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1136,7 +1136,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1155,7 +1155,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1179,7 +1179,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1198,7 +1198,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1221,7 +1221,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1238,7 +1238,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1262,7 +1262,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -1283,7 +1283,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1305,7 +1305,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1324,7 +1324,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1347,7 +1347,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1366,7 +1366,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1390,7 +1390,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1409,7 +1409,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1431,7 +1431,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1450,7 +1450,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1472,7 +1472,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1491,7 +1491,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1514,7 +1514,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1533,7 +1533,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1555,7 +1555,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1572,7 +1572,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1594,7 +1594,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -1615,7 +1615,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1638,7 +1638,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1657,7 +1657,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1680,7 +1680,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1697,7 +1697,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1720,7 +1720,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -1739,7 +1739,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1763,7 +1763,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -1784,7 +1784,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1807,7 +1807,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1826,7 +1826,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1849,7 +1849,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1868,7 +1868,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1890,7 +1890,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1909,7 +1909,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1933,7 +1933,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1952,7 +1952,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1975,7 +1975,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1994,7 +1994,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2017,7 +2017,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2036,7 +2036,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2060,7 +2060,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2079,7 +2079,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2102,7 +2102,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2119,7 +2119,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2143,7 +2143,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -2164,7 +2164,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2188,7 +2188,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2207,7 +2207,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2230,7 +2230,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2247,7 +2247,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2270,7 +2270,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -2291,7 +2291,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2315,7 +2315,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2334,7 +2334,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2356,7 +2356,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2375,7 +2375,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2398,7 +2398,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2417,7 +2417,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2440,7 +2440,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2457,7 +2457,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2481,7 +2481,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -2502,7 +2502,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2524,7 +2524,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2541,7 +2541,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2565,7 +2565,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -2584,7 +2584,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2608,7 +2608,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -2629,7 +2629,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2651,7 +2651,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2668,7 +2668,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2690,7 +2690,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -2709,7 +2709,7 @@
       "discoveredAt": "2026-10-11T20:14:35.427Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2733,7 +2733,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false,
       "country": "Włochy",
@@ -2754,7 +2754,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2777,7 +2777,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2796,7 +2796,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2821,7 +2821,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2840,7 +2840,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2864,7 +2864,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2883,7 +2883,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2907,7 +2907,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2926,7 +2926,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2949,7 +2949,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2968,7 +2968,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2992,7 +2992,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3011,7 +3011,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3035,7 +3035,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3054,7 +3054,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3079,7 +3079,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3098,7 +3098,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -3121,7 +3121,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3140,7 +3140,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3164,7 +3164,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3183,7 +3183,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3208,7 +3208,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3227,7 +3227,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3252,7 +3252,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3271,7 +3271,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3295,7 +3295,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3314,7 +3314,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:51:29.702Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3338,7 +3338,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:51:29.702Z",
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3357,7 +3357,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T12:20:37.872Z",
+      "verifiedAt": "2026-10-12T13:56:43.709Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -3380,9 +3380,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T13:56:43.709Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Focal Clear MG",
@@ -4467,8 +4467,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T13:51:29.702Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",

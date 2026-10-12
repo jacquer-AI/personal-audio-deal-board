@@ -2,38 +2,33 @@
   "new": 0,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 2,
+  "stale": 1,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9348.27,
+      "from": 9348.27,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-chieti-661216847.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "HIFIMAN Ananda Nano",
-      "url": "https://www.subito.it/audio-video/ananda-nano-cuffie-hifiman-torino-651265610.htm"
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-12T13:51:29.702Z",
+  "refreshedAt": "2026-10-12T13:56:43.709Z",
   "mode": "quick",
-  "runId": "38258634301",
+  "runId": "38259269403",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 8,
+  "observationChanges": 3,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 87,
-    "directVerified": 65,
-    "accessRestricted": 9,
+    "directVerified": 64,
+    "accessRestricted": 10,
     "ambiguous": 11,
     "dead": 1,
     "soldOrOut": 0,
@@ -41,17 +36,15 @@
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchRechecked": 80,
-    "researchReverified": 79,
-    "researchDowngraded": 1,
+    "researchReverified": 80,
     "researchPromotionBlocked": {
       "ALREADY_ON_BOARD": 65,
-      "NOT_VERIFIED_IN_THIS_RUN": 1,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 14
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 15
     },
     "researchPromoted": 0
   }
