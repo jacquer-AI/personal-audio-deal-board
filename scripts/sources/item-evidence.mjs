@@ -23,9 +23,35 @@ export function itemTitleEvidence(html){
   }
   return names.slice(0,12);
 }
+
+/** An accessory can mention the exact model without being the headphones. */
+export function accessoryOnlyListing(html){
+  const src=bounded(html),descriptions=[];
+  for(const m of src.matchAll(/<meta\b[^>]{0,1200}>/gi)){
+    const tag=m[0];
+    const id=tag.match(/(?:property|name)\s*=\s*["']([^"']+)["']/i)?.[1]?.toLowerCase();
+    if(!['description','og:description','twitter:description'].includes(id))continue;
+    const value=tag.match(/\bcontent\s*=\s*["']([^"']{1,900})["']/i)?.[1];
+    if(value)descriptions.push(norm(decode(value)));
+  }
+  for(const block of jsonLdBlocks(src)){
+    walk(block,obj=>{
+      if(/Product/i.test(String(obj['@type']||''))&&typeof obj.description==='string')
+        descriptions.push(norm(obj.description.slice(0,900)));
+    });
+  }
+  const descriptionsAreParts=descriptions.some(d=>
+    /^(?:vendo|vendesi|selling|verkaufe|sprzedam|for sale|in vendita)\s+(?:(?:un|una|uno|il|la|a|the|solo|only)\s+){0,3}(?:cavo|cable|kabel|pads?|earpads?|cuscinett[oi]|nauszniki|custodia|case|stand|headband|adapter|adattatore)\b/.test(d));
+  const titlesAreParts=itemTitleEvidence(src).map(norm).some(t=>
+    /\b(?:cavo|cable|kabel|earpads?|pads?|custodia|case|headband|adapter|adattatore)\s+(?:per|for|fur|fuer|do|para|pour)\s+/.test(t)||
+    /\b(?:only|solo|nur|replacement|ricambio|ersatz)\s+(?:cavo|cable|kabel|earpads?|pads?|custodia|case|headband)\b/.test(t));
+  return descriptionsAreParts||titlesAreParts;
+}
+
 export function itemTitleMatchesModel(html,model){
   const expected=[model?.model,...(model?.aliases||[])].map(norm).filter(n=>n.length>=5);
   const titles=itemTitleEvidence(html);
+  if(accessoryOnlyListing(html))return false;
   // A family-name prefix is not evidence of the exact commercial variant.
   // These are distinct products, with different specifications and prices.
   const knownVariantConflicts={

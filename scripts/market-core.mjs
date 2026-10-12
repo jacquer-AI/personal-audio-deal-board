@@ -82,6 +82,10 @@ export function mergeOverlay(baseDoc, currentDoc) {
     const fp=fingerprint(add);
     if (seen.has(fp)) continue;
     if (!add.refresh) continue;
+    // A listing disproved as this model (e.g. headphone replacement cable)
+    // must not stay in headphone price results, even as a stale comparison.
+    // Retain the raw review and observation in the auditable market ledgers.
+    if (add.refresh.verificationState === 'MODEL_NOT_CONFIRMED') continue;
     const verifiedNow = add.refresh.verificationState === 'DIRECT_OFFER_VERIFIED' && LIVE_STATUSES.has(add.status);
     // A previously verified addition may later turn stale/sold; it is never admitted without a first verification.
     const downgraded = Boolean(add.refresh.firstVerifiedAt) && ['STALE / REVERIFY','HISTORICAL'].includes(add.status);
