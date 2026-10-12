@@ -10,7 +10,7 @@ import {shippingEvidencePoland} from './shipping-evidence.mjs';
 import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
 import {geographicEvidence,isEuropeRecordedOffer} from './sources/europe-scope.mjs';
 import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
-import {selectDiscoveryCandidates,recentResearchUrls,planResearchRechecks} from './discovery-selection.mjs';
+import {selectDiscoveryCandidates,recentResearchUrls,planResearchRechecks,retainUnprobedIndexedPrices} from './discovery-selection.mjs';
 import {applyAdditionRecheck,sameSellerItemUrl} from './addition-rechecks.mjs';
 import {memoizeScanFetch} from './fetch-cache.mjs';
 import {promoteRecheckedResearch} from './research-promotion.mjs';
@@ -307,6 +307,12 @@ if(mode!=='quick'){
   // Direct seller items compete first; HiFiShark must not consume all 360 slots
   // before concrete European listing URLs receive verification.
   const discoveredUrls=selectDiscoveryCandidates(discovered,models,sources,360);
+  // Preserve European, item-row-level aggregator price research independently of
+  // seller-page HTTP probing. No unprobed item can enter newAdditions or LIVE.
+  const indexedUnprobed=retainUnprobedIndexedPrices(discovered,discoveredUrls,
+    (amount,currency)=>toPln(amount,currency,fx),fxSource,fxEffectiveDate);
+  candidates.push(...indexedUnprobed);
+  receipt.discovery.indexedPricesRetainedWithoutGoto=indexedUnprobed.length;
   receipt.discovery.selectedUrls=discoveredUrls.length;
   receipt.discovery.selectedBySource=Object.fromEntries(
     [...new Set(discoveredUrls.map(x=>x.sourceId))].map(id=>[id,discoveredUrls.filter(x=>x.sourceId===id).length])
