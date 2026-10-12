@@ -7,7 +7,9 @@ export const SOURCES = [
    titleTokens:['beyerdynamic','dt880','pro'],
    variant:'DT 880 Pro (impedancja ceny indeksowej nieustalona)',
    fallback:{url:'https://supersound.pl/60737-beyerdynamic-dt-880-pro-250-ohm-studio-headphones-for-mixing-and-mastering-semi-open',
-     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Supersound.pl',host:'supersound.pl'}},
+     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Supersound.pl',host:'supersound.pl'},
+   secondary:{url:'https://www.cyfrowe.pl/sluchawki-beyerdynamic-sluchawki-polotwarte-dt-880-pro-250-ohm-p.html',
+     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Cyfrowe.pl',host:'www.cyfrowe.pl'}},
   {model:'AKG K702',url:'https://www.ceneo.pl/28644030',
    titleTokens:['akg','k702'],variant:'AKG K702',
    fallback:{url:'https://www.thomann.pl/akg_k702.htm',titleTokens:['akg','k702'],
@@ -112,6 +114,16 @@ export function parseVendorReference(html, config) {
       price=scopedAmount(after.slice(marker,marker+1700));
       if(price!==null)method='SUPER_SOUND_GROSS_PRICE';
     }
+  }else if(config.host==='www.cyfrowe.pl'){
+    // A site-specific, bounded hero price: NOT installments, bundles or related offers.
+    // The product heading must explicitly identify the 250-ohm PRO revision.
+    const hero=after.slice(0,7000).split(/Wybierz swój zestaw|Zestawy promocyjne|Akcesoria|<h2\b/i)[0];
+    const productArea=plain(hero);
+    const candidates=[...productArea.matchAll(/(?:^|[^\d])(\d{1,5}(?:[\s\u00a0\u202f]\d{3})*(?:[,.]\d{2})?)\s*(?:zł|PLN)(?![a-z])/gi)]
+      .map(m=>readPln(m[1])).filter(n=>n!==null);
+    if(candidates.length && /Kod produktu|Cena:|Do koszyka|price/i.test(productArea)){
+      price=candidates[0]; method='CYFROWE_PRODUCT_HERO';
+    }
   }
   if(price===null&&structured!==null){price=structured;method='RETAILER_PRODUCT_JSONLD';}
   if(price===null)return {error:'NO_PRODUCT_SCOPED_PLN_PRICE',title};
@@ -157,7 +169,7 @@ export async function refreshRetail({fetcher=fetch,now=new Date().toISOString(),
 
   for(const s of SOURCES) {
     let verified=null;
-    for(const endpoint of [{...s,source:'Ceneo.pl',kind:'CENEO'}, {...s.fallback,kind:'VENDOR'}]){
+    for(const endpoint of [{...s,source:'Ceneo.pl',kind:'CENEO'}, {...s.fallback,kind:'VENDOR'}, ...(s.secondary?[{...s.secondary,kind:'VENDOR'}]:[])]){
       if(verified?.pricePln)break;
       try{
         const response=await fetcher(endpoint.url,{signal:AbortSignal.timeout(11000),redirect:'follow',
