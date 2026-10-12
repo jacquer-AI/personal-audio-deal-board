@@ -118,7 +118,9 @@ export function parseVendorReference(html, config) {
     // A site-specific, bounded hero price: NOT installments, bundles or related offers.
     // The product heading must explicitly identify the 250-ohm PRO revision.
     const hero=after.slice(0,7000).split(/Wybierz swój zestaw|Zestawy promocyjne|Akcesoria|<h2\b/i)[0];
-    const productArea=plain(hero);
+    // Preserve HTML block boundaries; product SKU ending in 250 must not
+    // concatenate with next product price (e.g. "250 826,00 zł").
+    const productArea=plain(hero.replace(/<\/[^>]+>/g,' | '));
     const candidates=[...productArea.matchAll(/(?:^|[^\d])(\d{1,5}(?:[\s\u00a0\u202f]\d{3})*(?:[,.]\d{2})?)\s*(?:zł|PLN)(?![a-z])/gi)]
       .map(m=>readPln(m[1])).filter(n=>n!==null);
     if(candidates.length && /Kod produktu|Cena:|Do koszyka|price/i.test(productArea)){
