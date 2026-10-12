@@ -38,6 +38,8 @@ export function itemTitleMatchesModel(html,model){
     'sony mdr m1':/\bmdr m1st\b/,
     'beyerdynamic dt 48 25 ohm':/\bdt\s?48(?:\s?[a-z])?\s?(?:200|250|5)\s?(?:ohm|ohms)?\b/,
     '7hz timeless':/\b(?:7hz|7hertz)\s*timeless\s*(?:ae|anniversary edition|x ae)\b/,
+    // HD 800 (original) and HD 800 S have materially different tuning/value.
+    'sennheiser hd 800':/\bhd\s?800\s?s\b/,
   };
   const conflict=knownVariantConflicts[norm(model?.model)];
   // Conflicting evidence in ANY item-title channel blocks promotion. A generic
