@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-category-open-full-e2e-20261012-v1",
+  "requestId": "audio-category-closed-dt48-full-e2e-20261012-v1",
   "mode": "full",
-  "categories": "Open",
-  "purpose": "Real production E2E acceptance of PR51: require validated scoped Open category from request-file, count search jobs for Open models only, verify direct-seller exact variant and buyable status gates, persist market receipts and confirm Pages public readback. No bypass of restricted sites or unverified offers.",
+  "categories": "Closed",
+  "purpose": "Production E2E secondary scope for nine Closed headphone families including exact Beyerdynamic DT 48 25 Ohm. Verify 25 Ohm model only, never merge DT48 200/250/other variants; check direct seller listings and prices strictly, persist delta, publish Pages and require public readback. Do not bypass marketplace restrictions.",
   "requestedOn": "2026-10-12"
 }
