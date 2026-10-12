@@ -1,20 +1,28 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T13:06:34.264Z",
+  "refreshedAt": "2026-10-12T13:51:29.702Z",
   "stats": [
     {
-      "key": "Technics EAH-AZ100|NEW",
-      "n": 2,
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
+      "min": 9348.27,
+      "max": 9348.27
+    },
+    {
+      "key": "Technics EAH-AZ100|NEW",
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 999,
       "min": 961.17,
       "max": 2628.95
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 7,
+      "n": 6,
       "confidence": "ROBUST",
-      "median": 1092.84,
+      "median": 1138.92,
       "min": 877.78,
       "max": 1316.67
     },
@@ -203,19 +211,11 @@
       "max": 4388.9
     },
     {
-      "key": "Beyerdynamic DT 900 PRO X|NEW",
+      "key": "HIFIMAN Ananda Nano|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 899.72,
-      "max": 899.72
-    },
-    {
-      "key": "HIFIMAN Ananda Nano|USED",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 987.5,
+      "min": 1092.84,
       "max": 1092.84
     },
     {
