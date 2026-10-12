@@ -1,6 +1,7 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import snapshot from '../../data/offers.json' with {type:'json'};
+import retail from '../../data/retail-price-references.json' with {type:'json'};
 import {mockGitHub} from './github-mock';
 import {buyable} from '../../src/lib/board';
 import {europeanOffer} from '../../src/lib/europeScope';
@@ -209,14 +210,14 @@ test('new and used reference prices are visible with provenance but do not inven
   const market=card.getByTestId('market-reference');
   await expect(market).toContainText('350,2');
   await expect(market).toContainText('Próbka stanu');
-  await expect(market).toContainText('651');
-  await expect(market).toContainText('DT 880 Pro 250 Ω');
+  await expect(market).toContainText(String(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.pricePln).replace('.',','));
+  await expect(market).toContainText(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.variant);
   await expect(market.getByRole('link',{name:/Źródło indeksu nowej ceny/})).toHaveAttribute('href','https://www.ceneo.pl/5810846');
   await expect(card.locator('.metrics')).toContainText('— vs stan');
   await expect(card.locator('.metrics')).toContainText('— vs nowe');
   await page.getByRole('searchbox').fill('AKG K702');
   await expect(page.getByTestId('market-reference').first()).toContainText('1 odczytana cena ofertowa');
-  await expect(page.getByTestId('market-reference').first()).toContainText('679');
+  await expect(page.getByTestId('market-reference').first()).toContainText(String(retail.references.find(x=>x.model==='AKG K702')!.pricePln).replace('.',','));
   await page.getByRole('searchbox').fill('HIFIMAN Edition XS');
-  await expect(page.getByTestId('market-reference').first()).toContainText('953');
+  await expect(page.getByTestId('market-reference').first()).toContainText(String(retail.references.find(x=>x.model==='HIFIMAN Edition XS')!.pricePln).replace('.',','));
 });
