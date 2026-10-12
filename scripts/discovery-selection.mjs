@@ -1,3 +1,5 @@
+import {canonicalUrl} from './market-core.mjs';
+
 /**
  * Select direct merchant item pages before index/aggregator leads, without
  * allowing one brand or one marketplace to monopolise the verification budget.
@@ -102,4 +104,50 @@ export function recentResearchUrls(candidates, now, windows={
     if(c.originUrl)known.add(c.originUrl);
   }
   return known;
+}
+
+/** Plan fresh verification for research leads NOT already maintained as board
+ * offers. The board refresh independently rechecks its own seller URLs; spending
+ * 80 research slots on those same URLs starves unpromoted candidates.
+ *
+ * The plan changes URL scheduling only. No past proof can promote to LIVE:
+ * refresh-market still fetches the final seller page and executes all gates.
+ */
+export function planResearchRechecks(candidates, trackedModels, existingOffers, max=80) {
+  if(!Array.isArray(candidates)||!Array.isArray(trackedModels)||!Number.isFinite(max)||max<=0)
+    return {selected:[],eligible:0,skippedOnBoard:0,skippedDuplicates:0};
+  const tracked=new Map(trackedModels.map(m=>[m.model,m]));
+  const boardUrls=new Set((existingOffers||[]).filter(o=>typeof o?.url==='string').map(o=>canonicalUrl(o.url)));
+  const seen=new Set(),groups=new Map();
+  let skippedOnBoard=0,skippedDuplicates=0;
+  for(const c of candidates){
+    if(c?.verificationState!=='DIRECT_OFFER_VERIFIED'||!tracked.has(c.model)||
+       !['Polska','UE','non-EU / TLC'].includes(c.region)||typeof c.url!=='string'||
+       !c.url.startsWith('https://'))continue;
+    const url=canonicalUrl(c.url);
+    if(boardUrls.has(url)){skippedOnBoard++;continue}
+    if(seen.has(url)){skippedDuplicates++;continue}
+    seen.add(url);
+    if(!groups.has(c.model))groups.set(c.model,[]);
+    groups.get(c.model).push(c);
+  }
+  const priority=m=>Number.isFinite(tracked.get(m)?.priority)?tracked.get(m).priority:99;
+  const names=[...groups.keys()].sort((a,b)=>priority(a)-priority(b)||a.localeCompare(b));
+  const when=c=>Date.parse(c.verifiedAt||c.lastSeenAt||c.discoveredAt||'')||0;
+  for(const group of groups.values())group.sort((a,b)=>
+    (a.priceBasis==='SELLER_PAGE_PRICE'?0:1)-(b.priceBasis==='SELLER_PAGE_PRICE'?0:1)||
+    when(a)-when(b)||canonicalUrl(a.url).localeCompare(canonicalUrl(b.url)));
+  const eligible=seen.size,selected=[];
+  let remaining=true;
+  while(remaining&&selected.length<max){
+    remaining=false;
+    for(const name of names){
+      const next=groups.get(name).shift();
+      if(!next)continue;
+      remaining=true;
+      selected.push(next);
+      if(selected.length>=max)break;
+    }
+  }
+  return {selected,eligible,skippedOnBoard,skippedDuplicates};
 }
