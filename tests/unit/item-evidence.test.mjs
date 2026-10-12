@@ -41,6 +41,11 @@ describe('item-specific seller evidence',()=>{
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 25 Ohm classic</title>',dt48)).toBe(true);
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 E 200 Ohm</title>',dt48)).toBe(false);
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 250 Ohm</title>',dt48)).toBe(false);
+    const timeless={model:'7Hz Timeless',aliases:['7Hertz Timeless']};
+    expect(itemTitleMatchesModel('<title>7Hertz Timeless original planar IEM</title>',timeless)).toBe(true);
+    expect(itemTitleMatchesModel('<title>Linsoul 7Hertz Timeless AE DAC</title>',timeless)).toBe(false);
+    expect(itemTitleMatchesModel('<meta property="og:title" content="7Hz Timeless Anniversary Edition">',timeless)).toBe(false);
+    expect(itemTitleMatchesModel('<title>7Hz Timeless AE</title><script type="application/ld+json">{"@type":"Product","name":"7Hz Timeless"}</script>',timeless)).toBe(false);
     const m1={model:'Sony MDR-M1',aliases:['Sony MDR M1','MDR-M1']};
     expect(itemTitleMatchesModel('<title>Sony MDR-M1 monitor headphones</title>',m1)).toBe(true);
     expect(itemTitleMatchesModel('<title>Sony MDR-M1ST vintage</title>',m1)).toBe(false);
