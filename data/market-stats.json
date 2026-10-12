@@ -1,15 +1,7 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T11:51:49.082Z",
+  "refreshedAt": "2026-10-12T12:20:37.872Z",
   "stats": [
-    {
-      "key": "64 Audio U12t|NEW",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 9348.27,
-      "max": 9348.27
-    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -44,7 +36,7 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 6,
+      "n": 7,
       "confidence": "ROBUST",
       "median": 526.67,
       "min": 373.06,
@@ -289,6 +281,22 @@
       "median": null,
       "min": 1975.01,
       "max": 1975.01
+    },
+    {
+      "key": "Sennheiser HD 800|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 2457.78,
+      "max": 2457.78
+    },
+    {
+      "key": "Sennheiser HD 800|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 4301.12,
+      "max": 4301.12
     }
   ]
 }
