@@ -10,6 +10,7 @@ import {shippingEvidencePoland} from './shipping-evidence.mjs';
 import {itemTitleMatchesModel,priceBasis} from './sources/item-evidence.mjs';
 import {geographicEvidence,isEuropeRecordedOffer} from './sources/europe-scope.mjs';
 import {discoverEuropeanHifisharkRows} from './sources/hifishark-results.mjs';
+import {selectDiscoveryCandidates,recentResearchUrls} from './discovery-selection.mjs';
 
 const argv=process.argv.slice(2);
 const arg=(name,fallback='')=>{const i=argv.indexOf('--'+name);return i>=0?argv[i+1]:fallback};
@@ -206,6 +207,9 @@ const newAdditions=[];
 if(mode!=='quick'){
   const sweepSources=sources.filter(s=>s.searchUrlTemplate&&(s.id==='hifishark'||(s.region!=='GLOBAL'&&(mode==='deep'||s.sweep==='daily'))));
   const known=new Set([...(base.offers||[]),...priorAdditions].map(o=>o.url));
+  const cooling=recentResearchUrls(previousCandidates.candidates||[],now);
+  for(const url of cooling)known.add(url);
+  receipt.recentResearchUrlsSkipped=cooling.size;
   // ALL models on HiFiShark, Allegro, OLX, Vinted in FULL and DEEP.
   // One European source rotates daily; additional DEEP slots explore more sources.
   const coreSourceIds=coreSourceIdsForDate(now);
@@ -247,24 +251,14 @@ if(mode!=='quick'){
   });
   receipt.discovery={plannedJobs:jobs.length,coreSources:coreSourceIds,plannedSources:Object.values(discoveryStats).filter(s=>s.requested>0).length,reachableSources:Object.values(discoveryStats).filter(s=>s.reachable>0).length,sources:discoveryStats};
   // Discovery URLs are INTERNAL INPUT, never publishable offers or even user-facing leads.
-  // Round-robin by model: a prolific seller cannot consume all verification
-  // slots before other headphone families receive a chance.
-  const buckets=new Map(models.map(m=>[m.model,[]]));
-  const seen=new Set();
-  for(const rows of discovered)for(const c of rows||[]){
-    if(seen.has(c.url))continue;
-    seen.add(c.url);buckets.get(c.model)?.push(c);
-  }
-  const discoveredUrls=[];
-  let left=true;
-  while(left&&discoveredUrls.length<360){
-    left=false;
-    for(const group of buckets.values()){
-      if(!group.length)continue;
-      left=true;discoveredUrls.push(group.shift());
-      if(discoveredUrls.length>=360)break;
-    }
-  }
+  // Direct seller items compete first; HiFiShark must not consume all 360 slots
+  // before concrete European listing URLs receive verification.
+  const discoveredUrls=selectDiscoveryCandidates(discovered,models,sources,360);
+  receipt.discovery.selectedUrls=discoveredUrls.length;
+  receipt.discovery.selectedBySource=Object.fromEntries(
+    [...new Set(discoveredUrls.map(x=>x.sourceId))].map(id=>[id,discoveredUrls.filter(x=>x.sourceId===id).length])
+  );
+  receipt.discovery.modelsSelected=new Set(discoveredUrls.map(x=>x.model)).size;
   // Final seller verification remains mandatory for LIVE. A missing shipping
   // quote is disclosed, not a blocker; a bid/non-fixed price stays research-only.
   const verify=discoveredUrls;
