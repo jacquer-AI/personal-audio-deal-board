@@ -129,20 +129,24 @@ describe('source productivity routing and coverage',()=>{
 });
 
 
-describe('precise variant search without false DT48 impedance matches',()=>{
-  it('rotates aliases by date and source, always preserving the requested 25 ohm variant',()=>{
-    const rare={model:'Beyerdynamic DT 48 25 Ohm',searchTerms:['Beyerdynamic DT48 25 Ohm','Beyerdynamic DT 48 E 25','DT48 25 Ohm']};
+describe('vintage DT48 25-ohm discovery recall without unsafe model promotion',()=>{
+  it('rotates exact and broad DT48 discovery queries while rejecting other impedances',()=>{
+    const rare={model:'Beyerdynamic DT 48 25 Ohm',searchTerms:[
+      'Beyerdynamic DT48 25 Ohm','Beyerdynamic DT 48 E 25',
+      'DT48 25 Ohm','Beyerdynamic DT48','Beyerdynamic DT 48 E'
+    ]};
     const sites=['hifishark','subito-it','marktplaats-nl'].map(id=>({id,searchUrlTemplate:'https://site.example/?q={q}',queryTerms:[]}));
     const observed=new Set();
-    for(const date of ['2026-10-11','2026-10-12','2026-10-13']){
+    for(const date of ['2026-10-11','2026-10-12','2026-10-13','2026-10-14','2026-10-15']){
       const jobs=planDiscoveryJobs([rare],sites,3,sites.map(x=>x.id),date);
       expect(jobs).toHaveLength(3);
       for(const job of jobs){
-        expect(job.query).toMatch(/25/);
         expect(job.query).not.toMatch(/200|250/);
         observed.add(job.query);
       }
     }
-    expect(observed.size).toBe(3);
+    expect([...observed].sort()).toEqual([...rare.searchTerms].sort());
+    expect([...observed].some(q=>!q.includes('25'))).toBe(true);
+    expect([...observed].some(q=>q.includes('25'))).toBe(true);
   });
 });

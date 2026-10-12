@@ -39,6 +39,9 @@ describe('item-specific seller evidence',()=>{
     const dt48={model:'Beyerdynamic DT 48 25 Ohm',aliases:['DT48 25 Ohm','DT 48 E 25','DT48E 25','DT 48 25 ohm']};
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT 48 E 25 Ohm used</title>',dt48)).toBe(true);
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 25 Ohm classic</title>',dt48)).toBe(true);
+    // A broad search hit has no verified impedance and must never qualify as 25 ohm.
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 vintage used headphones</title>',dt48)).toBe(false);
+    expect(itemTitleMatchesModel('<title>Beyerdynamic DT 48 E old studio headphones</title>',dt48)).toBe(false);
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 E 200 Ohm</title>',dt48)).toBe(false);
     expect(itemTitleMatchesModel('<title>Beyerdynamic DT48 250 Ohm</title>',dt48)).toBe(false);
     const timeless={model:'7Hz Timeless',aliases:['7Hertz Timeless']};
