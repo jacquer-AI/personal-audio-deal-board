@@ -5,11 +5,17 @@ import fs from 'node:fs';
 export const SOURCES = [
   {model:'Beyerdynamic DT 880',url:'https://www.ceneo.pl/5810846',
    titleTokens:['beyerdynamic','dt880','pro'],
-   variant:'DT 880 Pro (impedancja ceny indeksowej nieustalona)'},
+   variant:'DT 880 Pro (impedancja ceny indeksowej nieustalona)',
+   fallback:{url:'https://supersound.pl/60737-beyerdynamic-dt-880-pro-250-ohm-studio-headphones-for-mixing-and-mastering-semi-open',
+     titleTokens:['beyerdynamic','dt880','pro','250'],variant:'DT 880 Pro 250 Ω',source:'Supersound.pl',host:'supersound.pl'}},
   {model:'AKG K702',url:'https://www.ceneo.pl/28644030',
-   titleTokens:['akg','k702'],variant:'AKG K702'},
+   titleTokens:['akg','k702'],variant:'AKG K702',
+   fallback:{url:'https://www.thomann.pl/akg_k702.htm',titleTokens:['akg','k702'],
+     variant:'AKG K702',source:'Thomann.pl',host:'www.thomann.pl'}},
   {model:'HIFIMAN Edition XS',url:'https://www.ceneo.pl/124339502',
-   titleTokens:['hifiman','editionxs'],variant:'HIFIMAN Edition XS'}
+   titleTokens:['hifiman','editionxs'],variant:'HIFIMAN Edition XS',
+   fallback:{url:'https://www.thomann.pl/hifiman_edition_xs.htm',titleTokens:['hifiman','editionxs'],
+     variant:'HIFIMAN Edition XS',source:'Thomann.pl',host:'www.thomann.pl'}}
 ];
 const decode = s => String(s||'').replace(/&nbsp;|&#160;|&#xa0;/gi,' ')
   .replace(/&amp;/gi,'&').replace(/&quot;/gi,'"')
@@ -76,6 +82,40 @@ export function parseCeneoIndex(html,config) {
   const value=fromHero??fromStructured;
   if(value===null)return {error:'NO_PRODUCT_SCOPED_PLN_PRICE',title};
   return {pricePln:value,title,method:fromHero!==null?'PRODUCT_HEADER_PLN':'PRODUCT_JSONLD_PLN'};
+}
+
+/** Read a matched product page's local retail price. Does not establish stock. */
+export function parseVendorReference(html, config) {
+  const input=String(html||'');
+  if(input.length<100||/captcha|access denied|verify you are human/i.test(input.slice(0,2000)))
+    return {error:'BLOCKED_OR_EMPTY'};
+  const h=input.match(/<h1\b[^>]*>([\s\S]{0,1800}?)<\/h1\s*>/i);
+  if(!h)return {error:'NO_PRODUCT_H1'};
+  const title=plain(h[1]),code=compact(title);
+  if(!config.titleTokens.every(token=>code.includes(compact(token))))
+    return {error:'WRONG_PRODUCT_TITLE',title};
+  const after=input.slice(h.index+h[0].length,h.index+h[0].length+65000);
+  const structured=jsonPrice(input,config.titleTokens.map(compact).join(''));
+  let price=null,method=null;
+  if(config.host==='www.thomann.pl'){
+    const marker=after.search(/Ceny z podatkiem VAT/i);
+    if(marker>=0){
+      // The price closest to the retail VAT marker, not recommended products.
+      const window=plain(after.slice(Math.max(0,marker-900),marker));
+      const candidates=[...window.matchAll(/(\d{1,5}(?:[\s\u00a0\u202f]\d{3})*(?:[,.]\d{2})?)\s*(?:zł|PLN)(?![a-z])/gi)]
+        .map(x=>readPln(x[1])).filter(x=>x!==null);
+      if(candidates.length){price=candidates.at(-1);method='THOMANN_PRICE_BEFORE_VAT';}
+    }
+  }else if(config.host==='supersound.pl'){
+    const marker=after.search(/Cena brutto/i);
+    if(marker>=0){
+      price=scopedAmount(after.slice(marker,marker+1700));
+      if(price!==null)method='SUPER_SOUND_GROSS_PRICE';
+    }
+  }
+  if(price===null&&structured!==null){price=structured;method='RETAILER_PRODUCT_JSONLD';}
+  if(price===null)return {error:'NO_PRODUCT_SCOPED_PLN_PRICE',title};
+  return {pricePln:price,title,method};
 }
 export function applyRetailChecks(previous, checks, observedAt, minRenewHours=24) {
   const doc=structuredClone(previous),t=Date.parse(observedAt);
