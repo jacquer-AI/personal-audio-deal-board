@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
-import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam} from './market-core.mjs';
+import {fingerprint,verificationFromHttp,directOfferEligible,computeDelta,mergeOverlay,mergeCurrent,materiallyEqual,lastObservations,dedupeObservations,statsFromLedger,redTeam,downgradeModelMismatch} from './market-core.mjs';
 import {conditionFrom,available,toPln,toNumber,isListingUrl,isPlausibleOfferLink} from './sources/common.mjs';
 import {parsePage} from './sources/index.mjs';
 import {planDiscoveryJobs,coreSourceIdsForDate} from './discovery-scheduler.mjs';
@@ -164,7 +164,8 @@ for(const r of reAdds.filter(Boolean)){
   if(u.verificationState==='DEAD')additions.push({...a,status:'STALE / REVERIFY',role:'OFFER',checked:u.checked,refresh:{...a.refresh,verificationState:'DEAD',http:u.http,checkedAt:now,firstVerifiedAt:first}});
   else if(u.status==='HISTORICAL')additions.push({...a,status:'HISTORICAL',role:'HISTORICAL',checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
   else if(u.verificationState==='DIRECT_OFFER_VERIFIED')additions.push({...a,price:u.price,original:u.original,checked:u.checked,refresh:{...a.refresh,verificationState:'DIRECT_OFFER_VERIFIED',http:u.http,checkedAt:now,firstVerifiedAt:first}});
-  else additions.push(a);
+  // A concrete model mismatch invalidates previously promoted LIVE authority.
+  else additions.push(downgradeModelMismatch(a,u,now));
 }
 for(const a of priorAdditions.filter(a=>!inScope(a)&&isEuropeRecordedOffer(a)))additions.push(a);
 
