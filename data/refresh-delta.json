@@ -1,106 +1,195 @@
 {
-  "new": 10,
-  "priceChanged": 1,
+  "new": 0,
+  "priceChanged": 0,
   "sold": 0,
   "stale": 0,
-  "changes": [
-    {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9348.27,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "NEW",
-      "model": "64 Audio U12t",
-      "price": 8119.46,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452309377-64-audio-u12t-high-end-in-ear-monitors"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1294.73,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2436480559-beyerdynamic-dt-1990-pro-studio-koptelefoon-v1"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1053.34,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2448250086-beyerdynamic-dt-1990-pro-250-ohm"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "price": 877.78,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2413047552-beyerdynamic-dt-900-pro-x-zo-goed-als-nieuw"
-    },
-    {
-      "type": "NEW",
-      "model": "Dan Clark Audio E3",
-      "price": 8448.63,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2437308762-dan-clark-audio-e3-6-35mm-2m-vivo-kabel"
-    },
-    {
-      "type": "NEW",
-      "model": "Etymotic ER2SE",
-      "price": 390.61,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450603834-etymotic-er2se-oortjes-zwart"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Ananda Nano",
-      "price": 1119.17,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2449671340-hifiman-ananda-nano-as-good-as-new"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 811.95,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450767765-hifiman-edition-xs-zgan"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 658.33,
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2449537584-hifiman-edition-xs"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 614.45,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2443065935-jbl-charge-6"
-    }
-  ],
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-12T11:25:53.570Z",
-  "mode": "quick",
-  "runId": "38242571392",
+  "refreshedAt": "2026-10-12T11:51:49.082Z",
+  "mode": "deep",
+  "runId": "38245356442",
   "candidates": 500,
-  "verifiedAdditions": 10,
-  "observationChanges": 2,
+  "verifiedAdditions": 0,
+  "observationChanges": 58,
   "freshnessRenewal": false,
   "receipt": {
-    "directUrlsAttempted": 74,
-    "directVerified": 57,
-    "accessRestricted": 9,
+    "directUrlsAttempted": 84,
+    "directVerified": 67,
+    "accessRestricted": 10,
     "ambiguous": 7,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 2
+      "allegro-pl": 3,
+      "ebay-pl": 1
     },
     "researchRechecked": 80,
     "researchReverified": 80,
     "researchPromotionBlocked": {
-      "ALREADY_ON_BOARD": 55,
+      "ALREADY_ON_BOARD": 65,
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 15
     },
-    "researchPromoted": 10
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 500,
+    "discovery": {
+      "plannedJobs": 360,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "mediaexpert-outlet"
+      ],
+      "plannedSources": 18,
+      "reachableSources": 8,
+      "sources": {
+        "allegro-pl": {
+          "requested": 7,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 7,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 7,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 7,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 56,
+          "reachable": 30,
+          "candidateUrls": 2,
+          "restricted": 26,
+          "errors": 0,
+          "checkedUrls": 2,
+          "unverifiedUrls": 2
+        },
+        "mediaexpert-outlet": {
+          "requested": 56,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 56,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 56,
+          "reachable": 56,
+          "candidateUrls": 5,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 5,
+          "unverifiedUrls": 5
+        },
+        "subito-it": {
+          "requested": 56,
+          "reachable": 56,
+          "candidateUrls": 1,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 1,
+          "unverifiedUrls": 1
+        },
+        "wallapop-es": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 6
+        },
+        "ebay-de": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 56,
+          "reachable": 56,
+          "candidateUrls": 242,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 45,
+          "unverifiedUrls": 45
+        },
+        "geizhals": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "tweakers": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "tophifi-outlet": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "ebay-uk": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "ceneo-pl": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "allegro-lokalnie": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "idealo-de": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        }
+      },
+      "selectedUrls": 53,
+      "selectedBySource": {
+        "hifishark": 45,
+        "vinted-pl": 2,
+        "marktplaats-nl": 5,
+        "subito-it": 1
+      },
+      "modelsSelected": 45
+    }
   }
 }

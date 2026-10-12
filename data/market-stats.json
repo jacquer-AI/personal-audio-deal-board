@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T11:25:53.570Z",
+  "refreshedAt": "2026-10-12T11:51:49.082Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -44,11 +44,51 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 5,
+      "n": 6,
       "confidence": "ROBUST",
       "median": 526.67,
       "min": 373.06,
-      "max": 610.06
+      "max": 614.45
+    },
+    {
+      "key": "Etymotic ER2SE|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 390.61,
+      "max": 390.61
+    },
+    {
+      "key": "Beyerdynamic DT 1990 PRO|B-STOCK",
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1053.34,
+      "max": 1294.73
+    },
+    {
+      "key": "HIFIMAN Edition XS|B-STOCK",
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 658.33,
+      "max": 811.95
+    },
+    {
+      "key": "Beyerdynamic DT 900 PRO X|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 877.78,
+      "max": 877.78
+    },
+    {
+      "key": "HIFIMAN Ananda Nano|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1119.17,
+      "max": 1119.17
     },
     {
       "key": "Sony MDR-M1|USED",
@@ -131,6 +171,14 @@
       "max": 658.33
     },
     {
+      "key": "Dan Clark Audio E3|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 8448.63,
+      "max": 8448.63
+    },
+    {
       "key": "HIFIMAN Arya Stealth|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
@@ -185,6 +233,14 @@
       "median": null,
       "min": 987.5,
       "max": 1092.84
+    },
+    {
+      "key": "64 Audio U12t|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 8119.46,
+      "max": 8119.46
     },
     {
       "key": "HIFIMAN Svanar Wireless|NEW",
