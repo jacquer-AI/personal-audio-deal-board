@@ -90,6 +90,19 @@ describe('scheduled retail price index: never a confirmed retail offer',()=>{
     expect(r.changed).toBe(false);
   });
 
+  it('reads exact DT 880 current PLN retail metadata, not old or net amount',()=>{
+    const seller=SOURCES[0].tertiary;
+    const body='<html><head><meta property="product:price:amount" content="781">'+
+      '<meta property="product:price:currency" content="PLN"></head>'+
+      '<body><h1>DT 880 PRO 250 Ohm</h1><p>Marka: Beyerdynamic</p>'+
+      '<span class="price-standard">971 zł</span><span>781 zł</span>'+
+      '<span class="price-additional">645,45 zł bez VAT</span></body></html>';
+    expect(parseVendorReference(body,seller)).toMatchObject({pricePln:781,method:'PROFIDJ_PRODUCT_META_PLN'});
+    expect(parseVendorReference(body.replace('product:price:currency" content="PLN"','product:price:currency" content="EUR"'),seller).error)
+      .toBe('NO_PRODUCT_SCOPED_PLN_PRICE');
+    expect(parseVendorReference(body.replace('DT 880 PRO','DT 990 PRO'),seller).error).toBe('WRONG_PRODUCT_TITLE');
+    expect(parseVendorReference(body.replace('781','971'),seller).pricePln).toBe(971);
+  });
   it('Profi-dj exact 250-ohm product structured PLN reference requires Beyerdynamic brand',()=>{
     const seller=SOURCES[0].tertiary;
     const product=JSON.stringify({'@type':'Product',name:'DT 880 PRO 250 Ohm',
