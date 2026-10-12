@@ -212,7 +212,7 @@ test('new and used reference prices are visible with provenance but do not inven
   await expect(market).toContainText('Próbka stanu');
   await expect(market).toContainText(String(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.pricePln).replace('.',','));
   await expect(market).toContainText(retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.variant);
-  await expect(market.getByRole('link',{name:/Źródło indeksu nowej ceny/})).toHaveAttribute('href','https://www.ceneo.pl/5810846');
+  await expect(market.getByRole('link',{name:/Źródło indeksu nowej ceny/})).toHaveAttribute('href',retail.references.find(x=>x.model==='Beyerdynamic DT 880')!.url);
   await expect(card.locator('.metrics')).toContainText('— vs stan');
   await expect(card.locator('.metrics')).toContainText('— vs nowe');
   await page.getByRole('searchbox').fill('AKG K702');
