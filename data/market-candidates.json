@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-10-12T14:12:31.820Z",
+  "refreshedAt": "2026-10-12T14:15:54.055Z",
   "mode": "full",
   "candidates": [
     {
@@ -85,8 +85,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -103,7 +103,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T14:15:54.055Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -125,9 +125,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -169,8 +169,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -209,8 +209,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false,
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -253,8 +253,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -357,7 +357,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T14:15:54.055Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -380,9 +380,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Dan Clark Audio E3",
@@ -399,7 +399,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T14:15:54.055Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -422,9 +422,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Etymotic ER2SE",
@@ -551,8 +551,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear OG",
@@ -593,8 +593,8 @@
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -636,8 +636,8 @@
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -678,8 +678,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -721,8 +721,8 @@
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -887,8 +887,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800",
@@ -929,8 +929,8 @@
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -971,8 +971,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sony MDR-M1",
@@ -989,7 +989,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T14:15:54.055Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1012,9 +1012,9 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Technics EAH-AZ100",
@@ -1138,8 +1138,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -1181,8 +1181,8 @@
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -1223,8 +1223,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -1349,8 +1349,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -1391,8 +1391,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -1434,8 +1434,8 @@
       ],
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -1558,8 +1558,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800",
@@ -1599,8 +1599,8 @@
       ],
       "firstSeenAt": "2026-10-12T12:20:37.872Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -1682,8 +1682,8 @@
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -1724,8 +1724,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -1764,8 +1764,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false,
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -1851,8 +1851,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -1893,8 +1893,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2019,8 +2019,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -2061,8 +2061,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -2146,8 +2146,8 @@
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -2274,8 +2274,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -2314,8 +2314,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:20:23.121Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false,
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true,
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE"
     },
@@ -2442,8 +2442,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -2484,8 +2484,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -2821,8 +2821,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -2883,7 +2883,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T14:15:54.055Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2907,9 +2907,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Dan Clark Audio E3",
@@ -2926,7 +2926,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-12T13:56:43.709Z",
+      "verifiedAt": "2026-10-12T14:15:54.055Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -2950,9 +2950,9 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-12T13:56:43.709Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "DUNU SA6 MkII",
@@ -3036,8 +3036,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -3079,8 +3079,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -3208,8 +3208,8 @@
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus Prestige Encore",
@@ -3339,8 +3339,8 @@
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -3467,8 +3467,8 @@
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -3554,8 +3554,8 @@
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -3685,8 +3685,8 @@
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -4370,8 +4370,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audio-Technica ATH-AD2000X",
@@ -4454,8 +4454,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -4482,8 +4482,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -4510,8 +4510,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -4693,8 +4693,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -4721,8 +4721,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Arya Stealth",
@@ -4777,8 +4777,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -5098,8 +5098,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audio-Technica ATH-M70x",
@@ -5154,8 +5154,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -5210,8 +5210,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -5294,8 +5294,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -5391,8 +5391,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -5587,8 +5587,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audio-Technica ATH-M70x",
@@ -5643,8 +5643,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -5699,8 +5699,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -5811,8 +5811,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -5951,8 +5951,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -6104,8 +6104,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -6216,8 +6216,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -6341,8 +6341,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -6453,8 +6453,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -6621,8 +6621,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -6761,8 +6761,8 @@
       ],
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -7838,8 +7838,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1970984993/ffe72ca0-c647-11f1-8f63-393862626263",
@@ -7879,11 +7879,11 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/43_18356/e0cc8012-c63d-11f1-b9a5-363166383366",
+      "url": "https://www.hifishark.com/goto/43_18356/7476abae-c647-11f1-8990-393862626263",
       "model": "Audeze LCD-S20",
       "site": "Funky Junk France",
       "country": "Francja",
@@ -7900,7 +7900,7 @@
       "fit": 2,
       "sourceId": "hifishark",
       "query": "Audeze LCD-S20",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -7918,10 +7918,10 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "url": "https://www.hifishark.com/goto/346_audio-technica-ath-adx5000/fee95b0c-c647-11f1-ad5b-366530616539",
@@ -7961,11 +7961,11 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/12_468980418/df81785c-c63d-11f1-8b6c-366530616539",
+      "url": "https://www.hifishark.com/goto/12_468980418/7421e880-c647-11f1-917b-393862626263",
       "model": "Audio-Technica ATH-M70x",
       "site": "Finn",
       "country": "Norwegia",
@@ -7982,7 +7982,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Audio-Technica ATH-M70x",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -8000,13 +8000,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
-      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/df58234e-c63d-11f1-b0cd-363166383366",
+      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/7438f0a2-c647-11f1-9f64-366530616539",
       "model": "Austrian Audio Hi-X60",
       "site": "Subito",
       "country": "Włochy",
@@ -8023,7 +8023,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Austrian Audio Hi-X60",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -8041,10 +8041,10 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1afSTh/fee57f78-c647-11f1-8ee8-393862626263",
@@ -8084,8 +8084,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1081238237/ff8125a4-c647-11f1-87ed-366530616539",
@@ -8125,8 +8125,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/261_48754/ff53067e-c647-11f1-a829-393862626263",
@@ -8166,8 +8166,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_2136966457/ffa85232-c647-11f1-a6be-366530616539",
@@ -8207,8 +8207,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/36_1325765946/fff86470-c647-11f1-89f3-366530616539",
@@ -8248,8 +8248,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/372_224553408/e0f3e5c6-c63d-11f1-849c-363166383366",
@@ -8334,7 +8334,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/e0c10f0c-c63d-11f1-8656-366530616539",
+      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/745459b4-c647-11f1-91fa-366530616539",
       "model": "Dan Clark Audio AEON 2 Noire",
       "site": "Subito",
       "country": "Włochy",
@@ -8351,7 +8351,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio AEON 2 Noire",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -8369,13 +8369,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
-      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/e1d77a52-c63d-11f1-9daf-366530616539",
+      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/747f3d0a-c647-11f1-bb33-393862626263",
       "model": "Dan Clark Audio E3",
       "site": "OLX Poland",
       "country": "Polska",
@@ -8392,7 +8392,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio E3",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -8410,13 +8410,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
-      "url": "https://www.hifishark.com/goto/12_463579059/e0bce828-c63d-11f1-9f63-393862626263",
+      "url": "https://www.hifishark.com/goto/12_463579059/7447d6e4-c647-11f1-9edb-393862626263",
       "model": "Dan Clark Audio Noire X",
       "site": "Finn",
       "country": "Norwegia",
@@ -8433,7 +8433,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio Noire X",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -8451,10 +8451,10 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/e1ba7d76-c63d-11f1-8ae8-366530616539",
@@ -8658,8 +8658,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_196144497/ff19fff0-c647-11f1-86f7-393862626263",
@@ -8699,8 +8699,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/372_224261870/ffb1ff62-c647-11f1-98bf-363166383366",
@@ -8740,8 +8740,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/363_47669198/ff5709d6-c647-11f1-9ed6-366530616539",
@@ -8781,8 +8781,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1ctG5o/ffd70906-c647-11f1-8bf4-393862626263",
@@ -8822,8 +8822,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_11oCBN/e07f5d6e-c63d-11f1-ac21-366530616539",
@@ -9068,8 +9068,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2450491518/e0b79fd0-c63d-11f1-8d9b-366530616539",
@@ -9191,8 +9191,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e27fab26-20a2-48a4-9450-a00ce498aabc/ff29469a-c647-11f1-a620-393862626263",
@@ -9232,8 +9232,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID13hnmg/ffacc056-c647-11f1-961d-363166383366",
@@ -9273,8 +9273,8 @@
       "fxEffectiveDate": "2026-10-12",
       "firstSeenAt": "2026-10-12T14:12:31.820Z",
       "lastSeenAt": "2026-10-12T14:12:31.820Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1359348970/e159bde2-c63d-11f1-bf2a-363166383366",
@@ -9441,7 +9441,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/34_m2418498446/df04de82-c63d-11f1-944f-366530616539",
+      "url": "https://www.hifishark.com/goto/34_m2418498446/73e7df46-c647-11f1-9f6d-363166383366",
       "model": "Sony MDR-CD900ST",
       "site": "Marktplaats",
       "country": "Holandia",
@@ -9458,7 +9458,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-CD900ST",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -9476,13 +9476,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
-      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/df1e360c-c63d-11f1-98ee-363166383366",
+      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/73fc4882-c647-11f1-8f44-366530616539",
       "model": "Sony MDR-M1",
       "site": "Kleinanzeigen",
       "country": "Niemcy",
@@ -9499,7 +9499,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-M1",
-      "discoveredAt": "2026-10-12T13:06:34.264Z",
+      "discoveredAt": "2026-10-12T14:15:54.055Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -9517,10 +9517,10 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-12T13:06:34.264Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T14:15:54.055Z",
+      "lastSeenAt": "2026-10-12T14:15:54.055Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "url": "https://www.hifishark.com/goto/222_2137729544/e01c4f9e-c63d-11f1-aef0-363166383366",
@@ -9851,7 +9851,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/43_18356/76ec6096-c637-11f1-8136-393862626263",
+      "url": "https://www.hifishark.com/goto/43_18356/e0cc8012-c63d-11f1-b9a5-363166383366",
       "model": "Audeze LCD-S20",
       "site": "Funky Junk France",
       "country": "Francja",
@@ -9868,7 +9868,7 @@
       "fit": 2,
       "sourceId": "hifishark",
       "query": "Audeze LCD-S20",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -9886,8 +9886,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -9933,15 +9933,15 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/239_3533663099-172-2065/75eeff00-c637-11f1-9f8a-366530616539",
+      "url": "https://www.hifishark.com/goto/12_468980418/df81785c-c63d-11f1-8b6c-366530616539",
       "model": "Audio-Technica ATH-M70x",
-      "site": "Kleinanzeigen",
-      "country": "Niemcy",
-      "region": "UE",
+      "site": "Finn",
+      "country": "Norwegia",
+      "region": "non-EU / TLC",
       "locationEvidence": "HIFISHARK_ITEM_COUNTRY_FLAG",
-      "askingPrice": 229,
-      "currency": "EUR",
-      "askingPriceText": "229 €",
+      "askingPrice": 2200,
+      "currency": "NOK",
+      "askingPriceText": "2 200 NOK",
       "aggregatorListedDate": null,
       "source": "HiFiShark",
       "verificationState": "AGGREGATOR_PRICE_ONLY",
@@ -9950,7 +9950,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Audio-Technica ATH-M70x",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -9963,18 +9963,18 @@
         "AVAILABILITY_UNKNOWN",
         "SHIPPING_UNKNOWN"
       ],
-      "originalPrice": 229,
-      "pricePln": 1005.06,
+      "originalPrice": 2200,
+      "pricePln": null,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/75baa4b2-c637-11f1-81ca-363166383366",
+      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/df58234e-c63d-11f1-b0cd-363166383366",
       "model": "Austrian Audio Hi-X60",
       "site": "Subito",
       "country": "Włochy",
@@ -9991,7 +9991,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Austrian Audio Hi-X60",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -10009,8 +10009,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -10302,7 +10302,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/76ea5f30-c637-11f1-8e5b-363166383366",
+      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/e0c10f0c-c63d-11f1-8656-366530616539",
       "model": "Dan Clark Audio AEON 2 Noire",
       "site": "Subito",
       "country": "Włochy",
@@ -10319,7 +10319,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio AEON 2 Noire",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -10337,13 +10337,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/77e30284-c637-11f1-b82b-393862626263",
+      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/e1d77a52-c63d-11f1-9daf-366530616539",
       "model": "Dan Clark Audio E3",
       "site": "OLX Poland",
       "country": "Polska",
@@ -10360,7 +10360,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio E3",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -10378,13 +10378,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/12_463579059/76ce0740-c637-11f1-bc96-366530616539",
+      "url": "https://www.hifishark.com/goto/12_463579059/e0bce828-c63d-11f1-9f63-393862626263",
       "model": "Dan Clark Audio Noire X",
       "site": "Finn",
       "country": "Norwegia",
@@ -10401,7 +10401,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio Noire X",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -10419,8 +10419,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -11409,7 +11409,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/34_m2418498446/75822bbe-c637-11f1-b8b4-393862626263",
+      "url": "https://www.hifishark.com/goto/34_m2418498446/df04de82-c63d-11f1-944f-366530616539",
       "model": "Sony MDR-CD900ST",
       "site": "Marktplaats",
       "country": "Holandia",
@@ -11426,7 +11426,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-CD900ST",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -11444,13 +11444,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/75a9a1a8-c637-11f1-8ff7-363166383366",
+      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/df1e360c-c63d-11f1-98ee-363166383366",
       "model": "Sony MDR-M1",
       "site": "Kleinanzeigen",
       "country": "Niemcy",
@@ -11467,7 +11467,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-M1",
-      "discoveredAt": "2026-10-12T12:20:37.872Z",
+      "discoveredAt": "2026-10-12T13:06:34.264Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -11485,8 +11485,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T12:20:37.872Z",
-      "lastSeenAt": "2026-10-12T12:20:37.872Z",
+      "firstSeenAt": "2026-10-12T13:06:34.264Z",
+      "lastSeenAt": "2026-10-12T13:06:34.264Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -11819,7 +11819,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/43_18356/6e57e710-c633-11f1-a384-363166383366",
+      "url": "https://www.hifishark.com/goto/43_18356/76ec6096-c637-11f1-8136-393862626263",
       "model": "Audeze LCD-S20",
       "site": "Funky Junk France",
       "country": "Francja",
@@ -11836,7 +11836,7 @@
       "fit": 2,
       "sourceId": "hifishark",
       "query": "Audeze LCD-S20",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -11854,8 +11854,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -11901,7 +11901,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/239_3533663099-172-2065/6d1637bc-c633-11f1-a123-363166383366",
+      "url": "https://www.hifishark.com/goto/239_3533663099-172-2065/75eeff00-c637-11f1-9f8a-366530616539",
       "model": "Audio-Technica ATH-M70x",
       "site": "Kleinanzeigen",
       "country": "Niemcy",
@@ -11918,7 +11918,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Audio-Technica ATH-M70x",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -11936,13 +11936,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/6ce89c58-c633-11f1-8726-366530616539",
+      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/75baa4b2-c637-11f1-81ca-363166383366",
       "model": "Austrian Audio Hi-X60",
       "site": "Subito",
       "country": "Włochy",
@@ -11959,7 +11959,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Austrian Audio Hi-X60",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -11977,8 +11977,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -12270,7 +12270,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/6e3c177e-c633-11f1-8839-366530616539",
+      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/76ea5f30-c637-11f1-8e5b-363166383366",
       "model": "Dan Clark Audio AEON 2 Noire",
       "site": "Subito",
       "country": "Włochy",
@@ -12287,7 +12287,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio AEON 2 Noire",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -12305,13 +12305,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/6f433080-c633-11f1-8a01-363166383366",
+      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/77e30284-c637-11f1-b82b-393862626263",
       "model": "Dan Clark Audio E3",
       "site": "OLX Poland",
       "country": "Polska",
@@ -12328,7 +12328,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio E3",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -12346,13 +12346,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/12_463579059/6e39cad2-c633-11f1-9537-366530616539",
+      "url": "https://www.hifishark.com/goto/12_463579059/76ce0740-c637-11f1-bc96-366530616539",
       "model": "Dan Clark Audio Noire X",
       "site": "Finn",
       "country": "Norwegia",
@@ -12369,7 +12369,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio Noire X",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -12387,8 +12387,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13377,7 +13377,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/34_m2418498446/6c87e714-c633-11f1-ba11-366530616539",
+      "url": "https://www.hifishark.com/goto/34_m2418498446/75822bbe-c637-11f1-b8b4-393862626263",
       "model": "Sony MDR-CD900ST",
       "site": "Marktplaats",
       "country": "Holandia",
@@ -13394,7 +13394,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-CD900ST",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -13412,13 +13412,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/6cbe367a-c633-11f1-92af-366530616539",
+      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/75a9a1a8-c637-11f1-8ff7-363166383366",
       "model": "Sony MDR-M1",
       "site": "Kleinanzeigen",
       "country": "Niemcy",
@@ -13435,7 +13435,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-M1",
-      "discoveredAt": "2026-10-12T11:51:49.082Z",
+      "discoveredAt": "2026-10-12T12:20:37.872Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -13453,8 +13453,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T11:51:49.082Z",
-      "lastSeenAt": "2026-10-12T11:51:49.082Z",
+      "firstSeenAt": "2026-10-12T12:20:37.872Z",
+      "lastSeenAt": "2026-10-12T12:20:37.872Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13746,7 +13746,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/43_18356/36b2efc2-c628-11f1-a5d8-613661386138",
+      "url": "https://www.hifishark.com/goto/43_18356/6e57e710-c633-11f1-a384-363166383366",
       "model": "Audeze LCD-S20",
       "site": "Funky Junk France",
       "country": "Francja",
@@ -13763,7 +13763,7 @@
       "fit": 2,
       "sourceId": "hifishark",
       "query": "Audeze LCD-S20",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -13781,8 +13781,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13828,15 +13828,15 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/12_468980418/35d3c4c8-c628-11f1-8640-376434373937",
+      "url": "https://www.hifishark.com/goto/239_3533663099-172-2065/6d1637bc-c633-11f1-a123-363166383366",
       "model": "Audio-Technica ATH-M70x",
-      "site": "Finn",
-      "country": "Norwegia",
-      "region": "non-EU / TLC",
+      "site": "Kleinanzeigen",
+      "country": "Niemcy",
+      "region": "UE",
       "locationEvidence": "HIFISHARK_ITEM_COUNTRY_FLAG",
-      "askingPrice": 2200,
-      "currency": "NOK",
-      "askingPriceText": "2 200 NOK",
+      "askingPrice": 229,
+      "currency": "EUR",
+      "askingPriceText": "229 €",
       "aggregatorListedDate": null,
       "source": "HiFiShark",
       "verificationState": "AGGREGATOR_PRICE_ONLY",
@@ -13845,7 +13845,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Audio-Technica ATH-M70x",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -13858,18 +13858,18 @@
         "AVAILABILITY_UNKNOWN",
         "SHIPPING_UNKNOWN"
       ],
-      "originalPrice": 2200,
-      "pricePln": null,
+      "originalPrice": 229,
+      "pricePln": 1005.06,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/35a04684-c628-11f1-8a45-613566666335",
+      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/6ce89c58-c633-11f1-8726-366530616539",
       "model": "Austrian Audio Hi-X60",
       "site": "Subito",
       "country": "Włochy",
@@ -13886,7 +13886,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Austrian Audio Hi-X60",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -13904,8 +13904,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -14197,7 +14197,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/36af73c4-c628-11f1-9625-376434373937",
+      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/6e3c177e-c633-11f1-8839-366530616539",
       "model": "Dan Clark Audio AEON 2 Noire",
       "site": "Subito",
       "country": "Włochy",
@@ -14214,7 +14214,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio AEON 2 Noire",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -14232,13 +14232,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/37d6886e-c628-11f1-a67e-613566666335",
+      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/6f433080-c633-11f1-8a01-363166383366",
       "model": "Dan Clark Audio E3",
       "site": "OLX Poland",
       "country": "Polska",
@@ -14255,7 +14255,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio E3",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -14273,13 +14273,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/12_463579059/36ae2a14-c628-11f1-aebc-376434373937",
+      "url": "https://www.hifishark.com/goto/12_463579059/6e39cad2-c633-11f1-9537-366530616539",
       "model": "Dan Clark Audio Noire X",
       "site": "Finn",
       "country": "Norwegia",
@@ -14296,7 +14296,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio Noire X",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -14314,8 +14314,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -15222,7 +15222,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/34_m2418498446/3575abe0-c628-11f1-b63b-376434373937",
+      "url": "https://www.hifishark.com/goto/34_m2418498446/6c87e714-c633-11f1-ba11-366530616539",
       "model": "Sony MDR-CD900ST",
       "site": "Marktplaats",
       "country": "Holandia",
@@ -15239,7 +15239,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-CD900ST",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -15257,13 +15257,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/357e1ff0-c628-11f1-9fa3-613661386138",
+      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/6cbe367a-c633-11f1-92af-366530616539",
       "model": "Sony MDR-M1",
       "site": "Kleinanzeigen",
       "country": "Niemcy",
@@ -15280,7 +15280,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-M1",
-      "discoveredAt": "2026-10-12T10:31:31.968Z",
+      "discoveredAt": "2026-10-12T11:51:49.082Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -15298,8 +15298,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T10:31:31.968Z",
-      "lastSeenAt": "2026-10-12T10:31:31.968Z",
+      "firstSeenAt": "2026-10-12T11:51:49.082Z",
+      "lastSeenAt": "2026-10-12T11:51:49.082Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -15591,7 +15591,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/43_18356/93d10a0a-c622-11f1-89cd-376434373937",
+      "url": "https://www.hifishark.com/goto/43_18356/36b2efc2-c628-11f1-a5d8-613661386138",
       "model": "Audeze LCD-S20",
       "site": "Funky Junk France",
       "country": "Francja",
@@ -15608,7 +15608,7 @@
       "fit": 2,
       "sourceId": "hifishark",
       "query": "Audeze LCD-S20",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -15626,8 +15626,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -15673,7 +15673,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/12_468980418/9306ce48-c622-11f1-a51e-376434373937",
+      "url": "https://www.hifishark.com/goto/12_468980418/35d3c4c8-c628-11f1-8640-376434373937",
       "model": "Audio-Technica ATH-M70x",
       "site": "Finn",
       "country": "Norwegia",
@@ -15690,7 +15690,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Audio-Technica ATH-M70x",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -15708,13 +15708,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/92cc5bf0-c622-11f1-ab1c-613566666335",
+      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/35a04684-c628-11f1-8a45-613566666335",
       "model": "Austrian Audio Hi-X60",
       "site": "Subito",
       "country": "Włochy",
@@ -15731,7 +15731,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Austrian Audio Hi-X60",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -15749,8 +15749,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -16042,7 +16042,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/93cb0240-c622-11f1-843f-376434373937",
+      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/36af73c4-c628-11f1-9625-376434373937",
       "model": "Dan Clark Audio AEON 2 Noire",
       "site": "Subito",
       "country": "Włochy",
@@ -16059,7 +16059,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio AEON 2 Noire",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -16077,13 +16077,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/94c4a890-c622-11f1-ad98-613661386138",
+      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/37d6886e-c628-11f1-a67e-613566666335",
       "model": "Dan Clark Audio E3",
       "site": "OLX Poland",
       "country": "Polska",
@@ -16100,7 +16100,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio E3",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -16118,13 +16118,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/12_463579059/93c87c00-c622-11f1-ad1b-613566666335",
+      "url": "https://www.hifishark.com/goto/12_463579059/36ae2a14-c628-11f1-aebc-376434373937",
       "model": "Dan Clark Audio Noire X",
       "site": "Finn",
       "country": "Norwegia",
@@ -16141,7 +16141,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio Noire X",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -16159,8 +16159,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -17067,7 +17067,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/34_m2418498446/929a4016-c622-11f1-94f3-376434373937",
+      "url": "https://www.hifishark.com/goto/34_m2418498446/3575abe0-c628-11f1-b63b-376434373937",
       "model": "Sony MDR-CD900ST",
       "site": "Marktplaats",
       "country": "Holandia",
@@ -17084,7 +17084,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-CD900ST",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17102,13 +17102,13 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/92bb9040-c622-11f1-8c4d-613566666335",
+      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/357e1ff0-c628-11f1-9fa3-613661386138",
       "model": "Sony MDR-M1",
       "site": "Kleinanzeigen",
       "country": "Niemcy",
@@ -17125,7 +17125,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-M1",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
+      "discoveredAt": "2026-10-12T10:31:31.968Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17143,8 +17143,8 @@
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-12T09:51:25.481Z",
+      "firstSeenAt": "2026-10-12T10:31:31.968Z",
+      "lastSeenAt": "2026-10-12T10:31:31.968Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -17436,7 +17436,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/43_18356/5f8cd55c-c614-11f1-86c7-613566666335",
+      "url": "https://www.hifishark.com/goto/43_18356/93d10a0a-c622-11f1-89cd-376434373937",
       "model": "Audeze LCD-S20",
       "site": "Funky Junk France",
       "country": "Francja",
@@ -17453,7 +17453,7 @@
       "fit": 2,
       "sourceId": "hifishark",
       "query": "Audeze LCD-S20",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17467,12 +17467,12 @@
         "SHIPPING_UNKNOWN"
       ],
       "originalPrice": 498,
-      "pricePln": 2180,
+      "pricePln": 2185.67,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -17518,15 +17518,15 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/102_CID99-ID1ciA2I/5e6629a8-c614-11f1-84be-613661386138",
+      "url": "https://www.hifishark.com/goto/12_468980418/9306ce48-c622-11f1-a51e-376434373937",
       "model": "Audio-Technica ATH-M70x",
-      "site": "OLX Poland",
-      "country": "Polska",
-      "region": "Polska",
+      "site": "Finn",
+      "country": "Norwegia",
+      "region": "non-EU / TLC",
       "locationEvidence": "HIFISHARK_ITEM_COUNTRY_FLAG",
-      "askingPrice": 760,
-      "currency": "PLN",
-      "askingPriceText": "760 zł",
+      "askingPrice": 2200,
+      "currency": "NOK",
+      "askingPriceText": "2 200 NOK",
       "aggregatorListedDate": null,
       "source": "HiFiShark",
       "verificationState": "AGGREGATOR_PRICE_ONLY",
@@ -17535,7 +17535,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Audio-Technica ATH-M70x",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17548,18 +17548,18 @@
         "AVAILABILITY_UNKNOWN",
         "SHIPPING_UNKNOWN"
       ],
-      "originalPrice": 760,
-      "pricePln": 760,
+      "originalPrice": 2200,
+      "pricePln": null,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/5e416c62-c614-11f1-9e04-613661386138",
+      "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/92cc5bf0-c622-11f1-ab1c-613566666335",
       "model": "Austrian Audio Hi-X60",
       "site": "Subito",
       "country": "Włochy",
@@ -17576,7 +17576,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Austrian Audio Hi-X60",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17590,12 +17590,12 @@
         "SHIPPING_UNKNOWN"
       ],
       "originalPrice": 200,
-      "pricePln": 875.5,
+      "pricePln": 877.78,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -17887,7 +17887,7 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/5f648430-c614-11f1-952d-376434373937",
+      "url": "https://www.hifishark.com/goto/152_632b4294-515f-4af2-99bd-644bec27ad58/93cb0240-c622-11f1-843f-376434373937",
       "model": "Dan Clark Audio AEON 2 Noire",
       "site": "Subito",
       "country": "Włochy",
@@ -17904,7 +17904,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio AEON 2 Noire",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17918,17 +17918,17 @@
         "SHIPPING_UNKNOWN"
       ],
       "originalPrice": 550,
-      "pricePln": 2407.63,
+      "pricePln": 2413.9,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/606197ce-c614-11f1-a90c-613566666335",
+      "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/94c4a890-c622-11f1-ad98-613661386138",
       "model": "Dan Clark Audio E3",
       "site": "OLX Poland",
       "country": "Polska",
@@ -17945,7 +17945,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio E3",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17962,22 +17962,22 @@
       "pricePln": 7000,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/10_442408512/5f61aa58-c614-11f1-8f50-613566666335",
+      "url": "https://www.hifishark.com/goto/12_463579059/93c87c00-c622-11f1-ad1b-613566666335",
       "model": "Dan Clark Audio Noire X",
-      "site": "Audio-markt",
-      "country": "Niemcy",
-      "region": "UE",
+      "site": "Finn",
+      "country": "Norwegia",
+      "region": "non-EU / TLC",
       "locationEvidence": "HIFISHARK_ITEM_COUNTRY_FLAG",
-      "askingPrice": 790,
-      "currency": "EUR",
-      "askingPriceText": "790 €",
+      "askingPrice": 10200,
+      "currency": "NOK",
+      "askingPriceText": "10 200 NOK",
       "aggregatorListedDate": null,
       "source": "HiFiShark",
       "verificationState": "AGGREGATOR_PRICE_ONLY",
@@ -17986,7 +17986,7 @@
       "fit": 5,
       "sourceId": "hifishark",
       "query": "Dan Clark Audio Noire X",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -17999,13 +17999,13 @@
         "AVAILABILITY_UNKNOWN",
         "SHIPPING_UNKNOWN"
       ],
-      "originalPrice": 790,
-      "pricePln": 3458.23,
+      "originalPrice": 10200,
+      "pricePln": null,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -18912,15 +18912,15 @@
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/264_QyGHK/5deed790-c614-11f1-ad1e-613661386138",
+      "url": "https://www.hifishark.com/goto/34_m2418498446/929a4016-c622-11f1-94f3-376434373937",
       "model": "Sony MDR-CD900ST",
-      "site": "OLX Ukraine",
-      "country": "Ukraina",
-      "region": "non-EU / TLC",
+      "site": "Marktplaats",
+      "country": "Holandia",
+      "region": "UE",
       "locationEvidence": "HIFISHARK_ITEM_COUNTRY_FLAG",
-      "askingPrice": 5000,
-      "currency": "UAH",
-      "askingPriceText": "5 000 UAH",
+      "askingPrice": 100,
+      "currency": "EUR",
+      "askingPriceText": "100 €",
       "aggregatorListedDate": null,
       "source": "HiFiShark",
       "verificationState": "AGGREGATOR_PRICE_ONLY",
@@ -18929,7 +18929,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-CD900ST",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -18942,26 +18942,26 @@
         "AVAILABILITY_UNKNOWN",
         "SHIPPING_UNKNOWN"
       ],
-      "originalPrice": 5000,
-      "pricePln": null,
+      "originalPrice": 100,
+      "pricePln": 438.89,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
     {
-      "url": "https://www.hifishark.com/goto/152_eef26a60-937d-4362-8832-6d50401875a6/5e16697c-c614-11f1-8d71-613566666335",
+      "url": "https://www.hifishark.com/goto/239_3082712098-172-7581/92bb9040-c622-11f1-8c4d-613566666335",
       "model": "Sony MDR-M1",
-      "site": "Subito",
-      "country": "Włochy",
+      "site": "Kleinanzeigen",
+      "country": "Niemcy",
       "region": "UE",
       "locationEvidence": "HIFISHARK_ITEM_COUNTRY_FLAG",
-      "askingPrice": 149,
+      "askingPrice": 150,
       "currency": "EUR",
-      "askingPriceText": "149 €",
+      "askingPriceText": "150 €",
       "aggregatorListedDate": null,
       "source": "HiFiShark",
       "verificationState": "AGGREGATOR_PRICE_ONLY",
@@ -18970,7 +18970,7 @@
       "fit": null,
       "sourceId": "hifishark",
       "query": "Sony MDR-M1",
-      "discoveredAt": "2026-10-12T08:10:00.085Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "AGGREGATOR PRICE ONLY",
       "priceEvidenceVersion": "HIFISHARK_CARD_PRICE_V2",
       "evidence": "HIFISHARK_ITEM_ROW_PRICE",
@@ -18983,13 +18983,13 @@
         "AVAILABILITY_UNKNOWN",
         "SHIPPING_UNKNOWN"
       ],
-      "originalPrice": 149,
-      "pricePln": 652.25,
+      "originalPrice": 150,
+      "pricePln": 658.33,
       "priceBasis": "AGGREGATOR_INDEXED_ASK",
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-09",
-      "firstSeenAt": "2026-10-12T08:10:00.085Z",
-      "lastSeenAt": "2026-10-12T08:10:00.085Z",
+      "fxEffectiveDate": "2026-10-12",
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-10-12T09:51:25.481Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
