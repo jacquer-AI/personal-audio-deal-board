@@ -2,39 +2,32 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 1,
-  "changes": [
-    {
-      "type": "STALE",
-      "model": "7Hz Timeless",
-      "url": "https://www.subito.it/audio-video/auricolari-planari-linsoul-7hertz-timeless-ae-dac-roma-663684845.htm"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-12T00:51:42.291Z",
+  "refreshedAt": "2026-10-12T05:50:12.104Z",
   "mode": "quick",
-  "runId": "38189616588",
+  "runId": "38209667850",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 6,
-  "freshnessRenewal": false,
+  "observationChanges": 1,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 35,
-    "directVerified": 19,
+    "directVerified": 18,
     "accessRestricted": 9,
     "ambiguous": 6,
     "dead": 0,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
-    "researchRechecked": 43,
-    "researchReverified": 42,
-    "researchDowngraded": 1
+    "researchRechecked": 42,
+    "researchReverified": 42
   }
 }
