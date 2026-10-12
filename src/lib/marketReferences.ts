@@ -26,6 +26,7 @@ export type PricePoint = {
   explanation: string;
   url?: string;
   variant?: string;
+  source?: string;
   observedAt?: string;
   stale: boolean;
 };
@@ -73,7 +74,7 @@ export function priceReferences(
     newest = listing ? {
       value: listing.pricePln, basis: 'RETAIL_INDEX',
       explanation: 'indeks ceny nowej (niepotwierdzona dostępność)',
-      url: listing.url, variant: listing.variant, observedAt: listing.observedAt,
+      url: listing.url, variant: listing.variant, source: listing.source, observedAt: listing.observedAt,
       stale: ageStale(listing.observedAt, now, 7)
     } : fromSample(sample('NEW'), statistics.refreshedAt, now);
   }
