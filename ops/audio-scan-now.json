@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "requestId": "audio-funnel-e2e-agy-pr37-20261012-v3",
+  "requestId": "audio-funnel-agy-validated-full-retry-20261012-v4",
   "mode": "full",
   "categories": "all",
-  "purpose": "E2E after PR37: FULL search all 56 models, verify source-balanced candidate slots, fail-closed seller errors, prevent same URL duplicate HTTP between board/research, keep all Marktplaats bid-only and HiFiShark aggregator prices research-only; persist meaningful diff then deploy Pages; report real LIVE offer count.",
+  "purpose": "Physical retry after fixing price unit tests PR38: FULL discover and independently validate all 56 models; candidate source fairness; persist verified additions only, retain bids/aggregator-only research statuses; deploy Pages after complete data validation and check live count.",
   "requestedOn": "2026-10-12"
 }
