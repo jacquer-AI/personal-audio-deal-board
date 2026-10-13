@@ -1,46 +1,103 @@
 {
-  "new": 0,
+  "new": 7,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
+  "stale": 2,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9348.27,
+      "from": 9348.27,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "NEW",
+      "model": "Bowers & Wilkins Pi8",
+      "price": 1009.4,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452229582-bowers-wilkins-pi8-zo-goed-als-nieuw"
+    },
+    {
+      "type": "NEW",
+      "model": "Bowers & Wilkins Pi8",
+      "price": 1000.67,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452663844-bowers-wilkins-pi8-zwarte-draadloze-oordopjes"
+    },
+    {
+      "type": "STALE",
+      "model": "Dan Clark Audio AEON 2 Noire",
+      "url": "https://www.subito.it/audio-video/dan-clark-audio-aeon-2-noire-vicenza-662807570.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 438.89,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451675258-jbl-charge-6-draadloze-bluetooth-speaker-blauw-nwpr-160"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 570.56,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2450992332-jbl-charge-6-draagbare-bluetooth-speaker-zwart"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 548.61,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451127233-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 614.45,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2452326610-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw-geseale"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 438.89,
+      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-speakers/m2450565666-jbl-charge-6"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-12T15:15:05.878Z",
+  "refreshedAt": "2026-10-13T00:35:07.278Z",
   "mode": "quick",
-  "runId": "38268818295",
+  "runId": "38327954760",
   "candidates": 500,
-  "verifiedAdditions": 0,
-  "observationChanges": 3,
-  "freshnessRenewal": false,
+  "verifiedAdditions": 7,
+  "observationChanges": 9,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 88,
-    "directVerified": 66,
+    "directVerified": 64,
     "accessRestricted": 9,
     "ambiguous": 11,
-    "dead": 1,
+    "dead": 2,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "olx-pl": 4,
       "allegro-pl": 2,
+      "olx-pl": 4,
       "ebay-pl": 1
     },
-    "researchRechecked": 80,
-    "researchReverified": 80,
-    "researchPromotionBlocked": {
-      "ALREADY_ON_BOARD": 66,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 14
+    "researchSelection": {
+      "eligible": 33,
+      "selected": 33,
+      "skippedOnBoard": 66,
+      "skippedDuplicates": 0
     },
-    "researchPromoted": 0
+    "researchRechecked": 33,
+    "researchReverified": 33,
+    "researchPromotionBlocked": {
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26
+    },
+    "researchPromoted": 7
   }
 }

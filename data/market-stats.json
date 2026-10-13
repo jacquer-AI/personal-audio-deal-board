@@ -1,15 +1,7 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-12T15:15:05.878Z",
+  "refreshedAt": "2026-10-13T00:35:07.278Z",
   "stats": [
-    {
-      "key": "64 Audio U12t|NEW",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 9348.27,
-      "max": 9348.27
-    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -153,14 +145,6 @@
       "median": null,
       "min": 877.78,
       "max": 877.78
-    },
-    {
-      "key": "Dan Clark Audio AEON 2 Noire|USED",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 2413.9,
-      "max": 2413.9
     },
     {
       "key": "Etymotic ER4XR|USED",
