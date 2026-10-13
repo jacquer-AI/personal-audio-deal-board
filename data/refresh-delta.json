@@ -2,56 +2,66 @@
   "new": 0,
   "priceChanged": 1,
   "sold": 1,
-  "stale": 0,
+  "stale": 2,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9348.27,
-      "to": 9330.59,
+      "from": 9330.59,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    },
+    {
       "type": "SOLD",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451175293-jbl-charge-6-bluetooth-speaker-nieuw-en-ongeopend"
+      "model": "Technics EAH-AZ100",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2420087831-nieuwe-technics-az80-en-az100-draadloze-oordopjes"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-13T14:05:44.094Z",
+  "refreshedAt": "2026-10-13T22:40:02.383Z",
   "mode": "quick",
-  "runId": "38410394606",
+  "runId": "38479280922",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 82,
+  "observationChanges": 8,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 103,
-    "directVerified": 79,
-    "accessRestricted": 10,
-    "ambiguous": 11,
-    "dead": 2,
-    "soldOrOut": 1,
+    "directVerified": 76,
+    "accessRestricted": 9,
+    "ambiguous": 10,
+    "dead": 3,
+    "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 3,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     },
     "researchSelection": {
-      "eligible": 30,
-      "selected": 30,
+      "eligible": 29,
+      "selected": 29,
       "skippedOnBoard": 81,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 30,
-    "researchReverified": 29,
-    "researchDowngraded": 1,
+    "researchRechecked": 29,
+    "researchReverified": 26,
+    "researchDowngraded": 3,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26,
+      "NOT_VERIFIED_IN_THIS_RUN": 3
     },
     "researchPromoted": 0
   }
