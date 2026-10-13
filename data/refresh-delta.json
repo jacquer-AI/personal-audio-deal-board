@@ -1,87 +1,37 @@
 {
-  "new": 8,
-  "priceChanged": 2,
-  "sold": 0,
+  "new": 0,
+  "priceChanged": 1,
+  "sold": 1,
   "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9348.27,
+      "from": 9348.27,
+      "to": 9330.59,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "NEW",
-      "model": "Audio-Technica ATH-AD2000X",
-      "price": 1097.22,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2451456322-audio-technica-ad2000x"
-    },
-    {
-      "type": "NEW",
-      "model": "Audio-Technica ATH-M70x",
-      "price": 702.22,
-      "url": "https://www.subito.it/audio-video/audio-technica-ath-m70x-cuffie-monitor-da-studio-salerno-664355930.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 614.45,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2434369002-beyer-dynamic-dt880pro-studio-headphone"
-    },
-    {
-      "type": "NEW",
+      "type": "SOLD",
       "model": "JBL Charge 6",
-      "price": 460.83,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-roma-664307202.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Sennheiser HD 800 S",
-      "price": 3511.12,
-      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-torino-664348538.htm"
-    },
-    {
-      "type": "PRICE",
-      "model": "Sennheiser HD 800 S",
-      "from": 4388.9,
-      "to": 4301.12,
-      "url": "https://www.subito.it/audio-video/sennheiser-hd800s-nuove-roma-663044659.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Sennheiser HD 800",
-      "price": 2808.9,
-      "url": "https://www.subito.it/audio-video/sennheiser-hd800-genova-659287121.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Sony MDR-M1",
-      "price": 482.78,
-      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-torino-664273268.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 873.39,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2420087831-nieuwe-technics-az80-en-az100-draadloze-oordopjes"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451175293-jbl-charge-6-bluetooth-speaker-nieuw-en-ongeopend"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-13T09:41:39.213Z",
-  "mode": "full",
-  "runId": "38378103507",
+  "refreshedAt": "2026-10-13T14:05:44.094Z",
+  "mode": "quick",
+  "runId": "38410394606",
   "candidates": 500,
-  "verifiedAdditions": 8,
-  "observationChanges": 32,
+  "verifiedAdditions": 0,
+  "observationChanges": 82,
   "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 95,
-    "directVerified": 72,
+    "directUrlsAttempted": 103,
+    "directVerified": 79,
     "accessRestricted": 10,
     "ambiguous": 11,
     "dead": 2,
-    "soldOrOut": 0,
+    "soldOrOut": 1,
     "notDirect": 2,
     "remoteErrors": 0,
     "sourcesRestricted": {
@@ -91,127 +41,18 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 26,
-      "selected": 26,
-      "skippedOnBoard": 73,
+      "eligible": 30,
+      "selected": 30,
+      "skippedOnBoard": 81,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 26,
-    "researchReverified": 26,
+    "researchRechecked": 30,
+    "researchReverified": 29,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 500,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "ebay-de"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 2,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 2,
-          "unverifiedUrls": 2
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 13,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 13,
-          "verifiedUrls": 7,
-          "unverifiedUrls": 6
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 8,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 8,
-          "verifiedUrls": 5,
-          "unverifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 263,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 257,
-      "selectedUrls": 29,
-      "selectedBySource": {
-        "marktplaats-nl": 13,
-        "subito-it": 8,
-        "vinted-pl": 2,
-        "hifishark": 6
-      },
-      "modelsSelected": 18
-    }
+    "researchPromoted": 0
   }
 }
