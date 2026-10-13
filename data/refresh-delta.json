@@ -1,103 +1,217 @@
 {
-  "new": 7,
-  "priceChanged": 1,
+  "new": 8,
+  "priceChanged": 2,
   "sold": 0,
-  "stale": 2,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9348.27,
-      "to": 9206,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "64 Audio U12t",
+      "from": 9206,
+      "to": 9348.27,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "NEW",
-      "model": "Bowers & Wilkins Pi8",
-      "price": 1009.4,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452229582-bowers-wilkins-pi8-zo-goed-als-nieuw"
+      "model": "Audio-Technica ATH-AD2000X",
+      "price": 1097.22,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2451456322-audio-technica-ad2000x"
     },
     {
       "type": "NEW",
-      "model": "Bowers & Wilkins Pi8",
-      "price": 1000.67,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452663844-bowers-wilkins-pi8-zwarte-draadloze-oordopjes"
-    },
-    {
-      "type": "STALE",
-      "model": "Dan Clark Audio AEON 2 Noire",
-      "url": "https://www.subito.it/audio-video/dan-clark-audio-aeon-2-noire-vicenza-662807570.htm"
+      "model": "Audio-Technica ATH-M70x",
+      "price": 702.22,
+      "url": "https://www.subito.it/audio-video/audio-technica-ath-m70x-cuffie-monitor-da-studio-salerno-664355930.htm"
     },
     {
       "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 438.89,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451675258-jbl-charge-6-draadloze-bluetooth-speaker-blauw-nwpr-160"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 570.56,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2450992332-jbl-charge-6-draagbare-bluetooth-speaker-zwart"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 548.61,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451127233-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
+      "model": "Beyerdynamic DT 880",
       "price": 614.45,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2452326610-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw-geseale"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2434369002-beyer-dynamic-dt880pro-studio-headphone"
     },
     {
       "type": "NEW",
       "model": "JBL Charge 6",
-      "price": 438.89,
-      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-speakers/m2450565666-jbl-charge-6"
+      "price": 460.83,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-roma-664307202.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Sennheiser HD 800 S",
+      "price": 3511.12,
+      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-torino-664348538.htm"
+    },
+    {
+      "type": "PRICE",
+      "model": "Sennheiser HD 800 S",
+      "from": 4388.9,
+      "to": 4301.12,
+      "url": "https://www.subito.it/audio-video/sennheiser-hd800s-nuove-roma-663044659.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Sennheiser HD 800",
+      "price": 2808.9,
+      "url": "https://www.subito.it/audio-video/sennheiser-hd800-genova-659287121.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Sony MDR-M1",
+      "price": 482.78,
+      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-torino-664273268.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Technics EAH-AZ100",
+      "price": 873.39,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2420087831-nieuwe-technics-az80-en-az100-draadloze-oordopjes"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-13T00:35:07.278Z",
-  "mode": "quick",
-  "runId": "38327954760",
+  "refreshedAt": "2026-10-13T09:41:39.213Z",
+  "mode": "full",
+  "runId": "38378103507",
   "candidates": 500,
-  "verifiedAdditions": 7,
-  "observationChanges": 9,
+  "verifiedAdditions": 8,
+  "observationChanges": 32,
   "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 88,
-    "directVerified": 64,
-    "accessRestricted": 9,
+    "directUrlsAttempted": 95,
+    "directVerified": 72,
+    "accessRestricted": 10,
     "ambiguous": 11,
     "dead": 2,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 33,
-      "selected": 33,
-      "skippedOnBoard": 66,
+      "eligible": 26,
+      "selected": 26,
+      "skippedOnBoard": 73,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 33,
-    "researchReverified": 33,
+    "researchRechecked": 26,
+    "researchReverified": 26,
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 26
     },
-    "researchPromoted": 7
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 500,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "ebay-de"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 2,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 2,
+          "unverifiedUrls": 2
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 13,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 13,
+          "verifiedUrls": 7,
+          "unverifiedUrls": 6
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 8,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 8,
+          "verifiedUrls": 5,
+          "unverifiedUrls": 3
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 263,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 257,
+      "selectedUrls": 29,
+      "selectedBySource": {
+        "marktplaats-nl": 13,
+        "subito-it": 8,
+        "vinted-pl": 2,
+        "hifishark": 6
+      },
+      "modelsSelected": 18
+    }
   }
 }
