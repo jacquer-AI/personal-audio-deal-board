@@ -1,29 +1,21 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-14T11:45:38.053Z",
+  "refreshedAt": "2026-10-14T17:06:33.661Z",
   "stats": [
     {
-      "key": "64 Audio U12t|NEW",
-      "n": 1,
+      "key": "Technics EAH-AZ100|NEW",
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 9309.29,
-      "max": 9309.29
-    },
-    {
-      "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
       "min": 957.16,
       "max": 2617.99
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 6,
+      "n": 5,
       "confidence": "ROBUST",
-      "median": 1134.17,
-      "min": 874.12,
+      "median": 1180.06,
+      "min": 1088.28,
       "max": 1311.18
     },
     {

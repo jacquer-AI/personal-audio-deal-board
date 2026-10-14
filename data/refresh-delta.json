@@ -1,50 +1,53 @@
 {
   "new": 0,
-  "priceChanged": 2,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 1,
+  "stale": 3,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9330.59,
-      "to": 9309.29,
+      "from": 9309.29,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2448250086-beyerdynamic-dt-1990-pro-250-ohm"
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "PRICE",
-      "model": "HIFIMAN Ananda Nano",
-      "from": 1119.17,
-      "to": 1092.65,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2449671340-hifiman-ananda-nano-as-good-as-new"
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-bluetooth-roma-663530613.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-14T11:45:38.053Z",
+  "refreshedAt": "2026-10-14T17:06:33.661Z",
   "mode": "quick",
-  "runId": "38558825951",
+  "runId": "38603776866",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 83,
-  "freshnessRenewal": false,
+  "observationChanges": 6,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 105,
-    "directVerified": 79,
-    "accessRestricted": 9,
-    "ambiguous": 10,
+    "directVerified": 76,
+    "accessRestricted": 10,
+    "ambiguous": 11,
     "dead": 4,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -54,9 +57,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 27,
-    "researchReverified": 27,
+    "researchReverified": 26,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 27
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0
   }
