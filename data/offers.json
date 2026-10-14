@@ -18,7 +18,7 @@
       "rrp": 9612,
       "newMarket": 9612,
       "sameMarket": 9612,
-      "price": 9330.59,
+      "price": 9309.29,
       "country": "Węgry",
       "seller": "Muzix",
       "region": "UE",
@@ -31,7 +31,7 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -369,7 +369,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -516,16 +516,16 @@
       "country": "Poland",
       "seller": "Technics Poland",
       "region": "Polska",
-      "status": "STALE / REVERIFY",
+      "status": "LIVE VERIFIED",
       "original": "999 PLN",
       "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/",
-      "note": "Available; add to cart · Free delivery shown · Refresh: MODEL_NOT_CONFIRMED. Prior SSOT value retained.",
+      "note": "Available; add to cart · Free delivery shown · Refresh: exact model + explicit price on direct offer page (JSON_LD).",
       "role": "OFFER",
-      "checked": "2026-10-07",
+      "checked": "2026-10-14",
       "refresh": {
-        "verificationState": "MODEL_NOT_CONFIRMED",
+        "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -545,13 +545,13 @@
       "status": "STALE / REVERIFY",
       "original": "2198,99 PLN",
       "url": "https://allegro.pl/produkt/sluchawki-bezprzewodowe-dokanalowe-noble-audio-fokus-rex5-green-f9ee1b1a-5e4c-42e4-bf49-617e58490682?offerId=17454902763",
-      "note": "1 unit shown; add to cart · Domestic shipping · Refresh: source restricted automated access. Prior SSOT value retained.",
+      "note": "1 unit shown; add to cart · Domestic shipping · Refresh: temporary seller error; prior quote retained, current availability unconfirmed.",
       "role": "OFFER",
       "checked": "2026-10-07",
       "refresh": {
-        "verificationState": "ACCESS_RESTRICTED_REVERIFY",
-        "http": 403,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "verificationState": "REMOTE_ERROR_RECHECK",
+        "http": null,
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "DEAD",
         "http": 404,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -629,7 +629,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z"
+        "checkedAt": "2026-10-14T11:45:38.053Z"
       }
     },
     {
@@ -663,9 +663,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -699,10 +699,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -736,10 +736,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -773,10 +773,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -810,10 +810,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -847,10 +847,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -884,10 +884,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -921,10 +921,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -958,10 +958,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -995,10 +995,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1032,10 +1032,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1070,9 +1070,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1090,7 +1090,7 @@
       "country": "Holandia",
       "seller": "Marktplaats",
       "region": "UE",
-      "status": "LIVE VERIFIED",
+      "status": "STALE / REVERIFY",
       "original": "240 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2448250086-beyerdynamic-dt-1990-pro-250-ohm",
       "role": "OFFER",
@@ -1105,11 +1105,12 @@
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
-        "verificationState": "DIRECT_OFFER_VERIFIED",
-        "http": 200,
+        "verificationState": "DEAD",
+        "http": 410,
         "checkedAt": "2026-10-14T07:57:40.195Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T07:57:40.195Z",
+        "lastAttemptAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1143,10 +1144,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1180,10 +1181,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1217,10 +1218,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1254,10 +1255,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1291,10 +1292,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1328,10 +1329,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1365,10 +1366,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1402,10 +1403,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1443,7 +1444,7 @@
         "checkedAt": "2026-10-12T12:51:46.456Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
         "lastVerifiedAt": "2026-10-12T12:51:46.456Z",
-        "lastAttemptAt": "2026-10-14T07:57:40.195Z"
+        "lastAttemptAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1477,10 +1478,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1514,10 +1515,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1551,10 +1552,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1588,10 +1589,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1629,9 +1630,9 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
         "lastVerifiedAt": "2026-10-12T13:06:34.264Z",
-        "lastAttemptAt": "2026-10-14T07:57:40.195Z"
+        "lastAttemptAt": "2026-10-14T11:45:38.053Z"
       },
-      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
     },
     {
       "id": "refresh-b2fe9b555823f98a",
@@ -1663,10 +1664,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1700,10 +1701,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1737,10 +1738,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1775,9 +1776,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1811,10 +1812,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1849,9 +1850,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1885,10 +1886,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1926,7 +1927,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-12T15:15:05.878Z",
-        "lastAttemptAt": "2026-10-14T07:57:40.195Z"
+        "lastAttemptAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1961,9 +1962,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1998,9 +1999,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2034,10 +2035,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2072,9 +2073,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T14:12:31.820Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2108,10 +2109,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2145,10 +2146,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2162,12 +2163,12 @@
       "rrp": null,
       "newMarket": null,
       "sameMarket": null,
-      "price": 1119.17,
+      "price": 1092.65,
       "country": "Holandia",
       "seller": "Marktplaats",
       "region": "UE",
       "status": "LIVE VERIFIED",
-      "original": "255 EUR",
+      "original": "250 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2449671340-hifiman-ananda-nano-as-good-as-new",
       "role": "OFFER",
       "checked": "2026-10-14",
@@ -2183,9 +2184,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2219,9 +2220,10 @@
       "fxEffectiveDate": "2026-10-13",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-14T07:57:40.195Z",
-        "http": 200
+        "http": 200,
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2259,9 +2261,9 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
         "lastVerifiedAt": "2026-10-12T13:06:34.264Z",
-        "lastAttemptAt": "2026-10-14T07:57:40.195Z"
+        "lastAttemptAt": "2026-10-14T11:45:38.053Z"
       },
-      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
     },
     {
       "id": "refresh-3ac7c5a2b5e7f6bc",
@@ -2293,10 +2295,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2330,10 +2332,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2368,9 +2370,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2405,9 +2407,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2441,10 +2443,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2478,10 +2480,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2515,10 +2517,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2553,9 +2555,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2590,9 +2592,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2627,9 +2629,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2664,9 +2666,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2700,10 +2702,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T10:31:31.968Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2738,9 +2740,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2775,9 +2777,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2811,10 +2813,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T12:20:37.872Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2848,10 +2850,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2885,10 +2887,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2922,10 +2924,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2959,10 +2961,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2996,10 +2998,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3033,9 +3035,10 @@
       "fxEffectiveDate": "2026-10-13",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-14T07:57:40.195Z",
-        "http": 200
+        "http": 200,
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3069,10 +3072,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3106,10 +3109,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3143,10 +3146,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3180,10 +3183,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3217,10 +3220,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3254,10 +3257,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3291,10 +3294,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3328,10 +3331,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3365,10 +3368,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3402,10 +3405,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T12:20:37.872Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3439,10 +3442,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T12:20:37.872Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3476,10 +3479,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3513,10 +3516,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3550,10 +3553,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3587,10 +3590,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3624,10 +3627,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3661,10 +3664,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3698,10 +3701,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3735,18 +3738,18 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-10-14T07:57:40.195Z",
+        "checkedAt": "2026-10-14T11:45:38.053Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-10-14T07:57:40.195Z"
+        "lastVerifiedAt": "2026-10-14T11:45:38.053Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-10-14T07:57:40.195Z",
-    "mode": "full",
-    "runId": "38531772083",
+    "refreshedAt": "2026-10-14T11:45:38.053Z",
+    "mode": "quick",
+    "runId": "38558825951",
     "status": "COMPLETED"
   }
 }
