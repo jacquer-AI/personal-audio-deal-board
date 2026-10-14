@@ -1,0 +1,33 @@
+name: SWPS 2009 MCT — two neural Polish audiobooks
+on:
+  push:
+    branches: [audio/gaweda-neural-20261014]
+    paths:
+      - .github/workflows/swps-mct-20261014.yml
+      - study-audio/swps_mct_neural.py
+permissions: {contents: read}
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install free speech and PDF tools
+        run: |
+          python -m pip install -q --disable-pip-version-check edge-tts pymupdf
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Create two articles as audio
+        run: python study-audio/swps_mct_neural.py
+      - name: Publish complete MP3s and text check
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: swps-gaweda-two-audiobooks
+          path: |
+            out_audio/*.mp3
+            out_audio/*tekst_do_kontroli.txt
+          retention-days: 3
+          if-no-files-found: warn
