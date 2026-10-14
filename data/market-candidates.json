@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-10-14T17:06:33.661Z",
+  "refreshedAt": "2026-10-14T21:37:35.384Z",
   "mode": "quick",
   "candidates": [
     {
@@ -3518,7 +3518,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -3541,7 +3541,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3560,7 +3560,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3585,7 +3585,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3604,7 +3604,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3628,7 +3628,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3647,7 +3647,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3671,7 +3671,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3690,7 +3690,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -3713,7 +3713,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3732,7 +3732,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3756,7 +3756,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3775,7 +3775,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3799,7 +3799,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3818,7 +3818,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3843,7 +3843,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3862,7 +3862,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -3885,7 +3885,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3904,7 +3904,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3928,7 +3928,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3947,7 +3947,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -3972,7 +3972,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -3991,7 +3991,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4016,7 +4016,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4035,7 +4035,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4059,50 +4059,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "Sennheiser IE 900",
-      "category": "IEM",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2453471900-sennheiser-ie-900-in-ear-hoofdtelefoon-zo-goed-als-nieuw",
-      "query": "Sennheiser IE 900",
-      "discoveredAt": "2026-10-14T07:57:40.195Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 2294.56,
-      "originalPrice": 525,
-      "currency": "EUR",
-      "availability": "InStock",
-      "priceBasis": "METADATA_MAY_BE_BID",
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-14",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "PL_SHIPPING_COST_UNKNOWN",
-        "PRICE_EXCLUDES_SHIPPING_AND_FEES",
-        "FIXED_ITEM_PRICE_NOT_CONFIRMED"
-      ],
-      "firstSeenAt": "2026-10-14T07:57:40.195Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4121,7 +4078,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4144,7 +4101,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4163,7 +4120,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4187,7 +4144,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4206,7 +4163,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4229,7 +4186,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4248,7 +4205,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4272,7 +4229,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4291,7 +4248,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4315,7 +4272,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4334,7 +4291,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4357,7 +4314,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4376,7 +4333,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4400,7 +4357,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4419,7 +4376,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4443,7 +4400,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4462,7 +4419,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4485,7 +4442,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4504,7 +4461,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4529,7 +4486,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4548,7 +4505,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4571,7 +4528,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4590,7 +4547,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-14T17:06:33.661Z",
+      "verifiedAt": "2026-10-14T21:37:35.384Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4613,7 +4570,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
-      "lastSeenAt": "2026-10-14T17:06:33.661Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5269,8 +5226,8 @@
       ],
       "firstSeenAt": "2026-10-12T08:10:00.085Z",
       "lastSeenAt": "2026-10-14T17:06:33.661Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -5465,6 +5422,47 @@
       "lastSeenAt": "2026-10-13T22:40:02.383Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
+    },
+    {
+      "model": "Sennheiser IE 900",
+      "category": "IEM",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2453471900-sennheiser-ie-900-in-ear-hoofdtelefoon-zo-goed-als-nieuw",
+      "query": "Sennheiser IE 900",
+      "discoveredAt": "2026-10-14T07:57:40.195Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "country": "Holandia",
+      "locationEvidence": "SELLER_LOCATION",
+      "verifiedAt": null,
+      "verificationState": "RECHECK_HTTP_410",
+      "http": 410,
+      "condition": "B-STOCK",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
+      "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-14",
+      "redTeam": [
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
+      ],
+      "firstSeenAt": "2026-10-14T07:57:40.195Z",
+      "lastSeenAt": "2026-10-14T21:37:35.384Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sony MDR-CD900ST",
