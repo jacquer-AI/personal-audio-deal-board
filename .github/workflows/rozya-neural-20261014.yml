@@ -1,0 +1,30 @@
+name: Polish audiobook – neural voice (one-off)
+on:
+  push:
+    branches:
+      - audio/rozya-neural-20261014
+    paths:
+      - .github/workflows/rozya-neural-20261014.yml
+      - study-audio/rozya_neural_action.py
+permissions:
+  contents: read
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free neural voice library and PDF extractor
+        run: python -m pip install --disable-pip-version-check -q edge-tts pymupdf
+      - name: Produce audiobook
+        run: python study-audio/rozya_neural_action.py
+      - name: Upload complete audiobook and individual chapters
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rozya-2019-neuralny-audiobook
+          path: audiobook_output/
+          retention-days: 3
