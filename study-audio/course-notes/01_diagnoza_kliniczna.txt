@@ -1,0 +1,65 @@
+Zaawansowana diagnoza kliniczna. Powtórka do ćwiczeń. Opracowanie edukacyjne na podstawie zakresu sylabusa SWPS. Nie jest to dosłowne nagranie podręcznika.
+
+Część pierwsza. Czym jest diagnoza kliniczna.
+
+Diagnoza psychologiczna to nie tylko przypisanie nazwy zaburzenia. To proces gromadzenia i integrowania danych służący odpowiedzi na konkretne pytanie, na przykład: jakie trudności występują, jakie mechanizmy mogą je podtrzymywać, jaki jest poziom funkcjonowania i jakie dalsze kroki należy rozważyć. Rozpoznanie psychiatryczne według klasyfikacji medycznej bywa ważnym elementem tego procesu, ale nie zastępuje psychologicznej analizy problemu.
+
+W sylabusie zaawansowanej diagnozy klinicznej wymieniono użyteczność i rodzaje diagnozy, wywiad, formułowanie hipotez, różnicowanie problemów, integrowanie danych i granice kompetencji diagnosty. To właśnie te elementy porządkują dzisiejszą powtórkę.
+
+Klinicysta może stawiać pytania opisowe, klasyfikacyjne, wyjaśniające i prognostyczne. Pytanie opisowe brzmi: co się dzieje? Pytanie klasyfikacyjne: do jakiego rodzaju trudności można odnieść dane objawy? Pytanie wyjaśniające: co współtworzy lub podtrzymuje problem? Pytanie prognostyczne: co może wydarzyć się dalej i jakie czynniki ochronne mogą pomóc?
+
+Część druga. Zaczynamy od pytania diagnostycznego.
+
+Przed wyborem testów trzeba ustalić cel badania, kontekst skierowania, osobę zlecającą diagnozę, zakres zgody i to, czego osoba badana chce się dowiedzieć. Niedookreślone pytanie prowadzi do niepotrzebnego zbierania informacji. Precyzyjne pytanie pozwala wybrać adekwatne źródła danych.
+
+Dobrze sformułowany cel może brzmieć: rozpoznać czynniki związane z pogorszeniem koncentracji i wycofaniem społecznym, odróżnić możliwe wyjaśnienia oraz wskazać obszary wymagające dodatkowej konsultacji. Słabiej sformułowany cel brzmi po prostu: zrobić wszystkie testy.
+
+Od początku należy mówić jasno o poufności, możliwych ograniczeniach tajemnicy, przeznaczeniu wyników i granicach interpretacji. Nie traktujemy wyniku kwestionariusza jako automatycznej diagnozy.
+
+Część trzecia. Wywiad kliniczny jako podstawowe narzędzie.
+
+Wywiad powinien uwzględniać początek trudności, ich przebieg, nasilenie, częstość, czas trwania, wpływ na codzienne funkcjonowanie, sytuacje poprzedzające wystąpienie objawów oraz dotychczasowe sposoby radzenia sobie. Ważne są informacje o stanie somatycznym, przyjmowanych lekach, substancjach psychoaktywnych, śnie, zmianach życiowych i wcześniejszej pomocy psychologicznej lub psychiatrycznej.
+
+Pytania otwarte pomagają poznać język i punkt widzenia pacjenta. Następnie pytania bardziej konkretne służą weryfikacji istotnych szczegółów. Jeśli ktoś mówi: czuję się oderwany od rzeczywistości, nie zakładamy od razu, że chodzi o objaw psychotyczny. Pytamy, co dokładnie oznacza oderwanie, kiedy występuje, czy osoba zachowuje krytycyzm oraz czy doświadczenie przypomina depersonalizację, derealizację, zaburzenia uwagi albo zmianę percepcji.
+
+Pamiętaj o rozróżnieniu faktu, samoopisu, obserwacji i interpretacji. Zdanie: osoba unikała kontaktu wzrokowego, opisuje obserwowane zachowanie. Zdanie: osoba boi się oceny, jest już hipotezą, która wymaga sprawdzenia. Właśnie takie przejście od zachowania do objawu i od objawu do hipotezy omawia sylabus.
+
+Część czwarta. Jeden objaw, wiele możliwych przyczyn.
+
+Problemy z koncentracją mogą wynikać z depresji, lęku, zaburzeń snu, działania leków, używania substancji, przeciążenia stresem lub innych przyczyn. Sam objaw nie rozstrzyga, które wyjaśnienie jest najbardziej prawdopodobne.
+
+Podobnie wycofanie społeczne może wiązać się z obniżeniem nastroju, nasilonym lękiem społecznym, doświadczeniami traumatycznymi, zaburzeniami psychotycznymi, stanem somatycznym albo świadomą potrzebą ograniczenia kontaktów. Diagnoza różnicowa polega więc na porównaniu konkurencyjnych wyjaśnień i poszukiwaniu danych rozstrzygających między nimi.
+
+Hipotezę warto formułować w sposób sprawdzalny. Na przykład: pogorszenie funkcjonowania może być związane z nasileniem objawów depresyjnych. Aby to zbadać, pytamy o nastrój, utratę zainteresowań, energię, sen, apetyt, poczucie winy i przebieg czasowy. Jednocześnie sprawdzamy alternatywy oraz wpływ chorób i leków.
+
+Część piąta. Dobór metod.
+
+W diagnozie można łączyć wywiad, obserwację, wyniki standaryzowanych narzędzi, dokumentację oraz informacje z innych źródeł, o ile są uzyskane legalnie i za odpowiednią zgodą. Każde narzędzie ma określony cel, własności psychometryczne, ograniczenia i warunki poprawnego stosowania.
+
+Przy wyborze testu pytamy: czy mierzy dokładnie tę cechę, której szukamy? Czy ma wiarygodne dane o rzetelności i trafności w odpowiedniej populacji? Czy normy pasują do badanej osoby? Czy istnieją przesłanki ograniczające interpretację, na przykład nieznajomość języka albo szczególny kontekst kliniczny? Czy osoba stosująca narzędzie ma odpowiednie uprawnienia i kompetencje?
+
+Kolejność jest istotna. Najpierw problem i hipoteza. Potem metoda, która może dostarczyć danych potrzebnych do ich oceny. Nie odwrotnie.
+
+Część szósta. Integracja danych.
+
+Pojedynczy wynik nigdy nie powinien przesądzać o całościowej ocenie. Jeśli samoopis wskazuje na znaczne trudności, a obserwacja w trakcie spotkania wygląda inaczej, nie oznacza to automatycznie kłamstwa ani błędu. Dane mogły dotyczyć innych kontekstów lub okresów. Zadaniem diagnosty jest zbadać rozbieżność.
+
+Warto oddzielić w raporcie informacje opisowe od wniosków. Można pisać: w wywiadzie osoba zgłasza trudności ze snem od trzech miesięcy; w obserwacji widoczne było spowolnienie wypowiedzi; otrzymane dane wspierają hipotezę nasilenia objawów depresyjnych, jednak ich interpretacja wymaga także uwzględnienia stanu zdrowia somatycznego. Takie sformułowanie nie udaje większej pewności niż wynika z materiału.
+
+Część siódma. Przykład do przećwiczenia.
+
+Wyobraźmy sobie fikcyjną osobę w wieku trzydziestu dwóch lat, która od kilku miesięcy gorzej pracuje, wycofuje się z relacji i skarży na problemy z koncentracją. W tym samym czasie śpi średnio pięć godzin, pracuje zmianowo i przeżywa stres rodzinny. Zgłasza także smutek i brak energii.
+
+Jakie hipotezy rozważysz? Objawy depresyjne, skutki ograniczonego snu, przeciążenie stresem, ewentualne współwystępowanie kilku czynników. Jakie informacje mogą różnicować? Dokładny przebieg nastroju, utraty przyjemności, jakości snu, rytmu dobowego, funkcjonowania przed kryzysem, używanych substancji i stanu somatycznego.
+
+Pamiętaj, że celem takiej analizy nie jest wybranie diagnozy na podstawie krótkiego opisu, lecz stworzenie planu dalszego badania.
+
+Część ósma. Granice kompetencji i etyka.
+
+Psycholog powinien formułować wnioski w granicach własnych kwalifikacji, stosować procedury adekwatne do celu i unikać nadinterpretacji. Gdy obraz kliniczny wymaga konsultacji medycznej, należy to jasno zaznaczyć. Poszanowanie godności, dobrowolności i prywatności osoby badanej jest elementem jakości diagnozy, a nie dodatkiem po zakończeniu badania.
+
+W sylabusie tego przedmiotu oceniane będą między innymi sprawdziany typu otwartej książki oraz grupowy projekt algorytmu różnicowania problemu psychicznego. Dlatego ćwicz formułowanie hipotez i uzasadnianie kolejności kroków.
+
+Na koniec trzy pytania. Po pierwsze, jakie dodatkowe dane odróżniają objaw psychotyczny od doświadczenia dysocjacyjnego? Po drugie, dlaczego wynik skali przesiewowej nie jest równoznaczny z rozpoznaniem? Po trzecie, jakie alternatywne hipotezy sprawdzisz, gdy pacjent mówi, że nie może się skupić?
+
+To koniec powtórki. Przed sobotnim ćwiczeniem warto zapamiętać strukturę: pytanie diagnostyczne, hipotezy, dane, dobór metod, weryfikacja alternatyw i ostrożne wnioski.
