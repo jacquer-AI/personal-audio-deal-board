@@ -82,8 +82,13 @@ asyncio.run(generate())
 with (out/"concat.txt").open("w") as f:
     for p in sorted(out.glob("Rozya_2019_??.mp3")):
         f.write(f"file '{p.name}'\n")
-subprocess.run(["ffmpeg","-hide_banner","-loglevel","error","-f","concat","-safe","0",
-                "-i",str(out/"concat.txt"),"-c","copy",str(out/"ROZYA_2019_CALOSC_MarekNeural.mp3")],check=True)
-subprocess.run(["ffprobe","-v","error","-show_entries","format=duration,size",
-                "-of","default=noprint_wrappers=1",str(out/"ROZYA_2019_CALOSC_MarekNeural.mp3")],check=True)
-print("COMPLETE",flush=True)
+# imageio-ffmpeg includes a standalone ffmpeg binary on Linux runners.
+import sys
+subprocess.run([sys.executable,"-m","pip","install","--disable-pip-version-check","-q","imageio-ffmpeg"],check=True)
+import imageio_ffmpeg
+ffmpeg_bin=imageio_ffmpeg.get_ffmpeg_exe()
+combined=out/"ROZYA_2019_CALOSC_MarekNeural.mp3"
+subprocess.run([ffmpeg_bin,"-hide_banner","-loglevel","error","-f","concat","-safe","0",
+                "-i",str(out/"concat.txt"),"-c","copy",str(combined)],check=True)
+assert combined.stat().st_size>500000, "Merged MP3 is unexpectedly small"
+print(f"COMPLETE full_audiobook={combined.name} bytes={combined.stat().st_size}",flush=True)
