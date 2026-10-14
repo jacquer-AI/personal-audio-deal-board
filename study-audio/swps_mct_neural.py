@@ -76,6 +76,14 @@ async def main():
         raw=raw[pos.start():]
         end=re.search(r"(?mi)^\s*(Piśmiennictwo|Literatura|Adres do korespondencji)\s*$",raw)
         if end:raw=raw[:end.start()]
+        # After the Polish main text the journal includes Russian, German and French abstracts.
+        # Do not narrate multilingual summaries or references.
+        first_russian=re.search(r"[\u0400-\u052f]",raw)
+        if first_russian: raw=raw[:first_russian.start()]
+        raw=re.sub(r"(?m)^\s*(?:6[7-9]\d)\s+Łukasz Gawęda i wsp\.\s*","",raw)
+        raw=re.sub(r"\b\d{3}\s+Łukasz Gawęda i wsp\.\s*","",raw)
+        raw=re.sub(r"\[\s*\d+(?:\s*[,;]\s*\d+)*\s*\]","",raw)
+        raw=raw.replace("\u202f"," ").replace("\u2009"," ")
         text=title+". Autorzy: Łukasz Gawęda, Steffen Moritz i Andrzej Kokoszka. Psychiatria Polska, rok 2009. "+prepare(raw)
         assert len(text)>11000,(name,len(text))
         (OUT/f"{name}_tekst_do_kontroli.txt").write_text(text,encoding="utf-8")
