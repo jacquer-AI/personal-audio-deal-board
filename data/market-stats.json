@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-14T04:47:42.257Z",
+  "refreshedAt": "2026-10-14T07:57:40.195Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -60,10 +60,10 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 4,
-      "confidence": "PROVISIONAL",
+      "n": 5,
+      "confidence": "ROBUST",
       "median": 525.67,
-      "min": 459.96,
+      "min": 438.06,
       "max": 569.48
     },
     {
@@ -91,20 +91,20 @@
       "max": 1292.28
     },
     {
+      "key": "HIFIMAN Ananda Nano|B-STOCK",
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1007.54,
+      "max": 1117.05
+    },
+    {
       "key": "HIFIMAN Edition XS|B-STOCK",
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 657.09,
       "max": 810.41
-    },
-    {
-      "key": "HIFIMAN Ananda Nano|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 1117.05,
-      "max": 1117.05
     },
     {
       "key": "Sony MDR-M1|USED",
