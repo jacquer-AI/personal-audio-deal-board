@@ -2,33 +2,28 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 2,
+  "stale": 1,
   "changes": [
     {
       "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://www.subito.it/audio-video/bose-nuovo-diffusore-portatile-soundlink-max-diff-roma-663535135.htm"
-    },
-    {
-      "type": "STALE",
       "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-roma-664307202.htm"
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-blu-cassa-bt-portatile-roma-664391818.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-15T16:55:38.547Z",
+  "refreshedAt": "2026-10-15T21:19:14.924Z",
   "mode": "quick",
-  "runId": "38773007384",
+  "runId": "38808933486",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 3,
+  "observationChanges": 1,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 107,
-    "directVerified": 77,
+    "directVerified": 76,
     "accessRestricted": 10,
     "ambiguous": 11,
-    "dead": 7,
+    "dead": 8,
     "soldOrOut": 2,
     "notDirect": 2,
     "remoteErrors": 0,
