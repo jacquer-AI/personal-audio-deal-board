@@ -1,38 +1,41 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 0,
+  "stale": 2,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9306.1,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-nuovo-diffusore-portatile-soundlink-max-diff-roma-663535135.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-roma-664307202.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-15T11:21:28.553Z",
+  "refreshedAt": "2026-10-15T16:55:38.547Z",
   "mode": "quick",
-  "runId": "38726730981",
+  "runId": "38773007384",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 81,
-  "freshnessRenewal": false,
+  "observationChanges": 3,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 107,
-    "directVerified": 79,
-    "accessRestricted": 9,
+    "directVerified": 77,
+    "accessRestricted": 10,
     "ambiguous": 11,
-    "dead": 5,
+    "dead": 7,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
