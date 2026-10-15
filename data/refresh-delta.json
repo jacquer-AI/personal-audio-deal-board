@@ -1,43 +1,43 @@
 {
-  "new": 0,
-  "priceChanged": 1,
+  "new": 2,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9309.29,
-      "to": 9206,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "NEW",
+      "model": "HIFIMAN Ananda Nano",
+      "price": 869.75,
+      "url": "https://www.subito.it/audio-video/cuffie-hifiman-ananda-nano-venezia-664563118.htm"
     },
     {
-      "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 371.5,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-leggi-descrizione-torino-664498623.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-15T04:30:57.754Z",
-  "mode": "quick",
-  "runId": "38681845863",
+  "refreshedAt": "2026-10-15T07:41:39.724Z",
+  "mode": "full",
+  "runId": "38700453287",
   "candidates": 500,
-  "verifiedAdditions": 0,
-  "observationChanges": 1,
-  "freshnessRenewal": true,
+  "verifiedAdditions": 2,
+  "observationChanges": 14,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 105,
     "directVerified": 76,
-    "accessRestricted": 9,
+    "accessRestricted": 10,
     "ambiguous": 11,
     "dead": 5,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 2,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -51,6 +51,114 @@
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 25
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 411,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "olx-pl"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 0,
+          "restricted": 30,
+          "errors": 0
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 56,
+          "candidateUrls": 9,
+          "restricted": 4,
+          "errors": 0,
+          "checkedUrls": 9,
+          "unverifiedUrls": 6,
+          "verifiedUrls": 3
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 5,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 5,
+          "unverifiedUrls": 3,
+          "verifiedUrls": 2
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 257,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 251,
+      "selectedUrls": 20,
+      "selectedBySource": {
+        "marktplaats-nl": 9,
+        "subito-it": 5,
+        "hifishark": 6
+      },
+      "modelsSelected": 14
+    }
   }
 }

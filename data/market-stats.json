@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-15T04:30:57.754Z",
+  "refreshedAt": "2026-10-15T07:41:39.724Z",
   "stats": [
     {
       "key": "Technics EAH-AZ100|NEW",
@@ -20,7 +20,7 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 9,
+      "n": 10,
       "confidence": "ROBUST",
       "median": 524.47,
       "min": 371.5,
@@ -212,10 +212,10 @@
     },
     {
       "key": "HIFIMAN Ananda Nano|USED",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1088.28,
+      "min": 869.75,
       "max": 1088.28
     },
     {
