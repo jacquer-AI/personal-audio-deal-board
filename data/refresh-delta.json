@@ -7,33 +7,33 @@
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9309.29,
+      "from": 9309.29,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2450992332-jbl-charge-6-draagbare-bluetooth-speaker-zwart"
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-14T21:37:35.384Z",
+  "refreshedAt": "2026-10-15T04:30:57.754Z",
   "mode": "quick",
-  "runId": "38641662249",
+  "runId": "38681845863",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 5,
+  "observationChanges": 1,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 105,
-    "directVerified": 77,
+    "directVerified": 76,
     "accessRestricted": 9,
     "ambiguous": 11,
     "dead": 5,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
@@ -41,17 +41,15 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 26,
-      "selected": 26,
+      "eligible": 25,
+      "selected": 25,
       "skippedOnBoard": 83,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 26,
+    "researchRechecked": 25,
     "researchReverified": 25,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 25,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 25
     },
     "researchPromoted": 0
   }
