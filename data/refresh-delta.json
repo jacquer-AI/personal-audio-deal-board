@@ -6,31 +6,31 @@
   "changes": [
     {
       "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451127233-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw"
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-16T16:34:28.021Z",
+  "refreshedAt": "2026-10-16T21:02:47.184Z",
   "mode": "quick",
-  "runId": "38932993821",
+  "runId": "38966571992",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 2,
+  "observationChanges": 1,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 108,
-    "directVerified": 75,
+    "directVerified": 74,
     "accessRestricted": 10,
     "ambiguous": 11,
     "dead": 10,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
-      "allegro-pl": 3,
       "ebay-de": 2,
       "olx-pl": 4,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
