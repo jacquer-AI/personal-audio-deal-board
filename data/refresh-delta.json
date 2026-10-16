@@ -1,57 +1,48 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
   "stale": 1,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9306.1,
-      "to": 9299.71,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
       "type": "STALE",
-      "model": "HIFIMAN Ananda Nano",
-      "url": "https://www.subito.it/audio-video/hifiman-ananda-nano-cuffie-hi-fi-frosinone-660123600.htm"
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451127233-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-16T11:16:19.844Z",
+  "refreshedAt": "2026-10-16T16:34:28.021Z",
   "mode": "quick",
-  "runId": "38892640868",
+  "runId": "38932993821",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 81,
-  "freshnessRenewal": false,
+  "observationChanges": 2,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 108,
-    "directVerified": 76,
-    "accessRestricted": 9,
+    "directVerified": 75,
+    "accessRestricted": 10,
     "ambiguous": 11,
-    "dead": 9,
+    "dead": 10,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
+      "allegro-pl": 3,
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 31,
-      "selected": 31,
+      "eligible": 30,
+      "selected": 30,
       "skippedOnBoard": 86,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 31,
+    "researchRechecked": 30,
     "researchReverified": 30,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 30,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 30
     },
     "researchPromoted": 0
   }
