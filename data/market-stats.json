@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-17T07:09:08.742Z",
+  "refreshedAt": "2026-10-17T10:36:07.316Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -103,7 +103,7 @@
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 480.27,
+      "min": 392.95,
       "max": 650.55
     },
     {
@@ -159,8 +159,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 873.22,
-      "max": 873.22
+      "min": 1309.83,
+      "max": 1309.83
     },
     {
       "key": "Etymotic ER4XR|USED",
@@ -207,8 +207,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1222.51,
-      "max": 1222.51
+      "min": 1178.85,
+      "max": 1178.85
     },
     {
       "key": "Sennheiser HD 800 S|USED",

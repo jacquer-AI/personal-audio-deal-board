@@ -1,16 +1,38 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 3,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "from": 1228.89,
+      "to": 1178.85,
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-1990-pro-roma-654113103.htm"
+    },
+    {
+      "type": "PRICE",
+      "model": "Bowers & Wilkins Pi8",
+      "from": 877.78,
+      "to": 1309.83,
+      "url": "https://www.subito.it/telefonia/auricolari-bowers-wilkins-pi8-mclaren-edition-milano-652804473.htm"
+    },
+    {
+      "type": "PRICE",
+      "model": "Sony MDR-M1",
+      "from": 482.78,
+      "to": 392.95,
+      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-torino-664273268.htm"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-17T07:09:08.742Z",
-  "mode": "full",
-  "runId": "39012547017",
+  "refreshedAt": "2026-10-17T10:36:07.316Z",
+  "mode": "quick",
+  "runId": "39025508510",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 18,
+  "observationChanges": 4,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 108,
@@ -34,119 +56,12 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 29,
-    "researchReverified": 29,
+    "researchReverified": 28,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 28,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 319,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "mediaexpert-outlet"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 5,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 5,
-          "unverifiedUrls": 5
-        },
-        "mediaexpert-outlet": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 10,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 10,
-          "unverifiedUrls": 10
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 3,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 3,
-          "unverifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 263,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 257,
-      "selectedUrls": 24,
-      "selectedBySource": {
-        "vinted-pl": 5,
-        "marktplaats-nl": 10,
-        "subito-it": 3,
-        "hifishark": 6
-      },
-      "modelsSelected": 15
-    }
+    "researchPromoted": 0
   }
 }
