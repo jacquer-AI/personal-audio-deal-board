@@ -2,35 +2,29 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 1,
-  "changes": [
-    {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-16T21:02:47.184Z",
+  "refreshedAt": "2026-10-17T04:19:10.043Z",
   "mode": "quick",
-  "runId": "38966571992",
+  "runId": "39002099973",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 1,
+  "observationChanges": 2,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 108,
     "directVerified": 74,
-    "accessRestricted": 10,
+    "accessRestricted": 9,
     "ambiguous": 11,
     "dead": 10,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -40,9 +34,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 30,
-    "researchReverified": 30,
+    "researchReverified": 29,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 30
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0
   }
