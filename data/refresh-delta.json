@@ -2,53 +2,38 @@
   "new": 0,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 3,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9299.71,
-      "to": 9206,
+      "from": 9206,
+      "to": 9299.71,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451175293-jbl-charge-6-bluetooth-speaker-nieuw-en-ongeopend"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-17T15:28:53.538Z",
+  "refreshedAt": "2026-10-17T20:32:02.789Z",
   "mode": "quick",
-  "runId": "39045210677",
+  "runId": "39067102471",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 5,
+  "observationChanges": 3,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 108,
-    "directVerified": 73,
-    "accessRestricted": 8,
-    "ambiguous": 12,
+    "directVerified": 75,
+    "accessRestricted": 9,
+    "ambiguous": 11,
     "dead": 11,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 3,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 1
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
     "researchSelection": {
       "eligible": 28,
