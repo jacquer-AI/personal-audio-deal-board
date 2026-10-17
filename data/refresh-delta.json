@@ -5,41 +5,148 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-17T04:19:10.043Z",
-  "mode": "quick",
-  "runId": "39002099973",
+  "refreshedAt": "2026-10-17T07:09:08.742Z",
+  "mode": "full",
+  "runId": "39012547017",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 2,
-  "freshnessRenewal": true,
+  "observationChanges": 18,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 108,
-    "directVerified": 74,
-    "accessRestricted": 9,
+    "directVerified": 75,
+    "accessRestricted": 10,
     "ambiguous": 11,
     "dead": 10,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 2,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 30,
-      "selected": 30,
+      "eligible": 29,
+      "selected": 29,
       "skippedOnBoard": 86,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 30,
+    "researchRechecked": 29,
     "researchReverified": 29,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 319,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "mediaexpert-outlet"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 5,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 5,
+          "unverifiedUrls": 5
+        },
+        "mediaexpert-outlet": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 10,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 10,
+          "unverifiedUrls": 10
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 3,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 3,
+          "unverifiedUrls": 3
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 263,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 257,
+      "selectedUrls": 24,
+      "selectedBySource": {
+        "vinted-pl": 5,
+        "marktplaats-nl": 10,
+        "subito-it": 3,
+        "hifishark": 6
+      },
+      "modelsSelected": 15
+    }
   }
 }
