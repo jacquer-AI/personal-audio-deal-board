@@ -1,66 +1,65 @@
 {
   "new": 0,
-  "priceChanged": 3,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
+  "stale": 3,
   "changes": [
     {
       "type": "PRICE",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "from": 1228.89,
-      "to": 1178.85,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-1990-pro-roma-654113103.htm"
+      "model": "64 Audio U12t",
+      "from": 9299.71,
+      "to": 9206,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "PRICE",
-      "model": "Bowers & Wilkins Pi8",
-      "from": 877.78,
-      "to": 1309.83,
-      "url": "https://www.subito.it/telefonia/auricolari-bowers-wilkins-pi8-mclaren-edition-milano-652804473.htm"
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "PRICE",
-      "model": "Sony MDR-M1",
-      "from": 482.78,
-      "to": 392.95,
-      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-torino-664273268.htm"
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451175293-jbl-charge-6-bluetooth-speaker-nieuw-en-ongeopend"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-17T10:36:07.316Z",
+  "refreshedAt": "2026-10-17T15:28:53.538Z",
   "mode": "quick",
-  "runId": "39025508510",
+  "runId": "39045210677",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 4,
-  "freshnessRenewal": false,
+  "observationChanges": 5,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 108,
-    "directVerified": 75,
-    "accessRestricted": 10,
-    "ambiguous": 11,
-    "dead": 10,
-    "soldOrOut": 2,
+    "directVerified": 73,
+    "accessRestricted": 8,
+    "ambiguous": 12,
+    "dead": 11,
+    "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 3,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 1
     },
     "researchSelection": {
-      "eligible": 29,
-      "selected": 29,
+      "eligible": 28,
+      "selected": 28,
       "skippedOnBoard": 86,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 29,
+    "researchRechecked": 28,
     "researchReverified": 28,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 28,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 28
     },
     "researchPromoted": 0
   }
