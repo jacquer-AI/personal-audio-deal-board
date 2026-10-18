@@ -1,15 +1,7 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-17T20:32:02.789Z",
+  "refreshedAt": "2026-10-18T04:24:43.392Z",
   "stats": [
-    {
-      "key": "64 Audio U12t|NEW",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 9299.71,
-      "max": 9299.71
-    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -28,11 +20,11 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 10,
+      "n": 9,
       "confidence": "ROBUST",
       "median": 523.93,
       "min": 371.12,
-      "max": 654.92
+      "max": 611.25
     },
     {
       "key": "Beyerdynamic DT 880|USED",
