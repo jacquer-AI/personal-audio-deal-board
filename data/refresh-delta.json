@@ -1,34 +1,16 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 2,
-  "changes": [
-    {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9299.71,
-      "to": 9206,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "AKG K702",
-      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-varese-645630703.htm"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-18T15:48:27.945Z",
+  "refreshedAt": "2026-10-18T20:36:39.691Z",
   "mode": "quick",
-  "runId": "39142122496",
+  "runId": "39164074871",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 2,
+  "observationChanges": 0,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 109,
