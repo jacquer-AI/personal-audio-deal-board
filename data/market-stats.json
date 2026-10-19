@@ -1,12 +1,20 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-18T20:36:39.691Z",
+  "refreshedAt": "2026-10-19T04:33:45.862Z",
   "stats": [
     {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9299.71,
+      "max": 9299.71
+    },
+    {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 956.18,
       "max": 2615.29
     },

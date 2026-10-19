@@ -1,30 +1,43 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
-  "changes": [],
+  "stale": 1,
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9206,
+      "to": 9299.71,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-18T20:36:39.691Z",
+  "refreshedAt": "2026-10-19T04:33:45.862Z",
   "mode": "quick",
-  "runId": "39164074871",
+  "runId": "39200075901",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 0,
+  "observationChanges": 3,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 109,
     "directVerified": 73,
-    "accessRestricted": 10,
+    "accessRestricted": 9,
     "ambiguous": 11,
     "dead": 13,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
