@@ -1,46 +1,39 @@
 {
   "new": 0,
-  "priceChanged": 2,
-  "sold": 1,
-  "stale": 0,
+  "priceChanged": 1,
+  "sold": 0,
+  "stale": 1,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9308.44,
+      "from": 9308.44,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "PRICE",
-      "model": "Beyerdynamic DT 880",
-      "from": 350.2,
-      "to": 327.77,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm"
-    },
-    {
-      "type": "SOLD",
-      "model": "Etymotic ER2SE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450603834-etymotic-er2se-oortjes-zwart"
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-19T13:03:04.088Z",
+  "refreshedAt": "2026-10-19T22:18:29.321Z",
   "mode": "quick",
-  "runId": "39256851003",
+  "runId": "39333979525",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 78,
+  "observationChanges": 2,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 111,
-    "directVerified": 75,
+    "directVerified": 74,
     "accessRestricted": 10,
     "ambiguous": 11,
     "dead": 13,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
@@ -54,9 +47,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 30,
-    "researchReverified": 30,
+    "researchReverified": 29,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 30
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0
   }
