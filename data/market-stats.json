@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-20T04:43:02.705Z",
+  "refreshedAt": "2026-10-20T07:53:08.003Z",
   "stats": [
     {
       "key": "Technics EAH-AZ100|NEW",
@@ -20,11 +20,11 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 10,
+      "n": 11,
       "confidence": "ROBUST",
-      "median": 480.71999999999997,
+      "median": 524.42,
       "min": 371.47,
-      "max": 611.83
+      "max": 616.2
     },
     {
       "key": "Beyerdynamic DT 880|USED",
@@ -52,11 +52,11 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 3,
+      "n": 4,
       "confidence": "PROVISIONAL",
-      "median": 524.42,
+      "median": 546.275,
       "min": 524.42,
-      "max": 568.13
+      "max": 655.53
     },
     {
       "key": "Bowers & Wilkins Pi8|USED",

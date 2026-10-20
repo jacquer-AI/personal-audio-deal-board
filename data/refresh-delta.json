@@ -1,17 +1,30 @@
 {
-  "new": 0,
+  "new": 2,
   "priceChanged": 0,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 616.2,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-altoparlante-bluetooth-portatile-milano-665155663.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 655.53,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-napoli-665149161.htm"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-20T04:43:02.705Z",
-  "mode": "quick",
-  "runId": "39371013674",
+  "refreshedAt": "2026-10-20T07:53:08.003Z",
+  "mode": "full",
+  "runId": "39389473232",
   "candidates": 500,
-  "verifiedAdditions": 0,
-  "observationChanges": 0,
-  "freshnessRenewal": true,
+  "verifiedAdditions": 2,
+  "observationChanges": 19,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 111,
     "directVerified": 74,
@@ -38,6 +51,116 @@
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 29
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 272,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "olx-pl"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 29,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 29,
+          "unverifiedUrls": 29
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 13,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 13,
+          "unverifiedUrls": 13
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 4,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 4,
+          "unverifiedUrls": 2,
+          "verifiedUrls": 2
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 266,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 260,
+      "selectedUrls": 52,
+      "selectedBySource": {
+        "vinted-pl": 29,
+        "marktplaats-nl": 13,
+        "subito-it": 4,
+        "hifishark": 6
+      },
+      "modelsSelected": 20
+    }
   }
 }
