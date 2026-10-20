@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-20T11:29:28.296Z",
+  "refreshedAt": "2026-10-20T16:57:39.797Z",
   "stats": [
+    {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9311.42,
+      "max": 9311.42
+    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -47,8 +55,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1005.42,
-      "max": 1005.42
+      "min": 961.71,
+      "max": 961.71
     },
     {
       "key": "JBL Charge 6|USED",
@@ -159,8 +167,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 8415.33,
-      "max": 8415.33
+      "min": 8306.04,
+      "max": 8306.04
     },
     {
       "key": "HIFIMAN Arya Stealth|USED",
