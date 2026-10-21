@@ -1,26 +1,44 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
-  "changes": [],
+  "stale": 2,
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9311.42,
+      "to": 9206,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452309377-64-audio-u12t-high-end-in-ear-monitors"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-20T21:33:45.622Z",
+  "refreshedAt": "2026-10-21T04:39:08.558Z",
   "mode": "quick",
-  "runId": "39501340705",
+  "runId": "39545190631",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 1,
+  "observationChanges": 2,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 113,
-    "directVerified": 76,
+    "directVerified": 74,
     "accessRestricted": 10,
     "ambiguous": 12,
-    "dead": 13,
+    "dead": 14,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
