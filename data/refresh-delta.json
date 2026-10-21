@@ -2,26 +2,15 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 2,
-  "changes": [
-    {
-      "type": "STALE",
-      "model": "Etymotic ER2SE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450603834-etymotic-er2se-oortjes-zwart"
-    },
-    {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2420087831-nieuwe-technics-az80-en-az100-draadloze-oordopjes"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-21T17:06:55.302Z",
+  "refreshedAt": "2026-10-21T21:37:22.398Z",
   "mode": "quick",
-  "runId": "39640851007",
+  "runId": "39680260287",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 3,
+  "observationChanges": 0,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 118,
