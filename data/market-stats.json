@@ -1,12 +1,20 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-21T04:39:08.558Z",
+  "refreshedAt": "2026-10-21T07:56:54.359Z",
   "stats": [
     {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9311.42,
+      "max": 9311.42
+    },
+    {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 957.38,
       "max": 2618.59
     },
@@ -52,9 +60,9 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 4,
-      "confidence": "PROVISIONAL",
-      "median": 546.45,
+      "n": 5,
+      "confidence": "ROBUST",
+      "median": 524.59,
       "min": 524.59,
       "max": 655.74
     },
@@ -76,10 +84,10 @@
     },
     {
       "key": "HIFIMAN Ananda Nano|B-STOCK",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1092.9,
+      "min": 1005.47,
       "max": 1092.9
     },
     {
@@ -100,7 +108,7 @@
     },
     {
       "key": "AKG K702|USED",
-      "n": 5,
+      "n": 6,
       "confidence": "ROBUST",
       "median": 524.59,
       "min": 262.3,
@@ -108,10 +116,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 874.32,
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 874.32,
+      "min": 699.46,
       "max": 1005.47
     },
     {
@@ -313,6 +321,14 @@
       "median": null,
       "min": 524.59,
       "max": 524.59
+    },
+    {
+      "key": "64 Audio U12t|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 7864.51,
+      "max": 7864.51
     }
   ]
 }
