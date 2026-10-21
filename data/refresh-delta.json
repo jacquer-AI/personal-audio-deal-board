@@ -1,48 +1,41 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
   "stale": 2,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9311.42,
-      "to": 9206,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "STALE",
+      "model": "Etymotic ER2SE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450603834-etymotic-er2se-oortjes-zwart"
     },
     {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "Neumann NDH 30",
-      "url": "https://www.subito.it/informatica/neumann-ndh30-coppia-perfette-roma-660319225.htm"
+      "model": "Technics EAH-AZ100",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2420087831-nieuwe-technics-az80-en-az100-draadloze-oordopjes"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-21T11:41:52.644Z",
+  "refreshedAt": "2026-10-21T17:06:55.302Z",
   "mode": "quick",
-  "runId": "39593840890",
+  "runId": "39640851007",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 83,
-  "freshnessRenewal": false,
+  "observationChanges": 3,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 118,
     "directVerified": 78,
-    "accessRestricted": 9,
-    "ambiguous": 12,
-    "dead": 15,
-    "soldOrOut": 2,
+    "accessRestricted": 10,
+    "ambiguous": 13,
+    "dead": 16,
+    "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 2,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
