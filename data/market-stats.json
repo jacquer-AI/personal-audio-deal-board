@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-22T04:36:32.404Z",
+  "refreshedAt": "2026-10-22T07:53:26.198Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -163,14 +163,6 @@
       "max": 8291.79
     },
     {
-      "key": "HIFIMAN Arya Stealth|USED",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 1483.79,
-      "max": 1483.79
-    },
-    {
       "key": "Focal Clear MG|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
@@ -193,14 +185,6 @@
       "median": null,
       "min": 1178.31,
       "max": 1178.31
-    },
-    {
-      "key": "Sennheiser HD 800 S|USED",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 3491.28,
-      "max": 4276.82
     },
     {
       "key": "JBL Charge 6|B-STOCK",
@@ -299,6 +283,14 @@
       "max": 610.97
     },
     {
+      "key": "Sennheiser HD 800 S|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 3491.28,
+      "max": 3491.28
+    },
+    {
       "key": "HIFIMAN Ananda Nano|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
@@ -321,6 +313,14 @@
       "median": null,
       "min": 7851.02,
       "max": 7851.02
+    },
+    {
+      "key": "Austrian Audio Hi-X65|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 654.61,
+      "max": 654.61
     }
   ]
 }
