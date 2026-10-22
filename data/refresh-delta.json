@@ -5,9 +5,9 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-22T17:06:36.009Z",
+  "refreshedAt": "2026-10-22T21:30:47.540Z",
   "mode": "quick",
-  "runId": "39819742734",
+  "runId": "39857835925",
   "candidates": 500,
   "verifiedAdditions": 0,
   "observationChanges": 1,
@@ -34,9 +34,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 29,
-    "researchReverified": 29,
+    "researchReverified": 28,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 29
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 28,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0
   }
