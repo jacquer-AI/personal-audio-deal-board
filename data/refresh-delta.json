@@ -1,26 +1,34 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9206,
+      "to": 9295.45,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-21T21:37:22.398Z",
+  "refreshedAt": "2026-10-22T04:36:32.404Z",
   "mode": "quick",
-  "runId": "39680260287",
+  "runId": "39723306976",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 0,
+  "observationChanges": 1,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 118,
-    "directVerified": 78,
+    "directVerified": 79,
     "accessRestricted": 10,
     "ambiguous": 13,
     "dead": 16,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
