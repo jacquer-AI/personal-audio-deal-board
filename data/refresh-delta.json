@@ -5,12 +5,12 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-22T21:30:47.540Z",
+  "refreshedAt": "2026-10-23T04:42:02.459Z",
   "mode": "quick",
-  "runId": "39857835925",
+  "runId": "39901692017",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 1,
+  "observationChanges": 0,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 119,
@@ -28,17 +28,15 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 29,
-      "selected": 29,
+      "eligible": 28,
+      "selected": 28,
       "skippedOnBoard": 97,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 29,
+    "researchRechecked": 28,
     "researchReverified": 28,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 28,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 28
     },
     "researchPromoted": 0
   }
