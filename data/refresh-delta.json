@@ -5,26 +5,26 @@
   "stale": 0,
   "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-23T04:42:02.459Z",
-  "mode": "quick",
-  "runId": "39901692017",
+  "refreshedAt": "2026-10-23T07:52:16.796Z",
+  "mode": "full",
+  "runId": "39920657532",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 0,
-  "freshnessRenewal": true,
+  "observationChanges": 20,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 119,
     "directVerified": 78,
-    "accessRestricted": 10,
+    "accessRestricted": 9,
     "ambiguous": 13,
     "dead": 18,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -38,6 +38,115 @@
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 28
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 286,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "ebay-de"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 4,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 4,
+          "unverifiedUrls": 4
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 11,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 10,
+          "unverifiedUrls": 10
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 3,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 3,
+          "unverifiedUrls": 3
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 266,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 260,
+      "selectedUrls": 23,
+      "selectedBySource": {
+        "vinted-pl": 4,
+        "subito-it": 3,
+        "marktplaats-nl": 10,
+        "hifishark": 6
+      },
+      "modelsSelected": 16
+    }
   }
 }
