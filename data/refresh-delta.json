@@ -1,30 +1,38 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9304.82,
+      "to": 9354.23,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-10-23T07:52:16.796Z",
-  "mode": "full",
-  "runId": "39920657532",
+  "refreshedAt": "2026-10-23T11:32:04.810Z",
+  "mode": "quick",
+  "runId": "39946723726",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 20,
+  "observationChanges": 80,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 119,
     "directVerified": 78,
-    "accessRestricted": 9,
+    "accessRestricted": 10,
     "ambiguous": 13,
     "dead": 18,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
+      "allegro-pl": 3,
       "olx-pl": 4,
-      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -38,115 +46,6 @@
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 28
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 286,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "ebay-de"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 4,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 4,
-          "unverifiedUrls": 4
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 11,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 10,
-          "unverifiedUrls": 10
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 3,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 3,
-          "unverifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 266,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 260,
-      "selectedUrls": 23,
-      "selectedBySource": {
-        "vinted-pl": 4,
-        "subito-it": 3,
-        "marktplaats-nl": 10,
-        "hifishark": 6
-      },
-      "modelsSelected": 16
-    }
+    "researchPromoted": 0
   }
 }

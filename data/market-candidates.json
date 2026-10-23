@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-10-23T07:52:16.796Z",
-  "mode": "full",
+  "refreshedAt": "2026-10-23T11:32:04.810Z",
+  "mode": "quick",
   "candidates": [
     {
       "model": "64 Audio U12t",
@@ -4104,11 +4104,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 1965.83,
+      "pricePln": 1976.27,
       "originalPrice": 450,
       "currency": "EUR",
       "availability": "InStock",
@@ -4120,14 +4120,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4146,11 +4146,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 655.28,
+      "pricePln": 658.76,
       "originalPrice": 150,
       "currency": "EUR",
       "availability": "InStock",
@@ -4162,7 +4162,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "BATTERY_HEALTH_UNVERIFIED",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
@@ -4171,7 +4171,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4190,11 +4190,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 3202.11,
+      "pricePln": 3219.12,
       "originalPrice": 733,
       "currency": "EUR",
       "availability": "InStock",
@@ -4206,7 +4206,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4214,7 +4214,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4233,11 +4233,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 7208.03,
+      "pricePln": 7246.31,
       "originalPrice": 1650,
       "currency": "EUR",
       "availability": "InStock",
@@ -4249,7 +4249,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4257,7 +4257,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4276,11 +4276,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 2184.25,
+      "pricePln": 2195.85,
       "originalPrice": 500,
       "currency": "EUR",
       "availability": "InStock",
@@ -4292,14 +4292,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4318,11 +4318,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 3472.96,
+      "pricePln": 3491.4,
       "originalPrice": 795,
       "currency": "EUR",
       "availability": "InStock",
@@ -4334,7 +4334,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4342,7 +4342,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4361,11 +4361,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 1812.93,
+      "pricePln": 1822.56,
       "originalPrice": 415,
       "currency": "EUR",
       "availability": "InStock",
@@ -4377,7 +4377,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4385,7 +4385,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-16T07:28:25.937Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4404,11 +4404,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 764.49,
+      "pricePln": 768.55,
       "originalPrice": 175,
       "currency": "EUR",
       "availability": "InStock",
@@ -4420,7 +4420,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4428,7 +4428,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4447,11 +4447,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 546.06,
+      "pricePln": 548.96,
       "originalPrice": 125,
       "currency": "EUR",
       "availability": "InStock",
@@ -4463,14 +4463,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-15T07:41:39.724Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4489,11 +4489,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 1965.83,
+      "pricePln": 1976.27,
       "originalPrice": 450,
       "currency": "EUR",
       "availability": "InStock",
@@ -4505,7 +4505,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4513,7 +4513,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4532,11 +4532,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 2839.53,
+      "pricePln": 2854.61,
       "originalPrice": 650,
       "currency": "EUR",
       "availability": "InStock",
@@ -4548,7 +4548,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "BATTERY_HEALTH_UNVERIFIED",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
@@ -4557,7 +4557,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4576,11 +4576,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 1638.19,
+      "pricePln": 1646.89,
       "originalPrice": 375,
       "currency": "EUR",
       "availability": "InStock",
@@ -4592,7 +4592,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "BATTERY_HEALTH_UNVERIFIED",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
@@ -4601,7 +4601,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4620,11 +4620,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 6989.6,
+      "pricePln": 7026.72,
       "originalPrice": 1600,
       "currency": "EUR",
       "availability": "InStock",
@@ -4636,7 +4636,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4644,7 +4644,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4663,11 +4663,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 2184.25,
+      "pricePln": 2195.85,
       "originalPrice": 500,
       "currency": "EUR",
       "availability": "InStock",
@@ -4679,7 +4679,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4687,7 +4687,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-15T07:41:39.724Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4706,11 +4706,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 1092.13,
+      "pricePln": 1097.93,
       "originalPrice": 250,
       "currency": "EUR",
       "availability": "InStock",
@@ -4722,7 +4722,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4730,7 +4730,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-21T07:56:54.359Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4749,11 +4749,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 961.07,
+      "pricePln": 966.17,
       "originalPrice": 220,
       "currency": "EUR",
       "availability": "InStock",
@@ -4765,14 +4765,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4791,11 +4791,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 567.91,
+      "pricePln": 570.92,
       "originalPrice": 130,
       "currency": "EUR",
       "availability": "InStock",
@@ -4807,14 +4807,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4833,11 +4833,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 1965.83,
+      "pricePln": 1976.27,
       "originalPrice": 450,
       "currency": "EUR",
       "availability": "InStock",
@@ -4849,7 +4849,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4857,7 +4857,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4876,11 +4876,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 873.7,
+      "pricePln": 878.34,
       "originalPrice": 200,
       "currency": "EUR",
       "availability": "InStock",
@@ -4892,7 +4892,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4900,7 +4900,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4919,11 +4919,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 432.48,
+      "pricePln": 434.78,
       "originalPrice": 99,
       "currency": "EUR",
       "availability": "InStock",
@@ -4935,7 +4935,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "BATTERY_HEALTH_UNVERIFIED",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
@@ -4944,7 +4944,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4963,11 +4963,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 2075.04,
+      "pricePln": 2086.06,
       "originalPrice": 475,
       "currency": "EUR",
       "availability": "InStock",
@@ -4979,7 +4979,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
@@ -4987,7 +4987,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5006,11 +5006,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 393.17,
+      "pricePln": 395.25,
       "originalPrice": 90,
       "currency": "EUR",
       "availability": "InStock",
@@ -5022,14 +5022,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5048,11 +5048,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 611.59,
+      "pricePln": 614.84,
       "originalPrice": 140,
       "currency": "EUR",
       "availability": "InStock",
@@ -5064,14 +5064,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5090,11 +5090,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 502.38,
+      "pricePln": 505.05,
       "originalPrice": 115,
       "currency": "EUR",
       "availability": "InStock",
@@ -5106,14 +5106,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-15T07:41:39.724Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5132,11 +5132,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 524.22,
+      "pricePln": 527,
       "originalPrice": 120,
       "currency": "EUR",
       "availability": "InStock",
@@ -5148,7 +5148,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "BATTERY_HEALTH_UNVERIFIED",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
@@ -5157,7 +5157,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-17T07:09:08.742Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5176,11 +5176,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
-      "pricePln": 436.85,
+      "pricePln": 439.17,
       "originalPrice": 100,
       "currency": "EUR",
       "availability": "InStock",
@@ -5192,7 +5192,7 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "BATTERY_HEALTH_UNVERIFIED",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
@@ -5201,7 +5201,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-16T07:28:25.937Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5220,11 +5220,11 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 546.06,
+      "pricePln": 548.96,
       "originalPrice": 125,
       "currency": "EUR",
       "availability": "InStock",
@@ -5236,14 +5236,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-17T07:09:08.742Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5262,12 +5262,12 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-10-23T07:52:16.796Z",
+      "verifiedAt": "2026-10-23T11:32:04.810Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
-      "pricePln": 436.85,
-      "originalPrice": 100,
+      "pricePln": 461.13,
+      "originalPrice": 105,
       "currency": "EUR",
       "availability": "InStock",
       "priceBasis": "METADATA_MAY_BE_BID",
@@ -5278,14 +5278,14 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-22",
+      "fxEffectiveDate": "2026-10-23",
       "redTeam": [
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES",
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-19T08:02:43.456Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T11:32:04.810Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5615,8 +5615,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -5699,8 +5699,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -5910,8 +5910,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -5938,8 +5938,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -6007,8 +6007,8 @@
       ],
       "firstSeenAt": "2026-10-15T07:41:39.724Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -6063,8 +6063,8 @@
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus REX5",
@@ -6119,8 +6119,8 @@
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -6188,8 +6188,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 900",
@@ -6313,8 +6313,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "AKG K501",
@@ -6705,8 +6705,8 @@
       ],
       "firstSeenAt": "2026-10-19T08:02:43.456Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -6817,8 +6817,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -7237,8 +7237,8 @@
       ],
       "firstSeenAt": "2026-10-21T07:56:54.359Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -7293,8 +7293,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -7670,8 +7670,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800",
@@ -10615,8 +10615,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c117037/5240b4a0-c933-11f1-b1db-363561363863",
@@ -10697,8 +10697,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cnvRh/caab3cfc-ceb6-11f1-b16e-353164336163",
@@ -10738,8 +10738,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_4010a30d-ae4c-4cdc-a53a-277c1351a27c/cdda40b2-ceb6-11f1-9138-356233306134",
@@ -10779,8 +10779,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/cba9eaea-ceb6-11f1-b60a-353164336163",
@@ -10820,8 +10820,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2451456322/c9e674e4-ceb6-11f1-ad4c-353164336163",
@@ -10861,8 +10861,8 @@
       "fxEffectiveDate": "2026-10-22",
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/10_2437990179/ca1bda62-ceb6-11f1-86bb-353164336163",
@@ -10902,8 +10902,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1ciA2I/ca713dcc-ceb6-11f1-a560-356233306134",
@@ -10943,8 +10943,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/ca6c79ae-ceb6-11f1-9b15-353164336163",
@@ -10984,8 +10984,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1afSTh/ca5f6480-ceb6-11f1-99c2-356233306134",
@@ -11025,8 +11025,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID19tAKP/cd83d272-ceb6-11f1-9de6-356233306134",
@@ -11066,8 +11066,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m1668486504/6a4e14b8-cc5b-11f1-ac64-343933383033",
@@ -11148,8 +11148,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_477089071/cd8409c2-ceb6-11f1-aaa2-353164336163",
@@ -11189,8 +11189,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/240_78487521/cdeab992-ceb6-11f1-8696-353164336163",
@@ -11230,8 +11230,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_09fe6f16-5fc6-4a3c-96d7-909cb985d36e/cbaac280-ceb6-11f1-adba-356233306134",
@@ -11271,8 +11271,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cxGcP/cb1a010a-ceb6-11f1-9080-353164336163",
@@ -11312,8 +11312,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3548937545-172-8130/cba7678e-ceb6-11f1-b4d0-356233306134",
@@ -11353,8 +11353,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/cc8e4ece-ceb6-11f1-bc86-356233306134",
@@ -11394,8 +11394,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/10_442408512/cb85cd2c-ceb6-11f1-a531-353164336163",
@@ -11435,8 +11435,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/cc80dc4e-ceb6-11f1-8462-353164336163",
@@ -11476,8 +11476,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3509744763-172-25917/cd4be4b6-ceb6-11f1-bcd3-353164336163",
@@ -11517,8 +11517,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-IDXaJP5/ccd1c64a-ceb6-11f1-9777-353164336163",
@@ -11558,8 +11558,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_4acda254-3296-4d11-905a-0b612cb865dd/cbe5950e-ceb6-11f1-9b7e-353164336163",
@@ -11599,8 +11599,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bYd3H/ccc65bb6-ceb6-11f1-82ab-356233306134",
@@ -11640,8 +11640,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Z43U/caa4a05e-ceb6-11f1-97d5-356233306134",
@@ -11681,8 +11681,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1br9yM/cdb1bd54-ceb6-11f1-9731-353164336163",
@@ -11722,8 +11722,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_475940264/cc854b44-ceb6-11f1-8256-356233306134",
@@ -11763,8 +11763,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1ctG5o/cdd44a54-ceb6-11f1-8441-356233306134",
@@ -11804,8 +11804,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID19mRRc/cb4b38e2-ceb6-11f1-9ba9-353164336163",
@@ -11845,8 +11845,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_1bdbe56b-4eea-4766-a3c7-be3ecf5b0f1b/cbe39010-ceb6-11f1-aeaf-356233306134",
@@ -11886,8 +11886,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cni0F/cbc45e34-ceb6-11f1-c0c5-353164336163",
@@ -11927,8 +11927,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cNn8i/cd15a4be-ceb6-11f1-9003-353164336163",
@@ -11968,8 +11968,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_178007512338/cc7d5e0c-ceb6-11f1-8e35-353164336163",
@@ -12009,8 +12009,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478032856/ca6c9722-ceb6-11f1-b094-356233306134",
@@ -12050,8 +12050,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c113392/cb710fe0-ceb6-11f1-abac-356233306134",
@@ -12091,8 +12091,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c115762/cb6eb588-ceb6-11f1-a285-353164336163",
@@ -12132,8 +12132,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bsn5G/c9e3da18-ceb6-11f1-8976-356233306134",
@@ -12173,8 +12173,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID13hnmg/cac231b4-ceb6-11f1-9d79-356233306134",
@@ -12214,8 +12214,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID13hnmg/cd9b94fc-ceb6-11f1-a957-356233306134",
@@ -12255,8 +12255,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_453891621/cc2f93ca-ceb6-11f1-9524-356233306134",
@@ -12296,8 +12296,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_472258736/cc335942-ceb6-11f1-bc66-353164336163",
@@ -12337,8 +12337,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_317168284245/cd09c310-ceb6-11f1-bda8-356233306134",
@@ -12378,8 +12378,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_10F154/cadf5636-ceb6-11f1-9eb8-353164336163",
@@ -12419,8 +12419,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/6_23462714/cc450fa2-ceb6-11f1-a2d0-356233306134",
@@ -12460,8 +12460,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_QyGHK/ca1db120-ceb6-11f1-b922-356233306134",
@@ -12501,8 +12501,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cLJfX/ca22022a-ceb6-11f1-ab95-353164336163",
@@ -12542,8 +12542,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3548040430-172-1924/c9a74634-ceb6-11f1-a43e-356233306134",
@@ -12583,8 +12583,8 @@
       "fxEffectiveDate": "2026-10-22",
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Kv8P/cb19c370-ceb6-11f1-bb72-356233306134",
@@ -12624,8 +12624,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478962441/cbfbdaee-ceb6-11f1-8f9b-353164336163",
@@ -12665,8 +12665,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3543007585-172-7494/cc1b6a62-ceb6-11f1-8030-353164336163",
@@ -12706,8 +12706,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_11lnDk/cd4b4cd6-ceb6-11f1-bed6-356233306134",
@@ -12747,8 +12747,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c116067/cac129f4-ceb6-11f1-c06c-353164336163",
@@ -12788,8 +12788,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c117037/fff2d420-c86c-11f1-8065-343134653039",
@@ -12870,8 +12870,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/126_m2422270483/caab3cfc-ceb6-11f1-b16e-353164336163",
@@ -12911,8 +12911,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_94d623cb-60fb-4d50-ad13-65d309577577/cdda40b2-ceb6-11f1-9138-356233306134",
@@ -12952,8 +12952,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/cdeb9502-cded-11f1-9bbe-353164336163",
@@ -13075,8 +13075,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_468980418/ca713dcc-ceb6-11f1-a560-356233306134",
@@ -13116,8 +13116,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1085695152/ca6c79ae-ceb6-11f1-9b15-353164336163",
@@ -13157,8 +13157,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_ce9dd6f3-8421-4a88-8604-20b776441548/ca5f6480-ceb6-11f1-99c2-356233306134",
@@ -13198,8 +13198,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_443555277/cd83d272-ceb6-11f1-9de6-356233306134",
@@ -13239,8 +13239,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m1668486504/fd4b2cc2-c86b-11f1-8aa8-333239373731",
@@ -13321,8 +13321,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_2142884762/cd8409c2-ceb6-11f1-aaa2-353164336163",
@@ -13362,8 +13362,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/241_54046041/cdeab992-ceb6-11f1-8696-353164336163",
@@ -13403,8 +13403,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_3fdf4a84-34b8-4947-b836-523f6211035d/cbaac280-ceb6-11f1-adba-356233306134",
@@ -13444,8 +13444,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478589965/cb1a010a-ceb6-11f1-9080-353164336163",
@@ -13485,8 +13485,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3549027600-172-2422/cba7678e-ceb6-11f1-b4d0-356233306134",
@@ -13526,8 +13526,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cp6gE/cc8e4ece-ceb6-11f1-bc86-356233306134",
@@ -13567,8 +13567,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_463579059/cb85cd2c-ceb6-11f1-a531-353164336163",
@@ -13608,8 +13608,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/cec79fa2-cded-11f1-a2aa-316430313933",
@@ -13731,8 +13731,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3276038843-172-2149/cbe5950e-ceb6-11f1-9b7e-353164336163",
@@ -13772,8 +13772,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/197_370271/ccc65bb6-ceb6-11f1-82ab-356233306134",
@@ -13813,8 +13813,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_f5e77fe0-7362-4ff4-81e2-09333e29af49/caa4a05e-ceb6-11f1-97d5-356233306134",
@@ -13854,8 +13854,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/126_m2438896381/cdb1bd54-ceb6-11f1-9731-353164336163",
@@ -13895,8 +13895,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/197_322689/cc854b44-ceb6-11f1-8256-356233306134",
@@ -13936,8 +13936,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_4b1e5db6-7b55-4503-832b-44747994ac4e/cdd44a54-ceb6-11f1-8441-356233306134",
@@ -13977,8 +13977,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_76ebe017-02ed-4bc5-a148-251ef7ac4e9d/cb4b38e2-ceb6-11f1-9ba9-353164336163",
@@ -14018,8 +14018,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_71142b8f-894a-4811-ac38-45f76ad5bed2/cbe39010-ceb6-11f1-aeaf-356233306134",
@@ -14059,8 +14059,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_10umeM/cbc45e34-ceb6-11f1-c0c5-353164336163",
@@ -14100,8 +14100,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1crpCd/cd15a4be-ceb6-11f1-9003-353164336163",
@@ -14141,8 +14141,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_376754513904/cc7d5e0c-ceb6-11f1-8e35-353164336163",
@@ -14182,8 +14182,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_479220345/ca6c9722-ceb6-11f1-b094-356233306134",
@@ -14223,8 +14223,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2450491518/cb710fe0-ceb6-11f1-abac-356233306134",
@@ -14264,8 +14264,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_2069128349/cb6eb588-ceb6-11f1-a285-353164336163",
@@ -14305,8 +14305,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_2770506589-172-4383/c9e3da18-ceb6-11f1-8976-356233306134",
@@ -14346,8 +14346,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cTwFF/cac231b4-ceb6-11f1-9d79-356233306134",
@@ -14387,8 +14387,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/126_m2433423452/cd9b94fc-ceb6-11f1-a957-356233306134",
@@ -14428,8 +14428,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_457636335/cc2f93ca-ceb6-11f1-9524-356233306134",
@@ -14469,8 +14469,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_2cc885ba-0086-43a0-afb0-2888906f3595/cc335942-ceb6-11f1-bc66-353164336163",
@@ -14510,8 +14510,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_317168284245/cf5b0efe-cded-11f1-9518-353164336163",
@@ -14674,8 +14674,8 @@
       "fxEffectiveDate": "2026-10-22",
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_eef26a60-937d-4362-8832-6d50401875a6/ca22022a-ceb6-11f1-ab95-353164336163",
@@ -14715,8 +14715,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3548040430-172-1924/cbeb77ea-cded-11f1-a5fd-353164336163",
@@ -14797,8 +14797,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c117221/cbfbdaee-ceb6-11f1-8f9b-353164336163",
@@ -14838,8 +14838,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_10GXdK/cc1b6a62-ceb6-11f1-8030-353164336163",
@@ -14879,8 +14879,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_11nJhN/cd4b4cd6-ceb6-11f1-bed6-356233306134",
@@ -14920,8 +14920,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/273_JE0jd/cac129f4-ceb6-11f1-c06c-353164336163",
@@ -14961,8 +14961,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3534176340-172-3534/cd2c3436-ceb6-11f1-afc2-356233306134",
@@ -15002,8 +15002,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1932193321/caab3cfc-ceb6-11f1-b16e-353164336163",
@@ -15043,8 +15043,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_f7f46938-ad08-4939-879b-320457407293/cdda40b2-ceb6-11f1-9138-356233306134",
@@ -15084,8 +15084,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/1f9f0d76-cd25-11f1-b270-343933383033",
@@ -15207,8 +15207,8 @@
       "fxEffectiveDate": "2026-10-22",
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_0535e120-fd5e-44ff-9c84-1801d210d578/ca713dcc-ceb6-11f1-a560-356233306134",
@@ -15248,8 +15248,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_858228458/ca6c79ae-ceb6-11f1-9b15-353164336163",
@@ -15289,8 +15289,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1660795331/ca5f6480-ceb6-11f1-99c2-356233306134",
@@ -15330,8 +15330,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_ace04e19-6bce-4b18-b96b-68c4db4b2365/cd83d272-ceb6-11f1-9de6-356233306134",
@@ -15371,8 +15371,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_810d9d2a-71f7-4d1c-a411-bd90dfbcb68b/cbf9b07a-ceb6-11f1-91b9-356233306134",
@@ -15412,8 +15412,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3497405900-172-6681/cd8409c2-ceb6-11f1-aaa2-353164336163",
@@ -15453,8 +15453,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/36_1325765946/cdeab992-ceb6-11f1-8696-353164336163",
@@ -15494,8 +15494,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e7125e8b-bf92-4e0a-baf8-2aa8adbb6a18/cbaac280-ceb6-11f1-adba-356233306134",
@@ -15535,8 +15535,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_2606021b-6dce-4fe0-af2c-7a657598d23b/cb1a010a-ceb6-11f1-9080-353164336163",
@@ -15576,8 +15576,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2418727527/cba7678e-ceb6-11f1-b4d0-356233306134",
@@ -15617,8 +15617,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_470344629/cc8e4ece-ceb6-11f1-bc86-356233306134",
@@ -15658,8 +15658,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1046757347/cb85cd2c-ceb6-11f1-a531-353164336163",
@@ -15699,8 +15699,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/20886e9e-cd25-11f1-9963-343933383033",
@@ -15822,8 +15822,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_4acda254-3296-4d11-905a-0b612cb865dd/ce2834e4-cded-11f1-8937-353164336163",
@@ -15904,8 +15904,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3537729098-172-2095/caa4a05e-ceb6-11f1-97d5-356233306134",
@@ -15945,8 +15945,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3204607453-172-4905/cdb1bd54-ceb6-11f1-9731-353164336163",
@@ -15986,8 +15986,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1346709344/cc854b44-ceb6-11f1-8256-356233306134",
@@ -16027,8 +16027,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_6d6aaac2-f6e4-4c41-bd21-e17eb5f905c2/cdd44a54-ceb6-11f1-8441-356233306134",
@@ -16068,8 +16068,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e5a9c11d-da81-4302-9b3b-3e2339ea8752/cb4b38e2-ceb6-11f1-9ba9-353164336163",
@@ -16109,8 +16109,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_a5a37acf-d9a9-4057-a2b6-627f39aeb4cf/cbe39010-ceb6-11f1-aeaf-356233306134",
@@ -16150,8 +16150,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cni0F/ce00f1ae-cded-11f1-b541-356233306134",
@@ -16232,8 +16232,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_178007512338/cebcd838-cded-11f1-9251-353164336163",
@@ -16314,8 +16314,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c113392/cdae3d38-cded-11f1-ba73-353164336163",
@@ -16396,8 +16396,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3490502578-172-3111/c9e3da18-ceb6-11f1-8976-356233306134",
@@ -16437,8 +16437,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_18268735-a6bd-45bd-a36a-a86ba4fe6660/cac231b4-ceb6-11f1-9d79-356233306134",
@@ -16478,8 +16478,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/126_m2448205485/cd9b94fc-ceb6-11f1-a957-356233306134",
@@ -16519,8 +16519,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1359348970/cc2f93ca-ceb6-11f1-9524-356233306134",
@@ -16560,8 +16560,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c114092/cc335942-ceb6-11f1-bc66-353164336163",
@@ -16601,8 +16601,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_317168284245/211303b0-cd25-11f1-8ee7-363561363863",
@@ -16806,8 +16806,8 @@
       "fxEffectiveDate": "2026-10-22",
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_296585002014/0b6ea166-c7a5-11f1-9cb4-663765343164",
@@ -16888,8 +16888,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3496118130-172-5310/cbfbdaee-ceb6-11f1-8f9b-353164336163",
@@ -16929,8 +16929,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/273_Iddwl/cc1b6a62-ceb6-11f1-8030-353164336163",
@@ -16970,8 +16970,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_11rL5j/cd4b4cd6-ceb6-11f1-bed6-356233306134",
@@ -17011,8 +17011,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2456076321/cac129f4-ceb6-11f1-c06c-353164336163",
@@ -17052,8 +17052,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_196699361/cd2c3436-ceb6-11f1-afc2-356233306134",
@@ -17093,8 +17093,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3518112860-172-7080/caab3cfc-ceb6-11f1-b16e-353164336163",
@@ -17134,8 +17134,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1067815766/cdda40b2-ceb6-11f1-9138-356233306134",
@@ -17175,8 +17175,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/6cde3d5c-cc5b-11f1-a83c-613563663231",
@@ -17339,8 +17339,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3516582076-172-3351/ca6c79ae-ceb6-11f1-9b15-353164336163",
@@ -17380,8 +17380,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_984226141/ca5f6480-ceb6-11f1-99c2-356233306134",
@@ -17421,8 +17421,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1081238237/cd83d272-ceb6-11f1-9de6-356233306134",
@@ -17462,8 +17462,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e3fdf20f-68e9-40e3-a685-adaf4deb84e4/cbf9b07a-ceb6-11f1-91b9-356233306134",
@@ -17503,8 +17503,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3510810496-172-4911/cd8409c2-ceb6-11f1-aaa2-353164336163",
@@ -17544,8 +17544,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/240_78487521/d0403024-cded-11f1-952c-356233306134",
@@ -17626,8 +17626,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/240_83028545/cb1a010a-ceb6-11f1-9080-353164336163",
@@ -17667,8 +17667,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/6_12876811/cba7678e-ceb6-11f1-b4d0-356233306134",
@@ -17708,8 +17708,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2437308762/cc8e4ece-ceb6-11f1-bc86-356233306134",
@@ -17749,8 +17749,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1244484344/cb85cd2c-ceb6-11f1-a531-353164336163",
@@ -17790,8 +17790,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/6dd8c4e8-cc5b-11f1-8083-363561363863",
@@ -17995,8 +17995,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3543407203-172-2030/caa4a05e-ceb6-11f1-97d5-356233306134",
@@ -18036,8 +18036,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_11pZ1D/cdb1bd54-ceb6-11f1-9731-353164336163",
@@ -18077,8 +18077,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_196373753/cc854b44-ceb6-11f1-8256-356233306134",
@@ -18118,8 +18118,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/165_81335143/cdd44a54-ceb6-11f1-8441-356233306134",
@@ -18159,8 +18159,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3435296531-172-3066/cb4b38e2-ceb6-11f1-9ba9-353164336163",
@@ -18200,8 +18200,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_dbf77c17-7150-4930-b51c-49cc9b156141/cbe39010-ceb6-11f1-aeaf-356233306134",
@@ -18241,8 +18241,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/251_45411168/ce00f1ae-cded-11f1-b541-356233306134",
@@ -18323,8 +18323,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_376754513904/cebcd838-cded-11f1-9251-353164336163",
@@ -18405,8 +18405,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2450491518/cdae3d38-cded-11f1-ba73-353164336163",
@@ -18487,8 +18487,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2448168647/c9e3da18-ceb6-11f1-8976-356233306134",
@@ -18528,8 +18528,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_b7e26609-7c8d-4380-89d0-e447ee65bcbd/cac231b4-ceb6-11f1-9d79-356233306134",
@@ -18569,8 +18569,8 @@
       ],
       "firstSeenAt": "2026-10-23T07:52:16.796Z",
       "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     }
   ]
 }
