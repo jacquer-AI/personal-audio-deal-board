@@ -1,12 +1,20 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-24T04:30:01.227Z",
+  "refreshedAt": "2026-10-24T07:33:28.300Z",
   "stats": [
     {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9354.23,
+      "max": 9354.23
+    },
+    {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 961.78,
       "max": 2630.63
     },
@@ -20,7 +28,7 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 10,
+      "n": 12,
       "confidence": "ROBUST",
       "median": 527,
       "min": 373.29,
@@ -84,10 +92,10 @@
     },
     {
       "key": "Sony MDR-M1|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 395.25,
+      "min": 654.36,
       "max": 654.36
     },
     {
@@ -313,6 +321,14 @@
       "median": null,
       "min": 658.76,
       "max": 658.76
+    },
+    {
+      "key": "Etymotic ER2SE|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 390.86,
+      "max": 390.86
     }
   ]
 }
