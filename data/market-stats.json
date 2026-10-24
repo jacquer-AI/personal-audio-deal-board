@@ -1,12 +1,20 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-24T15:52:27.058Z",
+  "refreshedAt": "2026-10-24T20:43:21.672Z",
   "stats": [
     {
-      "key": "Technics EAH-AZ100|NEW",
-      "n": 2,
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
+      "min": 9354.23,
+      "max": 9354.23
+    },
+    {
+      "key": "Technics EAH-AZ100|NEW",
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 999,
       "min": 961.78,
       "max": 2630.63
     },
@@ -303,8 +311,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 7900.67,
-      "max": 7900.67
+      "min": 8124.65,
+      "max": 8124.65
     },
     {
       "key": "Austrian Audio Hi-X65|USED",
