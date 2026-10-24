@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-23T21:21:08.834Z",
+  "refreshedAt": "2026-10-24T04:30:01.227Z",
   "stats": [
     {
       "key": "Technics EAH-AZ100|NEW",
@@ -108,10 +108,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 878.34,
-      "min": 702.67,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 878.34,
       "max": 1010.09
     },
     {
