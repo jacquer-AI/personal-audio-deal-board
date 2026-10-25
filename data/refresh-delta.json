@@ -1,32 +1,39 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
   "stale": 1,
   "changes": [
     {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9354.23,
+      "to": 9206,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
       "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-25T11:18:34.044Z",
+  "refreshedAt": "2026-10-25T16:09:06.887Z",
   "mode": "quick",
-  "runId": "40188303835",
+  "runId": "40210287307",
   "candidates": 500,
   "verifiedAdditions": 0,
   "observationChanges": 2,
-  "freshnessRenewal": false,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 122,
-    "directVerified": 77,
+    "directVerified": 76,
     "accessRestricted": 10,
     "ambiguous": 13,
     "dead": 21,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
@@ -34,16 +41,16 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 28,
-      "selected": 28,
+      "eligible": 27,
+      "selected": 27,
       "skippedOnBoard": 100,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 28,
-    "researchReverified": 27,
+    "researchRechecked": 27,
+    "researchReverified": 26,
     "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 27,
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26,
       "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0
