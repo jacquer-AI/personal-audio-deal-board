@@ -1,39 +1,55 @@
 {
-  "new": 0,
+  "new": 1,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
+  "stale": 2,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9377.45,
+      "from": 9377.45,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "Austrian Audio Hi-X65",
+      "url": "https://www.subito.it/audio-video/austrian-audio-hi-x65-arezzo-665473926.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 572.34,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2453189380-jbl-charge-6-nieuw-ongeopend-sealed-rood"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-26T12:52:10.874Z",
+  "refreshedAt": "2026-10-26T22:36:54.270Z",
   "mode": "quick",
-  "runId": "40325835067",
-  "candidates": 472,
-  "verifiedAdditions": 0,
-  "observationChanges": 80,
+  "runId": "40413756213",
+  "candidates": 381,
+  "verifiedAdditions": 1,
+  "observationChanges": 5,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 123,
-    "directVerified": 79,
-    "accessRestricted": 10,
+    "directVerified": 77,
+    "accessRestricted": 9,
     "ambiguous": 13,
-    "dead": 21,
+    "dead": 22,
     "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     },
     "researchSelection": {
       "eligible": 26,
@@ -42,10 +58,12 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 26,
-    "researchReverified": 26,
+    "researchReverified": 25,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 24,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
-    "researchPromoted": 0
+    "researchPromoted": 1
   }
 }
