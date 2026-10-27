@@ -1,45 +1,27 @@
 {
-  "new": 1,
-  "priceChanged": 1,
+  "new": 0,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 2,
+  "stale": 1,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9377.45,
-      "to": 9206,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "Austrian Audio Hi-X65",
-      "url": "https://www.subito.it/audio-video/austrian-audio-hi-x65-arezzo-665473926.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 572.34,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2453189380-jbl-charge-6-nieuw-ongeopend-sealed-rood"
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-26T22:36:54.270Z",
+  "refreshedAt": "2026-10-27T04:57:25.241Z",
   "mode": "quick",
-  "runId": "40413756213",
-  "candidates": 381,
-  "verifiedAdditions": 1,
-  "observationChanges": 5,
+  "runId": "40452554416",
+  "candidates": 374,
+  "verifiedAdditions": 0,
+  "observationChanges": 3,
   "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 123,
+    "directUrlsAttempted": 124,
     "directVerified": 77,
-    "accessRestricted": 9,
+    "accessRestricted": 10,
     "ambiguous": 13,
     "dead": 22,
     "soldOrOut": 0,
@@ -48,22 +30,20 @@
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 2
+      "allegro-pl": 3,
+      "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 26,
-      "selected": 26,
-      "skippedOnBoard": 101,
+      "eligible": 24,
+      "selected": 24,
+      "skippedOnBoard": 36,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 26,
-    "researchReverified": 25,
-    "researchDowngraded": 1,
+    "researchRechecked": 24,
+    "researchReverified": 24,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 24,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 24
     },
-    "researchPromoted": 1
+    "researchPromoted": 0
   }
 }
