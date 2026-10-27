@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-27T17:57:19.145Z",
+  "refreshedAt": "2026-10-27T22:08:58.140Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -28,9 +28,9 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 13,
+      "n": 12,
       "confidence": "ROBUST",
-      "median": 528.67,
+      "median": 539.685,
       "min": 374.48,
       "max": 621.19
     },
@@ -297,14 +297,6 @@
       "median": null,
       "min": 528.67,
       "max": 528.67
-    },
-    {
-      "key": "64 Audio U12t|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 8150.36,
-      "max": 8150.36
     },
     {
       "key": "Etymotic ER2SE|B-STOCK",

@@ -1,52 +1,53 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 0,
+  "stale": 2,
   "changes": [
     {
-      "type": "PRICE",
+      "type": "STALE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9383.84,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456076321-64-audio-u12t-high-end-in-ear-monitors"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2449915202-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-27T17:57:19.145Z",
+  "refreshedAt": "2026-10-27T22:08:58.140Z",
   "mode": "quick",
-  "runId": "40555371178",
+  "runId": "40592500818",
   "candidates": 490,
   "verifiedAdditions": 0,
-  "observationChanges": 2,
+  "observationChanges": 3,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 125,
-    "directVerified": 79,
-    "accessRestricted": 9,
-    "ambiguous": 13,
-    "dead": 22,
+    "directVerified": 77,
+    "accessRestricted": 10,
+    "ambiguous": 14,
+    "dead": 23,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
+      "allegro-pl": 3,
       "olx-pl": 4,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 24,
-      "selected": 24,
+      "eligible": 23,
+      "selected": 23,
       "skippedOnBoard": 22,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 24,
+    "researchRechecked": 23,
     "researchReverified": 23,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 23,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 23
     },
     "researchPromoted": 0
   }
