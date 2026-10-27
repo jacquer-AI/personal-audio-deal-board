@@ -1,55 +1,49 @@
 {
-  "new": 1,
+  "new": 0,
   "priceChanged": 1,
-  "sold": 1,
-  "stale": 0,
+  "sold": 0,
+  "stale": 1,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9377.45,
+      "from": 9377.45,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "price": 435.86,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-milano-665990730.htm"
-    },
-    {
-      "type": "SOLD",
-      "model": "Focal Clear MG",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2445677648-focal-clear-mg-ex-demo-perfecte-staat"
+      "type": "STALE",
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-27T08:18:10.517Z",
-  "mode": "full",
-  "runId": "40472537322",
-  "candidates": 500,
-  "verifiedAdditions": 1,
-  "observationChanges": 19,
+  "refreshedAt": "2026-10-27T12:04:11.703Z",
+  "mode": "quick",
+  "runId": "40500858154",
+  "candidates": 491,
+  "verifiedAdditions": 0,
+  "observationChanges": 81,
   "freshnessRenewal": false,
   "receipt": {
-    "directUrlsAttempted": 124,
+    "directUrlsAttempted": 125,
     "directVerified": 78,
-    "accessRestricted": 10,
+    "accessRestricted": 9,
     "ambiguous": 13,
     "dead": 22,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
       "eligible": 24,
       "selected": 24,
-      "skippedOnBoard": 29,
+      "skippedOnBoard": 30,
       "skippedDuplicates": 0
     },
     "researchRechecked": 24,
@@ -57,116 +51,6 @@
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 24
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 275,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "mediaexpert-outlet"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 3,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 3,
-          "unverifiedUrls": 3
-        },
-        "mediaexpert-outlet": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 23,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 23,
-          "unverifiedUrls": 23
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 4,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 4,
-          "unverifiedUrls": 3,
-          "verifiedUrls": 1
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 256,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 250,
-      "selectedUrls": 36,
-      "selectedBySource": {
-        "vinted-pl": 3,
-        "marktplaats-nl": 23,
-        "subito-it": 4,
-        "hifishark": 6
-      },
-      "modelsSelected": 22
-    }
+    "researchPromoted": 0
   }
 }
