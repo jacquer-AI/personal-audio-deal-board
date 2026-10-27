@@ -2,54 +2,51 @@
   "new": 0,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9377.45,
-      "to": 9206,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "64 Audio U12t",
+      "from": 9206,
+      "to": 9383.84,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-27T12:04:11.703Z",
+  "refreshedAt": "2026-10-27T17:57:19.145Z",
   "mode": "quick",
-  "runId": "40500858154",
-  "candidates": 491,
+  "runId": "40555371178",
+  "candidates": 490,
   "verifiedAdditions": 0,
-  "observationChanges": 81,
-  "freshnessRenewal": false,
+  "observationChanges": 2,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 125,
-    "directVerified": 78,
+    "directVerified": 79,
     "accessRestricted": 9,
     "ambiguous": 13,
     "dead": 22,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "olx-pl": 4,
       "allegro-pl": 2,
+      "olx-pl": 4,
       "ebay-pl": 1
     },
     "researchSelection": {
       "eligible": 24,
       "selected": 24,
-      "skippedOnBoard": 30,
+      "skippedOnBoard": 22,
       "skippedDuplicates": 0
     },
     "researchRechecked": 24,
-    "researchReverified": 24,
+    "researchReverified": 23,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 24
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 23,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0
   }
