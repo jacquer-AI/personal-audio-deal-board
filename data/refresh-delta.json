@@ -6,37 +6,37 @@
   "changes": [
     {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456076321-64-audio-u12t-high-end-in-ear-monitors"
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-665845031.htm"
     },
     {
       "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2449915202-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw"
+      "model": "Technics EAH-AZ100",
+      "url": "https://www.subito.it/audio-video/technics-eah-az100-auricolari-hi-fi-flagship-verona-663126730.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-27T22:08:58.140Z",
+  "refreshedAt": "2026-10-28T05:33:07.052Z",
   "mode": "quick",
-  "runId": "40592500818",
-  "candidates": 490,
+  "runId": "40638632992",
+  "candidates": 488,
   "verifiedAdditions": 0,
-  "observationChanges": 3,
+  "observationChanges": 5,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 125,
-    "directVerified": 77,
-    "accessRestricted": 10,
-    "ambiguous": 14,
-    "dead": 23,
+    "directVerified": 75,
+    "accessRestricted": 8,
+    "ambiguous": 13,
+    "dead": 26,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
       "olx-pl": 4,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 1
     },
     "researchSelection": {
       "eligible": 23,

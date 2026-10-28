@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-27T22:08:58.140Z",
+  "refreshedAt": "2026-10-28T05:33:07.052Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -108,10 +108,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 881.12,
-      "min": 660.84,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 881.12,
       "max": 1013.29
     },
     {
@@ -211,14 +211,6 @@
       "max": 925.18
     },
     {
-      "key": "Technics EAH-AZ100|USED",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 837.06,
-      "max": 881.12
-    },
-    {
       "key": "Neumann NDH 30|NEW",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
@@ -233,6 +225,14 @@
       "median": null,
       "min": 1299.65,
       "max": 1299.65
+    },
+    {
+      "key": "Technics EAH-AZ100|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 881.12,
+      "max": 881.12
     },
     {
       "key": "Sennheiser HD 800|USED",
