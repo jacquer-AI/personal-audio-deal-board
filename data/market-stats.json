@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-28T05:33:07.052Z",
+  "refreshedAt": "2026-10-28T08:54:59.572Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -12,18 +12,18 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 964.83,
       "max": 2638.95
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 4,
-      "confidence": "PROVISIONAL",
-      "median": 1209.335,
-      "min": 1096.99,
+      "n": 6,
+      "confidence": "ROBUST",
+      "median": 1096.99,
+      "min": 881.12,
       "max": 1321.68
     },
     {
@@ -36,10 +36,10 @@
     },
     {
       "key": "Beyerdynamic DT 880|USED",
-      "n": 6,
+      "n": 7,
       "confidence": "ROBUST",
       "median": 528.67,
-      "min": 330.42,
+      "min": 220.28,
       "max": 793.01
     },
     {
@@ -100,10 +100,10 @@
     },
     {
       "key": "AKG K702|USED",
-      "n": 6,
+      "n": 7,
       "confidence": "ROBUST",
       "median": 528.67,
-      "min": 264.34,
+      "min": 220.28,
       "max": 528.67
     },
     {
