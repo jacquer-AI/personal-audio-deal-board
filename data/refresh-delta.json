@@ -1,51 +1,31 @@
 {
   "new": 0,
-  "priceChanged": 2,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 1,
-  "changes": [
-    {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9383.84,
-      "to": 9391.08,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "Beyerdynamic DT 880",
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cuffie-da-studio-fermo-622140583.htm"
-    },
-    {
-      "type": "PRICE",
-      "model": "Sennheiser HD 800 S",
-      "from": 3511.12,
-      "to": 3306.75,
-      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-torino-664348538.htm"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-10-28T12:44:40.364Z",
+  "refreshedAt": "2026-10-28T22:31:10.629Z",
   "mode": "quick",
-  "runId": "40690298668",
-  "candidates": 500,
+  "runId": "40780557507",
+  "candidates": 498,
   "verifiedAdditions": 0,
-  "observationChanges": 83,
-  "freshnessRenewal": false,
+  "observationChanges": 1,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 130,
     "directVerified": 79,
-    "accessRestricted": 8,
+    "accessRestricted": 9,
     "ambiguous": 13,
     "dead": 27,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 1
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
     "researchSelection": {
       "eligible": 21,
