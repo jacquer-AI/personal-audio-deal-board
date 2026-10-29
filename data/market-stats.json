@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-28T22:31:10.629Z",
+  "refreshedAt": "2026-10-29T05:40:52.870Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -12,9 +12,9 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 965.57,
       "max": 2640.99
     },
@@ -30,7 +30,7 @@
       "key": "JBL Charge 6|NEW",
       "n": 13,
       "confidence": "ROBUST",
-      "median": 551.13,
+      "median": 529.08,
       "min": 374.77,
       "max": 621.67
     },
