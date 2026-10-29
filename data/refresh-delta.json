@@ -1,48 +1,50 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 2,
   "sold": 0,
-  "stale": 2,
+  "stale": 1,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9391.08,
-      "to": 9206,
+      "from": 9206,
+      "to": 9361.48,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-portable-speaker-latina-666169199.htm"
     },
     {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+      "type": "PRICE",
+      "model": "JBL Charge 6",
+      "from": 527,
+      "to": 483.46,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-nera-reggio-emilia-665604912.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-29T12:53:52.328Z",
+  "refreshedAt": "2026-10-29T22:42:11.322Z",
   "mode": "quick",
-  "runId": "40877071998",
+  "runId": "40967831831",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 80,
+  "observationChanges": 7,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 130,
-    "directVerified": 75,
+    "directVerified": 76,
     "accessRestricted": 9,
     "ambiguous": 13,
-    "dead": 29,
+    "dead": 30,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 3,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "olx-pl": 4,
       "allegro-pl": 2,
+      "olx-pl": 4,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -52,9 +54,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 24,
-    "researchReverified": 24,
+    "researchReverified": 21,
+    "researchDowngraded": 3,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 24
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 21,
+      "NOT_VERIFIED_IN_THIS_RUN": 3
     },
     "researchPromoted": 0
   }
