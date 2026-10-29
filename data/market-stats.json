@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-29T05:40:52.870Z",
+  "refreshedAt": "2026-10-29T08:49:53.386Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -12,15 +12,15 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 999,
       "min": 965.57,
       "max": 2640.99
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 6,
+      "n": 5,
       "confidence": "ROBUST",
       "median": 1097.84,
       "min": 881.8,
@@ -107,14 +107,6 @@
       "max": 529.08
     },
     {
-      "key": "HIFIMAN Edition XS|USED",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 881.8,
-      "max": 1014.07
-    },
-    {
       "key": "64 Audio U12t|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
@@ -177,6 +169,14 @@
       "median": null,
       "min": 1190.43,
       "max": 1190.43
+    },
+    {
+      "key": "HIFIMAN Edition XS|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 881.8,
+      "max": 881.8
     },
     {
       "key": "JBL Charge 6|B-STOCK",
