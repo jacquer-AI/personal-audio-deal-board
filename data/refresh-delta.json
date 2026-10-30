@@ -1,64 +1,55 @@
 {
   "new": 0,
-  "priceChanged": 2,
+  "priceChanged": 1,
   "sold": 0,
   "stale": 1,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9361.48,
+      "from": 9361.48,
+      "to": 9206,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-portable-speaker-latina-666169199.htm"
-    },
-    {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 527,
-      "to": 483.46,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-nera-reggio-emilia-665604912.htm"
+      "model": "64 Audio U12t",
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-29T22:42:11.322Z",
+  "refreshedAt": "2026-10-30T05:40:07.921Z",
   "mode": "quick",
-  "runId": "40967831831",
-  "candidates": 500,
+  "runId": "41009675005",
+  "candidates": 499,
   "verifiedAdditions": 0,
-  "observationChanges": 7,
+  "observationChanges": 2,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 130,
-    "directVerified": 76,
-    "accessRestricted": 9,
+    "directVerified": 75,
+    "accessRestricted": 8,
     "ambiguous": 13,
     "dead": 30,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 3,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 1
     },
     "researchSelection": {
-      "eligible": 24,
-      "selected": 24,
+      "eligible": 21,
+      "selected": 21,
       "skippedOnBoard": 23,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 24,
+    "researchRechecked": 21,
     "researchReverified": 21,
-    "researchDowngraded": 3,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 21,
-      "NOT_VERIFIED_IN_THIS_RUN": 3
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 21
     },
     "researchPromoted": 0
   }
