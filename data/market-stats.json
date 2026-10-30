@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-30T12:47:06.899Z",
+  "refreshedAt": "2026-10-30T22:14:50.810Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -177,14 +177,6 @@
       "median": null,
       "min": 879.1,
       "max": 879.1
-    },
-    {
-      "key": "JBL Charge 6|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 439.55,
-      "max": 439.55
     },
     {
       "key": "HIFIMAN Svanar Wireless|NEW",

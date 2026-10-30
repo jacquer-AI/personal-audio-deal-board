@@ -1,38 +1,36 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 0,
+  "stale": 1,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9361.48,
-      "to": 9362.33,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451675258-jbl-charge-6-draadloze-bluetooth-speaker-blauw-nwpr-160"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-30T12:47:06.899Z",
+  "refreshedAt": "2026-10-30T22:14:50.810Z",
   "mode": "quick",
-  "runId": "41057936840",
+  "runId": "41136807753",
   "candidates": 499,
   "verifiedAdditions": 0,
-  "observationChanges": 79,
-  "freshnessRenewal": false,
+  "observationChanges": 2,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 131,
-    "directVerified": 76,
-    "accessRestricted": 10,
+    "directVerified": 75,
+    "accessRestricted": 9,
     "ambiguous": 13,
-    "dead": 31,
+    "dead": 32,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
