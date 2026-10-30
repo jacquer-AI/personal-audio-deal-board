@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-30T05:40:07.921Z",
+  "refreshedAt": "2026-10-30T08:53:45.117Z",
   "stats": [
+    {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9361.48,
+      "max": 9361.48
+    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -243,14 +251,6 @@
       "max": 4307.2
     },
     {
-      "key": "Audio-Technica ATH-AD2000X|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 1098.78,
-      "max": 1098.78
-    },
-    {
       "key": "Audio-Technica ATH-M70x|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
@@ -297,6 +297,14 @@
       "median": null,
       "min": 391.16,
       "max": 391.16
+    },
+    {
+      "key": "Dan Clark Audio Noire X|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 3516.08,
+      "max": 3516.08
     }
   ]
 }
