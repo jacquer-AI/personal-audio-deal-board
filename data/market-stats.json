@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-31T12:18:40.037Z",
+  "refreshedAt": "2026-10-31T21:29:11.890Z",
   "stats": [
+    {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9362.33,
+      "max": 9362.33
+    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -260,11 +268,11 @@
     },
     {
       "key": "Sennheiser HD 800|B-STOCK",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 527.46,
-      "max": 1977.98
+      "max": 527.46
     },
     {
       "key": "Etymotic ER2SE|B-STOCK",
