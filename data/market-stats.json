@@ -1,15 +1,7 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-31T08:45:39.609Z",
+  "refreshedAt": "2026-10-31T12:18:40.037Z",
   "stats": [
-    {
-      "key": "64 Audio U12t|NEW",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 9362.33,
-      "max": 9362.33
-    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 3,
@@ -267,20 +259,12 @@
       "max": 3296.63
     },
     {
-      "key": "HIFIMAN Ananda Nano|USED",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 874.7,
-      "max": 874.7
-    },
-    {
       "key": "Sennheiser HD 800|B-STOCK",
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 527.46,
-      "max": 2417.53
+      "max": 1977.98
     },
     {
       "key": "Etymotic ER2SE|B-STOCK",
