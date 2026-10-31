@@ -1,36 +1,49 @@
 {
-  "new": 0,
+  "new": 3,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+      "type": "NEW",
+      "model": "Beyerdynamic DT 880",
+      "price": 215.38,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2459967092-beyerdynamic-dt-880-edition-600-ohm-defect"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 483.51,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457808367-jbl-charge-6-draagbare-bluetooth-speaker-zo-goed-als-nieuw"
+    },
+    {
+      "type": "NEW",
+      "model": "Sennheiser HD 800",
+      "price": 2417.53,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2459869852-sennheiser-hd-800-open-back-koptelefoon-extra-oorkussens"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-31T05:32:09.524Z",
-  "mode": "quick",
-  "runId": "41172936205",
-  "candidates": 498,
-  "verifiedAdditions": 0,
-  "observationChanges": 3,
-  "freshnessRenewal": true,
+  "refreshedAt": "2026-10-31T08:45:39.609Z",
+  "mode": "full",
+  "runId": "41185853120",
+  "candidates": 500,
+  "verifiedAdditions": 3,
+  "observationChanges": 18,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 131,
-    "directVerified": 74,
-    "accessRestricted": 9,
+    "directVerified": 75,
+    "accessRestricted": 10,
     "ambiguous": 13,
     "dead": 32,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 2,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -40,10 +53,125 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 21,
-    "researchReverified": 21,
+    "researchReverified": 20,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 21
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 20,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 389,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "kleinanzeigen-de"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 5,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 2,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 2,
+          "unverifiedUrls": 2
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 3,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 3,
+          "sellerPriceOnly": 3
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 56,
+          "candidateUrls": 8,
+          "restricted": 4,
+          "errors": 0,
+          "checkedUrls": 8,
+          "unverifiedUrls": 3,
+          "verifiedUrls": 5
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 3,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 3,
+          "unverifiedUrls": 3
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 256,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 250,
+      "selectedUrls": 22,
+      "selectedBySource": {
+        "marktplaats-nl": 8,
+        "kleinanzeigen-de": 3,
+        "subito-it": 3,
+        "vinted-pl": 2,
+        "hifishark": 6
+      },
+      "modelsSelected": 16
+    }
   }
 }

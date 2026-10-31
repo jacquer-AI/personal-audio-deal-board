@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-31T05:32:09.524Z",
+  "refreshedAt": "2026-10-31T08:45:39.609Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -12,9 +12,9 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 999,
       "min": 962.61,
       "max": 2632.9
     },
@@ -36,10 +36,10 @@
     },
     {
       "key": "Beyerdynamic DT 880|USED",
-      "n": 6,
+      "n": 7,
       "confidence": "ROBUST",
       "median": 527.46,
-      "min": 329.66,
+      "min": 215.38,
       "max": 791.19
     },
     {
@@ -276,11 +276,11 @@
     },
     {
       "key": "Sennheiser HD 800|B-STOCK",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 527.46,
-      "max": 527.46
+      "max": 2417.53
     },
     {
       "key": "Etymotic ER2SE|B-STOCK",
@@ -297,6 +297,14 @@
       "median": null,
       "min": 3516.4,
       "max": 3516.4
+    },
+    {
+      "key": "JBL Charge 6|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 483.51,
+      "max": 483.51
     }
   ]
 }
