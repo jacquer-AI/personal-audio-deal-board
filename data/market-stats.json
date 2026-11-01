@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-01T13:14:56.429Z",
+  "refreshedAt": "2026-11-01T21:58:42.605Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -12,9 +12,9 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 999,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 962.61,
       "max": 2632.9
     },
@@ -36,10 +36,10 @@
     },
     {
       "key": "Beyerdynamic DT 880|USED",
-      "n": 7,
+      "n": 6,
       "confidence": "ROBUST",
       "median": 527.46,
-      "min": 171.42,
+      "min": 307.69,
       "max": 791.19
     },
     {

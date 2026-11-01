@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-11-01T13:14:56.429Z",
+  "refreshedAt": "2026-11-01T21:58:42.605Z",
   "mode": "quick",
   "candidates": [
     {
@@ -1196,7 +1196,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1219,7 +1219,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1238,7 +1238,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1262,7 +1262,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-29T08:49:53.386Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1281,7 +1281,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1306,7 +1306,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1325,7 +1325,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1349,7 +1349,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1368,7 +1368,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1391,7 +1391,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T10:20:47.053Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1410,7 +1410,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1434,50 +1434,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "HIFIMAN Edition XS",
-      "category": "Open",
-      "quality": "UNRATED",
-      "fit": null,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452855040-hifiman-edition-xs-planar-magnetic-open-back-koptelefoon",
-      "query": "HIFIMAN Edition XS",
-      "discoveredAt": "2026-10-12T09:51:25.481Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 769.21,
-      "originalPrice": 175,
-      "currency": "EUR",
-      "availability": "InStock",
-      "priceBasis": "METADATA_MAY_BE_BID",
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-10-30",
-      "redTeam": [
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "PL_SHIPPING_COST_UNKNOWN",
-        "PRICE_EXCLUDES_SHIPPING_AND_FEES",
-        "FIXED_ITEM_PRICE_NOT_CONFIRMED"
-      ],
-      "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1496,7 +1453,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1521,7 +1478,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1540,7 +1497,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1564,7 +1521,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T09:51:25.481Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1583,7 +1540,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1608,7 +1565,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1627,7 +1584,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1652,7 +1609,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1671,7 +1628,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1695,7 +1652,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1714,7 +1671,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1739,7 +1696,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-16T07:28:25.937Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1758,7 +1715,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1782,7 +1739,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1801,7 +1758,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1825,7 +1782,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T13:06:34.264Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1844,7 +1801,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1869,7 +1826,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-20T07:53:08.003Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1888,7 +1845,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1912,7 +1869,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-12T00:44:17.767Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1931,7 +1888,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -1954,7 +1911,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-24T07:33:28.300Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1973,7 +1930,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -1997,7 +1954,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-20T07:53:08.003Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2016,7 +1973,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2039,7 +1996,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-24T07:33:28.300Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2058,7 +2015,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2081,7 +2038,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-29T08:49:53.386Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2100,7 +2057,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2123,7 +2080,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-31T08:45:39.609Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2142,7 +2099,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-01T13:14:56.429Z",
+      "verifiedAt": "2026-11-01T21:58:42.605Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -2165,7 +2122,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-10-31T08:45:39.609Z",
-      "lastSeenAt": "2026-11-01T13:14:56.429Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2702,25 +2659,38 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456676301-hifiman-edition-xs",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452855040-hifiman-edition-xs-planar-magnetic-open-back-koptelefoon",
       "query": "HIFIMAN Edition XS",
-      "discoveredAt": "2026-10-23T07:52:16.796Z",
+      "discoveredAt": "2026-10-12T09:51:25.481Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verificationState": "HTTP_403",
-      "lastVerificationFailure": "HTTP_403",
+      "country": "Holandia",
+      "locationEvidence": "SELLER_LOCATION",
       "verifiedAt": null,
-      "http": 403,
+      "verificationState": "RECHECK_SOLD",
+      "http": 200,
+      "condition": "B-STOCK",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
       "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-10-30",
       "redTeam": [
-        "SELLER_NOT_VERIFIED",
-        "AVAILABILITY_UNKNOWN",
-        "SHIPPING_UNKNOWN"
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-10-23T07:52:16.796Z",
-      "lastSeenAt": "2026-10-23T07:52:16.796Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-10-12T09:51:25.481Z",
+      "lastSeenAt": "2026-11-01T21:58:42.605Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -3294,6 +3264,34 @@
       ],
       "firstSeenAt": "2026-10-22T07:53:26.198Z",
       "lastSeenAt": "2026-10-22T07:53:26.198Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "HIFIMAN Edition XS",
+      "category": "Open",
+      "quality": "UNRATED",
+      "fit": null,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456676301-hifiman-edition-xs",
+      "query": "HIFIMAN Edition XS",
+      "discoveredAt": "2026-10-23T07:52:16.796Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verificationState": "HTTP_403",
+      "lastVerificationFailure": "HTTP_403",
+      "verifiedAt": null,
+      "http": 403,
+      "availability": null,
+      "redTeam": [
+        "SELLER_NOT_VERIFIED",
+        "AVAILABILITY_UNKNOWN",
+        "SHIPPING_UNKNOWN"
+      ],
+      "firstSeenAt": "2026-10-23T07:52:16.796Z",
+      "lastSeenAt": "2026-10-23T07:52:16.796Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },

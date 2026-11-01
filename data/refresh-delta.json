@@ -1,38 +1,41 @@
 {
   "new": 0,
-  "priceChanged": 1,
-  "sold": 0,
-  "stale": 0,
+  "priceChanged": 0,
+  "sold": 1,
+  "stale": 1,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "Bose SoundLink Max",
-      "from": 1094.48,
-      "to": 1050.52,
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-pari-al-nuovo-mediaworld-lecce-666655727.htm"
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    },
+    {
+      "type": "SOLD",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2459967092-beyerdynamic-dt-880-edition-600-ohm-defect"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-01T13:14:56.429Z",
+  "refreshedAt": "2026-11-01T21:58:42.605Z",
   "mode": "quick",
-  "runId": "41310276217",
+  "runId": "41354661720",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 1,
-  "freshnessRenewal": false,
+  "observationChanges": 5,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 137,
-    "directVerified": 79,
-    "accessRestricted": 9,
-    "ambiguous": 13,
-    "dead": 34,
-    "soldOrOut": 1,
+    "directVerified": 77,
+    "accessRestricted": 10,
+    "ambiguous": 12,
+    "dead": 35,
+    "soldOrOut": 2,
     "notDirect": 2,
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 2,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -42,9 +45,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 23,
-    "researchReverified": 23,
+    "researchReverified": 22,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 23
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 22,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0
   }
