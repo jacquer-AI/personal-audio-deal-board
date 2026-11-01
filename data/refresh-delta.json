@@ -1,50 +1,38 @@
 {
   "new": 0,
-  "priceChanged": 2,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9362.33,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "PRICE",
       "model": "Beyerdynamic DT 880",
-      "from": 327.77,
-      "to": 307.69,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "Sennheiser HD 800",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2459869852-sennheiser-hd-800-open-back-koptelefoon-extra-oorkussens"
+      "from": 215.38,
+      "to": 171.42,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2459967092-beyerdynamic-dt-880-edition-600-ohm-defect"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-10-31T21:29:11.890Z",
+  "refreshedAt": "2026-11-01T05:56:08.660Z",
   "mode": "quick",
-  "runId": "41243752240",
+  "runId": "41278770603",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 3,
+  "observationChanges": 2,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 134,
     "directVerified": 76,
-    "accessRestricted": 10,
+    "accessRestricted": 9,
     "ambiguous": 13,
     "dead": 34,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {

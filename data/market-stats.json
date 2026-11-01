@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-10-31T21:29:11.890Z",
+  "refreshedAt": "2026-11-01T05:56:08.660Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -39,7 +39,7 @@
       "n": 7,
       "confidence": "ROBUST",
       "median": 527.46,
-      "min": 215.38,
+      "min": 171.42,
       "max": 791.19
     },
     {
