@@ -1,16 +1,24 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "Bose SoundLink Max",
+      "from": 1094.48,
+      "to": 1050.52,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-pari-al-nuovo-mediaworld-lecce-666655727.htm"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-11-01T10:50:08.563Z",
-  "mode": "deep",
-  "runId": "41299160812",
+  "refreshedAt": "2026-11-01T13:14:56.429Z",
+  "mode": "quick",
+  "runId": "41310276217",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 14,
+  "observationChanges": 1,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 137,
@@ -28,174 +36,16 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 22,
-      "selected": 22,
+      "eligible": 23,
+      "selected": 23,
       "skippedOnBoard": 28,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 22,
-    "researchReverified": 22,
+    "researchRechecked": 23,
+    "researchReverified": 23,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 22
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 23
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 399,
-    "discovery": {
-      "plannedJobs": 380,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "mediaexpert-outlet"
-      ],
-      "plannedSources": 18,
-      "reachableSources": 9,
-      "sources": {
-        "allegro-pl": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 1,
-          "errors": 5
-        },
-        "olx-pl": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 1,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 1,
-          "unverifiedUrls": 1
-        },
-        "mediaexpert-outlet": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 7,
-          "reachable": 7,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 1,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 1,
-          "verifiedUrls": 1
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 4,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 3,
-          "unverifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 259,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        },
-        "geizhals": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "tweakers": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "tophifi-outlet": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "ebay-uk": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "ceneo-pl": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "allegro-lokalnie": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "idealo-de": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 253,
-      "selectedUrls": 11,
-      "selectedBySource": {
-        "subito-it": 3,
-        "marktplaats-nl": 1,
-        "vinted-pl": 1,
-        "hifishark": 6
-      },
-      "modelsSelected": 9
-    }
+    "researchPromoted": 0
   }
 }
