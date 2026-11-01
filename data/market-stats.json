@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-01T05:56:08.660Z",
+  "refreshedAt": "2026-11-01T09:36:50.527Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,9 +20,9 @@
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 4,
-      "confidence": "PROVISIONAL",
-      "median": 1206.565,
+      "n": 5,
+      "confidence": "ROBUST",
+      "median": 1094.48,
       "min": 1094.48,
       "max": 1318.65
     },
@@ -172,10 +172,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 879.1,
+      "min": 659.33,
       "max": 879.1
     },
     {
@@ -297,6 +297,14 @@
       "median": null,
       "min": 483.51,
       "max": 483.51
+    },
+    {
+      "key": "Sennheiser IE 600|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1494.47,
+      "max": 1494.47
     }
   ]
 }
