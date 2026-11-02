@@ -1,37 +1,37 @@
 {
   "new": 0,
   "priceChanged": 0,
-  "sold": 1,
-  "stale": 1,
+  "sold": 0,
+  "stale": 2,
   "changes": [
     {
       "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-666606860.htm"
     },
     {
-      "type": "SOLD",
-      "model": "Beyerdynamic DT 880",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2459967092-beyerdynamic-dt-880-edition-600-ohm-defect"
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-speakers/m2450565666-jbl-charge-6"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-01T21:58:42.605Z",
+  "refreshedAt": "2026-11-02T05:55:57.683Z",
   "mode": "quick",
-  "runId": "41354661720",
+  "runId": "41396785275",
   "candidates": 500,
   "verifiedAdditions": 0,
   "observationChanges": 5,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 137,
-    "directVerified": 77,
+    "directVerified": 76,
     "accessRestricted": 10,
     "ambiguous": 12,
-    "dead": 35,
+    "dead": 37,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
@@ -39,17 +39,17 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 23,
-      "selected": 23,
+      "eligible": 22,
+      "selected": 22,
       "skippedOnBoard": 28,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 23,
-    "researchReverified": 22,
-    "researchDowngraded": 1,
+    "researchRechecked": 22,
+    "researchDowngraded": 2,
+    "researchReverified": 20,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 22,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 20,
+      "NOT_VERIFIED_IN_THIS_RUN": 2
     },
     "researchPromoted": 0
   }

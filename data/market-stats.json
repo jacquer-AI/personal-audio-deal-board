@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-01T21:58:42.605Z",
+  "refreshedAt": "2026-11-02T05:55:57.683Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -12,9 +12,9 @@
     },
     {
       "key": "Technics EAH-AZ100|NEW",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 999,
       "min": 962.61,
       "max": 2632.9
     },
@@ -25,14 +25,6 @@
       "median": 1094.48,
       "min": 1050.52,
       "max": 1318.65
-    },
-    {
-      "key": "JBL Charge 6|NEW",
-      "n": 13,
-      "confidence": "ROBUST",
-      "median": 527.46,
-      "min": 373.62,
-      "max": 619.77
     },
     {
       "key": "Beyerdynamic DT 880|USED",
@@ -65,6 +57,14 @@
       "median": null,
       "min": 1002.17,
       "max": 1230.74
+    },
+    {
+      "key": "JBL Charge 6|NEW",
+      "n": 12,
+      "confidence": "ROBUST",
+      "median": 538.45,
+      "min": 373.62,
+      "max": 619.77
     },
     {
       "key": "HIFIMAN Edition XS|B-STOCK",
@@ -172,10 +172,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 659.33,
+      "min": 879.1,
       "max": 879.1
     },
     {
