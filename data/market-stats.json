@@ -1,12 +1,20 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-03T00:55:12.576Z",
+  "refreshedAt": "2026-11-03T09:57:12.881Z",
   "stats": [
     {
-      "key": "Technics EAH-AZ100|NEW",
-      "n": 2,
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
+      "min": 9411.32,
+      "max": 9411.32
+    },
+    {
+      "key": "Technics EAH-AZ100|NEW",
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 999,
       "min": 967.65,
       "max": 2646.68
     },
@@ -20,7 +28,7 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 13,
+      "n": 14,
       "confidence": "ROBUST",
       "median": 530.22,
       "min": 375.57,
@@ -196,11 +204,11 @@
     },
     {
       "key": "Beyerdynamic DT 1990 PRO|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 1303.46,
-      "max": 1303.46
+      "n": 3,
+      "confidence": "PROVISIONAL",
+      "median": 1303.46,
+      "min": 1237.18,
+      "max": 1546.48
     },
     {
       "key": "Technics EAH-AZ100|USED",
@@ -276,10 +284,10 @@
     },
     {
       "key": "JBL Charge 6|B-STOCK",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 486.04,
+      "min": 375.57,
       "max": 486.04
     },
     {
@@ -289,6 +297,22 @@
       "median": null,
       "min": 1502.29,
       "max": 1502.29
+    },
+    {
+      "key": "64 Audio U12t|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 8395.15,
+      "max": 8395.15
+    },
+    {
+      "key": "HIFIMAN Arya Stealth|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 3733.63,
+      "max": 3733.63
     }
   ]
 }
