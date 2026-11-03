@@ -1,207 +1,63 @@
 {
-  "new": 6,
-  "priceChanged": 2,
+  "new": 0,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
+  "stale": 2,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9411.32,
+      "from": 9411.32,
+      "to": 9421.54,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "NEW",
-      "model": "64 Audio U12t",
-      "price": 8395.15,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2458916180-64-audio-u12t-high-end-in-ear-monitors"
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     },
     {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1237.18,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2458572015-beyerdynamic-dt-1990-pro-studio-hoofdtelefoon"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1546.48,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2461167155-beyerdynamic-dt-1990-pro-mk1-studio-koptelefoon"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Arya Stealth",
-      "price": 3733.63,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456134532-hifiman-arya-stealth-v3-aune-s17-pro-versterker"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 375.57,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460115188-jbl-charge-6-draagbare-bluetooth-speaker-blauw"
-    },
-    {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 572.34,
-      "to": 530.22,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2453189380-jbl-charge-6-nieuw-ongeopend-sealed-rood"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 441.85,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461173907-jbl-charge-6-gloednieuwe-draagbare-bluetooth-speaker"
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-brindisi-666766746.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-03T09:57:12.881Z",
-  "mode": "full",
-  "runId": "41615077632",
+  "refreshedAt": "2026-11-03T14:04:59.080Z",
+  "mode": "quick",
+  "runId": "41650064941",
   "candidates": 500,
-  "verifiedAdditions": 6,
-  "observationChanges": 31,
+  "verifiedAdditions": 0,
+  "observationChanges": 90,
   "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 141,
-    "directVerified": 80,
-    "accessRestricted": 10,
+    "directUrlsAttempted": 147,
+    "directVerified": 84,
+    "accessRestricted": 9,
     "ambiguous": 11,
-    "dead": 39,
+    "dead": 40,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 19,
-      "selected": 19,
-      "skippedOnBoard": 30,
+      "eligible": 28,
+      "selected": 28,
+      "skippedOnBoard": 34,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 19,
-    "researchReverified": 18,
+    "researchRechecked": 28,
+    "researchReverified": 27,
     "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 18,
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 27,
       "NOT_VERIFIED_IN_THIS_RUN": 1
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 366,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "allegro-pl"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 51,
-          "errors": 9
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 4,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 4,
-          "unverifiedUrls": 4
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 21,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 21,
-          "verifiedUrls": 16,
-          "sellerPriceOnly": 1,
-          "unverifiedUrls": 4
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 2,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 2,
-          "unverifiedUrls": 2
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 256,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 250,
-      "selectedUrls": 33,
-      "selectedBySource": {
-        "vinted-pl": 4,
-        "subito-it": 2,
-        "marktplaats-nl": 21,
-        "hifishark": 6
-      },
-      "modelsSelected": 19
-    }
+    "researchPromoted": 0
   }
 }
