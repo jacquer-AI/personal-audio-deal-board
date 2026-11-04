@@ -1,28 +1,30 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
-      "type": "STALE",
-      "model": "Sennheiser HD 800",
-      "url": "https://www.subito.it/audio-video/cuffie-audiophile-sennheiser-hd-800-roma-662794642.htm"
+      "type": "PRICE",
+      "model": "Technics EAH-AZ100",
+      "from": 999,
+      "to": 893,
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-03T23:16:41.823Z",
+  "refreshedAt": "2026-11-04T06:09:19.174Z",
   "mode": "quick",
-  "runId": "41737746407",
+  "runId": "41783569732",
   "candidates": 498,
   "verifiedAdditions": 0,
-  "observationChanges": 4,
+  "observationChanges": 1,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 147,
-    "directVerified": 83,
+    "directVerified": 84,
     "accessRestricted": 9,
-    "ambiguous": 12,
+    "ambiguous": 11,
     "dead": 41,
     "soldOrOut": 1,
     "notDirect": 2,
