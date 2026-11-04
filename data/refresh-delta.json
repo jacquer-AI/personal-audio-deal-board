@@ -1,17 +1,32 @@
 {
   "new": 0,
-  "priceChanged": 0,
+  "priceChanged": 2,
   "sold": 0,
   "stale": 0,
-  "changes": [],
+  "changes": [
+    {
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9421.54,
+      "to": 9374.89,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "PRICE",
+      "model": "HIFIMAN Arya Stealth",
+      "from": 3733.63,
+      "to": 3279.04,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456134532-hifiman-arya-stealth-v3-aune-s17-pro-versterker"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-11-04T09:44:26.654Z",
-  "mode": "full",
-  "runId": "41809557515",
+  "refreshedAt": "2026-11-04T14:30:10.519Z",
+  "mode": "quick",
+  "runId": "41848058095",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 14,
-  "freshnessRenewal": false,
+  "observationChanges": 85,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 147,
     "directVerified": 84,
@@ -30,7 +45,7 @@
     "researchSelection": {
       "eligible": 27,
       "selected": 27,
-      "skippedOnBoard": 34,
+      "skippedOnBoard": 29,
       "skippedDuplicates": 0
     },
     "researchRechecked": 27,
@@ -38,115 +53,6 @@
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 27
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 381,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "olx-pl"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 3,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 3,
-          "unverifiedUrls": 3
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 54,
-          "candidateUrls": 14,
-          "restricted": 6,
-          "errors": 0,
-          "checkedUrls": 14,
-          "unverifiedUrls": 14
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 3,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 3,
-          "unverifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 255,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 249,
-      "selectedUrls": 26,
-      "selectedBySource": {
-        "marktplaats-nl": 14,
-        "subito-it": 3,
-        "vinted-pl": 3,
-        "hifishark": 6
-      },
-      "modelsSelected": 17
-    }
+    "researchPromoted": 0
   }
 }
