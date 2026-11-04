@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-04T14:30:10.519Z",
+  "refreshedAt": "2026-11-04T23:37:45.269Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,7 +20,7 @@
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 6,
+      "n": 5,
       "confidence": "ROBUST",
       "median": 1095.95,
       "min": 968.31,
@@ -28,7 +28,7 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 14,
+      "n": 13,
       "confidence": "ROBUST",
       "median": 528.17,
       "min": 374.12,
@@ -244,10 +244,10 @@
     },
     {
       "key": "Sennheiser HD 800 S|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 2112.67,
+      "min": 3301.05,
       "max": 3301.05
     },
     {

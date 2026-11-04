@@ -19,17 +19,17 @@
       "pricePln": 777,
       "source": "Thomann.pl",
       "url": "https://www.thomann.pl/akg_k702.htm",
-      "observedAt": "2026-11-03T23:17:18.253Z",
+      "observedAt": "2026-11-04T23:38:25.214Z",
       "evidence": "INDEXED_RETAIL_ASKING_PRICE"
     },
     {
       "model": "HIFIMAN Edition XS",
       "variant": "HIFIMAN Edition XS",
       "condition": "NEW",
-      "pricePln": 990,
+      "pricePln": 999,
       "source": "Thomann.pl",
       "url": "https://www.thomann.pl/hifiman_edition_xs.htm",
-      "observedAt": "2026-11-03T23:17:18.253Z",
+      "observedAt": "2026-11-04T23:38:25.214Z",
       "evidence": "INDEXED_RETAIL_ASKING_PRICE"
     }
   ]

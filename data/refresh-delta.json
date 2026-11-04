@@ -1,38 +1,39 @@
 {
   "new": 0,
-  "priceChanged": 2,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 0,
+  "stale": 3,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9421.54,
-      "to": 9374.89,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-pari-al-nuovo-mediaworld-lecce-666655727.htm"
     },
     {
-      "type": "PRICE",
-      "model": "HIFIMAN Arya Stealth",
-      "from": 3733.63,
-      "to": 3279.04,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456134532-hifiman-arya-stealth-v3-aune-s17-pro-versterker"
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461173907-jbl-charge-6-gloednieuwe-draagbare-bluetooth-speaker"
+    },
+    {
+      "type": "STALE",
+      "model": "Sennheiser HD 800 S",
+      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-matera-666641853.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-04T14:30:10.519Z",
+  "refreshedAt": "2026-11-04T23:37:45.269Z",
   "mode": "quick",
-  "runId": "41848058095",
+  "runId": "41935137734",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 85,
+  "observationChanges": 3,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 147,
-    "directVerified": 84,
+    "directVerified": 81,
     "accessRestricted": 10,
-    "ambiguous": 11,
-    "dead": 41,
+    "ambiguous": 12,
+    "dead": 43,
     "soldOrOut": 1,
     "notDirect": 2,
     "remoteErrors": 0,
