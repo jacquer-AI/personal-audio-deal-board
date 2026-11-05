@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-05T06:37:42.716Z",
+  "refreshedAt": "2026-11-05T09:47:22.067Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,11 +20,11 @@
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 5,
+      "n": 7,
       "confidence": "ROBUST",
       "median": 1095.95,
       "min": 968.31,
-      "max": 1320.42
+      "max": 1540.49
     },
     {
       "key": "JBL Charge 6|NEW",
@@ -36,7 +36,7 @@
     },
     {
       "key": "Beyerdynamic DT 880|USED",
-      "n": 6,
+      "n": 7,
       "confidence": "ROBUST",
       "median": 528.17,
       "min": 308.1,
