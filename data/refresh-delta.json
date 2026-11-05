@@ -2,31 +2,15 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 3,
-  "changes": [
-    {
-      "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-pari-al-nuovo-mediaworld-lecce-666655727.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461173907-jbl-charge-6-gloednieuwe-draagbare-bluetooth-speaker"
-    },
-    {
-      "type": "STALE",
-      "model": "Sennheiser HD 800 S",
-      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-matera-666641853.htm"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-11-04T23:37:45.269Z",
+  "refreshedAt": "2026-11-05T06:37:42.716Z",
   "mode": "quick",
-  "runId": "41935137734",
+  "runId": "41981626744",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 3,
+  "observationChanges": 0,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 147,
