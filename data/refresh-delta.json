@@ -1,176 +1,76 @@
 {
-  "new": 3,
-  "priceChanged": 0,
-  "sold": 0,
-  "stale": 0,
+  "new": 0,
+  "priceChanged": 2,
+  "sold": 2,
+  "stale": 1,
   "changes": [
     {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 550.17,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-roma-666998975.htm"
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 9374.89,
+      "to": 9354.02,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "NEW",
-      "model": "Bose SoundLink Max",
-      "price": 1540.49,
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-audio-lecco-667111747.htm"
+      "type": "PRICE",
+      "model": "Technics EAH-AZ100",
+      "from": 893,
+      "to": 999,
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     },
     {
-      "type": "NEW",
-      "model": "Bose SoundLink Max",
-      "price": 1007.92,
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworld-lecce-667196556.htm"
+      "type": "SOLD",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    },
+    {
+      "type": "SOLD",
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460115188-jbl-charge-6-draagbare-bluetooth-speaker-blauw"
+    },
+    {
+      "type": "STALE",
+      "model": "Moondrop Blessing 3",
+      "url": "https://www.subito.it/audio-video/moondrop-blessing-3-brescia-623152373.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-05T09:47:22.067Z",
-  "mode": "full",
-  "runId": "42005178263",
+  "refreshedAt": "2026-11-05T19:54:13.115Z",
+  "mode": "quick",
+  "runId": "42098220862",
   "candidates": 500,
-  "verifiedAdditions": 3,
-  "observationChanges": 148,
-  "freshnessRenewal": false,
+  "verifiedAdditions": 0,
+  "observationChanges": 89,
+  "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 147,
+    "directUrlsAttempted": 150,
     "directVerified": 81,
     "accessRestricted": 9,
     "ambiguous": 11,
-    "dead": 44,
-    "soldOrOut": 1,
+    "dead": 45,
+    "soldOrOut": 3,
     "notDirect": 2,
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "ebay-pl": 1,
-      "allegro-pl": 2
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 27,
-      "selected": 27,
-      "skippedOnBoard": 29,
+      "eligible": 28,
+      "selected": 28,
+      "skippedOnBoard": 31,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 27,
+    "researchRechecked": 28,
     "researchReverified": 27,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 27
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26,
+      "RED_TEAM_BLOCKED": 1,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 392,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "kleinanzeigen-de"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 5,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 4,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 4,
-          "unverifiedUrls": 4
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 136,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 131,
-          "sellerPriceOnly": 119,
-          "unverifiedUrls": 12
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 5,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 5,
-          "unverifiedUrls": 5
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 6,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 2,
-          "verifiedUrls": 4
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 256,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 250,
-      "selectedUrls": 152,
-      "selectedBySource": {
-        "kleinanzeigen-de": 131,
-        "subito-it": 6,
-        "marktplaats-nl": 5,
-        "vinted-pl": 4,
-        "hifishark": 6
-      },
-      "modelsSelected": 32
-    }
+    "researchPromoted": 0
   }
 }
