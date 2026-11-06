@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-06T06:33:28.571Z",
+  "refreshedAt": "2026-11-06T09:45:44.161Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,10 +20,10 @@
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 7,
+      "n": 8,
       "confidence": "ROBUST",
       "median": 1093.51,
-      "min": 966.15,
+      "min": 856.36,
       "max": 1537.06
     },
     {
@@ -164,25 +164,25 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 878.32,
+      "min": 658.74,
       "max": 878.32
     },
     {
       "key": "HIFIMAN Svanar Wireless|NEW",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 592.87,
+      "min": 526.99,
       "max": 592.87
     },
     {
       "key": "Beyerdynamic DT 900 PRO X|USED",
-      "n": 3,
+      "n": 4,
       "confidence": "PROVISIONAL",
-      "median": 570.91,
+      "median": 702.655,
       "min": 434.77,
       "max": 922.24
     },
