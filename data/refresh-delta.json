@@ -1,75 +1,43 @@
 {
   "new": 0,
-  "priceChanged": 2,
-  "sold": 2,
-  "stale": 1,
-  "changes": [
-    {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9374.89,
-      "to": 9354.02,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "PRICE",
-      "model": "Technics EAH-AZ100",
-      "from": 893,
-      "to": 999,
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "SOLD",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "SOLD",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460115188-jbl-charge-6-draagbare-bluetooth-speaker-blauw"
-    },
-    {
-      "type": "STALE",
-      "model": "Moondrop Blessing 3",
-      "url": "https://www.subito.it/audio-video/moondrop-blessing-3-brescia-623152373.htm"
-    }
-  ],
+  "priceChanged": 0,
+  "sold": 0,
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-11-05T19:54:13.115Z",
+  "refreshedAt": "2026-11-06T06:33:28.571Z",
   "mode": "quick",
-  "runId": "42098220862",
+  "runId": "42175118187",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 89,
+  "observationChanges": 1,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 150,
     "directVerified": 81,
-    "accessRestricted": 9,
+    "accessRestricted": 8,
     "ambiguous": 11,
     "dead": 45,
     "soldOrOut": 3,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 2,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 1
     },
     "researchSelection": {
-      "eligible": 28,
-      "selected": 28,
+      "eligible": 27,
+      "selected": 27,
       "skippedOnBoard": 31,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 28,
+    "researchRechecked": 27,
     "researchReverified": 27,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 26,
-      "RED_TEAM_BLOCKED": 1,
-      "NOT_VERIFIED_IN_THIS_RUN": 1
+      "RED_TEAM_BLOCKED": 1
     },
     "researchPromoted": 0
   }
