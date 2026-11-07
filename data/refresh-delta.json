@@ -2,68 +2,165 @@
   "new": 0,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 3,
+  "stale": 1,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9355.94,
-      "to": 9206,
+      "from": 9206,
+      "to": 9355.94,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "HIFIMAN Edition XS",
-      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-667260221.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457054735-jbl-charge-6-rood-bluetooth-speaker-nieuw-in-doos"
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2459967092-beyerdynamic-dt-880-edition-600-ohm-defect"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-07T05:52:51.880Z",
-  "mode": "quick",
-  "runId": "42344518987",
-  "candidates": 498,
+  "refreshedAt": "2026-11-07T09:09:03.930Z",
+  "mode": "full",
+  "runId": "42358450235",
+  "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 6,
-  "freshnessRenewal": true,
+  "observationChanges": 16,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 154,
-    "directVerified": 81,
-    "accessRestricted": 10,
+    "directVerified": 82,
+    "accessRestricted": 9,
     "ambiguous": 10,
-    "dead": 49,
-    "soldOrOut": 3,
+    "dead": 50,
+    "soldOrOut": 2,
     "notDirect": 2,
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 27,
-      "selected": 27,
+      "eligible": 25,
+      "selected": 25,
       "skippedOnBoard": 35,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 27,
+    "researchRechecked": 25,
     "researchReverified": 25,
-    "researchDowngraded": 2,
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 24,
-      "RED_TEAM_BLOCKED": 1,
-      "NOT_VERIFIED_IN_THIS_RUN": 2
+      "RED_TEAM_BLOCKED": 1
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 258,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "ebay-de"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 27,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 27,
+          "unverifiedUrls": 27
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 9,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 9,
+          "unverifiedUrls": 9
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 2,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 2,
+          "unverifiedUrls": 2
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 258,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 252,
+      "selectedUrls": 44,
+      "selectedBySource": {
+        "vinted-pl": 27,
+        "subito-it": 2,
+        "marktplaats-nl": 9,
+        "hifishark": 6
+      },
+      "modelsSelected": 18
+    }
   }
 }
