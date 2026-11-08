@@ -1,45 +1,41 @@
 {
   "new": 0,
-  "priceChanged": 2,
-  "sold": 0,
-  "stale": 0,
+  "priceChanged": 0,
+  "sold": 1,
+  "stale": 1,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9206,
-      "to": 9355.94,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     },
     {
-      "type": "PRICE",
-      "model": "AKG K702",
-      "from": 526.67,
-      "to": 483.18,
-      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-torino-663913945.htm"
+      "type": "SOLD",
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450767765-hifiman-edition-xs-zgan"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-08T13:16:39.647Z",
+  "refreshedAt": "2026-11-08T21:59:14.104Z",
   "mode": "quick",
-  "runId": "42484119641",
+  "runId": "42527851497",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 4,
-  "freshnessRenewal": false,
+  "observationChanges": 7,
+  "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 156,
-    "directVerified": 83,
+    "directVerified": 82,
     "accessRestricted": 9,
-    "ambiguous": 9,
+    "ambiguous": 10,
     "dead": 52,
     "soldOrOut": 2,
     "notDirect": 2,
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
       "olx-pl": 4,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -49,10 +45,12 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 34,
-    "researchReverified": 34,
+    "researchReverified": 31,
+    "researchDowngraded": 3,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 33,
-      "RED_TEAM_BLOCKED": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 30,
+      "RED_TEAM_BLOCKED": 1,
+      "NOT_VERIFIED_IN_THIS_RUN": 3
     },
     "researchPromoted": 0
   }

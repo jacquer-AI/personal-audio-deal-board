@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-08T13:16:39.647Z",
+  "refreshedAt": "2026-11-08T21:59:14.104Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -67,20 +67,20 @@
       "max": 1229.9
     },
     {
-      "key": "HIFIMAN Edition XS|B-STOCK",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 658.88,
-      "max": 812.61
-    },
-    {
       "key": "HIFIMAN Ananda Nano|B-STOCK",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 1098.13,
       "max": 1098.13
+    },
+    {
+      "key": "HIFIMAN Edition XS|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 658.88,
+      "max": 658.88
     },
     {
       "key": "Sony MDR-M1|USED",
