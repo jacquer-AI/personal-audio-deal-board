@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-08T05:55:19.068Z",
+  "refreshedAt": "2026-11-08T09:25:08.750Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -28,7 +28,7 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 12,
+      "n": 13,
       "confidence": "ROBUST",
       "median": 527.1,
       "min": 373.36,
@@ -305,6 +305,14 @@
       "median": null,
       "min": 3272.41,
       "max": 3272.41
+    },
+    {
+      "key": "Neumann NDH 30|B-STOCK",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1691.11,
+      "max": 1691.11
     }
   ]
 }
