@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-08T10:48:19.442Z",
+  "refreshedAt": "2026-11-08T13:16:39.647Z",
   "stats": [
+    {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 9355.94,
+      "max": 9355.94
+    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 2,
@@ -94,7 +102,7 @@
       "key": "AKG K702|USED",
       "n": 7,
       "confidence": "ROBUST",
-      "median": 527.1,
+      "median": 487.57,
       "min": 219.63,
       "max": 527.1
     },

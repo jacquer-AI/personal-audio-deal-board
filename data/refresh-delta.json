@@ -1,39 +1,41 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 2,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 9355.94,
-      "to": 9206,
+      "from": 9206,
+      "to": 9355.94,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "PRICE",
+      "model": "AKG K702",
+      "from": 526.67,
+      "to": 483.18,
+      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-torino-663913945.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-08T10:48:19.442Z",
-  "mode": "deep",
-  "runId": "42472912109",
+  "refreshedAt": "2026-11-08T13:16:39.647Z",
+  "mode": "quick",
+  "runId": "42484119641",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 17,
+  "observationChanges": 4,
   "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 156,
-    "directVerified": 82,
+    "directVerified": 83,
     "accessRestricted": 9,
     "ambiguous": 9,
     "dead": 52,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "allegro-pl": 2,
@@ -41,179 +43,17 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 32,
-      "selected": 32,
+      "eligible": 34,
+      "selected": 34,
       "skippedOnBoard": 34,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 32,
-    "researchReverified": 32,
+    "researchRechecked": 34,
+    "researchReverified": 34,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 31,
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 33,
       "RED_TEAM_BLOCKED": 1
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 280,
-    "discovery": {
-      "plannedJobs": 380,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "allegro-pl"
-      ],
-      "plannedSources": 18,
-      "reachableSources": 9,
-      "sources": {
-        "allegro-pl": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 51,
-          "errors": 9
-        },
-        "olx-pl": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 2,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 2,
-          "unverifiedUrls": 2
-        },
-        "mediaexpert-outlet": {
-          "requested": 7,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 7,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 7,
-          "reachable": 7,
-          "candidateUrls": 11,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 11,
-          "sellerPriceOnly": 11
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 5,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 5,
-          "unverifiedUrls": 3,
-          "verifiedUrls": 2
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 3,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 3,
-          "unverifiedUrls": 3
-        },
-        "wallapop-es": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 6,
-          "reachable": 2,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 4
-        },
-        "ebay-de": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 256,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        },
-        "geizhals": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "tweakers": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "tophifi-outlet": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "ebay-uk": {
-          "requested": 6,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 6,
-          "errors": 0
-        },
-        "ceneo-pl": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "allegro-lokalnie": {
-          "requested": 6,
-          "reachable": 6,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "idealo-de": {
-          "requested": 5,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 5,
-          "errors": 0
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 250,
-      "selectedUrls": 27,
-      "selectedBySource": {
-        "kleinanzeigen-de": 11,
-        "marktplaats-nl": 5,
-        "subito-it": 3,
-        "vinted-pl": 2,
-        "hifishark": 6
-      },
-      "modelsSelected": 14
-    }
+    "researchPromoted": 0
   }
 }
