@@ -1,22 +1,22 @@
 {
   "new": 0,
   "priceChanged": 0,
-  "sold": 0,
-  "stale": 1,
+  "sold": 1,
+  "stale": 0,
   "changes": [
     {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-659498024.htm"
+      "type": "SOLD",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-07T21:45:18.384Z",
+  "refreshedAt": "2026-11-08T05:55:19.068Z",
   "mode": "quick",
-  "runId": "42417298982",
+  "runId": "42452583851",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 4,
+  "observationChanges": 1,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 154,
@@ -24,9 +24,9 @@
     "accessRestricted": 10,
     "ambiguous": 9,
     "dead": 52,
-    "soldOrOut": 1,
+    "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
