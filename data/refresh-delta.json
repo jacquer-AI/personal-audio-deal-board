@@ -1,39 +1,16 @@
 {
   "new": 0,
-  "priceChanged": 1,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 3,
-  "changes": [
-    {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9355.94,
-      "to": 9344.86,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2458916180-64-audio-u12t-high-end-in-ear-monitors"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457808367-jbl-charge-6-draagbare-bluetooth-speaker-zo-goed-als-nieuw"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-portable-bluetooth-speaker-powerbank-trento-623727337.htm"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-11-09T22:16:33.531Z",
+  "refreshedAt": "2026-11-10T07:11:00.657Z",
   "mode": "quick",
-  "runId": "42710302803",
-  "candidates": 500,
+  "runId": "42773417845",
+  "candidates": 498,
   "verifiedAdditions": 0,
-  "observationChanges": 87,
+  "observationChanges": 0,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 156,
@@ -51,18 +28,16 @@
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 30,
-      "selected": 30,
+      "eligible": 28,
+      "selected": 28,
       "skippedOnBoard": 33,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 30,
+    "researchRechecked": 28,
     "researchReverified": 28,
-    "researchDowngraded": 2,
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 27,
-      "RED_TEAM_BLOCKED": 1,
-      "NOT_VERIFIED_IN_THIS_RUN": 2
+      "RED_TEAM_BLOCKED": 1
     },
     "researchPromoted": 0
   }
