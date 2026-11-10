@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-10T07:11:00.657Z",
+  "refreshedAt": "2026-11-10T10:17:42.511Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -19,14 +19,6 @@
       "max": 2627.99
     },
     {
-      "key": "Bose SoundLink Max|USED",
-      "n": 8,
-      "confidence": "ROBUST",
-      "median": 1092.44,
-      "min": 855.52,
-      "max": 1535.55
-    },
-    {
       "key": "JBL Charge 6|NEW",
       "n": 12,
       "confidence": "ROBUST",
@@ -41,6 +33,14 @@
       "median": 526.48,
       "min": 307.11,
       "max": 789.71
+    },
+    {
+      "key": "Bose SoundLink Max|USED",
+      "n": 7,
+      "confidence": "ROBUST",
+      "median": 1092.44,
+      "min": 855.52,
+      "max": 1535.55
     },
     {
       "key": "Bowers & Wilkins Pi8|B-STOCK",
@@ -164,10 +164,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 877.46,
+      "min": 658.09,
       "max": 877.46
     },
     {

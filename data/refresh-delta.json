@@ -1,23 +1,35 @@
 {
-  "new": 0,
+  "new": 1,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 0,
-  "changes": [],
+  "stale": 1,
+  "changes": [
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-trieste-661582350.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "HIFIMAN Edition XS",
+      "price": 658.09,
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-667729925.htm"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-11-10T07:11:00.657Z",
-  "mode": "quick",
-  "runId": "42773417845",
-  "candidates": 498,
-  "verifiedAdditions": 0,
-  "observationChanges": 0,
-  "freshnessRenewal": true,
+  "refreshedAt": "2026-11-10T10:17:42.511Z",
+  "mode": "full",
+  "runId": "42797811490",
+  "candidates": 500,
+  "verifiedAdditions": 1,
+  "observationChanges": 71,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 156,
-    "directVerified": 79,
+    "directVerified": 78,
     "accessRestricted": 10,
     "ambiguous": 9,
-    "dead": 56,
+    "dead": 57,
     "soldOrOut": 2,
     "notDirect": 2,
     "remoteErrors": 0,
@@ -30,7 +42,7 @@
     "researchSelection": {
       "eligible": 28,
       "selected": 28,
-      "skippedOnBoard": 33,
+      "skippedOnBoard": 32,
       "skippedDuplicates": 0
     },
     "researchRechecked": 28,
@@ -39,6 +51,120 @@
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 27,
       "RED_TEAM_BLOCKED": 1
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 262,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "kleinanzeigen-de"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 5,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 2,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 2,
+          "unverifiedUrls": 2
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 119,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 119,
+          "sellerPriceOnly": 112,
+          "unverifiedUrls": 7
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 10,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 10,
+          "unverifiedUrls": 10
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 4,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 4,
+          "unverifiedUrls": 3,
+          "verifiedUrls": 1
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 263,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 257,
+      "selectedUrls": 141,
+      "selectedBySource": {
+        "kleinanzeigen-de": 119,
+        "subito-it": 4,
+        "marktplaats-nl": 10,
+        "vinted-pl": 2,
+        "hifishark": 6
+      },
+      "modelsSelected": 31
+    }
   }
 }
