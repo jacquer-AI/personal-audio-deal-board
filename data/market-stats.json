@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-11T06:05:11.118Z",
+  "refreshedAt": "2026-11-11T09:47:17.592Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -36,17 +36,17 @@
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 7,
+      "n": 8,
       "confidence": "ROBUST",
-      "median": 1092.99,
-      "min": 855.95,
+      "median": 1029.3400000000001,
+      "min": 790.11,
       "max": 1536.33
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 5,
+      "n": 6,
       "confidence": "ROBUST",
-      "median": 526.74,
+      "median": 548.69,
       "min": 373.11,
       "max": 658.43
     },
@@ -132,7 +132,7 @@
     },
     {
       "key": "Focal Clear MG|USED",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 3467.71,
@@ -180,10 +180,10 @@
     },
     {
       "key": "Neumann NDH 30|NEW",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1975.28,
+      "min": 1799.7,
       "max": 1975.28
     },
     {
