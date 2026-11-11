@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-11T09:47:17.592Z",
+  "refreshedAt": "2026-11-11T14:11:31.504Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,9 +20,9 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 12,
+      "n": 11,
       "confidence": "ROBUST",
-      "median": 537.715,
+      "median": 526.74,
       "min": 373.11,
       "max": 618.92
     },
@@ -36,10 +36,10 @@
     },
     {
       "key": "Bose SoundLink Max|USED",
-      "n": 8,
+      "n": 7,
       "confidence": "ROBUST",
-      "median": 1029.3400000000001,
-      "min": 790.11,
+      "median": 1092.99,
+      "min": 855.95,
       "max": 1536.33
     },
     {
