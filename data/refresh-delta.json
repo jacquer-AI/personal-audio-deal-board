@@ -2,48 +2,43 @@
   "new": 0,
   "priceChanged": 1,
   "sold": 0,
-  "stale": 2,
+  "stale": 1,
   "changes": [
     {
       "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9344.86,
-      "to": 9349.55,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "model": "Focal Clear MG",
+      "from": 3598.9,
+      "to": 3467.71,
+      "url": "https://www.subito.it/audio-video/cuffia-focal-clear-mg-accessori-lecco-659585447.htm"
     },
     {
       "type": "STALE",
-      "model": "Bowers & Wilkins Pi8",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452229582-bowers-wilkins-pi8-zo-goed-als-nieuw"
-    },
-    {
-      "type": "STALE",
-      "model": "Etymotic ER2SE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456312668-etymotic-er2se-oortjes-zwart"
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-667729925.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-10T19:41:34.382Z",
+  "refreshedAt": "2026-11-11T06:05:11.118Z",
   "mode": "quick",
-  "runId": "42887668533",
+  "runId": "42969865086",
   "candidates": 499,
   "verifiedAdditions": 0,
-  "observationChanges": 81,
+  "observationChanges": 3,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 157,
-    "directVerified": 77,
-    "accessRestricted": 10,
+    "directVerified": 76,
+    "accessRestricted": 9,
     "ambiguous": 9,
-    "dead": 59,
+    "dead": 60,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     },
     "researchSelection": {
       "eligible": 28,

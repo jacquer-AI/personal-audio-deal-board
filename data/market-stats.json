@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-10T19:41:34.382Z",
+  "refreshedAt": "2026-11-11T06:05:11.118Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -135,8 +135,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 3599.39,
-      "max": 3599.39
+      "min": 3467.71,
+      "max": 3467.71
     },
     {
       "key": "Moondrop Blessing 3|USED",
@@ -156,10 +156,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 658.43,
+      "min": 877.9,
       "max": 877.9
     },
     {
