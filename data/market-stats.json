@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-12T00:36:43.889Z",
+  "refreshedAt": "2026-11-12T10:10:09.863Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -44,9 +44,9 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 6,
+      "n": 8,
       "confidence": "ROBUST",
-      "median": 548.69,
+      "median": 526.74,
       "min": 373.11,
       "max": 658.43
     },
@@ -156,10 +156,10 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 877.9,
+      "min": 658.43,
       "max": 877.9
     },
     {
@@ -281,6 +281,14 @@
       "median": null,
       "min": 1689.96,
       "max": 1689.96
+    },
+    {
+      "key": "Etymotic ER2SE|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 526.74,
+      "max": 526.74
     }
   ]
 }
