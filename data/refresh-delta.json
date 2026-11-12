@@ -1,44 +1,47 @@
 {
   "new": 0,
-  "priceChanged": 1,
-  "sold": 1,
-  "stale": 0,
+  "priceChanged": 0,
+  "sold": 0,
+  "stale": 3,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 9349.55,
-      "to": 8438.16,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     },
     {
-      "type": "SOLD",
-      "model": "Neumann NDH 30",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2460615669-neumann-ndh30"
+      "type": "STALE",
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-668029975.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-nera-bergamo-667874670.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-12T15:05:12.359Z",
+  "refreshedAt": "2026-11-12T23:33:31.153Z",
   "mode": "quick",
-  "runId": "43243826575",
-  "candidates": 500,
+  "runId": "43329773168",
+  "candidates": 497,
   "verifiedAdditions": 0,
-  "observationChanges": 84,
+  "observationChanges": 4,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 165,
-    "directVerified": 81,
-    "accessRestricted": 10,
-    "ambiguous": 9,
-    "dead": 62,
-    "soldOrOut": 3,
+    "directVerified": 79,
+    "accessRestricted": 9,
+    "ambiguous": 10,
+    "dead": 64,
+    "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     },
     "researchSelection": {
       "eligible": 27,
