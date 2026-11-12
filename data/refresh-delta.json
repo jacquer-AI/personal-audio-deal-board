@@ -1,32 +1,16 @@
 {
   "new": 0,
   "priceChanged": 0,
-  "sold": 1,
-  "stale": 2,
-  "changes": [
-    {
-      "type": "SOLD",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-verona-667878775.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463264876-te-koop-jbl-charge-6"
-    }
-  ],
+  "sold": 0,
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-11-11T14:11:31.504Z",
+  "refreshedAt": "2026-11-12T00:36:43.889Z",
   "mode": "quick",
-  "runId": "43035971581",
+  "runId": "43128450520",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 6,
+  "observationChanges": 0,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 161,
