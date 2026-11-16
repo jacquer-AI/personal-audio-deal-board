@@ -1,47 +1,393 @@
 {
-  "new": 0,
-  "priceChanged": 0,
-  "sold": 0,
-  "stale": 3,
+  "new": 3,
+  "priceChanged": 1,
+  "sold": 2,
+  "stale": 65,
   "changes": [
     {
-      "type": "STALE",
+      "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 8438.16,
+      "to": 8448.13,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "SOLD",
       "model": "Technics EAH-AZ100",
       "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     },
     {
+      "type": "NEW",
+      "model": "7Hz Timeless",
+      "price": 656.63,
+      "url": "https://www.subito.it/audio-video/auricolari-planari-linsoul-7hertz-timeless-ae-dac-roma-663684845.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-aperte-reference-come-nuove-rimini-637918232.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-aperte-come-nuove-novara-660405294.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-premium-catanzaro-661281208.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-torino-663913945.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-varese-665284695.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/audio-video/cuffie-da-studio-akg-k702-torino-666169852.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/informatica/akg-k702-cuffie-over-ear-premium-da-studio-grosseto-661537347.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Audio-Technica ATH-M70x",
+      "url": "https://www.subito.it/audio-video/audio-technica-ath-m70x-cuffie-monitor-da-studio-salerno-664355930.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Austrian Audio Hi-X60",
+      "url": "https://www.subito.it/audio-video/austrian-audio-hi-x60-brescia-656444196.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-1990-pro-roma-654113103.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-250-ohm-mod-xlr-4-pin-modena-639178130.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cremona-648038097.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-roma-629515301.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-roma-666998975.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-treviso-656681763.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 880",
+      "url": "https://www.subito.it/audio-video/cuffie-beyerdynamic-dt-880-pro-250-ohm-pesaro-urbino-654466161.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "price": 899.72,
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-dt-700-pro-x-nuovi-como-638956237.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-milano-665990730.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-pari-al-nuovo-varese-667289431.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "url": "https://www.subito.it/audio-video/cuffia-beyerdynamic-dt-900-pro-x-aperta-lodi-664860697.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 900 PRO X",
+      "url": "https://www.subito.it/audio-video/cuffie-studio-beyerdynamic-dt-900-pro-x-catania-627178822.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-blu-salerno-628578189.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-audio-bluetooth-portatile-treviso-667276742.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-audio-lecco-667111747.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-frosinone-660128620.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-napoli-628578057.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworld-lecce-667196556.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.subito.it/audio-video/cassa-portatile-bose-soundlink-max-roma-666692024.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bowers & Wilkins Pi8",
+      "url": "https://www.subito.it/telefonia/auricolari-bowers-wilkins-pi8-mclaren-edition-milano-652804473.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Bowers & Wilkins Pi8",
+      "url": "https://www.subito.it/audio-video/bowers-wilkins-pi8-brindisi-640254706.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Dan Clark Audio Noire X",
+      "url": "https://www.subito.it/audio-video/dan-clark-audio-noire-x-roma-666353342.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Etymotic ER2SE",
+      "url": "https://www.subito.it/audio-video/etymotic-er2se-ear-monitor-padova-668033797.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Etymotic ER4XR",
+      "url": "https://www.subito.it/audio-video/etymotic-er4xr-milano-659831454.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Focal Clear MG",
+      "url": "https://www.subito.it/audio-video/cuffia-focal-clear-mg-accessori-lecco-659585447.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Focal Clear MG",
+      "url": "https://www.subito.it/audio-video/cuffia-focal-clear-mg-accessori-ribasso-lecco-659585447.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Focal Clear OG",
+      "url": "https://www.subito.it/audio-video/focal-clear-og-no-hifiman-sennheiser-salerno-657704961.htm"
+    },
+    {
       "type": "STALE",
       "model": "HIFIMAN Edition XS",
-      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-668029975.htm"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2450767765-hifiman-edition-xs-zgan"
+    },
+    {
+      "type": "SOLD",
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2449537584-hifiman-edition-xs"
+    },
+    {
+      "type": "STALE",
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.subito.it/audio-video/cuffie-magnetoplanari-hifiman-edition-xs-trento-662348828.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "HIFIMAN Svanar Wireless",
+      "url": "https://www.subito.it/audio-video/cuffie-hifiman-svanar-wireless-hymalaya-ipx5-anc-milano-624411234.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "HIFIMAN Svanar Wireless",
+      "url": "https://www.subito.it/audio-video/cuffie-iem-hifiman-svanar-wireless-ldac-salerno-667220178.htm"
     },
     {
       "type": "STALE",
       "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-nera-bergamo-667874670.htm"
+      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-milano-664245426.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/cassa-jbl-charge-6-bari-652189816.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-altoparlante-bluetooth-portatile-milano-665155663.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-cassa-portatile-potente-napoli-652596052.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-nera-reggio-emilia-665604912.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-prezzo-trattabile-vibo-valentia-652760291.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-mimetica-squad-lucca-668047287.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/cassa-portatile-jbl-charge6-roma-666692239.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-bluetooth-con-scatola-e-scontrino-gallura-665269164.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-milano-648438267.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-napoli-665149161.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-pisa-668061333.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Moondrop Blessing 3",
+      "url": "https://www.subito.it/audio-video/auricolari-in-ear-moondrop-blessing-3-bari-641420328.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Neumann NDH 30",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2460615669-neumann-ndh30"
+    },
+    {
+      "type": "STALE",
+      "model": "Neumann NDH 30",
+      "url": "https://www.subito.it/audio-video/ndh-30-neumann-cuffie-aperte-mix-mastering-napoli-643597326.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Neumann NDH 30",
+      "url": "https://www.subito.it/audio-video/neumann-ndh-30-cuffie-professionali-aperte-mix-milano-667901343.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Sennheiser HD 800 S",
+      "price": 109.72,
+      "url": "https://www.subito.it/audio-video/cuffia-sennheiser-hd-800-s-cavo-bilanciato-4-4-mm-monza-650431376.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Sennheiser HD 800 S",
+      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-torino-664348538.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Sennheiser HD 800",
+      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-verona-630304675.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Sennheiser HD 800",
+      "url": "https://www.subito.it/audio-video/sennheiser-hd800-genova-659287121.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Sennheiser IE 600",
+      "url": "https://www.subito.it/audio-video/sennheiser-ie-600-in-condizioni-perfette-verona-666640260.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Sony MDR-M1",
+      "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-professional-come-nuove-2cavi-trento-656522340.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://www.subito.it/audio-video/auricolari-true-wireless-technics-eah-az100-roma-663954903.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Technics EAH-AZ100",
+      "url": "https://www.subito.it/audio-video/technics-eah-az100-auricolari-wireless-milano-644500085.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-12T23:33:31.153Z",
+  "refreshedAt": "2026-11-16T06:19:14.889Z",
   "mode": "quick",
-  "runId": "43329773168",
-  "candidates": 497,
+  "runId": "43815866757",
+  "candidates": 480,
   "verifiedAdditions": 0,
-  "observationChanges": 4,
+  "observationChanges": 131,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 165,
-    "directVerified": 79,
-    "accessRestricted": 9,
-    "ambiguous": 10,
-    "dead": 64,
+    "directVerified": 15,
+    "accessRestricted": 114,
+    "ambiguous": 4,
+    "dead": 29,
     "soldOrOut": 2,
     "notDirect": 2,
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
       "olx-pl": 4,
+      "allegro-pl": 2,
       "ebay-pl": 1,
-      "allegro-pl": 2
+      "subito-it": 105
     },
     "researchSelection": {
       "eligible": 27,
@@ -50,10 +396,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 27,
-    "researchReverified": 27,
+    "researchReverified": 22,
+    "researchDowngraded": 5,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 26,
-      "RED_TEAM_BLOCKED": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 22,
+      "NOT_VERIFIED_IN_THIS_RUN": 5
     },
     "researchPromoted": 0
   }
