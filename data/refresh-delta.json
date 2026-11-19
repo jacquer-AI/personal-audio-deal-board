@@ -1,64 +1,70 @@
 {
   "new": 0,
-  "priceChanged": 2,
+  "priceChanged": 4,
   "sold": 0,
-  "stale": 1,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 8448.13,
-      "to": 8440.85,
+      "from": 8440.85,
+      "to": 8451.77,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "STALE",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+      "type": "PRICE",
+      "model": "Bose SoundLink Max",
+      "from": 961.96,
+      "to": 1053.73,
+      "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworld-lecce-667196556.htm"
     },
     {
       "type": "PRICE",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "from": 1237.18,
-      "to": 1188.86,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2458572015-beyerdynamic-dt-1990-pro-studio-hoofdtelefoon"
+      "model": "Neumann NDH 30",
+      "from": 1799.7,
+      "to": 1719.47,
+      "url": "https://www.subito.it/audio-video/neumann-ndh-30-cuffie-professionali-aperte-mix-milano-667901343.htm"
+    },
+    {
+      "type": "PRICE",
+      "model": "Sennheiser IE 600",
+      "from": 1494.47,
+      "to": 1454.94,
+      "url": "https://www.subito.it/audio-video/sennheiser-ie-600-in-condizioni-perfette-verona-666640260.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-17T20:50:33.545Z",
+  "refreshedAt": "2026-11-19T07:16:45.669Z",
   "mode": "quick",
-  "runId": "44173392205",
-  "candidates": 461,
+  "runId": "44478273280",
+  "candidates": 453,
   "verifiedAdditions": 0,
-  "observationChanges": 24,
+  "observationChanges": 121,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 165,
-    "directVerified": 15,
-    "accessRestricted": 111,
-    "ambiguous": 6,
-    "dead": 31,
+    "directVerified": 74,
+    "accessRestricted": 5,
+    "ambiguous": 11,
+    "dead": 72,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
-      "ebay-pl": 1,
-      "subito-it": 105
+      "allegro-pl": 2,
+      "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 22,
-      "selected": 22,
-      "skippedOnBoard": 28,
+      "eligible": 20,
+      "selected": 20,
+      "skippedOnBoard": 18,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 22,
+    "researchRechecked": 20,
     "researchReverified": 20,
-    "researchDowngraded": 2,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 20,
-      "NOT_VERIFIED_IN_THIS_RUN": 2
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 20
     },
     "researchPromoted": 0
   }
