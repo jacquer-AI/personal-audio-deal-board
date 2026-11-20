@@ -1,53 +1,47 @@
 {
   "new": 0,
-  "priceChanged": 4,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
+  "stale": 3,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 8440.85,
-      "to": 8451.77,
+      "from": 8451.77,
+      "to": 8466.34,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
-      "type": "PRICE",
-      "model": "Bose SoundLink Max",
-      "from": 961.96,
-      "to": 1053.73,
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworld-lecce-667196556.htm"
+      "type": "STALE",
+      "model": "AKG K702",
+      "url": "https://www.subito.it/audio-video/cuffie-da-studio-akg-k702-torino-666169852.htm"
     },
     {
-      "type": "PRICE",
-      "model": "Neumann NDH 30",
-      "from": 1799.7,
-      "to": 1719.47,
-      "url": "https://www.subito.it/audio-video/neumann-ndh-30-cuffie-professionali-aperte-mix-milano-667901343.htm"
+      "type": "STALE",
+      "model": "HIFIMAN Edition XS",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2449537584-hifiman-edition-xs"
     },
     {
-      "type": "PRICE",
-      "model": "Sennheiser IE 600",
-      "from": 1494.47,
-      "to": 1454.94,
-      "url": "https://www.subito.it/audio-video/sennheiser-ie-600-in-condizioni-perfette-verona-666640260.htm"
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-speakers/m2450565666-jbl-charge-6"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-19T07:16:45.669Z",
+  "refreshedAt": "2026-11-20T07:05:55.824Z",
   "mode": "quick",
-  "runId": "44478273280",
-  "candidates": 453,
+  "runId": "44692356665",
+  "candidates": 393,
   "verifiedAdditions": 0,
-  "observationChanges": 121,
+  "observationChanges": 84,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 165,
-    "directVerified": 74,
+    "directVerified": 72,
     "accessRestricted": 5,
     "ambiguous": 11,
-    "dead": 72,
-    "soldOrOut": 1,
+    "dead": 75,
+    "soldOrOut": 0,
     "notDirect": 2,
     "remoteErrors": 2,
     "sourcesRestricted": {
@@ -62,9 +56,11 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 20,
-    "researchReverified": 20,
+    "researchDowngraded": 3,
+    "researchReverified": 17,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 20
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 17,
+      "NOT_VERIFIED_IN_THIS_RUN": 3
     },
     "researchPromoted": 0
   }
