@@ -1,270 +1,51 @@
 {
-  "new": 15,
+  "new": 0,
   "priceChanged": 1,
-  "sold": 2,
-  "stale": 1,
+  "sold": 0,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 8466.34,
-      "to": 9206,
+      "from": 9206,
+      "to": 8541.87,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "SOLD",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "NEW",
-      "model": "AKG K702",
-      "price": 419.57,
-      "url": "https://www.subito.it/audio-video/cuffie-akg-k702-monitor-audiofile-latina-669071347.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "price": 706.64,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-bari-668956957.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "price": 794.97,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-torino-668434436.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "price": 750.81,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-torino-668868021.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Bowers & Wilkins Pi8",
-      "price": 1236.58,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2462531009-bowers-wilkins-pi8-zwart-nette-staat"
-    },
-    {
-      "type": "SOLD",
-      "model": "HIFIMAN Edition XS",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2449537584-hifiman-edition-xs"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 618.31,
-      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-668748045.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 746.39,
-      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-milano-668641212.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 529.98,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464616035-jbl-charge-6-draagbare-bluetooth-speaker-rood"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 485.82,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2467191042-nieuw-jbl-charge-6-draagbare-bluetooth-speaker-rood"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 485.82,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-667115366.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 552.06,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-669050585.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 441.65,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-latina-668292902.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 441.65,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-monza-668638226.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 618.31,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-trieste-668425920.htm"
-    },
-    {
-      "type": "NEW",
-      "model": "Neumann NDH 30",
-      "price": 1722.44,
-      "url": "https://www.subito.it/audio-video/neumann-ndh-30-garanzia-2-anni-milano-667901343.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-20T10:22:47.784Z",
-  "mode": "full",
-  "runId": "44718604157",
+  "refreshedAt": "2026-11-20T20:06:27.317Z",
+  "mode": "quick",
+  "runId": "44808191426",
   "candidates": 500,
-  "verifiedAdditions": 15,
-  "observationChanges": 95,
-  "freshnessRenewal": false,
+  "verifiedAdditions": 0,
+  "observationChanges": 90,
+  "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 165,
-    "directVerified": 72,
+    "directUrlsAttempted": 180,
+    "directVerified": 88,
     "accessRestricted": 6,
     "ambiguous": 11,
     "dead": 73,
     "soldOrOut": 2,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
       "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 17,
-      "selected": 17,
-      "skippedOnBoard": 15,
+      "eligible": 21,
+      "selected": 21,
+      "skippedOnBoard": 26,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 17,
-    "researchReverified": 17,
+    "researchRechecked": 21,
+    "researchReverified": 21,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 17
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 20,
+      "RED_TEAM_BLOCKED": 1
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 20,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "kleinanzeigen-de"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 5,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 34,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 34,
-          "unverifiedUrls": 34
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 118,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 118,
-          "sellerPriceOnly": 111,
-          "unverifiedUrls": 7
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 27,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 27,
-          "unverifiedUrls": 21,
-          "verifiedUrls": 6
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 17,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 17,
-          "verifiedUrls": 13,
-          "unverifiedUrls": 4
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 262,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 256,
-      "selectedUrls": 202,
-      "selectedBySource": {
-        "kleinanzeigen-de": 118,
-        "vinted-pl": 34,
-        "subito-it": 17,
-        "marktplaats-nl": 27,
-        "hifishark": 6
-      },
-      "modelsSelected": 37
-    }
+    "researchPromoted": 0
   }
 }
