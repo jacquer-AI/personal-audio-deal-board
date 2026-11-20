@@ -6,10 +6,10 @@
       "model": "Beyerdynamic DT 880",
       "variant": "DT 880 Pro 250 Ω",
       "condition": "NEW",
-      "pricePln": 784,
+      "pricePln": 788,
       "source": "Profi-dj.pl",
       "url": "https://www.profi-dj.pl/dt-880-pro-250-ohm/",
-      "observedAt": "2026-11-12T10:11:24.394Z",
+      "observedAt": "2026-11-20T10:24:27.489Z",
       "evidence": "INDEXED_RETAIL_ASKING_PRICE"
     },
     {
@@ -19,7 +19,7 @@
       "pricePln": 777,
       "source": "Thomann.pl",
       "url": "https://www.thomann.pl/akg_k702.htm",
-      "observedAt": "2026-11-19T07:17:21.582Z",
+      "observedAt": "2026-11-20T10:24:27.489Z",
       "evidence": "INDEXED_RETAIL_ASKING_PRICE"
     },
     {
@@ -29,7 +29,7 @@
       "pricePln": 998,
       "source": "Thomann.pl",
       "url": "https://www.thomann.pl/hifiman_edition_xs.htm",
-      "observedAt": "2026-11-19T07:17:21.582Z",
+      "observedAt": "2026-11-20T10:24:27.489Z",
       "evidence": "INDEXED_RETAIL_ASKING_PRICE"
     }
   ]
