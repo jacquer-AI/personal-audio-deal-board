@@ -1,49 +1,65 @@
 {
-  "new": 2,
-  "priceChanged": 1,
-  "sold": 0,
+  "new": 5,
+  "priceChanged": 0,
+  "sold": 1,
   "stale": 0,
   "changes": [
     {
+      "type": "SOLD",
+      "model": "Technics EAH-AZ100",
+      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
+    },
+    {
       "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
+      "model": "HIFIMAN Arya Stealth",
       "price": 2005.16,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-1990-pro-roma-669236881.htm"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2468718497-hifiman-arya-stealth-uitstekende-staat-garantie"
     },
     {
       "type": "NEW",
-      "model": "Bose SoundLink Max",
-      "price": 1064.96,
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworldrl-lecce-669243906.htm"
+      "model": "Sennheiser HD 800 S",
+      "price": 3300,
+      "url": "https://www.olx.pl/d/oferta/cardas-clear-3m-xlr-legendarny-kabel-dla-sennheiser-hd800-hd800s-dharma-d1000-CID99-ID1d61dI.html?search_reason=search%7Corganic"
     },
     {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 534.71,
-      "to": 445.59,
-      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-669139653.htm"
+      "type": "NEW",
+      "model": "Sennheiser HD 800 S",
+      "price": 250,
+      "url": "https://www.olx.pl/d/oferta/oryginalne-pady-gabki-nausznice-zmf-dla-sennheiser-hd800-hd800s-suede-zamsz-mikrozamsz-CID99-ID1d62JX.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "NEW",
+      "model": "Sennheiser HD 800 S",
+      "price": 5000,
+      "url": "https://www.olx.pl/d/oferta/sennheiser-hd-800-s-CID99-ID13hnmg.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "NEW",
+      "model": "Sennheiser HD 800 S",
+      "price": 4500,
+      "url": "https://www.olx.pl/d/oferta/sennheiser-hd800s-sluchawki-dynamiczne-super-stan-gwarancja-CID99-ID1d60GC.html?search_reason=search%7Corganic"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-22T10:10:04.334Z",
-  "mode": "full",
-  "runId": "45011024963",
+  "refreshedAt": "2026-11-22T12:02:24.217Z",
+  "mode": "deep",
+  "runId": "45020173955",
   "candidates": 500,
-  "verifiedAdditions": 2,
-  "observationChanges": 14,
+  "verifiedAdditions": 5,
+  "observationChanges": 18,
   "freshnessRenewal": false,
   "receipt": {
-    "directUrlsAttempted": 181,
-    "directVerified": 84,
-    "accessRestricted": 6,
+    "directUrlsAttempted": 183,
+    "directVerified": 86,
+    "accessRestricted": 5,
     "ambiguous": 11,
     "dead": 78,
-    "soldOrOut": 1,
+    "soldOrOut": 2,
     "notDirect": 2,
     "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -53,15 +69,17 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 19,
-    "researchReverified": 19,
+    "researchReverified": 18,
+    "researchDowngraded": 1,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 18,
-      "RED_TEAM_BLOCKED": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 17,
+      "RED_TEAM_BLOCKED": 1,
+      "NOT_VERIFIED_IN_THIS_RUN": 1
     },
     "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 234,
+    "recentResearchUrlsSkipped": 274,
     "discovery": {
-      "plannedJobs": 300,
+      "plannedJobs": 380,
       "coreSources": [
         "subito-it",
         "marktplaats-nl",
@@ -69,22 +87,24 @@
         "vinted-pl",
         "ebay-de"
       ],
-      "plannedSources": 5,
-      "reachableSources": 4,
+      "plannedSources": 18,
+      "reachableSources": 12,
       "sources": {
         "allegro-pl": {
-          "requested": 0,
+          "requested": 6,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 0,
+          "restricted": 6,
           "errors": 0
         },
         "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
+          "requested": 7,
+          "reachable": 7,
+          "candidateUrls": 4,
           "restricted": 0,
-          "errors": 0
+          "errors": 0,
+          "checkedUrls": 4,
+          "verifiedUrls": 4
         },
         "vinted-pl": {
           "requested": 60,
@@ -94,48 +114,49 @@
           "errors": 0
         },
         "mediaexpert-outlet": {
-          "requested": 0,
+          "requested": 7,
           "reachable": 0,
           "candidateUrls": 0,
-          "restricted": 0,
+          "restricted": 7,
           "errors": 0
         },
         "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
+          "requested": 7,
+          "reachable": 7,
+          "candidateUrls": 11,
           "restricted": 0,
-          "errors": 0
+          "errors": 0,
+          "checkedUrls": 11,
+          "sellerPriceOnly": 11
         },
         "marktplaats-nl": {
           "requested": 60,
           "reachable": 60,
-          "candidateUrls": 24,
+          "candidateUrls": 1,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 24,
-          "unverifiedUrls": 24
+          "checkedUrls": 1,
+          "verifiedUrls": 1
         },
         "subito-it": {
           "requested": 60,
           "reachable": 60,
-          "candidateUrls": 6,
+          "candidateUrls": 4,
           "restricted": 0,
           "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 4,
-          "verifiedUrls": 2
+          "checkedUrls": 4,
+          "unverifiedUrls": 4
         },
         "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
+          "requested": 6,
+          "reachable": 6,
           "candidateUrls": 0,
           "restricted": 0,
           "errors": 0
         },
         "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
+          "requested": 6,
+          "reachable": 6,
           "candidateUrls": 0,
           "restricted": 0,
           "errors": 0
@@ -155,16 +176,67 @@
           "errors": 0,
           "checkedUrls": 6,
           "unverifiedUrls": 6
+        },
+        "geizhals": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "tweakers": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "tophifi-outlet": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-uk": {
+          "requested": 6,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 6,
+          "errors": 0
+        },
+        "ceneo-pl": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "allegro-lokalnie": {
+          "requested": 6,
+          "reachable": 6,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "idealo-de": {
+          "requested": 5,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 5,
+          "errors": 0
         }
       },
       "indexedPricesRetainedWithoutGoto": 250,
-      "selectedUrls": 36,
+      "selectedUrls": 26,
       "selectedBySource": {
-        "subito-it": 6,
-        "marktplaats-nl": 24,
+        "kleinanzeigen-de": 11,
+        "subito-it": 4,
+        "marktplaats-nl": 1,
+        "olx-pl": 4,
         "hifishark": 6
       },
-      "modelsSelected": 20
+      "modelsSelected": 11
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-22T10:10:04.334Z",
+  "refreshedAt": "2026-11-22T12:02:24.217Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -204,11 +204,11 @@
     },
     {
       "key": "Sennheiser HD 800 S|USED",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 3341.93,
-      "max": 3341.93
+      "n": 5,
+      "confidence": "ROBUST",
+      "median": 3341.93,
+      "min": 250,
+      "max": 5000
     },
     {
       "key": "Sennheiser HD 800|USED",
@@ -268,6 +268,14 @@
     },
     {
       "key": "Beyerdynamic DT 1990 PRO|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 2005.16,
+      "max": 2005.16
+    },
+    {
+      "key": "HIFIMAN Arya Stealth|B-STOCK",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
