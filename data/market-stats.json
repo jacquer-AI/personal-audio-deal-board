@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-22T12:02:24.217Z",
+  "refreshedAt": "2026-11-22T19:31:57.826Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -263,8 +263,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1064.96,
-      "max": 1064.96
+      "min": 1020.4,
+      "max": 1020.4
     },
     {
       "key": "Beyerdynamic DT 1990 PRO|NEW",
