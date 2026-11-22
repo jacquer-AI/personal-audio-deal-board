@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-22T06:39:19.271Z",
+  "refreshedAt": "2026-11-22T10:10:04.334Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -22,7 +22,7 @@
       "key": "JBL Charge 6|NEW",
       "n": 14,
       "confidence": "ROBUST",
-      "median": 534.71,
+      "median": 512.4300000000001,
       "min": 378.75,
       "max": 628.28
     },
@@ -257,6 +257,22 @@
       "median": null,
       "min": 1247.61,
       "max": 1247.61
+    },
+    {
+      "key": "Bose SoundLink Max|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1064.96,
+      "max": 1064.96
+    },
+    {
+      "key": "Beyerdynamic DT 1990 PRO|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 2005.16,
+      "max": 2005.16
     }
   ]
 }
