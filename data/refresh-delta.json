@@ -1,47 +1,42 @@
 {
   "new": 0,
   "priceChanged": 1,
-  "sold": 0,
-  "stale": 2,
+  "sold": 1,
+  "stale": 0,
   "changes": [
     {
-      "type": "STALE",
+      "type": "SOLD",
       "model": "Technics EAH-AZ100",
       "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
     },
     {
       "type": "PRICE",
-      "model": "Bose SoundLink Max",
-      "from": 1064.96,
-      "to": 1020.4,
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworldrl-lecce-669243906.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "HIFIMAN Arya Stealth",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456134532-hifiman-arya-stealth-v3-aune-s17-pro-versterker"
+      "model": "JBL Charge 6",
+      "from": 550.7,
+      "to": 534.71,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451373810-jbl-charge-6-red"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-22T19:31:57.826Z",
+  "refreshedAt": "2026-11-23T07:27:55.091Z",
   "mode": "quick",
-  "runId": "45061193865",
-  "candidates": 500,
+  "runId": "45131202163",
+  "candidates": 497,
   "verifiedAdditions": 0,
-  "observationChanges": 9,
+  "observationChanges": 4,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 188,
     "directVerified": 91,
-    "accessRestricted": 4,
+    "accessRestricted": 6,
     "ambiguous": 12,
     "dead": 78,
-    "soldOrOut": 0,
+    "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 3,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 1,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {

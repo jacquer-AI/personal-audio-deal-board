@@ -27,11 +27,11 @@
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor",
       "note": "NEW sample: €2106.18 Muzix HU; €2199 Project Akustik DE; €2199 Headphone.shop DE · Refresh: exact model + explicit price on direct offer page (JSON_LD).",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -57,7 +57,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -109,7 +109,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -135,7 +135,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -161,7 +161,7 @@
       "refresh": {
         "verificationState": "DEAD",
         "http": 410,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -187,7 +187,7 @@
       "refresh": {
         "verificationState": "MODEL_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -213,7 +213,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -239,7 +239,7 @@
       "refresh": {
         "verificationState": "DEAD",
         "http": 410,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -265,7 +265,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -291,7 +291,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -317,7 +317,7 @@
       "refresh": {
         "verificationState": "ACCESS_RESTRICTED_REVERIFY",
         "http": 403,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -343,7 +343,7 @@
       "refresh": {
         "verificationState": "DEAD",
         "http": 410,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -363,13 +363,13 @@
       "status": "STALE / REVERIFY",
       "original": "1498 zł",
       "url": "https://allegro.pl/produkt/bose-soundlink-max-przenosny-glosnik-bluetooth-czarny-usb-c-aux-94cee3a2-8ade-4409-9ba7-5dae7154266c?fromInactiveOffer=archived",
-      "note": "NEW observations: 1498 direct; 1529.99 direct variant; current market around 1.5k PLN. · Refresh: temporary seller error; prior quote retained, current availability unconfirmed.",
+      "note": "NEW observations: 1498 direct; 1529.99 direct variant; current market around 1.5k PLN. · Refresh: source restricted automated access. Prior SSOT value retained.",
       "role": "OFFER",
       "checked": "2026-10-07",
       "refresh": {
-        "verificationState": "REMOTE_ERROR_RECHECK",
-        "http": null,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "verificationState": "ACCESS_RESTRICTED_REVERIFY",
+        "http": 403,
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -395,7 +395,7 @@
       "refresh": {
         "verificationState": "CONDITION_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -421,7 +421,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -447,7 +447,7 @@
       "refresh": {
         "verificationState": "NOT_DIRECT_OFFER_PAGE",
         "http": null,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -516,16 +516,16 @@
       "country": "Poland",
       "seller": "Technics Poland",
       "region": "Polska",
-      "status": "STALE / REVERIFY",
+      "status": "HISTORICAL",
       "original": "999 PLN",
       "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/",
-      "note": "Available; add to cart · Free delivery shown · Refresh: temporary seller error; prior quote retained, current availability unconfirmed.",
-      "role": "OFFER",
-      "checked": "2026-10-07",
+      "note": "Available; add to cart · Free delivery shown · Refresh: exact model direct page is sold/out of stock.",
+      "role": "HISTORICAL",
+      "checked": "2026-11-23",
       "refresh": {
-        "verificationState": "REMOTE_ERROR_RECHECK",
-        "http": null,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "verificationState": "DIRECT_OFFER_VERIFIED",
+        "http": 200,
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -545,13 +545,13 @@
       "status": "STALE / REVERIFY",
       "original": "2198,99 PLN",
       "url": "https://allegro.pl/produkt/sluchawki-bezprzewodowe-dokanalowe-noble-audio-fokus-rex5-green-f9ee1b1a-5e4c-42e4-bf49-617e58490682?offerId=17454902763",
-      "note": "1 unit shown; add to cart · Domestic shipping · Refresh: temporary seller error; prior quote retained, current availability unconfirmed.",
+      "note": "1 unit shown; add to cart · Domestic shipping · Refresh: source restricted automated access. Prior SSOT value retained.",
       "role": "OFFER",
       "checked": "2026-10-07",
       "refresh": {
-        "verificationState": "REMOTE_ERROR_RECHECK",
-        "http": null,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "verificationState": "ACCESS_RESTRICTED_REVERIFY",
+        "http": 403,
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -603,7 +603,7 @@
       "refresh": {
         "verificationState": "DEAD",
         "http": 404,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -629,7 +629,7 @@
       "refresh": {
         "verificationState": "AVAILABILITY_NOT_CONFIRMED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z"
+        "checkedAt": "2026-11-23T07:27:55.091Z"
       }
     },
     {
@@ -666,7 +666,7 @@
         "checkedAt": "2026-10-20T21:33:45.622Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
         "lastVerifiedAt": "2026-10-20T21:33:45.622Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -704,7 +704,7 @@
         "firstVerifiedAt": "2026-10-21T07:56:54.359Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-27T17:57:19.145Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -742,7 +742,7 @@
         "firstVerifiedAt": "2026-11-03T09:57:12.881Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-09T10:11:12.018Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -780,7 +780,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-02T05:55:57.683Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -802,7 +802,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/akg-k702-cuffie-aperte-reference-come-nuove-rimini-637918232.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -814,10 +814,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -840,7 +840,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-aperte-come-nuove-novara-660405294.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -852,10 +852,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -878,7 +878,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/akg-k702-cuffie-over-ear-premium-catanzaro-661281208.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -890,10 +890,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -932,7 +932,7 @@
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-21T06:59:14.872Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -954,7 +954,7 @@
       "original": "110 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-akg-k702-torino-663913945.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -966,10 +966,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1008,7 +1008,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-18T10:58:55.288Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1030,7 +1030,7 @@
       "original": "111 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-akg-k702-varese-665284695.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1042,10 +1042,10 @@
       "fxEffectiveDate": "2026-10-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-21T07:56:54.359Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1084,7 +1084,7 @@
         "firstVerifiedAt": "2026-10-28T08:54:59.572Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-19T07:16:45.669Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1106,7 +1106,7 @@
       "original": "60 EUR",
       "url": "https://www.subito.it/informatica/akg-k702-cuffie-over-ear-premium-da-studio-grosseto-661537347.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1118,10 +1118,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1160,7 +1160,7 @@
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-30T05:40:07.921Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1182,7 +1182,7 @@
       "original": "160 EUR",
       "url": "https://www.subito.it/audio-video/audio-technica-ath-m70x-cuffie-monitor-da-studio-salerno-664355930.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1194,10 +1194,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1220,7 +1220,7 @@
       "original": "200 EUR",
       "url": "https://www.subito.it/audio-video/austrian-audio-hi-x60-brescia-656444196.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1232,10 +1232,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1274,7 +1274,7 @@
         "firstVerifiedAt": "2026-10-22T07:53:26.198Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-26T12:52:10.874Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1296,7 +1296,7 @@
       "original": "295 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2436480559-beyerdynamic-dt-1990-pro-studio-koptelefoon-v1",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1309,9 +1309,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1349,7 +1349,7 @@
         "checkedAt": "2026-10-14T07:57:40.195Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
         "lastVerifiedAt": "2026-10-14T07:57:40.195Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1371,7 +1371,7 @@
       "original": "270 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2458572015-beyerdynamic-dt-1990-pro-studio-hoofdtelefoon",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1383,10 +1383,10 @@
       "fxEffectiveDate": "2026-11-02",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-03T09:57:12.881Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1408,7 +1408,7 @@
       "original": "350 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2461167155-beyerdynamic-dt-1990-pro-mk1-studio-koptelefoon",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1420,10 +1420,10 @@
       "fxEffectiveDate": "2026-11-02",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-03T09:57:12.881Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1445,7 +1445,7 @@
       "original": "450 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-1990-pro-roma-669236881.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1457,10 +1457,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-22T10:10:04.334Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1482,7 +1482,7 @@
       "original": "270 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-1990-pro-roma-654113103.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1494,10 +1494,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1520,7 +1520,7 @@
       "original": "140 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2434369002-beyer-dynamic-dt880pro-studio-headphone",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1532,10 +1532,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1573,7 +1573,7 @@
         "firstVerifiedAt": "2026-10-31T08:45:39.609Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-07T05:52:51.880Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1595,7 +1595,7 @@
       "original": "70 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-250-ohm-latina-662266220.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1607,10 +1607,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1633,7 +1633,7 @@
       "original": "180 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-250-ohm-mod-xlr-4-pin-modena-639178130.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1645,10 +1645,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1671,7 +1671,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-cremona-648038097.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1683,10 +1683,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1725,7 +1725,7 @@
         "firstVerifiedAt": "2026-10-28T08:54:59.572Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-28T08:54:59.572Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1747,7 +1747,7 @@
       "original": "130 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-roma-629515301.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1759,10 +1759,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1785,7 +1785,7 @@
       "original": "125 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-roma-666998975.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1797,10 +1797,10 @@
       "fxEffectiveDate": "2026-11-04",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-05T09:47:22.067Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1823,7 +1823,7 @@
       "original": "75 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-treviso-656681763.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1835,10 +1835,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1861,7 +1861,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-beyerdynamic-dt-880-pro-250-ohm-pesaro-urbino-654466161.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1873,10 +1873,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -1915,7 +1915,7 @@
         "checkedAt": "2026-10-12T12:51:46.456Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
         "lastVerifiedAt": "2026-10-12T12:51:46.456Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -1937,7 +1937,7 @@
       "original": "150 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-bari-668956957.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1949,10 +1949,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -1974,7 +1974,7 @@
       "original": "99 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-milano-665990730.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -1986,10 +1986,10 @@
       "fxEffectiveDate": "2026-10-26",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-27T08:18:10.517Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2012,7 +2012,7 @@
       "original": "190 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-pari-al-nuovo-varese-667289431.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2024,10 +2024,10 @@
       "fxEffectiveDate": "2026-11-05",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-06T09:45:44.161Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2050,7 +2050,7 @@
       "original": "180 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-torino-668434436.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2062,10 +2062,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2087,7 +2087,7 @@
       "original": "170 EUR",
       "url": "https://www.subito.it/audio-video/beyerdynamic-dt-900-pro-x-torino-668868021.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2099,10 +2099,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2124,7 +2124,7 @@
       "original": "130 EUR",
       "url": "https://www.subito.it/audio-video/cuffia-beyerdynamic-dt-900-pro-x-aperta-lodi-664860697.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2136,10 +2136,10 @@
       "fxEffectiveDate": "2026-10-16",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-18T07:23:46.980Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2162,7 +2162,7 @@
       "original": "210 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-studio-beyerdynamic-dt-900-pro-x-catania-627178822.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2174,10 +2174,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2200,7 +2200,7 @@
       "original": "229 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworldrl-lecce-669243906.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2212,10 +2212,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-22T10:10:04.334Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2253,7 +2253,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-15T11:21:28.553Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2275,7 +2275,7 @@
       "original": "300 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-blu-salerno-628578189.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2287,10 +2287,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2329,7 +2329,7 @@
         "firstVerifiedAt": "2026-10-28T08:54:59.572Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-29T05:40:52.870Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2367,7 +2367,7 @@
         "firstVerifiedAt": "2026-11-02T09:52:23.654Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-03T09:57:12.881Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2389,7 +2389,7 @@
       "original": "195 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-audio-bluetooth-portatile-treviso-667276742.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2401,10 +2401,10 @@
       "fxEffectiveDate": "2026-11-05",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-06T09:45:44.161Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2427,7 +2427,7 @@
       "original": "350 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-cassa-audio-lecco-667111747.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2439,10 +2439,10 @@
       "fxEffectiveDate": "2026-11-04",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-05T09:47:22.067Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2481,7 +2481,7 @@
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-14T11:45:38.053Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2519,9 +2519,9 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
         "lastVerifiedAt": "2026-10-12T13:06:34.264Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
-      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
     },
     {
       "id": "refresh-b2fe9b555823f98a",
@@ -2541,7 +2541,7 @@
       "original": "249 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-frosinone-660128620.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2553,10 +2553,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2579,7 +2579,7 @@
       "original": "300 EUR",
       "url": "https://www.subito.it/audio-video/bose-soundlink-max-napoli-628578057.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2591,10 +2591,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2633,7 +2633,7 @@
         "firstVerifiedAt": "2026-11-05T09:47:22.067Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-21T10:06:50.712Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2671,7 +2671,7 @@
         "firstVerifiedAt": "2026-11-01T09:36:50.527Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-04T14:30:10.519Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2709,7 +2709,7 @@
         "firstVerifiedAt": "2026-10-28T08:54:59.572Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-29T12:53:52.328Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2747,7 +2747,7 @@
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-10T07:11:00.657Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2785,7 +2785,7 @@
         "firstVerifiedAt": "2026-11-11T09:47:17.592Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-11T09:47:17.592Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2807,7 +2807,7 @@
       "original": "220 EUR",
       "url": "https://www.subito.it/audio-video/cassa-portatile-bose-soundlink-max-roma-666692024.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2819,10 +2819,10 @@
       "fxEffectiveDate": "2026-10-30",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-02T09:52:23.654Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2861,7 +2861,7 @@
         "checkedAt": "2026-11-10T10:17:42.511Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
         "lastVerifiedAt": "2026-11-10T10:17:42.511Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2883,7 +2883,7 @@
       "original": "279.99 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2462531009-bowers-wilkins-pi8-zwart-nette-staat",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2895,10 +2895,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -2920,7 +2920,7 @@
       "original": "300 EUR",
       "url": "https://www.subito.it/telefonia/auricolari-bowers-wilkins-pi8-mclaren-edition-milano-652804473.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2932,10 +2932,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -2958,7 +2958,7 @@
       "original": "228 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452663844-bowers-wilkins-pi8-zwarte-draadloze-oordopjes",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -2971,9 +2971,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -2995,7 +2995,7 @@
       "original": "280 EUR",
       "url": "https://www.subito.it/audio-video/bowers-wilkins-pi8-brindisi-640254706.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3007,10 +3007,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3049,7 +3049,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-12T15:15:05.878Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3071,7 +3071,7 @@
       "original": "1900 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2437308762-dan-clark-audio-e3-6-35mm-2m-vivo-kabel",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3084,9 +3084,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -3108,7 +3108,7 @@
       "original": "800 EUR",
       "url": "https://www.subito.it/audio-video/dan-clark-audio-noire-x-roma-666353342.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3120,10 +3120,10 @@
       "fxEffectiveDate": "2026-10-29",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-30T08:53:45.117Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3162,7 +3162,7 @@
         "checkedAt": "2026-10-21T11:41:52.644Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
         "lastVerifiedAt": "2026-10-21T11:41:52.644Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -3200,7 +3200,7 @@
         "firstVerifiedAt": "2026-10-24T07:33:28.300Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-10T10:17:42.511Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3222,7 +3222,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/etymotic-er2se-ear-monitor-padova-668033797.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3234,10 +3234,10 @@
       "fxEffectiveDate": "2026-11-10",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-12T10:10:09.863Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3260,7 +3260,7 @@
       "original": "150 EUR",
       "url": "https://www.subito.it/audio-video/etymotic-er4xr-milano-659831454.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3272,10 +3272,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3314,7 +3314,7 @@
         "checkedAt": "2026-11-02T09:52:23.654Z",
         "firstVerifiedAt": "2026-10-12T14:12:31.820Z",
         "lastVerifiedAt": "2026-11-02T09:52:23.654Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -3336,7 +3336,7 @@
       "original": "790 EUR",
       "url": "https://www.subito.it/audio-video/cuffia-focal-clear-mg-accessori-lecco-659585447.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3348,10 +3348,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3374,7 +3374,7 @@
       "original": "790 EUR",
       "url": "https://www.subito.it/audio-video/cuffia-focal-clear-mg-accessori-ribasso-lecco-659585447.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3386,10 +3386,10 @@
       "fxEffectiveDate": "2026-11-10",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-11T09:47:17.592Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3412,7 +3412,7 @@
       "original": "670 EUR",
       "url": "https://www.subito.it/audio-video/focal-clear-og-no-hifiman-sennheiser-salerno-657704961.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3424,10 +3424,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3450,7 +3450,7 @@
       "original": "250 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2449671340-hifiman-ananda-nano-as-good-as-new",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3463,9 +3463,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -3503,7 +3503,7 @@
         "firstVerifiedAt": "2026-10-14T07:57:40.195Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-20T07:53:08.003Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3541,7 +3541,7 @@
         "firstVerifiedAt": "2026-10-21T07:56:54.359Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-06T09:45:44.161Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3579,9 +3579,9 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
         "lastVerifiedAt": "2026-10-12T13:06:34.264Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
-      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
+      "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote. · Seller explicitly excludes all shipping. Price retained as a research-only quote."
     },
     {
       "id": "refresh-37856362f63bd8aa",
@@ -3617,7 +3617,7 @@
         "firstVerifiedAt": "2026-10-15T07:41:39.724Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-31T08:45:39.609Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3655,7 +3655,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-16T07:28:25.937Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3693,7 +3693,7 @@
         "firstVerifiedAt": "2026-11-03T09:57:12.881Z",
         "http": 200,
         "lastVerifiedAt": "2026-11-22T12:02:24.217Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3715,7 +3715,7 @@
       "original": "450 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2468718497-hifiman-arya-stealth-uitstekende-staat-garantie",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3727,10 +3727,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-22T12:02:24.217Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during DEEP: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3768,7 +3768,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-22T04:36:32.404Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3806,7 +3806,7 @@
         "checkedAt": "2026-11-12T23:33:31.153Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
         "lastVerifiedAt": "2026-11-12T23:33:31.153Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -3844,7 +3844,7 @@
         "checkedAt": "2026-11-21T10:06:50.712Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
         "lastVerifiedAt": "2026-11-21T10:06:50.712Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -3866,7 +3866,7 @@
       "original": "200 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-magnetoplanari-hifiman-edition-xs-trento-662348828.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -3878,10 +3878,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -3920,7 +3920,7 @@
         "firstVerifiedAt": "2026-10-21T07:56:54.359Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-23T21:21:08.834Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3958,7 +3958,7 @@
         "firstVerifiedAt": "2026-10-26T08:03:21.873Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-27T22:08:58.140Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -3996,7 +3996,7 @@
         "firstVerifiedAt": "2026-11-01T09:36:50.527Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-01T21:58:42.605Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4034,7 +4034,7 @@
         "firstVerifiedAt": "2026-11-06T09:45:44.161Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-06T19:19:49.222Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4072,7 +4072,7 @@
         "firstVerifiedAt": "2026-11-10T10:17:42.511Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-10T19:41:34.382Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4110,7 +4110,7 @@
         "firstVerifiedAt": "2026-11-12T10:10:09.863Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-12T15:05:12.359Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4148,7 +4148,7 @@
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-21T19:09:18.470Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4186,7 +4186,7 @@
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-21T10:06:50.712Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4224,7 +4224,7 @@
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-29T05:40:52.870Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4262,7 +4262,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-12T23:33:31.153Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4300,7 +4300,7 @@
         "firstVerifiedAt": "2026-11-06T09:45:44.161Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-12T23:33:31.153Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4338,7 +4338,7 @@
         "checkedAt": "2026-10-30T12:47:06.899Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
         "lastVerifiedAt": "2026-10-30T12:47:06.899Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -4376,7 +4376,7 @@
         "firstVerifiedAt": "2026-10-31T08:45:39.609Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-09T10:11:12.018Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4414,7 +4414,7 @@
         "firstVerifiedAt": "2026-11-03T09:57:12.881Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-09T06:15:31.492Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4436,7 +4436,7 @@
       "original": "140 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2443065935-jbl-charge-6",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4449,9 +4449,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T11:25:53.570Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -4489,7 +4489,7 @@
         "firstVerifiedAt": "2026-10-19T08:02:43.456Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-27T17:57:19.145Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4527,7 +4527,7 @@
         "checkedAt": "2026-10-14T17:06:33.661Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
         "lastVerifiedAt": "2026-10-14T17:06:33.661Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -4565,7 +4565,7 @@
         "checkedAt": "2026-10-16T11:16:19.844Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
         "lastVerifiedAt": "2026-10-16T11:16:19.844Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -4603,7 +4603,7 @@
         "firstVerifiedAt": "2026-10-12T10:31:31.968Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-17T10:36:07.316Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4617,15 +4617,15 @@
       "rrp": 799,
       "newMarket": 599,
       "sameMarket": 599,
-      "price": 550.7,
+      "price": 534.71,
       "country": "Holandia",
       "seller": "Marktplaats",
       "region": "UE",
       "status": "LIVE VERIFIED",
-      "original": "125 EUR",
+      "original": "120 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451373810-jbl-charge-6-red",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4638,9 +4638,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-28T08:54:59.572Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -4662,7 +4662,7 @@
       "original": "140 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2452326610-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw-geseale",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4675,9 +4675,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -4699,7 +4699,7 @@
       "original": "110 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2453189380-jbl-charge-6-nieuw-ongeopend-sealed-rood",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4712,9 +4712,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-26T22:36:54.270Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
     },
@@ -4752,7 +4752,7 @@
         "firstVerifiedAt": "2026-10-24T07:33:28.300Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-06T19:19:49.222Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4790,7 +4790,7 @@
         "firstVerifiedAt": "2026-11-03T09:57:12.881Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-04T14:30:10.519Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4828,7 +4828,7 @@
         "firstVerifiedAt": "2026-11-08T09:25:08.750Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-11T09:47:17.592Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4850,7 +4850,7 @@
       "original": "120 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464616035-jbl-charge-6-draagbare-bluetooth-speaker-rood",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4862,10 +4862,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4887,7 +4887,7 @@
       "original": "110 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2467191042-nieuw-jbl-charge-6-draagbare-bluetooth-speaker-rood",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4899,10 +4899,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -4924,7 +4924,7 @@
       "original": "100 EUR",
       "url": "https://www.marktplaats.nl/v/computers-en-software/pc-speakers/m2450565666-jbl-charge-6",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4937,9 +4937,9 @@
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
         "http": 200,
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-13T00:35:07.278Z",
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-20T07:05:55.824Z"
       },
       "note": "Fresh direct seller recheck: exact item, model, current fixed asking price, condition and stock verified. Item price excludes unknown delivery and fees; shipping to Poland not guaranteed."
@@ -4962,7 +4962,7 @@
       "original": "99 EUR",
       "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-milano-664245426.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -4974,10 +4974,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T12:20:37.872Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5000,7 +5000,7 @@
       "original": "100 EUR",
       "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-669139653.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5012,10 +5012,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-21T10:06:50.712Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5037,7 +5037,7 @@
       "original": "85 EUR",
       "url": "https://www.subito.it/audio-video/cassa-jbl-charge-6-bari-652189816.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5049,10 +5049,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5075,7 +5075,7 @@
       "original": "141 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-altoparlante-bluetooth-portatile-milano-665155663.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5087,10 +5087,10 @@
       "fxEffectiveDate": "2026-10-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-20T07:53:08.003Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5113,7 +5113,7 @@
       "original": "139 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-cassa-portatile-potente-napoli-652596052.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5125,10 +5125,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5167,7 +5167,7 @@
         "firstVerifiedAt": "2026-10-15T07:41:39.724Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-17T20:32:02.789Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5189,7 +5189,7 @@
       "original": "110 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-nera-reggio-emilia-665604912.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5201,10 +5201,10 @@
       "fxEffectiveDate": "2026-10-23",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-24T07:33:28.300Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5243,7 +5243,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-09T10:11:12.018Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5265,7 +5265,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-prezzo-trattabile-vibo-valentia-652760291.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5277,10 +5277,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5319,7 +5319,7 @@
         "firstVerifiedAt": "2026-10-16T07:28:25.937Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-23T17:01:39.439Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5341,7 +5341,7 @@
       "original": "100 EUR",
       "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-mimetica-squad-lucca-668047287.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5353,10 +5353,10 @@
       "fxEffectiveDate": "2026-11-10",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-12T10:10:09.863Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5395,7 +5395,7 @@
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-07T12:54:13.170Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5417,7 +5417,7 @@
       "original": "85 EUR",
       "url": "https://www.subito.it/audio-video/cassa-portatile-jbl-charge6-roma-666692239.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5429,10 +5429,10 @@
       "fxEffectiveDate": "2026-10-30",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-02T09:52:23.654Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5471,7 +5471,7 @@
         "firstVerifiedAt": "2026-10-14T07:57:40.195Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-15T16:55:38.547Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5493,7 +5493,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-bluetooth-con-scatola-e-scontrino-gallura-665269164.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5505,10 +5505,10 @@
       "fxEffectiveDate": "2026-10-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-21T07:56:54.359Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5531,7 +5531,7 @@
       "original": "110 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-667115366.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5543,10 +5543,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5568,7 +5568,7 @@
       "original": "125 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-669050585.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5580,10 +5580,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5605,7 +5605,7 @@
       "original": "100 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-latina-668292902.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5617,10 +5617,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5642,7 +5642,7 @@
       "original": "120 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-milano-648438267.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5654,10 +5654,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5680,7 +5680,7 @@
       "original": "100 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-monza-668638226.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5692,10 +5692,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5733,7 +5733,7 @@
         "firstVerifiedAt": "2026-10-20T07:53:08.003Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-12T23:33:31.153Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5771,7 +5771,7 @@
         "firstVerifiedAt": "2026-11-11T09:47:17.592Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-12T15:05:12.359Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5793,7 +5793,7 @@
       "original": "100 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-pisa-668061333.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5805,10 +5805,10 @@
       "fxEffectiveDate": "2026-11-10",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-12T10:10:09.863Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5847,7 +5847,7 @@
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-15T11:21:28.553Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5869,7 +5869,7 @@
       "original": "130 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5881,10 +5881,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -5907,7 +5907,7 @@
       "original": "140 EUR",
       "url": "https://www.subito.it/audio-video/jbl-charge-6-trieste-668425920.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5919,10 +5919,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5960,7 +5960,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-05T09:47:22.067Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -5982,7 +5982,7 @@
       "original": "220 EUR",
       "url": "https://www.subito.it/audio-video/auricolari-in-ear-moondrop-blessing-3-bari-641420328.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -5994,10 +5994,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6036,7 +6036,7 @@
         "firstVerifiedAt": "2026-11-08T09:25:08.750Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-12T23:33:31.153Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6058,7 +6058,7 @@
       "original": "450 EUR",
       "url": "https://www.subito.it/audio-video/ndh-30-neumann-cuffie-aperte-mix-mastering-napoli-643597326.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6070,10 +6070,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6096,7 +6096,7 @@
       "original": "390 EUR",
       "url": "https://www.subito.it/audio-video/neumann-ndh-30-cuffie-professionali-aperte-mix-milano-667901343.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6108,10 +6108,10 @@
       "fxEffectiveDate": "2026-11-10",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-11T09:47:17.592Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6134,7 +6134,7 @@
       "original": "390 EUR",
       "url": "https://www.subito.it/audio-video/neumann-ndh-30-garanzia-2-anni-milano-667901343.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6146,10 +6146,10 @@
       "fxEffectiveDate": "2026-11-19",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-20T10:22:47.784Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6187,7 +6187,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-21T07:56:54.359Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6209,7 +6209,7 @@
       "original": "3300 PLN",
       "url": "https://www.olx.pl/d/oferta/cardas-clear-3m-xlr-legendarny-kabel-dla-sennheiser-hd800-hd800s-dharma-d1000-CID99-ID1d61dI.html?search_reason=search%7Corganic",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6221,10 +6221,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-22T12:02:24.217Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during DEEP: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6246,7 +6246,7 @@
       "original": "250 PLN",
       "url": "https://www.olx.pl/d/oferta/oryginalne-pady-gabki-nausznice-zmf-dla-sennheiser-hd800-hd800s-suede-zamsz-mikrozamsz-CID99-ID1d62JX.html?search_reason=search%7Corganic",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6258,10 +6258,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-22T12:02:24.217Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during DEEP: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6283,7 +6283,7 @@
       "original": "5000 PLN",
       "url": "https://www.olx.pl/d/oferta/sennheiser-hd-800-s-CID99-ID13hnmg.html?search_reason=search%7Corganic",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6295,10 +6295,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-22T12:02:24.217Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during DEEP: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6320,7 +6320,7 @@
       "original": "4500 PLN",
       "url": "https://www.olx.pl/d/oferta/sennheiser-hd800s-sluchawki-dynamiczne-super-stan-gwarancja-CID99-ID1d60GC.html?search_reason=search%7Corganic",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6332,10 +6332,10 @@
       "fxEffectiveDate": "2026-11-20",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-22T12:02:24.217Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during DEEP: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6373,7 +6373,7 @@
         "firstVerifiedAt": "2026-11-02T09:52:23.654Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-04T14:30:10.519Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6395,7 +6395,7 @@
       "original": "750 EUR",
       "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-torino-664348538.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6407,10 +6407,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6449,7 +6449,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-22T04:36:32.404Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6471,7 +6471,7 @@
       "original": "120 EUR",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/audiokabels-en-televisiekabels/m2455212249-kabel-voor-sennheiser-hd-800-hd-820-koptelefoon",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6483,10 +6483,10 @@
       "fxEffectiveDate": "2026-10-16",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-19T08:02:43.456Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z"
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6524,7 +6524,7 @@
         "firstVerifiedAt": "2026-10-31T08:45:39.609Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-31T12:18:40.037Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6546,7 +6546,7 @@
       "original": "980 EUR",
       "url": "https://www.subito.it/audio-video/sennheiser-hd-800-verona-630304675.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6558,10 +6558,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T12:20:37.872Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6600,7 +6600,7 @@
         "firstVerifiedAt": "2026-10-12T12:20:37.872Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-03T14:04:59.080Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6622,7 +6622,7 @@
       "original": "640 EUR",
       "url": "https://www.subito.it/audio-video/sennheiser-hd800-genova-659287121.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6634,10 +6634,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6660,7 +6660,7 @@
       "original": "330 EUR",
       "url": "https://www.subito.it/audio-video/sennheiser-ie-600-in-condizioni-perfette-verona-666640260.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6672,10 +6672,10 @@
       "fxEffectiveDate": "2026-10-30",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-11-01T09:36:50.527Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6698,7 +6698,7 @@
       "original": "149 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-sony-mdr-m1-professional-come-nuove-2cavi-trento-656522340.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6710,10 +6710,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T00:44:17.767Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6752,7 +6752,7 @@
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-24T04:30:01.227Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6790,7 +6790,7 @@
         "firstVerifiedAt": "2026-10-13T09:41:39.213Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-21T11:41:52.644Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6812,7 +6812,7 @@
       "original": "219 EUR",
       "url": "https://www.subito.it/audio-video/auricolari-true-wireless-technics-eah-az100-roma-663954903.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6824,10 +6824,10 @@
       "fxEffectiveDate": "2026-10-12",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6850,7 +6850,7 @@
       "original": "599 EUR",
       "url": "https://www.subito.it/audio-video/cuffie-bluetooth-technics-eah-az100-rolling-stones-torino-656061036.htm",
       "role": "OFFER",
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
       "shippingRate": null,
@@ -6862,10 +6862,10 @@
       "fxEffectiveDate": "2026-10-09",
       "refresh": {
         "verificationState": "DIRECT_OFFER_VERIFIED",
-        "checkedAt": "2026-11-22T19:31:57.826Z",
+        "checkedAt": "2026-11-23T07:27:55.091Z",
         "firstVerifiedAt": "2026-10-11T20:14:35.427Z",
         "http": 200,
-        "lastVerifiedAt": "2026-11-22T19:31:57.826Z",
+        "lastVerifiedAt": "2026-11-23T07:27:55.091Z",
         "lastAttemptAt": "2026-11-17T20:50:33.545Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
@@ -6904,7 +6904,7 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-10-27T22:08:58.140Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     },
@@ -6942,15 +6942,15 @@
         "firstVerifiedAt": "2026-10-12T09:51:25.481Z",
         "http": 410,
         "lastVerifiedAt": "2026-11-12T23:33:31.153Z",
-        "lastAttemptAt": "2026-11-22T19:31:57.826Z"
+        "lastAttemptAt": "2026-11-23T07:27:55.091Z"
       },
       "note": "Seller direct page verified during FULL: exact model, condition, asking price and stock. Displayed price excludes shipping and fees; Poland shipping not guaranteed."
     }
   ],
   "refresh": {
-    "refreshedAt": "2026-11-22T19:31:57.826Z",
+    "refreshedAt": "2026-11-23T07:27:55.091Z",
     "mode": "quick",
-    "runId": "45061193865",
+    "runId": "45131202163",
     "status": "COMPLETED"
   }
 }
