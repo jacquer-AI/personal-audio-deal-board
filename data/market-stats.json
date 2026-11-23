@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-23T11:07:11.359Z",
+  "refreshedAt": "2026-11-23T23:49:28.908Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -44,9 +44,9 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 12,
+      "n": 11,
       "confidence": "ROBUST",
-      "median": 478.98,
+      "median": 467.84,
       "min": 378.73,
       "max": 623.78
     },
@@ -203,14 +203,6 @@
       "max": 623.78
     },
     {
-      "key": "Sennheiser HD 800 S|USED",
-      "n": 5,
-      "confidence": "ROBUST",
-      "median": 3341.7,
-      "min": 250,
-      "max": 5000
-    },
-    {
       "key": "Sennheiser HD 800|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
@@ -281,6 +273,14 @@
       "median": null,
       "min": 2005.02,
       "max": 2005.02
+    },
+    {
+      "key": "Sennheiser HD 800 S|USED",
+      "n": 4,
+      "confidence": "PROVISIONAL",
+      "median": 3900,
+      "min": 250,
+      "max": 5000
     }
   ]
 }
