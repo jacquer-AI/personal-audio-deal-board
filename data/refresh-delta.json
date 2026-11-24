@@ -1,59 +1,47 @@
 {
   "new": 0,
   "priceChanged": 0,
-  "sold": 1,
-  "stale": 2,
+  "sold": 0,
+  "stale": 1,
   "changes": [
     {
-      "type": "SOLD",
+      "type": "STALE",
       "model": "Technics EAH-AZ100",
       "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-667115366.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "Sennheiser HD 800 S",
-      "url": "https://www.subito.it/audio-video/sennheiser-hd-800-s-torino-664348538.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-23T23:49:28.908Z",
+  "refreshedAt": "2026-11-24T09:47:41.175Z",
   "mode": "quick",
-  "runId": "45291979649",
+  "runId": "45368467484",
   "candidates": 498,
   "verifiedAdditions": 0,
-  "observationChanges": 8,
+  "observationChanges": 2,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 191,
     "directVerified": 91,
-    "accessRestricted": 6,
-    "ambiguous": 12,
+    "accessRestricted": 5,
+    "ambiguous": 13,
     "dead": 81,
-    "soldOrOut": 1,
+    "soldOrOut": 0,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 2
     },
     "researchSelection": {
-      "eligible": 21,
-      "selected": 21,
+      "eligible": 20,
+      "selected": 20,
       "skippedOnBoard": 35,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 21,
+    "researchRechecked": 20,
     "researchReverified": 20,
-    "researchDowngraded": 1,
     "researchPromotionBlocked": {
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 19,
-      "NOT_VERIFIED_IN_THIS_RUN": 1,
       "RED_TEAM_BLOCKED": 1
     },
     "researchPromoted": 0
