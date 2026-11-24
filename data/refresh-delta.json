@@ -1,633 +1,81 @@
 {
-  "new": 77,
-  "priceChanged": 1,
-  "sold": 1,
-  "stale": 0,
+  "new": 0,
+  "priceChanged": 0,
+  "sold": 0,
+  "stale": 7,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 8541.3,
-      "to": 8556.06,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "SOLD",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
-      "type": "NEW",
-      "model": "64 Audio U12t",
-      "price": 7587.61,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2463846946-64-audio-u12t-high-end-in-ear-monitors"
-    },
-    {
-      "type": "NEW",
-      "model": "7Hz Timeless",
-      "price": 150,
-      "url": "https://www.olx.pl/d/oferta/7hz-timeless-ii-kabel-sluchawkowy-4-4mm-zbalansowany-3-5-mm-na-2-pin-0-78-mm-czarny-nowy-CID99-ID1cmn0d.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "AKG K501",
-      "price": 1500,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-akg-k501-super-stan-vintage-CID99-ID1cnvRh.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
+      "type": "STALE",
       "model": "AKG K702",
-      "price": 400,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-akg-k702-bass-mod-CID99-ID1cLspP.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "AKG K702",
-      "price": 350,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-akg-k702-CID99-ID1doSKW.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "AKG K702",
-      "price": 359,
       "url": "https://www.olx.pl/d/oferta/sluchawki-akg-k702-stan-idealny-oryginalne-pady-kabel-3m-pudelko-komplet-CID99-ID1djtG1.html?search_reason=search%7Corganic"
     },
     {
-      "type": "NEW",
-      "model": "AKG K702",
-      "price": 300,
-      "url": "https://www.olx.pl/d/oferta/slychawki-akg-k702-CID99-ID1dpk1A.html?search_reason=search%7Cpromoted"
-    },
-    {
-      "type": "NEW",
-      "model": "Audio-Technica ATH-M70x",
-      "price": 99,
-      "url": "https://www.olx.pl/d/oferta/audio-technica-ath-m50x-ath-m70x-case-futeral-etui-oryginalne-CID99-ID1c96Py.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Audio-Technica ATH-M70x",
-      "price": 760,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-audio-technica-ath-m70x-CID99-ID1ciA2I.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1600,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-studyjne-beyerdynamic-dt1990-pro-CID99-ID1deUju.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1599,
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt-1990-pro-CID99-ID1dq5nH.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1600,
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt1990-CID99-IDWFRkv.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1500,
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt1990-pro-CID99-ID19tAKP.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1950,
-      "url": "https://www.olx.pl/d/oferta/mod-zbalansowane-beyerdynamic-dt-1990-pro-250-ohm-4-pady-stan-idealny-CID99-ID1b1aD8.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1600,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt-1990-250-ohm-CID99-ID1bg1cK.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "price": 1500,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-studyjne-beyerdynamic-dt-1990-pro-CID99-ID19HZJh.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 470,
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt-880-pro-250-ohm-stan-idealny-CID99-ID1bBmWa.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 450,
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt880-pro-torba-CID99-ID1cRARs.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 530,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt-880-chrome-special-edition-250-ohm-futeral-jak-nowe-CID99-ID1cPwhH.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 550,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt-880-edition-CID99-ID1ckU82.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 380,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt880-250ohm-edition-CID99-ID1b0TzK.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 280,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt880-kolekcjonerskie-CID99-ID1dcPkI.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 880",
-      "price": 480,
-      "url": "https://www.olx.pl/d/oferta/uzywane-beyerdynamic-dt-880-pro-250-ohm-stan-dobry-CID99-ID1bGTsk.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "price": 699,
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt-900-pro-x-CID99-ID1bLSXw.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "price": 700,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt-900-pro-x-CID99-ID1ddvq8.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Bose SoundLink Max",
-      "price": 1250,
-      "url": "https://www.olx.pl/d/oferta/glosnik-bose-soundlink-max-CID99-ID1cLQRW.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Bose SoundLink Max",
-      "price": 1150,
-      "url": "https://www.olx.pl/d/oferta/glosnik-bose-soundlink-max-CID99-ID1cZmNy.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Bose SoundLink Max",
-      "price": 1099,
-      "url": "https://www.olx.pl/d/oferta/glosnik-przenosny-bose-soundlink-max-czarny-stan-jak-nowy-CID99-ID1dhm3z.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Bose SoundLink Max",
-      "price": 1574.1,
-      "url": "https://www.olx.pl/d/oferta/media-markt-bose-glosnik-bluetooth-bose-soundlink-max-czarny-CID99-ID1coMEI.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Bowers & Wilkins Pi8",
-      "price": 937.25,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2464257586-bowers-wilkins-pi8-zo-goed-als-nieuw"
-    },
-    {
-      "type": "NEW",
-      "model": "Bowers & Wilkins Pi8",
-      "price": 900,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-bluetooth-bowers-wilkins-b-w-pi8-CID99-ID1d3SID.html?search_reason=search%7Cpromoted"
-    },
-    {
-      "type": "NEW",
-      "model": "Dan Clark Audio E3",
-      "price": 6700,
-      "url": "https://www.olx.pl/d/oferta/dan-clark-audio-e3-CID99-ID1bNO32.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Dan Clark Audio E3",
-      "price": 6900,
-      "url": "https://www.olx.pl/d/oferta/dan-clark-audio-e3-zamkniete-na-gwarancji-CID99-ID1cp6gE.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Dan Clark Audio Noire X",
-      "price": 39,
-      "url": "https://www.olx.pl/d/oferta/la-noire-xbox360-jak-nowa-CID99-IDNz1BS.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Dan Clark Audio Noire X",
-      "price": 5500,
-      "url": "https://www.olx.pl/d/oferta/dan-clark-noire-x-vivo-1-8m-cayin-ru9-stan-idealny-CID99-ID1brlqu.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Etymotic ER2SE",
-      "price": 397.23,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2464239033-etymotic-er2se-oortjes-zwart"
-    },
-    {
-      "type": "NEW",
-      "model": "Focal Clear MG",
-      "price": 6999,
-      "url": "https://www.olx.pl/d/oferta/focal-clear-mg-audiofilskie-sluchawki-przewodowe-audiopolis-warszawa-CID99-ID1aA9f0.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Focal Clear MG",
-      "price": 3600,
-      "url": "https://www.olx.pl/d/oferta/focal-clear-mg-utopia-magnezowe-przetworniki-CID99-ID18QEda.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Focal Clear OG",
-      "price": 3000,
-      "url": "https://www.olx.pl/d/oferta/focal-clear-og-z-orginalym-opakowaniem-CID99-ID15Z43U.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Ananda Nano",
-      "price": 1000,
-      "url": "https://www.olx.pl/d/oferta/hifiman-ananda-nano-CID99-ID1br9yM.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Ananda Nano",
-      "price": 1500,
-      "url": "https://www.olx.pl/d/oferta/hifiman-ananda-nano-stan-jak-nowy-kabel-4-4-mm-stojak-CID99-ID1cZ8cV.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Ananda Nano",
-      "price": 970,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-hifiman-ananda-nano-2-pary-padow-CID99-ID1bYe4g.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
+      "type": "STALE",
       "model": "HIFIMAN Edition XS",
-      "price": 795,
-      "url": "https://www.olx.pl/d/oferta/nowe-planarne-sluchawki-hifiman-edition-xs-CID99-ID1dhTy5.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 100,
-      "url": "https://www.olx.pl/d/oferta/podstawka-pod-sluchawki-planarne-hifiman-edition-xs-he-arya-filcowe-nozki-CID99-ID1d9q2V.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 100,
-      "url": "https://www.olx.pl/d/oferta/podstawka-pod-sluchawki-planarne-hifiman-edition-xs-he-arya-filcowe-nozki-CID99-ID1d9XBR.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 759,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-hifiman-edition-xs-nowe-fabrycznie-zapakowane-planarne-CID99-ID1dlfAw.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 695,
-      "url": "https://www.olx.pl/d/oferta/audiofilskie-sluchawki-planarne-hifiman-edition-xs-stan-igla-pasek-pod-palak-CID99-ID1dp6Nh.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 797,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-hifiman-edition-xs-CID99-ID1digMm.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 850,
       "url": "https://www.olx.pl/d/oferta/sluchawkihifiman-edition-xs-edition-xs-referencyjne-audiofilskie-sluchawki-planarne-ortodynamiczne-stealth-magnets-nsd-CID99-ID1anVnl.html?search_reason=search%7Corganic"
     },
     {
-      "type": "NEW",
-      "model": "HIFIMAN Svanar Wireless",
-      "price": 600,
-      "url": "https://www.olx.pl/d/oferta/bezprzewodowe-sluchawki-douszne-hifiman-svanar-wireless-CID99-ID19mRRc.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
+      "type": "STALE",
       "model": "JBL Charge 6",
-      "price": 550,
-      "url": "https://www.olx.pl/d/oferta/glosnik-charge-6-jbl-CID99-ID1dpbxB.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 450,
       "url": "https://www.olx.pl/d/oferta/sprzedam-nowy-jbl-charge-6-CID99-ID1dnbrC.html?search_reason=search%7Corganic"
     },
     {
-      "type": "NEW",
+      "type": "STALE",
       "model": "JBL Charge 6",
-      "price": 329,
-      "url": "https://www.olx.pl/d/oferta/glosnik-bluetooth-jbl-charge-6-CID99-ID1dg64v.html?search_reason=search%7Corganic"
+      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-669139653.htm"
     },
     {
-      "type": "NEW",
+      "type": "STALE",
       "model": "JBL Charge 6",
-      "price": 250,
       "url": "https://www.olx.pl/d/oferta/glosnik-jbl-charge-6-CID99-ID1dpZcJ.html?search_reason=search%7Corganic"
     },
     {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 419,
-      "url": "https://www.olx.pl/d/oferta/glosnik-przenosny-jbl-charge-6-niebieski-45-w-CID99-ID1dpse3.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 350,
-      "url": "https://www.olx.pl/d/oferta/jbl-charge-6-fioletowy-CID99-ID1cYlOy.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 400,
-      "url": "https://www.olx.pl/d/oferta/jbl-charge-6-jak-nowy-CID99-ID1djjvH.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "JBL Charge 6",
-      "price": 405,
-      "url": "https://www.olx.pl/d/oferta/jbl-charge-6-oryginalna-CID99-ID1doInl.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Marshall Middleton II",
-      "price": 900,
-      "url": "https://www.olx.pl/d/oferta/nowy-glosnik-bluetooth-marshall-middleton-ii-czarny-CID99-ID1cni0F.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Marshall Middleton II",
-      "price": 850,
-      "url": "https://www.olx.pl/d/oferta/nowy-glosnik-marshall-middleton-ii-czarny-CID99-ID1deoId.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Moondrop Blessing 3",
-      "price": 1200,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-douszne-moondrop-blessing-3-CID99-ID1bJcH9.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Moondrop Blessing 3",
-      "price": 1200,
-      "url": "https://www.olx.pl/d/oferta/moondrop-blessing-3-iem-sluchawki-douszne-CID99-ID1bXdQH.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Neumann NDH 30",
-      "price": 1449,
-      "url": "https://www.olx.pl/d/oferta/neumann-ndh-30-black-edition-otwarte-sluchawki-studyjne-CID99-ID1c1Amc.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Neumann NDH 30",
-      "price": 2000,
-      "url": "https://www.olx.pl/d/oferta/neumann-ndh-30-black-edition-sluchawki-studyjne-CID99-ID1dhRbc.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
+      "type": "STALE",
       "model": "Sennheiser HD 800",
-      "price": 349,
-      "url": "https://www.olx.pl/d/oferta/kabel-sluchawkowy-dekoni-audio-do-sennheiser-hd-800-xlr-4-pin-CID99-ID1cYCdN.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Sennheiser HD 800",
-      "price": 3499,
       "url": "https://www.olx.pl/d/oferta/sluchawki-sennheiser-hd-800-1-wersja-CID99-ID1cWWmA.html?search_reason=search%7Cpromoted"
     },
     {
-      "type": "NEW",
-      "model": "Sennheiser HD 800",
-      "price": 2500,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-sennheiser-hd800-z-nausznikami-dekoni-elite-fenestrated-sheepskin-CID99-ID1dnqja.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
+      "type": "STALE",
       "model": "Sennheiser IE 900",
-      "price": 900,
       "url": "https://www.olx.pl/d/oferta/komplet-kabli-sennheiser-ie-900-CID99-IDZN2Yl.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Sony MDR-CD900ST",
-      "price": 999,
-      "url": "https://www.olx.pl/d/oferta/nowe-sluchawki-studyjne-sony-cd-900-stz-japonii-lata-90-CID99-ID1d4E6q.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Sony MDR-M1",
-      "price": 659,
-      "url": "https://www.olx.pl/d/oferta/sprzedam-sluchawki-studyjne-sony-mdr-m1-CID99-ID1d6Nq6.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 690,
-      "url": "https://www.olx.pl/d/oferta/technics-eah-az100-bezprzewodowe-sluchawki-tws-hi-res-dolby-atmos-CID99-ID1cf5HZ.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 750,
-      "url": "https://www.olx.pl/d/oferta/technics-eah-az100-CID99-ID15Kv8P.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 250,
-      "url": "https://www.olx.pl/d/oferta/lewa-sluchawka-technics-eah-az100-srebrna-CID99-ID1dpEgh.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 550,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-technics-az100-stan-idealny-zakup-12-2025-media-expert-CID99-ID1dioJb.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 550,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-technics-eah-az100-CID99-ID1dePfY.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 550,
-      "url": "https://www.olx.pl/d/oferta/technics-az100-czarne-sluchawki-douszne-CID99-ID1d1bAd.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "NEW",
-      "model": "Technics EAH-AZ100",
-      "price": 549,
-      "url": "https://www.olx.pl/d/oferta/technics-eah-az100-anc-ldac-dolby-atmos-czarne-komplet-sprawne-testowane-CID99-ID1dd25I.html?search_reason=search%7Corganic"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-24T12:51:41.173Z",
-  "mode": "full",
-  "runId": "45397506976",
+  "refreshedAt": "2026-11-24T22:21:25.261Z",
+  "mode": "quick",
+  "runId": "45500035254",
   "candidates": 500,
-  "verifiedAdditions": 77,
-  "observationChanges": 203,
-  "freshnessRenewal": false,
+  "verifiedAdditions": 0,
+  "observationChanges": 90,
+  "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 191,
-    "directVerified": 91,
-    "accessRestricted": 6,
-    "ambiguous": 12,
-    "dead": 81,
+    "directUrlsAttempted": 268,
+    "directVerified": 161,
+    "accessRestricted": 4,
+    "ambiguous": 13,
+    "dead": 87,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
+      "allegro-pl": 1,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 20,
-      "selected": 20,
-      "skippedOnBoard": 35,
+      "eligible": 34,
+      "selected": 34,
+      "skippedOnBoard": 111,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 20,
-    "researchReverified": 20,
+    "researchRechecked": 34,
+    "researchReverified": 24,
+    "researchDowngraded": 10,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 19,
-      "RED_TEAM_BLOCKED": 1
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 18,
+      "NOT_VERIFIED_IN_THIS_RUN": 10,
+      "RED_TEAM_BLOCKED": 6
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 211,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "olx-pl"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 5,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 84,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 83,
-          "verifiedUrls": 79,
-          "unverifiedUrls": 4
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 31,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 31,
-          "unverifiedUrls": 31
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 22,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 22,
-          "verifiedUrls": 12,
-          "unverifiedUrls": 8,
-          "sellerPriceOnly": 2
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 4,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 4,
-          "unverifiedUrls": 4
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 51,
-          "candidateUrls": 227,
-          "restricted": 9,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 221,
-      "selectedUrls": 146,
-      "selectedBySource": {
-        "vinted-pl": 31,
-        "olx-pl": 83,
-        "subito-it": 4,
-        "marktplaats-nl": 22,
-        "hifishark": 6
-      },
-      "modelsSelected": 33
-    }
+    "researchPromoted": 0
   }
 }

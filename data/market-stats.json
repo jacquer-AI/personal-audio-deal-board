@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-24T12:51:41.173Z",
+  "refreshedAt": "2026-11-24T22:21:25.261Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,9 +20,9 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 17,
+      "n": 15,
       "confidence": "ROBUST",
-      "median": 535.55,
+      "median": 535.6,
       "min": 379.38,
       "max": 629.33
     },
@@ -44,10 +44,10 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 17,
+      "n": 16,
       "confidence": "ROBUST",
       "median": 446.33,
-      "min": 250,
+      "min": 329,
       "max": 624.86
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "key": "AKG K702|USED",
-      "n": 11,
+      "n": 10,
       "confidence": "ROBUST",
       "median": 490.96,
       "min": 267.8,
@@ -148,9 +148,9 @@
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 4,
+      "n": 3,
       "confidence": "PROVISIONAL",
-      "median": 823.5,
+      "median": 797,
       "min": 695,
       "max": 892.66
     },
@@ -204,11 +204,11 @@
     },
     {
       "key": "Sennheiser HD 800|USED",
-      "n": 4,
+      "n": 3,
       "confidence": "PROVISIONAL",
-      "median": 2678.255,
+      "median": 2500,
       "min": 349,
-      "max": 3499
+      "max": 2856.51
     },
     {
       "key": "Sennheiser HD 800|B-STOCK",
@@ -321,14 +321,6 @@
       "median": 550,
       "min": 250,
       "max": 550
-    },
-    {
-      "key": "Sennheiser IE 900|NEW",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 900,
-      "max": 900
     },
     {
       "key": "Etymotic ER2SE|B-STOCK",
