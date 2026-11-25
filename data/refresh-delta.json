@@ -2,78 +2,41 @@
   "new": 0,
   "priceChanged": 0,
   "sold": 0,
-  "stale": 7,
-  "changes": [
-    {
-      "type": "STALE",
-      "model": "AKG K702",
-      "url": "https://www.olx.pl/d/oferta/sluchawki-akg-k702-stan-idealny-oryginalne-pady-kabel-3m-pudelko-komplet-CID99-ID1djtG1.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "HIFIMAN Edition XS",
-      "url": "https://www.olx.pl/d/oferta/sluchawkihifiman-edition-xs-edition-xs-referencyjne-audiofilskie-sluchawki-planarne-ortodynamiczne-stealth-magnets-nsd-CID99-ID1anVnl.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.olx.pl/d/oferta/sprzedam-nowy-jbl-charge-6-CID99-ID1dnbrC.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/cassa-bluetooth-jbl-charge-6-venezia-669139653.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.olx.pl/d/oferta/glosnik-jbl-charge-6-CID99-ID1dpZcJ.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "Sennheiser HD 800",
-      "url": "https://www.olx.pl/d/oferta/sluchawki-sennheiser-hd-800-1-wersja-CID99-ID1cWWmA.html?search_reason=search%7Cpromoted"
-    },
-    {
-      "type": "STALE",
-      "model": "Sennheiser IE 900",
-      "url": "https://www.olx.pl/d/oferta/komplet-kabli-sennheiser-ie-900-CID99-IDZN2Yl.html?search_reason=search%7Corganic"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-11-24T22:21:25.261Z",
+  "refreshedAt": "2026-11-25T08:23:26.376Z",
   "mode": "quick",
-  "runId": "45500035254",
+  "runId": "45575716058",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 90,
+  "observationChanges": 19,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 268,
     "directVerified": 161,
-    "accessRestricted": 4,
+    "accessRestricted": 5,
     "ambiguous": 13,
     "dead": 87,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 1,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 34,
-      "selected": 34,
+      "eligible": 24,
+      "selected": 24,
       "skippedOnBoard": 111,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 34,
-    "researchReverified": 24,
-    "researchDowngraded": 10,
+    "researchRechecked": 24,
+    "researchDowngraded": 18,
+    "researchReverified": 6,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 18,
-      "NOT_VERIFIED_IN_THIS_RUN": 10,
+      "NOT_VERIFIED_IN_THIS_RUN": 18,
       "RED_TEAM_BLOCKED": 6
     },
     "researchPromoted": 0
