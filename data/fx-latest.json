@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "source": "NBP_TABLE_A",
-  "table": "228/A/NBP/2026",
-  "effectiveDate": "2026-11-24",
+  "table": "229/A/NBP/2026",
+  "effectiveDate": "2026-11-25",
   "rates": {
-    "EUR": 4.4633,
-    "GBP": 5.3338,
-    "USD": 4.0819
+    "EUR": 4.4809,
+    "GBP": 5.3491,
+    "USD": 4.0966
   }
 }
