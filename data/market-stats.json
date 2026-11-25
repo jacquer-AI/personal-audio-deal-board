@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-25T11:39:17.520Z",
+  "refreshedAt": "2026-11-25T21:38:10.846Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -30,7 +30,7 @@
       "key": "Beyerdynamic DT 880|USED",
       "n": 14,
       "confidence": "ROBUST",
-      "median": 505,
+      "median": 489.5,
       "min": 280,
       "max": 806.56
     },
@@ -44,7 +44,7 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 16,
+      "n": 15,
       "confidence": "ROBUST",
       "median": 448.09,
       "min": 329,
@@ -68,10 +68,10 @@
     },
     {
       "key": "Sony MDR-M1|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 600,
+      "min": 667.65,
       "max": 667.65
     },
     {
@@ -156,9 +156,9 @@
     },
     {
       "key": "Beyerdynamic DT 900 PRO X|USED",
-      "n": 9,
+      "n": 8,
       "confidence": "ROBUST",
-      "median": 700,
+      "median": 730.375,
       "min": 443.61,
       "max": 940.99
     },
@@ -220,11 +220,11 @@
     },
     {
       "key": "Dan Clark Audio Noire X|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 3584.72,
-      "max": 5500
+      "max": 3584.72
     },
     {
       "key": "Etymotic ER2SE|USED",
@@ -247,7 +247,7 @@
       "n": 3,
       "confidence": "PROVISIONAL",
       "median": 1150,
-      "min": 1026.13,
+      "min": 981.32,
       "max": 1250
     },
     {
@@ -273,14 +273,6 @@
       "median": 3900,
       "min": 250,
       "max": 5000
-    },
-    {
-      "key": "Neumann NDH 30|USED",
-      "n": 2,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 1449,
-      "max": 2000
     },
     {
       "key": "Sony MDR-CD900ST|NEW",
@@ -342,9 +334,17 @@
       "key": "HIFIMAN Ananda Nano|USED",
       "n": 3,
       "confidence": "PROVISIONAL",
-      "median": 1000,
-      "min": 970,
+      "median": 1050,
+      "min": 1000,
       "max": 1500
+    },
+    {
+      "key": "Neumann NDH 30|USED",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1449,
+      "max": 1449
     },
     {
       "key": "HIFIMAN Svanar Wireless|USED",

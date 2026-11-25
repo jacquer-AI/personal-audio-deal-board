@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-11-25T11:39:17.520Z",
-  "mode": "full",
+  "refreshedAt": "2026-11-25T21:38:10.846Z",
+  "mode": "quick",
   "candidates": [
     {
       "model": "64 Audio U12t",
@@ -269,7 +269,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -292,7 +292,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -479,7 +479,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -503,7 +503,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -731,7 +731,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -754,7 +754,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -841,8 +841,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -1192,7 +1192,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1216,7 +1216,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1571,7 +1571,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1595,7 +1595,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2330,7 +2330,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2354,7 +2354,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4810,7 +4810,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4833,7 +4833,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4852,7 +4852,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-25T11:39:17.520Z",
+      "verifiedAt": "2026-11-25T21:38:10.846Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4877,7 +4877,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
+      "lastSeenAt": "2026-11-25T21:38:10.846Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4998,8 +4998,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audio-Technica ATH-M70x",
@@ -5038,8 +5038,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -5078,8 +5078,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X65",
@@ -5118,8 +5118,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -5158,8 +5158,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -5198,8 +5198,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -5238,8 +5238,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -5278,8 +5278,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -5318,8 +5318,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio AEON 2 Noire",
@@ -5358,8 +5358,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio E3",
@@ -5398,8 +5398,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio Noire X",
@@ -5438,8 +5438,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -5478,8 +5478,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -5518,8 +5518,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -5558,8 +5558,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Svanar Wireless",
@@ -5598,8 +5598,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -5638,8 +5638,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -5678,8 +5678,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Moondrop Blessing 3",
@@ -5718,8 +5718,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -5758,8 +5758,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Noble FoKus REX5",
@@ -5798,8 +5798,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 540 Reference II",
@@ -5838,8 +5838,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800",
@@ -5878,8 +5878,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -5918,8 +5918,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -5958,8 +5958,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 900",
@@ -5998,8 +5998,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sony MDR-SA5000",
@@ -6038,8 +6038,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -6078,8 +6078,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "AKG K501",
@@ -6158,8 +6158,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audio-Technica ATH-M70x",
@@ -6198,8 +6198,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -6238,8 +6238,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X65",
@@ -6278,8 +6278,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -6318,8 +6318,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -6358,8 +6358,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -6398,8 +6398,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -6438,8 +6438,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -6478,8 +6478,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio Noire X",
@@ -6518,8 +6518,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -6558,8 +6558,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -6598,8 +6598,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -6638,8 +6638,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -6678,8 +6678,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -6718,8 +6718,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Moondrop Blessing 3",
@@ -6758,8 +6758,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -6798,8 +6798,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 540 Reference II",
@@ -6838,8 +6838,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800",
@@ -6878,8 +6878,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -6918,8 +6918,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -6958,8 +6958,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -6998,8 +6998,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "AKG K501",
@@ -7078,8 +7078,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -7118,8 +7118,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X65",
@@ -7158,8 +7158,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -7198,8 +7198,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -7238,8 +7238,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -7278,8 +7278,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -7318,8 +7318,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -7358,8 +7358,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -7398,8 +7398,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -7438,8 +7438,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -7478,8 +7478,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -7518,8 +7518,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Moondrop Blessing 3",
@@ -7558,8 +7558,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -7598,8 +7598,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 540 Reference II",
@@ -7638,8 +7638,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -7678,8 +7678,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser IE 600",
@@ -7718,8 +7718,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Technics EAH-AZ100",
@@ -7758,8 +7758,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audio-Technica ATH-ADX5000",
@@ -7798,8 +7798,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -7838,8 +7838,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X65",
@@ -7878,8 +7878,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -7918,8 +7918,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -7958,8 +7958,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -7998,8 +7998,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -8038,8 +8038,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -8078,8 +8078,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -8118,8 +8118,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -8158,8 +8158,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-10T10:17:42.511Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -8198,8 +8198,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -8238,8 +8238,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -8278,8 +8278,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -8358,8 +8358,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -8398,8 +8398,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X65",
@@ -8438,8 +8438,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -8478,8 +8478,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -8518,8 +8518,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -8558,8 +8558,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -8598,8 +8598,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -8638,8 +8638,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -8678,8 +8678,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -8718,8 +8718,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -8758,8 +8758,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -8798,8 +8798,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -8838,8 +8838,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -8918,8 +8918,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-22T12:02:24.217Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Austrian Audio Hi-X60",
@@ -8998,8 +8998,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -9038,8 +9038,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -9078,8 +9078,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -9118,8 +9118,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -9158,8 +9158,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -9198,8 +9198,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -9278,8 +9278,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -9318,8 +9318,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -9358,8 +9358,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -9438,8 +9438,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -9478,8 +9478,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -9518,8 +9518,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 900 PRO X",
@@ -9558,8 +9558,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -9598,8 +9598,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -9798,8 +9798,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -9878,8 +9878,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -9958,8 +9958,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -9998,8 +9998,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -10038,8 +10038,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -10118,8 +10118,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-22T12:02:24.217Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -11027,8 +11027,8 @@
       ],
       "firstSeenAt": "2026-11-21T10:06:50.712Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "AKG K702",
@@ -11195,8 +11195,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bose SoundLink Max",
@@ -11225,8 +11225,8 @@
       ],
       "firstSeenAt": "2026-11-23T11:07:11.359Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Bowers & Wilkins Pi8",
@@ -11253,8 +11253,8 @@
       ],
       "firstSeenAt": "2026-10-22T07:53:26.198Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Dan Clark Audio E3",
@@ -11352,8 +11352,8 @@
       ],
       "firstSeenAt": "2026-11-05T09:47:22.067Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -11451,8 +11451,8 @@
       ],
       "firstSeenAt": "2026-11-23T11:07:11.359Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -12052,8 +12052,8 @@
       ],
       "firstSeenAt": "2026-10-28T08:54:59.572Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Focal Clear MG",
@@ -14350,8 +14350,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_471671836/0d3ccff4-e8c5-11f1-a8b6-356265613461",
@@ -14391,8 +14391,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cmn0d/0e38397a-e8c5-11f1-a244-356265613461",
@@ -14432,8 +14432,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cnvRh/0b50a2b0-e8c5-11f1-8fe0-356265613461",
@@ -14473,8 +14473,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1doSKW/0ed2c51c-e8c5-11f1-aa3d-356265613461",
@@ -14514,8 +14514,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/0c6f9188-e8c5-11f1-9a02-323634326562",
@@ -14555,8 +14555,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/17_258767/0a9adf34-e8c5-11f1-90c1-356265613461",
@@ -14596,8 +14596,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3477356741-172-3811/0ad44a6c-e8c5-11f1-898d-356265613461",
@@ -14637,8 +14637,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1ciA2I/0b3721dc-e8c5-11f1-b7ee-323965313332",
@@ -14678,8 +14678,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/0b13a1a8-e8c5-11f1-9226-356265613461",
@@ -14719,8 +14719,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1660795331/0b003eb0-e8c5-11f1-bd5e-323965313332",
@@ -14760,8 +14760,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID19tAKP/0e75d64a-e8c5-11f1-8353-323965313332",
@@ -14801,8 +14801,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1018645042/0cefe16c-e8c5-11f1-b997-356265613461",
@@ -14842,8 +14842,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bLSXw/0e768766-e8c5-11f1-8e62-323634326562",
@@ -14883,8 +14883,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/240_78487521/0ed92682-e8c5-11f1-b14d-323634326562",
@@ -14924,8 +14924,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_09fe6f16-5fc6-4a3c-96d7-909cb985d36e/0ca5fb9c-e8c5-11f1-b69b-356265613461",
@@ -14965,8 +14965,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dkGyG/0bd1784a-e8c5-11f1-8bb6-356265613461",
@@ -15006,8 +15006,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/596_162907633/0c6ff0ce-e8c5-11f1-999c-323965313332",
@@ -15047,8 +15047,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/0d8774f0-e8c5-11f1-8223-356265613461",
@@ -15088,8 +15088,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/10_442408512/0c6c5798-e8c5-11f1-824d-356265613461",
@@ -15129,8 +15129,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/0d749b96-e8c5-11f1-8e29-323634326562",
@@ -15170,8 +15170,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c118824/0e401a1e-e8c5-11f1-b524-323634326562",
@@ -15211,8 +15211,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-IDXaJP5/0dc859ca-e8c5-11f1-8732-323965313332",
@@ -15252,8 +15252,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_286893561128/6ef9e7d4-e593-11f1-bed5-626238653463",
@@ -15375,8 +15375,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dhjPJ/0dbb0bbc-e8c5-11f1-8814-356265613461",
@@ -15416,8 +15416,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Z43U/0b407a52-e8c5-11f1-afac-323965313332",
@@ -15457,8 +15457,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1br9yM/0e94e74c-e8c5-11f1-96fd-323965313332",
@@ -15498,8 +15498,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1346709344/0d7bc15a-e8c5-11f1-bab9-323965313332",
@@ -15539,8 +15539,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dpytB/0ed06e8e-e8c5-11f1-8175-323634326562",
@@ -15580,8 +15580,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID19mRRc/0c2eac0e-e8c5-11f1-a79f-323634326562",
@@ -15621,8 +15621,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1236919176/0cad4bf4-e8c5-11f1-a989-323634326562",
@@ -15662,8 +15662,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cni0F/0caa5962-e8c5-11f1-9461-356265613461",
@@ -15703,8 +15703,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bXdQH/0e14995c-e8c5-11f1-b677-323965313332",
@@ -15744,8 +15744,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_376754513904/0d628b0e-e8c5-11f1-8b03-323965313332",
@@ -15785,8 +15785,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dhRbc/0b2c03e2-e8c5-11f1-a258-323634326562",
@@ -15826,8 +15826,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c113392/0c6c7be2-e8c5-11f1-a303-323965313332",
@@ -15867,8 +15867,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c115762/0c341720-e8c5-11f1-a060-323965313332",
@@ -15908,8 +15908,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_2770506589-172-4383/0a96e5aa-e8c5-11f1-a03e-323965313332",
@@ -15949,8 +15949,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID13hnmg/0b75a240-e8c5-11f1-b251-323634326562",
@@ -15990,8 +15990,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID13hnmg/0e7d98da-e8c5-11f1-9a29-323965313332",
@@ -16031,8 +16031,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_453891621/0d0b2b3e-e8c5-11f1-9cb8-323965313332",
@@ -16072,8 +16072,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_472258736/0d34c5d4-e8c5-11f1-acde-356265613461",
@@ -16113,8 +16113,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_10F154/0b8f04c4-e8c5-11f1-890f-323634326562",
@@ -16154,8 +16154,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_QyGHK/0ad9faa2-e8c5-11f1-adc8-323634326562",
@@ -16195,8 +16195,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1d6Nq6/0ae66a62-e8c5-11f1-afcf-323965313332",
@@ -16236,8 +16236,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3576782691-172-6619/0aa5ece4-e8c5-11f1-9aff-323634326562",
@@ -16277,8 +16277,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Kv8P/0bd2af26-e8c5-11f1-9afe-323965313332",
@@ -16318,8 +16318,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478962441/0cfc3f3e-e8c5-11f1-bc60-323965313332",
@@ -16359,8 +16359,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dqu2E/0d01e6e6-e8c5-11f1-b6e9-356265613461",
@@ -16400,8 +16400,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dlxTq/0e3e1f5c-e8c5-11f1-bb73-323965313332",
@@ -16441,8 +16441,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2463846946/0b7e6a4c-e8c5-11f1-ba3f-356265613461",
@@ -16482,8 +16482,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_471671836/2fbcdc60-e72e-11f1-be1a-663864623761",
@@ -16564,8 +16564,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1357021196/0b50a2b0-e8c5-11f1-8fe0-356265613461",
@@ -16605,8 +16605,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dpk1A/0ed2c51c-e8c5-11f1-aa3d-356265613461",
@@ -16646,8 +16646,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/f4ac17ac-e805-11f1-8a41-386162356639",
@@ -16728,8 +16728,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3579981755-172-21806/0ad44a6c-e8c5-11f1-898d-356265613461",
@@ -16769,8 +16769,8 @@
       "fxEffectiveDate": "2026-11-25",
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1diuqR/0b3721dc-e8c5-11f1-b7ee-323965313332",
@@ -16810,8 +16810,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1269257960/0b13a1a8-e8c5-11f1-9226-356265613461",
@@ -16851,8 +16851,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3491629270-172-6929/0b003eb0-e8c5-11f1-bd5e-323965313332",
@@ -16892,8 +16892,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dq5nH/0e75d64a-e8c5-11f1-8353-323965313332",
@@ -16933,8 +16933,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1329780851/0cefe16c-e8c5-11f1-b997-356265613461",
@@ -16974,8 +16974,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_63895ade-16ff-4191-8afd-f9bf1cab2ad3/0e768766-e8c5-11f1-8e62-323634326562",
@@ -17015,8 +17015,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/241_54046041/0ed92682-e8c5-11f1-b14d-323634326562",
@@ -17056,8 +17056,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e7125e8b-bf92-4e0a-baf8-2aa8adbb6a18/0ca5fb9c-e8c5-11f1-b69b-356265613461",
@@ -17097,8 +17097,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478589965/0bd1784a-e8c5-11f1-8bb6-356265613461",
@@ -17138,8 +17138,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/6_12876811/0c6ff0ce-e8c5-11f1-999c-323965313332",
@@ -17179,8 +17179,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cp6gE/0d8774f0-e8c5-11f1-8223-356265613461",
@@ -17220,8 +17220,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_463579059/0c6c5798-e8c5-11f1-824d-356265613461",
@@ -17261,8 +17261,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/2fed0f52-e72e-11f1-8f73-663864623761",
@@ -17384,8 +17384,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_286893561128/7777261e-e4cc-11f1-b355-383764636164",
@@ -17507,8 +17507,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_480631682/0dbb0bbc-e8c5-11f1-8814-356265613461",
@@ -17548,8 +17548,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_f5e77fe0-7362-4ff4-81e2-09333e29af49/0b407a52-e8c5-11f1-afac-323965313332",
@@ -17589,8 +17589,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3204607453-172-4905/0e94e74c-e8c5-11f1-96fd-323965313332",
@@ -17630,8 +17630,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_197784417/0d7bc15a-e8c5-11f1-bab9-323965313332",
@@ -17671,8 +17671,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/273_JICDe/0ed06e8e-e8c5-11f1-8175-323634326562",
@@ -17712,8 +17712,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e5a9c11d-da81-4302-9b3b-3e2339ea8752/0c2eac0e-e8c5-11f1-a79f-323634326562",
@@ -17753,8 +17753,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1865529574/0cad4bf4-e8c5-11f1-a989-323634326562",
@@ -17794,8 +17794,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1deoId/0caa5962-e8c5-11f1-9461-356265613461",
@@ -17835,8 +17835,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_479586716/0e14995c-e8c5-11f1-b677-323965313332",
@@ -17876,8 +17876,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_376754513904/f586ca6e-e805-11f1-a226-616663353530",
@@ -17958,8 +17958,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2450491518/0c6c7be2-e8c5-11f1-a303-323965313332",
@@ -17999,8 +17999,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1098579227/0c341720-e8c5-11f1-a060-323965313332",
@@ -18040,8 +18040,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3490502578-172-3111/0a96e5aa-e8c5-11f1-a03e-323965313332",
@@ -18081,8 +18081,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_1e0326cf-228f-4a02-a465-ce600cb76a43/0b75a240-e8c5-11f1-b251-323634326562",
@@ -18122,8 +18122,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_477446390/0e7d98da-e8c5-11f1-9a29-323965313332",
@@ -18163,8 +18163,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_457636335/0d0b2b3e-e8c5-11f1-9cb8-323965313332",
@@ -18204,8 +18204,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_2cc885ba-0086-43a0-afb0-2888906f3595/0d34c5d4-e8c5-11f1-acde-356265613461",
@@ -18245,8 +18245,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_10F154/f3d1dcc2-e805-11f1-8d71-353665653761",
@@ -18368,8 +18368,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_316700748/f2f01418-e805-11f1-8912-616663353530",
@@ -18450,8 +18450,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3496118130-172-5310/0cfc3f3e-e8c5-11f1-bc60-323965313332",
@@ -18491,8 +18491,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3543007585-172-7494/0d01e6e6-e8c5-11f1-b6e9-356265613461",
@@ -18532,8 +18532,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_197534756/0e3e1f5c-e8c5-11f1-bb73-323965313332",
@@ -18573,8 +18573,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c116067/f3d07f08-e805-11f1-929e-386162356639",
@@ -18696,8 +18696,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3548200182-172-7080/0b50a2b0-e8c5-11f1-8fe0-356265613461",
@@ -18737,8 +18737,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_4010a30d-ae4c-4cdc-a53a-277c1351a27c/0ed2c51c-e8c5-11f1-aa3d-356265613461",
@@ -18778,8 +18778,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/2ef0fc1c-e72e-11f1-afb3-663864623761",
@@ -18860,8 +18860,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/346_audio-technica-ath-adx5000/0ad44a6c-e8c5-11f1-898d-356265613461",
@@ -18901,8 +18901,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_468980418/0b3721dc-e8c5-11f1-b7ee-323965313332",
@@ -18942,8 +18942,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_858228458/0b13a1a8-e8c5-11f1-9226-356265613461",
@@ -18983,8 +18983,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3547868915-172-6428/0b003eb0-e8c5-11f1-bd5e-323965313332",
@@ -19024,8 +19024,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_ace04e19-6bce-4b18-b96b-68c4db4b2365/0e75d64a-e8c5-11f1-8353-323965313332",
@@ -19065,8 +19065,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1763991415/0cefe16c-e8c5-11f1-b997-356265613461",
@@ -19106,8 +19106,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_729ec743-a825-4c71-a49c-2d67ecf81d0e/0e768766-e8c5-11f1-8e62-323634326562",
@@ -19147,8 +19147,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/36_1325765946/0ed92682-e8c5-11f1-b14d-323634326562",
@@ -19188,8 +19188,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/199_1279223050A1KBMUAH000/0ca5fb9c-e8c5-11f1-b69b-356265613461",
@@ -19229,8 +19229,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_2606021b-6dce-4fe0-af2c-7a657598d23b/0bd1784a-e8c5-11f1-8bb6-356265613461",
@@ -19270,8 +19270,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/596_162907633/f4a4b318-e805-11f1-a8a8-616663353530",
@@ -19352,8 +19352,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_0560b059-e009-4451-886d-7dcd50710631/0c6c5798-e8c5-11f1-824d-356265613461",
@@ -19393,8 +19393,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/beb7d612-e66c-11f1-945b-613330653331",
@@ -19516,8 +19516,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_4acda254-3296-4d11-905a-0b612cb865dd/f4e2b7c6-e805-11f1-a4c8-616663353530",
@@ -19598,8 +19598,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Z43U/f38814c0-e805-11f1-b300-353665653761",
@@ -19680,8 +19680,8 @@
       ],
       "firstSeenAt": "2026-11-25T11:39:17.520Z",
       "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     }
   ]
 }
