@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-25T21:38:10.846Z",
+  "refreshedAt": "2026-11-26T08:08:25.388Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -43,20 +43,20 @@
       "max": 1574.1
     },
     {
-      "key": "JBL Charge 6|USED",
-      "n": 15,
-      "confidence": "ROBUST",
-      "median": 448.09,
-      "min": 329,
-      "max": 627.33
-    },
-    {
       "key": "Bowers & Wilkins Pi8|USED",
       "n": 3,
       "confidence": "PROVISIONAL",
       "median": 1021.65,
       "min": 900,
       "max": 1254.65
+    },
+    {
+      "key": "JBL Charge 6|USED",
+      "n": 13,
+      "confidence": "ROBUST",
+      "median": 448.09,
+      "min": 380.88,
+      "max": 627.33
     },
     {
       "key": "HIFIMAN Ananda Nano|B-STOCK",
@@ -204,10 +204,10 @@
     },
     {
       "key": "Sennheiser HD 800|USED",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 2500,
-      "min": 349,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 2500,
       "max": 2867.78
     },
     {
@@ -356,10 +356,10 @@
     },
     {
       "key": "Marshall Middleton II|NEW",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 850,
+      "min": 900,
       "max": 900
     },
     {
@@ -399,8 +399,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 627.33,
-      "max": 627.33
+      "min": 604.92,
+      "max": 604.92
     }
   ]
 }

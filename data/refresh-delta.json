@@ -1,89 +1,58 @@
 {
   "new": 0,
-  "priceChanged": 4,
-  "sold": 1,
-  "stale": 5,
+  "priceChanged": 1,
+  "sold": 0,
+  "stale": 4,
   "changes": [
     {
-      "type": "SOLD",
-      "model": "Technics EAH-AZ100",
-      "url": "https://pl.technics.com/technics-eah-az100-douszne-sluchawki-tws-z-anc-przetwornik-magnetic-fluid-driver-ladowanie-indukcyjne-voice-focus-ai-multipoint-3-szt-granatowe/"
-    },
-    {
       "type": "PRICE",
-      "model": "Beyerdynamic DT 880",
-      "from": 530,
-      "to": 499,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt-880-chrome-special-edition-250-ohm-futeral-jak-nowe-CID99-ID1cPwhH.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "Beyerdynamic DT 900 PRO X",
-      "url": "https://www.olx.pl/d/oferta/sluchawki-beyerdynamic-dt-900-pro-x-CID99-ID1ddvq8.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "PRICE",
-      "model": "Bose SoundLink Max",
-      "from": 1020.4,
-      "to": 981.32,
-      "url": "https://www.subito.it/audio-video/bose-soundlink-max-nuovo-gar-italia-mediaworldrl-lecce-669243906.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "Dan Clark Audio Noire X",
-      "url": "https://www.olx.pl/d/oferta/dan-clark-noire-x-vivo-1-8m-cayin-ru9-stan-idealny-CID99-ID1brlqu.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "PRICE",
-      "model": "HIFIMAN Ananda Nano",
-      "from": 970,
-      "to": 1050,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-hifiman-ananda-nano-2-pary-padow-CID99-ID1bYe4g.html?search_reason=search%7Corganic"
+      "model": "JBL Charge 6",
+      "from": 627.33,
+      "to": 604.92,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469672261-jbl-charge-6-zo-goed-als-nieuw-krachtig-geluid"
     },
     {
       "type": "STALE",
       "model": "JBL Charge 6",
-      "url": "https://www.olx.pl/d/oferta/jbl-charge-6-fioletowy-CID99-ID1cYlOy.html?search_reason=search%7Corganic"
+      "url": "https://www.olx.pl/d/oferta/glosnik-bluetooth-jbl-charge-6-CID99-ID1dg64v.html?search_reason=search%7Corganic"
     },
     {
-      "type": "PRICE",
+      "type": "STALE",
       "model": "JBL Charge 6",
-      "from": 552.06,
-      "to": 515.3,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-669050585.htm"
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm"
     },
     {
       "type": "STALE",
-      "model": "Neumann NDH 30",
-      "url": "https://www.olx.pl/d/oferta/neumann-ndh-30-black-edition-sluchawki-studyjne-CID99-ID1dhRbc.html?search_reason=search%7Corganic"
+      "model": "Marshall Middleton II",
+      "url": "https://www.olx.pl/d/oferta/nowy-glosnik-marshall-middleton-ii-czarny-CID99-ID1deoId.html?search_reason=search%7Corganic"
     },
     {
       "type": "STALE",
-      "model": "Sony MDR-M1",
-      "url": "https://www.olx.pl/d/oferta/sprzedam-sluchawki-studyjne-sony-mdr-m1-CID99-ID1d6Nq6.html?search_reason=search%7Corganic"
+      "model": "Sennheiser HD 800",
+      "url": "https://www.olx.pl/d/oferta/kabel-sluchawkowy-dekoni-audio-do-sennheiser-hd-800-xlr-4-pin-CID99-ID1cYCdN.html?search_reason=search%7Corganic"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-25T21:38:10.846Z",
+  "refreshedAt": "2026-11-26T08:08:25.388Z",
   "mode": "quick",
-  "runId": "45706012776",
+  "runId": "45780543345",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 12,
+  "observationChanges": 9,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 269,
-    "directVerified": 155,
-    "accessRestricted": 6,
+    "directVerified": 151,
+    "accessRestricted": 4,
     "ambiguous": 13,
-    "dead": 94,
+    "dead": 98,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
-      "ebay-pl": 1
+      "ebay-pl": 1,
+      "allegro-pl": 1
     },
     "researchSelection": {
       "eligible": 8,
@@ -92,9 +61,10 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 8,
-    "researchReverified": 8,
+    "researchDowngraded": 2,
+    "researchReverified": 6,
     "researchPromotionBlocked": {
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 2,
+      "NOT_VERIFIED_IN_THIS_RUN": 2,
       "RED_TEAM_BLOCKED": 6
     },
     "researchPromoted": 0
