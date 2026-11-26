@@ -1,193 +1,111 @@
 {
-  "new": 4,
-  "priceChanged": 2,
+  "new": 0,
+  "priceChanged": 5,
   "sold": 0,
-  "stale": 0,
+  "stale": 6,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 8589.8,
-      "to": 8588.45,
+      "from": 8588.45,
+      "to": 9206,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "STALE",
+      "model": "64 Audio U12t",
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "PRICE",
-      "model": "AKG K501",
-      "from": 1500,
-      "to": 1450,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-akg-k501-super-stan-vintage-CID99-ID1cnvRh.html?search_reason=search%7Corganic"
+      "model": "AKG K702",
+      "from": 490.12,
+      "to": 470.42,
+      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-dinamiche-aperte-milano-669367883.htm"
     },
     {
-      "type": "NEW",
-      "model": "Dan Clark Audio Noire X",
-      "price": 3360.15,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2470084129-dan-clark-audio-noire-x-zeer-goede-staat"
+      "type": "STALE",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2458572015-beyerdynamic-dt-1990-pro-studio-hoofdtelefoon"
     },
     {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 537.62,
-      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-669726594.htm"
+      "type": "PRICE",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "from": 1599,
+      "to": 1499,
+      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt-1990-pro-CID99-ID1dq5nH.html?search_reason=search%7Corganic"
     },
     {
-      "type": "NEW",
+      "type": "STALE",
+      "model": "Bose SoundLink Max",
+      "url": "https://www.olx.pl/d/oferta/glosnik-bose-soundlink-max-CID99-ID1cZmNy.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "STALE",
+      "model": "HIFIMAN Ananda Nano",
+      "url": "https://www.olx.pl/d/oferta/hifiman-ananda-nano-stan-jak-nowy-kabel-4-4-mm-stojak-CID99-ID1cZ8cV.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "PRICE",
       "model": "JBL Charge 6",
-      "price": 425.62,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2470060199-jbl-charge-6"
+      "from": 604.92,
+      "to": 448.02,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469672261-jbl-charge-6-zo-goed-als-nieuw-krachtig-geluid"
     },
     {
-      "type": "NEW",
+      "type": "PRICE",
       "model": "JBL Charge 6",
-      "price": 582.43,
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-roma-669772331.htm"
+      "from": 550,
+      "to": 500,
+      "url": "https://www.olx.pl/d/oferta/glosnik-charge-6-jbl-CID99-ID1dpbxB.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.olx.pl/d/oferta/jbl-charge-6-jak-nowy-CID99-ID1djjvH.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-669050585.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-26T11:24:31.000Z",
-  "mode": "full",
-  "runId": "45810219894",
+  "refreshedAt": "2026-11-26T21:27:16.818Z",
+  "mode": "quick",
+  "runId": "45898150660",
   "candidates": 500,
-  "verifiedAdditions": 4,
-  "observationChanges": 116,
-  "freshnessRenewal": false,
+  "verifiedAdditions": 0,
+  "observationChanges": 19,
+  "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 269,
-    "directVerified": 152,
-    "accessRestricted": 6,
+    "directUrlsAttempted": 273,
+    "directVerified": 150,
+    "accessRestricted": 5,
     "ambiguous": 13,
-    "dead": 97,
+    "dead": 102,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 2,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 6,
-      "selected": 6,
+      "eligible": 15,
+      "selected": 15,
       "skippedOnBoard": 108,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 6,
-    "researchReverified": 6,
+    "researchRechecked": 15,
+    "researchReverified": 11,
+    "researchDowngraded": 4,
     "researchPromotionBlocked": {
-      "RED_TEAM_BLOCKED": 6
+      "RED_TEAM_BLOCKED": 6,
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 5,
+      "NOT_VERIFIED_IN_THIS_RUN": 4
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 306,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "mediaexpert-outlet"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 1,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 1,
-          "unverifiedUrls": 1
-        },
-        "mediaexpert-outlet": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 21,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 21,
-          "unverifiedUrls": 8,
-          "verifiedUrls": 11,
-          "sellerPriceOnly": 2
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 6,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 4,
-          "verifiedUrls": 2
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 261,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 255,
-      "selectedUrls": 34,
-      "selectedBySource": {
-        "vinted-pl": 1,
-        "subito-it": 6,
-        "marktplaats-nl": 21,
-        "hifishark": 6
-      },
-      "modelsSelected": 19
-    }
+    "researchPromoted": 0
   }
 }

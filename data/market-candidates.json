@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-11-26T11:24:31.000Z",
-  "mode": "full",
+  "refreshedAt": "2026-11-26T21:27:16.818Z",
+  "mode": "quick",
   "candidates": [
     {
       "model": "64 Audio U12t",
@@ -269,7 +269,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -292,7 +292,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -469,23 +469,23 @@
       "category": "Closed",
       "quality": "A+",
       "fit": 5,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2470084129-dan-clark-audio-noire-x-zeer-goede-staat",
-      "query": "Dan Clark Audio Noire X",
-      "discoveredAt": "2026-11-26T11:24:31.000Z",
-      "status": "PRICE VERIFIED LIVE",
+      "sourceId": "olx-pl",
+      "source": "OLX",
+      "region": "Polska",
+      "url": "https://www.olx.pl/d/oferta/gra-l-a-noire-xbox360-xbox-360-CID99-IDTj7ls.html?search_reason=search%7Corganic",
+      "query": "Dan Clark Audio Noire X używane",
+      "discoveredAt": "2026-11-24T12:51:41.173Z",
+      "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "country": "Polska",
+      "locationEvidence": "LOCAL_MARKETPLACE",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
-      "pricePln": 3360.15,
-      "originalPrice": 750,
-      "currency": "EUR",
+      "pricePln": 19,
+      "originalPrice": 19,
+      "currency": "PLN",
       "availability": "InStock",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
@@ -497,12 +497,13 @@
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-11-26",
       "redTeam": [
+        "PRICE_FAR_BELOW_MARKET_CHECK_VARIANT_OR_COUNTERFEIT",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
-      "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "firstSeenAt": "2026-11-24T12:51:41.173Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -730,7 +731,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -753,7 +754,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -840,8 +841,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -1191,7 +1192,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1215,7 +1216,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1563,19 +1564,19 @@
       "sourceId": "olx-pl",
       "source": "OLX",
       "region": "Polska",
-      "url": "https://www.olx.pl/d/oferta/gra-l-a-noire-xbox360-xbox-360-CID99-IDTj7ls.html?search_reason=search%7Corganic",
+      "url": "https://www.olx.pl/d/oferta/l-a-noire-xbox-360-CID99-IDIDjp1.html?search_reason=search%7Corganic",
       "query": "Dan Clark Audio Noire X używane",
       "discoveredAt": "2026-11-24T12:51:41.173Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
-      "pricePln": 19,
-      "originalPrice": 19,
+      "pricePln": 30,
+      "originalPrice": 30,
       "currency": "PLN",
       "availability": "InStock",
       "priceBasis": "SELLER_PAGE_PRICE",
@@ -1594,7 +1595,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1721,8 +1722,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "JBL Charge 6",
@@ -1764,8 +1765,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -2280,19 +2281,19 @@
       "sourceId": "olx-pl",
       "source": "OLX",
       "region": "Polska",
-      "url": "https://www.olx.pl/d/oferta/l-a-noire-xbox-360-CID99-IDIDjp1.html?search_reason=search%7Corganic",
+      "url": "https://www.olx.pl/d/oferta/l-a-noire-xbox-360-kompletny-zestaw-CID99-IDSsEkL.html?search_reason=search%7Corganic",
       "query": "Dan Clark Audio Noire X używane",
       "discoveredAt": "2026-11-24T12:51:41.173Z",
       "status": "VERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
-      "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "locationEvidence": "SELLER_LOCATION",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
-      "pricePln": 30,
-      "originalPrice": 30,
+      "pricePln": 20,
+      "originalPrice": 20,
       "currency": "PLN",
       "availability": "InStock",
       "priceBasis": "SELLER_PAGE_PRICE",
@@ -2311,7 +2312,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2826,23 +2827,23 @@
       "category": "Closed",
       "quality": "A+",
       "fit": 5,
-      "sourceId": "olx-pl",
-      "source": "OLX",
-      "region": "Polska",
-      "url": "https://www.olx.pl/d/oferta/l-a-noire-xbox-360-kompletny-zestaw-CID99-IDSsEkL.html?search_reason=search%7Corganic",
-      "query": "Dan Clark Audio Noire X używane",
-      "discoveredAt": "2026-11-24T12:51:41.173Z",
-      "status": "VERIFIED LEAD",
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2470084129-dan-clark-audio-noire-x-zeer-goede-staat",
+      "query": "Dan Clark Audio Noire X",
+      "discoveredAt": "2026-11-26T11:24:31.000Z",
+      "status": "PRICE VERIFIED LIVE",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Polska",
+      "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
       "verifiedAt": "2026-11-26T11:24:31.000Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
-      "pricePln": 20,
-      "originalPrice": 20,
-      "currency": "PLN",
+      "pricePln": 3360.15,
+      "originalPrice": 750,
+      "currency": "EUR",
       "availability": "InStock",
       "priceBasis": "SELLER_PAGE_PRICE",
       "shippingToPoland": "PL_SHIPPING_UNKNOWN",
@@ -2854,15 +2855,14 @@
       "fxSource": "NBP_TABLE_A",
       "fxEffectiveDate": "2026-11-26",
       "redTeam": [
-        "PRICE_FAR_BELOW_MARKET_CHECK_VARIANT_OR_COUNTERFEIT",
         "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
         "PL_SHIPPING_COST_UNKNOWN",
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
-      "firstSeenAt": "2026-11-24T12:51:41.173Z",
+      "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Edition XS",
@@ -4810,7 +4810,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4834,7 +4834,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4853,7 +4853,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4877,7 +4877,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4896,7 +4896,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4920,7 +4920,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4939,7 +4939,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4962,7 +4962,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4981,7 +4981,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
+      "verifiedAt": "2026-11-26T21:27:16.818Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -5004,178 +5004,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2467687149-jbl-charge-6-draagbare-bluetooth-speaker-gloednieuw",
-      "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-26T11:24:31.000Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 537.62,
-      "originalPrice": 120,
-      "currency": "EUR",
-      "availability": "InStock",
-      "priceBasis": "METADATA_MAY_BE_BID",
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-26",
-      "redTeam": [
-        "PL_SHIPPING_COST_UNKNOWN",
-        "PRICE_EXCLUDES_SHIPPING_AND_FEES",
-        "FIXED_ITEM_PRICE_NOT_CONFIRMED"
-      ],
-      "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2468117538-jbl-charge-6-draagbare-bluetooth-speaker",
-      "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-26T11:24:31.000Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "B-STOCK",
-      "pricePln": 295.65,
-      "originalPrice": 65.99,
-      "currency": "EUR",
-      "availability": "InStock",
-      "priceBasis": "METADATA_MAY_BE_BID",
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-26",
-      "redTeam": [
-        "BATTERY_HEALTH_UNVERIFIED",
-        "WARRANTY_AND_ACCESSORIES_UNVERIFIED",
-        "PL_SHIPPING_COST_UNKNOWN",
-        "PRICE_EXCLUDES_SHIPPING_AND_FEES",
-        "FIXED_ITEM_PRICE_NOT_CONFIRMED"
-      ],
-      "firstSeenAt": "2026-11-21T10:06:50.712Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2468833651-jbl-charge-6-draagbare-bluetooth-speaker-nieuw-in-doos",
-      "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-26T11:24:31.000Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 537.62,
-      "originalPrice": 120,
-      "currency": "EUR",
-      "availability": "InStock",
-      "priceBasis": "METADATA_MAY_BE_BID",
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-26",
-      "redTeam": [
-        "PL_SHIPPING_COST_UNKNOWN",
-        "PRICE_EXCLUDES_SHIPPING_AND_FEES",
-        "FIXED_ITEM_PRICE_NOT_CONFIRMED"
-      ],
-      "firstSeenAt": "2026-11-23T11:07:11.359Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
-    },
-    {
-      "model": "JBL Charge 6",
-      "category": "Głośniki BT",
-      "quality": "B+",
-      "fit": 3,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469817658-jbl-charge-6-draagbare-bluetooth-speaker-nieuw",
-      "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-26T11:24:31.000Z",
-      "status": "VERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T11:24:31.000Z",
-      "verificationState": "DIRECT_OFFER_VERIFIED",
-      "http": 200,
-      "condition": "NEW",
-      "pricePln": 224.01,
-      "originalPrice": 50,
-      "currency": "EUR",
-      "availability": "InStock",
-      "priceBasis": "METADATA_MAY_BE_BID",
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-26",
-      "redTeam": [
-        "PRICE_FAR_BELOW_MARKET_CHECK_VARIANT_OR_COUNTERFEIT",
-        "PL_SHIPPING_COST_UNKNOWN",
-        "PRICE_EXCLUDES_SHIPPING_AND_FEES",
-        "FIXED_ITEM_PRICE_NOT_CONFIRMED"
-      ],
-      "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -5456,8 +5285,8 @@
       "fxEffectiveDate": "2026-11-26",
       "firstSeenAt": "2026-10-11T21:36:08.850Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 880",
@@ -5776,8 +5605,8 @@
       "fxEffectiveDate": "2026-11-26",
       "firstSeenAt": "2026-11-03T09:57:12.881Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "HIFIMAN Ananda Nano",
@@ -11286,8 +11115,8 @@
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "AKG K501",
@@ -11344,8 +11173,8 @@
       ],
       "firstSeenAt": "2026-11-01T09:36:50.527Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Audio-Technica ATH-AD2000X",
@@ -11400,8 +11229,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Beyerdynamic DT 1990 PRO",
@@ -11708,27 +11537,38 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469035773-jbl-charge-6-draagbare-rood-nieuw-in-doos",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2467687149-jbl-charge-6-draagbare-bluetooth-speaker-gloednieuw",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-25T11:39:17.520Z",
+      "discoveredAt": "2026-11-26T11:24:31.000Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verificationState": "SELLER_PRICE_NOT_READABLE",
-      "lastVerificationFailure": "SELLER_PRICE_NOT_READABLE",
       "verifiedAt": null,
-      "http": 200,
+      "verificationState": "RECHECK_HTTP_403",
+      "http": 403,
+      "condition": "NEW",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
       "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-11-26",
       "redTeam": [
-        "SELLER_NOT_VERIFIED",
-        "AVAILABILITY_UNKNOWN",
-        "SHIPPING_UNKNOWN"
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-11-23T11:07:11.359Z",
-      "lastSeenAt": "2026-11-25T11:39:17.520Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-11-20T10:22:47.784Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Marshall Middleton II",
@@ -11908,8 +11748,8 @@
       ],
       "firstSeenAt": "2026-10-13T09:41:39.213Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800 S",
@@ -12417,9 +12257,9 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457167605-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2468117538-jbl-charge-6-draagbare-bluetooth-speaker",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-01T10:50:08.563Z",
+      "discoveredAt": "2026-11-26T11:24:31.000Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
@@ -12427,7 +12267,7 @@
       "verifiedAt": null,
       "verificationState": "RECHECK_HTTP_403",
       "http": 403,
-      "condition": "NEW",
+      "condition": "B-STOCK",
       "pricePln": null,
       "originalPrice": null,
       "currency": null,
@@ -12440,15 +12280,15 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-24",
+      "fxEffectiveDate": "2026-11-26",
       "redTeam": [
         "REVERIFY_REQUIRED",
         "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-10-24T07:33:28.300Z",
-      "lastSeenAt": "2026-11-25T08:23:26.376Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-11-21T10:06:50.712Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Neumann NDH 30",
@@ -12777,13 +12617,13 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2458695782-nieuwe-jbl-charge-6-bluetooth-speaker",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2468833651-jbl-charge-6-draagbare-bluetooth-speaker-nieuw-in-doos",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-03T09:57:12.881Z",
+      "discoveredAt": "2026-11-26T11:24:31.000Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
-      "locationEvidence": "LOCAL_MARKETPLACE",
+      "locationEvidence": "SELLER_LOCATION",
       "verifiedAt": null,
       "verificationState": "RECHECK_HTTP_403",
       "http": 403,
@@ -12800,15 +12640,15 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-24",
+      "fxEffectiveDate": "2026-11-26",
       "redTeam": [
         "REVERIFY_REQUIRED",
         "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-10-28T08:54:59.572Z",
-      "lastSeenAt": "2026-11-25T08:23:26.376Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-11-23T11:07:11.359Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Neumann NDH 30",
@@ -12984,9 +12824,9 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459169019-jbl-charge-6-draagbare-bluetooth-speaker-nieuw-sealed",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469817658-jbl-charge-6-draagbare-bluetooth-speaker-nieuw",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-10-29T08:49:53.386Z",
+      "discoveredAt": "2026-11-26T11:24:31.000Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
@@ -13007,15 +12847,15 @@
       "itemPlusShippingPln": null,
       "shippingSource": null,
       "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-24",
+      "fxEffectiveDate": "2026-11-26",
       "redTeam": [
         "REVERIFY_REQUIRED",
         "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-10-29T08:49:53.386Z",
-      "lastSeenAt": "2026-11-25T08:23:26.376Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
+      "firstSeenAt": "2026-11-26T11:24:31.000Z",
+      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "researchFreshness": "SCAN_OBSERVED",
+      "retained": false
     },
     {
       "model": "Sennheiser HD 800",
@@ -13137,36 +12977,25 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459557851-jbl-charge-6-draagbare-bluetooth-speaker-nieuw-ongeopend",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469035773-jbl-charge-6-draagbare-rood-nieuw-in-doos",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-03T09:57:12.881Z",
+      "discoveredAt": "2026-11-25T11:39:17.520Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
+      "locationEvidence": "LOCAL_MARKETPLACE",
+      "verificationState": "SELLER_PRICE_NOT_READABLE",
+      "lastVerificationFailure": "SELLER_PRICE_NOT_READABLE",
       "verifiedAt": null,
-      "verificationState": "RECHECK_HTTP_403",
-      "http": 403,
-      "condition": "NEW",
-      "pricePln": null,
-      "originalPrice": null,
-      "currency": null,
+      "http": 200,
       "availability": null,
-      "priceBasis": null,
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-24",
       "redTeam": [
-        "REVERIFY_REQUIRED",
-        "NO_LANDED_COST"
+        "SELLER_NOT_VERIFIED",
+        "AVAILABILITY_UNKNOWN",
+        "SHIPPING_UNKNOWN"
       ],
-      "firstSeenAt": "2026-10-30T08:53:45.117Z",
-      "lastSeenAt": "2026-11-25T08:23:26.376Z",
+      "firstSeenAt": "2026-11-23T11:07:11.359Z",
+      "lastSeenAt": "2026-11-25T11:39:17.520Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13290,9 +13119,9 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461229777-jbl-charge-6-bluetooth-rood-nieuw",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457167605-jbl-charge-6-draagbare-bluetooth-speaker-rood-nieuw",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-03T09:57:12.881Z",
+      "discoveredAt": "2026-11-01T10:50:08.563Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
@@ -13318,8 +13147,8 @@
         "REVERIFY_REQUIRED",
         "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-11-03T09:57:12.881Z",
-      "lastSeenAt": "2026-11-24T22:21:25.261Z",
+      "firstSeenAt": "2026-10-24T07:33:28.300Z",
+      "lastSeenAt": "2026-11-25T08:23:26.376Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13443,13 +13272,13 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461786740-jbl-charge-6-draagbare-speaker-nieuw-in-doos",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2458695782-nieuwe-jbl-charge-6-bluetooth-speaker",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-08T09:25:08.750Z",
+      "discoveredAt": "2026-11-03T09:57:12.881Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
+      "locationEvidence": "LOCAL_MARKETPLACE",
       "verifiedAt": null,
       "verificationState": "RECHECK_HTTP_403",
       "http": 403,
@@ -13471,8 +13300,8 @@
         "REVERIFY_REQUIRED",
         "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-11-06T09:45:44.161Z",
-      "lastSeenAt": "2026-11-24T22:21:25.261Z",
+      "firstSeenAt": "2026-10-28T08:54:59.572Z",
+      "lastSeenAt": "2026-11-25T08:23:26.376Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13596,9 +13425,9 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465689952-nieuwe-jbl-charge-6-bluetooth-speaker-rood",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459169019-jbl-charge-6-draagbare-bluetooth-speaker-nieuw-sealed",
       "query": "JBL Charge 6",
-      "discoveredAt": "2026-11-20T10:22:47.784Z",
+      "discoveredAt": "2026-10-29T08:49:53.386Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
@@ -13624,8 +13453,8 @@
         "REVERIFY_REQUIRED",
         "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-24T22:21:25.261Z",
+      "firstSeenAt": "2026-10-29T08:49:53.386Z",
+      "lastSeenAt": "2026-11-25T08:23:26.376Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13721,6 +13550,282 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459557851-jbl-charge-6-draagbare-bluetooth-speaker-nieuw-ongeopend",
+      "query": "JBL Charge 6",
+      "discoveredAt": "2026-11-03T09:57:12.881Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "country": "Holandia",
+      "locationEvidence": "SELLER_LOCATION",
+      "verifiedAt": null,
+      "verificationState": "RECHECK_HTTP_403",
+      "http": 403,
+      "condition": "NEW",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
+      "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-11-24",
+      "redTeam": [
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
+      ],
+      "firstSeenAt": "2026-10-30T08:53:45.117Z",
+      "lastSeenAt": "2026-11-25T08:23:26.376Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2443975644-bowers-wilkins-pi8-met-garantie-doos-en-factuur",
+      "query": "Bowers & Wilkins Pi8",
+      "discoveredAt": "2026-11-22T10:10:04.334Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verificationState": "HTTP_403",
+      "lastVerificationFailure": "HTTP_403",
+      "verifiedAt": null,
+      "http": 403,
+      "availability": null,
+      "redTeam": [
+        "SELLER_NOT_VERIFIED",
+        "AVAILABILITY_UNKNOWN",
+        "SHIPPING_UNKNOWN"
+      ],
+      "firstSeenAt": "2026-10-17T07:09:08.742Z",
+      "lastSeenAt": "2026-11-22T10:10:04.334Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461229777-jbl-charge-6-bluetooth-rood-nieuw",
+      "query": "JBL Charge 6",
+      "discoveredAt": "2026-11-03T09:57:12.881Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "country": "Holandia",
+      "locationEvidence": "SELLER_LOCATION",
+      "verifiedAt": null,
+      "verificationState": "RECHECK_HTTP_403",
+      "http": 403,
+      "condition": "NEW",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
+      "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-11-24",
+      "redTeam": [
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
+      ],
+      "firstSeenAt": "2026-11-03T09:57:12.881Z",
+      "lastSeenAt": "2026-11-24T22:21:25.261Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "vinted-pl",
+      "source": "Vinted",
+      "region": "Polska",
+      "url": "https://www.vinted.pl/items/10681829333-bowers-wilkins-pi8-zelena-farba?referrer=catalog",
+      "query": "Bowers & Wilkins Pi8",
+      "discoveredAt": "2026-11-20T10:22:47.784Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verificationState": "SELLER_PAGE_NOT_SUPPORTED",
+      "lastVerificationFailure": "SELLER_PAGE_NOT_SUPPORTED",
+      "verifiedAt": null,
+      "http": null,
+      "availability": null,
+      "redTeam": [
+        "SELLER_NOT_VERIFIED",
+        "AVAILABILITY_UNKNOWN",
+        "SHIPPING_UNKNOWN"
+      ],
+      "firstSeenAt": "2026-11-06T09:45:44.161Z",
+      "lastSeenAt": "2026-11-20T10:22:47.784Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461786740-jbl-charge-6-draagbare-speaker-nieuw-in-doos",
+      "query": "JBL Charge 6",
+      "discoveredAt": "2026-11-08T09:25:08.750Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "country": "Holandia",
+      "locationEvidence": "SELLER_LOCATION",
+      "verifiedAt": null,
+      "verificationState": "RECHECK_HTTP_403",
+      "http": 403,
+      "condition": "NEW",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
+      "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-11-24",
+      "redTeam": [
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
+      ],
+      "firstSeenAt": "2026-11-06T09:45:44.161Z",
+      "lastSeenAt": "2026-11-24T22:21:25.261Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "vinted-pl",
+      "source": "Vinted",
+      "region": "Polska",
+      "url": "https://www.vinted.pl/items/10877379080-bowers-wilkins-pi8?referrer=catalog",
+      "query": "Bowers & Wilkins Pi8",
+      "discoveredAt": "2026-11-20T10:22:47.784Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verificationState": "SELLER_PAGE_NOT_SUPPORTED",
+      "lastVerificationFailure": "SELLER_PAGE_NOT_SUPPORTED",
+      "verifiedAt": null,
+      "http": null,
+      "availability": null,
+      "redTeam": [
+        "SELLER_NOT_VERIFIED",
+        "AVAILABILITY_UNKNOWN",
+        "SHIPPING_UNKNOWN"
+      ],
+      "firstSeenAt": "2026-11-20T10:22:47.784Z",
+      "lastSeenAt": "2026-11-20T10:22:47.784Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465689952-nieuwe-jbl-charge-6-bluetooth-speaker-rood",
+      "query": "JBL Charge 6",
+      "discoveredAt": "2026-11-20T10:22:47.784Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "country": "Holandia",
+      "locationEvidence": "SELLER_LOCATION",
+      "verifiedAt": null,
+      "verificationState": "RECHECK_HTTP_403",
+      "http": 403,
+      "condition": "NEW",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
+      "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-11-24",
+      "redTeam": [
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
+      ],
+      "firstSeenAt": "2026-11-20T10:22:47.784Z",
+      "lastSeenAt": "2026-11-24T22:21:25.261Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "Bowers & Wilkins Pi8",
+      "category": "TWS",
+      "quality": "A-",
+      "fit": 4,
+      "sourceId": "vinted-pl",
+      "source": "Vinted",
+      "region": "Polska",
+      "url": "https://www.vinted.pl/items/9918718613-bw-pi8-mclaren-vastamelunappikuulokkeet?referrer=catalog",
+      "query": "Bowers & Wilkins Pi8",
+      "discoveredAt": "2026-11-20T10:22:47.784Z",
+      "status": "UNVERIFIED LEAD",
+      "evidence": "ITEM_URL_OR_ANCHOR",
+      "verificationState": "SELLER_PAGE_NOT_SUPPORTED",
+      "lastVerificationFailure": "SELLER_PAGE_NOT_SUPPORTED",
+      "verifiedAt": null,
+      "http": null,
+      "availability": null,
+      "redTeam": [
+        "SELLER_NOT_VERIFIED",
+        "AVAILABILITY_UNKNOWN",
+        "SHIPPING_UNKNOWN"
+      ],
+      "firstSeenAt": "2026-10-11T20:05:07.025Z",
+      "lastSeenAt": "2026-11-20T10:22:47.784Z",
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
+    },
+    {
+      "model": "JBL Charge 6",
+      "category": "Głośniki BT",
+      "quality": "B+",
+      "fit": 3,
+      "sourceId": "marktplaats-nl",
+      "source": "Marktplaats",
+      "region": "UE",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2468545464-jbl-charge-6-draagbare-bluetooth-speaker-camouflage",
       "query": "JBL Charge 6",
       "discoveredAt": "2026-11-24T12:51:41.173Z",
@@ -13762,23 +13867,36 @@
       "sourceId": "marktplaats-nl",
       "source": "Marktplaats",
       "region": "UE",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2443975644-bowers-wilkins-pi8-met-garantie-doos-en-factuur",
-      "query": "Bowers & Wilkins Pi8",
-      "discoveredAt": "2026-11-22T10:10:04.334Z",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2424440655-bowers-wilkins-pi8-in-ear-koptelefoon-zwart",
+      "query": "Bowers & Wilkins Pi8 tweedehands",
+      "discoveredAt": "2026-10-12T00:44:17.767Z",
       "status": "UNVERIFIED LEAD",
       "evidence": "ITEM_URL_OR_ANCHOR",
-      "verificationState": "HTTP_403",
-      "lastVerificationFailure": "HTTP_403",
+      "country": "Holandia",
+      "locationEvidence": "SELLER_LOCATION",
       "verifiedAt": null,
-      "http": 403,
+      "verificationState": "RECHECK_HTTP_410",
+      "http": 410,
+      "condition": "B-STOCK",
+      "pricePln": null,
+      "originalPrice": null,
+      "currency": null,
       "availability": null,
+      "priceBasis": null,
+      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
+      "shippingRate": null,
+      "shippingCurrency": null,
+      "shippingRatePln": null,
+      "itemPlusShippingPln": null,
+      "shippingSource": null,
+      "fxSource": "NBP_TABLE_A",
+      "fxEffectiveDate": "2026-11-12",
       "redTeam": [
-        "SELLER_NOT_VERIFIED",
-        "AVAILABILITY_UNKNOWN",
-        "SHIPPING_UNKNOWN"
+        "REVERIFY_REQUIRED",
+        "NO_LANDED_COST"
       ],
-      "firstSeenAt": "2026-10-17T07:09:08.742Z",
-      "lastSeenAt": "2026-11-22T10:10:04.334Z",
+      "firstSeenAt": "2026-10-11T16:26:06.671Z",
+      "lastSeenAt": "2026-11-16T06:19:14.889Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -13824,34 +13942,6 @@
       "retained": true
     },
     {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "vinted-pl",
-      "source": "Vinted",
-      "region": "Polska",
-      "url": "https://www.vinted.pl/items/10681829333-bowers-wilkins-pi8-zelena-farba?referrer=catalog",
-      "query": "Bowers & Wilkins Pi8",
-      "discoveredAt": "2026-11-20T10:22:47.784Z",
-      "status": "UNVERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verificationState": "SELLER_PAGE_NOT_SUPPORTED",
-      "lastVerificationFailure": "SELLER_PAGE_NOT_SUPPORTED",
-      "verifiedAt": null,
-      "http": null,
-      "availability": null,
-      "redTeam": [
-        "SELLER_NOT_VERIFIED",
-        "AVAILABILITY_UNKNOWN",
-        "SHIPPING_UNKNOWN"
-      ],
-      "firstSeenAt": "2026-11-06T09:45:44.161Z",
-      "lastSeenAt": "2026-11-20T10:22:47.784Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
-    },
-    {
       "model": "JBL Charge 6",
       "category": "Głośniki BT",
       "quality": "B+",
@@ -13893,34 +13983,6 @@
       "retained": true
     },
     {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "vinted-pl",
-      "source": "Vinted",
-      "region": "Polska",
-      "url": "https://www.vinted.pl/items/10877379080-bowers-wilkins-pi8?referrer=catalog",
-      "query": "Bowers & Wilkins Pi8",
-      "discoveredAt": "2026-11-20T10:22:47.784Z",
-      "status": "UNVERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verificationState": "SELLER_PAGE_NOT_SUPPORTED",
-      "lastVerificationFailure": "SELLER_PAGE_NOT_SUPPORTED",
-      "verifiedAt": null,
-      "http": null,
-      "availability": null,
-      "redTeam": [
-        "SELLER_NOT_VERIFIED",
-        "AVAILABILITY_UNKNOWN",
-        "SHIPPING_UNKNOWN"
-      ],
-      "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-20T10:22:47.784Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
-    },
-    {
       "model": "JBL Charge 6",
       "category": "Głośniki BT",
       "quality": "B+",
@@ -13949,34 +14011,6 @@
       "retained": true
     },
     {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "vinted-pl",
-      "source": "Vinted",
-      "region": "Polska",
-      "url": "https://www.vinted.pl/items/9918718613-bw-pi8-mclaren-vastamelunappikuulokkeet?referrer=catalog",
-      "query": "Bowers & Wilkins Pi8",
-      "discoveredAt": "2026-11-20T10:22:47.784Z",
-      "status": "UNVERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "verificationState": "SELLER_PAGE_NOT_SUPPORTED",
-      "lastVerificationFailure": "SELLER_PAGE_NOT_SUPPORTED",
-      "verifiedAt": null,
-      "http": null,
-      "availability": null,
-      "redTeam": [
-        "SELLER_NOT_VERIFIED",
-        "AVAILABILITY_UNKNOWN",
-        "SHIPPING_UNKNOWN"
-      ],
-      "firstSeenAt": "2026-10-11T20:05:07.025Z",
-      "lastSeenAt": "2026-11-20T10:22:47.784Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
-    },
-    {
       "model": "JBL Charge 6",
       "category": "Głośniki BT",
       "quality": "B+",
@@ -14001,47 +14035,6 @@
       ],
       "firstSeenAt": "2026-11-22T10:10:04.334Z",
       "lastSeenAt": "2026-11-22T10:10:04.334Z",
-      "researchFreshness": "RECHECK_REQUIRED",
-      "retained": true
-    },
-    {
-      "model": "Bowers & Wilkins Pi8",
-      "category": "TWS",
-      "quality": "A-",
-      "fit": 4,
-      "sourceId": "marktplaats-nl",
-      "source": "Marktplaats",
-      "region": "UE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2424440655-bowers-wilkins-pi8-in-ear-koptelefoon-zwart",
-      "query": "Bowers & Wilkins Pi8 tweedehands",
-      "discoveredAt": "2026-10-12T00:44:17.767Z",
-      "status": "UNVERIFIED LEAD",
-      "evidence": "ITEM_URL_OR_ANCHOR",
-      "country": "Holandia",
-      "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": null,
-      "verificationState": "RECHECK_HTTP_410",
-      "http": 410,
-      "condition": "B-STOCK",
-      "pricePln": null,
-      "originalPrice": null,
-      "currency": null,
-      "availability": null,
-      "priceBasis": null,
-      "shippingToPoland": "PL_SHIPPING_UNKNOWN",
-      "shippingRate": null,
-      "shippingCurrency": null,
-      "shippingRatePln": null,
-      "itemPlusShippingPln": null,
-      "shippingSource": null,
-      "fxSource": "NBP_TABLE_A",
-      "fxEffectiveDate": "2026-11-12",
-      "redTeam": [
-        "REVERIFY_REQUIRED",
-        "NO_LANDED_COST"
-      ],
-      "firstSeenAt": "2026-10-11T16:26:06.671Z",
-      "lastSeenAt": "2026-11-16T06:19:14.889Z",
       "researchFreshness": "RECHECK_REQUIRED",
       "retained": true
     },
@@ -14372,8 +14365,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_471671836/209b6570-e98c-11f1-8ff5-376230376264",
@@ -14413,8 +14406,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cmn0d/216da8f0-e98c-11f1-8d2f-363732653234",
@@ -14454,8 +14447,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cnvRh/1f14bf6c-e98c-11f1-9e42-656164643065",
@@ -14495,8 +14488,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_94d623cb-60fb-4d50-ad13-65d309577577/22038668-e98c-11f1-b3e8-363732653234",
@@ -14536,8 +14529,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/1fec76fa-e98c-11f1-95a3-363732653234",
@@ -14577,8 +14570,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/17_258767/1e9583aa-e98c-11f1-9f3a-376230376264",
@@ -14618,8 +14611,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3477356741-172-3811/1e8f0e3a-e98c-11f1-9ae5-363732653234",
@@ -14659,8 +14652,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1ciA2I/1f01de6a-e98c-11f1-a9f2-376230376264",
@@ -14700,8 +14693,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_b62f445d-cbd3-412a-846f-9c2ff0d06cf2/1eca8c4e-e98c-11f1-b07e-376230376264",
@@ -14741,8 +14734,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1588151400/1ec99bae-e98c-11f1-8b75-363732653234",
@@ -14782,8 +14775,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_6f759380-c611-4c3b-b302-90fb5579325f/21b12a08-e98c-11f1-8d1c-656164643065",
@@ -14823,8 +14816,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1763991415/204a74bc-e98c-11f1-b833-363732653234",
@@ -14864,8 +14857,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bLSXw/21b2c5ac-e98c-11f1-b0d6-363732653234",
@@ -14905,8 +14898,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/240_78487521/22124e28-e98c-11f1-bfc8-656164643065",
@@ -14946,8 +14939,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_09fe6f16-5fc6-4a3c-96d7-909cb985d36e/200c3526-e98c-11f1-8a24-376230376264",
@@ -14987,8 +14980,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dkGyG/1f869f42-e98c-11f1-966f-376230376264",
@@ -15028,8 +15021,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/596_162907633/1fe42b76-e98c-11f1-85f6-376230376264",
@@ -15069,8 +15062,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bNO32/20d90c04-e98c-11f1-9eb5-376230376264",
@@ -15110,8 +15103,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/10_442408512/1fd86868-e98c-11f1-a3f9-376230376264",
@@ -15151,8 +15144,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/20ca1fc8-e98c-11f1-a56c-363732653234",
@@ -15192,8 +15185,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c118824/218fc4b2-e98c-11f1-9916-376230376264",
@@ -15233,8 +15226,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-IDXaJP5/2112375e-e98c-11f1-9f84-376230376264",
@@ -15274,8 +15267,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_286893561128/6ef9e7d4-e593-11f1-bed5-626238653463",
@@ -15397,8 +15390,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_480631682/210b0ce0-e98c-11f1-9cb7-363732653234",
@@ -15438,8 +15431,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Z43U/1f0a633c-e98c-11f1-9f0e-376230376264",
@@ -15479,8 +15472,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1br9yM/21d8f0c4-e98c-11f1-ac72-363732653234",
@@ -15520,8 +15513,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1346709344/20d0bf18-e98c-11f1-a259-363732653234",
@@ -15561,8 +15554,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_474003479/2204e1ca-e98c-11f1-8aa8-656164643065",
@@ -15602,8 +15595,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID19mRRc/1fb089ec-e98c-11f1-8df0-656164643065",
@@ -15643,8 +15636,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_d3ddcf47-d7f9-4e33-81c8-f40b5c912c6f/2020a556-e98c-11f1-978d-363732653234",
@@ -15684,8 +15677,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1deoId/20133ef2-e98c-11f1-a585-376230376264",
@@ -15725,8 +15718,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1bXdQH/2159ddc0-e98c-11f1-b478-363732653234",
@@ -15766,8 +15759,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_376754513904/20b57dfc-e98c-11f1-bdcb-376230376264",
@@ -15807,8 +15800,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478032856/1eee0d36-e98c-11f1-9fc1-363732653234",
@@ -15848,8 +15841,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c113392/1fd69eb6-e98c-11f1-a00a-363732653234",
@@ -15889,8 +15882,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c115762/1fb661dc-e98c-11f1-9d2c-363732653234",
@@ -15930,8 +15923,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_2770506589-172-4383/1e643aa2-e98c-11f1-94e7-363732653234",
@@ -15971,8 +15964,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e27fab26-20a2-48a4-9450-a00ce498aabc/1f3f7626-e98c-11f1-a125-376230376264",
@@ -16012,8 +16005,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_477446390/21c57148-e98c-11f1-8f23-376230376264",
@@ -16053,8 +16046,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_453891621/206a91b6-e98c-11f1-b626-363732653234",
@@ -16094,8 +16087,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_472258736/208d1966-e98c-11f1-a48d-363732653234",
@@ -16135,8 +16128,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_10F154/1f506e5e-e98c-11f1-bd9c-363732653234",
@@ -16176,8 +16169,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_QyGHK/1e9c3de4-e98c-11f1-a583-656164643065",
@@ -16217,8 +16210,8 @@
       "fxEffectiveDate": "2026-11-26",
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1d6Nq6/1eb9bcac-e98c-11f1-885c-363732653234",
@@ -16258,8 +16251,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_316700748/1e57e400-e98c-11f1-a91c-376230376264",
@@ -16299,8 +16292,8 @@
       "fxEffectiveDate": "2026-11-26",
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Kv8P/1f868ade-e98c-11f1-9039-656164643065",
@@ -16340,8 +16333,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478962441/205745d4-e98c-11f1-a35a-656164643065",
@@ -16381,8 +16374,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dqu2E/205d7abc-e98c-11f1-9947-376230376264",
@@ -16422,8 +16415,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dlxTq/217f9718-e98c-11f1-a674-656164643065",
@@ -16463,8 +16456,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2463846946/1f4584b2-e98c-11f1-ae5e-376230376264",
@@ -16504,8 +16497,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_471671836/0d3ccff4-e8c5-11f1-a8b6-356265613461",
@@ -16586,8 +16579,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1357021196/1f14bf6c-e98c-11f1-9e42-656164643065",
@@ -16627,8 +16620,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3529120952-172-9718/22038668-e98c-11f1-b3e8-363732653234",
@@ -16668,8 +16661,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/0c6f9188-e8c5-11f1-9a02-323634326562",
@@ -16750,8 +16743,8 @@
       "fxEffectiveDate": "2026-11-26",
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3579981755-172-21806/1e8f0e3a-e98c-11f1-9ae5-363732653234",
@@ -16791,8 +16784,8 @@
       "fxEffectiveDate": "2026-11-26",
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_468980418/1f01de6a-e98c-11f1-a9f2-376230376264",
@@ -16832,8 +16825,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1269257960/1eca8c4e-e98c-11f1-b07e-376230376264",
@@ -16873,8 +16866,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1660795331/1ec99bae-e98c-11f1-8b75-363732653234",
@@ -16914,8 +16907,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3556610345-172-784/21b12a08-e98c-11f1-8d1c-656164643065",
@@ -16955,8 +16948,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_2533745984-172-16331/204a74bc-e98c-11f1-b833-363732653234",
@@ -16996,8 +16989,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_63895ade-16ff-4191-8afd-f9bf1cab2ad3/21b2c5ac-e98c-11f1-b0d6-363732653234",
@@ -17037,8 +17030,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/241_54046041/22124e28-e98c-11f1-bfc8-656164643065",
@@ -17078,8 +17071,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e7125e8b-bf92-4e0a-baf8-2aa8adbb6a18/200c3526-e98c-11f1-8a24-376230376264",
@@ -17119,8 +17112,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_478589965/1f869f42-e98c-11f1-966f-376230376264",
@@ -17160,8 +17153,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/6_12876811/1fe42b76-e98c-11f1-85f6-376230376264",
@@ -17201,8 +17194,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1cp6gE/20d90c04-e98c-11f1-9eb5-376230376264",
@@ -17242,8 +17235,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_463579059/1fd86868-e98c-11f1-a3f9-376230376264",
@@ -17283,8 +17276,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/0d749b96-e8c5-11f1-8e29-323634326562",
@@ -17406,8 +17399,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_286893561128/7777261e-e4cc-11f1-b355-383764636164",
@@ -17529,8 +17522,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3529551118-172-3423/210b0ce0-e98c-11f1-9cb7-363732653234",
@@ -17570,8 +17563,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_f5e77fe0-7362-4ff4-81e2-09333e29af49/1f0a633c-e98c-11f1-9f0e-376230376264",
@@ -17611,8 +17604,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3204607453-172-4905/21d8f0c4-e98c-11f1-ac72-363732653234",
@@ -17652,8 +17645,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_197784417/20d0bf18-e98c-11f1-a259-363732653234",
@@ -17693,8 +17686,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_372697fb-c5df-44d6-b5cb-0bcd83ab08a8/2204e1ca-e98c-11f1-8aa8-656164643065",
@@ -17734,8 +17727,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_e5a9c11d-da81-4302-9b3b-3e2339ea8752/1fb089ec-e98c-11f1-8df0-656164643065",
@@ -17775,8 +17768,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_f6828ce0-f446-4d34-a755-b7e8f5ca3012/2020a556-e98c-11f1-978d-363732653234",
@@ -17816,8 +17809,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3553910282-172-7522/20133ef2-e98c-11f1-a585-376230376264",
@@ -17857,8 +17850,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_479586716/2159ddc0-e98c-11f1-b478-363732653234",
@@ -17898,8 +17891,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/ebay_376754513904/0d628b0e-e8c5-11f1-8b03-323965313332",
@@ -17980,8 +17973,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/34_m2450491518/1fd69eb6-e98c-11f1-a00a-363732653234",
@@ -18021,8 +18014,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_1098579227/1fb661dc-e98c-11f1-9d2c-363732653234",
@@ -18062,8 +18055,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3490502578-172-3111/1e643aa2-e98c-11f1-94e7-363732653234",
@@ -18103,8 +18096,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/197_309624/1f3f7626-e98c-11f1-a125-376230376264",
@@ -18144,8 +18137,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/199_1297512210A1KBMUAH000/21c57148-e98c-11f1-8f23-376230376264",
@@ -18185,8 +18178,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/12_457636335/206a91b6-e98c-11f1-b626-363732653234",
@@ -18226,8 +18219,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_b82da24b-4843-4de9-8761-9921e82e5a5c/208d1966-e98c-11f1-a48d-363732653234",
@@ -18267,8 +18260,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/264_10F154/0b8f04c4-e8c5-11f1-890f-323634326562",
@@ -18390,8 +18383,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3576782691-172-6619/1e57e400-e98c-11f1-a91c-376230376264",
@@ -18431,8 +18424,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1dePfY/1f868ade-e98c-11f1-9039-656164643065",
@@ -18472,8 +18465,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3496118130-172-5310/205745d4-e98c-11f1-a35a-656164643065",
@@ -18513,8 +18506,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID1drkYY/205d7abc-e98c-11f1-9947-376230376264",
@@ -18554,8 +18547,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_197534756/217f9718-e98c-11f1-a674-656164643065",
@@ -18595,8 +18588,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c116067/0b7e6a4c-e8c5-11f1-ba3f-356265613461",
@@ -18718,8 +18711,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3548200182-172-7080/1f14bf6c-e98c-11f1-9e42-656164643065",
@@ -18759,8 +18752,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/248_197501969/22038668-e98c-11f1-b3e8-363732653234",
@@ -18800,8 +18793,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/43_18356/f4ac17ac-e805-11f1-8a41-386162356639",
@@ -18882,8 +18875,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/346_audio-technica-ath-adx5000/1e8f0e3a-e98c-11f1-9ae5-363732653234",
@@ -18923,8 +18916,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_0535e120-fd5e-44ff-9c84-1801d210d578/1f01de6a-e98c-11f1-a9f2-376230376264",
@@ -18964,8 +18957,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/222_858228458/1eca8c4e-e98c-11f1-b07e-376230376264",
@@ -19005,8 +18998,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3491629270-172-6929/1ec99bae-e98c-11f1-8b75-363732653234",
@@ -19046,8 +19039,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_3561094858-172-3813/21b12a08-e98c-11f1-8d1c-656164643065",
@@ -19087,8 +19080,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/239_2850694565-172-3438/204a74bc-e98c-11f1-b833-363732653234",
@@ -19128,8 +19121,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_729ec743-a825-4c71-a49c-2d67ecf81d0e/21b2c5ac-e98c-11f1-b0d6-363732653234",
@@ -19169,8 +19162,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/36_1325765946/22124e28-e98c-11f1-bfc8-656164643065",
@@ -19210,8 +19203,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/165_82642975/200c3526-e98c-11f1-8a24-376230376264",
@@ -19251,8 +19244,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_2606021b-6dce-4fe0-af2c-7a657598d23b/1f869f42-e98c-11f1-966f-376230376264",
@@ -19292,8 +19285,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/596_162907633/0c6ff0ce-e8c5-11f1-999c-323965313332",
@@ -19374,8 +19367,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_0560b059-e009-4451-886d-7dcd50710631/1fd86868-e98c-11f1-a3f9-376230376264",
@@ -19415,8 +19408,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/21_c111824/2fed0f52-e72e-11f1-8f73-663864623761",
@@ -19538,8 +19531,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/152_4acda254-3296-4d11-905a-0b612cb865dd/0cb193ee-e8c5-11f1-b1dc-323965313332",
@@ -19620,8 +19613,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/102_CID99-ID15Z43U/0b407a52-e8c5-11f1-afac-323965313332",
@@ -19702,8 +19695,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "url": "https://www.hifishark.com/goto/26_142698/20d0bf18-e98c-11f1-a259-363732653234",
@@ -19743,8 +19736,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T11:24:31.000Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     }
   ]
 }

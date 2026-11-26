@@ -1,15 +1,7 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-26T11:24:31.000Z",
+  "refreshedAt": "2026-11-26T21:27:16.818Z",
   "stats": [
-    {
-      "key": "64 Audio U12t|NEW",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 8588.45,
-      "max": 8588.45
-    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 4,
@@ -22,7 +14,7 @@
       "key": "JBL Charge 6|NEW",
       "n": 14,
       "confidence": "ROBUST",
-      "median": 537.6,
+      "median": 518.79,
       "min": 380.82,
       "max": 631.71
     },
@@ -52,7 +44,7 @@
     },
     {
       "key": "JBL Charge 6|USED",
-      "n": 15,
+      "n": 13,
       "confidence": "ROBUST",
       "median": 448.02,
       "min": 350,
@@ -86,7 +78,7 @@
       "key": "AKG K702|USED",
       "n": 10,
       "confidence": "ROBUST",
-      "median": 492.82,
+      "median": 481.62,
       "min": 268.81,
       "max": 537.62
     },
@@ -142,7 +134,7 @@
       "key": "Beyerdynamic DT 1990 PRO|USED",
       "n": 7,
       "confidence": "ROBUST",
-      "median": 1599,
+      "median": 1500,
       "min": 1209.65,
       "max": 1950
     },
@@ -172,10 +164,10 @@
     },
     {
       "key": "Beyerdynamic DT 1990 PRO|B-STOCK",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 1321.66,
-      "min": 1209.65,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 1321.66,
       "max": 1568.07
     },
     {
@@ -244,9 +236,9 @@
     },
     {
       "key": "Bose SoundLink Max|NEW",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 1150,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 981.16,
       "max": 1250
     },
@@ -332,11 +324,11 @@
     },
     {
       "key": "HIFIMAN Ananda Nano|USED",
-      "n": 3,
-      "confidence": "PROVISIONAL",
-      "median": 1050,
+      "n": 2,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
       "min": 1000,
-      "max": 1500
+      "max": 1050
     },
     {
       "key": "Neumann NDH 30|USED",
@@ -400,7 +392,7 @@
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 425.62,
-      "max": 604.83
+      "max": 448.02
     }
   ]
 }
