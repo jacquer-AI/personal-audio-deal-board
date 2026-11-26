@@ -1,72 +1,193 @@
 {
-  "new": 0,
-  "priceChanged": 1,
+  "new": 4,
+  "priceChanged": 2,
   "sold": 0,
-  "stale": 4,
+  "stale": 0,
   "changes": [
     {
       "type": "PRICE",
+      "model": "64 Audio U12t",
+      "from": 8589.8,
+      "to": 8588.45,
+      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+    },
+    {
+      "type": "PRICE",
+      "model": "AKG K501",
+      "from": 1500,
+      "to": 1450,
+      "url": "https://www.olx.pl/d/oferta/sluchawki-akg-k501-super-stan-vintage-CID99-ID1cnvRh.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "NEW",
+      "model": "Dan Clark Audio Noire X",
+      "price": 3360.15,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2470084129-dan-clark-audio-noire-x-zeer-goede-staat"
+    },
+    {
+      "type": "NEW",
+      "model": "HIFIMAN Edition XS",
+      "price": 537.62,
+      "url": "https://www.subito.it/audio-video/hifiman-edition-xs-frosinone-669726594.htm"
+    },
+    {
+      "type": "NEW",
       "model": "JBL Charge 6",
-      "from": 627.33,
-      "to": 604.92,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469672261-jbl-charge-6-zo-goed-als-nieuw-krachtig-geluid"
+      "price": 425.62,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2470060199-jbl-charge-6"
     },
     {
-      "type": "STALE",
+      "type": "NEW",
       "model": "JBL Charge 6",
-      "url": "https://www.olx.pl/d/oferta/glosnik-bluetooth-jbl-charge-6-CID99-ID1dg64v.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-trapani-654582109.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "Marshall Middleton II",
-      "url": "https://www.olx.pl/d/oferta/nowy-glosnik-marshall-middleton-ii-czarny-CID99-ID1deoId.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "Sennheiser HD 800",
-      "url": "https://www.olx.pl/d/oferta/kabel-sluchawkowy-dekoni-audio-do-sennheiser-hd-800-xlr-4-pin-CID99-ID1cYCdN.html?search_reason=search%7Corganic"
+      "price": 582.43,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-roma-669772331.htm"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-26T08:08:25.388Z",
-  "mode": "quick",
-  "runId": "45780543345",
+  "refreshedAt": "2026-11-26T11:24:31.000Z",
+  "mode": "full",
+  "runId": "45810219894",
   "candidates": 500,
-  "verifiedAdditions": 0,
-  "observationChanges": 9,
-  "freshnessRenewal": true,
+  "verifiedAdditions": 4,
+  "observationChanges": 116,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 269,
-    "directVerified": 151,
-    "accessRestricted": 4,
+    "directVerified": 152,
+    "accessRestricted": 6,
     "ambiguous": 13,
-    "dead": 98,
+    "dead": 97,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "ebay-pl": 1,
-      "allegro-pl": 1
+      "allegro-pl": 3,
+      "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 8,
-      "selected": 8,
+      "eligible": 6,
+      "selected": 6,
       "skippedOnBoard": 108,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 8,
-    "researchDowngraded": 2,
+    "researchRechecked": 6,
     "researchReverified": 6,
     "researchPromotionBlocked": {
-      "NOT_VERIFIED_IN_THIS_RUN": 2,
       "RED_TEAM_BLOCKED": 6
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 306,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "mediaexpert-outlet"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 1,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 1,
+          "unverifiedUrls": 1
+        },
+        "mediaexpert-outlet": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 21,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 21,
+          "unverifiedUrls": 8,
+          "verifiedUrls": 11,
+          "sellerPriceOnly": 2
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 6,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 4,
+          "verifiedUrls": 2
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 261,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 255,
+      "selectedUrls": 34,
+      "selectedBySource": {
+        "vinted-pl": 1,
+        "subito-it": 6,
+        "marktplaats-nl": 21,
+        "hifishark": 6
+      },
+      "modelsSelected": 19
+    }
   }
 }
