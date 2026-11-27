@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-26T21:27:16.818Z",
+  "refreshedAt": "2026-11-27T08:18:40.227Z",
   "stats": [
+    {
+      "key": "64 Audio U12t|NEW",
+      "n": 1,
+      "confidence": "INSUFFICIENT MARKET SAMPLE",
+      "median": null,
+      "min": 8588.45,
+      "max": 8588.45
+    },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 4,
@@ -142,7 +150,7 @@
       "key": "HIFIMAN Edition XS|USED",
       "n": 4,
       "confidence": "PROVISIONAL",
-      "median": 746,
+      "median": 701,
       "min": 537.62,
       "max": 896.04
     },
@@ -212,10 +220,10 @@
     },
     {
       "key": "Dan Clark Audio Noire X|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 3360.15,
+      "min": 3584.16,
       "max": 3584.16
     },
     {

@@ -1,110 +1,62 @@
 {
   "new": 0,
-  "priceChanged": 5,
+  "priceChanged": 2,
   "sold": 0,
-  "stale": 6,
+  "stale": 1,
   "changes": [
     {
       "type": "PRICE",
       "model": "64 Audio U12t",
-      "from": 8588.45,
-      "to": 9206,
+      "from": 9206,
+      "to": 8588.45,
       "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
     },
     {
       "type": "STALE",
-      "model": "64 Audio U12t",
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
+      "model": "Dan Clark Audio Noire X",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2470084129-dan-clark-audio-noire-x-zeer-goede-staat"
     },
     {
       "type": "PRICE",
-      "model": "AKG K702",
-      "from": 490.12,
-      "to": 470.42,
-      "url": "https://www.subito.it/audio-video/akg-k702-cuffie-dinamiche-aperte-milano-669367883.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2458572015-beyerdynamic-dt-1990-pro-studio-hoofdtelefoon"
-    },
-    {
-      "type": "PRICE",
-      "model": "Beyerdynamic DT 1990 PRO",
-      "from": 1599,
-      "to": 1499,
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt-1990-pro-CID99-ID1dq5nH.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "Bose SoundLink Max",
-      "url": "https://www.olx.pl/d/oferta/glosnik-bose-soundlink-max-CID99-ID1cZmNy.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "HIFIMAN Ananda Nano",
-      "url": "https://www.olx.pl/d/oferta/hifiman-ananda-nano-stan-jak-nowy-kabel-4-4-mm-stojak-CID99-ID1cZ8cV.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 604.92,
-      "to": 448.02,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2469672261-jbl-charge-6-zo-goed-als-nieuw-krachtig-geluid"
-    },
-    {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 550,
-      "to": 500,
-      "url": "https://www.olx.pl/d/oferta/glosnik-charge-6-jbl-CID99-ID1dpbxB.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.olx.pl/d/oferta/jbl-charge-6-jak-nowy-CID99-ID1djjvH.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.subito.it/audio-video/jbl-charge-6-genova-669050585.htm"
+      "model": "HIFIMAN Edition XS",
+      "from": 797,
+      "to": 707,
+      "url": "https://www.olx.pl/d/oferta/sluchawki-hifiman-edition-xs-CID99-ID1digMm.html?search_reason=search%7Corganic"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-26T21:27:16.818Z",
+  "refreshedAt": "2026-11-27T08:18:40.227Z",
   "mode": "quick",
-  "runId": "45898150660",
+  "runId": "45964563735",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 19,
+  "observationChanges": 4,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 273,
     "directVerified": 150,
-    "accessRestricted": 5,
+    "accessRestricted": 6,
     "ambiguous": 13,
-    "dead": 102,
+    "dead": 103,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 2,
+    "remoteErrors": 0,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
+      "allegro-pl": 3,
       "ebay-pl": 1
     },
     "researchSelection": {
-      "eligible": 15,
-      "selected": 15,
+      "eligible": 11,
+      "selected": 11,
       "skippedOnBoard": 108,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 15,
+    "researchRechecked": 11,
     "researchReverified": 11,
-    "researchDowngraded": 4,
     "researchPromotionBlocked": {
       "RED_TEAM_BLOCKED": 6,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 5,
-      "NOT_VERIFIED_IN_THIS_RUN": 4
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 5
     },
     "researchPromoted": 0
   }

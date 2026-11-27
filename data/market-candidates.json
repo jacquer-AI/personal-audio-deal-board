@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "refreshedAt": "2026-11-26T21:27:16.818Z",
+  "refreshedAt": "2026-11-27T08:18:40.227Z",
   "mode": "quick",
   "candidates": [
     {
@@ -269,7 +269,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -292,7 +292,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -479,7 +479,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -503,7 +503,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -731,7 +731,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -754,7 +754,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1192,7 +1192,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Włochy",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1216,7 +1216,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -1571,7 +1571,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "LOCAL_MARKETPLACE",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -1595,7 +1595,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -2288,7 +2288,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Polska",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "USED",
@@ -2312,7 +2312,7 @@
         "PRICE_EXCLUDES_SHIPPING_AND_FEES"
       ],
       "firstSeenAt": "2026-11-24T12:51:41.173Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4810,7 +4810,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4834,7 +4834,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4853,7 +4853,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4877,7 +4877,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4896,7 +4896,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "B-STOCK",
@@ -4920,7 +4920,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4939,7 +4939,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -4962,7 +4962,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -4981,7 +4981,7 @@
       "evidence": "ITEM_URL_OR_ANCHOR",
       "country": "Holandia",
       "locationEvidence": "SELLER_LOCATION",
-      "verifiedAt": "2026-11-26T21:27:16.818Z",
+      "verifiedAt": "2026-11-27T08:18:40.227Z",
       "verificationState": "DIRECT_OFFER_VERIFIED",
       "http": 200,
       "condition": "NEW",
@@ -5004,7 +5004,7 @@
         "FIXED_ITEM_PRICE_NOT_CONFIRMED"
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
-      "lastSeenAt": "2026-11-26T21:27:16.818Z",
+      "lastSeenAt": "2026-11-27T08:18:40.227Z",
       "researchFreshness": "SCAN_OBSERVED",
       "retained": false
     },
@@ -11567,8 +11567,8 @@
       ],
       "firstSeenAt": "2026-11-20T10:22:47.784Z",
       "lastSeenAt": "2026-11-26T21:27:16.818Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Marshall Middleton II",
@@ -12287,8 +12287,8 @@
       ],
       "firstSeenAt": "2026-11-21T10:06:50.712Z",
       "lastSeenAt": "2026-11-26T21:27:16.818Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -12647,8 +12647,8 @@
       ],
       "firstSeenAt": "2026-11-23T11:07:11.359Z",
       "lastSeenAt": "2026-11-26T21:27:16.818Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Neumann NDH 30",
@@ -12854,8 +12854,8 @@
       ],
       "firstSeenAt": "2026-11-26T11:24:31.000Z",
       "lastSeenAt": "2026-11-26T21:27:16.818Z",
-      "researchFreshness": "SCAN_OBSERVED",
-      "retained": false
+      "researchFreshness": "RECHECK_REQUIRED",
+      "retained": true
     },
     {
       "model": "Sennheiser HD 800",
