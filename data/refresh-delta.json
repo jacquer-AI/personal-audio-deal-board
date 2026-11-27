@@ -1,55 +1,58 @@
 {
-  "new": 2,
+  "new": 0,
   "priceChanged": 2,
   "sold": 0,
-  "stale": 1,
+  "stale": 4,
   "changes": [
     {
-      "type": "PRICE",
-      "model": "64 Audio U12t",
-      "from": 8588.45,
-      "to": 8563.72,
-      "url": "https://www.muzix.eu/de/64-Audio/Headphones/In-ear/64AUDIO-U12T-V2/64-AUDIO-U12T-High-End-12-driver-reference-In-Ear-Monitor"
-    },
-    {
-      "type": "NEW",
+      "type": "STALE",
       "model": "Beyerdynamic DT 880",
-      "price": 446.73,
-      "url": "https://www.subito.it/audio-video/beyerdynamic-dt-880-pro-250ohm-lucca-669818308.htm"
+      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt880-pro-torba-CID99-ID1cRARs.html?search_reason=search%7Corganic"
     },
     {
       "type": "STALE",
-      "model": "Etymotic ER2SE",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2464239033-etymotic-er2se-oortjes-zwart"
+      "model": "Focal Clear OG",
+      "url": "https://www.olx.pl/d/oferta/focal-clear-og-z-orginalym-opakowaniem-CID99-ID15Z43U.html?search_reason=search%7Corganic"
     },
     {
       "type": "PRICE",
-      "model": "HIFIMAN Edition XS",
-      "from": 759,
-      "to": 750,
-      "url": "https://www.olx.pl/d/oferta/sluchawki-hifiman-edition-xs-nowe-fabrycznie-zapakowane-planarne-CID99-ID1dlfAw.html?search_reason=search%7Corganic"
+      "model": "JBL Charge 6",
+      "from": 534.63,
+      "to": 446.69,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2468825222-jbl-charge-6-zwart-bluetooth-speaker-nieuw"
     },
     {
-      "type": "NEW",
-      "model": "HIFIMAN Edition XS",
-      "price": 536.08,
-      "url": "https://www.subito.it/audio-video/cuffie-planari-hifiman-edition-xs-frosinone-669726594.htm"
+      "type": "STALE",
+      "model": "JBL Charge 6",
+      "url": "https://www.olx.pl/d/oferta/glosnik-charge-6-jbl-CID99-ID1dpbxB.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "PRICE",
+      "model": "JBL Charge 6",
+      "from": 467.84,
+      "to": 446.73,
+      "url": "https://www.subito.it/audio-video/cassa-jbl-charge-6-mantova-669354303.htm"
+    },
+    {
+      "type": "STALE",
+      "model": "Sennheiser HD 800",
+      "url": "https://www.olx.pl/d/oferta/sluchawki-sennheiser-hd800-z-nausznikami-dekoni-elite-fenestrated-sheepskin-CID99-ID1dnqja.html?search_reason=search%7Corganic"
     }
   ],
   "schema": 1,
-  "refreshedAt": "2026-11-27T11:18:46.675Z",
-  "mode": "full",
-  "runId": "45989330738",
+  "refreshedAt": "2026-11-27T21:10:14.282Z",
+  "mode": "quick",
+  "runId": "46068416033",
   "candidates": 500,
-  "verifiedAdditions": 2,
-  "observationChanges": 114,
-  "freshnessRenewal": false,
+  "verifiedAdditions": 0,
+  "observationChanges": 8,
+  "freshnessRenewal": true,
   "receipt": {
-    "directUrlsAttempted": 273,
-    "directVerified": 149,
+    "directUrlsAttempted": 275,
+    "directVerified": 147,
     "accessRestricted": 6,
     "ambiguous": 13,
-    "dead": 104,
+    "dead": 108,
     "soldOrOut": 1,
     "notDirect": 2,
     "remoteErrors": 0,
@@ -61,7 +64,7 @@
     "researchSelection": {
       "eligible": 11,
       "selected": 11,
-      "skippedOnBoard": 108,
+      "skippedOnBoard": 110,
       "skippedDuplicates": 0
     },
     "researchRechecked": 11,
@@ -70,116 +73,6 @@
       "RED_TEAM_BLOCKED": 6,
       "NO_FRESH_FIXED_SELLER_EVIDENCE": 5
     },
-    "researchPromoted": 0,
-    "recentResearchUrlsSkipped": 189,
-    "discovery": {
-      "plannedJobs": 300,
-      "coreSources": [
-        "subito-it",
-        "marktplaats-nl",
-        "hifishark",
-        "vinted-pl",
-        "ebay-de"
-      ],
-      "plannedSources": 5,
-      "reachableSources": 4,
-      "sources": {
-        "allegro-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "olx-pl": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "vinted-pl": {
-          "requested": 60,
-          "reachable": 30,
-          "candidateUrls": 1,
-          "restricted": 30,
-          "errors": 0,
-          "checkedUrls": 1,
-          "unverifiedUrls": 1
-        },
-        "mediaexpert-outlet": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "kleinanzeigen-de": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "marktplaats-nl": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 20,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 20,
-          "unverifiedUrls": 20
-        },
-        "subito-it": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 4,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 4,
-          "verifiedUrls": 2,
-          "unverifiedUrls": 2
-        },
-        "wallapop-es": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "amazon-de-resale": {
-          "requested": 0,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 0,
-          "errors": 0
-        },
-        "ebay-de": {
-          "requested": 60,
-          "reachable": 0,
-          "candidateUrls": 0,
-          "restricted": 60,
-          "errors": 0
-        },
-        "hifishark": {
-          "requested": 60,
-          "reachable": 60,
-          "candidateUrls": 259,
-          "restricted": 0,
-          "errors": 0,
-          "checkedUrls": 6,
-          "unverifiedUrls": 6
-        }
-      },
-      "indexedPricesRetainedWithoutGoto": 253,
-      "selectedUrls": 31,
-      "selectedBySource": {
-        "marktplaats-nl": 20,
-        "vinted-pl": 1,
-        "subito-it": 4,
-        "hifishark": 6
-      },
-      "modelsSelected": 24
-    }
+    "researchPromoted": 0
   }
 }

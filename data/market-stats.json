@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-27T11:18:46.675Z",
+  "refreshedAt": "2026-11-27T21:10:14.282Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,17 +20,17 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 14,
+      "n": 13,
       "confidence": "ROBUST",
-      "median": 518.015,
+      "median": 491.4,
       "min": 379.72,
       "max": 629.89
     },
     {
       "key": "Beyerdynamic DT 880|USED",
-      "n": 15,
+      "n": 14,
       "confidence": "ROBUST",
-      "median": 480,
+      "median": 489.5,
       "min": 280,
       "max": 804.11
     },
@@ -76,11 +76,11 @@
     },
     {
       "key": "Focal Clear OG|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 2993.09,
-      "max": 3000
+      "max": 2993.09
     },
     {
       "key": "AKG K702|USED",
@@ -204,10 +204,10 @@
     },
     {
       "key": "Sennheiser HD 800|USED",
-      "n": 2,
+      "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 2500,
+      "min": 2859.07,
       "max": 2859.07
     },
     {
