@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-27T08:18:40.227Z",
+  "refreshedAt": "2026-11-27T11:18:46.675Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 8588.45,
-      "max": 8588.45
+      "min": 8563.72,
+      "max": 8563.72
     },
     {
       "key": "Technics EAH-AZ100|NEW",
       "n": 4,
       "confidence": "PROVISIONAL",
-      "median": 865.5799999999999,
+      "median": 864.1700000000001,
       "min": 690,
-      "max": 2683.64
+      "max": 2675.91
     },
     {
       "key": "JBL Charge 6|NEW",
       "n": 14,
       "confidence": "ROBUST",
-      "median": 518.79,
-      "min": 380.82,
-      "max": 631.71
+      "median": 518.015,
+      "min": 379.72,
+      "max": 629.89
     },
     {
       "key": "Beyerdynamic DT 880|USED",
-      "n": 14,
+      "n": 15,
       "confidence": "ROBUST",
-      "median": 489.5,
+      "median": 480,
       "min": 280,
-      "max": 806.44
+      "max": 804.11
     },
     {
       "key": "Bose SoundLink Max|USED",
       "n": 7,
       "confidence": "ROBUST",
-      "median": 1344.06,
-      "min": 873.64,
+      "median": 1340.19,
+      "min": 871.12,
       "max": 1574.1
     },
     {
       "key": "Bowers & Wilkins Pi8|USED",
       "n": 3,
       "confidence": "PROVISIONAL",
-      "median": 1021.49,
+      "median": 1018.54,
       "min": 900,
-      "max": 1254.46
+      "max": 1250.84
     },
     {
       "key": "JBL Charge 6|USED",
       "n": 13,
       "confidence": "ROBUST",
-      "median": 448.02,
+      "median": 446.73,
       "min": 350,
-      "max": 627.23
+      "max": 625.42
     },
     {
       "key": "HIFIMAN Ananda Nano|B-STOCK",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1120.05,
-      "max": 1120.05
+      "min": 1116.83,
+      "max": 1116.83
     },
     {
       "key": "Sony MDR-M1|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 667.55,
-      "max": 667.55
+      "min": 665.63,
+      "max": 665.63
     },
     {
       "key": "Focal Clear OG|USED",
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 3000,
-      "max": 3001.73
+      "min": 2993.09,
+      "max": 3000
     },
     {
       "key": "AKG K702|USED",
       "n": 10,
       "confidence": "ROBUST",
-      "median": 481.62,
-      "min": 268.81,
-      "max": 537.62
+      "median": 480.235,
+      "min": 268.04,
+      "max": 536.08
     },
     {
       "key": "Austrian Audio Hi-X60|NEW",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 896.04,
-      "max": 896.04
+      "min": 893.46,
+      "max": 893.46
     },
     {
       "key": "Bowers & Wilkins Pi8|NEW",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1344.06,
-      "max": 1344.06
+      "min": 1340.19,
+      "max": 1340.19
     },
     {
       "key": "Etymotic ER4XR|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 672.03,
-      "max": 672.03
+      "min": 670.1,
+      "max": 670.1
     },
     {
       "key": "Dan Clark Audio E3|NEW",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 8512.38,
-      "max": 8512.38
+      "min": 8487.87,
+      "max": 8487.87
     },
     {
       "key": "Focal Clear MG|USED",
       "n": 3,
       "confidence": "PROVISIONAL",
-      "median": 3539.36,
-      "min": 3539.36,
+      "median": 3529.17,
+      "min": 3529.17,
       "max": 3600
     },
     {
@@ -135,7 +135,7 @@
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 985.64,
+      "min": 982.81,
       "max": 1200
     },
     {
@@ -143,54 +143,54 @@
       "n": 7,
       "confidence": "ROBUST",
       "median": 1500,
-      "min": 1209.65,
+      "min": 1206.17,
       "max": 1950
     },
     {
       "key": "HIFIMAN Edition XS|USED",
-      "n": 4,
-      "confidence": "PROVISIONAL",
-      "median": 701,
-      "min": 537.62,
-      "max": 896.04
+      "n": 5,
+      "confidence": "ROBUST",
+      "median": 695,
+      "min": 536.08,
+      "max": 893.46
     },
     {
       "key": "Beyerdynamic DT 900 PRO X|USED",
       "n": 8,
       "confidence": "ROBUST",
-      "median": 730.315,
-      "min": 443.54,
-      "max": 940.84
+      "median": 729.22,
+      "min": 442.26,
+      "max": 938.13
     },
     {
       "key": "Neumann NDH 30|NEW",
       "n": 3,
       "confidence": "PROVISIONAL",
-      "median": 1747.28,
-      "min": 1747.28,
-      "max": 2016.09
+      "median": 1742.25,
+      "min": 1742.25,
+      "max": 2010.29
     },
     {
       "key": "Beyerdynamic DT 1990 PRO|B-STOCK",
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 1321.66,
-      "max": 1568.07
+      "min": 1317.85,
+      "max": 1563.55
     },
     {
       "key": "Sennheiser HD 800|NEW",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 4390.6,
-      "max": 4390.6
+      "min": 4377.95,
+      "max": 4377.95
     },
     {
       "key": "Audio-Technica ATH-M70x|USED",
       "n": 3,
       "confidence": "PROVISIONAL",
-      "median": 716.83,
+      "median": 714.77,
       "min": 99,
       "max": 760
     },
@@ -199,8 +199,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 627.23,
-      "max": 627.23
+      "min": 625.42,
+      "max": 625.42
     },
     {
       "key": "Sennheiser HD 800|USED",
@@ -208,46 +208,46 @@
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 2500,
-      "max": 2867.33
+      "max": 2859.07
     },
     {
       "key": "Sennheiser HD 800|B-STOCK",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 537.62,
-      "max": 537.62
+      "min": 536.08,
+      "max": 536.08
     },
     {
       "key": "Dan Clark Audio Noire X|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 3584.16,
-      "max": 3584.16
+      "min": 3573.84,
+      "max": 3573.84
     },
     {
       "key": "Etymotic ER2SE|USED",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 537.62,
-      "max": 537.62
+      "min": 536.08,
+      "max": 536.08
     },
     {
       "key": "Bowers & Wilkins Pi8|B-STOCK",
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 940.8,
-      "max": 1254.41
+      "min": 938.09,
+      "max": 1250.8
     },
     {
       "key": "Bose SoundLink Max|NEW",
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 981.16,
+      "min": 978.34,
       "max": 1250
     },
     {
@@ -256,15 +256,15 @@
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
       "min": 1600,
-      "max": 2016.09
+      "max": 2010.29
     },
     {
       "key": "HIFIMAN Arya Stealth|B-STOCK",
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 2016.09,
-      "max": 2016.09
+      "min": 2010.29,
+      "max": 2010.29
     },
     {
       "key": "Sennheiser HD 800 S|USED",
@@ -295,8 +295,8 @@
       "n": 1,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 7616.34,
-      "max": 7616.34
+      "min": 7594.41,
+      "max": 7594.41
     },
     {
       "key": "Technics EAH-AZ100|USED",
@@ -305,14 +305,6 @@
       "median": 550,
       "min": 250,
       "max": 550
-    },
-    {
-      "key": "Etymotic ER2SE|B-STOCK",
-      "n": 1,
-      "confidence": "INSUFFICIENT MARKET SAMPLE",
-      "median": null,
-      "min": 398.74,
-      "max": 398.74
     },
     {
       "key": "Dan Clark Audio E3|USED",
@@ -366,7 +358,7 @@
       "key": "HIFIMAN Edition XS|NEW",
       "n": 4,
       "confidence": "PROVISIONAL",
-      "median": 429.5,
+      "median": 425,
       "min": 100,
       "max": 795
     },
@@ -399,8 +391,8 @@
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 425.62,
-      "max": 448.02
+      "min": 424.39,
+      "max": 446.73
     }
   ]
 }
