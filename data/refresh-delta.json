@@ -1,45 +1,194 @@
 {
-  "new": 0,
-  "priceChanged": 0,
+  "new": 4,
+  "priceChanged": 1,
   "sold": 0,
-  "stale": 0,
-  "changes": [],
+  "stale": 1,
+  "changes": [
+    {
+      "type": "STALE",
+      "model": "Beyerdynamic DT 1990 PRO",
+      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt-1990-pro-CID99-ID1dq5nH.html?search_reason=search%7Corganic"
+    },
+    {
+      "type": "NEW",
+      "model": "Beyerdynamic DT 880",
+      "price": 580.75,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2471001624-beyerdynamic-dt-880-pro-studio-hoofdtelefoon-etui"
+    },
+    {
+      "type": "PRICE",
+      "model": "Bowers & Wilkins Pi8",
+      "from": 937.25,
+      "to": 893.42,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2464257586-bowers-wilkins-pi8-zo-goed-als-nieuw"
+    },
+    {
+      "type": "NEW",
+      "model": "JBL Charge 6",
+      "price": 893.46,
+      "url": "https://www.subito.it/audio-video/jbl-charge-6-frosinone-669990946.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Marshall Middleton II",
+      "price": 888.99,
+      "url": "https://www.subito.it/audio-video/marshall-middleton-ii-2nd-gen-nuovo-gar-italia-lecce-670010916.htm"
+    },
+    {
+      "type": "NEW",
+      "model": "Sennheiser HD 800",
+      "price": 402.06,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/audiokabels-en-televisiekabels/m2435638347-sennheiser-hd-800-series-kabel-566275-3m"
+    }
+  ],
   "schema": 1,
-  "refreshedAt": "2026-11-28T07:40:06.438Z",
-  "mode": "quick",
-  "runId": "46122193812",
+  "refreshedAt": "2026-11-28T10:47:08.112Z",
+  "mode": "full",
+  "runId": "46136734505",
   "candidates": 500,
-  "verifiedAdditions": 0,
-  "observationChanges": 4,
-  "freshnessRenewal": true,
+  "verifiedAdditions": 4,
+  "observationChanges": 30,
+  "freshnessRenewal": false,
   "receipt": {
     "directUrlsAttempted": 275,
-    "directVerified": 147,
-    "accessRestricted": 5,
+    "directVerified": 145,
+    "accessRestricted": 7,
     "ambiguous": 13,
-    "dead": 108,
+    "dead": 106,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 1,
+    "remoteErrors": 3,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 2,
-      "ebay-pl": 1
+      "allegro-pl": 3,
+      "ebay-pl": 1,
+      "marktplaats-nl": 1
     },
     "researchSelection": {
-      "eligible": 11,
-      "selected": 11,
+      "eligible": 8,
+      "selected": 8,
       "skippedOnBoard": 110,
       "skippedDuplicates": 0
     },
-    "researchRechecked": 11,
-    "researchReverified": 8,
-    "researchDowngraded": 3,
+    "researchRechecked": 8,
+    "researchDowngraded": 2,
+    "researchReverified": 6,
     "researchPromotionBlocked": {
       "RED_TEAM_BLOCKED": 6,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 2,
-      "NOT_VERIFIED_IN_THIS_RUN": 3
+      "NOT_VERIFIED_IN_THIS_RUN": 2
     },
-    "researchPromoted": 0
+    "researchPromoted": 0,
+    "recentResearchUrlsSkipped": 190,
+    "discovery": {
+      "plannedJobs": 300,
+      "coreSources": [
+        "subito-it",
+        "marktplaats-nl",
+        "hifishark",
+        "vinted-pl",
+        "allegro-pl"
+      ],
+      "plannedSources": 5,
+      "reachableSources": 4,
+      "sources": {
+        "allegro-pl": {
+          "requested": 60,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 60,
+          "errors": 0
+        },
+        "olx-pl": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "vinted-pl": {
+          "requested": 60,
+          "reachable": 30,
+          "candidateUrls": 1,
+          "restricted": 30,
+          "errors": 0,
+          "checkedUrls": 1,
+          "unverifiedUrls": 1
+        },
+        "mediaexpert-outlet": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "kleinanzeigen-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "marktplaats-nl": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 14,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 14,
+          "verifiedUrls": 10,
+          "sellerPriceOnly": 2,
+          "unverifiedUrls": 2
+        },
+        "subito-it": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 6,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 4,
+          "verifiedUrls": 2
+        },
+        "wallapop-es": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "amazon-de-resale": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "ebay-de": {
+          "requested": 0,
+          "reachable": 0,
+          "candidateUrls": 0,
+          "restricted": 0,
+          "errors": 0
+        },
+        "hifishark": {
+          "requested": 60,
+          "reachable": 60,
+          "candidateUrls": 263,
+          "restricted": 0,
+          "errors": 0,
+          "checkedUrls": 6,
+          "unverifiedUrls": 6
+        }
+      },
+      "indexedPricesRetainedWithoutGoto": 257,
+      "selectedUrls": 27,
+      "selectedBySource": {
+        "subito-it": 6,
+        "marktplaats-nl": 14,
+        "vinted-pl": 1,
+        "hifishark": 6
+      },
+      "modelsSelected": 17
+    }
   }
 }

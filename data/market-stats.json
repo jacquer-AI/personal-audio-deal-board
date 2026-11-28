@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "refreshedAt": "2026-11-28T07:40:06.438Z",
+  "refreshedAt": "2026-11-28T10:47:08.112Z",
   "stats": [
     {
       "key": "64 Audio U12t|NEW",
@@ -20,17 +20,17 @@
     },
     {
       "key": "JBL Charge 6|NEW",
-      "n": 13,
+      "n": 14,
       "confidence": "ROBUST",
-      "median": 491.4,
+      "median": 513.74,
       "min": 379.72,
-      "max": 629.89
+      "max": 893.46
     },
     {
       "key": "Beyerdynamic DT 880|USED",
-      "n": 14,
+      "n": 15,
       "confidence": "ROBUST",
-      "median": 489.5,
+      "median": 499,
       "min": 280,
       "max": 804.11
     },
@@ -140,9 +140,9 @@
     },
     {
       "key": "Beyerdynamic DT 1990 PRO|USED",
-      "n": 7,
+      "n": 6,
       "confidence": "ROBUST",
-      "median": 1500,
+      "median": 1550,
       "min": 1206.17,
       "max": 1950
     },
@@ -180,10 +180,10 @@
     },
     {
       "key": "Sennheiser HD 800|NEW",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 4377.95,
+      "min": 402.06,
       "max": 4377.95
     },
     {
@@ -239,7 +239,7 @@
       "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 938.09,
+      "min": 893.42,
       "max": 1250.8
     },
     {
@@ -300,9 +300,9 @@
     },
     {
       "key": "Technics EAH-AZ100|USED",
-      "n": 5,
-      "confidence": "ROBUST",
-      "median": 550,
+      "n": 4,
+      "confidence": "PROVISIONAL",
+      "median": 549.5,
       "min": 250,
       "max": 550
     },
@@ -348,10 +348,10 @@
     },
     {
       "key": "Marshall Middleton II|NEW",
-      "n": 1,
+      "n": 2,
       "confidence": "INSUFFICIENT MARKET SAMPLE",
       "median": null,
-      "min": 900,
+      "min": 888.99,
       "max": 900
     },
     {
