@@ -1,64 +1,29 @@
 {
   "new": 0,
-  "priceChanged": 2,
+  "priceChanged": 0,
   "sold": 0,
-  "stale": 4,
-  "changes": [
-    {
-      "type": "STALE",
-      "model": "Beyerdynamic DT 880",
-      "url": "https://www.olx.pl/d/oferta/beyerdynamic-dt880-pro-torba-CID99-ID1cRARs.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "STALE",
-      "model": "Focal Clear OG",
-      "url": "https://www.olx.pl/d/oferta/focal-clear-og-z-orginalym-opakowaniem-CID99-ID15Z43U.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 534.63,
-      "to": 446.69,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2468825222-jbl-charge-6-zwart-bluetooth-speaker-nieuw"
-    },
-    {
-      "type": "STALE",
-      "model": "JBL Charge 6",
-      "url": "https://www.olx.pl/d/oferta/glosnik-charge-6-jbl-CID99-ID1dpbxB.html?search_reason=search%7Corganic"
-    },
-    {
-      "type": "PRICE",
-      "model": "JBL Charge 6",
-      "from": 467.84,
-      "to": 446.73,
-      "url": "https://www.subito.it/audio-video/cassa-jbl-charge-6-mantova-669354303.htm"
-    },
-    {
-      "type": "STALE",
-      "model": "Sennheiser HD 800",
-      "url": "https://www.olx.pl/d/oferta/sluchawki-sennheiser-hd800-z-nausznikami-dekoni-elite-fenestrated-sheepskin-CID99-ID1dnqja.html?search_reason=search%7Corganic"
-    }
-  ],
+  "stale": 0,
+  "changes": [],
   "schema": 1,
-  "refreshedAt": "2026-11-27T21:10:14.282Z",
+  "refreshedAt": "2026-11-28T07:40:06.438Z",
   "mode": "quick",
-  "runId": "46068416033",
+  "runId": "46122193812",
   "candidates": 500,
   "verifiedAdditions": 0,
-  "observationChanges": 8,
+  "observationChanges": 4,
   "freshnessRenewal": true,
   "receipt": {
     "directUrlsAttempted": 275,
     "directVerified": 147,
-    "accessRestricted": 6,
+    "accessRestricted": 5,
     "ambiguous": 13,
     "dead": 108,
     "soldOrOut": 1,
     "notDirect": 2,
-    "remoteErrors": 0,
+    "remoteErrors": 1,
     "sourcesRestricted": {
       "ebay-de": 2,
-      "allegro-pl": 3,
+      "allegro-pl": 2,
       "ebay-pl": 1
     },
     "researchSelection": {
@@ -68,10 +33,12 @@
       "skippedDuplicates": 0
     },
     "researchRechecked": 11,
-    "researchReverified": 11,
+    "researchReverified": 8,
+    "researchDowngraded": 3,
     "researchPromotionBlocked": {
       "RED_TEAM_BLOCKED": 6,
-      "NO_FRESH_FIXED_SELLER_EVIDENCE": 5
+      "NO_FRESH_FIXED_SELLER_EVIDENCE": 2,
+      "NOT_VERIFIED_IN_THIS_RUN": 3
     },
     "researchPromoted": 0
   }
